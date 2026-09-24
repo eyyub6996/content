@@ -1,0 +1,242 @@
+%% Épreuve 2 : sciences et technologie (S)
+# S | Sciences et technologie | Le vivant, la matière, l'énergie, la Terre, les objets techniques
+
+:::objectifs
+- connaître les notions de **sciences de la vie et de la Terre** (vivant, corps humain, écosystèmes, Terre et Univers) ;
+- connaître les notions de **physique-chimie** (matière, changements d'état, mélanges, énergie, électricité, lumière, mouvement) ;
+- connaître les bases de la **technologie** (objets techniques, matériaux, chaîne d'énergie et d'information) ;
+- maîtriser la **démarche d'investigation** (très souvent interrogée).
+:::
+
+## S.1 La démarche d'investigation
+
+:::coeur Les étapes (à connaître par cœur, écrit et oral)
++ **Situation de départ** et **question** (problème) : « Les plantes ont-elles besoin de lumière pour pousser ? »
++ **Hypothèses** des élèves (« oui », « non, seulement d'eau »…).
++ **Investigation** : expérience, observation, recherche documentaire, modélisation. Pour une expérience : **ne faire varier qu'un seul paramètre** et garder un **témoin**.
++ **Résultats** : observer, mesurer, noter (tableau, dessin d'observation, graphique).
++ **Conclusion** : valider ou invalider les hypothèses ; **trace écrite** ; nouvelle question éventuelle.
+:::
+
+:::exemple Une expérience bien conçue
+*Question : la lumière est-elle nécessaire à la croissance d'une plante ?* Deux pots **identiques** (même plante, même terre, même quantité d'eau, même température) ; l'un à la lumière, l'autre dans un placard (**seul** paramètre qui change : la lumière). Observations pendant 2 semaines. Le pot à la lumière est le **témoin**.
+:::
+
+:::piege
+Une expérience où l'on change deux paramètres à la fois (lumière **et** eau) ne permet **aucune** conclusion. C'est la question la plus fréquente sur la démarche.
+:::
+
+## S.2 Le vivant
+
+:::coeur
+**Caractéristiques du vivant** : se nourrir, respirer, grandir (se développer), se reproduire, réagir à son environnement ; il est constitué de **cellules** (unité du vivant, observable au microscope).
+**Classification** : on classe les êtres vivants selon les **attributs** (caractères) qu'ils **partagent** (vertèbres, 4 membres, poils, plumes…), en **groupes emboîtés** qui traduisent des **liens de parenté**. On ne classe pas selon le lieu de vie ou le régime alimentaire. (« La baleine est un mammifère : poils, mamelles », « la chauve-souris n'est pas un oiseau ».)
+**Nutrition des végétaux verts** : la **photosynthèse** : dans les feuilles, grâce à la **lumière** et à la **chlorophylle**, la plante fabrique sa matière organique à partir d'**eau** (puisée par les racines), de **sels minéraux** et de **dioxyde de carbone** (de l'air) ; elle rejette du **dioxygène**. Les végétaux **respirent** aussi, jour et nuit.
+**Chaînes et réseaux alimentaires** : « est mangé par » (flèche) ; **producteurs** (végétaux), **consommateurs** (herbivores, carnivores), **décomposeurs** (vers de terre, champignons, bactéries) qui recyclent la matière.
+**Reproduction** : sexuée (fécondation d'une cellule reproductrice femelle par une cellule mâle) ; chez les plantes à fleurs : pollinisation → fécondation → fruit et graines ; reproduction asexuée (bouturage, stolons).
+:::
+
+## S.3 Le corps humain et la santé
+
+:::coeur
+**Digestion** : bouche → œsophage → estomac → **intestin grêle** (où les nutriments passent dans le **sang** : absorption) → gros intestin. Les aliments sont transformés en **nutriments** par la mastication et les sucs digestifs.
+**Respiration** : l'air entre par le nez/la bouche → trachée → bronches → **poumons** ; dans les **alvéoles**, le dioxygène passe dans le sang et le dioxyde de carbone en sort.
+**Circulation** : le **cœur** (muscle à 4 cavités) propulse le sang dans les **artères** ; il revient par les **veines** ; le sang apporte dioxygène et nutriments aux organes et emporte les déchets.
+**Mouvement** : **os**, **articulations**, **muscles** (reliés aux os par des tendons) ; un muscle qui se **contracte** raccourcit et tire sur l'os ; muscles **antagonistes** (biceps / triceps).
+**Santé** : alimentation équilibrée (groupes d'aliments), sommeil, activité physique ; **microbes** (bactéries, virus) ; hygiène, **vaccination** (prévention), **antibiotiques** (efficaces contre les **bactéries**, **pas** contre les virus).
+**Puberté** : transformations du corps ; appareils reproducteurs ; fécondation dans les trompes, développement de l'embryon puis du fœtus dans l'utérus (environ 9 mois).
+:::
+
+## S.4 La Terre et l'Univers
+
+:::coeur
+**Système solaire** : le **Soleil** (une étoile) et 8 planètes : Mercure, Vénus, **Terre**, Mars (rocheuses), Jupiter, Saturne, Uranus, Neptune (gazeuses). La **Lune** est le satellite naturel de la Terre.
+**Jour et nuit** : la Terre **tourne sur elle-même** en 24 h (rotation) : la moitié éclairée est dans le jour.
+**Année** : la Terre tourne **autour du Soleil** en environ 365 jours ¼ (révolution).
+**Saisons** : dues à l'**inclinaison de l'axe** de la Terre (environ 23°) qui garde une direction fixe : les rayons arrivent plus ou moins inclinés et les journées sont plus ou moins longues. **Ce n'est pas** la distance au Soleil (la Terre est même plus proche du Soleil en janvier !).
+**Phases de la Lune** : la Lune est toujours à moitié éclairée par le Soleil ; selon sa position, nous voyons une partie plus ou moins grande de sa face éclairée (cycle d'environ 29,5 jours).
+**Terre** : structure (croûte, manteau, noyau) ; **plaques** tectoniques qui se déplacent → **séismes** et **volcans** ; cycle de l'eau (évaporation, condensation, précipitations, ruissellement, infiltration).
+**Météo / climat** : la météo est le temps qu'il fait à un moment donné ; le climat est la moyenne sur au moins 30 ans. **Réchauffement climatique** lié à l'augmentation des gaz à effet de serre (dioxyde de carbone, méthane) émis par les activités humaines.
+:::
+
+@fig saisons:60 | L'axe de la Terre, incliné, garde la même direction : c'est l'origine des saisons.
+
+## S.5 La matière
+
+:::coeur
+**Trois états** : **solide** (forme propre), **liquide** (pas de forme propre, surface libre horizontale), **gazeux** (occupe tout l'espace disponible ; l'air est **pesant** et **compressible**).
+**Changements d'état** : solide → liquide : **fusion** ; liquide → solide : **solidification** ; liquide → gaz : **vaporisation** (évaporation, ébullition) ; gaz → liquide : **liquéfaction** (souvent appelée **condensation** à l'école) ; solide → gaz : **sublimation**.
+Pour l'eau pure (sous pression normale) : fusion à **0 °C**, ébullition à **100 °C** ; pendant le changement d'état, la **température reste constante** (palier).
+Lors d'un changement d'état, la **masse se conserve** mais le **volume change** (l'eau qui gèle augmente de volume : la bouteille éclate).
+**Mélanges** : homogène (on ne distingue plus les constituants : eau salée) ou hétérogène (eau + sable). **Dissolution** : le soluté (sel, sucre) se dissout dans le solvant (eau) ; la **masse totale se conserve** ; il existe une limite (saturation). Séparation : **décantation**, **filtration**, **évaporation**.
+**Masse volumique** : $\rho = \frac{m}{V}$ ; eau : $1 \text{ g/cm}^3 = 1 \text{ kg/L}$. Un objet flotte sur l'eau si sa masse volumique est inférieure à celle de l'eau.
+:::
+
+## S.6 L'énergie, l'électricité, la lumière, le mouvement
+
+:::coeur
+**Énergie** : formes (cinétique ou de mouvement, électrique, thermique, lumineuse, chimique, nucléaire) ; elle se **conserve** et se **convertit** (une lampe convertit l'énergie électrique en lumière et en chaleur). **Sources renouvelables** (soleil, vent, eau, biomasse, géothermie) et **non renouvelables** (pétrole, gaz, charbon, uranium).
+**Électricité** : un circuit doit être **fermé** pour qu'un courant circule ; **conducteurs** (métaux, graphite, eau salée) et **isolants** (plastique, verre, bois sec). Circuit **en série** (une seule boucle : si une lampe est dévissée, l'autre s'éteint) et **en dérivation** (plusieurs boucles). **Court-circuit** : dangereux (échauffement). Le courant du secteur (**230 V**) est **dangereux** : on travaille avec des piles à l'école.
+**Lumière** : se propage en **ligne droite** ; une **ombre** se forme derrière un objet opaque éclairé ; vitesse dans le vide ≈ 300 000 km/s.
+**Son** : produit par une **vibration** ; il se propage dans l'air (≈ 340 m/s), l'eau, les solides, mais **pas dans le vide**.
+**Mouvement** : trajectoire (rectiligne, circulaire), vitesse ; le **poids** d'un objet $P = m \times g$ ($g \approx 9{,}8$ N/kg sur Terre) : la masse (kg) ne dépend pas du lieu, le poids (N) oui.
+:::
+
+@fig circuit:40 | Circuit simple : l'interrupteur ouvert empêche le courant de circuler, la lampe est éteinte.
+
+## S.7 La technologie
+
+:::coeur
+**Objet technique** : répond à un **besoin** ; **fonction d'usage** (à quoi il sert) et **fonction d'estime** (ce qui plaît : forme, couleur). Il évolue dans le temps (lignée d'objets : de la lampe à huile à la LED).
+**Matériaux** : familles (métaux, matières plastiques, bois, verre, céramiques, composites) ; propriétés (rigidité, conductivité, masse, recyclabilité…) choisies selon l'usage.
+**Chaîne d'énergie** : alimenter → distribuer → convertir → transmettre. **Chaîne d'information** : acquérir (capteur) → traiter (programme) → communiquer.
+**Transmission de mouvement** : engrenages, poulies et courroie, pignons et chaîne (vélo) ; si la roue menante a 40 dents et la roue menée 20 dents, la roue menée tourne **2 fois plus vite**.
+**Informatique** : information codée en **binaire** (0 et 1) ; réseau, Internet ; programmation (Scratch).
+:::
+
+## S.8 Exercices
+
+@serie SA | Le vivant, le corps humain
+
+@exo 1
+Complète la chaîne alimentaire et nomme le rôle de chaque être vivant : feuille de salade → escargot → hérisson → renard.
+@sol
+Salade : **producteur** ; escargot : consommateur **herbivore** (primaire) ; hérisson : consommateur **carnivore** (secondaire) ; renard : consommateur (tertiaire). Les flèches signifient « est mangé par ».
+@end
+
+@exo 2
+Un élève dit : « La plante se nourrit de terre. » Quelle expérience historique (ou de classe) permet de montrer que c'est faux ? Que fabrique la plante et à partir de quoi ?
+@sol
+Expérience de **Van Helmont** (XVIIe siècle) : un saule planté dans un pot a pris environ 74 kg en 5 ans alors que la terre n'a perdu que quelques dizaines de grammes. En classe : faire pousser des plantes en **hydroponie** (sans terre). La plante fabrique sa matière organique par **photosynthèse**, à partir d'eau, de sels minéraux et de dioxyde de carbone, grâce à la lumière.
+@end
+
+@exo 2
+Classe ces animaux en utilisant les attributs : chat, pigeon, saumon, grenouille, chauve-souris, requin. (Attributs : squelette interne, 4 membres, poils, plumes.)
+@sol
+Tous ont un **squelette interne** (vertébrés). Parmi eux, ont **4 membres** : chat, pigeon, grenouille, chauve-souris (les ailes sont des membres). Parmi ceux-ci, ont des **poils** : chat, chauve-souris (mammifères) ; ont des **plumes** : pigeon. Saumon et requin n'ont pas 4 membres (nageoires).
+@end
+
+@exo 3
+Explique le trajet d'un morceau de pain dans le corps, de la bouche jusqu'aux muscles de la jambe.
+@sol
+Dans la **bouche**, il est mâché et mélangé à la salive ; il passe par l'**œsophage** puis l'**estomac** (brassage, sucs digestifs) ; dans l'**intestin grêle**, il est transformé en **nutriments** qui traversent la paroi et passent dans le **sang** ; le sang, propulsé par le **cœur**, apporte ces nutriments (et le dioxygène venu des poumons) aux **muscles** de la jambe, qui les utilisent pour produire de l'énergie.
+@end
+
+@exo 3
+Pourquoi ne prend-on pas d'antibiotiques contre la grippe ? Qu'est-ce qu'un vaccin ?
+@sol
+La grippe est due à un **virus** ; les antibiotiques agissent seulement contre les **bactéries** (et leur usage inutile favorise les résistances). Un **vaccin** contient un microbe rendu inoffensif (ou un fragment) qui « entraîne » le système immunitaire : l'organisme sera protégé en cas de contact avec le vrai microbe (prévention).
+@end
+
+@serie SB | Matière, énergie, Terre
+
+@exo 1
+Nomme les changements d'état : a) la glace fond ; b) la buée apparaît sur une vitre froide ; c) le linge sèche ; d) l'eau devient glaçon au congélateur.
+@sol
+a) fusion b) liquéfaction (condensation de la vapeur d'eau) c) vaporisation (évaporation) d) solidification.
+@end
+
+@exo 2
+On pèse une bouteille contenant 500 g d'eau, on la met au congélateur. Que dire de sa masse et de son volume quand l'eau est gelée ?
+@sol
+La **masse** ne change pas (500 g d'eau) : la matière se conserve. Le **volume** augmente (la glace occupe environ 10 % de volume en plus) : la bouteille se déforme, voire éclate.
+@end
+
+@exo 2
+On dissout 20 g de sel dans 200 g d'eau. Quelle est la masse de la solution ? Comment récupérer le sel ?
+@sol
+220 g (conservation de la masse). On récupère le sel par **évaporation** de l'eau (la filtration ne fonctionne pas pour un mélange homogène).
+@end
+
+@exo 3
+Un objet a une masse de 60 g et un volume de 75 cm³. Flotte-t-il sur l'eau ?
+@sol
+$\rho = \frac{60}{75} = 0{,}8$ g/cm³ < 1 g/cm³ : il **flotte**.
+@end
+
+@exo 3 | Idée reçue
+« En été, il fait chaud parce que la Terre est plus proche du Soleil. » Explique pourquoi c'est faux.
+@sol
+Les saisons sont dues à l'**inclinaison de l'axe** de rotation de la Terre (environ 23°), qui garde une direction fixe : en juin, l'hémisphère nord est incliné vers le Soleil (rayons plus verticaux, journées plus longues) → été. D'ailleurs, les saisons sont **inversées** dans l'hémisphère sud, et la Terre est au plus près du Soleil début **janvier**.
+@end
+
+@exo 2
+Pourquoi voit-on l'éclair avant d'entendre le tonnerre ? Si on entend le tonnerre 3 s après l'éclair, à quelle distance est l'orage ?
+@sol
+La lumière va beaucoup plus vite (≈ 300 000 km/s) que le son (≈ 340 m/s). Distance ≈ $340 \times 3 = 1\,020$ m, environ 1 km.
+@end
+
+@serie SC | Électricité, technologie, démarche
+
+@exo 2
+Dans un circuit en série avec deux lampes et une pile, on dévisse une lampe. Que se passe-t-il ? Et si les lampes sont en dérivation ?
+@sol
+En **série**, le circuit est ouvert : l'autre lampe **s'éteint**. En **dérivation**, l'autre lampe reste dans une boucle fermée : elle **reste allumée**.
+@end
+
+@exo 2
+Classe en conducteurs et isolants : fil de cuivre, règle en plastique, clé en fer, gomme, mine de crayon (graphite), verre, papier aluminium.
+@sol
+Conducteurs : cuivre, fer, graphite, aluminium. Isolants : plastique, gomme, verre.
+@end
+
+@exo 3
+Sur un vélo, le plateau a 48 dents et le pignon arrière 16 dents. Combien de tours fait la roue arrière pour un tour de pédalier ?
+@sol
+$\frac{48}{16} = 3$ tours.
+@end
+
+@exo 3 | Démarche d'investigation
+Des élèves veulent savoir si le sucre se dissout plus vite dans l'eau chaude. Propose un protocole.
+@sol
+Deux verres **identiques** avec le **même volume** d'eau, l'une chaude (ex. 50 °C) et l'autre froide (ex. 15 °C) ; même quantité et même sorte de sucre (1 morceau) ; même façon de mélanger (ou sans mélanger) ; on **chronomètre** la disparition du sucre. **Un seul paramètre varie : la température.** On répète l'expérience pour vérifier, puis on conclut.
+@end
+
+@exo 4 | Niveau concours
+Un élève affirme : « Les plantes ne respirent pas, elles font de la photosynthèse. » Explique l'erreur et propose une expérience ou un document pour la corriger.
+@sol
+Les plantes **respirent** (elles absorbent du dioxygène et rejettent du dioxyde de carbone) **jour et nuit**, comme tous les êtres vivants ; en plus, **à la lumière**, elles réalisent la photosynthèse (qui absorbe du CO₂ et rejette du O₂ en plus grande quantité, ce qui masque la respiration le jour). Expérience : dans un bocal fermé à l'**obscurité**, placer une plante et une bougie ou un indicateur (eau de chaux qui se trouble en présence de CO₂) : on constate la production de CO₂. Document : mesures de O₂ et CO₂ par capteurs (ExAO) à la lumière et à l'obscurité.
+@end
+
+@qcm
+Quel changement d'état correspond au passage de l'état gazeux à l'état liquide ?
+A) fusion
+B) vaporisation
+C) liquéfaction
+D) solidification
+@rep C | À l'école, on parle souvent de condensation.
+@end
+
+@qcm
+La cause des saisons est :
+A) la distance Terre-Soleil
+B) l'inclinaison de l'axe de la Terre
+C) la rotation de la Terre sur elle-même
+D) la Lune
+@rep B | La rotation explique le jour et la nuit, pas les saisons.
+@end
+
+@qcm
+Dans une expérience rigoureuse, on fait varier :
+A) tous les paramètres
+B) deux paramètres
+C) un seul paramètre à la fois
+D) aucun paramètre
+@rep C | Les autres paramètres restent identiques (témoin).
+@end
+
+@serie SD | Bilan S (30 minutes)
+
+@exo 3
+Cite les 8 planètes du système solaire dans l'ordre à partir du Soleil. Explique le jour et la nuit.
+@sol
+Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune (« **Me V**oici **T**oute **M**ignonne, **J**e **S**uis **U**ne **N**ébuleuse »). La Terre tourne sur elle-même en 24 h : la face tournée vers le Soleil est éclairée (jour), l'autre est dans l'ombre (nuit).
+@end
+
+@exo 3
+Donne la fonction d'usage d'une trottinette électrique, deux matériaux qui la composent (avec la raison de leur choix) et sa chaîne d'énergie.
+@sol
+Fonction d'usage : se déplacer. Matériaux : **aluminium** pour le cadre (léger et rigide), **caoutchouc** pour les pneus (adhérence, amortissement). Chaîne d'énergie : **alimenter** (batterie) → **distribuer** (contrôleur, gâchette) → **convertir** (moteur électrique : énergie électrique → mécanique) → **transmettre** (roue).
+@end
+
+@corriges

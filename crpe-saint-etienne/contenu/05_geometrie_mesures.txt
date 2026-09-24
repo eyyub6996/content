@@ -1,0 +1,415 @@
+%% Mathématiques : géométrie plane (M5), grandeurs et mesures, espace (M6)
+# M5 | Géométrie plane | Figures, angles, Pythagore, Thalès, trigonométrie, transformations
+
+:::objectifs
+- connaître le **vocabulaire** et les **propriétés** des figures usuelles (triangles, quadrilatères, cercle) ;
+- utiliser les **angles** (somme dans un triangle, angles et parallèles) ;
+- appliquer **Pythagore** (et sa réciproque), **Thalès** (et sa réciproque), la **trigonométrie** ;
+- reconnaître les **transformations** : symétries, translation, rotation, homothétie ;
+- **rédiger une démonstration** courte (données → propriété → conclusion).
+:::
+
+## M5.1 Vocabulaire et figures usuelles
+
+:::coeur Les quadrilatères
+**Parallélogramme** : côtés opposés parallèles (et de même longueur) ; diagonales qui se coupent en leur **milieu**.
+**Rectangle** : parallélogramme avec un angle droit ; diagonales de **même longueur**.
+**Losange** : parallélogramme avec deux côtés consécutifs égaux ; diagonales **perpendiculaires**.
+**Carré** : à la fois rectangle et losange.
+**Trapèze** : deux côtés parallèles (les bases).
+:::
+
+:::coeur Triangles et cercle
+Triangle **isocèle** (2 côtés égaux, 2 angles égaux) · **équilatéral** (3 côtés égaux, 3 angles de 60°) · **rectangle** (un angle droit).
+**Droites remarquables** : la **médiatrice** d'un segment est la droite perpendiculaire en son milieu ; tout point de la médiatrice est à égale distance des extrémités. Les trois médiatrices d'un triangle se coupent au centre du **cercle circonscrit**. Hauteur, médiane, bissectrice.
+**Cercle** : ensemble des points à la distance $r$ du centre. Périmètre $2\pi r$ ; aire $\pi r^2$. Si un triangle est inscrit dans un cercle avec un côté diamètre, il est **rectangle**.
+:::
+
+:::piege Le vocabulaire précis (le jury y est très attentif)
+**Segment** $[AB]$ (limité), **droite** $(AB)$ (illimitée), **demi-droite** $[AB)$, **longueur** $AB$ (un nombre). Un carré **est** un rectangle particulier (et un losange particulier) : la classification est **inclusive**.
+:::
+
+## M5.2 Les angles
+
+:::coeur
+Somme des angles d'un triangle : **180°**. D'un quadrilatère : **360°**.
+Angles **complémentaires** : somme 90° ; **supplémentaires** : somme 180°. Angles **opposés par le sommet** : égaux.
+Deux droites parallèles coupées par une sécante forment des angles **alternes-internes** égaux et des angles **correspondants** égaux ; réciproquement, si ces angles sont égaux, les droites sont parallèles.
+:::
+
+@fig angles:55 | Angles alternes-internes et correspondants.
+
+## M5.3 Le théorème de Pythagore
+
+:::coeur
+**Théorème** : si le triangle $ABC$ est **rectangle en $A$**, alors $BC^2 = AB^2 + AC^2$ ($BC$ est l'**hypoténuse**, le plus grand côté, en face de l'angle droit).
+**Réciproque** : si $BC^2 = AB^2 + AC^2$, alors le triangle est rectangle en $A$.
+**Contraposée** : si $BC^2 \neq AB^2 + AC^2$ (avec $BC$ le plus grand côté), le triangle **n'est pas** rectangle.
+:::
+
+@fig pythagore_crpe:40 | Le triangle 3 – 4 – 5 : le plus célèbre des triangles rectangles.
+
+:::methode Rédiger (modèle attendu)
+Dans le triangle $ABC$ rectangle en $A$, d'après le théorème de Pythagore : $BC^2 = AB^2 + AC^2 = 6^2 + 8^2 = 100$, donc $BC = \sqrt{100} = 10$ cm.
+:::
+
+@drill pythagore 8 51 2 | Pythagore
+
+## M5.4 Le théorème de Thalès
+
+:::coeur
+**Configuration** : deux droites sécantes en $A$, $M \in (AB)$, $N \in (AC)$. **Si $(MN) \parallel (BC)$**, alors $\frac{AM}{AB} = \frac{AN}{AC} = \frac{MN}{BC}$ (les longueurs sont **proportionnelles**).
+**Réciproque** : si $\frac{AM}{AB} = \frac{AN}{AC}$ et si les points sont alignés **dans le même ordre**, alors $(MN) \parallel (BC)$.
+Le triangle $AMN$ est une **réduction** (ou un agrandissement) du triangle $ABC$ de rapport $k = \frac{AM}{AB}$ : les longueurs sont multipliées par $k$, les **aires par $k^2$**, les **volumes par $k^3$**.
+:::
+
+@fig thales:55 | Configuration de Thalès (triangles emboîtés).
+
+## M5.5 La trigonométrie dans le triangle rectangle
+
+:::coeur
+Dans un triangle rectangle, pour un angle aigu $\alpha$ :
+$$\cos \alpha = \frac{\text{adjacent}}{\text{hypoténuse}} \qquad \sin \alpha = \frac{\text{opposé}}{\text{hypoténuse}} \qquad \tan \alpha = \frac{\text{opposé}}{\text{adjacent}}$$
+Moyen mnémotechnique : **SOH CAH TOA**. Calculatrice en **degrés**.
+:::
+
+@fig trigo:45 | Côtés adjacent, opposé et hypoténuse par rapport à l'angle α.
+
+## M5.6 Les transformations
+
+:::coeur
+**Symétrie axiale** : « pliage » le long d'un axe ; l'axe est la médiatrice de $[MM']$.
+**Symétrie centrale** (de centre $O$) : $O$ est le milieu de $[MM']$ ; c'est un demi-tour.
+**Translation** : glissement selon une direction, un sens et une longueur (un vecteur).
+**Rotation** : on tourne autour d'un centre, d'un angle, dans un sens.
+**Homothétie** (cycle 4) : agrandissement / réduction de rapport $k$ depuis un centre.
+Symétries, translations, rotations **conservent** les longueurs, les angles, les aires (ce sont des « isométries ») ; l'homothétie multiplie les longueurs par $|k|$.
+:::
+
+@fig symetrie:38 | Symétrie axiale : l'axe est la médiatrice de chaque segment [MM'].
+
+@fig transfos:95 | Translation, rotation, homothétie.
+
+## M5.7 Exercices
+
+@serie M5A | Figures et angles
+
+@exo 1
+Dans un triangle $ABC$, $\widehat{A} = 48°$ et $\widehat{B} = 67°$. Calcule $\widehat{C}$. Le triangle est-il particulier ?
+@sol
+$\widehat{C} = 180 - 48 - 67 = 65°$. Les trois angles sont différents : le triangle n'est ni isocèle ni rectangle.
+@end
+
+@exo 2
+Un triangle isocèle a un angle au sommet principal de 40°. Calcule les angles à la base. Même question si c'est un angle **à la base** qui mesure 40°.
+@sol
+1) $(180 - 40) \div 2 = 70°$ chacun. 2) Les deux angles à la base mesurent 40°, l'angle au sommet $180 - 80 = 100°$.
+@end
+
+@exo 2
+Vrai ou faux ? Justifie. a) Un carré est un losange. b) Un rectangle est un carré. c) Un quadrilatère dont les diagonales sont perpendiculaires est un losange. d) Un parallélogramme qui a un angle droit est un rectangle.
+@sol
+a) Vrai (4 côtés égaux). b) Faux en général (côtés consécutifs pas forcément égaux). c) Faux : il faut aussi que les diagonales se coupent en leur milieu (contre-exemple : cerf-volant). d) Vrai (propriété caractéristique).
+@end
+
+@exo 3
+Deux droites parallèles $(d)$ et $(d')$ sont coupées par une sécante. Un angle aigu mesure 55°. Donne la mesure de tous les angles formés.
+@sol
+Aux deux intersections : 4 angles de 55° (opposés par le sommet, alternes-internes, correspondants) et 4 angles de $180 - 55 = 125°$ (supplémentaires).
+@end
+
+@serie M5B | Pythagore et Thalès
+
+@exo 2
+$EFG$ est rectangle en $E$, $EF = 5$ cm, $EG = 12$ cm. Calcule $FG$.
+@sol
+D'après le théorème de Pythagore : $FG^2 = 5^2 + 12^2 = 169$, donc $FG = 13$ cm.
+@check same("sqrt(5**2+12**2)", 13)
+@end
+
+@exo 2
+Le triangle de côtés 7 cm, 9 cm et 12 cm est-il rectangle ?
+@sol
+Plus grand côté 12 : $12^2 = 144$ ; $7^2 + 9^2 = 49 + 81 = 130$. $144 \neq 130$ : d'après la contraposée du théorème de Pythagore, le triangle **n'est pas rectangle**.
+@end
+
+@exo 3 | Problème
+Une échelle de 5 m est appuyée contre un mur vertical. Son pied est à 1,4 m du mur. À quelle hauteur touche-t-elle le mur ?
+@sol
+Triangle rectangle (mur ⟂ sol) d'hypoténuse 5 m : $h^2 = 5^2 - 1{,}4^2 = 25 - 1{,}96 = 23{,}04$ → $h = 4{,}8$ m.
+@check same("sqrt(25-Rational(196,100))", "Rational(48,10)")
+@end
+
+@exo 3 | Thalès
+Dans la figure de Thalès (section M5.4), $AM = 3$ cm, $AB = 7{,}5$ cm, $AN = 2{,}4$ cm, $BC = 10$ cm, $(MN) \parallel (BC)$. Calcule $AC$ et $MN$.
+@sol
+$\frac{AM}{AB} = \frac{3}{7{,}5} = 0{,}4$. $AC = AN \div 0{,}4 = 6$ cm ; $MN = 0{,}4 \times BC = 4$ cm.
+@end
+
+@exo 3 | Réciproque de Thalès
+$A$, $M$, $B$ alignés et $A$, $N$, $C$ alignés dans le même ordre ; $AM = 4$, $AB = 10$, $AN = 6$, $AC = 15$. Les droites $(MN)$ et $(BC)$ sont-elles parallèles ?
+@sol
+$\frac{AM}{AB} = \frac{4}{10} = 0{,}4$ et $\frac{AN}{AC} = \frac{6}{15} = 0{,}4$. Les rapports sont égaux et les points dans le même ordre : d'après la réciproque du théorème de Thalès, $(MN) \parallel (BC)$.
+@end
+
+@exo 4 | Niveau concours : hauteur d'un arbre
+Un bâton vertical de 1,5 m projette une ombre de 2 m. Au même moment, l'ombre d'un arbre mesure 14 m. Quelle est la hauteur de l'arbre ?
+@sol
+Les rayons du soleil sont parallèles : on a une configuration de Thalès (ou des triangles semblables). $\frac{h}{1{,}5} = \frac{14}{2} = 7$ → $h = 10{,}5$ m.
+@end
+
+@serie M5C | Trigonométrie et transformations
+
+@exo 3
+$ABC$ rectangle en $B$, $AB = 8$ cm, $\widehat{BAC} = 35°$. Calcule $BC$ et $AC$ (au mm près).
+@sol
+$\tan 35° = \frac{BC}{AB}$ → $BC = 8 \tan 35° \approx 5{,}6$ cm. $\cos 35° = \frac{AB}{AC}$ → $AC = \frac{8}{\cos 35°} \approx 9{,}8$ cm.
+@check approx(8*tan(35*pi/180), 5.6017, 0.001)
+@check approx(8/cos(35*pi/180), 9.766, 0.001)
+@end
+
+@exo 3
+Une rampe d'accès de 6 m de long monte de 0,5 m. Calcule l'angle qu'elle fait avec le sol (au degré près).
+@sol
+La rampe est l'hypoténuse, la hauteur le côté opposé : $\sin \alpha = \frac{0{,}5}{6}$ → $\alpha \approx 4{,}8°$, soit environ **5°**.
+@check approx(asin(Rational(1,12))*180/pi, 4.78, 0.01)
+@end
+
+@exo 2
+Quelle transformation fait passer : a) d'un motif à son image dans un miroir ? b) d'une case à la case voisine sur une frise ? c) d'une aiguille de montre à 3 h à la même aiguille à 6 h ?
+@sol
+a) symétrie axiale. b) translation. c) rotation de centre le centre du cadran, d'angle 90° dans le sens des aiguilles d'une montre.
+@end
+
+@exo 3
+Un triangle d'aire 12 cm² est agrandi par une homothétie de rapport 3. Quelle est l'aire de l'image ? Si un solide de 5 cm³ est agrandi de rapport 2, quel est son volume ?
+@sol
+Aire × $3^2 = 9$ : $108$ cm². Volume × $2^3 = 8$ : $40$ cm³.
+@end
+
+@qcm
+Un triangle a des côtés de 5, 12 et 13 cm. Il est :
+A) équilatéral
+B) rectangle
+C) isocèle
+D) quelconque non rectangle
+@rep B | $13^2 = 169 = 25 + 144$.
+@end
+
+@qcm
+Dans un triangle rectangle, $\cos \alpha$ est égal à :
+A) opposé / hypoténuse
+B) adjacent / hypoténuse
+C) opposé / adjacent
+D) hypoténuse / adjacent
+@rep B | CAH : Cosinus = Adjacent / Hypoténuse.
+@end
+
+@serie M5D | Bilan M5 (30 minutes)
+
+@exo 3
+Un terrain rectangulaire mesure 40 m sur 30 m. Un chemin va en ligne droite d'un coin au coin opposé. Quelle est sa longueur ? Quel angle fait-il avec le grand côté (au degré près) ?
+@sol
+Diagonale : $\sqrt{40^2 + 30^2} = \sqrt{2\,500} = 50$ m. $\tan \alpha = \frac{30}{40} = 0{,}75$ → $\alpha \approx 37°$.
+@check approx(atan(Rational(3,4))*180/pi, 36.87, 0.01)
+@end
+
+@exo 3
+Sur une photo, un enfant de 1,20 m mesure 4 cm et un immeuble mesure 30 cm (même distance). Estime la hauteur de l'immeuble.
+@sol
+Échelle de la photo : $\frac{4}{120} = \frac{1}{30}$. Immeuble : $30 \times 30 = 900$ cm $= 9$ m.
+@end
+
+@corriges
+
+# M6 | Grandeurs, mesures, espace | Longueurs, aires, volumes, durées, solides
+
+:::objectifs
+- **convertir** longueurs, masses, contenances, aires, volumes, durées ;
+- distinguer **périmètre** et **aire** ;
+- calculer **aires** et **volumes** des figures et solides usuels ;
+- connaître les **solides** (faces, arêtes, sommets, patrons).
+:::
+
+## M6.1 Les conversions
+
+:::coeur
+**Longueurs** : km, hm, dam, **m**, dm, cm, mm (× 10 à chaque rang). **Masses** : kg, hg, dag, **g**, dg, cg, mg ; 1 t = 1 000 kg. **Contenances** : hL, daL, **L**, dL, cL, mL.
+**Aires** : m² ; chaque rang × **100** : 1 m² = 100 dm² = 10 000 cm². 1 ha = 10 000 m² ; 1 a = 100 m².
+**Volumes** : m³ ; chaque rang × **1 000** : 1 m³ = 1 000 dm³.
+**Lien essentiel** : $1 \text{ dm}^3 = 1 \text{ L}$ ; $1 \text{ cm}^3 = 1 \text{ mL}$ ; $1 \text{ m}^3 = 1\,000 \text{ L}$.
+:::
+
+| Pour passer de… | à… | on multiplie par |
+| m | cm | 100 |
+| m² | dm² | 100 |
+| m² | cm² | 10 000 |
+| ha | m² | 10 000 |
+| m³ | dm³ (= L) | 1 000 |
+| dm³ | cm³ (= mL) | 1 000 |
+
+:::piege
+$1 \text{ m}^2 \neq 100 \text{ cm}^2$ ! Un carré de 1 m de côté = 100 cm × 100 cm = **10 000 cm²**.
+:::
+
+@drill conversions 12 61 3 | Conversions
+
+## M6.2 Les durées
+
+:::coeur
+1 h = 60 min ; 1 min = 60 s ; 1 j = 24 h. La numération des durées est **sexagésimale** (base 60) : on ne peut pas poser les calculs comme avec les décimaux.
+2 h 45 min + 1 h 30 min = 3 h 75 min = **4 h 15 min**. Durée entre 8 h 50 et 11 h 20 : 8 h 50 → 9 h (10 min) → 11 h (2 h) → 11 h 20 (20 min) = **2 h 30 min**.
+:::
+
+@drill durees 10 62 2 | Durées et horaires
+
+## M6.3 Périmètres et aires
+
+:::coeur
+
+| Figure | Périmètre | Aire |
+| carré de côté $c$ | $4c$ | $c^2$ |
+| rectangle $L \times \ell$ | $2(L + \ell)$ | $L \times \ell$ |
+| triangle (base $b$, hauteur $h$) | somme des côtés | $\frac{b \times h}{2}$ |
+| parallélogramme | somme des côtés | $b \times h$ |
+| trapèze (bases $B$, $b$) | somme des côtés | $\frac{(B + b) \times h}{2}$ |
+| disque de rayon $r$ | $2\pi r$ | $\pi r^2$ |
+
+:::
+
+:::piege Périmètre et aire ne varient pas ensemble
+Deux figures peuvent avoir la même aire et des périmètres différents (rectangle 1 × 16 et carré 4 × 4 : aire 16, périmètres 34 et 16). C'est une erreur fréquente chez les élèves… et un sujet classique d'oral.
+:::
+
+@drill aires 8 63 2 | Aires
+
+## M6.4 Solides et volumes
+
+:::coeur
+
+| Solide | Faces / arêtes / sommets | Volume |
+| cube d'arête $a$ | 6 / 12 / 8 | $a^3$ |
+| pavé droit | 6 / 12 / 8 | $L \times \ell \times h$ |
+| prisme droit | — | aire de la base × hauteur |
+| cylindre | — | $\pi r^2 h$ |
+| pyramide, cône | — | $\frac{1}{3}$ × aire de la base × hauteur |
+| boule | — | $\frac{4}{3}\pi r^3$ |
+
+Relation d'**Euler** (polyèdres convexes) : $F + S - A = 2$ (cube : $6 + 8 - 12 = 2$).
+:::
+
+@fig solides:100 | Les principaux solides et leurs volumes.
+
+@fig patron:35 | Un des 11 patrons du cube.
+
+@drill volumes 8 64 2 | Volumes
+
+## M6.5 Exercices
+
+@serie M6A | Conversions et durées
+
+@exo 1
+Convertis : 3,5 km en m ; 450 g en kg ; 2,4 L en cL ; 75 mm en dm.
+@sol
+3 500 m ; 0,45 kg ; 240 cL ; 0,75 dm.
+@end
+
+@exo 2
+Convertis : 3,2 m² en cm² ; 45 000 m² en ha ; 1,5 m³ en L ; 250 cm³ en L.
+@sol
+32 000 cm² ; 4,5 ha ; 1 500 L ; 0,25 L.
+@end
+
+@exo 2
+Un film commence à 20 h 45 et dure 2 h 25 min. À quelle heure finit-il ? Convertis 2 h 25 min en minutes, puis en heures décimales (arrondi au centième).
+@sol
+Fin : 23 h 10. 2 h 25 min = 145 min ≈ 2,42 h ($145 \div 60$).
+@end
+
+@exo 3 | Regard d'enseignant
+Un élève calcule la durée entre 9 h 40 et 11 h 15 en posant $11{,}15 - 9{,}40 = 1{,}75$ et répond « 1 h 75 min ». Explique son erreur et donne la bonne réponse.
+@sol
+Il traite les durées comme des **nombres décimaux** (base 10) alors qu'une heure compte **60** minutes. Bonne réponse : de 9 h 40 à 10 h (20 min), puis à 11 h 15 (1 h 15 min) : **1 h 35 min**.
+@end
+
+@serie M6B | Périmètres et aires
+
+@exo 2
+Calcule l'aire et le périmètre d'un rectangle de 12,5 m sur 8 m, puis d'un disque de diamètre 10 cm (valeur exacte et arrondi).
+@sol
+Rectangle : aire 100 m² ; périmètre 41 m. Disque ($r = 5$) : aire $25\pi \approx 78{,}5$ cm² ; périmètre $10\pi \approx 31{,}4$ cm.
+@end
+
+@exo 3
+Un jardin a la forme d'un trapèze de bases 18 m et 12 m, de hauteur 10 m. On le sème avec du gazon : 1 kg pour 25 m². Combien de kg faut-il ?
+@sol
+Aire $= \frac{(18 + 12) \times 10}{2} = 150$ m². Gazon : $150 \div 25 = 6$ kg.
+@end
+
+@exo 3 | Figure composée
+Une fenêtre est formée d'un rectangle de 1,2 m de large et 1,5 m de haut, surmonté d'un demi-disque de diamètre 1,2 m. Calcule son aire (au centième).
+@sol
+Rectangle : $1{,}8$ m². Demi-disque ($r = 0{,}6$) : $\frac{\pi \times 0{,}36}{2} \approx 0{,}57$ m². Total $\approx 2{,}37$ m².
+@check approx(Rational(18,10)+pi*Rational(36,100)/2, 2.365, 0.001)
+@end
+
+@serie M6C | Volumes et solides
+
+@exo 2
+Un aquarium (pavé droit) mesure 60 cm × 30 cm × 40 cm. Quel est son volume en L ? On le remplit aux $\frac{3}{4}$ : combien de litres ?
+@sol
+$60 \times 30 \times 40 = 72\,000$ cm³ $= 72$ L. Aux trois quarts : $54$ L.
+@end
+
+@exo 3
+Une canette cylindrique a un diamètre de 6,6 cm et une hauteur de 11,5 cm. Peut-elle contenir 33 cL ?
+@sol
+$V = \pi \times 3{,}3^2 \times 11{,}5 \approx 393$ cm³ $\approx 39{,}3$ cL > 33 cL : **oui**.
+@check approx(pi*Rational(33,10)**2*Rational(115,10), 393.4, 0.1)
+@end
+
+@exo 3
+Un cône de glace a un rayon de 3 cm et une hauteur de 10 cm. Calcule son volume (au cm³ près). Combien de cônes peut-on remplir avec 2 L de glace ?
+@sol
+$V = \frac{1}{3} \pi \times 9 \times 10 = 30\pi \approx 94$ cm³. 2 L $= 2\,000$ cm³ ; $2\,000 \div 94{,}2 \approx 21{,}2$ → **21 cônes**.
+@end
+
+@exo 2
+Complète : un prisme droit à base triangulaire a … faces, … arêtes, … sommets. Vérifie la relation d'Euler.
+@sol
+5 faces (2 triangles + 3 rectangles), 9 arêtes, 6 sommets. $5 + 6 - 9 = 2$ ✔.
+@end
+
+@exo 4 | Niveau concours
+Une piscine rectangulaire de 10 m sur 4 m a une profondeur qui passe régulièrement de 1 m à 2 m (fond incliné). Calcule son volume en m³ puis en L. Avec un débit de 15 m³/h, combien de temps faut-il pour la remplir ?
+@sol
+C'est un prisme droit dont la base est un trapèze (bases 1 m et 2 m, hauteur 10 m) et la « hauteur » du prisme est 4 m : aire du trapèze $\frac{(1 + 2) \times 10}{2} = 15$ m² ; $V = 15 \times 4 = 60$ m³ $= 60\,000$ L. Durée : $60 \div 15 = 4$ h.
+@end
+
+@qcm
+$2{,}5 \text{ m}^3$ correspondent à :
+A) 25 L
+B) 250 L
+C) 2 500 L
+D) 25 000 L
+@rep C | 1 m³ = 1 000 L.
+@end
+
+@qcm
+Si on double le rayon d'une boule, son volume est multiplié par :
+A) 2
+B) 4
+C) 6
+D) 8
+@rep D | Rapport $2^3 = 8$.
+@end
+
+@serie M6D | Bilan M6 (30 minutes)
+
+@exo 3
+Une salle de classe mesure 8 m × 7 m × 3 m. a) Quel est son volume ? b) On recommande au moins 5 m³ d'air par personne : combien de personnes au maximum ? c) On repeint les 4 murs (on déduit 12 m² d'ouvertures) : quelle surface ?
+@sol
+a) $168$ m³. b) $168 \div 5 = 33{,}6$ → **33 personnes**. c) Murs : $2 \times (8 + 7) \times 3 = 90$ m² ; $90 - 12 = 78$ m².
+@end
+
+@corriges

@@ -1,0 +1,222 @@
+%% Mathématiques : données et probabilités (M7), algorithmique et tableur (M8)
+# M7 | Statistiques et probabilités | Lire, organiser et interpréter des données ; le hasard
+
+:::objectifs
+- lire et construire **tableaux** et **diagrammes** ;
+- calculer **moyenne** (simple et pondérée), **médiane**, **étendue**, **fréquences** ;
+- calculer des **probabilités** en situation d'équiprobabilité, avec **arbres** et **tableaux** à double entrée.
+:::
+
+## M7.1 Statistiques
+
+:::coeur
+**Effectif** : nombre de fois qu'une valeur apparaît. **Fréquence** : $\frac{\text{effectif}}{\text{effectif total}}$ (souvent en %).
+**Moyenne** : $\frac{\text{somme des valeurs}}{\text{nombre de valeurs}}$. **Moyenne pondérée** : $\frac{\sum \text{valeur} \times \text{effectif (ou coefficient)}}{\sum \text{effectifs (ou coefficients)}}$.
+**Médiane** : valeur qui partage la série **rangée** en deux groupes de même effectif. $N$ impair : la valeur du milieu (rang $\frac{N + 1}{2}$) ; $N$ pair : moyenne des deux valeurs centrales.
+**Étendue** : plus grande valeur − plus petite valeur (mesure de **dispersion**).
+:::
+
+:::piege
+Oublier de **ranger** la série avant de chercher la médiane. Faire la moyenne des moyennes de deux groupes d'effectifs différents (il faut **pondérer**).
+:::
+
+@fig diagramme:50 | Diagramme en bâtons des notes d'une classe.
+
+:::exemple Lire le diagramme ci-dessus
+Effectif total : $2 + 3 + 5 + 6 + 4 + 3 + 1 = 24$. Moyenne : $\frac{8 \times 2 + 9 \times 3 + 10 \times 5 + 11 \times 6 + 12 \times 4 + 13 \times 3 + 14 \times 1}{24} = \frac{260}{24} \approx 10{,}8$. Médiane : moyenne des 12e et 13e valeurs, toutes deux égales à 11 → **11**. Étendue : $14 - 8 = 6$.
+:::
+
+@drill stats 6 71 2 | Moyenne, médiane, étendue
+
+## M7.2 Probabilités
+
+:::coeur
+Une **expérience aléatoire** a plusieurs **issues** possibles. Un **événement** est un ensemble d'issues.
+Si les issues sont **équiprobables** : $P(A) = \frac{\text{nombre d'issues favorables}}{\text{nombre d'issues possibles}}$.
+$0 \leq P(A) \leq 1$ ; événement certain : 1 ; impossible : 0. **Événement contraire** : $P(\bar A) = 1 - P(A)$.
+**Deux épreuves** : arbre ou tableau à double entrée ; sur un chemin de l'arbre, on **multiplie** les probabilités.
+**Fréquence et probabilité** : quand on répète l'expérience un grand nombre de fois, la fréquence observée **se rapproche** de la probabilité (loi des grands nombres).
+:::
+
+:::exemple Deux dés
+On lance deux dés et on fait la somme : 36 issues équiprobables (tableau 6 × 6). Somme 7 : (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) → $P = \frac{6}{36} = \frac{1}{6}$. Somme 2 : seulement (1,1) → $\frac{1}{36}$. Les sommes **ne sont pas** équiprobables.
+:::
+
+@drill proba 8 72 2 | Probabilités simples
+
+## M7.3 Exercices
+
+@serie M7A | Statistiques
+
+@exo 1
+Notes : 12 ; 8 ; 15 ; 11 ; 9 ; 14 ; 11. Calcule moyenne, médiane, étendue.
+@sol
+Somme 80, moyenne $\frac{80}{7} \approx 11{,}4$. Rangée : 8 ; 9 ; 11 ; **11** ; 12 ; 14 ; 15 → médiane 11. Étendue $15 - 8 = 7$.
+@end
+
+@exo 2
+Dans une classe, les 12 filles ont une moyenne de 13 et les 16 garçons une moyenne de 11,6. Quelle est la moyenne de la classe ?
+@sol
+$\frac{12 \times 13 + 16 \times 11{,}6}{28} = \frac{156 + 185{,}6}{28} = \frac{341{,}6}{28} = 12{,}2$ (et non $\frac{13 + 11{,}6}{2} = 12{,}3$).
+@check same("(12*13+16*Rational(116,10))/28", "Rational(122,10)")
+@end
+
+@exo 3
+Un élève a 11, 14 et 9 à trois contrôles de coefficients 2, 3 et 1. Quelle est sa moyenne ? Quelle note lui faudrait-il à un 4e contrôle de coefficient 2 pour avoir 12 de moyenne ?
+@sol
+$\frac{22 + 42 + 9}{6} = \frac{73}{6} \approx 12{,}17$. Il faut $\frac{73 + 2n}{8} = 12$ → $2n = 23$ → $n = 11{,}5$.
+@check sols("(73+2*x)/8-12", ["23/2"])
+@end
+
+@exo 2
+Tableau des tailles (cm) de 20 élèves : 130 (3), 135 (5), 140 (7), 145 (4), 150 (1). Calcule la fréquence de 140 cm et la médiane.
+@sol
+Fréquence : $\frac{7}{20} = 35\,\%$. $N = 20$ : médiane = moyenne des 10e et 11e valeurs. Effectifs cumulés : 3, 8, 15 → 10e et 11e valeurs = 140 → médiane **140 cm**.
+@end
+
+@serie M7B | Probabilités
+
+@exo 1
+On tire une carte au hasard dans un jeu de 32 cartes. Probabilité de tirer : a) un cœur ; b) un as ; c) l'as de cœur ; d) une figure (valet, dame, roi).
+@sol
+a) $\frac{8}{32} = \frac{1}{4}$ b) $\frac{4}{32} = \frac{1}{8}$ c) $\frac{1}{32}$ d) $\frac{12}{32} = \frac{3}{8}$.
+@end
+
+@exo 2
+Un sac contient 5 boules rouges, 3 vertes et 2 bleues. On tire une boule. a) $P$(rouge) ? b) $P$(pas verte) ? c) Combien de boules vertes faut-il ajouter pour que $P$(verte) = $\frac{1}{2}$ ?
+@sol
+a) $\frac{5}{10} = \frac{1}{2}$. b) $1 - \frac{3}{10} = \frac{7}{10}$. c) $\frac{3 + n}{10 + n} = \frac{1}{2}$ → $6 + 2n = 10 + n$ → $n = 4$.
+@check sols("(3+x)/(10+x)-Rational(1,2)", [4])
+@end
+
+@exo 3
+On lance deux fois une pièce équilibrée. Fais un arbre. Probabilité d'obtenir : a) deux fois pile ; b) au moins une fois face.
+@sol
+4 issues équiprobables : PP, PF, FP, FF. a) $\frac{1}{4}$ (ou $\frac{1}{2} \times \frac{1}{2}$). b) contraire de PP : $1 - \frac{1}{4} = \frac{3}{4}$.
+@end
+
+@exo 4 | Niveau concours
+Une urne contient 3 jetons numérotés 1, 2, 3. On tire un jeton, on le **remet**, on en tire un second. On forme un nombre à deux chiffres (1er chiffre = 1er tirage). Quelle est la probabilité que ce nombre soit pair ? Supérieur à 20 ?
+@sol
+9 issues : 11, 12, 13, 21, 22, 23, 31, 32, 33. Pair : 12, 22, 32 → $\frac{3}{9} = \frac{1}{3}$. Supérieur à 20 : 21, 22, 23, 31, 32, 33 → $\frac{6}{9} = \frac{2}{3}$.
+@end
+
+@qcm
+La médiane de 3 ; 7 ; 8 ; 12 ; 15 ; 20 est :
+A) 8
+B) 10
+C) 12
+D) 10,8
+@rep B | $N = 6$ : moyenne des 3e et 4e valeurs : $\frac{8 + 12}{2} = 10$.
+@end
+
+@qcm
+On lance un dé équilibré 600 fois. On s'attend à obtenir le 6 environ :
+A) 6 fois
+B) 60 fois
+C) 100 fois
+D) 600 fois
+@rep C | $600 \times \frac{1}{6} = 100$ (fréquence proche de la probabilité).
+@end
+
+@serie M7C | Bilan M7 (20 minutes)
+
+@exo 3
+Températures d'une semaine : 4 ; −2 ; 0 ; 3 ; 6 ; −1 ; 4. Calcule moyenne, médiane, étendue. On tire un jour au hasard : probabilité qu'il ait gelé (température < 0) ?
+@sol
+Somme 14, moyenne **2 °C**. Rangée : −2 ; −1 ; 0 ; **3** ; 4 ; 4 ; 6 → médiane 3. Étendue $6 - (-2) = 8$. $P = \frac{2}{7}$.
+@end
+
+@corriges
+
+# M8 | Algorithmique et tableur | Scratch, programmes de calcul, formules de tableur
+
+:::objectifs
+- lire et exécuter un **algorithme** (Scratch ou langage naturel) ;
+- comprendre **variables**, **boucles** (répéter), **conditions** (si… alors… sinon) ;
+- lire et écrire une **formule de tableur**.
+:::
+
+## M8.1 Algorithmes et Scratch
+
+:::idee
+Un **algorithme** est une suite finie d'instructions pour résoudre un problème (une recette de cuisine en est un). **Scratch** (utilisé au cycle 3 et au collège) assemble des blocs.
+Les briques de base : **variable** (une « boîte » qui contient une valeur), **boucle** (« répéter 4 fois »), **test** (« si … alors … sinon »), **entrée / sortie** (« demander », « dire »).
+:::
+
+:::exemple Un programme Scratch (écrit en texte)
+**quand le drapeau est cliqué** / **stylo en position d'écriture** / **répéter 4 fois** : [ **avancer de 50** ; **tourner de 90 degrés** ].
+Le lutin trace un **carré** de 50 pas de côté. Pour un triangle équilatéral : répéter **3** fois, tourner de **120°** (angle extérieur $= \frac{360}{3}$). Pour un hexagone : 6 fois, 60°.
+:::
+
+:::coeur
+Pour tracer un **polygone régulier** à $n$ côtés : répéter $n$ fois [avancer ; tourner de $\frac{360°}{n}$].
+Un piège classique : tourner de **60°** pour un triangle équilatéral trace… un hexagone ! L'angle de rotation est l'angle **extérieur**, pas l'angle intérieur.
+:::
+
+## M8.2 Le tableur
+
+:::coeur
+Une cellule est repérée par sa **colonne** et sa **ligne** (B3). Une formule commence par **=** : `=B2*3+1`, `=SOMME(A1:A10)`, `=MOYENNE(B2:B20)`.
+**Recopier une formule vers le bas** : les références **relatives** s'adaptent (`=A2*2` devient `=A3*2`). Pour bloquer une cellule : référence **absolue** `$B$1`.
+:::
+
+## M8.3 Exercices
+
+@serie M8A | Algorithmes et tableur
+
+@exo 1
+Programme : « Choisir un nombre ; le multiplier par 4 ; ajouter 6 ; diviser par 2 ; soustraire le double du nombre de départ. » Teste avec 3, 10, −5. Conjecture puis démontre.
+@sol
+Avec 3 : 12 ; 18 ; 9 ; $9 - 6 = 3$. Avec 10 : 40 ; 46 ; 23 ; $23 - 20 = 3$. Avec −5 : −20 ; −14 ; −7 ; $-7 + 10 = 3$. Conjecture : le résultat est toujours **3**. Preuve : $\frac{4x + 6}{2} - 2x = 2x + 3 - 2x = 3$.
+@check same("(4*x+6)/2-2*x", 3)
+@end
+
+@exo 2
+Quelle figure trace : « répéter 5 fois [avancer de 60 ; tourner de 72 degrés] » ? Écris le programme d'un octogone régulier de côté 40.
+@sol
+Un **pentagone régulier** de côté 60 ($72 = 360 \div 5$). Octogone : répéter 8 fois [avancer de 40 ; tourner de 45 degrés].
+@end
+
+@exo 3
+Voici un algorithme : « $a$ prend la valeur 1 ; répéter 5 fois : $a$ prend la valeur $2 \times a + 1$ ; afficher $a$ ». Que s'affiche-t-il ?
+@sol
+$a$ : 1 → 3 → 7 → 15 → 31 → **63**.
+@end
+
+@exo 2 | Tableur
+Dans un tableur, A1 contient 5, A2 contient `=A1*2-3`, et on recopie cette formule jusqu'en A5. Quelles valeurs s'affichent de A1 à A5 ?
+@sol
+A1 = 5 ; A2 = 7 ; A3 = 11 ; A4 = 19 ; A5 = 35.
+@end
+
+@exo 3 | Tableur
+Un tableau donne des prix hors taxes en B2:B10 ; le taux de TVA (20 %) est en E1. Quelle formule écrire en C2 pour obtenir le prix TTC, recopiable vers le bas ?
+@sol
+`=B2*(1+$E$1)` (si E1 contient 0,2 ou 20 %). Le `$` bloque la référence à E1 pendant la recopie.
+@end
+
+@exo 3 | Condition
+« Demander l'âge ; si âge < 12 alors dire "tarif enfant : 5 €" sinon dire "tarif adulte : 9 €" ». Qu'affiche le programme pour 12 ? Modifie-le pour ajouter un tarif senior (7 €) à partir de 65 ans.
+@sol
+Pour 12 : 12 < 12 est faux → « tarif adulte : 9 € ». Modification : si âge < 12 alors 5 € ; sinon si âge ≥ 65 alors 7 € ; sinon 9 €.
+@end
+
+@qcm
+Pour tracer un triangle équilatéral dans Scratch, on répète 3 fois « avancer de 100, tourner de » :
+A) 60°
+B) 90°
+C) 120°
+D) 180°
+@rep C | Angle extérieur : $360 \div 3 = 120°$.
+@end
+
+@serie M8B | Bilan M8 (15 minutes)
+
+@exo 3
+En C2, on écrit `=SOMME(A2:B2)/2` puis on recopie en C3. Quelle formule contient C3 ? Que calcule-t-elle ?
+@sol
+`=SOMME(A3:B3)/2` : la moyenne des deux valeurs de la ligne 3.
+@end
+
+@corriges

@@ -1,0 +1,210 @@
+%% Annexes
+# Z | Annexes | Formulaire, fiches mémo, sigles, cartes mémoire, checklists, sources
+
+## Z.1 Formulaire de mathématiques
+
+| Notion | Formule / règle |
+| Pourcentage | $t\,\%$ de $A$ : $A \times \frac{t}{100}$ ; hausse de $t\,\%$ : $\times \left(1 + \frac{t}{100}\right)$ ; baisse : $\times \left(1 - \frac{t}{100}\right)$ |
+| Évolution | taux $= \frac{V_{\text{arrivée}} - V_{\text{départ}}}{V_{\text{départ}}}$ ; évolutions successives : on multiplie les coefficients |
+| Vitesse | $v = \frac{d}{t}$ ; $d = v \times t$ ; $t = \frac{d}{v}$ ; 1 m/s = 3,6 km/h |
+| Échelle | distance sur le plan ÷ distance réelle (même unité) |
+| Fractions | $\frac{a}{b} + \frac{c}{b} = \frac{a + c}{b}$ ; $\frac{a}{b} \times \frac{c}{d} = \frac{ac}{bd}$ ; $\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \times \frac{d}{c}$ |
+| Puissances | $a^m \times a^n = a^{m+n}$ ; $\frac{a^m}{a^n} = a^{m-n}$ ; $a^0 = 1$ ; $a^{-n} = \frac{1}{a^n}$ |
+| Identités | $(a + b)^2 = a^2 + 2ab + b^2$ ; $(a - b)^2 = a^2 - 2ab + b^2$ ; $(a + b)(a - b) = a^2 - b^2$ |
+| Fonctions | linéaire $f(x) = ax$ (proportionnalité) ; affine $f(x) = ax + b$ ; $a = \frac{f(x_2) - f(x_1)}{x_2 - x_1}$ |
+| Pythagore | $ABC$ rectangle en $A$ ⇔ $BC^2 = AB^2 + AC^2$ |
+| Thalès | $(MN) \parallel (BC)$ ⇒ $\frac{AM}{AB} = \frac{AN}{AC} = \frac{MN}{BC}$ |
+| Trigonométrie | $\cos = \frac{\text{adj.}}{\text{hyp.}}$ ; $\sin = \frac{\text{opp.}}{\text{hyp.}}$ ; $\tan = \frac{\text{opp.}}{\text{adj.}}$ |
+| Agrandissement de rapport $k$ | longueurs $\times k$ ; aires $\times k^2$ ; volumes $\times k^3$ |
+| Périmètres | carré $4c$ ; rectangle $2(L + \ell)$ ; cercle $2\pi r = \pi d$ |
+| Aires | carré $c^2$ ; rectangle $L\ell$ ; triangle $\frac{bh}{2}$ ; parallélogramme $bh$ ; trapèze $\frac{(B + b)h}{2}$ ; disque $\pi r^2$ |
+| Volumes | pavé $L\ell h$ ; cube $a^3$ ; prisme et cylindre : $\mathcal{B} \times h$ ($\pi r^2 h$) ; pyramide et cône : $\frac{1}{3}\mathcal{B} h$ ; boule $\frac{4}{3}\pi r^3$ |
+| Unités | 1 m² = 100 dm² = 10 000 cm² ; 1 ha = 10 000 m² ; 1 m³ = 1 000 dm³ = 1 000 L ; 1 cm³ = 1 mL |
+| Statistiques | moyenne $= \frac{\sum x_i n_i}{\sum n_i}$ ; médiane : série rangée, valeur du milieu ; étendue = max − min |
+| Probabilités | $P(A) = \frac{\text{cas favorables}}{\text{cas possibles}}$ ; $P(\bar A) = 1 - P(A)$ ; arbre : on multiplie sur un chemin |
+| Arithmétique | $a = bq + r$, $0 \leq r < b$ ; PGCD : facteurs communs, plus petit exposant ; PPCM : tous les facteurs, plus grand exposant |
+
+## Z.2 Fiche mémo de grammaire
+
+| Question | Test / réponse |
+| Sujet | encadrer par « c'est… qui » ; remplacer par *il / ils* |
+| COD | pronominaliser par *le, la, les, en* ; pas de préposition |
+| COI / COS | préposition *à / de* ; pronominaliser par *lui, leur, en, y* |
+| Attribut du sujet | après un verbe d'état (*être, paraître, sembler, devenir, rester, demeurer, avoir l'air*) ; pronominaliser par *le* |
+| Complément de phrase | supprimable **et** déplaçable |
+| Complément du nom | GN prépositionnel dans un GN (*la maison **de mon père***) |
+| Épithète / apposition | adjectif collé au nom / détaché par une virgule |
+| Relative | introduite par un pronom relatif, qui a une fonction dans la subordonnée |
+| Complétive | introduite par *que* conjonction, qui n'a pas de fonction ; souvent COD |
+| Circonstancielle | conjonction (*quand, parce que, pour que, bien que, si…*) ; valeur : temps, cause, conséquence, but, concession, condition, comparaison |
+| Participe passé | avec *être* : accord avec le sujet ; avec *avoir* : accord avec le COD placé **avant** |
+
+| Verbe | Passé simple (il / ils) | Futur (je) | Subjonctif présent (que je) |
+| être | il fut / ils furent | je serai | que je sois |
+| avoir | il eut / ils eurent | j'aurai | que j'aie |
+| aller | il alla / ils allèrent | j'irai | que j'aille |
+| faire | il fit / ils firent | je ferai | que je fasse |
+| venir | il vint / ils vinrent | je viendrai | que je vienne |
+| prendre | il prit / ils prirent | je prendrai | que je prenne |
+| voir | il vit / ils virent | je verrai | que je voie |
+| pouvoir | il put / ils purent | je pourrai | que je puisse |
+| savoir | il sut / ils surent | je saurai | que je sache |
+| vouloir | il voulut / ils voulurent | je voudrai | que je veuille |
+| devoir | il dut / ils durent | je devrai | que je doive |
+| naître | il naquit / ils naquirent | je naîtrai | que je naisse |
+
+## Z.3 Les sigles de l'Éducation nationale
+
+| Sigle | Signification |
+| AESH | accompagnant(e) d'élèves en situation de handicap |
+| APC | activités pédagogiques complémentaires |
+| ATSEM | agent territorial spécialisé des écoles maternelles |
+| CRPE | concours de recrutement de professeurs des écoles |
+| DASEN / DSDEN | directeur académique / direction des services départementaux de l'Éducation nationale |
+| EMC | enseignement moral et civique |
+| IEN | inspecteur(trice) de l'Éducation nationale (circonscription) |
+| INSPE | institut national supérieur du professorat et de l'éducation |
+| MDPH | maison départementale des personnes handicapées |
+| PAI | projet d'accueil individualisé (santé) |
+| PAP | plan d'accompagnement personnalisé (troubles des apprentissages) |
+| PPRE | programme personnalisé de réussite éducative |
+| PPS | projet personnalisé de scolarisation (handicap) |
+| RASED | réseau d'aides spécialisées aux élèves en difficulté |
+| REP / REP+ | réseau d'éducation prioritaire (renforcé) |
+| UPE2A | unité pédagogique pour élèves allophones arrivants |
+| ULIS | unité localisée pour l'inclusion scolaire |
+
+## Z.4 Checklists des derniers jours
+
+:::check La semaine d'avant (22 – 28 mars 2027)
+[ ] Convocation imprimée, lieu et horaires vérifiés, trajet repéré (transports, parking, temps de marge)
+[ ] Pas de nouveau chapitre : relire les fiches, le formulaire, le carnet d'erreurs, les cartes mémoire
+[ ] Une rédaction chronométrée (1 h) et un exercice de maths de chaque type
+[ ] Coucher à heure fixe ; activité physique légère
+:::
+
+:::check La veille (29 mars)
+[ ] Sac prêt : convocation, **pièce d'identité**, 2 stylos bleus ou noirs, crayon, gomme, règle, équerre, compas, rapporteur, montre (sans connexion), eau, en-cas
+[ ] Relire 20 minutes (formulaire, tableau des fonctions, repères) puis s'arrêter
+[ ] Dîner léger, coucher tôt
+:::
+
+:::check Le jour J (30 et 31 mars)
+[ ] Arriver **30 minutes** en avance
+[ ] Lire tout le sujet (5 min), répartir le temps, commencer par ce que l'on maîtrise
+[ ] Rédiger des réponses complètes et justifiées ; soigner l'écriture et la présentation
+[ ] Garder **15 minutes** pour relire l'orthographe (accords !)
+[ ] Entre les épreuves : ne pas refaire le sujet avec les autres candidats
+:::
+
+:::check Avant chaque oral
+[ ] Convocation, pièce d'identité, montre ; tenue correcte et confortable
+[ ] Présentation de 5 minutes répétée à voix haute (chronométrée)
+[ ] Fiches relues : laïcité, obligations du fonctionnaire, protection de l'enfance, harcèlement, école inclusive
+[ ] Pendant l'épreuve : regarder le jury, parler posément, reformuler les questions, rester calme et souriante
+:::
+
+## Z.5 Cartes mémoire
+
+:::methode Utilisation
+Cacher la colonne de droite ; répondre à voix haute ; cocher les cartes ratées et les revoir le lendemain. 15 minutes par jour suffisent (idéal dans les transports).
+:::
+
+| Question | Réponse |
+| Les 7 conjonctions de coordination | mais, ou, et, donc, or, ni, car |
+| Test du complément de phrase | supprimable et déplaçable |
+| Test du sujet | « c'est… qui » |
+| Verbes d'état | être, paraître, sembler, devenir, rester, demeurer, avoir l'air, passer pour |
+| *que* pronom relatif ou conjonction ? | relatif : a un antécédent et une fonction ; conjonction : aucune fonction |
+| Valeur de l'imparfait dans un récit | arrière-plan, description, habitude |
+| Valeur du passé simple | premier plan, action ponctuelle et achevée |
+| Participe passé avec *avoir* | accord avec le COD placé avant |
+| *bien que* + ? | subjonctif (concession) |
+| *après que* + ? | indicatif |
+| Préfixe / suffixe : lequel change la classe ? | le suffixe |
+| Hyperonyme de *rose* | fleur |
+| Champ lexical | mots d'un texte liés à un même thème |
+| Polysémie | un mot, plusieurs sens liés |
+| Paronymes | mots presque identiques (*éminent / imminent*) |
+| Étapes d'une rédaction | analyse, brouillon, introduction, développement, conclusion, relecture |
+| $0{,}2 \times 0{,}3$ | $0{,}06$ |
+| +10 % puis −10 % | × 0,99 : −1 % |
+| Retrouver un prix avant −20 % | diviser par 0,8 |
+| 1 h 12 min en heures | 1,2 h |
+| 1 m/s en km/h | 3,6 km/h |
+| 1 m² en cm² | 10 000 cm² |
+| 1 L en dm³ | 1 dm³ |
+| 1 est-il premier ? | non |
+| PGCD : quel type de problème ? | partage en lots identiques, plus grand possible |
+| PPCM : quel type de problème ? | rendez-vous, « à nouveau ensemble » |
+| Somme des angles d'un triangle | 180° |
+| Réciproque de Pythagore | si $BC^2 = AB^2 + AC^2$, rectangle en $A$ |
+| Agrandissement × 3 : aires × ? | × 9 |
+| Volume du cône | $\frac{1}{3}\pi r^2 h$ |
+| Relation d'Euler | $F + S - A = 2$ |
+| Médiane d'une série de 20 valeurs | moyenne des 10e et 11e valeurs rangées |
+| Tourner de combien pour un hexagone (Scratch) ? | 60° |
+| Référence absolue (tableur) | `$A$1` |
+| Lois Ferry | 1881 – 1882 : gratuite, obligatoire, laïque |
+| Loi de séparation des Églises et de l'État | 1905 |
+| Droit de vote des femmes | 1944 |
+| CIDE | 20 novembre 1989 |
+| Article 1er de la Constitution | République indivisible, laïque, démocratique et sociale |
+| Nombre de députés / sénateurs | 577 / 348 |
+| Régions / départements | 18 / 101 |
+| Plus long fleuve de France | la Loire |
+| Trois piliers du développement durable | économique, social, environnemental |
+| Cause des saisons | inclinaison de l'axe de la Terre |
+| Photosynthèse | eau + CO₂ + lumière → matière organique + O₂ |
+| Où passent les nutriments dans le sang ? | intestin grêle |
+| Antibiotiques contre les virus ? | non (bactéries seulement) |
+| Liquide → gaz | vaporisation |
+| Gaz → liquide | liquéfaction (condensation) |
+| Masse lors d'un changement d'état | conservée |
+| Règle d'or d'une expérience | un seul paramètre varie ; un témoin |
+| Série / dérivation : une lampe dévissée | série : tout s'éteint ; dérivation : les autres restent allumées |
+| Primaires en peinture | cyan, magenta, jaune |
+| Complémentaire du bleu | orange |
+| Paramètres du son | hauteur, durée, intensité, timbre |
+| Œuvre qui a donné son nom à l'impressionnisme | *Impression, soleil levant* (Monet) |
+| *Guernica* | Picasso, 1937 |
+| Present perfect + since | point de départ (*since 2020*) |
+| Instruction obligatoire | de 3 à 16 ans |
+| Cycles 1 / 2 / 3 / 4 | PS-MS-GS / CP-CE1-CE2 / CM1-CM2-6e / 5e-4e-3e |
+| Enfant en danger : numéro | 119 |
+| Harcèlement : numéro | 3018 |
+| Supérieur hiérarchique direct du professeur des écoles | l'IEN |
+| Handicap : quel document ? | PPS (MDPH) |
+| Troubles des apprentissages (dys) | PAP |
+| Allergie, maladie chronique | PAI |
+
+## Z.6 Mon tableau de suivi
+
+| Bilan / sujet | Date | Score | À revoir |
+| Test de diagnostic | | / 14 | |
+| Bilan F1 · F2 · F3 | | | |
+| Bilan F4 · F5 · F6 | | | |
+| Bilan M1 · M2 · M3 | | | |
+| Bilan M4 · M5 · M6 | | | |
+| Bilan M7 · M8 | | | |
+| Bilan H · S · A ou L | | | |
+| Révisions R1 · R2 · R3 | | | |
+| Sujet blanc n° 1 | | / 40 | |
+| Sujet blanc écrit 2 | | / 60 | |
+| Sujet blanc n° 2 | | / 40 | |
+| Sujet blanc n° 3 | | / 40 | |
+| Test de diagnostic (2e fois, en mars) | | / 14 | |
+
+## Z.7 Sources officielles à consulter
+
+:::coeur Les sites de référence
+- **devenirenseignant.gouv.fr** : descriptif des épreuves, calendrier, sujets zéro et sujets des sessions précédentes, rapports de jury, inscription.
+- **Cyclades** (accessible depuis devenirenseignant.gouv.fr) : inscription, convocations, résultats.
+- **ac-lyon.fr** (académie de Lyon) : informations sur le concours dans l'académie, résultats, lieux des épreuves.
+- **eduscol.education.fr** : programmes de l'école (cycles 1 à 3) et du collège (cycle 4), terminologie grammaticale, ressources.
+- **legifrance.gouv.fr** : arrêtés fixant les modalités du concours ; Code de l'éducation.
+:::
+
+:::piege À vérifier soi-même, dès maintenant et avant chaque échéance
+Les dates, durées et coefficients de ce guide reprennent les informations publiées pour la session 2027 à la date de rédaction (septembre 2026). Les textes officiels **font foi** : en cas de différence, suivre le site officiel et la convocation.
+:::

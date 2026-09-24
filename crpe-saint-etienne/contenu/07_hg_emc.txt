@@ -1,0 +1,262 @@
+%% Épreuve 2 : histoire, géographie, EMC (H)
+# E2 | L'épreuve écrite 2 : mode d'emploi | Choisir ses 3 domaines et bien répondre
+
+:::idee
+L'écrit 2 (4 h, coefficient 3) porte sur **trois domaines au choix parmi quatre** : histoire-géographie-EMC (**H**), sciences et technologie (**S**), arts (**A**), langue vivante étrangère (**L**, niveau B1). Il ne s'agit pas d'une dissertation : ce sont des **questions** de connaissances et d'analyse de **documents** (textes, cartes, photos, graphiques, schémas, œuvres), au niveau des programmes de l'école et du collège.
+:::
+
+:::coeur Conseils de choix
+- **H et S** sont les plus « rentables » : beaucoup de connaissances communes à l'école, et utiles pour l'oral et le métier.
+- Choisir **A** si l'on a une culture artistique (musées, musique) ; choisir **L** si l'anglais écrit est au moins de niveau B1 (comprendre un article, écrire un texte structuré).
+- Quel que soit le choix : **note ≤ 5/20 éliminatoire** : ne négliger aucun des trois domaines.
+- Vérifier sur le **sujet zéro** et la notice officielle de la session 2027 la répartition exacte des points.
+:::
+
+:::methode Répondre à une question sur document
++ **Présenter** le document : nature (carte, photo, texte…), auteur, date, source.
++ **Prélever** les informations utiles (citer, chiffrer, localiser).
++ **Expliquer** avec ses connaissances (le « pourquoi »).
++ **Conclure** en répondant exactement à la question, avec le **vocabulaire** précis.
+:::
+
+# H | Histoire, géographie, EMC | Repères, notions et méthodes, du cycle 2 au cycle 4
+
+:::objectifs
+- connaître les **grandes périodes** et une quarantaine de **repères** chronologiques ;
+- maîtriser les **notions** de géographie des programmes (habiter, se déplacer, consommer, développement durable…) ;
+- connaître les **valeurs**, **symboles** et **institutions** de la République (EMC) ;
+- analyser un **document** (texte, carte, image, graphique).
+:::
+
+## H.1 La frise des grandes périodes
+
+@fig frise:100 | Les cinq grandes périodes de l'histoire (conventions de l'histoire occidentale).
+
+### Les repères indispensables (à savoir par cœur)
+
+| Date | Repère |
+| il y a environ 36 000 ans, puis 20 000 ans | grottes ornées de **Chauvet**, puis de **Lascaux** (Paléolithique) |
+| vers −10 000 (Proche-Orient) ; vers −6 000 (Gaule) | **Néolithique** : agriculture, élevage, sédentarisation |
+| vers −3 300 | invention de l'**écriture** (Mésopotamie) : début de l'Antiquité |
+| −52 | **Alésia** : victoire de Jules César sur Vercingétorix, la Gaule devient romaine |
+| 476 | chute de l'Empire romain d'Occident : début du Moyen Âge |
+| vers 496 – 511 | **baptême de Clovis**, roi des Francs |
+| 800 | **Charlemagne** couronné empereur |
+| 987 | **Hugues Capet** roi : début des Capétiens |
+| 1095 | première croisade |
+| 1337 – 1453 | guerre de **Cent Ans** (Jeanne d'Arc, 1429 – 1431) |
+| vers 1450 | **imprimerie** de Gutenberg |
+| 1492 | **Christophe Colomb** atteint l'Amérique : début des Temps modernes |
+| 1515 – 1547 | règne de **François Ier** (Renaissance) ; 1539 : ordonnance de Villers-Cotterêts (le français dans les actes officiels) |
+| 1598 | **édit de Nantes** (Henri IV) : tolérance envers les protestants |
+| 1643 – 1715 | règne de **Louis XIV** : monarchie absolue, Versailles |
+| XVIIIe siècle | les **Lumières** (Voltaire, Montesquieu, Rousseau, Diderot, l'*Encyclopédie*) |
+| 1789 | **Révolution française** : 14 juillet (Bastille), 4 août (abolition des privilèges), 26 août (**Déclaration des droits de l'homme et du citoyen**) |
+| 1792 | proclamation de la **République** (Ire République) |
+| 1804 | **Napoléon Ier** empereur ; **Code civil** |
+| 1848 | **suffrage universel masculin** ; **abolition de l'esclavage** (Victor Schœlcher) |
+| 1870 | **IIIe République** |
+| 1881 – 1882 | **lois Jules Ferry** : école **gratuite**, **obligatoire** (6 – 13 ans) et **laïque** |
+| 1905 | loi de **séparation des Églises et de l'État** |
+| 1914 – 1918 | **Première Guerre mondiale** (Verdun 1916 ; armistice le 11 novembre 1918) |
+| 1939 – 1945 | **Seconde Guerre mondiale** ; génocide des Juifs et des Tsiganes ; Résistance ; 8 mai 1945 |
+| 1944 | **droit de vote des femmes** (ordonnance du 21 avril 1944 ; premier vote en 1945) |
+| 1957 | **traité de Rome** : naissance de la CEE |
+| 1958 | **Ve République** (Charles de Gaulle) |
+| 1989 | chute du mur de Berlin ; **Convention internationale des droits de l'enfant** (ONU) |
+| 1992 | traité de **Maastricht** : Union européenne ; 2002 : billets et pièces en **euros** |
+
+:::astuce Mémoriser les repères
+Fabriquer sa propre frise (une période par couleur), l'afficher, et la compléter chaque semaine. Relier chaque date à une **image** (une œuvre, un monument) : c'est aussi ce qu'on fait en classe.
+:::
+
+## H.2 Les notions clés d'histoire
+
+:::coeur
+**Préhistoire** : période sans écriture ; Paléolithique (chasseurs-cueilleurs nomades) puis Néolithique (agriculteurs sédentaires, premiers villages).
+**Antiquité** : premières civilisations de l'écriture (Égypte, Mésopotamie), Grèce (démocratie athénienne, Ve siècle av. J.-C.), Rome ; la Gaule romaine (villes, routes, latin).
+**Moyen Âge** : **seigneurie** et **féodalité** (seigneur, vassal, fief), place de l'**Église** (clergé), paysans ; châteaux forts, cathédrales (art roman puis gothique) ; renforcement du pouvoir royal.
+**Temps modernes** : **Renaissance** et **humanisme** ; grandes découvertes ; **Réformes** protestantes (Luther, 1517) ; monarchie absolue de droit divin ; **Lumières** (raison, liberté, séparation des pouvoirs).
+**Époque contemporaine** : Révolution et Empire ; industrialisation (charbon, chemin de fer, usines, ouvriers) ; **colonisation** ; enracinement de la République ; guerres mondiales ; construction européenne.
+:::
+
+:::exemple Histoire locale : Saint-Étienne et la révolution industrielle
+Saint-Étienne est un exemple de ville façonnée par l'**industrie** : mines de **charbon** (le puits Couriot est aujourd'hui un musée de la Mine), fabrication d'**armes** (Manufacture d'armes), de **cycles**, **rubanerie** ; l'une des premières lignes de **chemin de fer** de France a relié Saint-Étienne à la Loire (Andrézieux) dans les années 1820. Ces lieux permettent des **sorties** et des études de documents patrimoniaux : un très bon exemple à citer à l'oral.
+:::
+
+## H.3 La géographie
+
+:::coeur Les grandes notions (programmes du cycle 3 et du cycle 4)
+**Habiter** : pratiquer un lieu (se loger, travailler, se cultiver, se divertir). **Territoire** : espace approprié et aménagé par une société.
+**Espaces urbains, périurbains, ruraux** ; **métropolisation** (concentration des populations et des activités dans les grandes villes) ; **mobilités** (se déplacer : réseaux, pendularité, flux).
+**Mondialisation** : mise en relation des territoires par les échanges (marchandises, informations, personnes).
+**Développement durable** : répondre aux besoins d'aujourd'hui sans compromettre ceux des générations futures ; trois piliers : **économique, social, environnemental**.
+**Population** : plus de 8 milliards d'habitants dans le monde ; la France compte environ 68 millions d'habitants.
+:::
+
+:::coeur La France en repères
+**Organisation** : 18 **régions** (13 en métropole, 5 d'outre-mer), 101 **départements**, environ 35 000 **communes**. Saint-Étienne est la préfecture du département de la **Loire** (42), dans la région **Auvergne-Rhône-Alpes** (capitale régionale : Lyon).
+**Reliefs** : massifs anciens (Massif central, Vosges, Massif armoricain) ; montagnes jeunes (Alpes — mont Blanc, environ 4 805 m —, Pyrénées, Jura).
+**Fleuves** : **Loire** (le plus long fleuve de France, environ 1 000 km, qui prend sa source au mont Gerbier-de-Jonc et traverse le département de la Loire), Seine, Rhône, Garonne.
+**Climats** : océanique, semi-continental, méditerranéen, montagnard.
+**Outre-mer** : Guadeloupe, Martinique, Guyane, La Réunion, Mayotte (régions et départements d'outre-mer).
+:::
+
+:::methode Lire une carte
++ **Titre**, **légende**, **échelle**, **orientation** (nord), **source**.
++ Décrire du général au particulier (grands ensembles, puis détails), en utilisant les **figurés** : ponctuels, linéaires, de surface.
++ Localiser avec précision (points cardinaux, noms de lieux).
++ Expliquer les répartitions (pourquoi ici ?).
+:::
+
+## H.4 L'enseignement moral et civique (EMC)
+
+:::coeur Les valeurs et les symboles de la République
+**Devise** : Liberté, Égalité, Fraternité. **Article 1er de la Constitution (1958)** : « La France est une République indivisible, **laïque**, démocratique et sociale. »
+**Symboles** : drapeau **bleu-blanc-rouge**, hymne national (***La Marseillaise***, 1792), **Marianne**, fête nationale le **14 juillet**, devise. Le **coq** est un emblème non officiel.
+**Laïcité** : l'État est **neutre** ; il garantit la **liberté de conscience** (croire ou ne pas croire) et le libre exercice des cultes dans le respect de l'ordre public ; loi de **1905**. À l'école : **neutralité** des enseignants ; loi de **2004** interdisant aux élèves le port de signes religieux ostensibles ; **Charte de la laïcité** à l'École (2013).
+:::
+
+:::coeur Les institutions
+**Séparation des pouvoirs** (Montesquieu) :
+- **législatif** : le **Parlement** vote les lois : **Assemblée nationale** (577 députés élus pour 5 ans au suffrage universel direct) et **Sénat** (348 sénateurs élus pour 6 ans au suffrage indirect) ;
+- **exécutif** : le **président de la République** (élu pour 5 ans au suffrage universel direct), le **gouvernement** dirigé par le **Premier ministre** ;
+- **judiciaire** : les tribunaux, indépendants.
+Le **Conseil constitutionnel** vérifie que les lois respectent la Constitution. Droit de vote à **18 ans** (depuis 1974).
+**Collectivités** : commune (maire, conseil municipal), département, région.
+**Union européenne** : 27 États membres ; Parlement européen élu au suffrage universel.
+:::
+
+:::coeur Les droits de l'enfant
+**Convention internationale des droits de l'enfant** (ONU, **20 novembre 1989**) : droits à l'éducation, à la santé, à la protection contre les violences, à être entendu… Le 20 novembre est la journée des droits de l'enfant.
+:::
+
+## H.5 Exercices
+
+@serie HA | Histoire
+
+@exo 1
+Replace chaque événement dans sa période : couronnement de Charlemagne ; Déclaration des droits de l'homme et du citoyen ; construction des pyramides d'Égypte ; invention de l'imprimerie ; armistice de 1918 ; peintures de Lascaux.
+@sol
+Préhistoire : Lascaux. Antiquité : pyramides d'Égypte (vers −2 600). Moyen Âge : Charlemagne (800). Temps modernes : imprimerie (vers 1450). Époque contemporaine : DDHC (1789), armistice (1918).
+@end
+
+@exo 2
+Pourquoi dit-on que les lois Ferry fondent l'école républicaine ? Donne les trois principes et leur sens.
+@sol
+Les lois de 1881 – 1882 rendent l'instruction primaire **gratuite** (pas de frais pour les familles), **obligatoire** de 6 à 13 ans (tous les enfants, filles et garçons) et l'enseignement public **laïque** (l'instruction religieuse ne se fait plus à l'école ; l'« instruction morale et civique » la remplace). La IIIe République veut former des **citoyens** attachés à la République, instruits et capables de voter.
+@end
+
+@exo 2
+Cite trois changements apportés par la Révolution française.
+@sol
+Abolition des privilèges (nuit du 4 août 1789) : égalité devant la loi et l'impôt ; Déclaration des droits de l'homme et du citoyen (26 août 1789) : libertés, souveraineté de la nation ; fin de la monarchie absolue puis proclamation de la République (1792) ; création des départements (1790).
+@end
+
+@exo 3 | Analyse de document
+Article 1er de la DDHC : « Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l'utilité commune. » Présente le document et explique en quoi il rompt avec l'Ancien Régime.
+@sol
+**Présentation** : texte juridique voté par l'Assemblée nationale constituante le 26 août 1789, au début de la Révolution française, inspiré des idées des Lumières.
+**Explication** : sous l'Ancien Régime, la société était divisée en trois **ordres** (clergé, noblesse, tiers état) et les deux premiers avaient des **privilèges** de naissance. L'article 1 affirme la **liberté** et l'**égalité en droits** de tous : les différences ne peuvent plus venir de la naissance, mais seulement de l'« utilité commune » (le mérite, les services rendus). C'est la fin de la société d'ordres.
+@end
+
+@exo 3
+Explique pourquoi Saint-Étienne est un bon exemple pour étudier la révolution industrielle avec des élèves de CM2.
+@sol
+La ville s'est développée grâce au **charbon** (mines, puits Couriot, aujourd'hui musée de la Mine), à l'**industrie** (armes, cycles, rubans) et au **chemin de fer** (l'une des premières lignes de France dans les années 1820). Les élèves peuvent observer des **traces** dans leur environnement proche (chevalements, crassiers, cités ouvrières), visiter un musée, analyser des photographies anciennes : on part du **local** pour comprendre un phénomène **national**.
+@end
+
+@serie HB | Géographie
+
+@exo 1
+Cite les trois piliers du développement durable et donne un exemple d'action pour chacun à l'échelle d'une école.
+@sol
+**Environnemental** : tri des déchets, compost, économies d'énergie. **Social** : inclusion, cantine accessible à tous, entraide. **Économique** : réduire le gaspillage (cantine, papier), achats locaux.
+@end
+
+@exo 2
+Définis : métropolisation ; espace périurbain ; mobilité pendulaire.
+@sol
+**Métropolisation** : concentration des populations, des activités et des pouvoirs dans les plus grandes villes. **Espace périurbain** : espace situé autour d'une ville, où vivent des habitants qui travaillent souvent en ville (lotissements, zones commerciales, espaces agricoles). **Mobilité pendulaire** : déplacement quotidien aller-retour entre le domicile et le lieu de travail ou d'études.
+@end
+
+@exo 2
+Situe Saint-Étienne : département, région, grand fleuve, massif montagneux proche, grande métropole voisine.
+@sol
+Département de la **Loire** (42), région **Auvergne-Rhône-Alpes** ; le fleuve **Loire** traverse le département ; la ville est au pied du **massif du Pilat** (Massif central) ; métropole voisine : **Lyon** (environ 60 km).
+@end
+
+@exo 3 | Méthode
+Quelles questions poser à des élèves de cycle 3 devant une carte de la répartition de la population en France ?
+@sol
+Lire : titre, légende, échelle, source. Prélever : où la population est-elle la plus nombreuse (grandes villes, littoraux, vallées) ? la moins nombreuse (montagnes, « diagonale » peu peuplée du nord-est au sud-ouest) ? Expliquer : pourquoi ces différences (emplois, relief, climat, transports) ? Conclure par une phrase-bilan.
+@end
+
+@serie HC | Enseignement moral et civique
+
+@exo 1
+Cite les symboles de la République française.
+@sol
+Le drapeau tricolore, *La Marseillaise*, Marianne, la devise « Liberté, Égalité, Fraternité », la fête nationale du 14 juillet (le sceau de la République et le coq sont parfois cités).
+@end
+
+@exo 2
+Qu'est-ce que la laïcité ? Que signifie-t-elle pour un enseignant et pour un élève ?
+@sol
+La laïcité est le principe de **séparation** des religions et de l'État (loi de 1905) : l'État ne reconnaît ni ne finance aucun culte, il est **neutre** et garantit la **liberté de conscience** de chacun. **L'enseignant**, agent public, est tenu à une stricte **neutralité** (aucun signe religieux, aucun prosélytisme). **L'élève** a la liberté de croire ou de ne pas croire, mais ne peut pas porter de signe religieux **ostensible** à l'école (loi de 2004), ni contester un enseignement au nom de sa religion.
+@end
+
+@exo 2
+Qui vote la loi ? Qui la fait appliquer ? Qui juge ? Explique l'intérêt de séparer ces pouvoirs.
+@sol
+Le **Parlement** (Assemblée nationale et Sénat) vote la loi ; le **gouvernement** (et le président) la fait appliquer ; les **juges** jugent. Séparer les pouvoirs évite qu'une seule personne les concentre et en abuse (idée de Montesquieu) : c'est une garantie des libertés.
+@end
+
+@exo 3 | Niveau concours
+Un élève de CM2 demande : « Pourquoi on ne peut pas voter à 10 ans ? » Propose des éléments de réponse et une activité d'EMC.
+@sol
+Éléments : le vote suppose d'être **majeur** (18 ans en France depuis 1974), c'est-à-dire juridiquement responsable ; mais les enfants ont des **droits** (CIDE, 1989) dont celui d'être **entendus**. Activité : élection des **délégués de classe** ou du **conseil municipal des enfants** (candidature, programme, vote à bulletin secret, dépouillement), puis débat réglé sur les règles de la démocratie.
+@end
+
+@qcm
+En quelle année les femmes ont-elles obtenu le droit de vote en France ?
+A) 1848
+B) 1905
+C) 1944
+D) 1968
+@rep C | Ordonnance du 21 avril 1944 ; premier vote aux municipales d'avril 1945.
+@end
+
+@qcm
+La loi de séparation des Églises et de l'État date de :
+A) 1789
+B) 1882
+C) 1905
+D) 1958
+@rep C | Loi du 9 décembre 1905.
+@end
+
+@qcm
+Combien la France compte-t-elle de régions ?
+A) 13
+B) 18
+C) 22
+D) 101
+@rep B | 13 en métropole et 5 d'outre-mer (101 est le nombre de départements).
+@end
+
+@serie HD | Bilan H (30 minutes)
+
+@exo 3
+Classe dans l'ordre chronologique et date : Code civil ; baptême de Clovis ; traité de Rome ; édit de Nantes ; abolition de l'esclavage ; Alésia.
+@sol
+Alésia (−52) → baptême de Clovis (vers 496 – 511) → édit de Nantes (1598) → Code civil (1804) → abolition de l'esclavage (1848) → traité de Rome (1957).
+@end
+
+@exo 3
+Explique la différence entre le Paléolithique et le Néolithique (mode de vie, outils, habitat).
+@sol
+**Paléolithique** : chasseurs-cueilleurs **nomades**, outils de pierre taillée, abris temporaires, art pariétal. **Néolithique** : **agriculture** et **élevage**, **sédentarisation** dans des villages, pierre polie, poterie, tissage : une véritable « révolution » des modes de vie.
+@end
+
+@corriges

@@ -1,0 +1,414 @@
+%% Mathématiques : proportionnalité (M3), calcul littéral et fonctions (M4)
+# M3 | Proportionnalité et pourcentages | Le thème le plus présent au concours (et dans la vie de la classe)
+
+:::objectifs
+- reconnaître une situation de **proportionnalité** (et une situation qui ne l'est pas) ;
+- utiliser **toutes** les procédures : passage à l'unité, coefficient, linéarité, produit en croix ;
+- calculer des **pourcentages** (appliquer, trouver, évolutions successives) ;
+- résoudre les problèmes de **vitesse**, de **débit** et d'**échelle**.
+:::
+
+## M3.1 Reconnaître la proportionnalité
+
+:::idee
+Deux grandeurs sont **proportionnelles** si l'on passe de l'une à l'autre en **multipliant toujours par le même nombre** (le **coefficient de proportionnalité**).
+Prix et quantité de pommes (à prix fixe au kilo) : oui. Âge et taille d'un enfant : **non** (à 2 ans, 85 cm ; à 4 ans, pas 170 cm !).
+Graphiquement : les points sont **alignés avec l'origine** (droite qui passe par 0).
+:::
+
+| Masse (kg) | 2 | 3 | 5 | 10 |
+| Prix (€) | 5 | 7,5 | 12,5 | 25 |
+
+:::coeur Les 4 procédures (à savoir nommer pour l'oral)
++ **Passage à l'unité** (règle de trois) : 2 kg → 5 € ; 1 kg → 2,50 € ; 3 kg → 7,50 €.
++ **Coefficient de proportionnalité** : prix = masse × 2,5.
++ **Linéarité** : additive (5 kg = 2 kg + 3 kg → 5 € + 7,50 € = 12,50 €) ou multiplicative (10 kg = 2 × 5 kg → 2 × 12,50 € = 25 €).
++ **Produit en croix** (quatrième proportionnelle) : $\frac{2}{5} = \frac{3}{?}$ → $? = \frac{5 \times 3}{2} = 7{,}5$.
+:::
+
+:::piege Situations non proportionnelles
+Un forfait + un prix par unité (taxi : 3 € + 1,20 €/km) : **pas proportionnel** (situation **affine**). Les aires quand on double les longueurs : multipliées par **4**, pas par 2.
+:::
+
+@drill proportion 10 31 2 | Quatrième proportionnelle et problèmes
+
+## M3.2 Les pourcentages
+
+:::coeur
+**Prendre $t\,\%$ de $A$** : $A \times \frac{t}{100}$. 15 % de 80 = $80 \times 0{,}15 = 12$.
+**Trouver un pourcentage** : $\frac{\text{partie}}{\text{total}} \times 100$ : 9 filles sur 24 élèves → $\frac{9}{24} = 0{,}375 = 37{,}5\,\%$.
+**Augmenter de $t\,\%$** : multiplier par $1 + \frac{t}{100}$ (+20 % → × 1,2). **Diminuer de $t\,\%$** : multiplier par $1 - \frac{t}{100}$ (−30 % → × 0,7).
+**Évolutions successives** : on **multiplie** les coefficients : +10 % puis −10 % → $1{,}1 \times 0{,}9 = 0{,}99$ → baisse de **1 %** (et non 0 %).
+**Retrouver la valeur initiale** : diviser par le coefficient : après +25 %, un prix vaut 50 € → prix initial $50 \div 1{,}25 = 40$ €.
+:::
+
+:::piege
+Une baisse de 50 % puis une hausse de 50 % ne ramènent **pas** au prix de départ : $0{,}5 \times 1{,}5 = 0{,}75$ (baisse de 25 %).
+Le pourcentage d'**évolution** se calcule par rapport à la **valeur de départ** : de 40 à 50 → $\frac{10}{40} = 25\,\%$ ; de 50 à 40 → $\frac{-10}{50} = -20\,\%$.
+:::
+
+@drill pourcent 12 32 2 | Pourcentages
+@drill ecritures 9 33 3 | Fractions, décimaux, pourcentages
+
+## M3.3 Vitesse, durée, débit
+
+:::coeur
+**Vitesse moyenne** : $v = \frac{d}{t}$ ; d'où $d = v \times t$ et $t = \frac{d}{v}$.
+Convertir les durées en **heures décimales** : 15 min = 0,25 h ; 20 min = $\frac{1}{3}$ h ; 45 min = 0,75 h ; 1 h 12 min = 1,2 h.
+**Conversion** : $1 \text{ m/s} = 3{,}6 \text{ km/h}$ (car 1 h = 3 600 s et 1 km = 1 000 m).
+**Débit** : volume / durée (L/min).
+:::
+
+:::piege
+$1{,}30$ h ≠ 1 h 30 min ! 1 h 30 min = **1,5 h**. Et 1,30 h = 1 h 18 min.
+:::
+
+@drill vitesse 10 34 2 | Vitesses moyennes
+
+## M3.4 Échelles
+
+:::coeur
+**Échelle** = distance sur le plan / distance réelle (dans la **même unité**). Échelle $\frac{1}{25\,000}$ : 1 cm sur la carte représente 25 000 cm = 250 m en réalité.
+C'est une situation de proportionnalité de coefficient l'échelle.
+:::
+
+@drill echelle 8 35 2 | Échelles
+
+## M3.5 Exercices
+
+@serie M3A | Procédures de proportionnalité
+
+@exo 1
+Ces tableaux sont-ils de proportionnalité ? a) 2 → 7 ; 4 → 14 ; 6 → 21. b) 3 → 12 ; 5 → 20 ; 8 → 30.
+@sol
+a) Oui : coefficient 3,5 ($7 \div 2 = 14 \div 4 = 21 \div 6 = 3{,}5$). b) Non : $12 \div 3 = 4$, $20 \div 5 = 4$ mais $30 \div 8 = 3{,}75$.
+@end
+
+@exo 2 | Plusieurs procédures
+6 cahiers coûtent 9 €. Calcule le prix de 4 cahiers, 10 cahiers et 18 cahiers en utilisant trois procédures différentes, que tu nommeras.
+@sol
+**Passage à l'unité** : 1 cahier = $9 \div 6 = 1{,}50$ € → 4 cahiers = 6 €. **Linéarité additive** : 10 = 6 + 4 → $9 + 6 = 15$ €. **Linéarité multiplicative** : 18 = 3 × 6 → $3 \times 9 = 27$ €. (Coefficient : prix = nombre × 1,5.)
+@end
+
+@exo 2
+Pour 4 personnes, une recette demande 250 g de farine et 3 œufs. Quelles quantités pour 10 personnes ?
+@sol
+Coefficient $\frac{10}{4} = 2{,}5$ : farine $250 \times 2{,}5 = 625$ g ; œufs $3 \times 2{,}5 = 7{,}5$ → en pratique 7 ou 8 œufs.
+@end
+
+@exo 3 | Regard d'enseignant
+À la question « 3 stylos coûtent 4,50 €, combien coûtent 5 stylos ? », un élève répond : « 6,50 €, car 5 = 3 + 2, donc 4,50 + 2 = 6,50 ». Analyse l'erreur.
+@sol
+L'élève utilise un **raisonnement additif** (il ajoute 2 € parce qu'on ajoute 2 stylos) au lieu d'un raisonnement **multiplicatif** : il ajoute la même quantité aux deux grandeurs. Réponse juste : 1 stylo = 1,50 € ; 5 stylos = 7,50 €. Remédiation : tableau, passage à l'unité, faire vérifier avec un cas simple (6 stylos = 2 × 3 stylos = 9 €, pas 7,50 €).
+@end
+
+@serie M3B | Pourcentages
+
+@exo 1
+Calcule : 25 % de 360 ; 12 % de 250 ; 150 % de 40 ; 7,5 % de 200.
+@sol
+$90$ ; $30$ ; $60$ ; $15$.
+@end
+
+@exo 2
+Une classe compte 12 filles et 18 garçons. Quel pourcentage de filles ?
+@sol
+$\frac{12}{30} = 0{,}4 = 40\,\%$.
+@end
+
+@exo 2
+Un vélo coûte 480 €. Son prix augmente de 15 %, puis baisse de 15 %. Quel est le prix final ? Quelle est l'évolution globale ?
+@sol
+$480 \times 1{,}15 \times 0{,}85 = 480 \times 0{,}9775 = 469{,}20$ €. Évolution globale : coefficient $0{,}9775$ → **baisse de 2,25 %**.
+@check approx(480*Rational(115,100)*Rational(85,100), 469.2)
+@end
+
+@exo 3
+Après une remise de 20 %, un manteau coûte 96 €. Quel était son prix avant la remise ?
+@sol
+$P \times 0{,}8 = 96$ donc $P = 96 \div 0{,}8 = 120$ €. (Erreur fréquente : $96 \times 1{,}2 = 115{,}20$ €, faux.)
+@check sols("x*Rational(8,10)-96", [120])
+@end
+
+@exo 3
+La population d'un village passe de 1 250 à 1 400 habitants. Quel est le pourcentage d'augmentation ?
+@sol
+$\frac{1\,400 - 1\,250}{1\,250} = \frac{150}{1\,250} = 0{,}12$ → **+12 %**.
+@end
+
+@serie M3C | Vitesse et échelles
+
+@exo 2
+Un cycliste parcourt 45 km en 1 h 30 min. Quelle est sa vitesse moyenne ? Combien de temps mettrait-il pour parcourir 75 km à cette vitesse ?
+@sol
+$v = 45 \div 1{,}5 = 30$ km/h. $t = 75 \div 30 = 2{,}5$ h $= 2$ h $30$ min.
+@end
+
+@exo 3
+Un train parcourt 520 km en 2 h 50 min. Calcule sa vitesse moyenne (arrondie à l'unité).
+@sol
+2 h 50 min $= 2 + \frac{50}{60} = \frac{17}{6}$ h. $v = 520 \div \frac{17}{6} = \frac{3\,120}{17} \approx 184$ km/h.
+@check approx(520/(Rational(17,6)), 183.53, 0.01)
+@end
+
+@exo 2
+Convertis : 90 km/h en m/s ; 5 m/s en km/h.
+@sol
+$90 \div 3{,}6 = 25$ m/s ; $5 \times 3{,}6 = 18$ km/h.
+@end
+
+@exo 3
+Sur une carte au $\frac{1}{50\,000}$, deux villages sont à 7,4 cm. Quelle est la distance réelle ? Quelle longueur représenterait 12 km sur cette carte ?
+@sol
+$7{,}4 \times 50\,000 = 370\,000$ cm $= 3{,}7$ km. 12 km $= 1\,200\,000$ cm → $1\,200\,000 \div 50\,000 = 24$ cm.
+@end
+
+@exo 4 | Niveau concours
+Un robinet remplit une piscine de 36 m³ en 8 h. Un second robinet la remplit seul en 12 h. En combien de temps la remplissent-ils ensemble ?
+@sol
+Débits : $36 \div 8 = 4{,}5$ m³/h et $36 \div 12 = 3$ m³/h. Ensemble : $7{,}5$ m³/h. Durée : $36 \div 7{,}5 = 4{,}8$ h $= 4$ h $48$ min. (Attention : ce n'est pas la moyenne 10 h !)
+@check same("36/(Rational(36,8)+3)", "Rational(24,5)")
+@end
+
+@qcm
+Un prix augmente de 10 % puis de 10 %. L'augmentation totale est de :
+A) 20 %
+B) 21 %
+C) 19 %
+D) 11 %
+@rep B | $1{,}1 \times 1{,}1 = 1{,}21$.
+@end
+
+@qcm
+Un piéton marche à 5 km/h pendant 36 minutes. Il parcourt :
+A) 1,8 km
+B) 3 km
+C) 3,6 km
+D) 7,2 km
+@rep B | 36 min = 0,6 h ; $5 \times 0{,}6 = 3$ km.
+@end
+
+@serie M3D | Bilan M3 (30 minutes)
+
+@exo 2
+Un paquet de 750 g de café coûte 9 €. À prix au kilo égal, quel est le prix de 1,2 kg ?
+@sol
+Prix au kilo : $9 \div 0{,}75 = 12$ €/kg ; 1,2 kg → $14{,}40$ €.
+@end
+
+@exo 3
+Une TV passe de 600 € à 510 €. Quel pourcentage de réduction ? Si elle baisse encore de 10 %, quel est le nouveau prix et la baisse totale ?
+@sol
+$\frac{90}{600} = 15\,\%$. Puis $510 \times 0{,}9 = 459$ €. Baisse totale : $\frac{600 - 459}{600} = \frac{141}{600} = 23{,}5\,\%$ (et non 25 %).
+@end
+
+@corriges
+
+# M4 | Calcul littéral, équations, fonctions | Les lettres pour généraliser et résoudre des problèmes
+
+:::objectifs
+- produire et utiliser une **expression littérale** ; **substituer** une valeur ;
+- **développer**, **réduire**, **factoriser** (simple distributivité, double distributivité) ;
+- résoudre des **équations du premier degré** et **mettre un problème en équation** ;
+- utiliser les **fonctions linéaires et affines** (tableau, formule, graphique).
+:::
+
+## M4.1 Expressions littérales
+
+:::idee
+Une lettre remplace un nombre **quelconque** ou **inconnu**. Le périmètre d'un carré de côté $c$ est $4c$ : cette formule marche pour **tous** les carrés.
+Conventions : $3 \times x = 3x$ ; $x \times x = x^2$ ; $1x = x$.
+**Substituer** : remplacer la lettre par un nombre (entre parenthèses s'il est négatif) : pour $x = -2$, $x^2 + 3x = (-2)^2 + 3 \times (-2) = 4 - 6 = -2$.
+:::
+
+@drill substitution 9 41 3 | Substituer
+
+## M4.2 Développer, factoriser
+
+:::coeur
+**Simple distributivité** : $k(a + b) = ka + kb$ ; $-(a - b) = -a + b$.
+**Double distributivité** : $(a + b)(c + d) = ac + ad + bc + bd$.
+**Identités remarquables** (cycle 4) : $(a + b)^2 = a^2 + 2ab + b^2$ ; $(a - b)^2 = a^2 - 2ab + b^2$ ; $(a + b)(a - b) = a^2 - b^2$.
+**Factoriser** = écrire sous forme de **produit** : $6x + 9 = 3(2x + 3)$ ; $x^2 - 25 = (x - 5)(x + 5)$.
+:::
+
+:::exemple Calcul mental grâce aux identités
+$102^2 = (100 + 2)^2 = 10\,000 + 400 + 4 = 10\,404$ · $49 \times 51 = (50 - 1)(50 + 1) = 2\,500 - 1 = 2\,499$.
+:::
+
+@drill dev_simple 9 42 3 | Développer (simple distributivité)
+@drill dev_double 9 43 3 | Développer (double distributivité)
+
+## M4.3 Équations du premier degré
+
+:::methode Résoudre $ax + b = cx + d$
++ Développer si besoin, puis **regrouper les $x$** d'un côté et les nombres de l'autre (on ajoute ou on soustrait la même chose des deux côtés).
++ **Diviser** par le coefficient de $x$.
++ **Vérifier** en remplaçant $x$ dans l'équation de départ.
+Exemple : $5x - 3 = 2x + 9$ → $3x = 12$ → $x = 4$. Vérification : $17 = 17$ ✔.
+:::
+
+:::methode Mettre un problème en équation
++ **Choisir l'inconnue** et l'écrire (« soit $x$ le nombre de… »).
++ Traduire l'énoncé par une **équation**.
++ Résoudre.
++ **Revenir au problème** : répondre par une phrase et vérifier la cohérence.
+:::
+
+@drill eq1 9 44 3 | Équations
+
+## M4.4 Fonctions linéaires et affines
+
+:::coeur
+**Fonction** : processus qui à un nombre $x$ associe un **unique** nombre $f(x)$ (son **image**) ; $x$ est un **antécédent** de $f(x)$.
+**Fonction linéaire** : $f(x) = ax$ → modélise la **proportionnalité** ; représentation : droite passant par l'**origine**.
+**Fonction affine** : $f(x) = ax + b$ ; $a$ = **coefficient directeur** (pente), $b$ = **ordonnée à l'origine**. Représentation : droite.
+Si $a > 0$, la fonction est croissante ; si $a < 0$, décroissante.
+Calcul de $a$ à partir de deux points : $a = \frac{f(x_2) - f(x_1)}{x_2 - x_1}$.
+:::
+
+@fig affine:55 | Une fonction linéaire (proportionnalité) et une fonction affine.
+
+:::exemple Comparer deux tarifs (problème classique)
+Tarif A : 8 € par séance. Tarif B : abonnement 30 € + 5 € par séance. Pour $x$ séances : $A(x) = 8x$ (linéaire) ; $B(x) = 5x + 30$ (affine). $8x = 5x + 30$ ⇔ $x = 10$. **Moins de 10 séances** : A est moins cher ; **plus de 10** : B est moins cher ; 10 séances : même prix (80 €).
+:::
+
+@drill affine 9 45 3 | Images et antécédents
+
+## M4.5 Exercices
+
+@serie M4A | Expressions littérales
+
+@exo 1
+Écris l'expression : a) le double de $x$ augmenté de 5 ; b) le carré de la somme de $x$ et de 3 ; c) le périmètre d'un rectangle de longueur $L$ et de largeur $\ell$.
+@sol
+a) $2x + 5$ b) $(x + 3)^2$ c) $2(L + \ell) = 2L + 2\ell$.
+@end
+
+@exo 2
+Développe et réduis : a) $3(2x - 5)$ b) $-2(x - 4) + 3x$ c) $(x + 5)(2x - 1)$ d) $(3x - 2)^2$.
+@sol
+a) $6x - 15$ b) $-2x + 8 + 3x = x + 8$ c) $2x^2 - x + 10x - 5 = 2x^2 + 9x - 5$ d) $9x^2 - 12x + 4$.
+@check same("(x+5)*(2*x-1)", "2*x**2+9*x-5")
+@check same("(3*x-2)**2", "9*x**2-12*x+4")
+@end
+
+@exo 2
+Factorise : a) $5x + 20$ b) $x^2 - 7x$ c) $4x^2 - 9$ d) $(x + 1)(x - 3) + 2(x + 1)$.
+@sol
+a) $5(x + 4)$ b) $x(x - 7)$ c) $(2x - 3)(2x + 3)$ d) $(x + 1)[(x - 3) + 2] = (x + 1)(x - 1)$.
+@check same("(x+1)*(x-3)+2*(x+1)", "(x+1)*(x-1)")
+@end
+
+@exo 3 | Programme de calcul (classique du concours)
+Programme : « Choisir un nombre ; ajouter 3 ; multiplier par le nombre de départ ; soustraire le carré du nombre de départ. » a) Teste avec 5 et avec −2. b) Que remarques-tu ? Démontre-le.
+@sol
+a) Avec 5 : $5 + 3 = 8$ ; $8 \times 5 = 40$ ; $40 - 25 = 15$. Avec $-2$ : $1$ ; $1 \times (-2) = -2$ ; $-2 - 4 = -6$.
+b) On obtient **le triple du nombre de départ**. Preuve : $(x + 3)x - x^2 = x^2 + 3x - x^2 = 3x$.
+@check same("(x+3)*x-x**2", "3*x")
+@end
+
+@serie M4B | Équations et mises en équation
+
+@exo 1
+Résous : a) $4x + 7 = 31$ b) $3x - 5 = 7x + 11$ c) $2(x - 3) = 5 - x$ d) $\frac{x}{4} + 2 = 5$.
+@sol
+a) $x = 6$ b) $-4x = 16$, $x = -4$ c) $2x - 6 = 5 - x$, $3x = 11$, $x = \frac{11}{3}$ d) $\frac{x}{4} = 3$, $x = 12$.
+@check sols("4*x+7-31", [6])
+@check sols("3*x-5-(7*x+11)", [-4])
+@check sols("2*(x-3)-(5-x)", ["11/3"])
+@check sols("x/4+2-5", [12])
+@end
+
+@exo 2
+Résous l'équation produit $(x - 4)(2x + 6) = 0$.
+@sol
+Un produit est nul si l'un de ses facteurs est nul : $x - 4 = 0$ ou $2x + 6 = 0$ → $x = 4$ ou $x = -3$.
+@check sols("(x-4)*(2*x+6)", [4, -3])
+@end
+
+@exo 3 | Problème
+La somme de trois nombres entiers consécutifs est 144. Quels sont ces nombres ?
+@sol
+Soit $n$ le plus petit : $n + (n + 1) + (n + 2) = 144$ → $3n + 3 = 144$ → $n = 47$. Les nombres sont **47, 48, 49**.
+@check sols("3*x+3-144", [47])
+@end
+
+@exo 3 | Problème
+Dans une classe de 26 élèves, il y a 4 filles de plus que de garçons. Combien de filles et de garçons ?
+@sol
+Soit $g$ le nombre de garçons : $g + (g + 4) = 26$ → $2g = 22$ → $g = 11$. **11 garçons et 15 filles.**
+@check sols("2*x+4-26", [11])
+@end
+
+@exo 4 | Niveau concours
+Au cinéma, une place adulte coûte 9 € et une place enfant 6 €. Un groupe de 20 personnes a payé 147 €. Combien d'adultes et d'enfants ?
+@sol
+Soit $a$ le nombre d'adultes ; enfants : $20 - a$. $9a + 6(20 - a) = 147$ → $3a + 120 = 147$ → $a = 9$. **9 adultes et 11 enfants.** Vérification : $81 + 66 = 147$ ✔.
+@check sols("9*x+6*(20-x)-147", [9])
+@end
+
+@serie M4C | Fonctions
+
+@exo 2
+$f(x) = -3x + 4$. Calcule $f(2)$, $f(-1)$, $f(0)$ ; trouve l'antécédent de $-8$.
+@sol
+$f(2) = -2$ ; $f(-1) = 7$ ; $f(0) = 4$. $-3x + 4 = -8$ → $x = 4$.
+@check sols("-3*x+4+8", [4])
+@end
+
+@exo 3
+La fonction affine $g$ vérifie $g(1) = 5$ et $g(3) = 11$. Détermine $g(x)$.
+@sol
+$a = \frac{11 - 5}{3 - 1} = 3$ ; $g(1) = 3 + b = 5$ → $b = 2$. $g(x) = 3x + 2$.
+@end
+
+@exo 3 | Comparer des offres
+Location d'un vélo : offre A : 12 € par jour ; offre B : 30 € + 7 € par jour. a) Exprime le prix de chaque offre pour $x$ jours. b) Pour combien de jours les deux offres sont-elles égales ? c) Quelle offre choisir pour une semaine ?
+@sol
+a) $A(x) = 12x$ ; $B(x) = 7x + 30$. b) $12x = 7x + 30$ → $x = 6$ jours (72 €). c) 7 jours : $A = 84$ €, $B = 79$ € → **offre B**.
+@check sols("12*x-(7*x+30)", [6])
+@end
+
+@exo 2 | Lecture graphique
+Sur la figure de la section M4.4, lis l'image de 2 par $g$ et l'antécédent de 3 par $f$. Vérifie par le calcul.
+@sol
+$g(2) = -2 + 3 = 1$ ; $f(x) = 1{,}5x = 3$ → $x = 2$.
+@end
+
+@qcm
+La droite représentant $f(x) = 2x - 1$ coupe l'axe des ordonnées en :
+A) $(0\,;\,2)$
+B) $(0\,;\,-1)$
+C) $(-1\,;\,0)$
+D) $(\frac{1}{2}\,;\,0)$
+@rep B | $f(0) = -1$ : ordonnée à l'origine.
+@end
+
+@qcm
+Laquelle de ces situations est modélisée par une fonction **linéaire** ?
+A) taxi : 3 € + 1,5 €/km
+B) prix de l'essence à 1,80 €/L
+C) aire d'un carré en fonction du côté
+D) abonnement 10 € + 2 €/séance
+@rep B | Prix = 1,8 × volume : proportionnalité. C n'est pas affine ($c^2$).
+@end
+
+@serie M4D | Bilan M4 (30 minutes)
+
+@exo 3
+Développe $(2x + 3)^2 - (x - 1)(x + 1)$ puis résous l'équation $(2x + 3)^2 - (x - 1)(x + 1) = 3x^2$.
+@sol
+$4x^2 + 12x + 9 - (x^2 - 1) = 3x^2 + 12x + 10$. Équation : $3x^2 + 12x + 10 = 3x^2$ → $12x = -10$ → $x = -\frac{5}{6}$.
+@check same("(2*x+3)**2-(x-1)*(x+1)", "3*x**2+12*x+10")
+@check sols("(2*x+3)**2-(x-1)*(x+1)-3*x**2", ["-5/6"])
+@end
+
+@exo 3
+Un rectangle a un périmètre de 50 cm ; sa longueur mesure 7 cm de plus que sa largeur. Trouve ses dimensions et son aire.
+@sol
+$2(\ell + \ell + 7) = 50$ → $4\ell + 14 = 50$ → $\ell = 9$ cm ; $L = 16$ cm ; aire $= 144$ cm².
+@check sols("2*(2*x+7)-50", [9])
+@end
+
+@corriges

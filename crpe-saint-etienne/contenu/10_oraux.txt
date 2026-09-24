@@ -1,0 +1,257 @@
+%% Oraux : O1 (français ou mathématiques), O2 (entretien)
+# O1 | L'oral 1 : français ou mathématiques | 1 h de préparation, 15 min d'exposé, 30 min d'échange
+
+:::examen Le format (session 2027, à revérifier sur la convocation)
+Préparation : **1 heure**. Épreuve : **45 minutes** : **exposé de 15 minutes** portant sur une **notion** du programme de la discipline choisie à l'inscription (français **ou** mathématiques), à partir des documents fournis, puis **30 minutes d'échange** avec le jury. Coefficient **5**. Note **0** éliminatoire.
+Le jury évalue : la **maîtrise de la notion** (savoir savant, vocabulaire exact), la capacité à l'**expliquer** clairement, la connaissance des **programmes** et des **difficultés des élèves**, et la qualité de la **communication**.
+:::
+
+:::note
+Les modalités précises (nature des documents, place éventuelle d'une proposition de séance) sont fixées par l'arrêté et illustrées par les **sujets zéro** publiés sur devenirenseignant.gouv.fr : les lire dès avril. La méthode ci-dessous fonctionne dans tous les cas.
+:::
+
+## O1.1 La méthode en 5 temps
+
+:::methode Pendant l'heure de préparation
++ **(5 min) Lire le sujet et les documents** : quelle est la **notion** ? Quel niveau (cycle) ? Que demande exactement la consigne ?
++ **(15 min) Définir la notion** comme un expert : définition précise, propriétés, vocabulaire, exemples et contre-exemples. C'est le **cœur** de l'épreuve : une erreur disciplinaire coûte très cher.
++ **(10 min) Situer dans les programmes** : à quel cycle elle est introduite, comment elle progresse (cycle 1 → 2 → 3 → 4), quels liens avec d'autres notions.
++ **(15 min) Anticiper les difficultés des élèves** : erreurs typiques, obstacles, et comment les aider (matériel, représentations, étapes, différenciation). Utiliser les documents (productions d'élèves, extraits de manuels) si le dossier en contient.
++ **(15 min) Construire le plan de l'exposé** sur une seule feuille : introduction (annonce du plan) → 2 ou 3 parties → conclusion. Écrire en gros les **mots-clés**, pas des phrases.
+:::
+
+:::coeur Le plan d'exposé « passe-partout » (15 minutes)
+**Introduction (1 min 30)** : présenter la notion, son importance, annoncer le plan.
+**I. La notion (5 min)** : définition, propriétés, vocabulaire, exemples.
+**II. La notion à l'école (5 min)** : place dans les programmes, progression, difficultés et erreurs d'élèves, leviers pour les surmonter (analyse des documents).
+**III. Une mise en œuvre possible (2 min 30)** : une activité précise (objectif, matériel, déroulement, trace écrite, différenciation, évaluation).
+**Conclusion (1 min)** : synthèse + ouverture (lien avec une autre notion ou un autre domaine).
+:::
+
+:::astuce Pendant l'échange (30 minutes)
+Écouter la question jusqu'au bout ; reformuler si besoin ; répondre **précisément** et **brièvement** ; savoir dire « je ne sais pas, mais voici comment je le chercherais » ; ne jamais inventer une référence. Les questions servent souvent à **vérifier la maîtrise disciplinaire** : réviser les chapitres F et M de ce guide.
+:::
+
+## O1.2 Fiches notions : mathématiques
+
+:::coeur La numération décimale de position
+**Savoir** : 10 chiffres ; valeur de position (chaque rang vaut 10 fois le rang inférieur) ; rôle du **zéro** ; distinguer **chiffre des** et **nombre de** (dizaines…). **Programmes** : cycle 1 (quantités jusqu'à 10), cycle 2 (nombres jusqu'à 1 000 puis 10 000 ; groupements par 10), cycle 3 (grands nombres, décimaux). **Difficultés** : écrire « 1004 » pour cent quatre ; irrégularités orales (onze, soixante-dix, quatre-vingts) ; confusion chiffre/nombre. **Leviers** : **groupements** et **échanges** (matériel base 10, bûchettes), tableau de numération, jeux du banquier.
+:::
+
+:::coeur Fractions et nombres décimaux
+**Savoir** : fraction comme **partage**, comme **quotient**, comme **nombre** sur la droite graduée ; fractions décimales ; un décimal est un nombre qui peut s'écrire sous forme de fraction décimale. **Programmes** : cycle 3 (fractions simples, puis fractions décimales, puis écriture à virgule). **Difficultés** : considérer un décimal comme deux entiers séparés par une virgule (« 2,15 > 2,3 ») ; « 0,3 × 0,2 = 0,6 » ; « il n'y a pas de nombre entre 2,3 et 2,4 ». **Leviers** : bandes de papier (unité partagée), droite graduée, lien fractions décimales ↔ écriture à virgule (0,15 = 15 centièmes = 1 dixième et 5 centièmes).
+:::
+
+:::coeur La résolution de problèmes
+**Savoir** : typologie (Vergnaud) des problèmes **additifs** (composition de deux états, transformation d'un état, comparaison) et **multiplicatifs** (proportionnalité simple, produit de mesures, partage / groupement pour la division). **Programmes** : au cœur des mathématiques des cycles 2 et 3 (problèmes en une, puis plusieurs étapes). **Difficultés** : lire l'énoncé ; choisir l'opération à partir d'un mot-inducteur (« de plus » → addition) ; problèmes de comparaison et de transformation inconnue initiale. **Leviers** : **modélisation** (schémas en barres), manipulation, verbalisation, variation des nombres, typologie connue de l'enseignant pour construire une progression.
+:::
+
+:::coeur La proportionnalité
+**Savoir** : coefficient, linéarité (additive, multiplicative), passage à l'unité, produit en croix, représentation graphique (droite passant par l'origine). **Programmes** : dès le cycle 2 implicitement (doubles, prix), explicite au cycle 3, fonctions linéaires au cycle 4. **Difficultés** : raisonnement **additif** au lieu de multiplicatif ; appliquer la proportionnalité là où elle ne s'applique pas (âge / taille). **Leviers** : recettes, prix, échelles ; confronter plusieurs procédures ; situations non proportionnelles comme contre-exemples.
+:::
+
+:::coeur Grandeurs et mesures : aire et périmètre
+**Savoir** : une grandeur se compare **avant** de se mesurer ; aire = mesure de la surface, périmètre = longueur du contour ; ils ne varient pas dans le même sens. **Programmes** : cycle 2 (longueurs, masses, durées), cycle 3 (aires, périmètres, formules), cycle 4 (volumes, grandeurs composées). **Difficultés** : confusion aire/périmètre ; unités d'aire (1 m² = 100 dm²) ; formule appliquée sans sens. **Leviers** : comparer sans mesurer (découpage, superposition), pavage par unités d'aire, figures de même aire et de périmètres différents.
+:::
+
+:::coeur La géométrie plane
+**Savoir** : figures et propriétés (voir M5), vocabulaire (segment, droite, milieu, perpendiculaire), classification inclusive des quadrilatères. **Programmes** : du **perceptif** (reconnaître « à l'œil », cycle 1 – début cycle 2) à l'**instrumenté** (vérifier avec l'équerre, la règle, le compas, cycles 2 – 3) puis au **déductif** (démontrer, cycle 4). **Difficultés** : reconnaître un carré « posé sur la pointe » ; ne pas considérer un carré comme un rectangle ; utiliser l'équerre. **Leviers** : varier les positions et les tailles, reproduction, description, programmes de construction.
+:::
+
+## O1.3 Fiches notions : français
+
+:::coeur Apprendre à lire : le code
+**Savoir** : **conscience phonologique** (syllabes, puis phonèmes) ; **principe alphabétique** (les lettres codent des sons) ; **correspondances graphèmes-phonèmes** (un graphème peut avoir plusieurs lettres : *ou, an, ch*) ; **combinatoire** (fusion syllabique : *l* + *a* = *la*) ; mots outils mémorisés. **Programmes** : cycle 1 (conscience phonologique, découvrir le principe alphabétique), CP (apprentissage systématique et explicite du code, progression des correspondances), CE1 (fluence). **Difficultés** : confusions de sons proches (*p/b, f/v*), de lettres en miroir (*b/d*), lecture devinette. **Leviers** : enseignement **explicite et progressif**, textes **déchiffrables**, entraînement quotidien, dictées de syllabes, fluence.
+:::
+
+:::coeur La compréhension en lecture
+**Savoir** : comprendre, c'est construire une **représentation mentale** du texte : identifier personnages, lieux, buts, relations causales ; faire des **inférences** ; mobiliser son vocabulaire et ses connaissances. **Programmes** : dès le cycle 1 (compréhension de textes lus par l'adulte), puis tout au long des cycles 2 et 3. **Difficultés** : lecture mot à mot sans représentation ; incompréhension des **anaphores** (il, celui-ci), des implicites. **Leviers** : enseigner des **stratégies** (rappel du récit, reformulation, questionnement), lectures offertes, débats interprétatifs, travail sur les substituts du personnage.
+:::
+
+:::coeur L'orthographe grammaticale : les accords
+**Savoir** : chaîne d'accords dans le GN (déterminant, nom, adjectif), accord sujet-verbe, participe passé (F5). **Programmes** : cycle 2 (accords simples dans le GN, sujet-verbe), cycle 3 (accords plus complexes, participe passé avec *être*), cycle 4 (participe passé avec *avoir*). **Difficultés** : marques **muettes** à l'oral (*ils chantent*), sujet éloigné ou inversé, écran (« les enfants **le** regardent »). **Leviers** : dictées négociées ou « du jour », phrases dictées avec justification, codes de correction, manipulations (remplacement par *ils*, *c'est… qui*).
+:::
+
+:::coeur La production d'écrits
+**Savoir** : écrire = **planifier**, **mettre en texte**, **réviser** ; cohérence (temps, personnages), cohésion (connecteurs, substituts). **Programmes** : dictée à l'adulte au cycle 1, écrits courts quotidiens aux cycles 2 et 3, réécriture. **Difficultés** : répétitions, absence de ponctuation, incohérences de temps, surcharge cognitive (orthographe + idées). **Leviers** : écrits courts réguliers, **brouillon** et **réécriture** guidée par une grille de critères construite avec les élèves, banques de mots, outils (affichages).
+:::
+
+:::coeur Le vocabulaire (lexique)
+**Savoir** : familles de mots, dérivation, synonymes, champ lexical, polysémie (F6). **Programmes** : enrichir le lexique de façon **structurée** et régulière (dès la maternelle). **Difficultés** : vocabulaire passif sans réemploi ; écarts importants selon le milieu familial. **Leviers** : apprentissage explicite et **réemploi** (réseaux de mots, boîtes à mots, jeux), catégorisation, lecture de textes riches.
+:::
+
+:::coeur Le langage oral à l'école maternelle
+**Savoir** : oral en **situation** (ici et maintenant) puis oral **d'évocation** (raconter ce qui n'est pas présent), syntaxe, vocabulaire, compréhension. **Programmes** : domaine « Mobiliser le langage dans toutes ses dimensions » (cycle 1). **Leviers** : ateliers de langage en petits groupes, albums lus et rejoués, **rappel** de ce qu'on a fait, comptines, jeux de langage.
+:::
+
+## O1.4 Sujets d'entraînement corrigés
+
+@serie O1A | Mathématiques
+
+@exo 3 | Sujet : « La comparaison des nombres décimaux »
+Documents : une production d'élève de CM1 qui range 3,5 ; 3,12 ; 3,405 dans l'ordre croissant : « 3,5 < 3,12 < 3,405 ». Prépare un exposé de 15 minutes.
+@sol
+**Introduction** : comparer des décimaux, une compétence du cycle 3, révélatrice de la compréhension de la numération ; plan.
+**I. La notion** : un décimal s'écrit $\frac{n}{10^k}$ ; on compare la partie entière, puis rang par rang (dixièmes, centièmes…) ; $3{,}5 = 3{,}500 > 3{,}405 > 3{,}120$. Exemples, contre-exemples, droite graduée.
+**II. À l'école et erreurs** : l'élève compare les parties décimales comme des **entiers** (5 < 12 < 405) : il ne donne pas de valeur de position aux chiffres après la virgule. Autre erreur connue : « plus il y a de chiffres, plus c'est petit ». Leviers : fractions décimales ($3{,}5 = 3 + \frac{5}{10} = 3 + \frac{50}{100}$), tableau de numération, droite graduée, matériel (bandes, monnaie : 3,50 € > 3,12 €).
+**III. Mise en œuvre** : placer ces nombres sur une droite graduée de 3 à 4 (au dixième puis au centième) ; débat sur la production ; trace écrite (méthode de comparaison) ; différenciation (nombres avec le même nombre de décimales d'abord).
+**Conclusion** : la comparaison des décimaux s'appuie sur la compréhension de la numération ; ouverture : intercaler des nombres (densité).
+@end
+
+@exo 3 | Sujet : « Aire et périmètre »
+Documents : un exercice de manuel de CM2 : « Ces deux rectangles (8 cm × 2 cm et 4 cm × 4 cm) ont-ils la même aire ? le même périmètre ? » et la réponse d'un élève : « Même aire donc même périmètre ».
+@sol
+**I. Notions** : aire (mesure de la surface, en cm²) ≠ périmètre (longueur du contour, en cm) ; ici les deux aires valent 16 cm², les périmètres 20 cm et 16 cm. **Ils ne varient pas ensemble.**
+**II. Difficultés** : confusion des deux grandeurs, confusion des unités, croyance que « même aire → même périmètre ». Leviers : **comparer sans mesurer** (découper, recomposer : l'aire se conserve alors que le périmètre change), pavages par des carreaux unités, ficelle pour le contour.
+**III. Activité** : avec 12 carrés unités, construire toutes les figures possibles (rectangles et autres), calculer aires et périmètres, conclure. Trace écrite. Différenciation : quadrillage fourni.
+**Conclusion** : distinguer les grandeurs avant les formules ; ouverture : unités d'aire (cm², m²).
+@end
+
+@exo 3 | Sujet : « Les problèmes de division au cycle 2 »
+@sol
+**I. Notion** : deux sens de la division : **partage** (« 12 bonbons partagés entre 3 enfants : combien chacun ? ») et **groupement** / quotition (« 12 bonbons par paquets de 3 : combien de paquets ? ») ; division euclidienne (reste).
+**II. Programmes et difficultés** : au cycle 2, résolution par manipulation, dessin, additions ou soustractions répétées, puis multiplication à trou ; les élèves reconnaissent mal les deux sens ; interprétation du reste. Leviers : matériel, schémas, verbalisation, problèmes variés.
+**III. Mise en œuvre** : situation concrète en CE1 (répartir des jetons), procédures personnelles, mise en commun, institutionnalisation (« 12 = 3 × 4 »).
+@end
+
+@serie O1B | Français
+
+@exo 3 | Sujet : « L'accord sujet-verbe au cycle 3 »
+Documents : une dictée d'élève de CM1 : « Les enfants du village joue dans la cour. » ; « Mes parents les regarde. »
+@sol
+**I. Notion** : le verbe s'accorde en personne et en nombre avec le sujet (identifié par *c'est… qui*, remplacement par un pronom). Cas difficiles : sujet éloigné (complément du nom **du village** entre le sujet et le verbe), pronom **écran** (*les* COD devant le verbe), sujet inversé, sujet *qui*.
+**II. Analyse** : l'élève accorde avec le mot le plus **proche** (*village*, *les*) au lieu du noyau du sujet (*enfants*, *parents*) ; les marques du pluriel sont **muettes** à l'oral (*joue/jouent*). Leviers : manipulation (remplacer par *ils* : *ils jouent*), encadrement *c'est… qui*, **flèche** du sujet vers le verbe, dictées négociées avec justification, entraînement régulier.
+**III. Séance** : corpus de phrases à trier (sujet proche / éloigné), manipulation, affichage de la procédure, dictée courte, relecture ciblée.
+**Conclusion** : un accord qui ne s'entend pas doit se **raisonner** ; ouverture : accord du participe passé avec *être*.
+@end
+
+@exo 3 | Sujet : « Enseigner le principe alphabétique au CP »
+@sol
+**I. Notion** : notre écriture code des **phonèmes** par des **graphèmes** ; environ 36 phonèmes et 130 graphèmes : les correspondances ne sont pas bi-univoques (/o/ : *o, au, eau*).
+**II. Programmes et difficultés** : conscience phonologique en maternelle ; au CP, apprentissage explicite, progression des correspondances (des plus fréquentes et régulières aux plus complexes), textes déchiffrables ; difficultés : discrimination auditive, fusion, confusions visuelles, lettres muettes.
+**III. Séance** : découverte d'un phonème (jeu d'écoute), graphème associé, combinatoire (syllabes), lecture de mots et d'une phrase déchiffrable, encodage (écrire une syllabe dictée), entraînement quotidien.
+@end
+
+@exo 3 | Sujet : « Les classes de mots : déterminant et pronom »
+@sol
+**I. Notion** : le **déterminant** précède le nom dans le GN ; le **pronom** remplace (ou représente) un GN ; certains mots sont les deux (*le, la, les, leur*) ; test : présence d'un nom après (déterminant) ou d'un verbe (pronom). **II. Difficultés** : homonymie (*leur/leurs*), confusion d'accord (« je leurs donne »). Leviers : manipulations, tri de phrases, remplacement par un nom. **III. Activité** : corpus de phrases avec *le, la, les, leur* ; tri justifié ; construction d'une affiche-outil ; réinvestissement en dictée.
+@end
+
+@corriges
+
+# O2 | L'oral 2 : l'entretien | Motivation, valeurs de la République, mises en situation
+
+:::examen Le format (à revérifier)
+Environ **35 minutes** : une **présentation de 5 minutes** (parcours, motivation, vision du métier), puis un **échange** avec le jury : projection dans le métier, connaissance du système éducatif, **valeurs de la République** et exigences du service public (laïcité, neutralité, égalité), **mises en situation** professionnelles (vie de classe, parents, élèves, équipe).
+Le jury évalue la **posture** : capacité à se projeter, à réfléchir, à s'appuyer sur le cadre institutionnel, à agir avec bienveillance et fermeté.
+:::
+
+## O2.1 La présentation de 5 minutes
+
+:::methode Construire sa présentation (à écrire, puis à dire sans lire)
++ **Qui je suis** (30 s) : formation, expériences marquantes (sans réciter un CV).
++ **Ce qui m'a menée vers ce métier** (1 min 30) : une ou deux expériences **concrètes** avec des enfants ou des groupes (animation, soutien scolaire, stage, parentalité, autre métier) et **ce qu'elles m'ont appris**.
++ **Ma vision du métier** (2 min) : transmettre des savoirs, faire réussir **tous** les élèves, faire vivre les valeurs de la République, travailler en équipe et avec les familles.
++ **Mes atouts et ce que je dois encore apprendre** (1 min) : montrer de la **lucidité** (on n'est pas encore formé) et l'envie de progresser.
+:::
+
+:::piege
+À éviter : « j'aime les enfants » comme seul argument ; les anecdotes sans analyse ; critiquer l'institution ; réciter un texte appris par cœur (le jury le sent). Se chronométrer : **5 minutes, pas 7**.
+:::
+
+:::astuce Un parcours atypique (reconversion, autre pays) est un atout
+Une expérience professionnelle antérieure ou une autre langue maternelle sont des **richesses** : savoir expliquer ce qu'elles apportent (rigueur, gestion de groupe, ouverture culturelle, compréhension des élèves allophones et de leurs familles).
+:::
+
+## O2.2 Le système éducatif en fiches
+
+:::coeur L'école primaire
+**Instruction obligatoire** de **3 à 16 ans** (depuis 2019) ; puis obligation de formation jusqu'à 18 ans.
+**Cycles** : cycle 1 (petite, moyenne, grande section) ; cycle 2 (CP, CE1, CE2) ; cycle 3 (CM1, CM2, 6e) ; cycle 4 (5e, 4e, 3e). **Socle commun de connaissances, de compétences et de culture** : 5 domaines.
+**Acteurs** : le **directeur** ou la **directrice** d'école ; l'**IEN** (inspecteur de l'Éducation nationale) de circonscription, supérieur hiérarchique ; le **DASEN** (directeur académique, à la tête de la DSDEN de la Loire, à Saint-Étienne) ; le **recteur** (académie de Lyon). **Conseil des maîtres**, **conseil de cycle**, **conseil d'école** (enseignants, parents élus, maire, IEN). **ATSEM** (maternelle), **AESH** (accompagnants d'élèves en situation de handicap), **RASED** (aides spécialisées), médecin et infirmier scolaires, psychologue de l'Éducation nationale.
+:::
+
+:::coeur L'école inclusive et l'aide aux élèves
+**Loi de 2005** : droit à la scolarisation des élèves en situation de handicap. **PPS** (projet personnalisé de scolarisation, décidé par la MDPH) ; **PAP** (plan d'accompagnement personnalisé, troubles des apprentissages : dyslexie…) ; **PAI** (projet d'accueil individualisé, maladie chronique, allergie) ; **PPRE** (programme personnalisé de réussite éducative, difficultés scolaires) ; **APC** (activités pédagogiques complémentaires) ; **UPE2A** (élèves allophones).
+:::
+
+:::coeur Les obligations de l'enseignant, agent public
+**Neutralité** (politique, religieuse), **laïcité**, **impartialité**, **dignité**, **probité**, **intégrité** ; **obligation de réserve** (modération dans l'expression publique), **discrétion professionnelle** et **secret professionnel** ; **obéissance hiérarchique** (sauf ordre manifestement illégal) ; **obligation de signalement** (enfance en danger). Le **référentiel des compétences des métiers du professorat et de l'éducation** (2013) décrit ce qui est attendu : faire partager les valeurs de la République, agir en éducateur responsable et éthique, coopérer avec les parents et les partenaires, maîtriser les savoirs, prendre en compte la diversité des élèves, évaluer…
+:::
+
+:::coeur Protection des élèves
+**Enfance en danger** : devant des signes de maltraitance, on **ne mène pas l'enquête** ; on écoute l'enfant sans l'interroger, on note ses mots exacts, on informe **immédiatement** le directeur et on rédige une **information préoccupante** (cellule départementale, CRIP) ; en cas de danger grave et immédiat : **signalement au procureur de la République**. Numéro national : **119**.
+**Harcèlement** : répétition, rapport de force, isolement de la victime. Écouter, protéger, informer le directeur et les familles, appliquer le protocole (programme **pHARe**) ; numéro **3018** ; le harcèlement scolaire est un **délit** (loi de 2022).
+:::
+
+## O2.3 Répondre à une mise en situation
+
+:::methode La grille en 5 points
++ **Analyser** : de quoi s'agit-il ? Quels **principes** sont en jeu (sécurité, laïcité, égalité, bienveillance, droit à l'éducation) ?
++ **Agir immédiatement** : protéger l'élève, garder son calme, faire respecter la règle.
++ **S'appuyer sur le cadre** : règlement intérieur, lois, textes (charte de la laïcité, protocole harcèlement…).
++ **Ne pas rester seul(e)** : informer le **directeur**, l'**IEN** si nécessaire ; travailler avec l'équipe, le RASED, les familles, le médecin scolaire.
++ **Prévenir et faire apprendre** : exploiter la situation en classe (EMC, débat, règles de vie) pour éviter qu'elle se reproduise.
+:::
+
+## O2.4 Mises en situation corrigées
+
+@serie O2A | Vie de classe et élèves
+
+@exo 3
+Pendant la récréation, un élève de CM2 traite un camarade de « sale Arabe ». Que faites-vous ?
+@sol
+**Analyse** : propos **racistes**, contraires aux valeurs de la République (égalité, dignité) et punis par la loi. **Immédiatement** : faire cesser, protéger et rassurer la victime, rappeler fermement à l'auteur que ces propos sont interdits. **Cadre** : règlement intérieur, sanction éducative proportionnée ; informer le **directeur** ; rencontrer les **familles** des deux élèves ; si les faits se répètent, les signaler selon le protocole (référents académiques « racisme et antisémitisme »). **Prévention** : séance d'**EMC** sur les discriminations (Déclaration des droits de l'homme, débat réglé), travail de l'équipe sur le climat scolaire.
+@end
+
+@exo 3
+Une élève de CP pleure tous les matins et semble très fatiguée ; elle vous dit : « Papa me tape quand il est en colère. »
+@sol
+**Analyse** : possible **enfance en danger** : l'enseignant a une **obligation** d'agir. **Immédiatement** : écouter l'enfant avec calme, sans poser de questions orientées ni promettre le secret ; **noter ses mots exacts**, la date, l'heure. **Cadre** : informer **sans délai** le directeur ; rédiger une **information préoccupante** transmise à la cellule départementale (CRIP) ; si le danger est grave et immédiat (traces de coups, peur de rentrer), **signalement au procureur**. Ne pas prévenir la famille soi-même, ne pas enquêter. S'appuyer sur l'infirmière / le médecin scolaire et le psychologue de l'EN. **Suite** : rester attentif et bienveillant avec l'enfant.
+@end
+
+@exo 3
+Un élève de CE2 perturbe constamment la classe (bruits, déplacements, refus de travailler).
+@sol
+**Analyse** : chercher la **cause** (difficulté scolaire, besoin de bouger, trouble, situation familiale) plutôt que de réagir seulement par la punition. **Agir** : règles de vie claires et **constantes**, placement, responsabilités confiées, tâches adaptées et fractionnées, valorisation des progrès ; sanctions **éducatives** si nécessaire (jamais humiliantes, jamais de privation totale de récréation). **Équipe** : en parler au **conseil de cycle**, au directeur, solliciter le **RASED** ; rencontrer les **parents** pour construire une stratégie commune ; si un trouble est suspecté, orienter vers le médecin scolaire (éventuel PAP / PPS). **Prévention** : conseils d'élèves, messages clairs.
+@end
+
+@exo 3
+Un élève de CM1 est régulièrement isolé, moqué et bousculé par un groupe de camarades.
+@sol
+**Analyse** : les critères du **harcèlement** (répétition, rapport de force, isolement) semblent réunis. **Immédiatement** : protéger la victime, l'écouter, la rassurer (« tu as bien fait d'en parler »). **Cadre** : informer le **directeur**, appliquer le protocole **pHARe** (entretiens avec la victime, les témoins, les auteurs ; méthode de la préoccupation partagée), informer les **familles** ; numéro **3018** ; le harcèlement est un délit. **Prévention** : séances d'EMC sur l'empathie, élèves ambassadeurs, vigilance de l'équipe pendant les récréations.
+@end
+
+@serie O2B | Laïcité, parents, équipe
+
+@exo 3
+Un parent refuse que sa fille participe à la séance de piscine « pour des raisons religieuses ».
+@sol
+**Analyse** : la natation est un **enseignement obligatoire** (savoir nager est un enjeu de **sécurité**) ; la laïcité garantit la liberté de conscience mais ne permet pas de se soustraire à un enseignement. **Agir** : recevoir le parent avec le **directeur**, **écouter** ses inquiétudes (tenue, vestiaires : des solutions pratiques existent), **expliquer** l'objectif et le caractère obligatoire, rappeler le **règlement** et la **charte de la laïcité à l'École** (article 13 : nul ne peut se prévaloir de son appartenance religieuse pour refuser de se conformer aux règles de l'École ; article 12 : aucun élève ne peut invoquer une conviction religieuse pour contester un enseignement du programme). **En cas de refus persistant** : informer l'**IEN** ; les absences non justifiées sont signalées. Toujours dans le **dialogue** et le respect.
+@end
+
+@exo 3
+Lors d'une réunion, un parent vous reproche violemment d'avoir mis une « mauvaise note » à son enfant.
+@sol
+**Agir** : rester **calme**, écouter, ne pas répondre à l'agressivité ; si la tension persiste, proposer un **rendez-vous** ultérieur en présence du directeur. **Expliquer** : critères d'évaluation, objectifs, progrès et difficultés de l'élève (avec ses travaux), ce qui est proposé pour l'aider (différenciation, APC). **Construire** une alliance : l'objectif commun est la réussite de l'enfant. En cas de menaces ou d'insultes, informer le directeur et l'IEN (protection fonctionnelle de l'agent).
+@end
+
+@exo 3
+Une collègue vous demande de ne pas appliquer le programme de votre niveau parce qu'« on a toujours fait autrement dans cette école ».
+@sol
+**Analyse** : les **programmes nationaux** s'imposent à tous (égalité entre les élèves) ; la **liberté pédagogique** porte sur les méthodes, pas sur les contenus. **Agir** : dialoguer avec respect, s'appuyer sur les programmes et la **progression de cycle** définie en **conseil de cycle** ; en parler au **directeur** ; proposer un travail commun (outils, progressions). Montrer qu'on sait travailler en **équipe** sans renoncer au cadre.
+@end
+
+@exo 3
+Lors d'une sortie, une maman accompagnatrice porte un foulard. Un autre parent proteste auprès de vous.
+@sol
+**Analyse** : l'enseignant est tenu à la **neutralité** ; les parents accompagnateurs sont des **collaborateurs occasionnels** du service public : selon le Conseil d'État (étude de 2013) et le vademecum ministériel sur la laïcité, ils ne sont pas, en principe, soumis à l'obligation de neutralité religieuse, mais doivent s'abstenir de tout **prosélytisme** ; des restrictions peuvent être justifiées par le bon fonctionnement du service. **Agir** : expliquer calmement au parent le cadre, en s'appuyant sur le directeur et le **vademecum « La laïcité à l'école »** ; veiller à ce qu'aucun comportement de prosélytisme n'ait lieu pendant la sortie. En cas de doute, solliciter l'équipe « Valeurs de la République » de l'académie.
+@end
+
+@exo 3 | Questions de motivation fréquentes
+Prépare une réponse (1 minute chacune) : a) Pourquoi ce métier ? b) Qu'est-ce qu'un bon enseignant ? c) Comment faire réussir tous les élèves ? d) Qu'est-ce que la laïcité pour vous ? e) Quelles sont vos faiblesses ?
+@sol
+Pistes : a) une expérience **concrète** + le sens du service public + la transmission. b) quelqu'un qui maîtrise ses savoirs, qui est **exigeant et bienveillant**, qui s'adapte à chaque élève, qui travaille en équipe et **se forme** tout au long de sa carrière. c) évaluer pour repérer les besoins, **différencier**, enseigner explicitement, s'appuyer sur les aides (RASED, APC, PPRE), coopérer avec les familles. d) un principe de **liberté** (de conscience) et de **neutralité** de l'État, qui protège les élèves et permet de vivre ensemble ; loi de 1905, charte de 2013. e) une faiblesse **réelle mais maîtrisée**, avec ce que l'on fait pour progresser (ex. : « j'ai tendance à vouloir tout préparer dans le détail ; j'apprends à prioriser »).
+@end
+
+@corriges

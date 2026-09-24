@@ -1,0 +1,801 @@
+%% Français : grammaire (F1 à F5)
+# F1 | Les classes de mots | Reconnaître la nature de chaque mot : la base de toute l'analyse grammaticale
+
+:::objectifs
+- connaître les **classes de mots** (variables et invariables) avec la terminologie officielle ;
+- distinguer les **déterminants** et les **pronoms**, les **adverbes**, les **prépositions** et les **conjonctions** ;
+- utiliser des **tests** (remplacement, suppression, déplacement) pour justifier une réponse, comme le demande le jury.
+:::
+
+:::note Temps conseillé : semaines 1 et 2 du planning.
+**Pourquoi c'est important :** la partie « grammaire » vaut **6 points sur 20** de la partie français, et chaque question commence souvent par « donnez la classe de… » ou « justifiez ». Le jury attend la **terminologie grammaticale officielle** (document Éduscol « Grammaire du français — Terminologie grammaticale », 2020) et des **justifications par des manipulations**.
+:::
+
+## F1.1 Nature et fonction : deux questions différentes
+
+:::idee
+Chaque mot a une **classe** (ou **nature**) : c'est ce qu'il **est**, comme une carte d'identité, qu'on trouve dans le dictionnaire (*chat* est un nom, *manger* un verbe).
+Dans une phrase, un mot ou un groupe de mots a aussi une **fonction** : c'est le **rôle** qu'il joue (sujet, complément…). La fonction change selon la phrase.
+Exemple : dans « *Le chat dort* », *chat* est un **nom** (classe) et le groupe *le chat* est **sujet** (fonction). Dans « *Je vois le chat* », *chat* est toujours un nom, mais *le chat* est **complément d'objet direct**.
+:::
+
+:::piege
+Ne jamais répondre à « donnez la classe » par une fonction (ou l'inverse) : c'est l'erreur la plus pénalisée.
+**Classe** → nom, verbe, adjectif, déterminant, pronom, adverbe, préposition, conjonction, interjection.
+**Fonction** → sujet, complément du verbe, attribut, complément de phrase, complément du nom, épithète…
+:::
+
+## F1.2 Les classes de mots
+
+| Classes **variables** (elles changent de forme) | Classes **invariables** |
+| **nom** (commun, propre) : *table, Lyon* | **adverbe** : *vite, très, hier, ne… pas* |
+| **déterminant** : *le, un, ce, mon, quelques, trois* | **préposition** : *à, de, dans, pour, sans, avec* |
+| **adjectif** (qualificatif) : *grand, rouge* | **conjonction de coordination** : *mais, ou, et, donc, or, ni, car* |
+| **pronom** : *il, le, qui, celui-ci, personne* | **conjonction de subordination** : *que, quand, si, parce que, lorsque* |
+| **verbe** : *chanter, être* | **interjection** : *oh, hélas, chut* |
+
+:::astuce Retenir les conjonctions de coordination
+« **Mais où est donc Ornicar ?** » → *mais, ou, et, donc, or, ni, car*.
+:::
+
+### Le nom et le groupe nominal
+
+:::coeur
+Le **nom** désigne un être, une chose, une idée. Il a un **genre** (fixe : *la table*) et varie en **nombre**. Il est le **noyau** du groupe nominal (GN).
+Le **GN minimal** = déterminant + nom (*le chien*). Le **GN étendu** ajoute des **expansions** : adjectif épithète (*le gros chien*), complément du nom (*le chien du voisin*), proposition subordonnée relative (*le chien qui aboie*).
+**Nom propre** : majuscule, en général sans déterminant (*Lucie*), mais pas toujours (*la Loire, les Alpes*).
+:::
+
+### Le déterminant
+
+:::coeur
+Le déterminant se place **devant le nom** et forme avec lui le GN. Il est **obligatoire** (sauf cas particuliers) et indique le genre et le nombre.
+
+| Sorte de déterminant | Exemples |
+| article **défini** | *le, la, l', les* (et contractés *au, aux, du, des* = *à le, à les, de le, de les*) |
+| article **indéfini** | *un, une, des* |
+| article **partitif** | *du, de la, de l'* (*boire du lait*) |
+| déterminant **possessif** | *mon, ta, son, notre, vos, leurs…* |
+| déterminant **démonstratif** | *ce, cet, cette, ces* |
+| déterminant **interrogatif / exclamatif** | *quel, quelle, quels, quelles* |
+| déterminant **indéfini** | *chaque, plusieurs, quelques, aucun, tout, certains* |
+| déterminant **numéral** (cardinal) | *deux, trois, cent* |
+
+:::
+
+:::piege Déterminant ou pronom ?
+Le **déterminant** accompagne un nom ; le **pronom** le **remplace**.
+« *Je prends **le** livre* » : *le* + nom → **déterminant** (article défini).
+« *Je **le** prends* » : *le* devant un verbe, remplace *le livre* → **pronom** personnel.
+« ***Leur** maison* » (+ nom) → déterminant possessif ; « *Je **leur** parle* » → pronom personnel (invariable, jamais de *s*).
+:::
+
+:::piege *des* : article indéfini ou article défini contracté ?
+« *J'ai vu **des** oiseaux* » : pluriel de *un oiseau* → **article indéfini**.
+« *Le chant **des** oiseaux* » : = *de les oiseaux* → **article défini contracté** (préposition *de* + article *les*).
+**Test :** mettre au singulier. *Des oiseaux* → *un oiseau* (indéfini) ; *le chant des oiseaux* → *le chant de l'oiseau* (défini contracté).
+:::
+
+### L'adjectif
+
+:::coeur
+L'**adjectif** (qualificatif) exprime une qualité, une caractéristique. Il s'accorde en genre et en nombre avec le nom ou le pronom auquel il se rapporte.
+Fonctions possibles : **épithète** (collé au nom : *une robe **rouge***), **épithète détachée / apposée** (séparée par une virgule : ***Fatiguée**, elle s'assit*), **attribut** (après un verbe d'état : *elle est **fatiguée***).
+Test : l'adjectif peut en général varier en degré (*très grand, plus grand*).
+:::
+
+### Le pronom
+
+:::coeur
+
+| Sorte | Exemples |
+| **personnel** | *je, tu, il, nous, me, te, le, la, lui, leur, se, en, y, moi, eux* |
+| **possessif** | *le mien, la tienne, les nôtres* |
+| **démonstratif** | *celui, celle-ci, ceux-là, ce, cela, ça* |
+| **relatif** | *qui, que, quoi, dont, où, lequel, auquel, duquel* |
+| **interrogatif** | *qui ? que ? quoi ? lequel ?* |
+| **indéfini** | *on, quelqu'un, personne, rien, chacun, tout, plusieurs* |
+
+:::
+
+:::astuce *en* et *y*
+*en* et *y* peuvent être **pronoms** (« *J'**en** veux* » = de ce gâteau ; « *J'**y** pense* » = à cela) ou **prépositions / adverbes** dans des expressions (*en été*, *il y a*). Au concours, dans « *j'en veux* », *en* est un **pronom personnel** (adverbial).
+:::
+
+### Le verbe
+
+:::coeur
+Le verbe se **conjugue** : il varie en **personne**, **nombre**, **temps**, **mode** (et voix). C'est le noyau du groupe verbal.
+**Test :** encadrer par *ne… pas* (*il **ne** chante **pas***) ou changer le temps (*il chante* → *il chantait*).
+:::
+
+### Les mots invariables
+
+:::coeur
+**Adverbe** : modifie le sens d'un verbe (*il court **vite***), d'un adjectif (***très** grand*), d'un autre adverbe (***trop** vite*) ou de toute la phrase (***Heureusement**, il est venu*). Beaucoup se terminent par *-ment*.
+**Préposition** : introduit un complément (*à, de, pour, sans, par, dans, sur, avant, après, chez, depuis, pendant*…). Locutions : *à cause de, grâce à, au lieu de*.
+**Conjonction de coordination** : relie deux éléments de **même fonction** (*Paul **et** Marie* ; *il pleut, **donc** je reste*).
+**Conjonction de subordination** : introduit une proposition subordonnée conjonctive (*je pense **que** tu as raison* ; ***quand** il pleut, …*).
+:::
+
+:::piege *que* : quatre classes possibles !
+« *Le livre **que** je lis* » : reprend *le livre* → **pronom relatif**.
+« *Je crois **que** tu as raison* » : introduit une complétive, ne remplace rien → **conjonction de subordination**.
+« ***Que** fais-tu ?* » → **pronom interrogatif**. « *Il **ne** mange **que** des pommes* » → **adverbe** (négation restrictive *ne… que*).
+**Test :** si *que* peut être remplacé par *lequel / laquelle* ou reprend un nom placé juste avant (antécédent), c'est un **pronom relatif**.
+:::
+
+:::piege *tout* : déterminant, pronom ou adverbe ?
+« ***Tous** les enfants* » → déterminant indéfini. « ***Tous** sont venus* » → pronom indéfini. « *Elle est **tout** émue* » (= *très*) → adverbe.
+:::
+
+## F1.3 Justifier : les manipulations syntaxiques
+
+:::methode Les 4 tests à citer dans les réponses
++ **Remplacement (commutation)** : remplacer le mot par un autre de classe connue. *Il parle **doucement*** → *il parle **bien*** : *doucement* est un adverbe.
++ **Suppression (effacement)** : *Le **très** grand arbre* → *le grand arbre* : *très* est facultatif (adverbe).
++ **Déplacement** : *Hier, il est venu* → *Il est venu hier* : *hier* est mobile.
++ **Pronominalisation** : remplacer par un pronom (*Je vois **le chat*** → *Je **le** vois*).
+> Au concours, une réponse **justifiée par une manipulation** rapporte plus qu'une réponse juste mais sèche.
+:::
+
+:::exemple Exemple de réponse attendue
+*Question : donnez la classe de « lentement » dans « Le fleuve coule lentement ».*
+**Réponse :** *lentement* est un **adverbe** : il est invariable (on ne peut pas le mettre au féminin ou au pluriel), il modifie le sens du verbe *coule* et peut être remplacé par un autre adverbe (*coule **vite***) ou supprimé sans rendre la phrase incorrecte (*le fleuve coule*).
+:::
+
+## F1.4 Exercices
+
+@serie F1A | Identifier les classes
+
+@exo 1
+Donne la classe de chaque mot : « Ce petit chat noir dort tranquillement sur le canapé. »
+@sol
+*Ce* : déterminant démonstratif · *petit* : adjectif · *chat* : nom commun · *noir* : adjectif · *dort* : verbe (dormir) · *tranquillement* : adverbe · *sur* : préposition · *le* : déterminant (article défini) · *canapé* : nom commun.
+@end
+
+@exo 1
+Déterminant ou pronom ? « Je **le** vois ; **le** chien aboie ; **leur** chat est roux ; je **leur** écris. »
+@sol
+*le* (je le vois) : pronom personnel · *le* (le chien) : déterminant, article défini · *leur* (leur chat) : déterminant possessif · *leur* (je leur écris) : pronom personnel.
+@end
+
+@exo 2
+Donne la sorte de déterminant : *du pain* ; *la maison du maire* ; *des enfants* ; *quelques amis* ; *quelle chance !* ; *cet arbre*.
+@sol
+*du pain* : article partitif · *du maire* : article défini contracté (*de le*) · *des enfants* : article indéfini · *quelques* : déterminant indéfini · *quelle* : déterminant exclamatif · *cet* : déterminant démonstratif.
+@end
+
+@exo 2
+Donne la classe de « que » dans chaque phrase et justifie :
+a) Le gâteau **que** tu as fait est délicieux.
+b) Je sais **que** tu viendras.
+c) **Que** veux-tu ?
+d) Il ne boit **que** de l'eau.
+@sol
+a) pronom relatif : il reprend l'antécédent *le gâteau* et est COD de *as fait* (*tu as fait le gâteau*).
+b) conjonction de subordination : il introduit la subordonnée complétive *que tu viendras* et ne remplace aucun nom.
+c) pronom interrogatif (= *quelle chose ?*).
+d) adverbe, dans la négation restrictive *ne… que* (= *seulement*).
+@end
+
+@serie F1B | Mots invariables
+
+@exo 2
+Classe les mots invariables : « Hier, il est parti vite, mais il reviendra demain avec sa sœur, car il a oublié son sac sous la table. »
+@sol
+Adverbes : *hier, vite, demain*. Conjonctions de coordination : *mais, car*. Prépositions : *avec, sous*.
+@end
+
+@exo 2
+Donne la classe de « tout » : a) **Tout** le monde est là. b) Elle est **tout** étonnée. c) Il a **tout** compris.
+@sol
+a) déterminant indéfini (devant *le monde*). b) adverbe (= *très, complètement*). c) pronom indéfini (COD de *a compris*).
+@end
+
+@exo 3
+Donne la classe de « en » et de « y » : a) J'**en** mange souvent. b) Il habite **en** France. c) J'**y** vais demain. d) Il **y** a du vent.
+@sol
+a) pronom personnel (= *de cela*, COD partitif). b) préposition (introduit le complément *France*). c) pronom personnel (= *à cet endroit*, complément du verbe). d) *y* fait partie de la locution verbale impersonnelle *il y a* (pronom figé).
+@end
+
+@serie F1C | Justifier
+
+@exo 3
+Justifie par une manipulation que « rapidement » est un adverbe dans « Elle marche rapidement ».
+@sol
+Il est **invariable** (*ils marchent rapidement*, pas de *s*) ; on peut le **supprimer** (*elle marche*) ; le **remplacer** par un autre adverbe (*elle marche lentement / bien*). Il modifie le verbe *marche*.
+@end
+
+@exo 3
+Dans « Le chant des oiseaux réveille les enfants des voisins », donne la classe des deux « des » et justifie.
+@sol
+Les deux sont des **articles définis contractés** (*de + les*) : *le chant **de les** oiseaux*, *les enfants **de les** voisins*. Test du singulier : *le chant de l'oiseau*, *les enfants du voisin* (et non *un oiseau*).
+@end
+
+@exo 4 | Niveau concours
+Relève dans ce passage un nom, un adjectif épithète, un pronom relatif, une conjonction de subordination et un adverbe, en justifiant chaque réponse :
+« Quand la nuit tomba, la vieille femme qui gardait la ferme ferma soigneusement les volets. »
+@sol
+Nom : *nuit* (précédé du déterminant *la*, noyau du GN). Adjectif épithète : *vieille* (se rapporte à *femme*, s'accorde au féminin singulier, placé à côté du nom sans verbe). Pronom relatif : *qui* (reprend l'antécédent *la vieille femme*, sujet de *gardait*). Conjonction de subordination : *quand* (introduit la subordonnée circonstancielle de temps *quand la nuit tomba*). Adverbe : *soigneusement* (invariable, supprimable, modifie *ferma*).
+@end
+
+## F1.5 QCM
+
+@qcm
+Dans « Je leur donne des bonbons », *leur* est :
+A) un déterminant possessif
+B) un pronom personnel
+C) un pronom possessif
+D) un adjectif
+@rep B | Il est placé devant un verbe et remplace un GN (*à ces enfants*). Un déterminant possessif serait suivi d'un nom (*leur chat*).
+@end
+
+@qcm
+Dans « le jardin du voisin », *du* est :
+A) un article partitif
+B) un article indéfini
+C) un article défini contracté
+D) une préposition seule
+@rep C | *du* = *de + le* (*le jardin de le voisin*). Le partitif s'emploie devant un nom de matière non comptable (*boire du lait*).
+@end
+
+@qcm
+Quel mot est une conjonction de coordination ?
+A) parce que
+B) donc
+C) lorsque
+D) puis
+@rep B | *mais, ou, et, donc, or, ni, car*. *Parce que* et *lorsque* sont des conjonctions de subordination ; *puis* est un adverbe.
+@end
+
+@qcm
+Dans « Elle est très contente », *très* est :
+A) un adjectif
+B) un adverbe
+C) un déterminant
+D) une préposition
+@rep B | Il est invariable et modifie l'adjectif *contente*.
+@end
+
+@serie F1D | Bilan F1 (20 minutes)
+
+@exo 2
+Donne la classe de chaque mot : « Mais pourquoi ces deux enfants courent-ils si vite vers la rivière ? »
+@sol
+*Mais* : conjonction de coordination · *pourquoi* : adverbe interrogatif · *ces* : déterminant démonstratif · *deux* : déterminant numéral · *enfants* : nom · *courent* : verbe · *ils* : pronom personnel · *si* : adverbe · *vite* : adverbe · *vers* : préposition · *la* : déterminant (article défini) · *rivière* : nom.
+@end
+
+@exo 3
+Donne la classe de « que » et de « dont » : « C'est la maison dont je t'ai parlé et que mes parents ont achetée. »
+@sol
+*dont* : pronom relatif (antécédent *la maison*, complément de *ai parlé* : *parler de la maison*). *que* : pronom relatif (même antécédent, COD de *ont achetée*).
+@end
+
+@corriges
+
+# F2 | Les fonctions grammaticales | Qui fait quoi dans la phrase : sujet, compléments, attribut, expansions du nom
+
+:::objectifs
+- identifier le **sujet** et le **groupe verbal** ;
+- distinguer **compléments du verbe** (COD, COI, COS), **attribut du sujet** et **compléments de phrase** ;
+- analyser les **expansions du nom** : épithète, complément du nom, apposition, relative ;
+- justifier chaque fonction par une **manipulation**.
+:::
+
+:::note Temps conseillé : semaines 3 et 4 du planning.
+:::
+
+## F2.1 La phrase : sujet, prédicat, compléments de phrase
+
+:::idee
+Une phrase simple (un seul verbe conjugué) se découpe en :
+**sujet** (de qui/quoi on parle) + **groupe verbal** (ce qu'on en dit) + éventuellement des **compléments de phrase** (facultatifs et mobiles).
+*[Chaque matin], [les oiseaux] [chantent dans le jardin].* → complément de phrase + sujet + groupe verbal.
+:::
+
+### Le sujet
+
+:::coeur
+Le sujet commande l'**accord du verbe**.
+**Tests :** encadrer par « **c'est… qui** » (*C'est **les oiseaux** qui chantent*) ; le **remplacer par un pronom** (*ils chantent*).
+Il peut être : un GN, un pronom, un infinitif (***Nager** est bon pour la santé*), une proposition (***Qui dort** dîne*).
+Il peut être **inversé** : *Dans la cour jouent **les enfants***. Il peut être **sujet grammatical** (impersonnel *il* : *il pleut*, *il faut*).
+:::
+
+### Les compléments du verbe (essentiels)
+
+:::coeur
+
+| Fonction | Construction | Test | Exemple |
+| **COD** (complément d'objet direct) | sans préposition | pronominaliser par *le, la, les, l', en* ; ne se déplace pas, ne se supprime pas en général | *Il mange **une pomme*** → *il **la** mange* |
+| **COI** (complément d'objet indirect) | avec préposition (*à, de*) | pronominaliser par *lui, leur, en, y* | *Il parle **à son frère*** → *il **lui** parle* ; *il se souvient **de ses vacances*** |
+| **COS** (complément d'objet second) | 2e complément, avec *à* ou *de*, quand il y a déjà un COD | *lui, leur* | *Il donne un livre **à Paul*** |
+| **complément essentiel de lieu, de mesure…** | non supprimable, non déplaçable | | *Il va **à Lyon*** ; *Ce sac pèse **dix kilos*** |
+
+:::
+
+### L'attribut du sujet
+
+:::coeur
+Après un **verbe d'état** (*être, paraître, sembler, devenir, rester, demeurer, avoir l'air, passer pour*), l'attribut donne une caractéristique **du sujet** : *Le ciel **devient gris***.
+**Test :** remplacer le verbe par *être* et le pronominaliser par *le* invariable (*il est **fatigué*** → *il **l'**est*).
+L'attribut peut être un adjectif, un GN (*Elle est **professeure***), un pronom, un infinitif.
+Il existe aussi l'**attribut du COD** : *On l'a élu **délégué*** ; *Je trouve ce film **long***.
+:::
+
+### Les compléments de phrase (anciens « compléments circonstanciels »)
+
+:::coeur
+Ils donnent une information sur le cadre (temps, lieu, cause, but, manière, moyen, condition…).
+**Tests :** ils sont **supprimables** et **déplaçables** : *Il lit **le soir*** → ***Le soir**, il lit* → *Il lit*.
+La terminologie actuelle parle de **complément de phrase** (on peut préciser sa valeur : complément de phrase de temps, de lieu…).
+:::
+
+:::piege Complément du verbe ou complément de phrase ?
+« *Il va **à Lyon*** » : on ne peut ni supprimer (*il va* est incomplet) ni déplacer (*À Lyon il va* est anormal) → complément **du verbe** (essentiel de lieu).
+« *Il travaille **à Lyon*** » : *il travaille* se suffit ; *À Lyon, il travaille* est correct → complément **de phrase** de lieu.
+:::
+
+## F2.2 Les expansions du nom
+
+:::coeur
+Dans le GN, autour du nom-noyau :
+- **adjectif épithète** : *une **belle** maison **ancienne*** ;
+- **complément du nom** (GN prépositionnel) : *la maison **de mon grand-père*** ; *une tasse **à café*** ;
+- **proposition subordonnée relative** : *la maison **qui domine la vallée*** ;
+- **apposition** (détachée par une virgule) : *Lucie, **ma voisine**, est infirmière*.
+Tous sont **supprimables** sans que la phrase devienne incorrecte : ce sont des expansions facultatives.
+:::
+
+:::exemple Analyse complète d'une phrase
+« *Chaque été, la petite fille de ma voisine offre des fleurs à sa grand-mère.* »
+*Chaque été* : complément de phrase de temps (supprimable, déplaçable) · *la petite fille de ma voisine* : sujet (*c'est … qui offre* ; *elle offre*) ; dans ce GN, *petite* est épithète de *fille* et *de ma voisine* complément du nom *fille* · *offre* : verbe · *des fleurs* : COD (*elle en offre*) · *à sa grand-mère* : COS (*elle lui offre des fleurs*).
+:::
+
+## F2.3 Exercices
+
+@serie F2A | Sujet et compléments du verbe
+
+@exo 1
+Souligne le sujet et justifie : a) Dans le pré broutent les vaches. b) Lire le soir me détend. c) Il neige.
+@sol
+a) *les vaches* (sujet inversé : *ce sont les vaches qui broutent*). b) *Lire le soir* (sujet infinitif : *c'est lire le soir qui me détend* ; pronom *cela*). c) *il* : sujet grammatical d'un verbe impersonnel (il ne représente rien).
+@end
+
+@exo 2
+Donne la fonction des groupes soulignés : a) Je raconte **une histoire** **aux enfants**. b) Il pense **à ses examens**. c) Nous avons besoin **de calme**. d) Elle **lui** téléphone.
+@sol
+a) *une histoire* : COD ; *aux enfants* : COS. b) *à ses examens* : COI (*il y pense*). c) *de calme* : COI (*nous en avons besoin*). d) *lui* : COI (pronom personnel : *elle téléphone à quelqu'un*).
+@end
+
+@exo 2
+Attribut ou COD ? a) Elle paraît **heureuse**. b) Il regarde **la mer**. c) Ils sont devenus **amis**. d) On a nommé Léa **directrice**.
+@sol
+a) attribut du sujet (verbe d'état *paraître*). b) COD. c) attribut du sujet (*devenir*). d) attribut du COD *Léa*.
+@end
+
+@serie F2B | Compléments de phrase et compléments essentiels
+
+@exo 2
+Complément de phrase ou complément du verbe ? a) Il habite **à Saint-Étienne**. b) **Le dimanche**, nous marchons **en forêt**. c) Le trajet dure **deux heures**. d) Il a réussi **grâce à son travail**.
+@sol
+a) complément du verbe (essentiel de lieu : non supprimable). b) *le dimanche* : complément de phrase de temps ; *en forêt* : complément de phrase de lieu (on peut dire *nous marchons*). c) complément du verbe (essentiel de mesure/durée). d) complément de phrase de cause (supprimable, déplaçable : *grâce à son travail, il a réussi*).
+@end
+
+@serie F2C | Expansions du nom et analyse complète
+
+@exo 2
+Relève les expansions du nom et donne leur fonction : « Le vieux pont de pierre, fierté du village, qui enjambe la rivière, sera restauré. »
+@sol
+*vieux* : épithète de *pont* · *de pierre* : complément du nom *pont* · *fierté du village* : apposition à *le vieux pont de pierre* (et dans ce GN, *du village* : complément du nom *fierté*) · *qui enjambe la rivière* : proposition subordonnée relative, complément de l'antécédent *pont*.
+@end
+
+@exo 3
+Analyse toutes les fonctions : « Le soir, les enfants fatigués racontent leur journée à leurs parents. »
+@sol
+*Le soir* : complément de phrase de temps · *les enfants fatigués* : sujet (*fatigués* : épithète de *enfants*) · *racontent* : verbe · *leur journée* : COD (*ils la racontent*) · *à leurs parents* : COS (*ils leur racontent*).
+@end
+
+@exo 4 | Niveau concours
+« Devenue enseignante, Claire semblait heureuse de retrouver chaque matin ses élèves. » Donne la fonction de : *Devenue enseignante* ; *heureuse* ; *chaque matin* ; *ses élèves*. Justifie.
+@sol
+*Devenue enseignante* : apposition (épithète détachée) au sujet *Claire* (détachée par la virgule, se rapporte à *Claire*, accordée au féminin). *heureuse* : attribut du sujet *Claire* (après le verbe d'état *semblait* ; pronominalisable : *elle le semblait*). *chaque matin* : complément de phrase de temps (supprimable, déplaçable), ici à l'intérieur de l'infinitive. *ses élèves* : COD de *retrouver* (*les retrouver*).
+@end
+
+@qcm
+Dans « Je pense à toi », *à toi* est :
+A) COD
+B) COI
+C) complément de phrase
+D) attribut
+@rep B | Construit avec la préposition *à*, non supprimable : complément d'objet indirect (*je pense à quelqu'un*).
+@end
+
+@qcm
+Dans « Il restera calme », *calme* est :
+A) épithète
+B) COD
+C) attribut du sujet
+D) complément du nom
+@rep C | *rester* est un verbe d'état.
+@end
+
+@qcm
+Quel groupe est un complément de phrase ?
+A) Il va **au marché**.
+B) Il achète **des pommes**.
+C) **Au marché**, il achète des pommes.
+D) Il ressemble **à son père**.
+@rep C | Déplacé en tête, supprimable. En A, *au marché* est essentiel (*il va* est incomplet).
+@end
+
+@serie F2D | Bilan F2 (20 minutes)
+
+@exo 3
+Analyse : « Depuis des années, cet homme discret offre son aide aux familles du quartier. »
+@sol
+*Depuis des années* : complément de phrase de temps · *cet homme discret* : sujet (*discret* : épithète) · *offre* : verbe · *son aide* : COD · *aux familles du quartier* : COS (*du quartier* : complément du nom *familles*).
+@end
+
+@exo 3
+Donne la fonction de « malade » : a) Il est tombé malade. b) Le chat malade dort. c) Malade, il est resté au lit.
+@sol
+a) attribut du sujet (*tomber malade* = *devenir malade*). b) épithète de *chat*. c) épithète détachée (apposée) au sujet *il*.
+@end
+
+@corriges
+
+# F3 | La phrase complexe | Propositions, coordination, juxtaposition, subordination
+
+:::objectifs
+- compter les **propositions** d'une phrase ;
+- distinguer **juxtaposition**, **coordination** et **subordination** ;
+- reconnaître les **subordonnées relatives**, **complétives** et **circonstancielles** (avec leur valeur) ;
+- identifier les **types** et **formes** de phrases.
+:::
+
+## F3.1 Phrase simple, phrase complexe
+
+:::coeur
+**Proposition** = un verbe conjugué et ce qui s'y rattache. **Autant de verbes conjugués, autant de propositions** (attention aux infinitifs et participes, qui ne comptent pas en général).
+Phrase **simple** = une seule proposition. Phrase **complexe** = plusieurs propositions.
+Les propositions peuvent être :
+- **juxtaposées** (reliées par une ponctuation : *Il pleut, je reste*) ;
+- **coordonnées** (par une conjonction de coordination ou un adverbe de liaison : *Il pleut, donc je reste*) ;
+- **subordonnées** : une proposition dépend d'une autre (la **principale**) : *Je reste **parce qu'il pleut***.
+:::
+
+## F3.2 Les propositions subordonnées
+
+| Sorte | Introduite par | Fonction | Exemple |
+| **relative** | pronom relatif (*qui, que, dont, où, lequel…*) | complément de l'antécédent (expansion du nom) | *Le livre **que je lis** est passionnant.* |
+| **complétive** (conjonctive) | conjonction *que* | COD (le plus souvent), sujet, attribut… | *Je crois **que tu as raison**.* |
+| **interrogative indirecte** | *si, qui, quand, où, pourquoi, comment…* | COD d'un verbe de parole/pensée | *Je me demande **s'il viendra**.* |
+| **circonstancielle** | conjonction (*quand, parce que, pour que, si, bien que…*) | complément de phrase | ***Quand il fait beau**, nous sortons.* |
+
+:::coeur Les valeurs des circonstancielles
+**temps** : *quand, lorsque, dès que, avant que, pendant que, après que* · **cause** : *parce que, puisque, comme, étant donné que* · **conséquence** : *si bien que, de sorte que, si… que* · **but** : *pour que, afin que* · **concession / opposition** : *bien que, quoique, alors que, même si* · **condition** : *si, à condition que, pourvu que* · **comparaison** : *comme, ainsi que*.
+Mode : le **but** et la **concession** (*bien que*) demandent le **subjonctif** ; *après que* se construit avec l'**indicatif**.
+:::
+
+:::piege Relative ou complétive ?
+« *L'idée **que tu as eue** est bonne* » : *que* reprend *l'idée* (tu as eu l'idée) → **relative**.
+« *L'idée **que tu partes** me rend triste* » : *que* ne reprend rien (il ne manque aucun complément dans *tu partes*) → **complétive** (complément du nom *idée*).
+**Test :** dans une relative, le pronom relatif a une fonction dans la subordonnée ; dans une complétive, *que* n'a aucune fonction.
+:::
+
+## F3.3 Types et formes de phrases
+
+:::coeur
+**4 types** (un seul par phrase) : **déclaratif** (*Il pleut.*), **interrogatif** (*Pleut-il ?*), **injonctif / impératif** (*Sors !*), **exclamatif** (*Qu'il pleut !*).
+**Formes** (cumulables) : **affirmative / négative** ; **active / passive** ; **neutre / emphatique** (*C'est lui qui a gagné*) ; **personnelle / impersonnelle**.
+**Voix passive** : *Le chat mange la souris* → *La souris **est mangée par** le chat* (le COD devient sujet ; le sujet devient **complément d'agent**). Le verbe *être* se met au **temps du verbe actif**.
+:::
+
+## F3.4 Exercices
+
+@serie F3A | Découper en propositions
+
+@exo 1
+Combien de propositions ? Précise le lien : a) Le vent souffle, la pluie tombe. b) Il est fatigué mais il continue. c) J'attends que tu reviennes.
+@sol
+a) 2 propositions juxtaposées. b) 2 propositions coordonnées par *mais*. c) 2 propositions : principale *j'attends* + subordonnée complétive *que tu reviennes*.
+@end
+
+@exo 2
+Délimite les propositions et donne leur nature : « Quand le soleil se couche, les oiseaux qui nichent dans le parc se taisent et le silence s'installe. »
+@sol
+4 propositions : *Quand le soleil se couche* (subordonnée circonstancielle de temps) ; *les oiseaux … se taisent* (principale) ; *qui nichent dans le parc* (subordonnée relative, antécédent *oiseaux*) ; *et le silence s'installe* (indépendante coordonnée par *et*).
+@end
+
+@serie F3B | Nature et valeur des subordonnées
+
+@exo 2
+Nature et fonction des subordonnées : a) Je sais **que tu travailles**. b) La ville **où je suis née** est Saint-Étienne. c) Je me demande **pourquoi il rit**. d) **Bien qu'il pleuve**, nous sortons.
+@sol
+a) complétive, COD de *sais*. b) relative, complément de l'antécédent *ville* (*où* : complément de lieu dans la relative). c) interrogative indirecte, COD de *me demande*. d) circonstancielle de concession, complément de phrase (subjonctif *pleuve*).
+@end
+
+@exo 3
+Donne la valeur des circonstancielles : a) **Comme il était en retard**, il a couru. b) Parle fort **pour qu'on t'entende**. c) Il a tant couru **qu'il est épuisé**. d) **Si tu veux**, je t'aide.
+@sol
+a) cause. b) but (subjonctif). c) conséquence (*tant… que*). d) condition (hypothèse).
+@end
+
+@serie F3C | Types, formes, voix
+
+@exo 2
+Mets à la voix passive : a) Les élèves préparent le spectacle. b) Le vent a renversé l'arbre. c) La maîtresse félicitera Léo.
+@sol
+a) *Le spectacle est préparé par les élèves.* b) *L'arbre a été renversé par le vent.* c) *Léo sera félicité par la maîtresse.* (Le temps du verbe *être* reprend celui du verbe actif.)
+@end
+
+@exo 3
+Donne le type et les formes : a) N'as-tu pas vu mon sac ? b) C'est Julie qui a gagné. c) Il a été opéré hier.
+@sol
+a) type interrogatif, forme négative (active, neutre). b) type déclaratif, forme emphatique (*c'est… qui*), affirmative, active. c) type déclaratif, forme passive, affirmative.
+@end
+
+@exo 4 | Niveau concours
+Relative ou complétive ? Justifie : a) La nouvelle **qu'il a annoncée** nous a surpris. b) La nouvelle **qu'il démissionne** nous a surpris.
+@sol
+a) **relative** : *que* reprend l'antécédent *la nouvelle* et il est COD de *a annoncée* (*il a annoncé la nouvelle*) ; d'ailleurs le participe s'accorde avec ce COD placé avant.
+b) **complétive** (complément du nom *nouvelle*) : *que* ne reprend rien, la proposition *il démissionne* est complète sans lui.
+@end
+
+@qcm
+« Je ne sais pas s'il viendra » contient une subordonnée :
+A) circonstancielle de condition
+B) interrogative indirecte
+C) relative
+D) complétive introduite par *que*
+@rep B | *si* après *je ne sais pas* introduit une question indirecte (*Viendra-t-il ?*). Ce n'est pas une condition.
+@end
+
+@qcm
+Dans « Bien qu'il soit tard, il travaille », la subordonnée exprime :
+A) la cause
+B) le temps
+C) la concession
+D) le but
+@rep C | *bien que* + subjonctif : concession (opposition).
+@end
+
+@serie F3D | Bilan F3 (20 minutes)
+
+@exo 3
+Analyse la phrase : « Les enfants, qui avaient beaucoup marché, s'endormirent dès qu'ils furent couchés. »
+@sol
+3 propositions : principale *Les enfants s'endormirent* ; subordonnée relative *qui avaient beaucoup marché* (antécédent *enfants*, relative explicative entre virgules) ; subordonnée circonstancielle de temps *dès qu'ils furent couchés* (complément de phrase).
+@end
+
+@corriges
+
+# F4 | Le verbe | Conjugaison, temps, modes, valeurs d'emploi
+
+:::objectifs
+- conjuguer sans erreur aux temps usuels (dont **passé simple** et **subjonctif**) ;
+- nommer les **modes** et les **temps** ;
+- donner la **valeur d'emploi** d'un temps dans un texte (présent de narration, imparfait de description…).
+:::
+
+## F4.1 Radical, terminaison, groupes
+
+:::coeur
+Un verbe conjugué = **radical** (le sens) + **terminaison** (marques de temps, de personne, de nombre).
+**1er groupe** : infinitif en *-er* (sauf *aller*) · **2e groupe** : infinitif en *-ir* et *-issons* à la 1re personne du pluriel (*finir, finissons*) · **3e groupe** : tous les autres (*prendre, venir, voir, partir, aller*…).
+**Modes personnels** : indicatif, subjonctif, impératif (le conditionnel est aujourd'hui rangé dans l'indicatif). **Modes non personnels** : infinitif, participe, gérondif.
+:::
+
+## F4.2 Les temps de l'indicatif
+
+| Temps | Formation | Exemple (chanter / finir / prendre) |
+| présent | radical + *-e, -es, -e, -ons, -ez, -ent* (1er gr.) ; *-s, -s, -t…* | *il chante, il finit, il prend* |
+| imparfait | radical du *nous* au présent + *-ais, -ais, -ait, -ions, -iez, -aient* | *il chantait, il finissait, il prenait* |
+| passé simple | 1er gr. : *-ai, -as, -a, -âmes, -âtes, -èrent* ; autres : *-is… / -us… / -ins…* | *il chanta, il finit, il prit ; ils vinrent* |
+| futur simple | infinitif + *-ai, -as, -a, -ons, -ez, -ont* | *il chantera, il finira, il prendra* |
+| conditionnel présent | infinitif + terminaisons de l'imparfait | *il chanterait, il prendrait* |
+| passé composé | *avoir/être* au présent + participe passé | *il a chanté, il est venu* |
+| plus-que-parfait | auxiliaire à l'imparfait + p.p. | *il avait chanté* |
+| passé antérieur | auxiliaire au passé simple + p.p. | *il eut chanté* |
+| futur antérieur | auxiliaire au futur + p.p. | *il aura chanté* |
+
+:::piege Les confusions classiques
+Futur (*je chanterai*) ≠ conditionnel (*je chanterais*) : test → remplacer par *nous* (*nous chanterons* / *nous chanterions*).
+Passé simple (*je chantai*) ≠ imparfait (*je chantais*).
+Verbes en *-ier* à l'imparfait : *nous criions, vous criiez* (deux *i*).
+Passé simple des verbes du 3e groupe : *il vint, il tint, il fit, il mit, il prit, il vit, il dut, il put, il fut, il eut, il naquit, il mourut*.
+:::
+
+## F4.3 Subjonctif et impératif
+
+:::coeur
+**Subjonctif présent** : radical de la 3e personne du pluriel du présent + *-e, -es, -e, -ions, -iez, -ent* : *qu'ils finissent* → *que je finisse*. Irréguliers : *que je sois, que j'aie, que j'aille, que je fasse, que je puisse, que je sache, que je veuille*.
+Il s'emploie après les verbes de volonté, de sentiment, de doute (*je veux que, je doute que*), et après *pour que, bien que, avant que, à condition que*.
+**Impératif** : 3 personnes, sans sujet exprimé : *chante, chantons, chantez* (pas de *s* à la 2e pers. du sing. pour les verbes en *-er*, sauf devant *en* et *y* : *manges-en, vas-y*).
+:::
+
+## F4.4 Les valeurs des temps (très demandé)
+
+:::coeur
+**Présent** : d'énonciation (ce qui se passe au moment où l'on parle) · de vérité générale (*la Terre tourne*) · d'habitude · de narration (dans un récit au passé, pour rendre l'action vivante) · à valeur de futur proche ou passé proche.
+**Imparfait** : action en arrière-plan, **description**, **habitude** dans le passé, action en cours d'accomplissement ; aussi hypothèse (*si j'étais riche…*).
+**Passé simple** : action de **premier plan**, ponctuelle et achevée, qui fait avancer le récit (souvent succession d'actions).
+**Passé composé** : action passée **achevée** en lien avec le présent (discours, récit à la 1re personne).
+**Futur** : action à venir, ordre atténué (*tu feras tes devoirs*) ; **conditionnel** : futur dans le passé (*il disait qu'il viendrait*), hypothèse, politesse, information non confirmée.
+:::
+
+:::exemple Exemple de réponse attendue
+*« Il faisait nuit. Soudain, un bruit retentit. »* → *faisait* : imparfait de **description** (arrière-plan, durée non délimitée) ; *retentit* : passé simple, action **de premier plan**, ponctuelle, qui fait avancer le récit (mise en valeur par *soudain*).
+:::
+
+## F4.5 Exercices
+
+@serie F4A | Conjuguer
+
+@exo 1
+Conjugue au passé simple, 3e personne du singulier puis du pluriel : aller, faire, venir, voir, prendre, finir.
+@sol
+*il alla / ils allèrent · il fit / ils firent · il vint / ils vinrent · il vit / ils virent · il prit / ils prirent · il finit / ils finirent.*
+@end
+
+@exo 2
+Conjugue au subjonctif présent (« il faut que… ») : je (être), tu (avoir), nous (aller), vous (faire), ils (pouvoir), je (savoir).
+@sol
+*que je sois · que tu aies · que nous allions · que vous fassiez · qu'ils puissent · que je sache.*
+@end
+
+@exo 2
+Futur ou conditionnel ? Complète : « Si j'avais le temps, je (venir) ; demain, je (venir) sûrement. »
+@sol
+*je viendrais* (conditionnel, hypothèse avec *si* + imparfait) ; *je viendrai* (futur).
+@end
+
+@serie F4B | Identifier temps et modes
+
+@exo 2
+Donne le mode et le temps : *nous crions* ; *nous criions* ; *qu'il ait fini* ; *ils eurent mangé* ; *finissant* ; *sois sage*.
+@sol
+*nous crions* : indicatif présent · *nous criions* : indicatif imparfait · *qu'il ait fini* : subjonctif passé · *ils eurent mangé* : indicatif passé antérieur · *finissant* : participe présent · *sois* : impératif présent.
+@end
+
+@serie F4C | Valeurs des temps
+
+@exo 3
+Donne la valeur des présents : a) L'eau bout à 100 °C. b) Je pars demain. c) Tous les dimanches, il va au marché. d) En 1789, les révolutionnaires prennent la Bastille.
+@sol
+a) vérité générale. b) futur proche. c) habitude (répétition). d) présent de narration (historique).
+@end
+
+@exo 4 | Niveau concours
+Explique l'emploi des temps : « Le village dormait encore. Les rues étaient désertes. Tout à coup, une cloche sonna, et les habitants sortirent de leurs maisons. »
+@sol
+Les imparfaits *dormait, étaient* décrivent le **cadre**, l'arrière-plan du récit (actions non délimitées dans le temps). Les passés simples *sonna, sortirent* expriment des actions **de premier plan**, ponctuelles et successives, qui font progresser l'histoire ; *tout à coup* marque la rupture entre la description et l'événement.
+@end
+
+@qcm
+« Nous chanterions » est au :
+A) futur simple
+B) conditionnel présent
+C) imparfait
+D) subjonctif présent
+@rep B | Infinitif + terminaison *-ions* de l'imparfait.
+@end
+
+@qcm
+Passé simple de « naître », 3e personne du singulier :
+A) il naissa
+B) il naquit
+C) il naît
+D) il nacquit
+@rep B | *il naquit, ils naquirent*.
+@end
+
+@serie F4D | Bilan F4 (15 minutes)
+
+@exo 3
+Relève les verbes conjugués, donne leur temps et leur valeur : « Pendant que sa mère préparait le repas, Julien sortit discrètement. Il reviendrait avant la nuit, pensait-il. »
+@sol
+*préparait* : imparfait, action d'arrière-plan en cours · *sortit* : passé simple, action de premier plan · *reviendrait* : conditionnel présent, **futur dans le passé** (discours indirect libre) · *pensait* : imparfait, action en cours/durée.
+@end
+
+@corriges
+
+# F5 | Accords et orthographe | Les règles qui rapportent (ou coûtent) des points dans chaque réponse
+
+:::objectifs
+- accorder le **verbe** avec son sujet, même quand il est éloigné ou inversé ;
+- accorder l'**adjectif** et le **participe passé** (avec *être*, avec *avoir*, verbes pronominaux) ;
+- éviter les **homophones grammaticaux** (*a/à, et/est, ce/se, ces/ses, leur/leurs, quel(le)/qu'elle*…).
+:::
+
+:::note
+Au concours, l'orthographe compte **partout** (y compris en mathématiques et dans la rédaction). Une copie avec beaucoup de fautes est pénalisée : c'est un futur professeur qui écrit.
+:::
+
+## F5.1 L'accord sujet-verbe
+
+:::coeur
+Le verbe s'accorde avec son **sujet** (encadrer par *c'est… qui*).
+Plusieurs sujets → pluriel (*Paul et Marie **partent***). Sujet *qui* (relatif) → accord avec l'antécédent (*c'est moi qui **suis** venu*).
+Collectif (*la foule, la plupart*) : *la foule **crie*** ; *la plupart des élèves **sont** là*.
+Sujet inversé : *Où **vont** ces enfants ?*
+:::
+
+## F5.2 L'accord du participe passé
+
+:::coeur
+**Avec *être*** : accord avec le **sujet** : *Elles sont **parties***.
+**Avec *avoir*** : **pas d'accord avec le sujet** ; accord avec le **COD s'il est placé avant** le verbe : *J'ai **mangé** les pommes* (COD après : pas d'accord) ; *Les pommes que j'ai **mangées*** (COD *que* = *les pommes*, avant : accord) ; *Je **les** ai **mangées***.
+**Verbes pronominaux** : en général comme avec *avoir* : accord avec le COD placé avant : *Elle s'est **lavée*** (*se* = COD) ; *Elle s'est **lavé** les mains* (COD *les mains* après, *se* = COI : pas d'accord). Verbes essentiellement pronominaux (*s'évanouir, se souvenir*) : accord avec le sujet.
+:::
+
+:::methode Accorder un participe passé avec *avoir*
++ Je repère l'auxiliaire : *avoir*.
++ Je cherche le COD (*qui ? quoi ?* après le verbe).
++ Le COD est-il placé **avant** ? (pronoms *l', la, les, que, me, te, nous, vous*) → j'accorde avec lui. Sinon : pas d'accord.
+:::
+
+## F5.3 Les homophones grammaticaux
+
+| Homophones | Test |
+| *a* (verbe) / *à* (préposition) | remplacer par *avait* |
+| *et* (conjonction) / *est* (verbe) | remplacer par *était* |
+| *son* (déterminant) / *sont* (verbe) | *étaient* |
+| *ce* (déterminant, pronom) / *se* (pronom réfléchi) | *se* devant un verbe pronominal (*il se lave*) |
+| *ces* (démonstratif) / *ses* (possessif) / *c'est* / *s'est* | *ses* = les siens ; *c'est* = cela est |
+| *leur* (pronom, invariable) / *leur(s)* (déterminant) | pronom devant un verbe ; déterminant devant un nom |
+| *quel(le)* / *qu'elle* | *qu'il* au masculin |
+| *la / l'a / là* | *l'avait* ; *là* = lieu |
+| *on / on n'* | remplacer *on* par *il* : *il n'a rien* → *on n'a rien* |
+| *-er / -é / -ez / -ait* | remplacer par un verbe du 3e groupe (*prendre / pris*) |
+
+## F5.4 Exercices
+
+@serie F5A | Accords du participe passé
+
+@exo 2
+Accorde si nécessaire : a) Les lettres que j'ai (écrit). b) Elles ont (chanté) toute la soirée. c) Ils se sont (reposé). d) Elle s'est (coupé) le doigt. e) Ces fleurs, je les ai (cueilli) ce matin.
+@sol
+a) *écrites* (COD *que* = *les lettres*, avant). b) *chanté* (pas de COD avant). c) *reposés* (*se* COD = *ils*). d) *coupé* (COD *le doigt* après ; *s'* = COI). e) *cueillies* (COD *les* = *ces fleurs*, avant).
+@end
+
+@exo 3
+Corrige : « Les efforts qu'il a fournit ont été récompensé. Ses parents se sont réjouit. »
+@sol
+« Les efforts qu'il a **fournis** ont été **récompensés**. Ses parents se sont **réjouis**. » (*fournis* : COD *qu'* = *les efforts* avant ; *récompensés* : passif, accord avec le sujet ; *se réjouir* : essentiellement pronominal, accord avec le sujet.)
+@end
+
+@serie F5B | Homophones et accords divers
+
+@exo 1
+Complète : a) Il (a/à) mal (a/à) la tête. b) Elle (et/est) partie (et/est) n'est pas revenue. c) Je (leur/leurs) ai donné (leur/leurs) cahiers. d) (Quel/Qu'elle) belle journée ! e) (On/On n') a rien vu.
+@sol
+a) *a*, *à*. b) *est*, *et*. c) *leur* (pronom), *leurs* (déterminant pluriel). d) *Quelle*. e) *On n'a rien vu* (négation *ne… rien*).
+@end
+
+@exo 2
+Accorde : a) La plupart des invités (être) arrivés. b) C'est nous qui (avoir) gagné. c) Des robes (bleu clair). d) Des chaussures (marron).
+@sol
+a) *sont* (accord avec *des invités*). b) *avons* (antécédent *nous*). c) *bleu clair* (adjectif de couleur composé : invariable). d) *marron* (nom employé comme adjectif de couleur : invariable).
+@end
+
+@qcm
+« Les photos que tu m'as ___ sont belles. »
+A) envoyé
+B) envoyés
+C) envoyées
+D) envoyer
+@rep C | COD *que* = *les photos* (féminin pluriel), placé avant l'auxiliaire *avoir*.
+@end
+
+@serie F5D | Bilan F5 (15 minutes)
+
+@exo 3
+Corrige les 6 erreurs : « Les enfant que j'ai rencontré hier était ravis ; il se sont amusés et on a pas vu le temps passé. »
+@sol
+« Les **enfants** que j'ai **rencontrés** hier **étaient** ravis ; **ils** se sont amusés et on **n'**a pas vu le temps **passer**. »
+@end
+
+@corriges

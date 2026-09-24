@@ -1,0 +1,335 @@
+%% Français : lexique, compréhension, rédaction (F6, F7)
+# F6 | Le lexique | Formation des mots, sens, relations entre les mots
+
+:::objectifs
+- analyser la **formation d'un mot** : radical, préfixe, suffixe, famille, composition ;
+- distinguer **sens propre / sens figuré**, **polysémie**, **homonymie** ;
+- utiliser **synonymes, antonymes, champ lexical, hyperonymes** ;
+- expliquer un mot **en contexte**, comme le demande la question de lexique (**4 points sur 20**).
+:::
+
+:::note Ce que demande l'épreuve
+Les questions de lexique portent sur des mots **du texte** : « Expliquez la formation du mot… », « Donnez le sens du mot … dans le texte », « Relevez le champ lexical de… », « Proposez un synonyme… ». Il faut toujours **s'appuyer sur le contexte** et rédiger des phrases complètes.
+:::
+
+## F6.1 La formation des mots
+
+:::idee
+La plupart des mots sont construits comme des **Lego** : un morceau central qui porte le sens (le **radical**) et des morceaux ajoutés devant (**préfixes**) ou derrière (**suffixes**).
+*im* + *prévis* + *ible* → **imprévisible** : *im-* (contraire) + *prévis-* (prévoir) + *-ible* (qui peut être).
+:::
+
+:::coeur
+**Dérivation** : radical + préfixe et/ou suffixe (*re-faire, lent-ement, dé-color-ation*).
+- le **préfixe** modifie le sens mais **pas la classe** du mot (*faire → refaire* : verbe → verbe) ;
+- le **suffixe** peut **changer la classe** (*lent* adjectif → *lentement* adverbe ; *laver* → *lavage* nom).
+**Composition** : association de mots existants (*porte-monnaie, pomme de terre, arc-en-ciel*) ou d'éléments grecs/latins (**composition savante** : *géo-graphie, thermo-mètre, bio-logie*).
+**Autres procédés** : troncation (*vélo* ← *vélocipède*), siglaison (*SNCF*), emprunt (*week-end*), mot-valise (*courriel*).
+**Famille de mots** : tous les mots construits sur le même radical (*terre, terrain, terrestre, enterrer, atterrir, territoire*).
+:::
+
+| Préfixes utiles | Sens | Exemples |
+| *in-, im-, il-, ir-, dé-, dés-, mé-, a-* | contraire, négation | *inutile, impossible, illisible, irréel, défaire, malhonnête, anormal* |
+| *re-, ré-* | répétition, retour | *refaire, réécrire* |
+| *pré-, anté-* / *post-* | avant / après | *préhistoire, antérieur, postérieur* |
+| *sur-, hyper-, super-* / *sous-, hypo-* | au-dessus / au-dessous | *surpeuplé, hypermarché / sous-sol, hypothermie* |
+| *co-, con-, com-* | avec | *copilote, compatriote* |
+| *trans-* | à travers | *transporter, transatlantique* |
+
+| Suffixes utiles | Sens | Exemples |
+| *-age, -ment, -tion* | action (nom) | *lavage, changement, création* |
+| *-eur, -euse, -ier, -iste* | personne qui fait | *chanteur, pâtissier, dentiste* |
+| *-able, -ible* | qui peut être | *lavable, lisible* |
+| *-ment* (sur un adjectif) | manière (adverbe) | *lentement, doucement* |
+| *-et, -ette, -on* | petit (diminutif) | *jardinet, fillette, chaton* |
+| *-âtre* | péjoratif / approximatif | *verdâtre, rougeâtre* |
+| *-ité, -eur, -esse* | qualité (nom) | *rapidité, douceur, tendresse* |
+
+:::methode Répondre à « Expliquez la formation du mot… »
++ Identifier le **radical** et sa classe d'origine.
++ Identifier chaque **affixe** (préfixe, suffixe) et son **sens**.
++ Donner le **sens du mot construit** et sa classe.
++ Éventuellement, donner un ou deux mots de la même famille.
+:::
+
+:::exemple Réponse modèle
+*« Expliquez la formation du mot "inoubliable". »*
+**Réponse :** *inoubliable* est un adjectif formé par **dérivation** à partir du radical verbal *oubli-* (verbe *oublier*), auquel on a ajouté le préfixe **in-**, qui exprime la négation, et le suffixe **-able**, qui signifie « qui peut être ». *Inoubliable* signifie donc « qui ne peut pas être oublié ». Mots de la même famille : *oubli, oublieux*.
+:::
+
+## F6.2 Le sens des mots
+
+:::coeur
+**Polysémie** : un même mot a plusieurs sens liés (*une **feuille** d'arbre / une **feuille** de papier*). C'est le **contexte** qui donne le sens.
+**Sens propre / sens figuré** : *un cœur de pierre* (figuré) ; *le cœur bat* (propre).
+**Sens dénoté / connoté** : le sens « du dictionnaire » / ce que le mot suggère (*rouge* connote la passion, le danger).
+**Homonymes** : mots de même forme mais de sens et d'origine différents (*le livre / la livre*, *vers / verre / vert / ver*). Homophones : même prononciation ; homographes : même orthographe.
+**Paronymes** : mots presque identiques qu'on confond (*éminent / imminent*, *conjecture / conjoncture*, *effraction / infraction*).
+:::
+
+## F6.3 Les relations entre les mots
+
+:::coeur
+**Synonymes** : sens proche, même classe (*peur / crainte / effroi*) — attention aux **nuances** et aux **niveaux de langue** (*voiture / bagnole*).
+**Antonymes** : sens contraire (*chaud / froid*, *possible / impossible*).
+**Hyperonyme / hyponyme** : terme générique / terme spécifique (*fleur* est l'hyperonyme de *rose, tulipe* ; *rose* est un hyponyme de *fleur*).
+**Champ lexical** : ensemble des mots d'un texte qui se rapportent à un **même thème** (champ lexical de la mer : *vague, écume, marin, rivage, houle*). ≠ **champ sémantique** : ensemble des sens d'un mot polysémique.
+**Niveaux de langue** : familier, courant, soutenu (*bouquin / livre / ouvrage*).
+:::
+
+:::piege
+Un synonyme doit être de **même classe** : le synonyme de *rapidement* (adverbe) est *vite*, pas *rapide* (adjectif).
+Un champ lexical se relève **dans le texte** (avec les mots exacts), pas dans sa tête.
+:::
+
+## F6.4 Donner le sens d'un mot dans le texte
+
+:::methode
++ Relire la **phrase entière** et celle d'avant/après.
++ Proposer un **synonyme** ou une **périphrase** de même classe, qui fonctionne si on remplace le mot dans la phrase.
++ Justifier par des **indices du contexte** (« comme le montre… »).
++ Si le mot est polysémique, préciser **quel sens** il prend ici (propre / figuré).
+:::
+
+## F6.5 Exercices
+
+@serie F6A | Formation des mots
+
+@exo 1
+Décompose en préfixe / radical / suffixe : *déraisonnable, reconstruction, maladroitement, incroyable, embarquement*.
+@sol
+*dé- / raison / -able* ; *re- / construct- / -ion* ; *mal- / adroit / -ement* ; *in- / croy- / -able* ; *em- / barqu- / -ement*.
+@end
+
+@exo 2
+Donne 4 mots de la famille de « lire » et de « main ».
+@sol
+*lire* : *lecture, lecteur, lisible, illisible, relire, lisiblement*. *main* : *manuel, manier, manipuler, manucure, menotte, maintenir*.
+@end
+
+@exo 2
+Donne le sens des éléments savants et un exemple : *bio-, -logie, géo-, -phone, télé-, -graphie, auto-, -mètre*.
+@sol
+*bio-* : vie (*biologie*) · *-logie* : étude, science (*zoologie*) · *géo-* : terre (*géographie*) · *-phone* : son, voix (*téléphone*) · *télé-* : loin (*télévision*) · *-graphie* : écriture, description (*orthographe*) · *auto-* : soi-même (*autobiographie*) · *-mètre* : mesure (*thermomètre*).
+@end
+
+@exo 3 | Réponse rédigée
+Explique la formation du mot « irremplaçable ».
+@sol
+Adjectif formé par **dérivation** : préfixe négatif **ir-** (forme de *in-* devant *r*) + radical verbal *remplac-* (*remplacer*) + suffixe **-able** (« qui peut être ») : « qui ne peut pas être remplacé ». Famille : *remplacement, remplaçant*.
+@end
+
+@serie F6B | Sens et relations
+
+@exo 1
+Donne un synonyme de même classe : *rapidement, effrayé, commencer, un bâtiment, fragile*.
+@sol
+*vite* ; *apeuré, terrifié* ; *débuter, entamer* ; *un édifice, un immeuble* ; *délicat, cassant*.
+@end
+
+@exo 2
+Donne l'hyperonyme : *marteau, tournevis, scie* ; *merle, pigeon, moineau* ; *pomme, poire, cerise*. Puis donne 3 hyponymes de *meuble*.
+@sol
+*outils* ; *oiseaux* ; *fruits*. Hyponymes de *meuble* : *table, chaise, armoire, commode*.
+@end
+
+@exo 2
+Sens propre ou figuré ? a) Il a **dévoré** son livre. b) Le loup **dévore** sa proie. c) Une **pluie** de reproches. d) La **pluie** tombe.
+@sol
+a) figuré (lire avec avidité). b) propre. c) figuré (une grande quantité). d) propre.
+@end
+
+@exo 2
+Choisis le bon paronyme : a) Son départ est (éminent / imminent). b) Il a fait une (infraction / effraction) au code. c) Le (percepteur / précepteur) des impôts est passé.
+@sol
+a) *imminent* (très proche dans le temps). b) *infraction* (violation d'une règle ; l'*effraction* est le fait de forcer une serrure). c) *percepteur* (celui qui perçoit l'impôt ; le *précepteur* est un professeur particulier).
+@end
+
+@serie F6C | Lexique en contexte
+
+@exo 3
+Texte : « La mer grondait ; les vagues énormes se brisaient contre les rochers et l'écume volait jusqu'au port, où les marins inquiets surveillaient la houle. » Relève le champ lexical de la mer et celui de la violence.
+@sol
+Mer : *mer, vagues, rochers, écume, port, marins, houle*. Violence (ou menace) : *grondait, énormes, se brisaient, volait, inquiets*.
+@end
+
+@exo 4 | Niveau concours
+« Le vieil homme resta **interdit** devant la porte fermée. » Donne le sens de *interdit* dans cette phrase et justifie ; donne un autre sens de ce mot.
+@sol
+Ici *interdit* signifie « **stupéfait, décontenancé** » (*abasourdi*) : adjectif attribut du sujet (verbe d'état *resta*) qui décrit la réaction de l'homme devant une situation inattendue. Autre sens : « **défendu** » (*le stationnement est interdit*). Le mot est **polysémique**.
+@end
+
+@qcm
+Dans « un chaton », le suffixe *-on* exprime :
+A) l'action
+B) la petitesse
+C) la qualité
+D) la personne qui agit
+@rep B | Suffixe diminutif (comme *-et, -ette*).
+@end
+
+@qcm
+« Fleur » par rapport à « tulipe » est :
+A) un synonyme
+B) un hyponyme
+C) un hyperonyme
+D) un antonyme
+@rep C | Terme générique qui englobe *tulipe*.
+@end
+
+@qcm
+Lequel de ces mots n'est **pas** formé par dérivation ?
+A) relire
+B) chaton
+C) porte-clés
+D) lisible
+@rep C | *porte-clés* est un mot composé.
+@end
+
+@serie F6D | Bilan F6 (20 minutes)
+
+@exo 3
+Explique la formation de « dénouement » et donne son sens dans « Le dénouement de l'histoire est heureux ».
+@sol
+*Dénouement* est un nom formé par dérivation sur le radical verbal *nou-* (*nouer*), avec le préfixe *dé-* (action contraire) et le suffixe *-ment* (action, résultat). Sens propre : action de défaire un nœud ; ici, sens figuré : la **fin** de l'histoire, le moment où l'intrigue se résout.
+@end
+
+@exo 2
+Donne un antonyme formé par préfixation : *patient, légal, responsable, lisible, honnête, faire*.
+@sol
+*impatient, illégal, irresponsable, illisible, malhonnête, défaire*.
+@end
+
+@corriges
+
+# F7 | Comprendre un texte, rédiger une réponse | La partie « analyse / rédaction » vaut 10 points sur 20 : la méthode pas à pas
+
+:::objectifs
+- lire un texte (~500 mots) et en dégager **thème, thèse, structure, enjeux** ;
+- répondre à une **question de compréhension ou de réflexion** par un texte **organisé et argumenté** ;
+- gérer son **temps** (partie français : environ **2 heures** sur les 4 heures) ;
+- écrire une copie **sans fautes**, lisible et bien présentée.
+:::
+
+:::note À vérifier sur le sujet 0 et les rapports de jury 2027
+La forme exacte de la question de rédaction est donnée par le sujet (question d'analyse du texte, ou question de réflexion à partir du texte). La méthode ci-dessous marche pour les deux : **introduction → développement en 2 ou 3 parties → conclusion**, avec des exemples tirés du texte **et** de sa culture / de l'école.
+:::
+
+## F7.1 Lire le texte efficacement (15 minutes)
+
+:::methode Les 3 lectures
++ **Lecture 1 (globale)** : qui parle ? de quoi ? quel genre de texte (récit, essai, article, lettre, poème) ? quelle époque ? Noter le **thème** en 3 mots.
++ **Lecture 2 (crayon en main)** : souligner les **connecteurs** (*mais, cependant, donc, en effet*), les idées principales, les exemples ; numéroter les **paragraphes** et donner un titre à chacun.
++ **Lecture 3 (après avoir lu les questions)** : repérer les passages utiles pour chaque question.
+:::
+
+:::coeur Ce qu'il faut identifier
+**Thème** (de quoi parle le texte) · **thèse** (ce que l'auteur défend) · **arguments** et **exemples** · **structure** (étapes du raisonnement) · **énonciation** (qui parle, à qui, marques du « je ») · **tonalité** (ironique, polémique, lyrique, didactique…).
+:::
+
+## F7.2 Construire la réponse rédigée (60 à 70 minutes)
+
+:::methode
++ **Analyser la question** : entourer les mots-clés, reformuler le problème posé (c'est la **problématique**).
++ **Brouillon (15 min)** : lister les idées (du texte + personnelles), les regrouper en **2 ou 3 parties**, trouver **un exemple précis** par idée.
++ **Rédiger l'introduction** (5 lignes) : accroche → présentation du texte (auteur, titre, date, thème) → problématique → annonce du plan.
++ **Rédiger le développement** : un paragraphe par idée, sur le modèle **Idée → Explication → Exemple (citation du texte entre guillemets) → mini-conclusion**, avec des connecteurs.
++ **Conclusion** (4 lignes) : bilan qui répond à la question + ouverture (souvent vers l'école ou la société).
++ **Relecture (10 min)** : une relecture pour les **accords** (sujet-verbe, participes), une pour la **ponctuation** et les **mots oubliés**.
+:::
+
+:::astuce Les connecteurs à avoir sous la main
+**Ajouter** : *de plus, en outre, par ailleurs* · **Opposer** : *cependant, toutefois, en revanche, néanmoins* · **Illustrer** : *ainsi, par exemple, comme le montre* · **Expliquer** : *en effet, car* · **Conclure** : *donc, ainsi, en définitive, finalement*.
+:::
+
+:::piege Les erreurs qui coûtent cher
+- Paraphraser le texte (le recopier en d'autres mots) au lieu de l'**analyser**.
+- Donner son opinion sans **arguments** ni **exemples**.
+- Oublier le texte dans une question de réflexion : il faut **s'appuyer sur le texte**.
+- Citer sans guillemets, ou sans commenter la citation.
+- Écrire « je pense que » à chaque phrase ; préférer une formulation impersonnelle (*on peut penser que*, *il apparaît que*).
+- Une copie avec **plus de 10 fautes** est très pénalisée.
+:::
+
+## F7.3 Un exemple complet
+
+:::exemple Texte support (extrait, à titre d'entraînement)
+« Lire, ce n'est pas seulement déchiffrer des signes. C'est entrer dans un monde qui n'est pas le sien, accepter pour un temps d'être un autre. L'enfant qui lit découvre d'abord des histoires ; il découvre ensuite qu'il peut les comprendre, puis les juger. Mais cette liberté ne naît pas seule : elle demande des adultes qui lisent avec lui, qui lui ouvrent des livres, qui lui donnent le temps de s'y perdre. Une école qui n'offrirait que des exercices de déchiffrage formerait des lecteurs capables, non des lecteurs libres. »
+*(texte écrit pour ce guide)*
+:::
+
+:::exemple Question : « Selon l'auteur, qu'est-ce que "lire" ? En vous appuyant sur le texte et sur vos connaissances, montrez quel rôle l'école peut jouer. »
+**Brouillon.** Problématique : la lecture est-elle une technique ou une liberté, et comment l'école peut-elle la faire naître ? Plan : I. Lire, c'est plus que déchiffrer (texte). II. Une liberté qui s'apprend avec l'aide des adultes (texte + école).
+**Introduction.** Apprendre à lire est l'un des premiers objectifs de l'école. Pourtant, dans ce court texte, l'auteur affirme que lire « ce n'est pas seulement déchiffrer des signes ». Il invite ainsi à se demander ce que signifie vraiment lire et quel rôle l'école peut jouer pour former des lecteurs. Nous verrons d'abord que la lecture est présentée comme une expérience et une liberté, puis que cette liberté suppose un accompagnement que l'école peut offrir.
+**Partie I.** L'auteur distingue d'abord le déchiffrage, simple technique, de la véritable lecture. Lire, c'est « entrer dans un monde qui n'est pas le sien » : la lecture est une expérience d'altérité, qui fait sortir l'enfant de lui-même. Le texte décrit ensuite une progression en trois étapes, soulignée par les connecteurs « d'abord », « ensuite », « puis » : l'enfant découvre des histoires, les comprend, puis les juge. La lecture conduit donc à l'esprit critique, ce que l'auteur appelle la « liberté ».
+**Partie II.** Cependant, cette liberté « ne naît pas seule ». L'auteur insiste, par une énumération de trois relatives (« qui lisent avec lui, qui lui ouvrent des livres, qui lui donnent le temps »), sur le rôle des adultes. L'école peut jouer ce rôle : lecture offerte par l'enseignant à voix haute, coin bibliothèque, débats sur les textes, carnets de lecteur. Enfin, la dernière phrase oppose des « lecteurs capables » à des « lecteurs libres » : le décodage reste indispensable, mais il n'est qu'une étape.
+**Conclusion.** Pour l'auteur, lire est donc une expérience qui conduit à la liberté de penser, et non une simple technique. L'école a la responsabilité de faire aimer les livres autant que d'enseigner le code. On peut prolonger cette réflexion en se demandant quelle place les écrans laissent aujourd'hui au temps long de la lecture.
+:::
+
+## F7.4 Exercices
+
+@serie F7A | S'entraîner par étapes
+
+@exo 2
+Écris une **introduction** (5 à 6 lignes) pour la question : « L'école doit-elle apprendre aux enfants à coopérer plutôt qu'à rivaliser ? »
+@sol
+*Exemple de réponse* : « Classements, notes, concours : l'école a longtemps valorisé la compétition entre élèves. Pourtant, de nombreuses pratiques pédagogiques mettent aujourd'hui en avant le travail en groupe et l'entraide. Faut-il alors préférer la coopération à la rivalité ? Nous verrons d'abord que l'émulation peut stimuler les élèves, puis que la coopération développe des compétences essentielles, avant de montrer que l'école peut concilier les deux. »
+Vérifier : accroche, problématique sous forme de question, plan annoncé.
+@end
+
+@exo 2
+Rédige un **paragraphe argumentatif** (Idée – Explication – Exemple – Conclusion) sur l'idée : « La lecture à voix haute par l'enseignant aide les élèves à progresser. »
+@sol
+*Exemple* : « Tout d'abord, la lecture à voix haute par l'enseignant permet aux élèves d'accéder à des textes qu'ils ne pourraient pas lire seuls. En effet, libérés du déchiffrage, ils peuvent se concentrer sur le sens, le vocabulaire et les émotions du récit. Par exemple, un élève de CP peut ainsi découvrir un roman comme *Le Petit Prince*, bien au-delà de son niveau de lecture autonome. La lecture offerte nourrit donc à la fois la compréhension et le goût de lire. »
+@end
+
+@exo 3
+Voici une conclusion maladroite : « Pour conclure, je pense que les écrans c'est pas bien pour les enfants et voilà. » Réécris-la correctement.
+@sol
+*Proposition* : « En définitive, si les écrans offrent des ressources utiles, leur usage excessif nuit à la concentration et au sommeil des enfants. Il revient donc aux adultes, et en particulier à l'école, d'apprendre aux élèves à les utiliser de manière raisonnée. On peut d'ailleurs se demander comment l'éducation aux médias peut s'intégrer dès l'école primaire. »
+(Corrections : niveau de langue soutenu, négation complète, pas de « je pense », bilan argumenté, ouverture.)
+@end
+
+@serie F7B | Rédactions complètes (1 h chacune)
+
+@exo 4 | Rédaction 1
+Texte : « Jouer n'est pas perdre son temps. Dans le jeu, l'enfant essaie, se trompe, recommence sans crainte d'être jugé. Il y apprend les règles, la patience, le respect des autres. Le jeu est peut-être la première école : on y apprend sans savoir qu'on apprend. » *(texte écrit pour ce guide)*
+Question : « Quelle place l'auteur accorde-t-il au jeu dans l'apprentissage ? Vous répondrez de façon argumentée en vous appuyant sur le texte et sur vos connaissances. »
+@sol
+*Plan possible.* **Introduction** : le jeu est souvent opposé au travail ; l'auteur affirme au contraire qu'il est « la première école » ; problématique : en quoi le jeu est-il un apprentissage ? ; annonce.
+**I. Le jeu, un espace d'essai et d'erreur** : « essaie, se trompe, recommence » (rythme ternaire) ; absence de jugement → l'erreur devient positive (lien avec le statut de l'erreur à l'école).
+**II. Le jeu, apprentissage de la vie sociale** : « les règles, la patience, le respect des autres » ; exemples : jeux de société, jeux collectifs en EPS, jeux de rôle à l'école maternelle.
+**III. Limites et conditions** : « on y apprend sans savoir qu'on apprend » : l'enseignant doit rendre les apprentissages explicites (verbaliser ce qu'on a appris) ; le jeu est une étape, pas une fin.
+**Conclusion** : le jeu est un véritable outil d'apprentissage, à condition d'être pensé par l'enseignant ; ouverture : place du jeu dans les programmes de l'école maternelle (« apprendre en jouant »).
+Critères : texte cité et analysé (≥ 3 citations), exemples scolaires précis, connecteurs, orthographe.
+@end
+
+@exo 4 | Rédaction 2
+Texte : « On croit souvent que l'erreur est une faute. Pourtant, celui qui ne se trompe jamais est celui qui n'essaie rien. L'erreur est la trace d'une pensée en train de se construire : elle montre ce que l'élève a compris, et ce qu'il lui reste à comprendre. » *(texte écrit pour ce guide)*
+Question : « Quel regard l'auteur porte-t-il sur l'erreur ? Partagez-vous ce point de vue ? »
+@sol
+*Plan possible.* **I. L'auteur réhabilite l'erreur** : opposition « erreur » / « faute » (connotation morale de *faute*) ; argument par l'absurde : « celui qui ne se trompe jamais est celui qui n'essaie rien » ; l'erreur comme « trace d'une pensée » (métaphore).
+**II. Un point de vue partagé par la pédagogie** : l'erreur renseigne l'enseignant (analyse des erreurs en maths : par ex. $0{,}5 + 0{,}25 = 0{,}30$ montre une confusion entre décimaux et entiers) ; elle permet de différencier et de remédier ; un climat de classe bienveillant.
+**III. Nuances** : il faut aussi corriger les erreurs pour ne pas les installer (orthographe, calcul) ; l'erreur n'est utile que si elle est analysée.
+**Conclusion** : l'erreur est une étape normale de l'apprentissage ; ouverture : comment l'évaluation peut-elle en tenir compte ?
+@end
+
+@qcm
+Dans une introduction, la **problématique** est :
+A) le résumé du texte
+B) la question à laquelle le devoir va répondre
+C) la citation d'accroche
+D) la conclusion anticipée
+@rep B | Elle reformule le problème posé par le sujet, souvent sous forme de question.
+@end
+
+@qcm
+Quel connecteur exprime l'**opposition** ?
+A) en effet
+B) de plus
+C) en revanche
+D) ainsi
+@rep C | *en effet* : explication ; *de plus* : ajout ; *ainsi* : conséquence ou illustration.
+@end
+
+@corriges

@@ -1,0 +1,13 @@
+{
+  "name": "crpe-saint-etienne",
+  "private": true,
+  "description": "Générateur du PDF « Réussir le CRPE 2027 — méthode complète » (académie de Lyon, Saint-Étienne)",
+  "scripts": {
+    "build": "python3 src/build.py"
+  },
+  "dependencies": {
+    "@fontsource/bitter": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.0",
+    "katex": "^0.18.9"
+  }
+}

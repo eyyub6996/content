@@ -1,0 +1,250 @@
+%% Épreuve 2 : arts (A) et anglais (L)
+# A | Arts | Arts plastiques, éducation musicale, histoire des arts
+
+:::objectifs
+- maîtriser le **vocabulaire** des arts plastiques et de la musique ;
+- situer les grands **mouvements** et une trentaine d'**œuvres** repères ;
+- **analyser une œuvre** avec une méthode simple (décrire, analyser, interpréter, situer).
+:::
+
+## A.1 Arts plastiques : le vocabulaire
+
+:::coeur Les couleurs
+**Couleurs primaires** (en peinture, synthèse **soustractive**) : cyan (bleu), magenta (rouge), jaune ; leurs mélanges donnent les **secondaires** : vert (cyan + jaune), orange (magenta + jaune), violet (cyan + magenta). En **lumière** (synthèse **additive**, écrans) : rouge, vert, bleu (RVB).
+**Complémentaires** (se renforcent quand on les juxtapose) : rouge / vert, bleu / orange, jaune / violet.
+Couleurs **chaudes** (rouge, orange, jaune) et **froides** (bleu, vert, violet) ; **camaïeu** (nuances d'une même couleur) ; **ton**, **nuance**, **valeur** (clair / foncé).
+:::
+
+:::coeur Composition et techniques
+**Plans** (premier plan, arrière-plan) ; **cadrage** (plan d'ensemble, gros plan, plongée, contre-plongée) ; **lignes de force**, point de fuite (**perspective**) ; **support**, **médium** (gouache, aquarelle, pastel, encre), **outil**, **geste**.
+**Techniques** : dessin, peinture, collage (Picasso, Braque, **papiers collés**, 1912), photographie, sculpture (modelage, assemblage, taille), **installation**, **land art** (œuvres dans la nature : Andy Goldsworthy), **ready-made** (objet manufacturé présenté comme œuvre : Marcel Duchamp, *Fontaine*, 1917).
+Pratiques à l'école : les programmes insistent sur la **pratique** (expérimenter, produire, créer), la **mise en regard** avec des œuvres et la **verbalisation**.
+:::
+
+## A.2 Repères en histoire des arts
+
+| Période / mouvement | Artistes et œuvres repères |
+| Préhistoire | grottes de **Chauvet** et de **Lascaux** (art pariétal) |
+| Antiquité | pyramides de Gizeh ; Parthénon (Athènes) ; Colisée (Rome) ; pont du Gard |
+| Moyen Âge | art **roman** (églises massives, voûtes en berceau) puis **gothique** (cathédrales hautes et lumineuses, vitraux, arcs-boutants : Notre-Dame de Paris, Chartres) ; tapisserie de Bayeux |
+| Renaissance (XVe – XVIe s.) | **Léonard de Vinci** (*La Joconde*), **Michel-Ange** (chapelle Sixtine), Raphaël ; châteaux de la Loire (Chambord) ; perspective |
+| XVIIe s. | classicisme (**Versailles**) ; baroque ; Rembrandt, Vermeer (*La Jeune Fille à la perle*) |
+| XIXe s. | romantisme (**Delacroix**, *La Liberté guidant le peuple*, 1830) ; réalisme (Courbet, Millet) ; **impressionnisme** (**Monet**, *Impression, soleil levant*, 1872 ; Renoir, Degas) ; post-impressionnisme (**Van Gogh**, *La Nuit étoilée*, 1889 ; Cézanne, Gauguin) ; photographie ; tour Eiffel (1889) |
+| XXe s. | fauvisme (**Matisse**) ; **cubisme** (**Picasso**, *Les Demoiselles d'Avignon*, 1907 ; *Guernica*, 1937) ; abstraction (**Kandinsky**, Mondrian) ; surréalisme (**Magritte**, Dalí) ; ready-made (Duchamp) ; **pop art** (Warhol) ; land art ; street art (Keith Haring, Banksy) ; architecture (**Le Corbusier**) |
+
+:::exemple Des ressources près de Saint-Étienne (sorties, projets)
+Le **musée d'Art moderne et contemporain** de Saint-Étienne Métropole (MAMC+) ; la **Cité du design** et la Biennale internationale design (Saint-Étienne est « ville créative de design » UNESCO) ; le **site Le Corbusier de Firminy** (église Saint-Pierre, Maison de la culture, unité d'habitation) ; le musée d'Art et d'Industrie ; le compositeur **Jules Massenet**, né à Saint-Étienne en 1842 ; l'**Opéra de Saint-Étienne** (spectacles scolaires). Utiliser ces ressources montre au jury qu'on sait ancrer l'enseignement dans le territoire.
+:::
+
+## A.3 Éducation musicale
+
+:::coeur Les paramètres du son
+**Hauteur** : grave / aigu. **Durée** : long / court (rythme, pulsation, tempo). **Intensité** : fort / doux (nuances *piano*, *forte*, *crescendo*). **Timbre** : ce qui permet de reconnaître un instrument ou une voix.
+**Familles d'instruments** : **cordes** (frottées : violon, alto, violoncelle, contrebasse ; pincées : guitare, harpe ; frappées : piano), **vents** (**bois** : flûte, clarinette, hautbois, basson, saxophone ; **cuivres** : trompette, cor, trombone, tuba), **percussions** (timbales, tambour, xylophone, triangle).
+**Formations** : orchestre symphonique, quatuor à cordes, chœur, fanfare, groupe de jazz ou de rock.
+**Vocabulaire** : mélodie, rythme, harmonie, refrain / couplet, **canon** (plusieurs voix chantent la même mélodie avec un décalage), ostinato (motif répété), soliste / tutti.
+:::
+
+| Période | Compositeurs et œuvres repères |
+| Baroque (1600 – 1750) | **Vivaldi** (*Les Quatre Saisons*), **Bach**, Haendel, Lully |
+| Classique (1750 – 1820) | **Mozart** (*La Flûte enchantée*), Haydn, **Beethoven** (*Symphonie n° 9*, « Ode à la joie », hymne européen) |
+| Romantique (XIXe s.) | Chopin, Schubert, Berlioz (*Symphonie fantastique*), Verdi, **Saint-Saëns** (*Le Carnaval des animaux*), Massenet |
+| XXe s. | Debussy, **Ravel** (*Boléro*), Stravinsky, **Prokofiev** (*Pierre et le Loup*), Dukas (*L'Apprenti sorcier*) ; jazz (Louis Armstrong), rock, musiques du monde |
+
+:::astuce Pour l'école
+*Pierre et le Loup* (chaque personnage est un instrument : l'oiseau = la flûte, le canard = le hautbois, le chat = la clarinette, le grand-père = le basson, le loup = les cors, Pierre = les cordes) et *Le Carnaval des animaux* sont des œuvres idéales pour découvrir les **timbres**. Le *Boléro* de Ravel illustre le **crescendo** et l'**ostinato** rythmique.
+:::
+
+## A.4 Analyser une œuvre (méthode)
+
+:::methode
++ **Identifier** : titre, artiste, date, technique, dimensions, lieu de conservation.
++ **Décrire** : ce que l'on voit ou entend (sujet, composition, couleurs, formes, matières ; instruments, tempo, nuances).
++ **Analyser** : comment l'artiste produit un effet (choix plastiques ou musicaux).
++ **Interpréter** : le sens, les émotions, le message.
++ **Situer** : contexte historique, mouvement, liens avec d'autres œuvres.
+:::
+
+## A.5 Exercices
+
+@serie AA | Arts plastiques et histoire des arts
+
+@exo 1
+Quelle couleur obtient-on en peinture en mélangeant : jaune + cyan ; magenta + jaune ; cyan + magenta ? Quelle est la complémentaire du rouge ?
+@sol
+Vert ; orange ; violet. Complémentaire du rouge : le **vert**.
+@end
+
+@exo 2
+Associe chaque œuvre à son auteur et à son mouvement : *Impression, soleil levant* ; *Guernica* ; *Fontaine* ; *La Liberté guidant le peuple* ; *La Trahison des images* (« Ceci n'est pas une pipe »).
+@sol
+Monet, impressionnisme ; Picasso, cubisme (œuvre engagée contre la guerre, 1937) ; Duchamp, ready-made (dadaïsme) ; Delacroix, romantisme ; Magritte, surréalisme.
+@end
+
+@exo 2
+Distingue art roman et art gothique (trois critères).
+@sol
+**Roman** (XIe – XIIe s.) : murs épais, petites fenêtres, voûtes en berceau, intérieur sombre. **Gothique** (XIIe – XVe s.) : croisée d'ogives, **arcs-boutants** qui permettent des murs plus hauts et de grandes baies avec **vitraux**, intérieur lumineux, élévation.
+@end
+
+@exo 3 | Analyse d'œuvre
+Présente en quelques lignes *La Nuit étoilée* de Van Gogh (1889) en suivant la méthode (identifier, décrire, analyser, interpréter, situer).
+@sol
+**Identifier** : huile sur toile de Vincent Van Gogh, 1889, conservée au MoMA de New York. **Décrire** : un village endormi sous un ciel nocturne animé de tourbillons, d'étoiles entourées de halos et d'une lune ; au premier plan, un grand cyprès sombre. **Analyser** : touches épaisses et visibles, lignes courbes en spirale, contraste entre les bleus froids et les jaunes vifs ; le cyprès relie la terre au ciel. **Interpréter** : un ciel vivant, presque tourmenté, qui exprime l'émotion et l'intériorité de l'artiste (peint lorsqu'il était soigné à Saint-Rémy-de-Provence). **Situer** : post-impressionnisme ; annonce l'expressionnisme.
+@end
+
+@serie AB | Musique
+
+@exo 1
+Classe dans leur famille : violon, trompette, flûte traversière, harpe, tuba, clarinette, xylophone, violoncelle.
+@sol
+Cordes frottées : violon, violoncelle ; cordes pincées : harpe. Vents (bois) : flûte traversière, clarinette ; vents (cuivres) : trompette, tuba. Percussions : xylophone.
+@end
+
+@exo 2
+Définis : tempo, nuance, timbre, canon, ostinato.
+@sol
+**Tempo** : vitesse d'exécution (lent, modéré, rapide). **Nuance** : intensité (piano, forte…). **Timbre** : « couleur » du son propre à un instrument ou une voix. **Canon** : même mélodie chantée par plusieurs groupes qui commencent l'un après l'autre (*Frère Jacques*). **Ostinato** : motif répété obstinément (le rythme de caisse claire du *Boléro*).
+@end
+
+@exo 3
+Replace dans l'ordre chronologique et donne la période : Ravel, Vivaldi, Mozart, Chopin.
+@sol
+Vivaldi (baroque, XVIIIe s.) → Mozart (classique, fin XVIIIe) → Chopin (romantique, XIXe) → Ravel (XXe s.).
+@end
+
+@qcm
+Les couleurs primaires de la synthèse additive (lumière) sont :
+A) rouge, jaune, bleu
+B) rouge, vert, bleu
+C) cyan, magenta, jaune
+D) orange, vert, violet
+@rep B | RVB (écrans). Cyan, magenta, jaune : synthèse soustractive (peinture, imprimerie).
+@end
+
+@qcm
+Dans *Pierre et le Loup*, le loup est joué par :
+A) les cordes
+B) la flûte
+C) les cors
+D) le basson
+@rep C | Trois cors ; le basson est le grand-père, la flûte l'oiseau.
+@end
+
+@serie AC | Bilan A (20 minutes)
+
+@exo 3
+Cite une œuvre de chaque période : Moyen Âge, Renaissance, XIXe siècle, XXe siècle (arts visuels) ; puis une œuvre musicale baroque et une du XXe siècle.
+@sol
+Exemples : cathédrale Notre-Dame de Chartres (gothique) ; *La Joconde* (Léonard de Vinci) ; *Impression, soleil levant* (Monet) ; *Guernica* (Picasso). Musique : *Les Quatre Saisons* (Vivaldi) ; *Boléro* (Ravel).
+@end
+
+@corriges
+
+# L | Anglais (niveau B1) | Grammaire essentielle, compréhension et expression écrites
+
+:::objectifs
+- revoir la **grammaire** indispensable du niveau B1 ;
+- **comprendre** un texte authentique et répondre en anglais ;
+- **écrire** un texte structuré de 150 à 200 mots, avec des connecteurs.
+:::
+
+:::note
+Le domaine « langue vivante » de l'écrit 2 évalue la maîtrise de la langue au **niveau B1** du CECRL (« utilisateur indépendant »). Choisir ce domaine seulement si l'on se sent à l'aise ; sinon, préférer les arts.
+:::
+
+## L.1 Les temps essentiels
+
+:::coeur
+
+| Temps | Formation | Emploi | Exemple |
+| present simple | base (+ **-s** à la 3e pers.) | habitude, vérité générale | *She **teaches** in Lyon.* |
+| present continuous | **be** + V-ing | action en cours | *They **are reading** now.* |
+| preterite (past simple) | V-ed / verbe irrégulier | action passée **terminée et datée** | *I **visited** Rome **last year**.* |
+| present perfect | **have** + participe passé | lien passé-présent, bilan, expérience | *I **have lived** here **for** ten years.* |
+| future | **will** + base / **be going to** | prédiction / intention | *It **will** rain. I'**m going to** apply.* |
+| modals | **can, must, should, may, might** + base | capacité, obligation, conseil, probabilité | *You **should** revise every day.* |
+
+:::
+
+:::piege Les erreurs typiques des francophones
+*I **have seen** him yesterday* ✘ → *I **saw** him yesterday* ✔ (date passée = preterite).
+*I live here **since** 2020* ✘ → *I **have lived** here since 2020* ✔ (for = durée ; since = point de départ).
+*He **don't** like* ✘ → *He **doesn't** like* ✔. *People **is*** ✘ → *People **are*** ✔. *The informations* ✘ → *the **information*** (indénombrable).
+**Faux amis** : *actually* = en fait ; *eventually* = finalement ; *library* = bibliothèque ; *to attend* = assister à ; *sensible* = raisonnable.
+:::
+
+:::coeur Vocabulaire de l'école
+*school, primary school, nursery school* (maternelle), *pupil / student, teacher, headteacher* (directeur), *classroom, playground* (cour), *timetable* (emploi du temps), *homework, to learn / to teach, a lesson, a test, a mark / grade, a break* (récréation), *canteen*, *to be good at*.
+:::
+
+:::coeur Connecteurs pour écrire
+*First of all, then, finally* · *moreover, furthermore* (de plus) · *however, on the other hand* (cependant) · *for example, for instance* · *because, since, as* · *therefore, so* (donc) · *in conclusion, to sum up*.
+:::
+
+## L.2 Exercices
+
+@serie LA | Grammaire
+
+@exo 1
+Mets au temps qui convient : a) Listen! The children (sing) in the classroom. b) Water (boil) at 100 °C. c) She (move) to Saint-Étienne in 2019. d) I (know) him for five years.
+@sol
+a) *are singing* (action en cours) b) *boils* (vérité générale) c) *moved* (date passée) d) *have known* (lien avec le présent, *for*).
+@end
+
+@exo 2
+Corrige les erreurs : a) I am teacher since three years. b) He can speaks English. c) Did you went to school yesterday? d) The children plays in the playground.
+@sol
+a) *I **have been a** teacher **for** three years.* b) *He can **speak** English.* (base verbale après un modal) c) *Did you **go** to school yesterday?* d) *The children **play** in the playground.* (*children* est pluriel)
+@end
+
+@exo 2
+Traduis : a) Je voudrais devenir professeure des écoles. b) Les élèves doivent faire leurs devoirs. c) Il pleut depuis ce matin. d) Elle est meilleure en maths qu'en anglais.
+@sol
+a) *I would like to become a primary school teacher.* b) *The pupils must (have to) do their homework.* c) *It has been raining since this morning.* d) *She is better at maths than at English.*
+@end
+
+@serie LB | Compréhension et expression écrites
+
+@exo 3 | Compréhension
+Read the text and answer in English.
+« Many schools in Finland give pupils a fifteen-minute break after every lesson. Teachers believe that children learn better when they can move, play outside and talk with friends. Although the school day is short, results in reading and maths are among the best in Europe. However, some researchers say that these results are explained less by the breaks than by the high level of teacher training. » *(text written for this guide)*
+a) What do Finnish pupils do after every lesson? b) Why do teachers think it is useful? c) What is the other explanation of the good results? d) Find a word meaning "nevertheless".
+@sol
+a) They have a fifteen-minute break (they move, play outside and talk with friends). b) Because they believe that children learn better when they can move and rest. c) The high level of teacher training. d) *However*.
+@end
+
+@exo 4 | Expression écrite (150 – 200 mots)
+"Should primary school pupils have homework? Give your opinion with arguments and examples."
+@sol
+*Model answer:* « Homework is a common practice in many countries, but is it really useful for young children? First of all, homework can help pupils to review what they have learnt in class. For example, reading a short text every evening improves fluency. Moreover, it allows parents to see what their children are doing at school. However, homework also creates inequalities: some children can get help at home, while others cannot. In addition, young pupils need time to play, to rest and to take part in other activities such as sport or music. That is why in France written homework is officially discouraged in primary school. In conclusion, I think that short reading activities are useful, but long written exercises should be done at school, with the teacher's help. »
+Critères : introduction, 2 arguments « pour » et 2 « contre » avec exemples, connecteurs, conclusion personnelle, temps corrects.
+@end
+
+@qcm
+"I ___ in this town since 2021."
+A) live
+B) am living
+C) have lived
+D) lived
+@rep C | *since* + point de départ → present perfect.
+@end
+
+@qcm
+"Eventually" signifie :
+A) éventuellement
+B) finalement
+C) actuellement
+D) évidemment
+@rep B | Faux ami : *éventuellement* = *possibly*.
+@end
+
+@serie LC | Bilan L (20 minutes)
+
+@exo 3
+Écris un court courriel (80 mots) à une école partenaire anglaise pour proposer un échange de lettres entre élèves de CM1.
+@sol
+*Model:* « Dear colleagues, I am a teacher in a primary school in Saint-Étienne, France. My class has 24 pupils aged 9 to 10. We would like to start a pen-pal project with your school: each pupil could write a letter every month about their daily life, hobbies and town. It would help them to discover your culture and to practise English. Would you be interested? I look forward to hearing from you. Best regards, Marie Durand »
+@end
+
+@corriges

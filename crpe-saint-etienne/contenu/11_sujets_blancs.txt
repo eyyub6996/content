@@ -1,0 +1,608 @@
+%% Révisions cumulatives (R1 à R3) et sujets blancs
+# R | Révisions cumulatives | Trois séances de révision datées dans le planning (R1, R2, R3)
+
+:::methode Comment utiliser une révision
++ Faire la série **sans regarder le cours**, en temps limité (1 h 30 environ).
++ Corriger avec les corrigés ; noter chaque erreur dans le **carnet d'erreurs** (la règle, un exemple juste).
++ Refaire 3 jours plus tard les exercices ratés.
+:::
+
+@serie R1 | Semaine 5 (fin octobre) : F1 à F3, M1 à M3
+
+@drill priorites 6 101 3 | Calcul
+@drill frac_add 6 102 3 | Fractions
+@drill pourcent 6 103 2 | Pourcentages
+
+@exo 2
+Donne la classe et la fonction des mots en gras : « **Hier**, **les élèves** ont rendu **leur** travail **à la maîtresse**. »
+@sol
+*Hier* : adverbe, complément de phrase de temps. *les élèves* : GN (déterminant + nom), sujet. *leur* : déterminant possessif (dans le GN *leur travail*, COD). *à la maîtresse* : GN prépositionnel, COS (ou COI) de *ont rendu*.
+@end
+
+@exo 3
+Délimite les propositions et donne leur nature : « Je sais que tu viendras si tu as le temps. »
+@sol
+Principale *Je sais* ; subordonnée complétive *que tu viendras* (COD de *sais*) ; subordonnée circonstancielle de condition *si tu as le temps* (dépend de *viendras*).
+@end
+
+@exo 3
+Un article à 64 € est soldé à −25 %, puis on applique une remise supplémentaire de 10 % sur le prix soldé. Prix final ? Pourcentage de baisse total ?
+@sol
+$64 \times 0{,}75 \times 0{,}9 = 43{,}20$ € ; coefficient $0{,}675$ → baisse de **32,5 %**.
+@check approx(64*Rational(75,100)*Rational(9,10), 43.2)
+@end
+
+@exo 3
+Décompose 252 en facteurs premiers et donne le nombre de ses diviseurs.
+@sol
+$252 = 2^2 \times 3^2 \times 7$ ; nombre de diviseurs $(2 + 1)(2 + 1)(1 + 1) = 18$.
+@check divisor_count(252) == 18
+@end
+
+@serie R2 | Semaine 13 (vacances de Noël) : F1 à F6, M1 à M6
+
+@drill conversions 6 111 3 | Conversions
+@drill eq1 6 112 3 | Équations
+@drill aires 4 113 2 | Aires
+
+@exo 2
+Accorde les participes : « Les histoires que j'ai (lu) m'ont (plu). Elles se sont (souvenu) de ces vacances. »
+@sol
+*lues* (COD *que* = *les histoires*, avant) ; *plu* (verbe *plaire* : pas de COD, invariable) ; *souvenues* (verbe essentiellement pronominal : accord avec le sujet *elles*).
+@end
+
+@exo 3
+Explique la formation de « imprévisible » et donne un mot de sa famille.
+@sol
+Préfixe *im-* (négation) + *prévis-* (radical de *prévoir* : *pré-* « avant » + *voir*) + suffixe *-ible* (« qui peut être »). Sens : qu'on ne peut pas prévoir. Famille : *prévision, prévoir, imprévu*.
+@end
+
+@exo 3
+Un triangle $ABC$ a pour côtés $AB = 9$ cm, $AC = 12$ cm, $BC = 15$ cm. Est-il rectangle ? Calcule son aire.
+@sol
+$15^2 = 225 = 81 + 144$ : rectangle en $A$ (réciproque de Pythagore). Aire $= \frac{9 \times 12}{2} = 54$ cm².
+@end
+
+@exo 3
+Un réservoir cylindrique a un rayon de 50 cm et une hauteur de 1,2 m. Combien de litres contient-il (arrondi au litre) ?
+@sol
+$V = \pi \times 5^2 \times 12 = 300\pi \approx 942{,}5$ dm³ (en dm) → **942 L** environ.
+@check approx(pi*25*12, 942.48, 0.01)
+@end
+
+@serie R3 | Semaine 22 (fin février) : tout le programme
+
+@drill proportion 4 121 2 | Proportionnalité
+@drill stats 4 122 2 | Statistiques
+@drill pythagore 4 123 2 | Pythagore
+
+@exo 3
+Donne le temps et la valeur des verbes : « Le soleil se couchait. Soudain, un cri déchira le silence. Demain, tout sera oublié. »
+@sol
+*se couchait* : imparfait, arrière-plan / description. *déchira* : passé simple, action de premier plan ponctuelle. *sera oublié* : futur (voix passive), action à venir.
+@end
+
+@exo 3
+Transforme à la voix passive : « Le jury a félicité les candidats. » Puis à la voix active : « La porte sera réparée par le gardien. »
+@sol
+*Les candidats ont été félicités par le jury.* / *Le gardien réparera la porte.*
+@end
+
+@exo 4
+Deux amies partent au même moment de deux villages distants de 21 km et marchent l'une vers l'autre, à 4 km/h et à 3 km/h. Au bout de combien de temps se rencontrent-elles ? À quelle distance du premier village ?
+@sol
+Elles se rapprochent de $4 + 3 = 7$ km par heure : $21 \div 7 = 3$ h. Distance du premier village : $4 \times 3 = 12$ km.
+@check sols("4*x+3*x-21", [3])
+@end
+
+@exo 3
+Programme de calcul : « Choisir un nombre ; lui ajouter 5 ; multiplier le résultat par le nombre de départ ; soustraire 5 fois le nombre de départ. » Démontre que l'on obtient toujours le carré du nombre de départ.
+@sol
+$(x + 5) \times x - 5x = x^2 + 5x - 5x = x^2$.
+@check same("(x+5)*x-5*x", "x**2")
+@end
+
+@corriges
+
+# B1 | Sujet blanc n° 1 — Écrit 1 | 4 heures · Partie français (20 points) + partie mathématiques (20 points)
+
+:::examen Consignes (à faire en conditions réelles, semaine 16)
+Durée : **4 heures**, sans document. Conseil de gestion du temps : **2 h** pour le français (dont 1 h 10 pour la rédaction), **1 h 45** pour les mathématiques, **15 min** de relecture. La qualité de la langue est prise en compte dans toute la copie.
+Sujet d'entraînement **écrit pour ce guide**, sur le modèle de l'épreuve : il ne s'agit pas d'un sujet officiel.
+:::
+
+## Partie 1 — Français
+
+:::note Texte
+[1] Ce matin-là, Lucien se réveilla avant tout le monde. Par la fenêtre de la cuisine, il apercevait le chevalement du puits, noir contre le ciel encore pâle, et les premières silhouettes des mineurs qui descendaient la rue en silence. Son père était parti depuis longtemps ; sa mère, qui repassait déjà le tablier neuf, lui sourit sans rien dire.
+[2] L'école se trouvait au bout de la rue, entre l'église et la coopérative. Lucien la connaissait de l'extérieur : il avait souvent regardé, accroché aux grilles, les grands qui jouaient aux billes dans la cour. Mais aujourd'hui, il allait entrer. Il serrait si fort la main de sa mère qu'elle dut lui demander de desserrer les doigts.
+[3] Dans la classe, tout lui parut immense : les cartes pendues aux murs, le tableau noir où une main soigneuse avait écrit la date, le poêle qui ronronnait au fond de la salle. Le maître, un homme maigre aux lunettes rondes, fit l'appel d'une voix calme. Quand il prononça son nom, Lucien répondit « présent » si bas que personne ne l'entendit. Le maître leva les yeux, attendit, puis répéta le nom avec un sourire. Cette fois, la voix de Lucien résonna dans toute la salle, et quelques élèves rirent.
+[4] La matinée passa lentement. On distribua des ardoises, des craies, un cahier dont la couverture sentait la colle. Le maître traça au tableau une lettre ronde et invita les enfants à la reproduire. Lucien s'appliqua tant qu'il en oublia sa peur : il tirait la langue, recommençait, effaçait avec le coin de sa manche. Lorsque le maître passa derrière lui, il sentit une main se poser un instant sur son épaule.
+[5] « C'est bien, dit simplement l'homme. Tu verras, bientôt, tu sauras lire toutes les histoires que tu voudras. »
+[6] Lucien ne répondit pas. Il regardait sa lettre, qui ressemblait à peine à celle du tableau, et il lui sembla qu'elle ouvrait une porte. Le soir, en rentrant, il ne parla ni de la cour, ni des billes, ni du poêle. Il prit un morceau de charbon près de la cuisinière et, sur une vieille planche, il dessina la lettre ronde, encore et encore, jusqu'à ce que sa mère l'appelât pour la soupe.
+*Texte écrit pour ce guide.*
+:::
+
+### Grammaire (6 points)
+
+@exo 3 | 1,5 point
+Dans le paragraphe [1], relevez deux verbes à l'imparfait et deux verbes au passé simple. Expliquez l'emploi de ces deux temps dans le récit.
+@sol
+Imparfait : *apercevait, descendaient, repassait*. Passé simple : *se réveilla, sourit*. (Barème : 0,5 pour le relevé.)
+L'**imparfait** exprime des actions d'**arrière-plan**, non délimitées, qui décrivent le décor (le puits, les mineurs, la mère au travail). Le **passé simple** exprime des actions de **premier plan**, ponctuelles et achevées, qui font avancer le récit (le réveil de Lucien, le sourire de sa mère). (1 point)
+@end
+
+@exo 3 | 1,5 point
+« Il serrait si fort la main de sa mère qu'elle dut lui demander de desserrer les doigts. » Délimitez les propositions, donnez leur nature, et précisez la valeur de la subordonnée.
+@sol
+Deux propositions : principale *Il serrait si fort la main de sa mère* ; subordonnée conjonctive circonstancielle *qu'elle dut lui demander de desserrer les doigts*, introduite par la corrélation **si… que** : elle exprime la **conséquence**. (*de desserrer les doigts* est un groupe infinitif complément de *demander*, pas une proposition à verbe conjugué.)
+@end
+
+@exo 3 | 1,5 point
+Donnez la fonction de : a) « immense » (§3) ; b) « d'une voix calme » (§3) ; c) « qui repassait déjà le tablier neuf » (§1).
+@sol
+a) **attribut du sujet** *tout* (verbe d'état *parut*). b) **complément de phrase** (de manière) : déplaçable et supprimable (*D'une voix calme, le maître fit l'appel*). c) **proposition subordonnée relative** (explicative, entre virgules), complément de l'antécédent *sa mère*.
+@end
+
+@exo 3 | 1,5 point
+Donnez la classe grammaticale de : a) « si » (§3 : *si bas*) ; b) « que » (§3 : *si bas que*) ; c) « personne » (§3) ; d) « en » (§4 : *il en oublia sa peur*).
+@sol
+a) **adverbe** (d'intensité, modifie *bas*). b) **conjonction de subordination** (corrélation *si… que*). c) **pronom indéfini** (sujet de *entendit*, avec *ne*). d) **pronom personnel** (adverbial) : *il oublia sa peur à cause de cela* (de ce travail). (0,375 point par réponse.)
+@end
+
+### Lexique (4 points)
+
+@exo 3 | 1,5 point
+Expliquez la formation des mots « desserrer » (§2) et « soigneuse » (§3).
+@sol
+*desserrer* : verbe formé par **dérivation** : préfixe **des-** (action contraire) + verbe *serrer* ; sens : relâcher ce qui était serré. *soigneuse* : adjectif formé par dérivation sur le nom *soin* (radical *soign-*) + suffixe **-eux / -euse** (« qui a la qualité de ») ; sens : qui prend soin, appliqué.
+@end
+
+@exo 3 | 1 point
+Quel est le sens du verbe « ronronnait » dans le paragraphe [3] ? Quel effet produit-il ?
+@sol
+Au sens propre, *ronronner* désigne le bruit du chat content. Ici, au **sens figuré**, il décrit le bruit sourd et régulier du poêle. Cette **personnification** donne une image **chaleureuse** et rassurante de la classe.
+@end
+
+@exo 2 | 1,5 point
+Relevez le champ lexical de l'école (au moins six termes).
+@sol
+*école, cour, classe, cartes, tableau noir, maître, appel, élèves, ardoises, craies, cahier, lettre, lire.* (1,5 point pour 6 termes justes ; 0,25 par terme en moins.)
+@end
+
+### Analyse et rédaction (10 points)
+
+@exo 4 | 10 points
+« En quoi l'entrée à l'école est-elle vécue par Lucien comme une expérience décisive ? » Vous répondrez de façon organisée et argumentée, en vous appuyant précisément sur le texte.
+@sol
+**Barème indicatif** : compréhension et exploitation du texte (4) ; organisation et argumentation (3) ; maîtrise de la langue (3).
+**Plan possible.**
+**Introduction** : récit à la 3e personne d'une première rentrée, dans une ville minière ; problématique : comment ce jour transforme-t-il l'enfant ? Annonce du plan.
+**I. Une épreuve chargée d'émotion.** L'attente (réveil « avant tout le monde ») ; l'école vue « de l'extérieur », à travers les grilles : une frontière ; la peur (« il serrait si fort la main ») ; la timidité (« présent » dit « si bas ») et le rire des élèves ; l'impression d'immensité (énumération du §3).
+**II. Une rencontre bienveillante qui rassure.** Le maître, « d'une voix calme », répète le nom « avec un sourire » ; la main posée « un instant sur son épaule » ; la parole d'encouragement au futur (« tu sauras lire ») qui ouvre un avenir.
+**III. Une découverte qui transforme l'enfant.** L'application (« il en oublia sa peur ») ; la métaphore de la lettre qui « ouvrait une porte » ; le soir, Lucien ne parle pas de la cour mais reproduit la lettre « encore et encore » avec du charbon : le savoir remplace le jeu, et le charbon de la mine devient outil d'écriture — l'école ouvre un autre destin.
+**Conclusion** : une expérience fondatrice, faite d'émotion et de découverte, où le rôle de l'enseignant est essentiel ; ouverture : l'accueil des élèves à la rentrée, notamment en maternelle et au CP.
+@end
+
+## Partie 2 — Mathématiques
+
+@exo 3 | Exercice 1 — 5 points : vrai ou faux ? Justifiez chaque réponse.
+a) $0{,}7 \times 0{,}3 = 2{,}1$.
+b) Si un prix augmente de 20 % puis baisse de 20 %, il revient à sa valeur initiale.
+c) $\frac{3}{4} > \frac{5}{7}$.
+d) 2 023 est un nombre premier.
+e) Un carré de 1 m de côté a une aire de 10 000 cm².
+@sol
+a) **Faux** : $7 \times 3 = 21$ et deux chiffres après la virgule : $0{,}21$.
+b) **Faux** : $1{,}2 \times 0{,}8 = 0{,}96$ : baisse globale de 4 %.
+c) **Vrai** : $\frac{3}{4} = \frac{21}{28}$ et $\frac{5}{7} = \frac{20}{28}$.
+d) **Faux** : $2\,023 = 7 \times 289 = 7 \times 17^2$.
+e) **Vrai** : $100 \text{ cm} \times 100 \text{ cm} = 10\,000 \text{ cm}^2$.
+(1 point par item : 0,25 pour la réponse, 0,75 pour la justification.)
+@check factorint(2023) == {7: 1, 17: 2}
+@check same("Rational(12,10)*Rational(8,10)", "Rational(96,100)")
+@end
+
+@exo 3 | Exercice 2 — 5 points : une sortie scolaire
+Une classe de 26 élèves, accompagnée de 4 adultes, visite un musée. Le car coûte 450 € (forfait). L'entrée coûte 4,50 € par élève ; elle est gratuite pour les adultes.
+a) Calculez le coût total de la sortie.
+b) Si le coût est partagé entre les élèves, combien paie chaque élève (au centime près) ?
+c) La coopérative scolaire prend en charge 30 % du coût total. Combien paie alors chaque élève ?
+d) Un autre transporteur propose 12 € par personne transportée (élèves et adultes). Est-ce plus avantageux ? De combien ?
+@sol
+a) Entrées : $26 \times 4{,}5 = 117$ € ; total $450 + 117 = 567$ €.
+b) $567 \div 26 \approx 21{,}81$ €.
+c) Reste à payer : $567 \times 0{,}7 = 396{,}90$ € ; par élève $396{,}90 \div 26 \approx 15{,}27$ €.
+d) $12 \times 30 = 360$ € < 450 € : **plus avantageux**, de **90 €**.
+@check approx(567*Rational(7,10)/26, 15.265, 0.001)
+@end
+
+@exo 3 | Exercice 3 — 5 points : un jardin
+Un jardin a la forme d'un rectangle $ABCD$ avec $AB = 12$ m et $BC = 5$ m. On trace l'allée $[AC]$.
+a) Calculez la longueur de l'allée $AC$.
+b) Un point $E$ de $[AC]$ est tel que $AE = 5{,}2$ m. La parallèle à $(BC)$ passant par $E$ coupe $[AB]$ en $F$. Calculez $AF$ et $EF$.
+c) Calculez l'aire du triangle $AFE$.
+d) Calculez la mesure de l'angle $\widehat{BAC}$ au degré près.
+@sol
+a) Le triangle $ABC$ est rectangle en $B$ : $AC^2 = 12^2 + 5^2 = 169$, $AC = 13$ m (théorème de Pythagore).
+b) $(EF) \parallel (BC)$, $F \in [AB]$, $E \in [AC]$ : d'après le théorème de Thalès, $\frac{AF}{AB} = \frac{AE}{AC} = \frac{EF}{BC}$, avec $\frac{5{,}2}{13} = 0{,}4$. $AF = 0{,}4 \times 12 = 4{,}8$ m ; $EF = 0{,}4 \times 5 = 2$ m.
+c) $(EF) \parallel (BC)$ et $(BC) \perp (AB)$ donc $(EF) \perp (AB)$ : $AFE$ est rectangle en $F$. Aire $= \frac{4{,}8 \times 2}{2} = 4{,}8$ m².
+d) $\tan \widehat{BAC} = \frac{BC}{AB} = \frac{5}{12}$ → $\widehat{BAC} \approx 23°$.
+@check approx(atan(Rational(5,12))*180/pi, 22.62, 0.01)
+@end
+
+@exo 3 | Exercice 4 — 5 points : deux programmes de calcul
+Programme A : choisir un nombre ; le multiplier par 3 ; soustraire 4. Programme B : choisir un nombre ; lui ajouter 2 ; multiplier le résultat par 2.
+a) Quels résultats obtient-on avec le nombre 5 ? avec le nombre −1 ?
+b) On note $x$ le nombre choisi. Exprimez les résultats $A(x)$ et $B(x)$ en fonction de $x$. De quel type de fonctions s'agit-il ?
+c) Quel nombre faut-il choisir pour que les deux programmes donnent le même résultat ?
+d) Pour quelles valeurs de $x$ le programme A donne-t-il un résultat plus grand que le programme B ?
+@sol
+a) Avec 5 : A donne $11$, B donne $14$. Avec −1 : A donne $-7$, B donne $2$.
+b) $A(x) = 3x - 4$ ; $B(x) = 2(x + 2) = 2x + 4$ : fonctions **affines**.
+c) $3x - 4 = 2x + 4$ ⇔ $x = 8$ (résultat commun : 20).
+d) $3x - 4 > 2x + 4$ ⇔ $x > 8$.
+@check sols("3*x-4-(2*x+4)", [8])
+@end
+
+@corriges Corrigé du sujet blanc n° 1
+
+# B2 | Sujet blanc n° 2 — Écrit 1 | 4 heures · À faire en conditions réelles (semaine 21)
+
+:::examen Consignes
+Même format que le sujet n° 1. Sujet d'entraînement écrit pour ce guide.
+:::
+
+## Partie 1 — Français
+
+:::note Texte
+[1] Nos enfants ne s'ennuient plus. Du moins, ils n'en ont plus le temps. Entre l'école, les activités du mercredi, les devoirs et les écrans qui s'allument dès que le silence menace, leurs journées ressemblent à des agendas de ministres. Beaucoup de parents s'en réjouissent : un enfant occupé, pense-t-on, est un enfant qui progresse.
+[2] Pourtant, l'ennui n'a pas toujours été un ennemi. Qui ne se souvient de ces après-midi interminables où, faute de mieux, on inventait une cabane avec trois chaises et une couverture, un royaume dans un carré de jardin, une histoire à partir d'un caillou ? Ces moments vides étaient en réalité très pleins : l'enfant y apprenait à attendre, à imaginer, à se tenir compagnie à lui-même.
+[3] Les psychologues le rappellent volontiers : c'est souvent lorsque rien ne se passe à l'extérieur que quelque chose commence à l'intérieur. L'ennui oblige à chercher, à essayer, à se tromper. Il fait naître le désir, parce qu'il crée un manque. À l'inverse, un enfant sans cesse sollicité risque de devenir un simple consommateur d'activités.
+[4] Faut-il pour autant laisser les enfants seuls face à des heures vides ? Certainement pas. L'ennui n'est fécond que s'il s'accompagne de possibles : des livres à portée de main, du papier, des crayons, un coin de nature, des adultes disponibles pour écouter ce qui a été inventé. Il ne s'agit pas d'abandonner l'enfant, mais de lui laisser de la place.
+[5] L'école elle-même peut y contribuer. Elle n'a pas vocation à occuper chaque minute : un temps de lecture libre, un projet que les élèves conduisent eux-mêmes, un problème qu'on laisse « mûrir » plusieurs jours sont autant d'occasions d'apprendre à penser seul. Savoir s'ennuyer, finalement, c'est peut-être apprendre à être libre.
+*Texte écrit pour ce guide.*
+:::
+
+### Grammaire (6 points)
+
+@exo 3 | 1,5 point
+« L'ennui n'est fécond que s'il s'accompagne de possibles. » (§4) Combien cette phrase compte-t-elle de propositions ? Donnez leur nature. Quelle est la valeur de « ne… que » ?
+@sol
+Deux propositions : principale *L'ennui n'est fécond* ; subordonnée circonstancielle de **condition** *s'il s'accompagne de possibles* (introduite par *si*, élidé en *s'*). *ne… que* est une **négation restrictive** (= *seulement*) : l'ennui est fécond **seulement** à cette condition.
+@end
+
+@exo 3 | 1,5 point
+Donnez la classe de : a) « leurs » (§1) ; b) « où » (§2) ; c) « Qui » (§2) ; d) « en » (§1 : *s'en réjouissent*).
+@sol
+a) **déterminant possessif** (*leurs journées*). b) **pronom relatif** (antécédent *après-midi* ; complément de temps dans la relative). c) **pronom interrogatif** (phrase interrogative). d) **pronom personnel** (= *de cela* : *se réjouir de quelque chose*).
+@end
+
+@exo 3 | 1,5 point
+Donnez la fonction de : a) « pense-t-on » (§1) ; b) « faute de mieux » (§2) ; c) « des agendas de ministres » (§1).
+@sol
+a) **proposition incise** (indique qui pense ; sujet inversé *on*). b) **complément de phrase** exprimant la **cause** (supprimable, déplaçable). c) **COI** du verbe *ressemblent* (*ressembler à*), avec *de ministres* complément du nom *agendas*.
+@end
+
+@exo 3 | 1,5 point
+Donnez le temps et la valeur de : a) « inventait » (§2) ; b) « oblige » (§3) ; c) « a été inventé » (§4).
+@sol
+a) imparfait d'**habitude** (actions répétées dans le passé). b) présent de **vérité générale**. c) passé composé à la **voix passive** (action accomplie, antérieure à *écouter*).
+@end
+
+### Lexique (4 points)
+
+@exo 3 | 1,5 point
+Expliquez la formation de « interminables » (§2) et de « consommateur » (§3).
+@sol
+*interminables* : préfixe **in-** (négation) + radical *termin-* (*terminer*) + suffixe **-able** (« qui peut être ») : qui ne peut pas être terminé, qui semble ne jamais finir. *consommateur* : radical verbal *consomm-* (*consommer*) + suffixe **-ateur** (celui qui fait l'action) : celui qui consomme.
+@end
+
+@exo 3 | 1 point
+Quel est le sens de « fécond » dans le paragraphe [4] ? Donnez un autre sens de ce mot.
+@sol
+Ici, au sens **figuré** : qui produit de bons résultats, **fructueux**, riche. Au sens propre : capable de se **reproduire** (une femelle féconde) ; se dit aussi d'une terre fertile.
+@end
+
+@exo 3 | 1,5 point
+Expliquez l'image « leurs journées ressemblent à des agendas de ministres » (§1) et relevez dans le §2 une antithèse.
+@sol
+C'est une **comparaison** (outil *ressembler à*) : les journées des enfants sont aussi **remplies** et minutées que celles de personnes très occupées ; l'image est **ironique**. Antithèse : « ces moments **vides** étaient en réalité très **pleins** ».
+@end
+
+### Analyse et rédaction (10 points)
+
+@exo 4 | 10 points
+« Selon l'auteur, en quoi l'ennui peut-il être utile à l'enfant ? Partagez-vous ce point de vue ? » Vous répondrez de manière argumentée, en vous appuyant sur le texte et sur vos connaissances.
+@sol
+**Plan possible.** **Introduction** : constat d'enfants très occupés ; thèse paradoxale de l'auteur ; problématique ; annonce.
+**I. Pour l'auteur, l'ennui est formateur** : il développe l'imagination (cabane, royaume, histoire : énumération §2) ; il fait naître le désir « parce qu'il crée un manque » ; il protège de la passivité (« consommateur d'activités »).
+**II. Un point de vue largement partagé, mais nuancé** : l'auteur lui-même pose des conditions (« n'est fécond que si… ») : ressources et adultes disponibles ; l'ennui subi, sans stimulation, peut être néfaste (enfants livrés aux écrans, inégalités d'accès à la culture).
+**III. Le rôle de l'école** : lecture libre, projets conduits par les élèves, problèmes ouverts que l'on laisse « mûrir » (§5) ; temps calmes en maternelle ; coin lecture ; autonomie. **Conclusion** : l'ennui choisi et accompagné peut apprendre la liberté ; ouverture : place des écrans dans la vie des enfants.
+@end
+
+## Partie 2 — Mathématiques
+
+@exo 3 | Exercice 1 — 5 points : QCM (une seule bonne réponse, justifiez)
+a) 15 % de 240 vaut : 24 · 36 · 16 · 3,6.
+b) Le PGCD de 84 et 126 est : 6 · 14 · 21 · 42.
+c) 2 h 45 min en heures décimales : 2,45 h · 2,75 h · 2,5 h · 2,65 h.
+d) La solution de $5x - 3 = 2x + 9$ est : 2 · 3 · 4 · 6.
+e) Le volume d'un cube d'arête 3 cm est : 9 cm³ · 18 cm³ · 27 cm³ · 54 cm³.
+@sol
+a) **36** ($240 \times 0{,}15$). b) **42** ($84 = 2^2 \times 3 \times 7$, $126 = 2 \times 3^2 \times 7$ → $2 \times 3 \times 7$). c) **2,75 h** (45 min = 0,75 h). d) **4** ($3x = 12$). e) **27 cm³** ($3^3$).
+@check gcd(84, 126) == 42
+@check sols("5*x-3-(2*x+9)", [4])
+@end
+
+@exo 3 | Exercice 2 — 5 points : résultats d'une dictée
+Notes obtenues par les 22 élèves d'une classe :
+
+| Note | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
+| Effectif | 1 | 2 | 4 | 6 | 5 | 3 | 1 |
+
+a) Calculez la moyenne de la classe (au centième). b) Déterminez la médiane et l'étendue. c) Quel pourcentage des élèves a obtenu au moins 12 ? d) On choisit un élève au hasard : quelle est la probabilité qu'il ait eu exactement 10 ?
+@sol
+a) Somme : $4 + 12 + 32 + 60 + 60 + 42 + 16 = 226$ ; moyenne $\frac{226}{22} \approx 10{,}27$.
+b) 22 valeurs : médiane = moyenne des 11e et 12e valeurs ; effectifs cumulés 1, 3, 7, 13 → les 11e et 12e valeurs valent 10 : **médiane 10**. Étendue $16 - 4 = 12$.
+c) $\frac{5 + 3 + 1}{22} = \frac{9}{22} \approx 40{,}9\,\%$.
+d) $\frac{6}{22} = \frac{3}{11}$.
+@check approx(Rational(226,22), 10.2727, 0.0001)
+@end
+
+@exo 3 | Exercice 3 — 5 points : un bac à sable
+Un bac à sable a la forme d'un pavé droit de 1,5 m de long, 1,2 m de large, et doit être rempli sur 30 cm de hauteur.
+a) Calculez le volume de sable nécessaire, en m³ puis en litres.
+b) La masse volumique du sable est d'environ 1,6 t/m³. Quelle masse de sable faut-il ? Le sable est vendu en sacs de 25 kg : combien de sacs faut-il acheter ?
+c) Un sac coûte 4,90 €. Quel est le coût total ?
+d) On représente le bac sur un plan à l'échelle $\frac{1}{50}$. Quelles sont ses dimensions sur le plan ?
+@sol
+a) $1{,}5 \times 1{,}2 \times 0{,}3 = 0{,}54$ m³ $= 540$ L.
+b) $0{,}54 \times 1{,}6 = 0{,}864$ t $= 864$ kg ; $864 \div 25 = 34{,}56$ → **35 sacs**.
+c) $35 \times 4{,}90 = 171{,}50$ €.
+d) 150 cm ÷ 50 = **3 cm** ; 120 cm ÷ 50 = **2,4 cm**.
+@check approx(Rational(15,10)*Rational(12,10)*Rational(3,10), 0.54)
+@end
+
+@exo 4 | Exercice 4 — 5 points : qui arrive le premier ?
+Marie part à vélo à 8 h 10 pour rejoindre un village situé à 27 km ; elle roule à la vitesse constante de 18 km/h. Sa sœur part du même endroit à 8 h 40, en voiture, à 54 km/h, par la même route.
+a) À quelle heure Marie arrive-t-elle ? Et sa sœur ?
+b) On note $t$ le temps (en heures) écoulé depuis 8 h 10. Exprimez la distance parcourue par Marie, puis par sa sœur (pour $t \geq 0{,}5$), en fonction de $t$.
+c) À quelle heure et à quelle distance du départ la sœur rattrape-t-elle Marie ?
+@sol
+a) Marie : $27 \div 18 = 1{,}5$ h → **9 h 40**. Sœur : $27 \div 54 = 0{,}5$ h → **9 h 10**.
+b) Marie : $d_1(t) = 18t$ ; sœur : $d_2(t) = 54(t - 0{,}5) = 54t - 27$.
+c) $18t = 54t - 27$ ⇔ $36t = 27$ ⇔ $t = 0{,}75$ h = 45 min → à **8 h 55**, à $18 \times 0{,}75 = 13{,}5$ km du départ.
+@check sols("18*x-(54*x-27)", ["3/4"])
+@end
+
+@corriges Corrigé du sujet blanc n° 2
+
+# B3 | Sujet blanc n° 3 — Écrit 1 | 4 heures · Dernier entraînement complet (semaine 23)
+
+:::examen Consignes
+Même format. Refaire ensuite, en semaine 25, celui des trois sujets qui a été le moins réussi.
+:::
+
+## Partie 1 — Français
+
+:::note Texte
+[1] Il y a trente ans, la place du Marché n'était qu'un parking. On y tournait longtemps pour trouver une place, les voitures y cuisaient l'été et, dès les premières pluies, de larges flaques grises s'étalaient sur le bitume. Personne n'aurait eu l'idée de s'y asseoir.
+[2] Aujourd'hui, une quarantaine de tilleuls y dessinent des allées ombragées. Des bancs ont été installés, une fontaine rafraîchit les enfants et, le samedi, les maraîchers des monts voisins y déballent leurs cagettes. Les habitants disent « la place » comme on dit « le jardin » : un lieu qui leur appartient.
+[3] Cette transformation n'est pas seulement esthétique. Les arbres, en effet, rendent à la ville des services que l'on commence à mesurer. Par l'ombre qu'ils portent et par l'eau qu'ils évaporent, ils abaissent la température de plusieurs degrés lors des fortes chaleurs. Leurs racines aident le sol à absorber les pluies, ce qui limite les inondations. Ils abritent oiseaux et insectes, et offrent aux citadins un peu de cette nature dont ils manquent.
+[4] Planter ne suffit pourtant pas. Un arbre met des décennies à grandir, et beaucoup de jeunes plants meurent faute de soins ou d'espace pour leurs racines. Il faut choisir des essences adaptées au climat qui vient, accepter de retirer du bitume, parfois renoncer à quelques places de stationnement. Ces choix provoquent des débats, et c'est normal : la ville est un bien commun.
+[5] Les enfants de l'école voisine ont suivi le chantier. Ils ont mesuré la circonférence des troncs, compté les oiseaux, comparé les températures au soleil et à l'ombre. Sans le savoir, ils ont fait des mathématiques, des sciences et de l'éducation civique. Ils ont surtout appris qu'un lieu peut changer, et que ceux qui l'habitent peuvent y contribuer.
+*Texte écrit pour ce guide.*
+:::
+
+### Grammaire (6 points)
+
+@exo 3 | 1,5 point
+« Des bancs ont été installés » (§2) : à quelle voix et à quel temps est ce verbe ? Transformez la phrase à la voix active. Pourquoi l'auteur a-t-il choisi cette voix ?
+@sol
+Voix **passive**, **passé composé** (auxiliaire *être* au passé composé + participe accordé avec le sujet *des bancs*). Voix active : *On a installé des bancs.* Le complément d'agent n'est pas exprimé : ce qui compte est le **résultat** (les bancs), pas celui qui a agi.
+@end
+
+@exo 3 | 1,5 point
+« Par l'ombre qu'ils portent et par l'eau qu'ils évaporent » (§3) : donnez la nature des deux propositions subordonnées, leur fonction, et la fonction de « qu' » dans chacune.
+@sol
+Deux **propositions subordonnées relatives**, compléments des antécédents *l'ombre* et *l'eau*. Dans chacune, le pronom relatif *qu'* est **COD** du verbe (*ils portent l'ombre* ; *ils évaporent l'eau*).
+@end
+
+@exo 3 | 1,5 point
+Donnez la fonction de : a) « un parking » (§1) ; b) « le samedi » (§2) ; c) « aux citadins » (§3).
+@sol
+a) **attribut du sujet** *la place du Marché* (verbe *être*, avec la négation restrictive *ne… que*). b) **complément de phrase** de temps. c) **COS** (ou COI) du verbe *offrent* (le COD est *un peu de cette nature*).
+@end
+
+@exo 3 | 1,5 point
+Donnez la classe de : a) « Personne » (§1) ; b) « leur » (§2 : *qui leur appartient*) ; c) « leurs » (§2 : *leurs cagettes*) ; d) « dont » (§3).
+@sol
+a) **pronom indéfini** (sujet). b) **pronom personnel** (COI : *appartient à eux*). c) **déterminant possessif**. d) **pronom relatif** (antécédent *nature* ; *ils manquent de cette nature*).
+@end
+
+### Lexique (4 points)
+
+@exo 3 | 1,5 point
+Expliquez la formation de « rafraîchit » (§2) et de « stationnement » (§4).
+@sol
+*rafraîchit* (verbe *rafraîchir*) : dérivation **parasynthétique** : préfixe *r(e)-* + *a-* + adjectif *frais* (radical *fraîch-*) + suffixe verbal *-ir* : rendre frais. *stationnement* : radical verbal *stationn-* (*stationner*) + suffixe **-ement** (action, résultat) : le fait de stationner.
+@end
+
+@exo 3 | 1 point
+Quel est le sens du mot « essences » dans le §4 ? Montrez que ce mot est polysémique.
+@sol
+Ici : **espèces d'arbres** (le chêne, le tilleul…). Autres sens : carburant (*faire le plein d'essence*) ; extrait parfumé d'une plante (*essence de lavande*) ; nature profonde d'une chose (sens philosophique).
+@end
+
+@exo 2 | 1,5 point
+Relevez le champ lexical de la nature dans les paragraphes [2] et [3].
+@sol
+*tilleuls, allées ombragées, fontaine, arbres, ombre, eau, racines, sol, pluies, oiseaux, insectes, nature.*
+@end
+
+### Analyse et rédaction (10 points)
+
+@exo 4 | 10 points
+« Quel rôle l'auteur attribue-t-il aux arbres dans la ville ? En vous appuyant sur le texte et sur vos connaissances, montrez comment l'école peut faire de l'environnement proche un objet d'apprentissage. »
+@sol
+**I. Les arbres transforment la ville** : contraste parking / jardin (§1 – §2 : « cuisaient », « flaques grises » vs « allées ombragées ») ; services rendus (§3) : fraîcheur, absorption de l'eau, biodiversité, bien-être ; connecteurs *en effet*, énumération.
+**II. Un projet qui demande des choix collectifs** : temps long (« des décennies »), essences adaptées, renoncements ; débat démocratique : « la ville est un bien commun ».
+**III. L'école et l'environnement proche** : le §5 montre une démarche **interdisciplinaire** (mathématiques : mesurer, calculer ; sciences : relever des températures, compter les oiseaux ; EMC : comprendre un choix collectif) ; exemples : sorties dans le quartier, démarche d'investigation, jardin d'école, éducation au développement durable, éco-délégués. **Conclusion** : l'environnement proche rend les savoirs concrets et forme des citoyens.
+@end
+
+## Partie 2 — Mathématiques
+
+@exo 3 | Exercice 1 — 5 points : calculs
+Calculez en détaillant : a) $(-3) \times (-4) - 5 \times 2$ ; b) $\frac{5}{6} - \frac{3}{4}$ ; c) donnez l'écriture scientifique de $0{,}000\,36$ ; d) $\frac{2^3 \times 2^4}{2^5}$ ; e) $1{,}2 \times 10^3 + 3 \times 10^2$.
+@sol
+a) $12 - 10 = 2$. b) $\frac{10}{12} - \frac{9}{12} = \frac{1}{12}$. c) $3{,}6 \times 10^{-4}$. d) $2^{3 + 4 - 5} = 2^2 = 4$. e) $1\,200 + 300 = 1\,500$.
+@check same("(-3)*(-4)-5*2", 2)
+@check same("Rational(5,6)-Rational(3,4)", "Rational(1,12)")
+@end
+
+@exo 3 | Exercice 2 — 5 points : des sachets de billes
+Un enseignant dispose de 180 billes rouges et de 144 billes bleues. Il veut faire des sachets **identiques** en utilisant toutes les billes.
+a) Peut-il faire 12 sachets ? 24 sachets ? Justifiez.
+b) Décomposez 180 et 144 en produits de facteurs premiers.
+c) Quel est le nombre maximal de sachets ? Quelle est la composition de chacun ?
+@sol
+a) 12 divise 180 (15) et 144 (12) : **oui**. 24 ne divise pas 180 ($180 = 24 \times 7 + 12$) : **non**.
+b) $180 = 2^2 \times 3^2 \times 5$ ; $144 = 2^4 \times 3^2$.
+c) PGCD $= 2^2 \times 3^2 = 36$ : **36 sachets** de 5 billes rouges et 4 billes bleues.
+@check gcd(180, 144) == 36
+@end
+
+@exo 3 | Exercice 3 — 5 points : une table ronde
+Une table ronde a un diamètre de 1,2 m.
+a) Calculez son périmètre (au cm près).
+b) On estime qu'une personne a besoin de 60 cm de bord de table. Combien de personnes peut-on installer ?
+c) Calculez l'aire du plateau (au cm² près, en m²).
+d) On veut une table carrée de même aire. Calculez son côté et la longueur de sa diagonale (au cm près).
+@sol
+a) $1{,}2\pi \approx 3{,}77$ m. b) $3{,}77 \div 0{,}6 \approx 6{,}3$ → **6 personnes**. c) $\pi \times 0{,}6^2 = 0{,}36\pi \approx 1{,}131$ m². d) Côté $c = \sqrt{0{,}36\pi} \approx 1{,}06$ m ; diagonale $c\sqrt{2} \approx 1{,}50$ m (Pythagore : $d^2 = c^2 + c^2$).
+@check approx(sqrt(Rational(36,100)*pi), 1.0635, 0.0001)
+@check approx(sqrt(Rational(72,100)*pi), 1.504, 0.001)
+@end
+
+@exo 3 | Exercice 4 — 5 points : une roue de loterie
+Une roue est partagée en 8 secteurs identiques : 3 rouges, 4 bleus, 1 vert. On la fait tourner ; chaque secteur a la même chance d'être désigné.
+a) Quelle est la probabilité d'obtenir rouge ? de ne pas obtenir bleu ?
+b) On fait tourner la roue deux fois. Quelle est la probabilité d'obtenir deux fois vert ?
+c) Un programme simule 1 000 lancers et obtient 391 fois rouge. Ce résultat est-il surprenant ? Expliquez.
+@sol
+a) $P(\text{rouge}) = \frac{3}{8}$ ; $P(\text{non bleu}) = 1 - \frac{4}{8} = \frac{1}{2}$.
+b) $\frac{1}{8} \times \frac{1}{8} = \frac{1}{64}$.
+c) Fréquence observée $0{,}391$, proche de la probabilité $0{,}375$ : **pas surprenant** ; sur un grand nombre de lancers, la fréquence se rapproche de la probabilité, mais n'est pas exactement égale.
+@end
+
+@corriges Corrigé du sujet blanc n° 3
+
+# B4 | Sujet blanc — Écrit 2 | 4 heures · Traiter 3 parties sur 4 (semaine 20)
+
+:::examen Consignes
+Choisir **trois** des quatre parties (celles des domaines choisis). Chaque partie est ici notée sur 20. Environ **1 h 15** par partie et 15 min de relecture. Sujet d'entraînement écrit pour ce guide.
+:::
+
+## Partie H — Histoire, géographie, EMC
+
+:::note Document : extrait de la « Lettre aux instituteurs » de Jules Ferry, ministre de l'Instruction publique (17 novembre 1883)
+« Au moment de proposer aux élèves un précepte, une maxime quelconque, demandez-vous s'il se trouve, à votre connaissance, un seul honnête homme qui puisse être froissé de ce que vous allez dire. Demandez-vous si un père de famille, je dis un seul, présent à votre classe et vous écoutant, pourrait de bonne foi refuser son assentiment à ce qu'il vous entendrait dire. Si oui, abstenez-vous de le dire ; sinon, parlez hardiment. »
+:::
+
+@exo 3 | H1 — 4 points
+Présentez le document (nature, auteur, date, destinataires, contexte).
+@sol
+Lettre (circulaire) de **Jules Ferry**, ministre de l'Instruction publique de la **IIIe République**, adressée aux **instituteurs** le 17 novembre 1883, juste après les **lois Ferry** (1881 – 1882) qui ont rendu l'école primaire gratuite, obligatoire et laïque, et remplacé l'instruction religieuse par l'**instruction morale et civique**. Il leur explique comment enseigner la morale.
+@end
+
+@exo 3 | H2 — 6 points
+Quelle règle Jules Ferry donne-t-il aux instituteurs ? Quel principe de l'école républicaine exprime-t-elle ? Montrez qu'il reste d'actualité.
+@sol
+Règle : n'enseigner que ce qu'aucun « honnête homme », aucun « père de famille » ne pourrait refuser : ne pas heurter les convictions des familles. C'est le principe de **neutralité** de l'enseignant, lié à la **laïcité** : l'école respecte la liberté de conscience des élèves et des familles. Aujourd'hui : obligation de **neutralité** des agents publics, **charte de la laïcité à l'École** (2013), loi de 1905 ; mais la neutralité n'empêche pas d'enseigner les **programmes** et les **valeurs de la République**, qui ne sont pas des opinions.
+@end
+
+@exo 3 | H3 — 5 points
+Replacez sur une frise chronologique : lois Ferry ; loi de séparation des Églises et de l'État ; droit de vote des femmes ; Déclaration des droits de l'homme et du citoyen ; Convention internationale des droits de l'enfant. Pour deux d'entre eux, expliquez en une phrase leur importance pour l'école.
+@sol
+DDHC (1789) → lois Ferry (1881 – 1882) → loi de 1905 → droit de vote des femmes (1944) → CIDE (1989). Exemples : les **lois Ferry** fondent l'école publique gratuite, obligatoire et laïque ; la **CIDE** reconnaît le droit de chaque enfant à l'éducation et à la protection.
+@end
+
+@exo 3 | H4 — 5 points (géographie)
+Expliquez ce qu'est la métropolisation et donnez deux conséquences de ce phénomène pour une ville comme Saint-Étienne, proche de la métropole de Lyon.
+@sol
+**Métropolisation** : concentration des populations, des emplois qualifiés, des fonctions de commandement dans les plus grandes villes, reliées entre elles. Conséquences possibles : **mobilités pendulaires** entre Saint-Étienne et Lyon (trains, autoroute), attractivité de la grande métropole voisine (emplois, universités, services) qui peut concurrencer la ville moyenne, mais aussi opportunités (logements moins chers, reconversion vers le design, les services, l'enseignement supérieur).
+@end
+
+## Partie S — Sciences et technologie
+
+@exo 3 | S1 — 5 points
+Des élèves affirment : « L'eau qui gèle devient plus lourde. » Proposez une expérience pour vérifier cette affirmation et donnez le résultat attendu.
+@sol
+Peser une bouteille en plastique (fermée, non remplie à ras bord) contenant de l'eau ; la mettre au congélateur ; la peser à nouveau une fois l'eau gelée. **Résultat** : la masse est **identique** (conservation de la masse lors d'un changement d'état) ; seul le **volume** augmente (la bouteille gonfle). L'affirmation est donc fausse.
+@end
+
+@exo 3 | S2 — 5 points
+@fig circuit:35 | Schéma du circuit.
+Nommez les éléments du circuit. Que faut-il faire pour que la lampe s'allume ? Si l'on ajoute une seconde lampe **en série**, que peut-on observer ? Citez deux règles de sécurité électrique à enseigner.
+@sol
+Pile (générateur), lampe, interrupteur (ouvert), fils de connexion. Il faut **fermer l'interrupteur** (circuit fermé). Avec deux lampes en série, elles brillent **moins** fort, et si l'une est dévissée, l'autre s'éteint. Sécurité : ne jamais manipuler le **secteur** (230 V, danger de mort) ; ne jamais relier directement les bornes de la pile (**court-circuit**, échauffement) ; ne pas toucher un appareil électrique avec les mains mouillées.
+@end
+
+@exo 3 | S3 — 5 points
+Expliquez comment l'oxygène de l'air parvient jusqu'aux muscles de la jambe lors d'une course.
+@sol
+L'air inspiré passe par le nez, la trachée, les bronches, jusqu'aux **alvéoles pulmonaires** ; le **dioxygène** traverse leur paroi fine et passe dans le **sang** ; le **cœur** propulse ce sang riche en dioxygène dans les **artères** jusqu'aux muscles ; les muscles l'utilisent (avec les nutriments) pour produire l'énergie nécessaire à la contraction ; ils rejettent du dioxyde de carbone, transporté par le sang (**veines**) jusqu'aux poumons et expiré. À l'effort, la fréquence respiratoire et cardiaque **augmentent**.
+@end
+
+@exo 3 | S4 — 5 points
+Décrivez une démarche d'investigation pour répondre à la question : « Les graines ont-elles besoin d'eau pour germer ? »
+@sol
+**Question** ; **hypothèses** des élèves ; **protocole** : deux lots de graines identiques (même espèce, même nombre, même coton, même température, même lumière), l'un arrosé, l'autre sec : un seul paramètre varie (l'eau), le lot arrosé est le **témoin** ; observations quotidiennes pendant une semaine (tableau, dessins) ; **résultats** : seules les graines arrosées germent ; **conclusion** : l'eau est nécessaire à la germination ; trace écrite ; prolongement (lumière, température).
+@end
+
+## Partie A — Arts
+
+@exo 3 | A1 — 8 points
+Présentez et analysez le tableau *Impression, soleil levant* de Claude Monet (1872, huile sur toile, musée Marmottan Monet, Paris) : il représente le port du Havre dans la brume du matin, avec un soleil orange au-dessus de l'eau et quelques barques sombres.
+@sol
+**Identifier** : Claude Monet, 1872, huile sur toile, musée Marmottan Monet ; œuvre qui a donné son nom à l'**impressionnisme** (exposition de 1874). **Décrire** : port du Havre au lever du jour, brume, barques au premier plan, grues et cheminées à l'arrière-plan, soleil orange et son reflet. **Analyser** : touches **rapides et visibles**, contours flous, dominante de bleus et gris, contraste avec l'orange (couleurs **complémentaires**) qui fait vibrer le soleil ; peinture « sur le motif ». **Interpréter** : saisir une **impression** fugitive, la lumière d'un instant plutôt que le détail. **Situer** : rupture avec la peinture académique ; artistes proches : Renoir, Degas, Pissarro.
+@end
+
+@exo 3 | A2 — 6 points
+Proposez une activité d'arts plastiques pour des élèves de cycle 3 en lien avec ce tableau.
+@sol
+Exemple : « Peindre un même paysage à deux moments de la journée » : observation de l'œuvre (et de la série des *Cathédrales de Rouen* de Monet) ; pratique : gouache, travail des couleurs chaudes / froides et des complémentaires, touches visibles ; contrainte : pas de contour au crayon ; verbalisation et mise en regard des productions avec les œuvres ; lexique : touche, lumière, complémentaires.
+@end
+
+@exo 3 | A3 — 6 points (musique)
+Citez les quatre paramètres du son et expliquez comment faire découvrir le **timbre** à des élèves de cycle 2 avec une œuvre du répertoire.
+@sol
+Hauteur, durée, intensité, timbre. *Pierre et le Loup* (Prokofiev) : chaque personnage est associé à un instrument ; écoute d'extraits, reconnaissance des instruments (photos), jeux d'écoute (« qui parle ? »), classement par familles ; prolongement : chanter une même phrase avec des « voix » différentes.
+@end
+
+## Partie L — Anglais
+
+:::note Text
+« In many British primary schools, the day starts with an assembly: all the pupils meet in the school hall, sing a song and listen to the headteacher. Pupils usually wear a uniform, which, according to many parents, reduces the pressure to follow fashion. Lunch is often eaten at school, and a lot of children bring a packed lunch from home. Since 2014, all children in their first three years of school in England have been entitled to free school meals. » *(text written for this guide)*
+:::
+
+@exo 3 | L1 — 8 points
+Answer in English: a) What happens during an assembly? b) Why do some parents like uniforms? c) What is a packed lunch? d) What changed in 2014?
+@sol
+a) All the pupils meet in the school hall, sing a song and listen to the headteacher. b) Because they think uniforms reduce the pressure to follow fashion. c) A meal prepared at home that children bring to school. d) Since 2014, all children in their first three years of school in England have been entitled to free school meals.
+@end
+
+@exo 3 | L2 — 4 points
+Translate into French: "Pupils usually wear a uniform" and "Since 2014, all children in their first three years of school have been entitled to free school meals."
+@sol
+« Les élèves portent généralement un uniforme. » « Depuis 2014, tous les enfants des trois premières années d'école ont droit à des repas scolaires gratuits. » (Remarque : present perfect + *since* → présent + *depuis* en français.)
+@end
+
+@exo 4 | L3 — 8 points
+Writing (120 – 150 words): "Compare a school day in France with a school day in Britain. Which one would you prefer as a pupil? Why?"
+@sol
+Critères : introduction ; au moins deux comparaisons (horaires, cantine, uniforme, mercredi) avec des comparatifs (*longer than, more… than, as… as*) ; opinion argumentée ; connecteurs ; temps corrects. *Model opening:* « French and British pupils do not spend their days in the same way. In France, the school day is often longer, but there is no school on Wednesday afternoon… »
+@end
+
+@corriges Corrigé du sujet blanc de l'écrit 2

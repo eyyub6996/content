@@ -1,0 +1,283 @@
+%% Début du guide CRPE 2027 : couverture, concours, calendrier, planning daté, diagnostic
+:::cover
+# Réussir le CRPE 2027
+
+:::center
+**Devenir professeure des écoles — la méthode complète, de septembre 2026 aux écrits de mars 2027**
+Concours externe (niveau bac+3) · académie de Lyon (Saint-Étienne, Loire)
+Français · Mathématiques · Histoire-géographie-EMC · Sciences · Arts · Anglais · Oraux
+:::
+
+:::badges
+Planning daté semaine par semaine
+Checklist des démarches
+Écrits : 30 et 31 mars 2027
+Sujets blancs corrigés
+:::
+
+:::objectifs Ce que contient ce guide
+- une présentation claire du **concours 2027** (épreuves, barèmes, notes éliminatoires) et le **calendrier** avec toutes les dates limites ;
+- une **checklist administrative** (inscription sur Cyclades avant le **25 novembre 2026 à 12 h**, convocation, jour J…) ;
+- un **planning semaine par semaine du 28 septembre 2026 au 28 mars 2027**, puis la préparation des oraux d'avril à juin ;
+- le **cours complet** de français (grammaire, lexique, rédaction) et de mathématiques, **expliqué pas à pas** ;
+- l'essentiel des **domaines de la seconde épreuve** : histoire-géographie-EMC, sciences et technologie, arts, anglais ;
+- des centaines d'**exercices corrigés**, des séries d'**automatismes** en calcul, des **QCM**, des **bilans** de fin de chapitre ;
+- des **sujets blancs** au format des épreuves écrites, la **méthode des deux oraux** et des mises en situation corrigées ;
+- des fiches mémo, un formulaire et des cartes mémoire.
+:::
+:::
+
+@toc
+
+# | Mode d'emploi | Comment utiliser ce guide pour être prête le 30 mars 2027
+
+:::examen Important : vérifier les informations officielles
+Ce guide a été préparé fin septembre 2026 à partir des textes connus à cette date (dont l'arrêté publié au *Journal officiel* du 20 septembre 2026, applicable à partir de la session 2027).
+Les **dates exactes, horaires et modalités** peuvent être précisés ou modifiés par le ministère. **Avant chaque démarche, vérifier sur les sites officiels** : devenirenseignant.gouv.fr (rubrique CRPE et « calendrier des concours 2027 »), le site de l'**académie de Lyon** (ac-lyon.fr) et l'espace candidat **Cyclades**.
+Les sujets blancs de ce guide sont des **sujets d'entraînement** (non officiels) : les compléter par les **annales et rapports de jury** de devenirenseignant.gouv.fr.
+:::
+
+## Les 6 règles pour réussir
+
+:::coeur
+1. **Un peu chaque jour** : 1 h 30 en semaine, 3 h le samedi (10 à 12 h par semaine).
+2. **Crayon en main.** On apprend en écrivant : refaire chaque exemple corrigé seule, sans regarder.
+3. **Essayer avant de lire le corrigé**, même en se trompant. Une erreur comprise vaut dix pages lues.
+4. **Tenir un carnet d'erreurs** (grammaire, orthographe, calcul) et le relire chaque dimanche.
+5. **Respecter le planning et les bilans** : on ne passe pas à la suite si le bilan n'est pas réussi.
+6. **S'entraîner en temps réel** : sujets blancs de 4 heures, chronomètre en main.
+:::
+
+## La séance type (1 h 30)
+
+| Durée | Activité | Pourquoi |
+| 10 min | **Cartes mémoire** (chapitre « Annexes ») des chapitres déjà vus | ne rien oublier |
+| 35 min | **Français** : cours du jour + exemples guidés | alterner les deux disciplines chaque jour |
+| 35 min | **Mathématiques** : cours du jour + exercices, ou automatismes | idem |
+| 10 min | **Carnet d'erreurs** : noter chaque erreur et la règle juste | ne pas refaire les mêmes erreurs |
+
+Le **samedi** (3 h) : exercices de niveau concours, bilans, révisions et sujets blancs. Le **dimanche** : repos, ou 30 minutes de cartes mémoire.
+
+:::astuce Si l'on commence en retard
+Chaque semaine de retard se rattrape pendant les **vacances** (Toussaint, Noël, hiver). Si le retard dépasse 3 semaines : alléger l'épreuve 2 (garder les fiches « À savoir » et les QCM), mais **ne jamais sacrifier** la grammaire, la rédaction et les mathématiques (coefficient 5, et note éliminatoire).
+:::
+
+## La légende des encadrés
+
+| Encadré | Signification | Encadré | Signification |
+| **► Bleu** | l'idée expliquée simplement | **✔ Vert** | à savoir par cœur |
+| **✎ Orange** | exemple corrigé ou guidé | **⚠ Rouge** | piège, erreur fréquente |
+| **► Gris** | méthode étape par étape | **★ Vert clair** | astuce |
+| **⏱ Bleu clair** | consignes d'examen | ★☆☆☆ → ★★★★ | exercice facile → niveau concours |
+
+# C | Le concours en bref | Épreuves, barèmes, calendrier 2027 et démarches
+
+## C.1 Le CRPE externe bac+3 en une page
+
+:::idee
+Le **CRPE** (concours de recrutement de professeurs des écoles) comporte deux étapes :
+- l'**admissibilité** : deux épreuves écrites (fin mars) ; seuls les candidats admissibles passent à la suite ;
+- l'**admission** : deux épreuves orales (entre mai et juillet), dans l'académie choisie à l'inscription (ici **Lyon**, pour enseigner dans le Rhône, la Loire ou l'Ain).
+Le classement final additionne les notes des 4 épreuves avec leurs coefficients.
+:::
+
+| Épreuve | Durée | Coef. | Contenu | Note éliminatoire |
+| **Écrit 1 : français et mathématiques** | 4 h | 5 | 2 parties indépendantes, chacune sur 20 ramenée sur 10 : **français** (grammaire 6 pts, lexique 4 pts, rédaction 10 pts, à partir d'un texte d'environ 500 mots) et **mathématiques** (exercices et problèmes) | $\leq 2{,}5/10$ dans l'une des deux parties |
+| **Écrit 2 : autres domaines** | 4 h | 3 | questions dans **3 domaines au choix sur 4** : histoire-géographie-EMC ; sciences et technologie ; arts (arts plastiques, musique, histoire des arts) ; langue vivante (niveau B1, à l'écrit) | $\leq 5/20$ |
+| **Oral 1 : français ou mathématiques** (choisi à l'inscription) | 1 h de préparation, 45 min d'épreuve | 5 | exposé de 15 min sur une **notion** à partir de documents, puis 30 min d'échange avec le jury | 0 |
+| **Oral 2 : entretien** | 35 min environ | selon l'arrêté | présentation de 5 min (parcours, motivation), puis échange : projection dans le métier, **valeurs de la République**, **mises en situation** | 0 |
+
+:::piege À vérifier précisément
+Les chiffres ci-dessus reprennent les informations publiées pour la session 2027 (dont le passage de l'oral 1 de 60 à 45 minutes). Les **coefficients et durées exacts des oraux** doivent être revérifiés sur devenirenseignant.gouv.fr au moment de l'inscription.
+Le **niveau attendu** dans les disciplines est celui des programmes de l'école et du collège (jusqu'à la fin du **cycle 4**, classe de 3e), avec une vraie maîtrise : il faut savoir faire **et** expliquer.
+:::
+
+## C.2 Le calendrier de la session 2027
+
+| Date | Étape | Où ? |
+| **jeudi 1er octobre 2026** | ouverture des inscriptions | Cyclades (espace candidat) |
+| **mercredi 25 novembre 2026, 12 h** | **clôture des inscriptions** (aucune inscription après) | Cyclades |
+| février – mars 2027 | publication des convocations aux écrits | Cyclades |
+| **mardi 30 et mercredi 31 mars 2027** | **épreuves écrites** d'admissibilité | centre indiqué sur la convocation |
+| fin avril – début mai 2027 | résultats d'admissibilité | site de l'académie de Lyon / Cyclades |
+| mai – juillet 2027 | épreuves orales d'admission | académie de Lyon |
+| juin – juillet 2027 | résultats d'admission | site de l'académie de Lyon |
+
+:::note
+La session 2027 est la **dernière** où coexistent un concours externe bac+3 et un concours externe bac+5. Ce guide prépare le **concours bac+3** (épreuves ci-dessus). Si l'on est titulaire d'un master, vérifier lequel des deux concours présenter : leurs épreuves sont **différentes**.
+:::
+
+## C.3 La checklist des démarches
+
+:::methode Inscription (à faire en octobre, au plus tard le 25 novembre 2026 à 12 h)
++ Aller sur devenirenseignant.gouv.fr → « S'inscrire » → **Cyclades**. Créer son compte (adresse e-mail consultée tous les jours).
++ Choisir : concours **CRPE externe (bac+3)**, **académie de Lyon**.
++ Choisir la discipline de l'**oral 1** : **français** ou **mathématiques** (voir le conseil ci-dessous).
++ Remplir la situation (diplôme ou inscription en dernière année de licence, nationalité, etc.) et **valider**. Enregistrer et imprimer le **récapitulatif**.
++ Vérifier dans les jours suivants que l'inscription apparaît bien comme **validée** ; déposer les pièces demandées s'il y en a.
+:::
+
+:::astuce Français ou mathématiques pour l'oral 1 ?
+Choisir la discipline dans laquelle on se sent **la plus à l'aise pour expliquer une notion** à des élèves. En cas de doute : faire le test de diagnostic de ce guide, puis choisir celle où le score est le meilleur. Ce choix est fait **à l'inscription** : il faut donc y réfléchir en octobre.
+:::
+
+| ☐ | Démarche | Échéance |
+| ☐ | Créer le compte Cyclades | dès le 1er octobre 2026 |
+| ☐ | Choisir français ou maths pour l'oral 1 | avant l'inscription |
+| ☐ | S'inscrire au CRPE externe bac+3, académie de Lyon | **avant le 25/11/2026, 12 h** (conseil : avant le 11/10) |
+| ☐ | Imprimer le récapitulatif d'inscription | le jour de l'inscription |
+| ☐ | Vérifier la condition de diplôme (licence ou dernière année de licence) | octobre 2026 |
+| ☐ | Vérifier que l'inscription est validée, pièces déposées | novembre 2026 |
+| ☐ | Télécharger la convocation aux écrits | février – mars 2027 |
+| ☐ | Repérer le trajet et l'heure d'arrivée au centre d'examen | la semaine précédente |
+| ☐ | Préparer : convocation, pièce d'identité, stylos noirs/bleus, règle, équerre, compas, rapporteur, montre, eau | la veille |
+| ☐ | Consulter les résultats d'admissibilité | fin avril – début mai 2027 |
+| ☐ | Télécharger la convocation aux oraux | mai 2027 |
+
+## C.4 Le planning semaine par semaine (écrits)
+
+:::note
+10 à 12 h par semaine. Codes : « F2 » = chapitre de français n° 2, « M3 » = mathématiques n° 3, « H/S/A/L » = domaines de l'épreuve 2 ; « Ex. F2A » = série A d'exercices ; « Auto. M3.B » = automatismes ; « R1 » = révision cumulative. Choisir **3 domaines** pour l'épreuve 2 : ce guide conseille **H et S**, puis **A ou L** selon ses points forts.
+:::
+
+| Sem. | Dates | Cours | Exercices | Démarches | Fait |
+| S1 | 28 septembre – 4 octobre | F1 Classes de mots (1re moitié) · M1 Nombres et calcul (1re moitié) | Mode d'emploi · **test de diagnostic** · lire « Le concours en bref » · Ex. F1A, M1A · Auto. M1.A, M1.B | **Inscription Cyclades ouverte depuis le 1er octobre** : créer son compte | ☐ |
+| S2 | 5 octobre – 11 octobre | F1 (fin) · M1 (fin) | Ex. F1B, F1C · Ex. M1B, M1C · Auto. M1.C à M1.F · **Bilan F1**, **Bilan M1** | **S'inscrire** (académie de Lyon, choix de l'oral) et garder le récapitulatif | ☐ |
+| S3 | 12 octobre – 18 octobre | F2 Fonctions grammaticales · M2 Arithmétique | Ex. F2A, F2B · Ex. M2A, M2B · Auto. M2.A | Vérifier la condition de diplôme (licence) | ☐ |
+| S4 | 19 octobre – 25 octobre | F2 (fin) · M3 Proportionnalité (1re moitié) | Ex. F2C · **Bilan F2** · Ex. M3A · Auto. M3.A, M3.B · **Bilan M2** | — | ☐ |
+| S5 | 26 octobre – 1er novembre | F3 Phrase complexe · M3 (fin) | Ex. F3A, F3B · Ex. M3B, M3C · Auto. M3.C à M3.E · **Bilan M3** | **Révision R1** (vacances de la Toussaint : rattraper le retard) | ☐ |
+| S6 | 2 novembre – 8 novembre | F3 (fin) · M4 Calcul littéral, équations, fonctions | Ex. F3C · **Bilan F3** · Ex. M4A, M4B · Auto. M4.A à M4.C | — | ☐ |
+| S7 | 9 novembre – 15 novembre | F4 Le verbe · M4 (fin) | Ex. F4A, F4B · Ex. M4C · Auto. M4.D, M4.E · **Bilan M4** | — | ☐ |
+| S8 | 16 novembre – 22 novembre | F4 (fin) · M5 Géométrie plane | Ex. F4C · **Bilan F4** · Ex. M5A, M5B · Auto. M5.A | ⚠ Vérifier que l'inscription est **validée** (pas seulement commencée) | ☐ |
+| S9 | 23 novembre – 29 novembre | F5 Accords et orthographe · M5 (fin) | Ex. F5A, F5B · Ex. M5C · **Bilan F5**, **Bilan M5** | **⚠ 25 novembre, 12 h : clôture des inscriptions** | ☐ |
+| S10 | 30 novembre – 6 décembre | F6 Lexique · M6 Grandeurs, mesures, espace | Ex. F6A, F6B · Ex. M6A, M6B · Auto. M6.A, M6.B | Télécharger le récapitulatif d'inscription (Cyclades) | ☐ |
+| S11 | 7 décembre – 13 décembre | F6 (fin) · M6 (fin) | Ex. F6C · **Bilan F6** · Ex. M6C · Auto. M6.C, M6.D · **Bilan M6** | — | ☐ |
+| S12 | 14 décembre – 20 décembre | F7 Compréhension et rédaction · M7 Données et probabilités | Ex. F7A, F7B (2 rédactions) · Ex. M7A, M7B · Auto. M7.A, M7.B | — | ☐ |
+| S13 | 21 décembre – 27 décembre | Révision (semaine allégée) | **Révision R2** · refaire les bilans F1 à F6 ratés · cartes mémoire | Vacances de Noël : repos + 1 h par jour | ☐ |
+| S14 | 28 décembre – 3 janvier | M8 Algorithmique et tableur · H Histoire | Ex. M8A · **Bilan M7**, **Bilan M8** · Ex. HA | — | ☐ |
+| S15 | 4 janvier – 10 janvier | H Géographie et EMC | Ex. HB, HC · **Bilan H** | — | ☐ |
+| S16 | 11 janvier – 17 janvier | S Sciences de la vie et de la Terre · **Sujet blanc n° 1 (épreuve 1)** | Ex. SA · sujet blanc 1 le samedi, en 4 h | — | ☐ |
+| S17 | 18 janvier – 24 janvier | S Physique-chimie, technologie | Ex. SB, SC · **Bilan S** · corriger le sujet blanc 1 | — | ☐ |
+| S18 | 25 janvier – 31 janvier | 3e domaine : A Arts **ou** L Anglais (1re moitié) | Ex. AA, AB **ou** LA, LB | — | ☐ |
+| S19 | 1er février – 7 février | 3e domaine (fin) · révision français | **Bilan A** ou **Bilan L** · refaire F7 (1 rédaction) | — | ☐ |
+| S20 | 8 février – 14 février | Révisions mathématiques ciblées · **Sujet blanc épreuve 2** | Carnet d'erreurs maths · automatismes ratés · sujet blanc épreuve 2 le samedi (4 h) | — | ☐ |
+| S21 | 15 février – 21 février | **Sujet blanc n° 2 (épreuve 1)** · révision ciblée | Vacances d'hiver : sujet blanc 2 en conditions réelles, puis correction | — | ☐ |
+| S22 | 22 février – 28 février | Révisions : grammaire et rédaction | **Révision R3** · 2 rédactions chronométrées (1 h chacune) | — | ☐ |
+| S23 | 1er mars – 7 mars | **Sujet blanc n° 3 (épreuve 1)** | Sujet blanc 3 en conditions réelles · correction · carnet d'erreurs | Surveiller Cyclades : **convocation aux écrits** | ☐ |
+| S24 | 8 mars – 14 mars | Révision des 3 domaines de l'épreuve 2 | Fiches H, S, A/L · QCM de chaque chapitre | Imprimer la convocation, repérer le centre d'examen | ☐ |
+| S25 | 15 mars – 21 mars | Entraînement final | Refaire un sujet blanc (au choix) · formulaire maths · fiches grammaire | — | ☐ |
+| S26 | 22 mars – 28 mars | Dernière semaine : consolidation, pas de nouveauté | Cartes mémoire · carnet d'erreurs · 1 rédaction · sommeil ! | Préparer pièce d'identité, convocation, stylos, montre | ☐ |
+| — | **29 mars** | veille : relire les fiches, préparer ses affaires, se coucher tôt | — | — | ☐ |
+| — | **30 et 31 mars 2027** | **ÉPREUVES ÉCRITES** | — | — | ☐ |
+
+## C.5 Après les écrits : préparer les oraux (avril – juin 2027)
+
+Les résultats d'admissibilité tombent fin avril – début mai et les oraux commencent parfois dès mai : **ne pas attendre les résultats, commencer à préparer les oraux dès le 1er avril.**
+
+| Période | Travail | Fait |
+| 1er – 12 avril | Chapitre **O1** (méthode de l'oral de français ou de maths) : lire, puis 2 sujets par semaine en 1 h de préparation | ☐ |
+| 13 – 26 avril | Chapitre **O2** (entretien) : écrire sa présentation de 5 min, apprendre les fiches « système éducatif » et « valeurs de la République » | ☐ |
+| 27 avril – 10 mai | Mises en situation (O2) : 3 par jour, à voix haute ; relire les programmes du cycle 1 au cycle 3 | ☐ |
+| des résultats au jour J | Oraux blancs (se faire interroger, se chronométrer, se filmer) ; 1 sujet d'oral 1 tous les 2 jours ; 2 mises en situation par jour | ☐ |
+
+# D | Test de diagnostic | 45 minutes pour savoir d'où l'on part (à refaire en mars)
+
+:::examen Consignes
+À faire **la première semaine**, sans aide, en 45 minutes. Le but n'est pas de réussir, mais de repérer ses points forts et faibles.
+**Après correction :** plus de 3 erreurs en **français** → suivre les chapitres F1 à F5 très régulièrement, avec les bilans ; plus de 2 erreurs en **mathématiques** → faire tous les automatismes de M1 et M3 chaque jour pendant deux semaines. Les questions de culture montrent quels domaines de l'épreuve 2 seront les plus faciles.
+:::
+
+@serie D1 | Français
+
+@exo 1
+Donne la classe (nature) des mots soulignés : « Les **enfants** jouent **souvent** **dans** la cour **qui** est **grande**. »
+@sol
+*enfants* : nom commun · *souvent* : adverbe · *dans* : préposition · *qui* : pronom relatif · *grande* : adjectif qualificatif.
+@end
+
+@exo 2
+Donne la fonction de « à sa sœur » et de « un livre » dans : « Léa offre un livre à sa sœur. »
+@sol
+*un livre* : complément d'objet direct (COD) du verbe *offre* ; *à sa sœur* : complément d'objet second (COS) / complément d'objet indirect.
+@end
+
+@exo 2
+Conjugue « venir » au passé simple (3e personne du pluriel) et « finir » au subjonctif présent (1re personne du singulier).
+@sol
+*ils vinrent* ; *que je finisse*.
+@end
+
+@exo 2
+Corrige les erreurs : « Les fleurs que j'ai cueillit sont fanés. »
+@sol
+« Les fleurs que j'ai **cueillies** sont **fanées**. » (participe passé avec *avoir* accordé avec le COD *que* = *les fleurs*, placé avant ; participe avec *être* accordé avec le sujet).
+@end
+
+@exo 2
+Donne deux mots de la même famille que « terre » et indique comment est formé « atterrissage ».
+@sol
+*terrain, terrestre, enterrer, territoire…* ; *atterrissage* = préfixe *a(t)-* + radical *terr-* + suffixes *-iss-* et *-age*.
+@end
+
+@serie D2 | Mathématiques
+
+@exo 1
+Calcule $3{,}5 \times 0{,}4$ et $\frac{2}{3} + \frac{1}{4}$.
+@sol
+$1{,}4$ ; $\frac{8}{12} + \frac{3}{12} = \frac{11}{12}$.
+@end
+
+@exo 2
+Un pull coûte 60 €. Il est soldé à −30 %. Quel est son nouveau prix ?
+@sol
+$60 \times 0{,}7 = 42$ €.
+@end
+
+@exo 2
+Un train roule à 120 km/h pendant 1 h 15 min. Quelle distance parcourt-il ?
+@sol
+$1$ h $15$ min $= 1{,}25$ h ; $120 \times 1{,}25 = 150$ km.
+@end
+
+@exo 2
+Résous $3x - 7 = 2x + 5$.
+@sol
+$x = 12$.
+@check sols(3*x-7-(2*x+5), [12])
+@end
+
+@exo 3
+Un triangle a des côtés de 6 cm, 8 cm et 10 cm. Est-il rectangle ? Justifie.
+@sol
+Le plus grand côté est 10 : $10^2 = 100$ et $6^2 + 8^2 = 36 + 64 = 100$. L'égalité de Pythagore est vérifiée : le triangle est **rectangle** (réciproque du théorème de Pythagore).
+@end
+
+@exo 2
+Donne la moyenne et la médiane de la série : 12 ; 7 ; 15 ; 10 ; 11.
+@sol
+Moyenne $\frac{55}{5} = 11$. Série rangée : 7 ; 10 ; 11 ; 12 ; 15 → médiane **11**.
+@end
+
+@serie D3 | Culture de l'épreuve 2
+
+@exo 1
+Replace dans l'ordre : Révolution française ; chute de l'Empire romain d'Occident ; Première Guerre mondiale ; découverte de l'Amérique par Colomb.
+@sol
+476 (chute de l'Empire romain d'Occident) → 1492 (Colomb) → 1789 (Révolution française) → 1914-1918 (Première Guerre mondiale).
+@end
+
+@exo 1
+Quels sont les trois états de l'eau ? Comment s'appelle le passage de l'état liquide à l'état gazeux ?
+@sol
+Solide, liquide, gazeux. Liquide → gaz : **vaporisation** (évaporation ou ébullition).
+@end
+
+@exo 1
+Quelle est la devise de la République française ?
+@sol
+« Liberté, Égalité, Fraternité ».
+@end
+
+@corriges Corrigé du test de diagnostic
+
+
