@@ -1,0 +1,181 @@
+%% Révisions cumulatives — une série par semaine
+# R | Révisions cumulatives | Une série par semaine pour ne rien oublier de ce que tu as déjà appris
+
+:::idee Pourquoi réviser ce qu'on a « déjà vu » ?
+Le cerveau oublie vite : sans révision, on perd environ la moitié d'une méthode en une semaine.
+Mais chaque fois qu'on la **ressort de sa mémoire** (sans regarder le cours !), elle se grave plus profondément. C'est la **répétition espacée**.
+Ces séries mélangent les chapitres déjà étudiés. Elles sont courtes (30 à 45 minutes). Fais-les le **dernier jour de chaque semaine**, comme indiqué dans le planning.
+:::
+
+:::methode Comment faire une série de révision
++ Mets-toi un chronomètre. Pas de cours, pas de formulaire.
++ Fais tout, même si tu hésites : écris ce que tu penses.
++ Corrige avec les réponses (à la fin de cette partie).
++ Pour chaque erreur, note dans ton **carnet d'erreurs** : l'exercice, l'erreur, la règle correcte. Relis ce carnet chaque semaine.
++ Si une série est ratée à plus de 30 %, relis la section du cours correspondante avant de continuer le planning.
+:::
+
+@serie R1 | Fin de semaine 1 (chapitre 0 et fractions)
+
+@drill signes_add 6 201 3 | Relatifs : additions
+@drill signes_mul 6 202 3 | Relatifs : produits et quotients
+@drill priorites 6 203 3 | Priorités
+@drill substitution 4 204 2 | Remplacer $x$
+@drill intervalles 4 205 2 | Intervalles
+@drill frac_add 4 206 4 | Fractions
+
+@exo 3
+Calcule $A = \dfrac{3 - 5 \times (-2)}{(-1)^3 - 12}$.
+@sol
+Haut : $3 + 10 = 13$. Bas : $-1 - 12 = -13$. $A = \frac{13}{-13} = -1$.
+@check same(Rational(3-5*(-2), (-1)**3-12), -1)
+@end
+
+@serie R2 | Fin de semaine 2 (chapitres 0 et 1)
+
+@drill priorites 3 211 3 | Priorités
+@drill frac_add 3 212 3 | Fractions : sommes
+@drill frac_mul 3 213 3 | Fractions : produits et quotients
+@drill puiss_num 3 214 3 | Puissances
+@drill racines 3 215 3 | Racines
+@drill dev_double 3 216 3 | Développer
+@drill dev_id 3 217 3 | Identités remarquables
+@drill fact_id 3 218 3 | Factoriser
+@drill frac_rat 2 219 2 | Fractions rationnelles
+
+@exo 3
+Développe, réduis, puis factorise : $E = (x + 3)^2 - (x + 3)(2x - 1)$.
+@sol
+Développé : $x^2 + 6x + 9 - (2x^2 - x + 6x - 3) = x^2 + 6x + 9 - 2x^2 - 5x + 3 = -x^2 + x + 12$.
+Factorisé (facteur commun $x + 3$) : $(x + 3)\big[(x + 3) - (2x - 1)\big] = (x + 3)(4 - x)$.
+Vérif. : $(x + 3)(4 - x) = 4x - x^2 + 12 - 3x = -x^2 + x + 12$ ✔
+@check same((x+3)**2-(x+3)*(2*x-1), (x+3)*(4-x)) and same((x+3)*(4-x), -x**2+x+12)
+@end
+
+@serie R3 | Fin de semaine 3 (chapitres 1 à 3)
+
+@drill frac_mixte 3 221 3 | Fractions et priorités
+@drill fact_commun 3 222 3 | Facteur commun
+@drill eq1 4 223 2 | Équations du 1er degré
+@drill eq2_delta 4 224 2 | Équations du 2e degré
+@drill eq_prod 3 225 3 | Produit nul
+@drill ineq1 3 226 3 | Inéquations
+@drill systemes 2 227 2 | Systèmes
+@drill trig_val 4 228 4 | Valeurs trigonométriques
+
+@exo 4
+Résous $\dfrac{x^2 - 4}{x + 1} \geq 0$.
+@sol
+Condition $x \neq -1$. $x^2 - 4 = (x - 2)(x + 2)$ : racines $-2$ et $2$ ; dénominateur nul en $-1$.
+
+:::signes
+x | -\infty | -2 | -1 | 2 | +\infty
+x-2 | - | | - | | - | 0 | +
+x+2 | - | 0 | + | | + | | +
+x+1 | - | | - | 0 | + | | +
+\text{quotient} | - | 0 | + | ‖ | - | 0 | +
+:::
+
+$S = \fo{-2}{-1} \cup \fo{2}{+\infty}$.
+@check ineq((x**2-4)/(x+1)>=0, Union(Interval.Ropen(-2,-1), Interval(2,oo)))
+@end
+
+@serie R4 | Fin de semaine 4 (chapitres 1 à 4)
+
+@drill racines 3 231 3 | Racines
+@drill fact_trinome 3 232 3 | Factoriser un trinôme
+@drill ineq2 3 233 2 | Inéquations du 2e degré
+@drill deg_rad 3 234 3 | Degrés et radians
+@drill angle_cs 3 235 2 | Retrouver l'angle
+@drill domaines 3 236 2 | Domaines
+@drill explog 4 237 2 | Exp et ln
+@drill eq_exp 3 238 2 | Équations avec exp et ln
+
+@exo 4
+Résous $e^{2x} + e^x - 2 = 0$.
+@sol
+$X = e^x$ : $X^2 + X - 2 = 0$ → $\Delta = 9$ → $X = 1$ ou $X = -2$. $e^x = 1$ → $x = 0$ ; $e^x = -2$ impossible. $S = \{0\}$.
+@check sols(exp(2*x)+exp(x)-2, [0])
+@end
+
+@serie R5 | Fin de semaine 5 (chapitres 2 à 5)
+
+@drill eq_rat 3 241 2 | Équations avec $x$ au dénominateur
+@drill trig_eq 3 242 2 | Équations trigonométriques
+@drill limites 3 243 2 | Limites
+@drill der_poly 3 244 2 | Dériver des polynômes
+@drill der_prod 3 245 2 | Dériver un produit
+@drill der_quot 3 246 2 | Dériver un quotient
+@drill der_comp 4 247 2 | Dériver une composée
+@drill tangente 3 248 2 | Tangentes
+
+@exo 4
+Étudie les variations de $f(x) = (x - 2)e^x$ et donne son minimum.
+@sol
+$f'(x) = e^x + (x - 2)e^x = (x - 1)e^x$. $e^x > 0$ → signe de $x - 1$.
+$f$ ↘ sur $\of{-\infty}{1}$, ↗ sur $\fo{1}{+\infty}$. Minimum $f(1) = -e \approx -2{,}72$.
+@check der((x-2)*exp(x), (x-1)*exp(x))
+@end
+
+@serie R6 | Fin de semaine 6 (chapitres 3 à 6)
+
+@drill angle_cs 3 251 2 | Retrouver l'angle
+@drill explog 3 252 3 | Exp et ln
+@drill der_comp 4 253 2 | Dériver une composée
+@drill prim_ref 4 254 2 | Primitives de référence
+@drill prim_comp 3 255 2 | Primitives composées
+@drill integ_poly 3 256 2 | Intégrales de polynômes
+@drill integ_ref 3 257 2 | Intégrales
+
+@exo 4
+Calcule l'aire comprise entre la courbe de $f(x) = e^x$, l'axe des abscisses et les droites $x = 0$ et $x = \ln 3$.
+@sol
+$e^x > 0$ : aire $= \displaystyle\int_0^{\ln 3} e^x\dx = e^{\ln 3} - e^0 = 3 - 1 = 2$ u.a.
+@check integ(exp(x), 0, log(3), 2)
+@end
+
+@serie R7 | Fin de semaine 7 (chapitres 4 à 8)
+
+@drill eq_exp 3 261 2 | Équations avec exp et ln
+@drill der_quot 3 262 2 | Dériver un quotient
+@drill integ_ref 3 263 2 | Intégrales
+@drill vec_AB 3 264 2 | Vecteurs : coordonnées
+@drill vec_scal 3 265 2 | Produit scalaire
+@drill vec_cross 3 266 2 | Produit vectoriel
+@drill c_ops 3 267 3 | Complexes : calculs
+@drill c_div 3 268 2 | Complexes : quotients
+@drill c_arg 3 269 1 | Forme exponentielle
+
+@exo 4
+Résous $z^2 - 2z + 5 = 0$, puis calcule le module des solutions.
+@sol
+$\Delta = 4 - 20 = -16$ → $z = \frac{2 \pm 4i}{2} = 1 \pm 2i$. Module : $\sqrt{1 + 4} = \sqrt{5}$ (le même pour les deux, car elles sont conjuguées).
+@check csols(z**2-2*z+5, [1+2*I, 1-2*I])
+@end
+
+@serie R8 | Semaine 8 : tout le programme
+
+@drill fact_trinome 2 271 2 | Factoriser
+@drill eq2_delta 2 272 2 | 2e degré
+@drill ineq2 2 273 2 | Inéquations
+@drill trig_val 3 274 3 | Trigonométrie
+@drill eq_exp 2 275 2 | Exp et ln
+@drill limites 2 276 2 | Limites
+@drill der_comp 3 277 2 | Dérivées
+@drill integ_ref 3 278 2 | Intégrales
+@drill vec_param 2 279 2 | Vecteurs
+@drill droites 2 280 2 | Droites
+@drill c_exp2alg 2 281 2 | Complexes
+@drill c_eq2 2 282 1 | Équations dans $\C$
+
+@exo 4
+$f(x) = \dfrac{\ln x}{x}$ sur $\oo{0}{+\infty}$.
+a) Calcule $f'(x)$ et étudie les variations de $f$.
+b) Calcule $\displaystyle\int_1^e f(x)\dx$.
+@sol
+a) $f'(x) = \frac{1 - \ln x}{x^2}$ : positif si $\ln x < 1$, c'est-à-dire $x < e$. $f$ ↗ sur $\of{0}{e}$, ↘ sur $\fo{e}{+\infty}$ ; maximum $f(e) = \frac{1}{e}$.
+b) Forme $u'u$ avec $u = \ln x$ : primitive $\frac{(\ln x)^2}{2}$. $\left[\frac{(\ln x)^2}{2}\right]_1^e = \frac{1}{2} - 0 = \frac{1}{2}$.
+@check der(log(x)/x, (1-log(x))/x**2) and integ(log(x)/x, 1, E, Rational(1,2))
+@end
+
+@corriges Réponses des révisions cumulatives

@@ -1,0 +1,785 @@
+%% Chapitre 5 — Les dérivées
+# 5 | Les dérivées | La pente de la courbe en chaque point : l'outil pour savoir où une fonction monte et descend
+
+:::objectifs
+- comprendre ce que « mesure » une dérivée (pente, vitesse) ;
+- dériver **n'importe quelle** fonction du programme : somme, produit, quotient, composée ;
+- trouver l'équation d'une **tangente** ;
+- étudier les **variations** d'une fonction et trouver ses **extremums** ;
+- résoudre un problème d'**optimisation** (aire maximale, coût minimal…).
+:::
+
+:::note Temps conseillé : 8 séances (semaines 4 et 5 du planning).
+**Prérequis :** tableau de signes (chapitre 2), exp et ln (chapitre 4). **Dériver est une compétence de réflexe** : fais les automatismes tous les jours pendant deux semaines.
+:::
+
+## 5.1 L'idée
+
+:::idee
+Imagine que tu conduis sur une route de montagne qui a la forme de la courbe. La **dérivée $f'(a)$ est la pente de la route au point $a$**.
+$f'(a) > 0$ → tu montes · $f'(a) < 0$ → tu descends · $f'(a) = 0$ → tu es sur du plat (au sommet ou au fond d'une vallée).
+En physique : si $x(t)$ est la position, $x'(t)$ est la **vitesse**, et la dérivée de la vitesse est l'**accélération**.
+:::
+
+@fig tangente:48 | Au point $x = 2$, la droite rouge (la **tangente**) touche la courbe. Si je me déplace de 1 vers la droite, la tangente monte de 2 : la pente est 2, donc $f'(2) = 2$.
+
+:::lire Comment lire la formule (mot à mot)
+$f'(x)$ se lit « $f$ prime de $x$ ». En physique, on écrit aussi $\frac{\mathrm{d}f}{\mathrm{d}x}$ (« d $f$ sur d $x$ ») : petite variation de $f$ divisée par petite variation de $x$.
+**Définition :** $f'(a) = \lim\limits_{h \to 0} \dfrac{f(a + h) - f(a)}{h}$. C'est « de combien ça monte » divisé par « de combien je me déplace », pour des déplacements minuscules.
+:::
+
+:::exemple D'où viennent les formules ? (inutile de le refaire à l'examen)
+$f(x) = x^2$, en $a = 3$ : $\dfrac{f(3 + h) - f(3)}{h} = \dfrac{(3 + h)^2 - 9}{h} = \dfrac{9 + 6h + h^2 - 9}{h} = \dfrac{6h + h^2}{h} = 6 + h$.
+Quand $h \to 0$, il reste 6. Donc $f'(3) = 6$. Et la formule $(x^2)' = 2x$ donne bien $2 \times 3 = 6$ ✔. Toutes les formules du tableau viennent de ce calcul.
+:::
+
+## 5.2 Le tableau des dérivées
+
+| $f(x)$ | $f'(x)$ | Commentaire |
+| $k$ (constante) | $0$ | une constante ne change pas : pente 0 |
+| $ax + b$ | $a$ | une droite a une pente constante $a$ |
+| $x^n$ | $nx^{n-1}$ | l'exposant « descend devant » et perd 1 |
+| $\dfrac{1}{x}$ | $-\dfrac{1}{x^2}$ | attention au moins |
+| $\sqrt{x}$ | $\dfrac{1}{2\sqrt{x}}$ | pour $x > 0$ |
+| $e^x$ | $e^x$ | la fonction « magique » |
+| $\ln x$ | $\dfrac{1}{x}$ | pour $x > 0$ |
+| $\sin x$ | $\cos x$ | |
+| $\cos x$ | $-\sin x$ | attention au moins |
+
+:::exemple Exemples corrigés
+$(x^5)' = 5x^4$ · $(x^2)' = 2x$ · $(x)' = 1$ (car $x = x^1$ → $1 \times x^0 = 1$) · $(7)' = 0$
+$(x^{-2})' = -2x^{-3} = -\frac{2}{x^3}$ : la formule $x^n$ marche aussi avec les exposants négatifs.
+$\left(\sqrt{x}\right)' = \left(x^{1/2}\right)' = \frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}$ : et avec les exposants fractionnaires.
+:::
+
+:::astuce Réécrire avant de dériver
+$\dfrac{3}{x} = 3 \times \dfrac{1}{x}$ → dérivée $3 \times \left(-\dfrac{1}{x^2}\right) = -\dfrac{3}{x^2}$.
+$\dfrac{1}{x^3} = x^{-3}$ → dérivée $-3x^{-4} = -\dfrac{3}{x^4}$.
+$\dfrac{x^2 + 1}{x} = x + \dfrac{1}{x}$ → dérivée $1 - \dfrac{1}{x^2}$ (plus rapide que la formule du quotient !).
+:::
+
+## 5.3 Les règles
+
+| Forme | Règle | En mots |
+| Somme | $(u + v)' = u' + v'$ | je dérive morceau par morceau |
+| Constante × $u$ | $(ku)' = ku'$ | le nombre reste là |
+| Produit | $(uv)' = u'v + uv'$ | je dérive le 1er et je garde le 2e, **+** je garde le 1er et je dérive le 2e |
+| Quotient | $\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$ | comme le produit mais avec un **MOINS**, le tout divisé par $v^2$ |
+| Inverse | $\left(\dfrac{1}{v}\right)' = -\dfrac{v'}{v^2}$ | cas particulier du quotient |
+| exp de quelque chose | $(e^u)' = u'e^u$ | × la dérivée de ce qui est en exposant |
+| ln de quelque chose | $(\ln u)' = \dfrac{u'}{u}$ | dérivée de l'intérieur / l'intérieur |
+| Puissance de quelque chose | $(u^n)' = nu'u^{n-1}$ | comme $x^n$, × dérivée de l'intérieur |
+| Racine de quelque chose | $\left(\sqrt{u}\right)' = \dfrac{u'}{2\sqrt{u}}$ | comme $\sqrt{x}$, × dérivée de l'intérieur |
+| cos, sin de quelque chose | $(\cos u)' = -u'\sin u$ · $(\sin u)' = u'\cos u$ | idem |
+
+:::idee Le secret des fonctions composées
+Les 5 dernières lignes sont **la même règle**, la dérivée d'une composée : je dérive la fonction **extérieure** comme s'il y avait $x$ dedans, **puis je multiplie par la dérivée de ce qu'il y a à l'intérieur**.
+Comme des **poupées russes** : j'ouvre la grande poupée ($e^{\ldots}$, $\ln(\ldots)$, $(\ldots)^n$), puis celle qui est dedans.
+Formule générale : $\big(f(u)\big)' = f'(u) \times u'$.
+:::
+
+:::methode Comment reconnaître la forme (la carte des dérivées)
++ Je cherche l'opération « **la plus extérieure** », celle que je ferais **en dernier** si je calculais avec un nombre.
++ Si c'est $+$ ou $-$ → somme. Si c'est $\times$ → produit. Si c'est $\div$ → quotient. Si c'est $e^{\ldots}$, $\ln(\ldots)$, $(\ldots)^n$, $\sqrt{\ldots}$, $\cos(\ldots)$ → composée.
++ J'écris $u$ (et $v$) **avec leurs dérivées** $u'$ (et $v'$) **avant** d'appliquer la formule.
++ J'applique la formule, puis je **simplifie** (je factorise, surtout par $e^x$).
+:::
+
+:::pourquoi Comment trouver « l'opération faite en dernier » ?
+Pour $(x + 1)e^x$ avec $x = 2$ : je calcule d'abord $2 + 1 = 3$, puis $e^2 \approx 7{,}39$, puis **en dernier** $3 \times 7{,}39$. La dernière opération est une multiplication → c'est un **produit**.
+Pour $e^{x^2}$ avec $x = 2$ : d'abord $2^2 = 4$, puis en dernier $e^4$ → c'est une **composée** $e^u$.
+:::
+
+:::exemple Exemple guidé 1 · produit : $f(x) = (x + 1)e^x$
++ Dernière opération : × → produit. $u = x + 1$, $u' = 1$ ; $v = e^x$, $v' = e^x$.
++ $f'(x) = u'v + uv' = 1 \times e^x + (x + 1) \times e^x$.
++ Je factorise par $e^x$ : $e^x(1 + x + 1) = (x + 2)e^x$.
+:::
+
+:::exemple Exemple guidé 2 · quotient : $f(x) = \dfrac{x - 1}{x + 2}$
++ Dernière opération : ÷ → quotient. $u = x - 1$, $u' = 1$ ; $v = x + 2$, $v' = 1$.
++ $f'(x) = \dfrac{u'v - uv'}{v^2} = \dfrac{1 \times (x + 2) - (x - 1) \times 1}{(x + 2)^2}$.
++ Numérateur : $x + 2 - x + 1 = 3$ (attention : $-(x - 1) = -x + 1$).
++ $f'(x) = \dfrac{3}{(x + 2)^2}$. Je ne développe **jamais** le dénominateur : sous forme de carré, on voit tout de suite qu'il est positif.
+:::
+
+:::exemple Exemple guidé 3 · composée : $f(x) = e^{x^2}$
++ Dernière opération : « $e$ puissance » → composée $e^u$ avec $u = x^2$, $u' = 2x$.
++ $(e^u)' = u'e^u$ → $f'(x) = 2x\,e^{x^2}$.
+:::
+
+:::exemple Encore des exemples, un de chaque type
+$g(x) = \ln(x^2 + x + 1)$ : composée $\ln u$, $u' = 2x + 1$. $g'(x) = \dfrac{2x + 1}{x^2 + x + 1}$.
+$h(x) = \sqrt{x^2 + 9}$ : composée $\sqrt{u}$, $u' = 2x$. $h'(x) = \dfrac{2x}{2\sqrt{x^2 + 9}} = \dfrac{x}{\sqrt{x^2 + 9}}$.
+$k(x) = (2x + 1)^5$ : composée $u^5$, $u' = 2$. $k'(x) = 5 \times 2 \times (2x + 1)^4 = 10(2x + 1)^4$.
+$m(x) = \cos(3x)$ : composée $\cos u$, $u' = 3$. $m'(x) = -3\sin(3x)$.
+$p(x) = x\ln x$ : produit, $u = x$ ($u' = 1$), $v = \ln x$ ($v' = \frac{1}{x}$). $p'(x) = \ln x + x \times \frac{1}{x} = \ln x + 1$.
+:::
+
+:::exemple Exemple guidé 4 · composée dans un produit : $f(x) = x\,e^{-2x}$
++ Dernière opération : × → produit. $u = x$, $u' = 1$ ; $v = e^{-2x}$ (composée !), $v' = -2e^{-2x}$.
++ $f'(x) = 1 \times e^{-2x} + x \times (-2e^{-2x}) = e^{-2x} - 2x\,e^{-2x}$.
++ Je factorise : $f'(x) = (1 - 2x)e^{-2x}$.
+:::
+
+:::piege
+**Erreur n° 1 :** oublier de multiplier par la dérivée de l'intérieur. $(e^{3x})' = 3e^{3x}$, pas $e^{3x}$.
+**Erreur n° 2 :** $(uv)' = u'v'$. FAUX ! Test avec $x \times x = x^2$ : la vraie dérivée est $2x$, mais « $u'v'$ » donnerait $1 \times 1 = 1$.
+**Erreur n° 3 :** dans le quotient, inverser $u'v$ et $uv'$ (le signe du résultat change !). Retiens : « **le haut dérivé en premier** ».
+:::
+
+## 5.4 La tangente
+
+:::coeur
+L'équation de la tangente à la courbe de $f$ au point d'abscisse $a$ :
+$$y = f'(a)(x - a) + f(a)$$
+**Recette :** 1) $f(a)$ ; 2) $f'(x)$ puis $f'(a)$ ; 3) je remplace ; 4) je développe sous la forme $y = mx + p$.
+:::
+
+:::exemple Exemple guidé : tangente à $f(x) = x^3 - 2x$ en $a = 1$
++ $f(1) = 1 - 2 = -1$.
++ $f'(x) = 3x^2 - 2$, donc $f'(1) = 3 - 2 = 1$.
++ $y = 1 \times (x - 1) + (-1) = x - 1 - 1$.
++ $y = x - 2$.
+:::
+
+:::exemple Exemples corrigés
+Tangente à $e^x$ en 0 : $f(0) = 1$, $f'(0) = 1$ → $y = x + 1$.
+Tangente à $\ln x$ en 1 : $f(1) = 0$, $f'(1) = 1$ → $y = x - 1$.
+**Tangente horizontale** ⇔ $f'(a) = 0$ (pente nulle).
+:::
+
+## 5.5 Variations et extremums
+
+:::coeur La règle d'or
+$f' > 0$ sur un intervalle → $f$ **croissante** ↗ · $f' < 0$ → $f$ **décroissante** ↘ · $f'$ s'annule **en changeant de signe** → **extremum**.
+De $+$ à $-$ : **maximum** (sommet). De $-$ à $+$ : **minimum** (fond de vallée).
+La **valeur** du maximum est $f(a)$, pas $a$ !
+:::
+
+@fig variations:52 | $f(x) = x^3 - 3x + 1$ : elle monte tant que $f' > 0$ et descend quand $f' < 0$.
+
+:::methode L'étude des variations en 5 étapes
++ **Domaine** de $f$.
++ Je calcule $f'(x)$ et je la **factorise** au maximum (c'est là que le chapitre 1 sert !).
++ J'étudie le **signe** de $f'(x)$ avec un tableau de signes (chapitre 2). $e^{\ldots}$ et les carrés sont toujours positifs : ils ne changent pas le signe.
++ **Tableau de variations** : flèches ↗ où $f' > 0$, ↘ où $f' < 0$.
++ Je calcule $f$ aux extremums (et les limites aux bornes du domaine, si demandées).
+:::
+
+:::exemple Étude complète 1 : $f(x) = x^3 - 3x + 1$ sur $\R$
++ Domaine : $\R$.
++ $f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x - 1)(x + 1)$.
++ Racines $-1$ et $1$. Trinôme avec $a = 3 > 0$ : $+$ à l'extérieur, $-$ entre les racines.
++ Tableau ci-dessous.
++ $f(-1) = -1 + 3 + 1 = 3$ (maximum) ; $f(1) = 1 - 3 + 1 = -1$ (minimum).
+:::
+
+:::signes
+x | -\infty | -1 | 1 | +\infty
+f'(x) | + | 0 | - | 0 | +
+f(x) | / | ^3 | \ | _-1 | /
+:::
+
+:::exemple Étude complète 2 (avec ln) : $f(x) = x - \ln x$ sur $\oo{0}{+\infty}$
++ Domaine : $\oo{0}{+\infty}$ (à cause du ln).
++ $f'(x) = 1 - \frac{1}{x} = \frac{x - 1}{x}$ (même dénominateur).
++ Sur $\oo{0}{+\infty}$, $x > 0$, donc le signe de $f'$ est celui de $x - 1$ : $-$ avant 1, $+$ après.
++ $f$ décroît sur $\of{0}{1}$, croît sur $\fo{1}{+\infty}$.
++ Minimum $f(1) = 1 - \ln 1 = 1 - 0 = 1$. Limites : en $0^+$, $-\ln x \to +\infty$ donc $f \to +\infty$ ; en $+\infty$, $x - \ln x = x\left(1 - \frac{\ln x}{x}\right) \to +\infty$.
+> Conclusion utile : $f(x) \geq 1 > 0$, donc $x > \ln x$ pour tout $x > 0$.
+:::
+
+:::signes
+x | 0 | 1 | +\infty
+f'(x) | ‖ | - | 0 | + |
+f(x) | ‖+\infty | \ | _1 | / | ^+\infty
+:::
+
+:::exemple Étude complète 3 (avec exp) : $g(x) = (2x - 1)e^x$ sur $\R$
++ Produit : $u = 2x - 1$ ($u' = 2$), $v = e^x$ ($v' = e^x$).
++ $g'(x) = 2e^x + (2x - 1)e^x = e^x(2 + 2x - 1) = (2x + 1)e^x$.
++ $e^x > 0$ toujours → signe de $2x + 1$ : $-$ avant $-\frac{1}{2}$, $+$ après.
++ $g$ décroît sur $\of{-\infty}{-\frac{1}{2}}$, croît sur $\fo{-\frac{1}{2}}{+\infty}$.
++ Minimum $g\left(-\frac{1}{2}\right) = (-1 - 1)e^{-1/2} = -2e^{-1/2} \approx -1{,}21$.
+:::
+
+## 5.6 Problèmes d'optimisation
+
+:::methode
++ Je choisis la **variable** $x$ (avec son intervalle possible).
++ J'écris la quantité à maximiser/minimiser comme une **fonction de $x$** (en utilisant les contraintes de l'énoncé).
++ Je **dérive**, j'étudie le signe, je trouve le maximum ou le minimum.
++ Je **réponds à la question** par une phrase (avec les unités !).
+:::
+
+:::exemple Exemple guidé : avec 20 m de grillage, quel rectangle a la plus grande aire ?
++ Côtés $x$ et $y$. Périmètre : $2x + 2y = 20$ → $y = 10 - x$, avec $x \in \ff{0}{10}$.
++ Aire : $A(x) = x \times y = x(10 - x) = 10x - x^2$.
++ $A'(x) = 10 - 2x$. $A'(x) = 0 \Leftrightarrow x = 5$. Avant 5 : $A' > 0$ ; après : $A' < 0$ → maximum.
++ Le meilleur rectangle est un **carré de 5 m × 5 m**, d'aire **25 m²**.
+:::
+
+@fig optim_rect:82 | L'aire $A(x) = x(10 - x)$ est maximale pour $x = 5$.
+
+:::lire Comprendre l'énoncé
+**nombre dérivé** = $f'(a)$ (un nombre) · **fonction dérivée** = $f'$ · **coefficient directeur** = pente · **tableau de variations** · **extremum / maximum / minimum** · **strictement croissante** · **étudier le signe de** · **taux de variation** = dérivée (en physique : vitesse, débit, puissance…).
+:::
+
+@page
+## 5.7 Exercices
+
+@serie 5A | Dérivées de base
+
+@exo 1
+Dérive :
+a) $7x - 3$
+b) $x^4$
+c) $2x^3 - 5x^2 + x - 8$
+d) $12$
+@sol
+a) $7$. b) $4x^3$. c) $6x^2 - 10x + 1$. d) $0$.
+@check der(2*x**3-5*x**2+x-8, 6*x**2-10*x+1)
+@end
+
+@exo 1
+Dérive :
+a) $\dfrac{3}{x}$
+b) $5e^x - \ln x$
+c) $4\sqrt{x}$
+d) $x^3 + \dfrac{1}{x}$
+@sol
+a) $3 \times \left(-\frac{1}{x^2}\right) = -\frac{3}{x^2}$. b) $5e^x - \frac{1}{x}$. c) $4 \times \frac{1}{2\sqrt{x}} = \frac{2}{\sqrt{x}}$. d) $3x^2 - \frac{1}{x^2}$.
+@check der(4*sqrt(x), 2/sqrt(x)) and der(x**3+1/x, 3*x**2-1/x**2)
+@end
+
+@exo 2
+Dérive (réécris d'abord avec des puissances) :
+a) $x^{-2}$
+b) $\dfrac{1}{x^3}$
+c) $x\sqrt{x}$
+@sol
+a) $-2x^{-3} = -\frac{2}{x^3}$. b) $x^{-3}$ → $-3x^{-4} = -\frac{3}{x^4}$.
+c) $x\sqrt{x} = x^{3/2}$ → $\frac{3}{2}x^{1/2} = \frac{3}{2}\sqrt{x}$.
+@check der(x*sqrt(x), Rational(3,2)*sqrt(x)) and der(1/x**3, -3/x**4)
+@end
+
+@exo 2
+Dérive (simplifie d'abord la fraction) :
+a) $\dfrac{x^2 + 1}{x}$
+b) $\dfrac{x^3 - 2x}{x^2}$
+@sol
+a) $x + \frac{1}{x}$ → $1 - \frac{1}{x^2}$.
+b) $x - \frac{2}{x}$ → $1 + \frac{2}{x^2}$.
+@check der((x**3-2*x)/x**2, 1+2/x**2)
+@end
+
+@exo 2
+Dérive :
+a) $3\sin x - 2\cos x$
+b) $\dfrac{x^2}{2} - 3x + e^x$
+@sol
+a) $3\cos x + 2\sin x$ (car $(\cos x)' = -\sin x$, et $-2 \times (-\sin x) = +2\sin x$).
+b) $x - 3 + e^x$.
+@check der(3*sin(x)-2*cos(x), 3*cos(x)+2*sin(x))
+@end
+
+@exo 2
+$f(x) = x^3 - 4x$. Calcule $f'(2)$ et $f'(0)$. Interprète.
+@sol
+$f'(x) = 3x^2 - 4$. $f'(2) = 12 - 4 = 8$ (la courbe monte fortement en $x = 2$). $f'(0) = -4$ (elle descend en $x = 0$).
+@end
+
+@exo 3
+$f(x) = ax^2 + bx$. Trouve $a$ et $b$ sachant que $f(1) = 3$ et $f'(1) = 4$.
+@sol
+$f(1) = a + b = 3$ ; $f'(x) = 2ax + b$, donc $f'(1) = 2a + b = 4$. En soustrayant : $a = 1$, puis $b = 2$. $f(x) = x^2 + 2x$.
+@end
+
+@exo 3
+Avec la définition, calcule $f'(1)$ pour $f(x) = 2x^2$. Vérifie avec le tableau.
+@sol
+$\dfrac{f(1 + h) - f(1)}{h} = \dfrac{2(1 + 2h + h^2) - 2}{h} = \dfrac{4h + 2h^2}{h} = 4 + 2h \to 4$.
+Tableau : $f'(x) = 4x$, $f'(1) = 4$ ✔
+@end
+
+@serie 5B | Produits et quotients
+
+@exo 2
+Dérive $f(x) = (x + 1)e^x$.
+@sol
+$(x + 2)e^x$ (exemple guidé 1 du 5.3).
+@check der((x+1)*exp(x), (x+2)*exp(x))
+@end
+
+@exo 2
+Dérive $f(x) = x\ln x$.
+@sol
+$\ln x + 1$ (voir les exemples du 5.3).
+@check der(x*log(x), log(x)+1)
+@end
+
+@exo 2
+Dérive $f(x) = x^2\sin x$.
+@sol
+Produit : $u = x^2$ ($u' = 2x$), $v = \sin x$ ($v' = \cos x$) → $2x\sin x + x^2\cos x$.
+@check der(x**2*sin(x), 2*x*sin(x)+x**2*cos(x))
+@end
+
+@exo 2
+Dérive $f(x) = (2x + 3)(x^2 - 1)$ de deux façons : avec la formule du produit, puis en développant d'abord.
+@sol
+Produit : $2(x^2 - 1) + (2x + 3)(2x) = 2x^2 - 2 + 4x^2 + 6x = 6x^2 + 6x - 2$.
+En développant : $f(x) = 2x^3 + 3x^2 - 2x - 3$ → $f'(x) = 6x^2 + 6x - 2$ ✔ Même résultat.
+@check der((2*x+3)*(x**2-1), 6*x**2+6*x-2)
+@end
+
+@exo 3
+Dérive $f(x) = \dfrac{x - 1}{x + 2}$.
+@sol
+$\dfrac{3}{(x + 2)^2}$ (exemple guidé 2 du 5.3).
+@check der((x-1)/(x+2), 3/(x+2)**2)
+@end
+
+@exo 3
+Dérive $f(x) = \dfrac{x^2 + 1}{x}$ avec la formule du quotient, et compare avec l'exercice 5.4.
+@sol
+$\dfrac{2x \times x - (x^2 + 1) \times 1}{x^2} = \dfrac{x^2 - 1}{x^2}$. C'est bien $1 - \frac{1}{x^2}$ ✔ (même résultat, mais plus long).
+@check der((x**2+1)/x, (x**2-1)/x**2)
+@end
+
+@exo 3
+Dérive $f(x) = \dfrac{1}{x^2 + 1}$.
+@sol
+Inverse avec $v = x^2 + 1$, $v' = 2x$ : $-\dfrac{2x}{(x^2 + 1)^2}$.
+@check der(1/(x**2+1), -2*x/(x**2+1)**2)
+@end
+
+@exo 3
+Dérive $f(x) = \dfrac{e^x}{x + 1}$.
+@sol
+$u = e^x$, $u' = e^x$ ; $v = x + 1$, $v' = 1$.
+$\dfrac{e^x(x + 1) - e^x \times 1}{(x + 1)^2} = \dfrac{e^x(x + 1 - 1)}{(x + 1)^2} = \dfrac{x\,e^x}{(x + 1)^2}$.
+@check der(exp(x)/(x+1), x*exp(x)/(x+1)**2)
+@end
+
+@exo 4
+Dérive $f(x) = \dfrac{\ln x}{x}$ (pour $x > 0$).
+@sol
+$u = \ln x$, $u' = \frac{1}{x}$ ; $v = x$, $v' = 1$. $\dfrac{\frac{1}{x} \times x - \ln x \times 1}{x^2} = \dfrac{1 - \ln x}{x^2}$.
+@check der(log(x)/x, (1-log(x))/x**2)
+@end
+
+@exo 4
+Dérive $f(x) = (2x - 1)e^x$ et factorise le résultat.
+@sol
+$(2x + 1)e^x$ (étude complète 3 du 5.5).
+@check der((2*x-1)*exp(x), (2*x+1)*exp(x))
+@end
+
+@serie 5C | Fonctions composées
+
+@exo 2
+Dérive : a) $e^{-2x}$ ; b) $e^{x^2}$.
+@sol
+a) $u = -2x$, $u' = -2$ : $-2e^{-2x}$. b) $u = x^2$, $u' = 2x$ : $2x\,e^{x^2}$.
+@check der(exp(-2*x), -2*exp(-2*x)) and der(exp(x**2), 2*x*exp(x**2))
+@end
+
+@exo 2
+Dérive : a) $\ln(3x + 1)$ ; b) $\ln(x^2 + x + 1)$.
+@sol
+a) $\frac{3}{3x + 1}$. b) $\frac{2x + 1}{x^2 + x + 1}$.
+@check der(log(3*x+1), 3/(3*x+1))
+@end
+
+@exo 3
+Dérive : a) $(2x + 1)^5$ ; b) $\sqrt{x^2 + 9}$.
+@sol
+a) $10(2x + 1)^4$. b) $\frac{x}{\sqrt{x^2 + 9}}$.
+@check der((2*x+1)**5, 10*(2*x+1)**4) and der(sqrt(x**2+9), x/sqrt(x**2+9))
+@end
+
+@exo 3
+Dérive : a) $\cos(3x)$ ; b) $\sin(2x - \pi)$.
+@sol
+a) $-3\sin(3x)$. b) $2\cos(2x - \pi)$.
+@check der(cos(3*x), -3*sin(3*x)) and der(sin(2*x-pi), 2*cos(2*x-pi))
+@end
+
+@exo 3
+Dérive $f(x) = (x^2 - 3x)^3$.
+@sol
+$u = x^2 - 3x$, $u' = 2x - 3$ : $f'(x) = 3(2x - 3)(x^2 - 3x)^2$.
+@check der((x**2-3*x)**3, 3*(2*x-3)*(x**2-3*x)**2)
+@end
+
+@exo 3
+Dérive $f(x) = \dfrac{1}{(3x - 2)^2}$.
+@sol
+$f(x) = (3x - 2)^{-2}$ : $f'(x) = -2 \times 3 \times (3x - 2)^{-3} = -\dfrac{6}{(3x - 2)^3}$.
+@check der(1/(3*x-2)**2, -6/(3*x-2)**3)
+@end
+
+@exo 4
+Dérive $f(x) = x\,e^{-x^2}$.
+@sol
+Produit : $u = x$ ($u' = 1$), $v = e^{-x^2}$ ($v' = -2x\,e^{-x^2}$).
+$f'(x) = e^{-x^2} + x \times (-2x)e^{-x^2} = (1 - 2x^2)e^{-x^2}$.
+@check der(x*exp(-x**2), (1-2*x**2)*exp(-x**2))
+@end
+
+@exo 4
+Dérive : a) $\ln(e^x + 1)$ ; b) $\sin^2 x$ ; c) $\cos(x^2)$.
+@sol
+a) $u = e^x + 1$, $u' = e^x$ : $\frac{e^x}{e^x + 1}$.
+b) $\sin^2 x = (\sin x)^2$ : $2\cos x\sin x$.
+c) $u = x^2$ : $-2x\sin(x^2)$.
+@check der(log(exp(x)+1), exp(x)/(exp(x)+1)) and der(sin(x)**2, 2*sin(x)*cos(x)) and der(cos(x**2), -2*x*sin(x**2))
+@end
+
+@serie 5D | Tangentes
+
+@exo 2
+Donne l'équation de la tangente à $f(x) = e^x$ en 0.
+@sol
+$y = x + 1$.
+@end
+
+@exo 2
+Donne l'équation de la tangente à $f(x) = \ln x$ en 1.
+@sol
+$y = x - 1$.
+@end
+
+@exo 3
+Donne l'équation de la tangente à $f(x) = x^3 - 2x$ en 1.
+@sol
+$y = x - 2$ (exemple guidé du 5.4).
+@end
+
+@exo 3
+Donne l'équation de la tangente à $f(x) = \frac{1}{x}$ en $a = 2$.
+@sol
+$f(2) = \frac{1}{2}$ ; $f'(x) = -\frac{1}{x^2}$, $f'(2) = -\frac{1}{4}$.
+$y = -\frac{1}{4}(x - 2) + \frac{1}{2} = -\frac{1}{4}x + \frac{1}{2} + \frac{1}{2} = -\frac{1}{4}x + 1$.
+@end
+
+@exo 4
+$f(x) = x^2 - 4x + 1$.
+a) En quel point la tangente est-elle horizontale ? Donne son équation.
+b) En quel point la tangente est-elle parallèle à la droite $y = 2x + 5$ ? Donne son équation.
+@sol
+a) $f'(x) = 2x - 4 = 0$ → $x = 2$, $f(2) = -3$. Tangente : $y = -3$.
+b) Parallèle ⇔ même pente 2 : $2x - 4 = 2$ → $x = 3$, $f(3) = -2$. $y = 2(x - 3) - 2 = 2x - 8$.
+@end
+
+@serie 5E | Variations et extremums
+
+@exo 2
+Étudie les variations de $f(x) = x^2 - 6x + 1$ et donne son minimum.
+@sol
+$f'(x) = 2x - 6$ : $-$ avant 3, $+$ après. $f$ décroît sur $\of{-\infty}{3}$, croît sur $\fo{3}{+\infty}$.
+Minimum : $f(3) = 9 - 18 + 1 = -8$ (atteint en $x = 3$).
+@end
+
+@exo 3
+Étudie les variations de $f(x) = x^3 - 12x + 1$ (maximum et minimum).
+@sol
+$f'(x) = 3x^2 - 12 = 3(x - 2)(x + 2)$ : $+$ à l'extérieur de $\pm 2$, $-$ entre.
+
+:::signes
+x | -\infty | -2 | 2 | +\infty
+f'(x) | + | 0 | - | 0 | +
+f(x) | / | ^17 | \ | _-15 | /
+:::
+
+Maximum $f(-2) = -8 + 24 + 1 = 17$. Minimum $f(2) = 8 - 24 + 1 = -15$.
+@check same((x**3-12*x+1).subs(x,-2), 17) and same((x**3-12*x+1).subs(x,2), -15)
+@end
+
+@exo 3
+Étudie les variations de $f(x) = -2x^3 + 3x^2 + 12x$.
+@sol
+$f'(x) = -6x^2 + 6x + 12 = -6(x^2 - x - 2) = -6(x - 2)(x + 1)$.
+Trinôme avec $a = -6 < 0$ : **négatif** à l'extérieur des racines $-1$ et $2$, positif entre.
+
+:::signes
+x | -\infty | -1 | 2 | +\infty
+f'(x) | - | 0 | + | 0 | -
+f(x) | \ | _-7 | / | ^20 | \
+:::
+
+Minimum $f(-1) = 2 + 3 - 12 = -7$ ; maximum $f(2) = -16 + 12 + 24 = 20$.
+@check der(-2*x**3+3*x**2+12*x, -6*(x-2)*(x+1)) and same((-2*x**3+3*x**2+12*x).subs(x,2), 20)
+@end
+
+@exo 4
+Étudie les variations de $f(x) = x^2 e^{-x}$.
+@sol
+Produit : $u = x^2$, $v = e^{-x}$ ($v' = -e^{-x}$). $f'(x) = 2x\,e^{-x} - x^2 e^{-x} = x(2 - x)e^{-x}$.
+$e^{-x} > 0$. Signes : $x$ (− puis + à partir de 0), $2 - x$ (+ puis − à partir de 2).
+
+:::signes
+x | -\infty | 0 | 2 | +\infty
+x | - | 0 | + | | +
+2-x | + | | + | 0 | -
+f'(x) | - | 0 | + | 0 | -
+f(x) | \ | _0 | / | ^4e^{-2} | \
+:::
+
+Minimum $f(0) = 0$ ; maximum $f(2) = 4e^{-2} \approx 0{,}54$.
+@check der(x**2*exp(-x), x*(2-x)*exp(-x))
+@end
+
+@exo 4
+Étudie les variations de $f(x) = \dfrac{\ln x}{x^2}$ sur $\oo{0}{+\infty}$.
+@sol
+Quotient : $u = \ln x$ ($u' = \frac{1}{x}$), $v = x^2$ ($v' = 2x$).
+$f'(x) = \dfrac{\frac{1}{x} \times x^2 - \ln x \times 2x}{x^4} = \dfrac{x - 2x\ln x}{x^4} = \dfrac{x(1 - 2\ln x)}{x^4} = \dfrac{1 - 2\ln x}{x^3}$.
+$x^3 > 0$ → signe de $1 - 2\ln x$ : positif si $\ln x < \frac{1}{2}$, c'est-à-dire $x < e^{1/2} = \sqrt{e}$.
+$f$ ↗ sur $\of{0}{\sqrt{e}}$, ↘ ensuite. Maximum $f(\sqrt{e}) = \frac{1/2}{e} = \frac{1}{2e} \approx 0{,}18$.
+@check der(log(x)/x**2, (1-2*log(x))/x**3) and same((log(x)/x**2).subs(x,sqrt(E)), 1/(2*E))
+@end
+
+@exo 4
+Étudie les variations de $f(x) = (x^2 - 3)e^x$.
+@sol
+$f'(x) = 2x\,e^x + (x^2 - 3)e^x = (x^2 + 2x - 3)e^x = (x + 3)(x - 1)e^x$.
+$e^x > 0$ → signe du trinôme : $+$ à l'extérieur de $-3$ et $1$, $-$ entre.
+$f$ ↗ sur $\of{-\infty}{-3}$, ↘ sur $\ff{-3}{1}$, ↗ sur $\fo{1}{+\infty}$.
+Maximum local $f(-3) = 6e^{-3} \approx 0{,}30$ ; minimum $f(1) = -2e \approx -5{,}44$.
+@check der((x**2-3)*exp(x), (x+3)*(x-1)*exp(x))
+@end
+
+@exo 4
+Étudie les variations de $f(x) = \dfrac{x}{x^2 + 1}$.
+@sol
+$f'(x) = \dfrac{1 \times (x^2 + 1) - x \times 2x}{(x^2 + 1)^2} = \dfrac{1 - x^2}{(x^2 + 1)^2}$. Le dénominateur est positif → signe de $1 - x^2$ : $-$ à l'extérieur de $\pm 1$, $+$ entre.
+$f$ ↘ sur $\of{-\infty}{-1}$, ↗ sur $\ff{-1}{1}$, ↘ sur $\fo{1}{+\infty}$. Minimum $f(-1) = -\frac{1}{2}$, maximum $f(1) = \frac{1}{2}$.
+@check der(x/(x**2+1), (1-x**2)/(x**2+1)**2)
+@end
+
+@exo 4
+a) Étudie les variations de $f(x) = x - \ln x$ sur $\oo{0}{+\infty}$.
+b) En déduire que $\ln x < x$ pour tout $x > 0$.
+@sol
+a) Voir l'étude complète 2 du 5.5 : minimum $f(1) = 1$.
+b) Le minimum de $f$ vaut 1, donc $f(x) \geq 1 > 0$ pour tout $x > 0$, c'est-à-dire $x - \ln x > 0$, donc $\ln x < x$.
+@end
+
+@serie 5F | Optimisation et physique
+
+@exo 3
+Avec 20 m de grillage, quel rectangle a la plus grande aire ?
+@sol
+Un carré de 5 m × 5 m, d'aire 25 m² (exemple guidé du 5.6).
+@end
+
+@exo 4
+Avec 40 m de grillage, on clôture un rectangle le long d'un mur (le mur sert de 4e côté). Quelle est l'aire maximale ?
+@sol
+Deux côtés $x$ (perpendiculaires au mur) et un côté $y$ : $2x + y = 40$ → $y = 40 - 2x$, $x \in \ff{0}{20}$.
+$A(x) = x(40 - 2x) = 40x - 2x^2$. $A'(x) = 40 - 4x = 0$ → $x = 10$ ($+$ avant, $-$ après → maximum).
+$x = 10$ m, $y = 20$ m, aire maximale **200 m²**.
+@end
+
+@exo 4 | Mouvement
+Un objet a pour position $x(t) = t^3 - 6t^2 + 9t$ (en m, $t$ en s). Calcule sa vitesse, les instants où il s'arrête, et son accélération.
+@sol
+Vitesse : $v(t) = x'(t) = 3t^2 - 12t + 9 = 3(t - 1)(t - 3)$.
+Il s'arrête quand $v = 0$ : $t = 1$ s et $t = 3$ s.
+Accélération : $a(t) = v'(t) = 6t - 12$ (nulle à $t = 2$ s).
+@check der(x**3-6*x**2+9*x, 3*(x-1)*(x-3))
+@end
+
+@exo 4 | La boîte
+Dans une plaque carrée de 12 cm de côté, on découpe un carré de côté $x$ à chaque coin, puis on replie pour former une boîte sans couvercle.
+Montre que son volume est $V(x) = x(12 - 2x)^2$ pour $x \in \oo{0}{6}$, puis trouve le volume maximal.
+@sol
+Le fond est un carré de côté $12 - 2x$ et la hauteur est $x$ : $V(x) = x(12 - 2x)^2$.
+$V'(x) = (12 - 2x)^2 + x \times 2(12 - 2x) \times (-2) = (12 - 2x)\big[(12 - 2x) - 4x\big] = (12 - 2x)(12 - 6x)$.
+Sur $\oo{0}{6}$, $12 - 2x > 0$ ; $12 - 6x$ s'annule en $x = 2$ ($+$ avant, $-$ après) → maximum.
+$V(2) = 2 \times 8^2 = 128$ cm³.
+@check der(x*(12-2*x)**2, (12-2*x)*(12-6*x)) and same((x*(12-2*x)**2).subs(x,2), 128)
+@end
+
+@exo 4
+Pour quelle valeur de $x > 0$ la somme $x + \dfrac{4}{x}$ est-elle minimale ? Quelle est cette valeur minimale ?
+@sol
+$f(x) = x + \frac{4}{x}$, $f'(x) = 1 - \frac{4}{x^2} = \frac{x^2 - 4}{x^2}$. Pour $x > 0$ : $-$ avant 2, $+$ après → minimum en $x = 2$.
+Valeur minimale : $f(2) = 2 + 2 = 4$.
+@end
+
+@exo 4 | Bénéfice maximal
+Le bénéfice d'une entreprise qui vend $q$ centaines d'objets est $B(q) = -2q^2 + 40q - 150$ (en milliers de francs). Quelle quantité maximise le bénéfice ?
+@sol
+$B'(q) = -4q + 40 = 0$ → $q = 10$ ($+$ avant, $-$ après → maximum). $B(10) = -200 + 400 - 150 = 50$.
+Il faut vendre **1000 objets** ; le bénéfice maximal est de **50 000 francs**.
+@end
+
+@drill der_poly 15 71 2 | Dériver des polynômes
+@drill der_ref 12 72 2 | Dérivées de référence
+@drill der_prod 12 73 2 | Dériver un produit
+@drill der_quot 12 74 2 | Dériver un quotient
+@drill der_comp 18 75 2 | Dériver une composée
+@drill tangente 9 76 2 | Équations de tangentes
+
+## 5.8 QCM style examen
+
+@qcm
+La dérivée de $x\,e^x$ est :
+A) $e^x$
+B) $x\,e^x$
+C) $(x + 1)e^x$
+D) $(x - 1)e^x$
+@rep C | Produit : $e^x + x\,e^x$. A oublie un morceau du produit (c'est « $u'v'$ »).
+@end
+
+@qcm
+La dérivée de $\ln(x^2 + 1)$ est :
+A) $\frac{1}{x^2 + 1}$
+B) $\frac{2x}{x^2 + 1}$
+C) $2x\ln(x^2 + 1)$
+D) $\frac{1}{2x}$
+@rep B | $\frac{u'}{u}$ avec $u = x^2 + 1$. A oublie de multiplier par $u'$.
+@end
+
+@qcm
+Si $f'(x) = (x - 3)e^x$, alors $f$ est :
+A) croissante sur $\R$
+B) ↘ sur $\of{-\infty}{3}$, ↗ sur $\fo{3}{+\infty}$
+C) ↗ sur $\of{-\infty}{3}$, ↘ sur $\fo{3}{+\infty}$
+D) constante
+@rep B | $e^x > 0$ : le signe de $f'$ est celui de $x - 3$.
+@end
+
+@qcm
+La tangente à $f(x) = x^2$ en $x = 1$ est :
+A) $y = 2x - 1$
+B) $y = 2x + 1$
+C) $y = x$
+D) $y = 2x$
+@rep A | $f(1) = 1$, $f'(1) = 2$ → $y = 2(x - 1) + 1 = 2x - 1$.
+@end
+
+@qcm
+La dérivée de $\cos(2x)$ est :
+A) $\sin(2x)$
+B) $-\sin(2x)$
+C) $-2\sin(2x)$
+D) $2\sin(2x)$
+@rep C | $-\sin(u) \times u'$ avec $u' = 2$. B oublie le 2, D oublie le moins.
+@end
+
+@qcm
+La dérivée de $\dfrac{1}{2x + 1}$ est :
+A) $-\frac{2}{(2x + 1)^2}$
+B) $\frac{1}{(2x + 1)^2}$
+C) $-\frac{1}{(2x + 1)^2}$
+D) $\frac{2}{2x + 1}$
+@rep A | $-\frac{v'}{v^2}$ avec $v' = 2$. C oublie $v'$.
+@end
+
+@qcm
+Si $f'(a) = 0$ et $f'$ passe de $+$ à $-$ en $a$, alors en $a$, $f$ admet :
+A) un minimum
+B) un maximum
+C) $f(a) = 0$
+D) rien de particulier
+@rep B | Ça monte puis ça descend : sommet. C confond $f'(a) = 0$ et $f(a) = 0$.
+@end
+
+@qcm
+La dérivée de $\sqrt{3x}$ est :
+A) $\frac{3}{2\sqrt{3x}}$
+B) $\frac{1}{2\sqrt{3x}}$
+C) $\sqrt{3}$
+D) $\frac{3}{\sqrt{3x}}$
+@rep A | $\frac{u'}{2\sqrt{u}}$ avec $u = 3x$, $u' = 3$.
+@end
+
+@qcm
+La dérivée de $e^{3x}$ est :
+A) $e^{3x}$
+B) $3e^{3x}$
+C) $3x\,e^{3x - 1}$
+D) $\frac{e^{3x}}{3}$
+@rep B | $u'e^u$ avec $u' = 3$. C applique à tort la formule de $x^n$ ; D est une primitive, pas la dérivée.
+@end
+
+@qcm
+Pour $f(x) = x^2 - 4x$, la dérivée s'annule en :
+A) $x = 0$
+B) $x = 4$
+C) $x = 2$
+D) $x = -2$
+@rep C | $f'(x) = 2x - 4 = 0$ → $x = 2$. A et B sont les racines de $f$, pas de $f'$.
+@end
+
+@serie 5G | Bilan du chapitre 5 (40 minutes, sans aide)
+
+:::note
+**7 ou 8 justes : passe au chapitre 6. 5 ou 6 : refais les automatismes 5.C à 5.E pendant 3 jours. Moins de 5 : reprends 5.3 et 5.5.**
+:::
+
+@exo 2
+Dérive $f(x) = 3x^4 - \dfrac{2}{x} + \sqrt{x}$.
+@sol
+$12x^3 + \frac{2}{x^2} + \frac{1}{2\sqrt{x}}$ (car $\left(-\frac{2}{x}\right)' = -2 \times \left(-\frac{1}{x^2}\right) = +\frac{2}{x^2}$).
+@check der(3*x**4-2/x+sqrt(x), 12*x**3+2/x**2+1/(2*sqrt(x)))
+@end
+
+@exo 3
+Dérive $f(x) = (x^2 + 1)e^{-x}$ et factorise.
+@sol
+$f'(x) = 2x\,e^{-x} - (x^2 + 1)e^{-x} = (-x^2 + 2x - 1)e^{-x} = -(x - 1)^2 e^{-x}$.
+@check der((x**2+1)*exp(-x), -(x-1)**2*exp(-x))
+@end
+
+@exo 3
+Dérive $f(x) = \dfrac{3x - 1}{x + 1}$.
+@sol
+$\dfrac{3(x + 1) - (3x - 1) \times 1}{(x + 1)^2} = \dfrac{4}{(x + 1)^2}$.
+@check der((3*x-1)/(x+1), 4/(x+1)**2)
+@end
+
+@exo 2
+Dérive $f(x) = \ln(x^2 + 4)$.
+@sol
+$\frac{2x}{x^2 + 4}$.
+@check der(log(x**2+4), 2*x/(x**2+4))
+@end
+
+@exo 3
+Dérive $f(x) = \sqrt{2x + 1}$.
+@sol
+$\frac{2}{2\sqrt{2x + 1}} = \frac{1}{\sqrt{2x + 1}}$.
+@check der(sqrt(2*x+1), 1/sqrt(2*x+1))
+@end
+
+@exo 3
+Donne l'équation de la tangente à $f(x) = x^2 + \frac{1}{x}$ au point d'abscisse 1.
+@sol
+$f(1) = 2$ ; $f'(x) = 2x - \frac{1}{x^2}$, $f'(1) = 1$. $y = 1(x - 1) + 2 = x + 1$.
+@end
+
+@exo 4
+Étudie les variations de $f(x) = x^3 - 3x^2 - 9x + 2$.
+@sol
+$f'(x) = 3x^2 - 6x - 9 = 3(x^2 - 2x - 3) = 3(x - 3)(x + 1)$ : $+$ à l'extérieur de $-1$ et $3$, $-$ entre.
+$f$ ↗ sur $\of{-\infty}{-1}$, ↘ sur $\ff{-1}{3}$, ↗ sur $\fo{3}{+\infty}$.
+Maximum $f(-1) = -1 - 3 + 9 + 2 = 7$ ; minimum $f(3) = 27 - 27 - 27 + 2 = -25$.
+@check der(x**3-3*x**2-9*x+2, 3*(x-3)*(x+1)) and same((x**3-3*x**2-9*x+2).subs(x,3), -25)
+@end
+
+@exo 4
+On veut construire un enclos rectangulaire d'aire 50 m² avec le moins de clôture possible. Quelles dimensions choisir ?
+@sol
+Soit $x$ la largeur ; la longueur est $\frac{50}{x}$. Périmètre : $P(x) = 2x + \frac{100}{x}$, $x > 0$.
+$P'(x) = 2 - \frac{100}{x^2} = 0$ → $x^2 = 50$ → $x = \sqrt{50} = 5\sqrt{2} \approx 7{,}07$ ($-$ avant, $+$ après → minimum).
+Longueur : $\frac{50}{5\sqrt{2}} = 5\sqrt{2}$. C'est un **carré de côté $5\sqrt{2} \approx 7{,}07$ m** ; clôture $20\sqrt{2} \approx 28{,}3$ m.
+@check sols(2-100/x**2, [5*sqrt(2), -5*sqrt(2)])
+@end
+
+@corriges

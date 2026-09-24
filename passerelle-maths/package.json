@@ -1,0 +1,13 @@
+{
+  "name": "passerelle-maths",
+  "private": true,
+  "description": "Générateur du PDF « Mathématiques pour la passerelle — méthode complète »",
+  "scripts": {
+    "build": "python3 src/build.py"
+  },
+  "dependencies": {
+    "@fontsource/bitter": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.0",
+    "katex": "^0.18.9"
+  }
+}

@@ -1,0 +1,294 @@
+%% Annexes : formulaire, erreurs, cartes mémoire, lexique
+# 10 | Formulaire et erreurs à éviter | À relire chaque semaine, la veille et le matin de l'épreuve
+
+## 10.1 Les 25 erreurs qui coûtent des points
+
+| Faux ✘ | Juste ✔ |
+| $(a + b)^2 = a^2 + b^2$ | $(a + b)^2 = a^2 + 2ab + b^2$ |
+| $-3^2 = 9$ | $-3^2 = -9$ · $(-3)^2 = 9$ |
+| $\sqrt{a + b} = \sqrt{a} + \sqrt{b}$ | $\sqrt{a \times b} = \sqrt{a} \times \sqrt{b}$ ; avec $+$ c'est interdit |
+| $\frac{a}{b} + \frac{c}{d} = \frac{a + c}{b + d}$ | d'abord le même dénominateur |
+| $\frac{x + 3}{3} = x$ | on ne simplifie que ce qui **multiplie** : $\frac{x + 3}{3} = \frac{x}{3} + 1$ |
+| $2^3 \times 2^4 = 2^{12}$ | $2^3 \times 2^4 = 2^7$ (on additionne les exposants) |
+| oublier la condition ($x \neq \ldots$, domaine) | l'écrire au début, la vérifier à la fin |
+| $-2x < 6$ → $x < -3$ | je divise par un négatif → je change le sens : $x > -3$ |
+| $x^2 = 9$ → $x = 3$ | $x = 3$ ou $x = -3$ |
+| $x^2 = 5x$ → « je divise par $x$ » → $x = 5$ | $x(x - 5) = 0$ → $x = 0$ ou $x = 5$ |
+| $(x + 1)(x - 2) = 4$ → $x + 1 = 4$… | produit nul **seulement** avec $= 0$ |
+| $\Delta = b^2 - 4ac$ avec $b = -5$ : $-5^2 = -25$ | $b^2 = (-5)^2 = 25$ (parenthèses !) |
+| $e^0 = 0$ · $\ln 0 = 0$ | $e^0 = 1$ · $\ln 1 = 0$ · $\ln 0$ n'existe pas |
+| $\ln(a + b) = \ln a + \ln b$ | $\ln(a \times b) = \ln a + \ln b$ |
+| $(e^{3x})' = e^{3x}$ | $(e^{3x})' = 3e^{3x}$ |
+| $(uv)' = u'v'$ | $(uv)' = u'v + uv'$ |
+| $(\cos x)' = \sin x$ | $(\cos x)' = -\sin x$ |
+| $\left(\frac{u}{v}\right)' = \frac{u'v + uv'}{v^2}$ | $\left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}$ |
+| primitive de $\sin x$ : $\cos x$ | primitive de $\sin x$ : $-\cos x$ |
+| $\int_a^b f = F(a) - F(b)$ | $F(b) - F(a)$ : haut moins bas |
+| $\V{AB} = (x_A - x_B\,;\,\ldots)$ | arrivée moins départ : $(x_B - x_A\,;\,y_B - y_A)$ |
+| $i^2 = 1$ · $\Im(3 + 2i) = 2i$ | $i^2 = -1$ · $\Im(3 + 2i) = 2$ |
+| argument dans le mauvais quart | regarder les **signes** de cos et sin |
+| « le minimum de $f$ » = le $x$ du minimum | le minimum de $f$ = $f(x_{\min})$ |
+| $\sqrt{x^2} = x$ | $\sqrt{x^2} = |x|$ |
+
+## 10.2 Formulaire
+
+:::coeur Calcul (chapitres 0 et 1)
+Priorités : parenthèses → puissances → × et ÷ (de gauche à droite) → + et −.
+$\dfrac{a}{b} + \dfrac{c}{d} = \dfrac{ad + bc}{bd}$ · $\dfrac{a}{b} \times \dfrac{c}{d} = \dfrac{ac}{bd}$ · $\dfrac{a}{b} \div \dfrac{c}{d} = \dfrac{a}{b} \times \dfrac{d}{c}$
+$a^n a^m = a^{n+m}$ · $\dfrac{a^n}{a^m} = a^{n-m}$ · $(a^n)^m = a^{nm}$ · $(ab)^n = a^n b^n$ · $a^0 = 1$ · $a^{-n} = \dfrac{1}{a^n}$
+$\sqrt{ab} = \sqrt{a}\sqrt{b}$ · $\sqrt{\dfrac{a}{b}} = \dfrac{\sqrt{a}}{\sqrt{b}}$ · $(\sqrt{a})^2 = a$ · $\sqrt{a^2} = |a|$ · $\dfrac{1}{\sqrt{a}} = \dfrac{\sqrt{a}}{a}$
+$(a + b)^2 = a^2 + 2ab + b^2$ · $(a - b)^2 = a^2 - 2ab + b^2$ · $(a + b)(a - b) = a^2 - b^2$
+:::
+
+:::coeur Équations et inéquations (chapitre 2)
+$A \times B = 0 \Leftrightarrow A = 0$ ou $B = 0$ · $\dfrac{A}{B} = \dfrac{C}{D} \Leftrightarrow AD = BC$ (avec $B, D \neq 0$)
+$ax^2 + bx + c = 0$ : $\Delta = b^2 - 4ac$ · $\Delta > 0$ : $x_{1,2} = \dfrac{-b \pm \sqrt{\Delta}}{2a}$ · $\Delta = 0$ : $x_0 = -\dfrac{b}{2a}$ · $\Delta < 0$ : pas de solution réelle.
+$x_1 + x_2 = -\dfrac{b}{a}$ · $x_1 x_2 = \dfrac{c}{a}$ · $ax^2 + bx + c = a(x - x_1)(x - x_2)$
+Signe de $ax + b$ : signe de $a$ après la racine. Signe de $ax^2 + bx + c$ : signe de $a$ sauf entre les racines.
+Multiplier ou diviser une inégalité par un **négatif** : on **change le sens**.
+:::
+
+:::coeur Trigonométrie (chapitre 3)
+$\cos\alpha = \dfrac{\text{adj}}{\text{hyp}}$ · $\sin\alpha = \dfrac{\text{opp}}{\text{hyp}}$ · $\tan\alpha = \dfrac{\text{opp}}{\text{adj}}$ · $180° = \pi$ rad
+$\cos^2\theta + \sin^2\theta = 1$ · $\tan\theta = \dfrac{\sin\theta}{\cos\theta}$
+$\cos(-\theta) = \cos\theta$ · $\sin(-\theta) = -\sin\theta$ · $\cos(\pi - \theta) = -\cos\theta$ · $\sin(\pi - \theta) = \sin\theta$ · $\cos(\pi + \theta) = -\cos\theta$ · $\sin(\pi + \theta) = -\sin\theta$
+
+| $\theta$ | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\pi$ |
+| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ | $-1$ |
+| $\sin\theta$ | $0$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$ | $0$ |
+
+Angle à partir de (cos, sin) : signes → quart ; valeurs → base ; 2e quart : $\pi - $ base ; 3e : $-(\pi - $ base$)$ ; 4e : $-$base.
+:::
+
+:::coeur Fonctions, exponentielle, logarithme (chapitre 4)
+Interdits : diviser par 0 ; $\sqrt{A}$ avec $A < 0$ ; $\ln A$ avec $A \leq 0$.
+$e^0 = 1$ · $e^{a+b} = e^a e^b$ · $e^{a-b} = \dfrac{e^a}{e^b}$ · $(e^a)^n = e^{na}$ · $e^x > 0$ toujours
+$\ln 1 = 0$ · $\ln e = 1$ · $\ln(ab) = \ln a + \ln b$ · $\ln\dfrac{a}{b} = \ln a - \ln b$ · $\ln(a^n) = n\ln a$ · $\ln(e^x) = x$ · $e^{\ln x} = x$
+$e^A = k \Leftrightarrow A = \ln k$ ($k > 0$) · $\ln A = k \Leftrightarrow A = e^k$ · $e^{2x} - 3e^x + 2 = 0$ : poser $X = e^x$.
+Limites en $\pm\infty$ d'un polynôme ou d'une fraction de polynômes : termes de plus haut degré. Croissances comparées : $e^x \gg x^n \gg \ln x$.
+$\lim\limits_{x \to -\infty} e^x = 0$ · $\lim\limits_{x \to 0^+} \ln x = -\infty$ · $\lim\limits_{x \to +\infty} x e^{-x} = 0$ · $\lim\limits_{x \to 0^+} x\ln x = 0$
+Asymptote horizontale $y = L$ si $f \to L$ en $\pm\infty$ ; verticale $x = a$ si $f \to \pm\infty$ en $a$.
+:::
+
+:::coeur Dérivées (chapitre 5)
+
+| $f$ | $f'$ | $f$ | $f'$ |
+| $k$ | $0$ | $u + v$ | $u' + v'$ |
+| $x^n$ | $nx^{n-1}$ | $ku$ | $ku'$ |
+| $\frac{1}{x}$ | $-\frac{1}{x^2}$ | $uv$ | $u'v + uv'$ |
+| $\sqrt{x}$ | $\frac{1}{2\sqrt{x}}$ | $\frac{u}{v}$ | $\frac{u'v - uv'}{v^2}$ |
+| $e^x$ | $e^x$ | $e^u$ | $u'e^u$ |
+| $\ln x$ | $\frac{1}{x}$ | $\ln u$ | $\frac{u'}{u}$ |
+| $\sin x$ | $\cos x$ | $u^n$ | $nu'u^{n-1}$ |
+| $\cos x$ | $-\sin x$ | $\sqrt{u}$ | $\frac{u'}{2\sqrt{u}}$ |
+
+Tangente en $a$ : $y = f'(a)(x - a) + f(a)$. $f' > 0$ → ↗ ; $f' < 0$ → ↘ ; $f'$ s'annule en changeant de signe → extremum.
+:::
+
+:::coeur Intégrales (chapitre 6)
+$\displaystyle\int_a^b f(x)\dx = F(b) - F(a)$ avec $F' = f$.
+Primitives : $x^n \to \dfrac{x^{n+1}}{n + 1}$ · $\dfrac{1}{x} \to \ln x$ · $\dfrac{1}{x^2} \to -\dfrac{1}{x}$ · $\dfrac{1}{\sqrt{x}} \to 2\sqrt{x}$ · $e^{ax} \to \dfrac{e^{ax}}{a}$ · $\cos(ax) \to \dfrac{\sin(ax)}{a}$ · $\sin(ax) \to -\dfrac{\cos(ax)}{a}$
+Composées : $u'e^u \to e^u$ · $\dfrac{u'}{u} \to \ln|u|$ · $u'u^n \to \dfrac{u^{n+1}}{n + 1}$ · $\dfrac{u'}{\sqrt{u}} \to 2\sqrt{u}$
+Chasles : $\int_a^b + \int_b^c = \int_a^c$ · $\int_a^a = 0$ · $\int_b^a = -\int_a^b$
+Aire entre deux courbes : $\int_a^b (\text{dessus} - \text{dessous})$ · Valeur moyenne : $\dfrac{1}{b - a}\int_a^b f$
+IPP : $\displaystyle\int_a^b uv' = \big[uv\big]_a^b - \int_a^b u'v$, avec $u$ choisi dans l'ordre L-P-E-T.
+:::
+
+:::coeur Vecteurs (chapitre 7)
+$\V{AB}\,(x_B - x_A\,;\,y_B - y_A)$ · $\|\vec u\| = \sqrt{x^2 + y^2\,(+ z^2)}$ · milieu $\left(\dfrac{x_A + x_B}{2}\,;\,\dfrac{y_A + y_B}{2}\right)$ · Chasles : $\V{AB} + \V{BC} = \V{AC}$
+Colinéaires : $xy' - yx' = 0$ · Produit scalaire : $\vec u \cdot \vec v = xx' + yy'\,(+ zz') = \|\vec u\|\|\vec v\|\cos\theta$ · orthogonaux ⇔ $\vec u \cdot \vec v = 0$
+Droite $ax + by + c = 0$ : directeur $(-b\,;\,a)$, normal $(a\,;\,b)$ · $y = mx + p$ : $m = \dfrac{y_B - y_A}{x_B - x_A}$ · perpendiculaires : $mm' = -1$
+$\vec u \wedge \vec v = (yz' - zy'\,;\,zx' - xz'\,;\,xy' - yx')$ · aire du parallélogramme $= \|\vec u \wedge \vec v\|$ · plan : $ax + by + cz + d = 0$ avec $\vec n\,(a\,;\,b\,;\,c)$
+:::
+
+:::coeur Nombres complexes (chapitre 8)
+$i^2 = -1$ · $z = a + ib$ · $\bar z = a - ib$ · $z\bar z = a^2 + b^2$ · quotient : × le conjugué du dénominateur
+$|z| = \sqrt{a^2 + b^2}$ · $\cos\theta = \dfrac{a}{|z|}$, $\sin\theta = \dfrac{b}{|z|}$ · $z = r(\cos\theta + i\sin\theta) = re^{i\theta}$
+$re^{i\alpha} \times r'e^{i\beta} = rr'e^{i(\alpha + \beta)}$ · $(re^{i\theta})^n = r^n e^{in\theta}$ · $e^{i\pi} = -1$ · $e^{i\pi/2} = i$
+$\Delta < 0$ : $z = \dfrac{-b \pm i\sqrt{-\Delta}}{2a}$ (solutions conjuguées) · $AB = |z_B - z_A|$ · $|z - z_A| = r$ : cercle
+Impédances : $Z_R = R$, $Z_L = jL\omega$, $Z_C = \dfrac{1}{jC\omega}$ ; en série elles s'additionnent ; $U = ZI$.
+:::
+
+:::examen Le jour de l'épreuve
+Dors bien la veille : le cerveau consolide pendant le sommeil. Relis seulement ce formulaire et ton carnet d'erreurs.
+Lis **tout** le sujet avant de commencer. Commence par les questions que tu sais faire. Écris les formules que tu utilises.
+**Vérifie** chaque résultat que tu peux vérifier (remplacer la solution, dériver la primitive, tester $x = 0$ ou $x = 1$).
+Si tu bloques, passe à la suite et reviens plus tard. En QCM, **élimine** les réponses impossibles et **teste** les autres.
+Si tu as fait les exercices de ce guide, tu as déjà vu tous les types de questions. Le reste, c'est du calme et de la méthode. **Bon courage !**
+:::
+
+# 11 | Cartes mémoire | 100 questions-réponses à réciter : cache la colonne de droite
+
+:::methode Comment utiliser les cartes mémoire
++ Cache la colonne de droite avec une feuille. Lis la question, réponds **à voix haute** ou sur un brouillon.
++ Découvre la réponse. Si c'est juste, coche ; si c'est faux, entoure le numéro.
++ Le lendemain, refais seulement les numéros entourés. Chaque dimanche, refais tout.
+Tu peux aussi recopier les cartes sur de vrais bristols (question au recto, réponse au verso) : les écrire est déjà un excellent entraînement.
+:::
+
+## 11.1 Calcul et équations
+
+| N° | Question | Réponse |
+| 1 | $(-)\times(-) = ?$ | $+$ |
+| 2 | $-3^2$ et $(-3)^2$ ? | $-9$ et $9$ |
+| 3 | Ordre des priorités ? | parenthèses, puissances, × ÷, + − |
+| 4 | $\frac{a}{b} \div \frac{c}{d}$ ? | $\frac{a}{b} \times \frac{d}{c}$ |
+| 5 | $a^n \times a^m$ ? | $a^{n+m}$ |
+| 6 | $a^{-n}$ ? | $\frac{1}{a^n}$ |
+| 7 | $a^0$ ? | $1$ |
+| 8 | $(a^n)^m$ ? | $a^{nm}$ |
+| 9 | $\sqrt{50}$ ? | $5\sqrt{2}$ |
+| 10 | $\frac{1}{\sqrt{2}}$ sans racine en bas ? | $\frac{\sqrt{2}}{2}$ |
+| 11 | $(a + b)^2$ ? | $a^2 + 2ab + b^2$ |
+| 12 | $(a - b)^2$ ? | $a^2 - 2ab + b^2$ |
+| 13 | $a^2 - b^2$ ? | $(a - b)(a + b)$ |
+| 14 | $b - a$ en fonction de $a - b$ ? | $-(a - b)$ |
+| 15 | Quand peut-on barrer dans une fraction ? | seulement un **facteur** commun à tout le haut et tout le bas |
+| 16 | Produit nul ? | $AB = 0 \Leftrightarrow A = 0$ ou $B = 0$ |
+| 17 | $\Delta$ ? | $b^2 - 4ac$ |
+| 18 | Solutions si $\Delta > 0$ ? | $\frac{-b \pm \sqrt{\Delta}}{2a}$ |
+| 19 | Solution si $\Delta = 0$ ? | $-\frac{b}{2a}$ |
+| 20 | Somme et produit des racines ? | $-\frac{b}{a}$ et $\frac{c}{a}$ |
+| 21 | Factorisation d'un trinôme ($\Delta > 0$) ? | $a(x - x_1)(x - x_2)$ |
+| 22 | Quand change-t-on le sens d'une inégalité ? | quand on multiplie/divise par un négatif |
+| 23 | Signe de $ax^2 + bx + c$ ? | signe de $a$ sauf entre les racines |
+| 24 | Première question de la carte des équations ? | y a-t-il un $x$ au dénominateur ? |
+| 25 | $x^4 - 5x^2 + 4 = 0$ : quelle astuce ? | poser $X = x^2$ |
+
+## 11.2 Trigonométrie et fonctions
+
+| N° | Question | Réponse |
+| 26 | CAH SOH TOA ? | cos = adj/hyp, sin = opp/hyp, tan = opp/adj |
+| 27 | $180°$ en radians ? | $\pi$ |
+| 28 | $\cos\frac{\pi}{3}$, $\sin\frac{\pi}{3}$ ? | $\frac{1}{2}$, $\frac{\sqrt{3}}{2}$ |
+| 29 | $\cos\frac{\pi}{6}$, $\sin\frac{\pi}{6}$ ? | $\frac{\sqrt{3}}{2}$, $\frac{1}{2}$ |
+| 30 | $\cos\frac{\pi}{4}$ ? | $\frac{\sqrt{2}}{2}$ |
+| 31 | $\cos\pi$, $\sin\frac{\pi}{2}$ ? | $-1$, $1$ |
+| 32 | $\cos^2 + \sin^2$ ? | $1$ |
+| 33 | $\cos(-\theta)$, $\sin(-\theta)$ ? | $\cos\theta$, $-\sin\theta$ |
+| 34 | $\cos(\pi - \theta)$, $\sin(\pi - \theta)$ ? | $-\cos\theta$, $\sin\theta$ |
+| 35 | Signes dans le 2e quart ? | cos $-$, sin $+$ |
+| 36 | Mesure principale : quel intervalle ? | $\of{-\pi}{\pi}$ |
+| 37 | $\cos x = \cos\alpha$ ? | $x = \alpha$ ou $x = -\alpha$ ($+ 2k\pi$) |
+| 38 | $\sin x = \sin\alpha$ ? | $x = \alpha$ ou $x = \pi - \alpha$ ($+ 2k\pi$) |
+| 39 | Période de $\sin(\omega t)$ ? | $\frac{2\pi}{\omega}$ |
+| 40 | Les 3 interdits du domaine ? | $\div 0$ ; $\sqrt{\text{négatif}}$ ; $\ln(\leq 0)$ |
+| 41 | $e^0$, $\ln 1$, $\ln e$ ? | $1$, $0$, $1$ |
+| 42 | $\ln(ab)$ ? | $\ln a + \ln b$ |
+| 43 | $\ln\frac{a}{b}$ ? | $\ln a - \ln b$ |
+| 44 | $\ln(a^n)$ ? | $n\ln a$ |
+| 45 | $e^{\ln x}$ et $\ln(e^x)$ ? | $x$ et $x$ |
+| 46 | $e^x = -2$ ? | aucune solution |
+| 47 | Limite en $+\infty$ d'une fraction de polynômes ? | quotient des termes de plus haut degré |
+| 48 | Qui gagne : $e^x$, $x^n$, $\ln x$ ? | $e^x$, puis $x^n$, puis $\ln x$ |
+| 49 | Asymptote horizontale ? | $\lim\limits_{\pm\infty} f = L$ → $y = L$ |
+| 50 | Asymptote verticale ? | $\lim\limits_{a} f = \pm\infty$ → $x = a$ |
+
+## 11.3 Dérivées et intégrales
+
+| N° | Question | Réponse |
+| 51 | $(x^n)'$ ? | $nx^{n-1}$ |
+| 52 | $\left(\frac{1}{x}\right)'$ ? | $-\frac{1}{x^2}$ |
+| 53 | $(\sqrt{x})'$ ? | $\frac{1}{2\sqrt{x}}$ |
+| 54 | $(\ln x)'$ ? | $\frac{1}{x}$ |
+| 55 | $(\cos x)'$, $(\sin x)'$ ? | $-\sin x$, $\cos x$ |
+| 56 | $(uv)'$ ? | $u'v + uv'$ |
+| 57 | $\left(\frac{u}{v}\right)'$ ? | $\frac{u'v - uv'}{v^2}$ |
+| 58 | $(e^u)'$ ? | $u'e^u$ |
+| 59 | $(\ln u)'$ ? | $\frac{u'}{u}$ |
+| 60 | $(u^n)'$ ? | $nu'u^{n-1}$ |
+| 61 | Comment reconnaître la forme à dériver ? | l'opération faite **en dernier** |
+| 62 | Équation de la tangente en $a$ ? | $y = f'(a)(x - a) + f(a)$ |
+| 63 | $f' > 0$ sur $I$ ? | $f$ croissante sur $I$ |
+| 64 | $f'$ passe de $+$ à $-$ en $a$ ? | maximum en $a$ |
+| 65 | Les 5 étapes de l'étude de variations ? | domaine, $f'$ factorisée, signe, tableau, valeurs |
+| 66 | Vitesse et accélération ? | $v = x'$, $a = v'$ |
+| 67 | Primitive de $x^n$ ? | $\frac{x^{n+1}}{n + 1}$ |
+| 68 | Primitive de $\frac{1}{x}$ ? | $\ln x$ |
+| 69 | Primitive de $e^{ax}$ ? | $\frac{1}{a}e^{ax}$ |
+| 70 | Primitive de $\sin x$ ? | $-\cos x$ |
+| 71 | Primitive de $\frac{u'}{u}$ ? | $\ln|u|$ |
+| 72 | Primitive de $u'e^u$ ? | $e^u$ |
+| 73 | $\int_a^b f$ ? | $F(b) - F(a)$ |
+| 74 | Aire entre deux courbes ? | $\int_a^b (\text{dessus} - \text{dessous})$ |
+| 75 | Valeur moyenne ? | $\frac{1}{b - a}\int_a^b f$ |
+| 76 | Formule d'IPP ? | $\int uv' = [uv] - \int u'v$ |
+| 77 | Ordre L-P-E-T ? | Log, Polynôme, Exp, Trigo (pour choisir $u$) |
+| 78 | Contrôle d'une primitive ? | la dériver |
+
+## 11.4 Vecteurs et complexes
+
+| N° | Question | Réponse |
+| 79 | Coordonnées de $\V{AB}$ ? | arrivée moins départ |
+| 80 | Norme de $(x\,;\,y)$ ? | $\sqrt{x^2 + y^2}$ |
+| 81 | Milieu de $[AB]$ ? | moyenne des coordonnées |
+| 82 | Colinéaires ? | $xy' - yx' = 0$ |
+| 83 | Produit scalaire en coordonnées ? | $xx' + yy'\,(+ zz')$ |
+| 84 | Orthogonaux ? | produit scalaire nul |
+| 85 | $\cos$ de l'angle entre $\vec u$ et $\vec v$ ? | $\frac{\vec u \cdot \vec v}{\|\vec u\|\|\vec v\|}$ |
+| 86 | Vecteur directeur de $ax + by + c = 0$ ? | $(-b\,;\,a)$ |
+| 87 | Droites perpendiculaires ? | $mm' = -1$ |
+| 88 | Que représente $\|\vec u \wedge \vec v\|$ ? | l'aire du parallélogramme |
+| 89 | Plan de normale $(a\,;\,b\,;\,c)$ ? | $ax + by + cz + d = 0$ |
+| 90 | $i^2$, $i^3$, $i^4$ ? | $-1$, $-i$, $1$ |
+| 91 | $\Im(3 - 5i)$ ? | $-5$ |
+| 92 | Conjugué de $a + ib$ ? | $a - ib$ |
+| 93 | $z\bar z$ ? | $a^2 + b^2$ |
+| 94 | Diviser par un complexe ? | × le conjugué en haut et en bas |
+| 95 | Module de $a + ib$ ? | $\sqrt{a^2 + b^2}$ |
+| 96 | Forme exponentielle ? | $re^{i\theta}$ |
+| 97 | $e^{i\theta}$ ? | $\cos\theta + i\sin\theta$ |
+| 98 | Produit en forme exponentielle ? | modules ×, arguments + |
+| 99 | Solutions de $az^2 + bz + c = 0$ si $\Delta < 0$ ? | $\frac{-b \pm i\sqrt{-\Delta}}{2a}$ |
+| 100 | $|z - z_A| = r$ ? | cercle de centre $A$, de rayon $r$ |
+
+# 12 | Lexique français–italien | Le vocabulaire des mathématiques dans les deux langues
+
+:::note
+L'examen est en français : apprends les mots **français**. Ce lexique t'aide seulement à faire le lien avec ce que tu connais en italien.
+:::
+
+| Français | Italiano | Français | Italiano |
+| addition, somme | addizione, somma | asymptote | asintoto |
+| soustraction, différence | sottrazione, differenza | forme indéterminée | forma indeterminata |
+| multiplication, produit | moltiplicazione, prodotto | exponentielle | esponenziale |
+| division, quotient | divisione, quoziente | logarithme népérien | logaritmo naturale |
+| nombre entier / relatif | numero intero / relativo | dérivée, dériver | derivata, derivare |
+| nombre réel / complexe | numero reale / complesso | nombre dérivé | derivata in un punto |
+| fraction | frazione | tangente | retta tangente |
+| numérateur / dénominateur | numeratore / denominatore | coefficient directeur, pente | coefficiente angolare, pendenza |
+| dénominateur commun | denominatore comune | ordonnée à l'origine | intercetta (termine noto) |
+| simplifier | semplificare | primitive | primitiva |
+| puissance, exposant | potenza, esponente | intégrale | integrale |
+| racine carrée | radice quadrata | intégration par parties | integrazione per parti |
+| carré, cube | quadrato, cubo | aire | area |
+| valeur absolue | valore assoluto | valeur moyenne | valore medio |
+| développer | sviluppare, espandere | angle, degré, radian | angolo, grado, radiante |
+| factoriser | scomporre, fattorizzare | cercle trigonométrique | circonferenza goniometrica |
+| identité remarquable | prodotto notevole | hypoténuse | ipotenusa |
+| facteur commun | fattore comune | côté adjacent / opposé | cateto adiacente / opposto |
+| terme | termine | mesure principale | misura principale |
+| équation / inéquation | equazione / disequazione | vecteur | vettore |
+| inconnue | incognita | norme | norma, modulo |
+| résoudre | risolvere | colinéaires | paralleli (collineari) |
+| ensemble des solutions | insieme delle soluzioni | orthogonaux | ortogonali, perpendicolari |
+| ensemble vide | insieme vuoto | produit scalaire | prodotto scalare |
+| premier / second degré | primo / secondo grado | produit vectoriel | prodotto vettoriale |
+| discriminant | discriminante | milieu | punto medio |
+| racine (d'un polynôme) | radice, soluzione | droite, plan | retta, piano |
+| trinôme | trinomio | vecteur directeur / normal | vettore direttore / normale |
+| système d'équations | sistema di equazioni | repère orthonormé | riferimento cartesiano ortonormale |
+| tableau de signes | tabella dei segni | abscisse / ordonnée | ascissa / ordinata |
+| strictement positif | strettamente positivo | partie réelle / imaginaire | parte reale / immaginaria |
+| positif ou nul | non negativo (≥ 0) | conjugué | coniugato |
+| intervalle | intervallo | module / argument | modulo / argomento |
+| borne incluse / exclue | estremo incluso / escluso | forme algébrique | forma algebrica |
+| fonction | funzione | forme exponentielle | forma esponenziale |
+| ensemble de définition | dominio, campo di esistenza | affixe | affisso (numero associato al punto) |
+| image / antécédent | immagine / controimmagine | médiatrice | asse del segmento |
+| courbe représentative | grafico | impédance, déphasage | impedenza, sfasamento |
+| croissante / décroissante | crescente / decrescente | montrer, démontrer | mostrare, dimostrare |
+| tableau de variations | tabella di variazione | en déduire | dedurne |
+| extremum, maximum, minimum | estremo, massimo, minimo | justifier | giustificare |
+| limite, tend vers | limite, tende a | calculer, déterminer | calcolare, determinare |
+

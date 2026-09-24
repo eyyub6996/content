@@ -1,0 +1,650 @@
+%% Chapitre 8 — Les nombres complexes
+# 8 | Les nombres complexes | Un nombre dont le carré vaut −1 : de la « magie » qui est l'outil de base de l'électrotechnique
+
+:::objectifs
+- calculer avec la forme algébrique $a + ib$ (somme, produit, quotient, conjugué) ;
+- placer un complexe dans le plan, calculer son **module** et son **argument** ;
+- passer de la forme algébrique à la forme **exponentielle** $re^{i\theta}$, et inversement ;
+- résoudre des équations dans $\C$ (1er degré, avec $\bar z$, 2e degré avec $\Delta < 0$) ;
+- interpréter géométriquement (distance, cercle, médiatrice) et utiliser les **impédances**.
+:::
+
+:::note Temps conseillé : 6 séances (semaine 7 du planning).
+**Prérequis :** développer (chapitre 1), $\Delta$ (chapitre 2), cercle trigonométrique et recherche d'angle (chapitre 3, section 3.5 surtout).
+:::
+
+## 8.1 L'idée : le nombre $i$
+
+:::idee
+$x^2 = -1$ n'a pas de solution parmi les nombres réels. Les mathématiciens ont inventé un nombre, $i$, avec la règle $i^2 = -1$. Tout le reste en découle.
+Un nombre complexe s'écrit $z = a + ib$ ($a$ et $b$ réels) : $a$ est la **partie réelle** $\Re(z)$, $b$ est la **partie imaginaire** $\Im(z)$. C'est la **forme algébrique**.
+En électrotechnique, on écrit $j$ au lieu de $i$ (car $i$ désigne déjà le courant). C'est exactement la même chose.
+:::
+
+:::coeur
+$i^2 = -1$ · $i^3 = i^2 \times i = -i$ · $i^4 = i^2 \times i^2 = 1$ · puis ça **recommence tous les 4** : $i^5 = i$, $i^6 = -1$…
+Pour $i^n$ : je prends le **reste de la division de $n$ par 4**. $i^{10}$ : $10 = 2 \times 4 + 2$ → $i^2 = -1$.
+$\Im(z)$ est le nombre **sans le $i$** : $\Im(3 + 2i) = 2$, pas $2i$.
+$z$ est **réel** si $\Im(z) = 0$ ; **imaginaire pur** si $\Re(z) = 0$ (par exemple $5i$).
+Deux complexes sont égaux ⇔ **même partie réelle ET même partie imaginaire**. (Très utile pour résoudre des équations.)
+:::
+
+## 8.2 Calculer avec les complexes
+
+:::coeur
+**Somme** : les réels avec les réels, les imaginaires avec les imaginaires. $(3 - 2i) + (-1 + 5i) = 2 + 3i$.
+**Produit** : je développe comme d'habitude, puis je remplace $i^2$ par $-1$.
+**Conjugué** : je change le signe de la partie imaginaire. $\overline{a + ib} = a - ib$. Et $z \times \bar z = a^2 + b^2$ (un réel positif).
+**Quotient** : je multiplie en haut et en bas par le **conjugué du dénominateur** : le bas devient $a^2 + b^2$ (un nombre réel).
+:::
+
+:::exemple Exemple guidé 1 · produit : $(1 + 2i)(3 - i)$
++ 4 poignées de main : $1 \times 3 = 3$ ; $1 \times (-i) = -i$ ; $2i \times 3 = 6i$ ; $2i \times (-i) = -2i^2$.
++ Je remplace $i^2$ par $-1$ : $-2i^2 = -2 \times (-1) = +2$.
++ Total : $3 - i + 6i + 2 = 5 + 5i$.
+:::
+
+:::exemple Exemple guidé 2 · carré : $(2 - 3i)^2$
++ Identité $(a - b)^2$ avec $a = 2$, $b = 3i$ : $4 - 2 \times 2 \times 3i + (3i)^2$.
++ $(3i)^2 = 9i^2 = -9$.
++ Total : $4 - 12i - 9 = -5 - 12i$.
+:::
+
+:::exemple Exemple guidé 3 · quotient : $\dfrac{3 + i}{1 - 2i}$
++ Conjugué du bas : $1 + 2i$. Je multiplie en haut et en bas.
++ Haut : $(3 + i)(1 + 2i) = 3 + 6i + i + 2i^2 = 3 + 7i - 2 = 1 + 7i$.
++ Bas : $(1 - 2i)(1 + 2i) = 1^2 + 2^2 = 5$ (formule $z\bar z = a^2 + b^2$).
++ Résultat : $\dfrac{1 + 7i}{5} = \dfrac{1}{5} + \dfrac{7}{5}i$.
+:::
+
+:::pourquoi Pourquoi le conjugué fait disparaître $i$ ?
+$(a + ib)(a - ib) = a^2 - (ib)^2 = a^2 - i^2b^2 = a^2 + b^2$. Le $i$ disparaît !
+C'est pour ça qu'on multiplie par le conjugué : le dénominateur devient un nombre réel ordinaire.
+:::
+
+## 8.3 Le plan complexe, le module, l'argument
+
+:::idee
+$z = a + ib$ correspond au point $M(a\,;\,b)$ du plan (on dit que $z$ est l'**affixe** de $M$).
+Comme avec un GPS, on peut décrire ce point de deux façons : « $a$ vers la droite et $b$ vers le haut » (forme algébrique), ou « à une **distance** $r$ dans la **direction** $\theta$ » (forme trigonométrique).
+:::
+
+@fig plan_complexe:42 conjugue:34 | À gauche : module (distance à l'origine) et argument (angle). À droite : le conjugué est le symétrique par rapport à l'axe horizontal.
+
+:::coeur
+**Module :** $|z| = r = \sqrt{a^2 + b^2}$ (la distance de $O$ à $M$ : Pythagore).
+**Argument :** $\arg z = \theta$ tel que $\cos\theta = \dfrac{a}{r}$ et $\sin\theta = \dfrac{b}{r}$ (on le donne en général dans $\of{-\pi}{\pi}$).
+**Distance** entre $A$ et $B$ : $AB = |z_B - z_A|$. **Milieu** : $\dfrac{z_A + z_B}{2}$.
+$|z_1 z_2| = |z_1| \times |z_2|$ · $\left|\dfrac{z_1}{z_2}\right| = \dfrac{|z_1|}{|z_2|}$ · $|z^n| = |z|^n$.
+:::
+
+:::methode Trouver l'argument
++ Je calcule $r = \sqrt{a^2 + b^2}$.
++ Je calcule $\cos\theta = \frac{a}{r}$ et $\sin\theta = \frac{b}{r}$ (je simplifie, par ex. $\frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}$).
++ J'utilise la méthode du chapitre 3.5 : signes → quart ; valeurs → angle de base ; j'ajuste.
++ Cas immédiats : réel positif → $0$ · réel négatif → $\pi$ · $bi$ avec $b > 0$ → $\frac{\pi}{2}$ · $bi$ avec $b < 0$ → $-\frac{\pi}{2}$.
+:::
+
+:::exemple Exemple guidé 1 : module et argument de $z = 1 + i$
++ $a = 1$, $b = 1$. $r = \sqrt{1 + 1} = \sqrt{2}$.
++ $\cos\theta = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}$ ; $\sin\theta = \frac{\sqrt{2}}{2}$.
++ Tous deux positifs → 1er quart. Base $\frac{\pi}{4}$ → $\theta = \frac{\pi}{4}$.
+:::
+
+:::exemple Exemple guidé 2 : $z = -1 + i\sqrt{3}$
++ $r = \sqrt{(-1)^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = 2$.
++ $\cos\theta = -\frac{1}{2}$ ; $\sin\theta = \frac{\sqrt{3}}{2}$.
++ cos −, sin + → 2e quart. Base $\frac{\pi}{3}$ → $\theta = \pi - \frac{\pi}{3} = \frac{2\pi}{3}$.
+:::
+
+:::exemple Exemple guidé 3 : $z = -1 - i$
++ $r = \sqrt{2}$. $\cos\theta = -\frac{\sqrt{2}}{2}$ ; $\sin\theta = -\frac{\sqrt{2}}{2}$.
++ cos −, sin − → 3e quart. Base $\frac{\pi}{4}$ → $\theta = -\left(\pi - \frac{\pi}{4}\right) = -\frac{3\pi}{4}$.
+:::
+
+## 8.4 Forme trigonométrique et forme exponentielle
+
+:::coeur
+$$z = r(\cos\theta + i\sin\theta) = re^{i\theta} \qquad \text{(formule d'Euler : } e^{i\theta} = \cos\theta + i\sin\theta\text{)}$$
+$$re^{i\alpha} \times r'e^{i\beta} = rr'\,e^{i(\alpha + \beta)} \qquad \frac{re^{i\alpha}}{r'e^{i\beta}} = \frac{r}{r'}\,e^{i(\alpha - \beta)} \qquad \left(re^{i\theta}\right)^n = r^n e^{in\theta}$$
+**Multiplier** : modules × modules, arguments + arguments. **Puissance $n$** : module puissance $n$, argument × $n$ (formule de Moivre).
+Valeurs à connaître : $e^{i0} = 1$ · $e^{i\pi/2} = i$ · $e^{i\pi} = -1$ · $e^{-i\pi/2} = -i$ · $\overline{re^{i\theta}} = re^{-i\theta}$.
+:::
+
+:::pourquoi Pourquoi la forme exponentielle est-elle si pratique ?
+Ce sont exactement les **règles des puissances** du chapitre 1 : $e^{i\alpha} \times e^{i\beta} = e^{i(\alpha + \beta)}$, comme $a^n \times a^m = a^{n+m}$.
+C'est tout l'intérêt de la forme exponentielle : les multiplications et les puissances deviennent très faciles.
+Géométriquement, multiplier par $e^{i\alpha}$ = **tourner** d'un angle $\alpha$. Multiplier par $i = e^{i\pi/2}$ = tourner d'un quart de tour.
+:::
+
+@fig rotation_i:36 | Multiplier par $i$ fait tourner le point de 90° autour de l'origine.
+
+:::exemple Exemple guidé 1 · algébrique → exponentielle : $z = 1 - i$
++ $r = \sqrt{1 + 1} = \sqrt{2}$.
++ $\cos\theta = \frac{\sqrt{2}}{2}$ ; $\sin\theta = -\frac{\sqrt{2}}{2}$ → 4e quart, base $\frac{\pi}{4}$ → $\theta = -\frac{\pi}{4}$.
++ $1 - i = \sqrt{2}\,e^{-i\pi/4}$.
+:::
+
+:::exemple Exemple guidé 2 · exponentielle → algébrique : $z = 2e^{-i\pi/3}$
++ J'utilise Euler : $z = 2\left(\cos\left(-\frac{\pi}{3}\right) + i\sin\left(-\frac{\pi}{3}\right)\right)$.
++ $\cos\left(-\frac{\pi}{3}\right) = \frac{1}{2}$ ; $\sin\left(-\frac{\pi}{3}\right) = -\frac{\sqrt{3}}{2}$.
++ $z = 2 \times \frac{1}{2} + 2 \times \left(-\frac{\sqrt{3}}{2}\right)i = 1 - i\sqrt{3}$.
+:::
+
+:::exemple Exemple guidé 3 · puissance : $(1 + i\sqrt{3})^6$
++ Développer à la main serait très long. Je passe en forme exponentielle.
++ $1 + i\sqrt{3}$ : $r = \sqrt{1 + 3} = 2$ ; $\cos\theta = \frac{1}{2}$, $\sin\theta = \frac{\sqrt{3}}{2}$ → $\theta = \frac{\pi}{3}$. Donc $1 + i\sqrt{3} = 2e^{i\pi/3}$.
++ $\left(2e^{i\pi/3}\right)^6 = 2^6 e^{i6\pi/3} = 64\,e^{i2\pi}$.
++ $e^{i2\pi} = \cos 2\pi + i\sin 2\pi = 1$. Résultat : $64$.
+:::
+
+:::exemple Exemple guidé 4 · produit et quotient : $z_1 = 2e^{i\pi/6}$, $z_2 = 3e^{i\pi/3}$
++ $z_1 z_2$ : modules $2 \times 3 = 6$ ; arguments $\frac{\pi}{6} + \frac{\pi}{3} = \frac{\pi}{6} + \frac{2\pi}{6} = \frac{\pi}{2}$ → $6e^{i\pi/2} = 6i$.
++ $\frac{z_2}{z_1}$ : modules $\frac{3}{2}$ ; arguments $\frac{\pi}{3} - \frac{\pi}{6} = \frac{\pi}{6}$ → $\frac{3}{2}e^{i\pi/6}$.
+:::
+
+## 8.5 Équations dans $\C$
+
+:::coeur
+**1er degré :** comme dans $\R$. $(1 + i)z = 3 - i$ → $z = \frac{3 - i}{1 + i}$ → puis le quotient avec le conjugué.
+**Avec $\bar z$ :** j'écris $z = a + ib$, je remplace, et j'**identifie** partie réelle et partie imaginaire (2 équations, 2 inconnues).
+**2e degré avec $\Delta < 0$ :** $\quad z_1 = \dfrac{-b - i\sqrt{-\Delta}}{2a} \qquad z_2 = \dfrac{-b + i\sqrt{-\Delta}}{2a}$
+Les deux solutions sont **conjuguées**. $z^2 = -9$ → $z = \pm 3i$.
+:::
+
+:::exemple Exemple guidé 1 : $(1 + i)z = 3 - i$
++ J'isole $z$ : $z = \dfrac{3 - i}{1 + i}$.
++ × le conjugué $(1 - i)$ : haut $(3 - i)(1 - i) = 3 - 3i - i + i^2 = 3 - 4i - 1 = 2 - 4i$ ; bas $1 + 1 = 2$.
++ $z = \dfrac{2 - 4i}{2} = 1 - 2i$.
+:::
+
+:::exemple Exemple guidé 2 : $z + 2\bar z = 6 - 2i$
++ Je pose $z = a + ib$, donc $\bar z = a - ib$.
++ $z + 2\bar z = a + ib + 2a - 2ib = 3a - ib$.
++ J'identifie avec $6 - 2i$ : partie réelle $3a = 6$ → $a = 2$ ; partie imaginaire $-b = -2$ → $b = 2$.
++ $z = 2 + 2i$. Vérification : $2 + 2i + 2(2 - 2i) = 2 + 2i + 4 - 4i = 6 - 2i$ ✔
+:::
+
+:::exemple Exemple guidé 3 : $z^2 - 4z + 13 = 0$
++ $a = 1$, $b = -4$, $c = 13$. $\Delta = 16 - 52 = -36 < 0$ → deux solutions complexes conjuguées.
++ $\sqrt{-\Delta} = \sqrt{36} = 6$. $-b = 4$. $2a = 2$.
++ $z = \frac{4 \pm 6i}{2}$ → $z = 2 + 3i$ ou $z = 2 - 3i$.
++ Contrôle avec le raccourci : somme $= 4 = -\frac{b}{a}$ ✔ ; produit $= 2^2 + 3^2 = 13 = \frac{c}{a}$ ✔
+:::
+
+@fig racines_conj:30 | Les deux racines sont symétriques par rapport à l'axe réel (conjuguées).
+
+## 8.6 Géométrie avec les complexes
+
+:::coeur
+$|z - z_A| = r$ → les points à distance $r$ de $A$ → **cercle** de centre $A$ et de rayon $r$.
+$|z - z_A| \leq r$ → le **disque** (l'intérieur du cercle).
+$|z - z_A| = |z - z_B|$ → les points à égale distance de $A$ et de $B$ → **médiatrice** du segment $[AB]$.
+:::
+
+:::exemple Exemples corrigés
+$|z - 2| = 3$ : cercle de centre $A(2\,;\,0)$, rayon 3.
+$|z + 2i| = 1$ : attention, $z + 2i = z - (-2i)$ → cercle de centre $(0\,;\,-2)$, rayon 1.
+$|z - 1| = |z - i|$ : médiatrice de $[AB]$ avec $A(1\,;\,0)$ et $B(0\,;\,1)$, c'est la droite $y = x$.
+:::
+
+## 8.7 En électrotechnique : les impédances
+
+:::coeur
+**Résistance :** $Z_R = R$ · **Bobine :** $Z_L = jL\omega$ · **Condensateur :** $Z_C = \dfrac{1}{jC\omega} = -\dfrac{j}{C\omega}$.
+En **série**, elles s'additionnent : $Z = R + j\left(L\omega - \dfrac{1}{C\omega}\right)$. Loi d'Ohm complexe : $U = Z \times I$.
+$|Z|$ donne le rapport des amplitudes ($|U| = |Z| \times |I|$). $\arg(Z) = \varphi$ = **déphasage** entre tension et courant. $\cos\varphi$ = **facteur de puissance**.
+:::
+
+:::exemple Exemple guidé : circuit RL série, $R = 30\ \Omega$, $L\omega = 40\ \Omega$, $U = 230$ V
++ $Z = 30 + 40j$.
++ $|Z| = \sqrt{30^2 + 40^2} = \sqrt{900 + 1600} = \sqrt{2500} = 50\ \Omega$.
++ $\cos\varphi = \frac{30}{50} = 0{,}6$ ; $\sin\varphi = \frac{40}{50} = 0{,}8$ → $\varphi \approx 53°$ (le courant est en retard sur la tension).
++ $I = \frac{U}{|Z|} = \frac{230}{50} = 4{,}6$ A. Facteur de puissance $\cos\varphi = 0{,}6$.
+:::
+
+@fig impedance:38 | L'impédance $Z = 30 + 40j$ vue comme un point du plan : $|Z| = 50$ et $\varphi \approx 53°$.
+
+:::lire Comprendre l'énoncé
+**forme algébrique / trigonométrique / exponentielle** · **affixe** : le complexe associé à un point · **imaginaire pur** · **racines** d'un polynôme = ses solutions · « **les racines (réelles ou complexes)** » : il faut aussi compter les solutions complexes quand $\Delta < 0$.
+:::
+
+@page
+## 8.8 Exercices
+
+@serie 8A | Forme algébrique
+
+@exo 1
+Donne la partie réelle et la partie imaginaire de : $-4 + 7i$ ; $5i$ ; $-3$ ; $\frac{1 - i}{2}$.
+@sol
+$\Re = -4$, $\Im = 7$ · $\Re = 0$, $\Im = 5$ · $\Re = -3$, $\Im = 0$ · $\frac{1}{2} - \frac{1}{2}i$ : $\Re = \frac{1}{2}$, $\Im = -\frac{1}{2}$.
+@end
+
+@exo 1
+Calcule $(3 - 2i) + (-1 + 5i)$ et $(3 - 2i) - (-1 + 5i)$.
+@sol
+$2 + 3i$. Différence : $3 + 1 = 4$ ; $-2 - 5 = -7$ → $4 - 7i$.
+@check same((3-2*I)-(-1+5*I), 4-7*I)
+@end
+
+@exo 1
+Calcule $i^3$, $i^4$, $i^5$, $i^{10}$, $i^{2026}$.
+@sol
+$-i$ ; $1$ ; $i$ ; $-1$ ; $2026 = 4 \times 506 + 2$ → $i^2 = -1$.
+@check same(I**2026, -1)
+@end
+
+@exo 2
+Calcule $(1 + 2i)(3 - i)$.
+@sol
+$5 + 5i$ (exemple guidé 1 du 8.2).
+@check same((1+2*I)*(3-I), 5+5*I)
+@end
+
+@exo 2
+Calcule $(2 - 3i)^2$ et $(1 + i)^2$.
+@sol
+$-5 - 12i$ (exemple guidé 2). $(1 + i)^2 = 1 + 2i + i^2 = 2i$.
+@check same((2-3*I)**2, -5-12*I) and same((1+I)**2, 2*I)
+@end
+
+@exo 2
+Donne le conjugué de : $-2 + 5i$ ; $4i$ ; $7$. Puis calcule $(2 + i)(2 - i)$.
+@sol
+$-2 - 5i$ ; $-4i$ ; $7$ (un réel est son propre conjugué). $(2 + i)(2 - i) = a^2 + b^2 = 4 + 1 = 5$.
+@end
+
+@exo 3
+Forme algébrique de $\frac{1}{i}$ et de $\frac{3 + i}{1 - 2i}$.
+@sol
+$\frac{1}{i} = \frac{i}{i \times i} = \frac{i}{-1} = -i$. Second : $\frac{1}{5} + \frac{7}{5}i$ (exemple guidé 3).
+@check same(1/I, -I) and same((3+I)/(1-2*I), Rational(1,5)+Rational(7,5)*I)
+@end
+
+@exo 3
+Forme algébrique de $\frac{5 + 5i}{2 + i}$.
+@sol
+× $(2 - i)$ : haut $(5 + 5i)(2 - i) = 10 - 5i + 10i - 5i^2 = 15 + 5i$ ; bas $4 + 1 = 5$. → $3 + i$.
+@check same((5+5*I)/(2+I), 3+I)
+@end
+
+@exo 3
+Calcule $(1 + i)^4$ et $(1 + i)^8$.
+@sol
+$(1 + i)^2 = 2i$, donc $(1 + i)^4 = (2i)^2 = 4i^2 = -4$ et $(1 + i)^8 = (-4)^2 = 16$.
+@check same((1+I)**4, -4) and same((1+I)**8, 16)
+@end
+
+@exo 4
+Trouve les réels $x$ et $y$ tels que $2x + (y - 1)i = 4 + 3i$.
+@sol
+Égalité de deux complexes : parties réelles égales $2x = 4$ → $x = 2$ ; parties imaginaires égales $y - 1 = 3$ → $y = 4$.
+@end
+
+@serie 8B | Module et argument
+
+@exo 2
+Calcule le module de : $3 - 4i$ ; $-5$ ; $2i$ ; $1 - i$.
+@sol
+$5$ ; $5$ ; $2$ ; $\sqrt{2}$.
+@end
+
+@exo 2
+Calcule la distance entre les points $A$ d'affixe $1 + i$ et $B$ d'affixe $4 + 5i$.
+@sol
+$|z_B - z_A| = |3 + 4i| = 5$.
+@end
+
+@exo 3
+Donne un argument (dans $\of{-\pi}{\pi}$) de : $3$ ; $-i$ ; $-1 - i$ ; $\sqrt{3} + i$.
+@sol
+$0$ ; $-\frac{\pi}{2}$ ; $-\frac{3\pi}{4}$ ; $\sqrt{3} + i$ : $r = 2$, $\cos = \frac{\sqrt{3}}{2}$, $\sin = \frac{1}{2}$ → $\frac{\pi}{6}$.
+@check carg_is(-1-I, -3*pi/4) and carg_is(sqrt(3)+I, pi/6)
+@end
+
+@exo 3
+Donne le module et un argument de : $-2 + 2i$ ; $-3$ ; $1 - i\sqrt{3}$.
+@sol
+$-2 + 2i$ : $r = \sqrt{8} = 2\sqrt{2}$ ; $\cos = -\frac{\sqrt{2}}{2}$, $\sin = \frac{\sqrt{2}}{2}$ → 2e quart → $\frac{3\pi}{4}$.
+$-3$ : $r = 3$, $\theta = \pi$.
+$1 - i\sqrt{3}$ : $r = 2$ ; $\cos = \frac{1}{2}$, $\sin = -\frac{\sqrt{3}}{2}$ → $-\frac{\pi}{3}$.
+@check carg_is(-2+2*I, 3*pi/4) and carg_is(1-I*sqrt(3), -pi/3) and cmod(-2+2*I, 2*sqrt(2))
+@end
+
+@exo 3
+$z_1 = 3 + 4i$ et $z_2 = 1 - i$. Calcule $|z_1 z_2|$ et $\left|\frac{z_1}{z_2}\right|$ sans calculer le produit ni le quotient.
+@sol
+$|z_1| = 5$, $|z_2| = \sqrt{2}$. $|z_1 z_2| = 5\sqrt{2}$ ; $\left|\frac{z_1}{z_2}\right| = \frac{5}{\sqrt{2}} = \frac{5\sqrt{2}}{2}$.
+@check cmod((3+4*I)*(1-I), 5*sqrt(2))
+@end
+
+@exo 4
+Calcule le module de $(1 + i)^{10}$.
+@sol
+$|1 + i| = \sqrt{2}$, donc $|(1 + i)^{10}| = (\sqrt{2})^{10} = 2^5 = 32$.
+@check cmod((1+I)**10, 32)
+@end
+
+@serie 8C | Formes trigonométrique et exponentielle
+
+@exo 3
+Donne la forme exponentielle de : $-2$ ; $1 - i$ ; $-\sqrt{3} + i$.
+@sol
+$-2 = 2e^{i\pi}$. $1 - i = \sqrt{2}\,e^{-i\pi/4}$.
+$-\sqrt{3} + i$ : $r = 2$, $\cos = -\frac{\sqrt{3}}{2}$, $\sin = \frac{1}{2}$ → 2e quart, base $\frac{\pi}{6}$ → $\frac{5\pi}{6}$ → $2e^{i5\pi/6}$.
+@check same(2*exp(I*5*pi/6), -sqrt(3)+I)
+@end
+
+@exo 3
+Donne la forme algébrique de : $4e^{i\pi/2}$ ; $2e^{-i\pi/3}$ ; $\sqrt{2}\,e^{i3\pi/4}$.
+@sol
+$4(0 + i) = 4i$. $1 - i\sqrt{3}$. $\sqrt{2}\left(-\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}\right) = -1 + i$.
+@check same(sqrt(2)*exp(3*I*pi/4), -1+I) and same(2*exp(-I*pi/3), 1-I*sqrt(3))
+@end
+
+@exo 3
+$z_1 = 2e^{i\pi/6}$, $z_2 = 3e^{i\pi/3}$. Calcule $z_1 z_2$ et $\frac{z_2}{z_1}$.
+@sol
+$6i$ et $\frac{3}{2}e^{i\pi/6}$ (exemple guidé 4 du 8.4).
+@check same(2*exp(I*pi/6)*3*exp(I*pi/3), 6*I)
+@end
+
+@exo 4
+Calcule $(1 + i\sqrt{3})^6$.
+@sol
+$64$ (exemple guidé 3 du 8.4).
+@check same((1+I*sqrt(3))**6, 64)
+@end
+
+@exo 4
+Calcule $(1 - i)^{10}$.
+@sol
+$1 - i = \sqrt{2}\,e^{-i\pi/4}$. $(\sqrt{2})^{10} = 2^5 = 32$. Argument $-\frac{10\pi}{4} = -\frac{5\pi}{2} = -\frac{\pi}{2} - 2\pi$ → $-\frac{\pi}{2}$.
+$(1 - i)^{10} = 32\,e^{-i\pi/2} = -32i$.
+@check same((1-I)**10, -32*I)
+@end
+
+@exo 4
+Calcule $(\sqrt{3} + i)^3$.
+@sol
+$\sqrt{3} + i = 2e^{i\pi/6}$. $(2e^{i\pi/6})^3 = 8e^{i\pi/2} = 8i$.
+@check same((sqrt(3)+I)**3, 8*I)
+@end
+
+@exo 4
+Écris sous forme trigonométrique $r(\cos\theta + i\sin\theta)$ : a) $3i$ ; b) $-1 - i\sqrt{3}$.
+@sol
+a) $r = 3$, $\theta = \frac{\pi}{2}$ : $3\left(\cos\frac{\pi}{2} + i\sin\frac{\pi}{2}\right)$.
+b) $r = 2$ ; $\cos = -\frac{1}{2}$, $\sin = -\frac{\sqrt{3}}{2}$ → 3e quart, base $\frac{\pi}{3}$ → $-\frac{2\pi}{3}$ : $2\left(\cos\left(-\frac{2\pi}{3}\right) + i\sin\left(-\frac{2\pi}{3}\right)\right)$.
+@check carg_is(-1-I*sqrt(3), -2*pi/3)
+@end
+
+@serie 8D | Équations dans $\C$
+
+@exo 2
+Résous $3z - 2i = 6 + i$.
+@sol
+$3z = 6 + 3i$ → $z = 2 + i$.
+@check csols(3*z-2*I-6-I, [2+I])
+@end
+
+@exo 3
+Résous $(1 + i)z = 3 - i$.
+@sol
+$z = 1 - 2i$ (exemple guidé 1 du 8.5).
+@check csols((1+I)*z-3+I, [1-2*I])
+@end
+
+@exo 3
+Résous $z^2 + 9 = 0$.
+@sol
+$z^2 = -9 = 9i^2$ → $z = 3i$ ou $z = -3i$.
+@check csols(z**2+9, [3*I, -3*I])
+@end
+
+@exo 3
+Résous $z^2 - 4z + 13 = 0$.
+@sol
+$z = 2 \pm 3i$ (exemple guidé 3 du 8.5).
+@check csols(z**2-4*z+13, [2+3*I, 2-3*I])
+@end
+
+@exo 3
+Résous $z^2 + 2z + 5 = 0$.
+@sol
+$\Delta = 4 - 20 = -16$, $\sqrt{16} = 4$ → $z = \frac{-2 \pm 4i}{2} = -1 \pm 2i$.
+@check csols(z**2+2*z+5, [-1+2*I, -1-2*I])
+@end
+
+@exo 4
+Résous $z + 2\bar z = 6 - 2i$.
+@sol
+$z = 2 + 2i$ (exemple guidé 2 du 8.5).
+@check same((2+2*I)+2*conjugate(2+2*I), 6-2*I)
+@end
+
+@exo 4
+Résous $2z^2 + 2z + 1 = 0$ et donne le module et l'argument des solutions.
+@sol
+$\Delta = 4 - 8 = -4$. $z = \frac{-2 \pm 2i}{4} = -\frac{1}{2} \pm \frac{1}{2}i$.
+Module $\sqrt{\frac{1}{4} + \frac{1}{4}} = \frac{\sqrt{2}}{2}$. Arguments : $\cos = -\frac{\sqrt{2}}{2}$, $\sin = \pm\frac{\sqrt{2}}{2}$ → $\frac{3\pi}{4}$ et $-\frac{3\pi}{4}$.
+Contrôle : somme $-1 = -\frac{b}{a}$ ✔ ; produit $\frac{1}{4} + \frac{1}{4} = \frac{1}{2} = \frac{c}{a}$ ✔
+@check csols(2*z**2+2*z+1, [Rational(-1,2)+I/2, Rational(-1,2)-I/2])
+@end
+
+@exo 4
+Résous $z^3 + z = 0$ dans $\C$.
+@sol
+$z(z^2 + 1) = 0$ → $z = 0$ ou $z^2 = -1$ → $z = i$ ou $z = -i$. $S = \{-i\,;\,0\,;\,i\}$.
+@check csols(z**3+z, [0, I, -I])
+@end
+
+@exo 4
+Résous $2z - i\bar z = 1 + 2i$.
+@sol
+$z = a + ib$, $\bar z = a - ib$. $i\bar z = ia - i^2 b = b + ia$.
+$2z - i\bar z = 2a + 2ib - b - ia = (2a - b) + i(2b - a)$.
+Identification : $2a - b = 1$ et $2b - a = 2$. De la 1re : $b = 2a - 1$ ; dans la 2e : $4a - 2 - a = 2$ → $a = \frac{4}{3}$, $b = \frac{5}{3}$.
+$z = \frac{4}{3} + \frac{5}{3}i$.
+@check same(2*(Rational(4,3)+Rational(5,3)*I)-I*conjugate(Rational(4,3)+Rational(5,3)*I), 1+2*I)
+@end
+
+@serie 8E | Géométrie et électrotechnique
+
+@exo 3
+Décris l'ensemble des points $M(z)$ tels que : a) $|z - 2| = 3$ ; b) $|z - 1| = |z - i|$.
+@sol
+a) Cercle de centre $A(2\,;\,0)$ et de rayon 3. b) Médiatrice de $[AB]$ avec $A(1\,;\,0)$, $B(0\,;\,1)$ : la droite $y = x$.
+@end
+
+@exo 3
+Décris l'ensemble des points $M(z)$ tels que : a) $|z - (1 + i)| = 2$ ; b) $|z + 2i| \leq 1$.
+@sol
+a) Cercle de centre $(1\,;\,1)$, rayon 2. b) $|z - (-2i)| \leq 1$ : disque de centre $(0\,;\,-2)$, rayon 1.
+@end
+
+@exo 3
+Le point $M$ a pour affixe $z = 2 + i$. Donne l'affixe de son image par la rotation de centre $O$ et d'angle $90°$.
+@sol
+Tourner de 90° = multiplier par $i$ : $i(2 + i) = 2i + i^2 = -1 + 2i$.
+@check same(I*(2+I), -1+2*I)
+@end
+
+@exo 4
+Circuit série : $R = 100\ \Omega$, $L\omega = 100\ \Omega$. Calcule $Z$, $|Z|$, le déphasage et $I$ pour $U = 230$ V.
+@sol
+$Z = 100 + 100j$. $|Z| = 100\sqrt{2} \approx 141\ \Omega$. $\cos\varphi = \sin\varphi = \frac{\sqrt{2}}{2}$ → $\varphi = \frac{\pi}{4} = 45°$. $I = \frac{230}{141} \approx 1{,}63$ A.
+@end
+
+@exo 4
+Circuit série RC : $R = 40\ \Omega$ et $\frac{1}{C\omega} = 30\ \Omega$. Calcule $Z$, $|Z|$, $\cos\varphi$ et $I$ pour $U = 230$ V.
+@sol
+$Z = 40 - 30j$ (le condensateur donne une partie imaginaire **négative**). $|Z| = \sqrt{1600 + 900} = 50\ \Omega$.
+$\cos\varphi = \frac{40}{50} = 0{,}8$ et $\sin\varphi = -0{,}6$ → $\varphi \approx -37°$ (le courant est en **avance** sur la tension).
+$I = \frac{230}{50} = 4{,}6$ A.
+@end
+
+@drill c_ops 15 101 3 | Sommes et produits
+@drill c_div 12 102 2 | Quotients
+@drill c_pow_i 9 103 3 | Puissances de $i$
+@drill c_mod 9 104 3 | Modules
+@drill c_arg 12 105 1 | Module, argument, forme exponentielle
+@drill c_exp2alg 9 106 2 | Forme exponentielle → algébrique
+@drill c_eq2 9 107 1 | Équations du 2e degré dans $\C$
+@drill c_eq1 9 108 2 | Équations du 1er degré dans $\C$
+
+## 8.9 QCM style examen
+
+@qcm
+$(1 + i)^2 =$
+A) $2$
+B) $2i$
+C) $0$
+D) $1 + i^2$
+@rep B | $1 + 2i + i^2 = 1 + 2i - 1 = 2i$. A oublie le double produit.
+@end
+
+@qcm
+$|-3 + 4i| =$
+A) $7$
+B) $5$
+C) $1$
+D) $25$
+@rep B | $\sqrt{9 + 16} = 5$. A additionne sans carrés, D oublie la racine.
+@end
+
+@qcm
+Un argument de $-2i$ est :
+A) $\frac{\pi}{2}$
+B) $-\frac{\pi}{2}$
+C) $\pi$
+D) $0$
+@rep B | $-2i$ est sur l'axe vertical, en bas.
+@end
+
+@qcm
+Le conjugué de $(2 - i)(1 + i)$ est :
+A) $3 + i$
+B) $3 - i$
+C) $1 + i$
+D) $-3 + i$
+@rep B | $(2 - i)(1 + i) = 2 + 2i - i - i^2 = 3 + i$, conjugué $3 - i$. A oublie de conjuguer.
+@end
+
+@qcm
+$e^{i\pi} =$
+A) $1$
+B) $-1$
+C) $i$
+D) $0$
+@rep B | $\cos\pi + i\sin\pi = -1$.
+@end
+
+@qcm
+Les racines de $z^2 + 2z + 5 = 0$ sont :
+A) $-1 \pm 2i$
+B) $1 \pm 2i$
+C) $-2 \pm i$
+D) $\pm 2i$
+@rep A | $\Delta = 4 - 20 = -16$ → $\frac{-2 \pm 4i}{2} = -1 \pm 2i$. B se trompe de signe sur $-b$.
+@end
+
+@qcm
+On note $z_1$, $z_2$ les racines de $5z^2 + 2z + 2$. Que vaut $z_1 z_2$ ?
+A) $\frac{2}{5}$
+B) $-\frac{2}{5}$
+C) $2$
+D) $\frac{5}{2}$
+@rep A | $\frac{c}{a} = \frac{2}{5}$. B est la somme.
+@end
+
+@qcm
+La forme exponentielle de $1 + i$ est :
+A) $\sqrt{2}\,e^{i\pi/4}$
+B) $2e^{i\pi/4}$
+C) $\sqrt{2}\,e^{i\pi/2}$
+D) $e^{i\pi/4}$
+@rep A | $r = \sqrt{2}$, $\theta = \frac{\pi}{4}$. B oublie la racine du module.
+@end
+
+@qcm
+$i^{2026} =$
+A) $1$
+B) $-1$
+C) $i$
+D) $-i$
+@rep B | $2026 = 4 \times 506 + 2$ → $i^2 = -1$.
+@end
+
+@qcm
+$(2 + i)(1 - i) =$
+A) $3 - i$
+B) $1 - i$
+C) $3 + i$
+D) $2 - i$
+@rep A | $2 - 2i + i - i^2 = 2 - i + 1 = 3 - i$. C se trompe sur $-i^2 = +1$… et sur le signe de $i$.
+@end
+
+@serie 8F | Bilan du chapitre 8 (35 minutes, sans aide)
+
+:::note
+**7 ou 8 justes : bravo, tu as vu tout le programme ! Passe aux révisions et aux examens blancs. 5 ou 6 : refais les séries 8B et 8C. Moins de 5 : reprends 3.5, puis 8.3 et 8.4.**
+:::
+
+@exo 2
+Calcule $(2 - i)(3 + 2i)$.
+@sol
+$6 + 4i - 3i - 2i^2 = 6 + i + 2 = 8 + i$.
+@check same((2-I)*(3+2*I), 8+I)
+@end
+
+@exo 3
+Forme algébrique de $\dfrac{4 + 2i}{1 - i}$.
+@sol
+× $(1 + i)$ : haut $(4 + 2i)(1 + i) = 4 + 4i + 2i + 2i^2 = 2 + 6i$ ; bas $2$. Résultat : $1 + 3i$.
+@check same((4+2*I)/(1-I), 1+3*I)
+@end
+
+@exo 1
+Calcule $i^{103}$.
+@sol
+$103 = 4 \times 25 + 3$ → $i^3 = -i$.
+@check same(I**103, -I)
+@end
+
+@exo 3
+Module et argument de $-\sqrt{3} - i$.
+@sol
+$r = \sqrt{3 + 1} = 2$ ; $\cos = -\frac{\sqrt{3}}{2}$, $\sin = -\frac{1}{2}$ → 3e quart, base $\frac{\pi}{6}$ → $\theta = -\frac{5\pi}{6}$.
+@check carg_is(-sqrt(3)-I, -5*pi/6)
+@end
+
+@exo 3
+Forme algébrique de $4e^{-i2\pi/3}$.
+@sol
+$4\left(-\frac{1}{2} - i\frac{\sqrt{3}}{2}\right) = -2 - 2\sqrt{3}\,i$.
+@check same(4*exp(-2*I*pi/3), -2-2*sqrt(3)*I)
+@end
+
+@exo 3
+Résous $z^2 - 6z + 10 = 0$.
+@sol
+$\Delta = 36 - 40 = -4$ → $z = \frac{6 \pm 2i}{2} = 3 \pm i$.
+@check csols(z**2-6*z+10, [3+I, 3-I])
+@end
+
+@exo 4
+Calcule $(1 + i)^6$ avec la forme exponentielle.
+@sol
+$1 + i = \sqrt{2}\,e^{i\pi/4}$. $(\sqrt{2})^6 = 8$ ; argument $\frac{6\pi}{4} = \frac{3\pi}{2}$ → $-\frac{\pi}{2}$. $(1 + i)^6 = 8e^{-i\pi/2} = -8i$.
+@check same((1+I)**6, -8*I)
+@end
+
+@exo 4
+Résous $2z + \bar z = 3 - i$.
+@sol
+$z = a + ib$ : $2a + 2ib + a - ib = 3a + ib = 3 - i$ → $a = 1$, $b = -1$. $z = 1 - i$.
+@check same(2*(1-I)+conjugate(1-I), 3-I)
+@end
+
+@corriges

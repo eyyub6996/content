@@ -1,0 +1,1124 @@
+%% Chapitre 2 — Équations et inéquations
+# 2 | Équations et inéquations | Trouver le nombre caché — et surtout savoir quelle méthode choisir
+
+:::objectifs
+- résoudre toutes les équations du 1er degré (même avec des parenthèses et des fractions) ;
+- utiliser le **produit nul** ;
+- résoudre une équation avec $x$ au dénominateur **sans oublier la condition** ;
+- résoudre une équation du 2e degré (cas faciles, puis $\Delta$) et factoriser un trinôme ;
+- résoudre un système de deux équations ;
+- résoudre une inéquation et faire un **tableau de signes** ;
+- **choisir la bonne méthode** grâce à la carte (section 2.8) ;
+- mettre un problème en équation.
+:::
+
+:::note Temps conseillé : 7 séances (semaines 2 et 3 du planning).
+**Prérequis :** chapitre 1, surtout développer et factoriser.
+:::
+
+## 2.1 Qu'est-ce qu'une équation ?
+
+:::idee
+Une équation est une **chasse au trésor** : un nombre est caché ($x$), et l'équation est l'indice.
+« $3x - 7 = 5$ » veut dire : « trouve le nombre qui, multiplié par 3 puis diminué de 7, donne 5 ».
+**Résoudre** = trouver **toutes** les valeurs qui marchent. Il peut y en avoir zéro, une, deux, ou une infinité.
+On peut toujours **vérifier** : on remplace $x$ par la valeur trouvée et on regarde si les deux côtés sont égaux. Fais-le toujours : à l'examen, c'est ton parachute.
+:::
+
+## 2.2 La balance : équations du premier degré
+
+:::idee
+Une équation est une **balance en équilibre**. Si j'ajoute 1 kg d'un côté, je dois ajouter 1 kg de l'autre pour qu'elle reste en équilibre.
+Le but : laisser $x$ **tout seul** d'un côté.
+:::
+
+@fig balance:60 | Ce que je fais à gauche, je le fais à droite : la balance reste en équilibre.
+
+:::coeur
+**Règle d'or :** ce que je fais à gauche, je le fais à droite (ajouter, enlever, multiplier ou diviser par un nombre **non nul**).
+Pour faire disparaître un terme, je fais l'**opération contraire** : $-7$ → j'ajoute 7 · $+7$ → j'enlève 7 · $\times 3$ → je divise par 3 · $\div 3$ → je multiplie par 3.
+**Ordre :** 1) je développe ; 2) je regroupe les $x$ d'un côté ; 3) les nombres de l'autre ; 4) je divise par le nombre devant $x$.
+Si j'obtiens $-x = 5$, je change le signe des deux côtés : $x = -5$.
+:::
+
+:::exemple Exemple guidé 1 : $3x - 7 = 5$
++ Je veux enlever le $-7$ : j'ajoute 7 des deux côtés. $3x - 7 + 7 = 5 + 7$ → $3x = 12$.
++ Je veux enlever le « $\times 3$ » : je divise par 3 des deux côtés. $x = 4$.
++ Vérification : $3 \times 4 - 7 = 12 - 7 = 5$ ✔
+:::
+
+:::exemple Exemple guidé 2 : $2(x - 3) = 3x + 1$ (avec des $x$ des deux côtés)
++ Je développe : $2x - 6 = 3x + 1$.
++ Il y a plus de $x$ à droite ($3x$) qu'à gauche ($2x$) : je regroupe à droite. J'enlève $2x$ des deux côtés : $-6 = x + 1$.
++ J'enlève 1 des deux côtés : $-7 = x$. Donc $x = -7$.
++ Vérification : $2(-7 - 3) = 2 \times (-10) = -20$ ; $3 \times (-7) + 1 = -21 + 1 = -20$ ✔
+:::
+
+:::exemple Exemple guidé 3 : $\frac{x}{2} + \frac{x}{3} = 5$ (avec des nombres au dénominateur)
++ Pour supprimer les fractions, je multiplie **tous les termes** par 6 (le plus petit multiple commun de 2 et 3).
++ $6 \times \frac{x}{2} = 3x$ ; $6 \times \frac{x}{3} = 2x$ ; $6 \times 5 = 30$. L'équation devient $3x + 2x = 30$.
++ $5x = 30$ → $x = 6$. Vérification : $\frac{6}{2} + \frac{6}{3} = 3 + 2 = 5$ ✔
+:::
+
+:::exemple Exemple guidé 4 : $4 - 3x = 10$ (quand $x$ est précédé d'un « − »)
++ J'enlève 4 des deux côtés : $-3x = 6$.
++ Je divise par $-3$ : $x = 6 \div (-3) = -2$ (plus divisé par moins = moins).
++ Vérification : $4 - 3 \times (-2) = 4 + 6 = 10$ ✔
+:::
+
+:::piege Les deux cas bizarres
+Si les $x$ disparaissent complètement :
+- on obtient une égalité **fausse** (ex. $2 = 5$) → **aucune solution** : $S = \varnothing$ ;
+- on obtient une égalité **toujours vraie** (ex. $3 = 3$) → **tous les réels** sont solutions : $S = \R$.
+Exemple : $2(x + 1) = 2x + 5$ donne $2x + 2 = 2x + 5$, puis $2 = 5$ : impossible, $S = \varnothing$.
+:::
+
+:::astuce Isoler une lettre dans une formule (physique)
+C'est exactement la même chose, avec des lettres à la place des nombres.
+$v = v_0 + at$ : j'enlève $v_0$ → $v - v_0 = at$ ; je divise par $a$ → $t = \dfrac{v - v_0}{a}$.
+:::
+
+## 2.3 Le produit nul
+
+:::coeur
+**Si $A \times B = 0$, alors $A = 0$ ou $B = 0$.**
+(Si on multiplie deux nombres et qu'on obtient zéro, l'un des deux valait zéro.)
+:::
+
+:::exemple Exemple guidé : $(x - 2)(3x + 9) = 0$
++ C'est un produit égal à 0 : je sépare en deux petites équations.
++ $x - 2 = 0$ → $x = 2$. $\quad 3x + 9 = 0$ → $3x = -9$ → $x = -3$.
++ $S = \{-3\,;\,2\}$. Surtout, **ne développe pas** : ce serait du travail inutile.
+:::
+
+:::exemple Exemple guidé : $3x^2 = 12x$ (ne jamais diviser par $x$ !)
++ Je passe tout à gauche : $3x^2 - 12x = 0$.
++ Je factorise : $3x(x - 4) = 0$.
++ Produit nul : $3x = 0$ → $x = 0$, ou $x - 4 = 0$ → $x = 4$. $S = \{0\,;\,4\}$.
+> Si on avait « simplifié par $x$ », on aurait perdu la solution $x = 0$.
+:::
+
+:::piege
+Cela marche **seulement avec $= 0$** ! $(x + 1)(x - 2) = 4$ ne veut **pas** dire $x + 1 = 4$ ou $x - 2 = 4$.
+Test : avec la mauvaise méthode, $x - 2 = 4$ donnerait $x = 6$. Or $(6 + 1)(6 - 2) = 7 \times 4 = 28 \neq 4$. Faux !
+Dans ce cas, il faut développer et tout passer à gauche.
+:::
+
+## 2.4 Équations avec $x$ au dénominateur
+
+:::methode
++ J'écris la **condition** : chaque dénominateur $\neq 0$ (on ne divise jamais par zéro).
++ J'enlève les fractions : je multiplie chaque terme par le dénominateur. Si c'est « fraction = fraction », j'utilise le **produit en croix** : $\dfrac{A}{B} = \dfrac{C}{D} \Leftrightarrow A \times D = B \times C$.
++ Je résous ce qui reste (avec la carte du 2.8).
++ Je vérifie que les solutions respectent la condition : si une solution est interdite, je la **rejette**.
+:::
+
+:::exemple Exemple guidé 1 : $\dfrac{x + 1}{x - 2} = 2$
++ Condition : $x - 2 \neq 0$ → $x \neq 2$.
++ Je multiplie les deux côtés par $(x - 2)$. À gauche, $(x - 2)$ se simplifie : $x + 1 = 2(x - 2)$.
++ Je développe : $x + 1 = 2x - 4$. J'enlève $x$ : $1 = x - 4$. J'ajoute 4 : $x = 5$.
++ $5 \neq 2$ donc c'est accepté. Vérification : $\frac{5 + 1}{5 - 2} = \frac{6}{3} = 2$ ✔
+:::
+
+:::exemple Exemple guidé 2 : $\dfrac{x + 1}{x - 1} = \dfrac{x + 3}{x + 1}$ (fraction = fraction, et pas de solution)
++ Conditions : $x \neq 1$ et $x \neq -1$.
++ Produit en croix : $(x + 1)(x + 1) = (x + 3)(x - 1)$.
++ Je développe : $x^2 + 2x + 1 = x^2 - x + 3x - 3 = x^2 + 2x - 3$.
++ J'enlève $x^2 + 2x$ des deux côtés : $1 = -3$. C'est impossible ! Donc aucune solution : $S = \varnothing$.
+:::
+
+:::exemple Exemple guidé 3 : $\dfrac{x}{x - 3} = \dfrac{3}{x - 3} + 2$ (la solution trouvée est interdite)
++ Condition : $x \neq 3$.
++ Je multiplie tout par $(x - 3)$ : $x = 3 + 2(x - 3) = 2x - 3$.
++ $x = 2x - 3$ → $x = 3$.
++ Mais $x = 3$ est **interdit** ! Je le rejette : $S = \varnothing$.
+:::
+
+## 2.5 Équations du second degré : $ax^2 + bx + c = 0$
+
+### Cas facile 1 : pas de terme en $x$ seul ($b = 0$)
+
+:::exemple Exemples corrigés
+$x^2 - 49 = 0$ → $x^2 = 49$ → $x = 7$ ou $x = -7$ (deux solutions, car $(-7)^2 = 49$ aussi !).
+$4x^2 = 9$ → $x^2 = \frac{9}{4}$ → $x = \pm\sqrt{\frac{9}{4}} = \pm\frac{3}{2}$.
+$x^2 + 4 = 0$ → $x^2 = -4$ → **aucune solution réelle** (un carré n'est jamais négatif).
+:::
+
+### Cas facile 2 : pas de nombre seul ($c = 0$)
+
+:::exemple Exemple corrigé
+$x^2 + 6x = 0$ → $x$ est dans les deux termes : $x(x + 6) = 0$ → produit nul → $x = 0$ ou $x = -6$.
+:::
+
+### Cas général : le discriminant $\Delta$
+
+:::idee
+Quand on ne peut pas utiliser les astuces précédentes, on utilise une **formule universelle** qui marche toujours.
+Le discriminant $\Delta$ (« delta ») est comme un **feu tricolore** : il dit **combien** il y a de solutions avant même de les calculer.
+:::
+
+:::coeur
+$$\Delta = b^2 - 4ac$$
+$\Delta > 0$ (vert) : **deux** solutions réelles $\quad x_1 = \dfrac{-b - \sqrt{\Delta}}{2a} \quad x_2 = \dfrac{-b + \sqrt{\Delta}}{2a}$
+$\Delta = 0$ (orange) : **une seule** solution $x_0 = \dfrac{-b}{2a}$.
+$\Delta < 0$ (rouge) : **aucune** solution réelle (mais deux solutions complexes, chapitre 8).
+:::
+
+@fig paraboles_delta:90 | La parabole $y = ax^2 + bx + c$ coupe l'axe horizontal 2 fois, 1 fois ou jamais : ce sont les solutions.
+
+:::lire Comment lire la formule (mot à mot)
+$a$ = le nombre devant $x^2$ · $b$ = le nombre devant $x$ · $c$ = le nombre seul. **Le signe fait partie du nombre !**
+Rien d'écrit devant $x^2$ → $a = 1$. « $-x$ » → $b = -1$. Un terme absent → il vaut 0.
+« $\pm$ » veut dire : je fais le calcul deux fois, une fois avec $-$, une fois avec $+$.
+:::
+
+| Équation | $a$ | $b$ | $c$ |
+| $x^2 - 5x + 6 = 0$ | $1$ | $-5$ | $6$ |
+| $2x^2 + x - 1 = 0$ | $2$ | $1$ | $-1$ |
+| $-x^2 + 4x = 0$ | $-1$ | $4$ | $0$ |
+| $3x^2 - 7 = 0$ | $3$ | $0$ | $-7$ |
+| $x^2 = 3x - 2$ (d'abord : $x^2 - 3x + 2 = 0$) | $1$ | $-3$ | $2$ |
+
+:::methode La méthode du $\Delta$
++ Je vérifie que c'est de la forme « … = 0 ». Sinon, je passe tout à gauche.
++ Je lis $a$, $b$, $c$ (avec les signes !).
++ Je calcule $\Delta = b^2 - 4ac$. **Parenthèses obligatoires** : si $b = -5$, $b^2 = (-5)^2 = 25$.
++ Je regarde le signe de $\Delta$ → 2, 1 ou 0 solutions.
++ Je prépare les 3 ingrédients : $-b$, $\sqrt{\Delta}$, $2a$. Puis je calcule $x_1$ et $x_2$.
++ Je vérifie au moins une solution.
+:::
+
+:::exemple Exemple guidé 1 ($\Delta > 0$) : $x^2 - 5x + 6 = 0$
++ $a = 1$, $b = -5$, $c = 6$.
++ $\Delta = (-5)^2 - 4 \times 1 \times 6 = 25 - 24 = 1$. Positif → 2 solutions.
++ Ingrédients : $-b = 5$ ; $\sqrt{\Delta} = 1$ ; $2a = 2$.
++ $x_1 = \frac{5 - 1}{2} = 2$ ; $x_2 = \frac{5 + 1}{2} = 3$.
++ Vérification avec 2 : $4 - 10 + 6 = 0$ ✔
+:::
+
+:::exemple Exemple guidé 2 ($\Delta > 0$, avec $a \neq 1$) : $3x^2 - 2x - 1 = 0$
++ $a = 3$, $b = -2$, $c = -1$.
++ $\Delta = (-2)^2 - 4 \times 3 \times (-1) = 4 + 12 = 16$. (Attention : « $- 4 \times 3 \times (-1)$ » $= +12$.)
++ Ingrédients : $-b = 2$ ; $\sqrt{\Delta} = 4$ ; $2a = 6$ (et non 2 !).
++ $x_1 = \frac{2 - 4}{6} = -\frac{2}{6} = -\frac{1}{3}$ ; $x_2 = \frac{2 + 4}{6} = 1$.
++ Vérification avec 1 : $3 - 2 - 1 = 0$ ✔
+:::
+
+:::exemple Exemple guidé 3 ($\Delta > 0$ mais pas un carré) : $x^2 - 2x - 1 = 0$
++ $a = 1$, $b = -2$, $c = -1$. $\Delta = 4 + 4 = 8$.
++ $\sqrt{8} = 2\sqrt{2}$ (chapitre 1).
++ $x = \frac{2 \pm 2\sqrt{2}}{2} = 1 \pm \sqrt{2}$. $S = \{1 - \sqrt{2}\,;\,1 + \sqrt{2}\}$.
+:::
+
+:::exemple Exemple guidé 4 ($\Delta = 0$ et $\Delta < 0$)
+$x^2 - 6x + 9 = 0$ : $\Delta = 36 - 36 = 0$ → une seule solution $x_0 = \frac{6}{2} = 3$. (En effet, $x^2 - 6x + 9 = (x - 3)^2$.)
+$x^2 + x + 1 = 0$ : $\Delta = 1 - 4 = -3 < 0$ → aucune solution réelle.
+:::
+
+### Le raccourci : somme et produit des racines
+
+:::coeur
+Si $x_1$ et $x_2$ sont les deux racines de $ax^2 + bx + c = 0$ :
+$$x_1 + x_2 = -\frac{b}{a} \qquad\qquad x_1 \times x_2 = \frac{c}{a}$$
+Marche toujours, même quand les racines sont complexes. Question d'examen typique : « que vaut $z_1 + z_2$ ? » → $-\frac{b}{a}$ en 2 secondes.
+:::
+
+:::pourquoi Pourquoi ça marche ?
+En additionnant $x_1$ et $x_2$, les deux « $\pm\sqrt{\Delta}$ » s'annulent : $\dfrac{-b - \sqrt{\Delta} - b + \sqrt{\Delta}}{2a} = \dfrac{-2b}{2a} = -\dfrac{b}{a}$.
+Vérifie sur l'exemple 1 : $2 + 3 = 5 = -\frac{-5}{1}$ ✔ et $2 \times 3 = 6 = \frac{6}{1}$ ✔.
+:::
+
+:::astuce Deviner les racines entières
+Pour $x^2 - 7x + 12 = 0$ : je cherche deux nombres de **somme 7** et de **produit 12** → 3 et 4. C'est souvent plus rapide que $\Delta$ quand $a = 1$.
+:::
+
+### Factoriser un trinôme
+
+:::coeur
+Si $\Delta > 0$ : $ax^2 + bx + c = a(x - x_1)(x - x_2)$. Si $\Delta = 0$ : $ax^2 + bx + c = a(x - x_0)^2$. Si $\Delta < 0$ : on ne peut pas factoriser.
+**N'oublie pas le $a$ devant** quand $a \neq 1$ ! $3x^2 - 2x - 1 = 3(x - 1)\left(x + \frac{1}{3}\right) = (x - 1)(3x + 1)$.
+:::
+
+### Équations qui se ramènent au 2e degré
+
+:::exemple Exemple guidé : $x^3 - 9x = 0$ (3e degré sans nombre seul)
++ Tous les termes contiennent $x$ : je le mets en facteur. $x(x^2 - 9) = 0$.
++ Produit nul : $x = 0$, ou $x^2 - 9 = 0$ → $x^2 = 9$ → $x = 3$ ou $x = -3$.
++ $S = \{-3\,;\,0\,;\,3\}$ (trois solutions).
+:::
+
+:::exemple Exemple guidé : $x^4 - 5x^2 + 4 = 0$ (équation « bicarrée »)
++ Astuce : $x^4 = (x^2)^2$. Je pose $X = x^2$ : l'équation devient $X^2 - 5X + 4 = 0$.
++ $\Delta = 25 - 16 = 9$ → $X = \frac{5 \pm 3}{2}$ → $X = 1$ ou $X = 4$.
++ Je reviens à $x$ : $x^2 = 1$ → $x = \pm 1$ ; $x^2 = 4$ → $x = \pm 2$. $S = \{-2\,;\,-1\,;\,1\,;\,2\}$.
+> Cette astuce du « changement d'inconnue » reviendra au chapitre 4 avec $e^{2x} - 3e^x + 2 = 0$.
+:::
+
+## 2.6 Systèmes de deux équations
+
+:::idee
+Deux nombres cachés ($x$ et $y$) et deux indices. L'astuce : utiliser un indice pour exprimer une lettre, puis la remplacer dans l'autre (**substitution**).
+Ou bien additionner les équations pour qu'une lettre disparaisse (**combinaison**).
+:::
+
+:::exemple Exemple guidé : $\begin{cases} x + y = 7 \\ 2x - y = 5 \end{cases}$
++ **Par combinaison** : j'additionne les deux équations membre à membre. $y$ et $-y$ s'annulent : $3x = 12$ → $x = 4$.
++ Je remplace dans la première : $4 + y = 7$ → $y = 3$.
++ **Par substitution** (autre méthode) : de la première, $y = 7 - x$. Dans la seconde : $2x - (7 - x) = 5$ → $3x - 7 = 5$ → $x = 4$, puis $y = 3$.
++ Vérification : $4 + 3 = 7$ ✔ ; $8 - 3 = 5$ ✔. $(x\,;\,y) = (4\,;\,3)$.
+:::
+
+:::exemple Exemple guidé : $\begin{cases} 3x + 2y = 7 \\ 2x - 3y = -4 \end{cases}$ (il faut d'abord multiplier)
++ Je veux faire disparaître $y$ : je multiplie la 1re équation par 3 et la 2e par 2. $9x + 6y = 21$ et $4x - 6y = -8$.
++ J'additionne : $13x = 13$ → $x = 1$.
++ Dans la 1re : $3 + 2y = 7$ → $y = 2$. Vérification : $2 - 6 = -4$ ✔. $(x\,;\,y) = (1\,;\,2)$.
+:::
+
+## 2.7 Les inéquations
+
+:::idee
+Une inéquation utilise $<$, $\leq$, $>$, $\geq$ au lieu de $=$. La réponse n'est pas un nombre mais un **intervalle** : tous les nombres qui marchent.
+:::
+
+:::coeur
+On résout comme une équation (balance), avec **une règle en plus** :
+**Si je multiplie ou divise par un nombre NÉGATIF, je change le sens de l'inégalité :** $<$ devient $>$, $\leq$ devient $\geq$.
+:::
+
+:::pourquoi Pourquoi le sens change ?
+$2 < 3$ est vrai. Je multiplie par $-1$ : j'obtiens $-2$ et $-3$. Mais $-2 > -3$ ! (une dette de 2 € est « moins grave » qu'une dette de 3 €). L'ordre s'est inversé.
+:::
+
+:::exemple Exemple guidé : $-2x + 3 \leq 9$
++ J'enlève 3 : $-2x \leq 6$.
++ Je divise par $-2$ (négatif → je change le sens) : $x \geq -3$.
++ $S = \fo{-3}{+\infty}$. Contrôle : $x = 0$ (qui est $\geq -3$) → $3 \leq 9$ ✔ ; $x = -5$ (exclu) → $13 \leq 9$ ✘. Cohérent.
+:::
+
+### Le signe de $ax + b$
+
+:::coeur
+$ax + b$ s'annule en $x = -\frac{b}{a}$. **Après** la racine, il a le **signe de $a$** ; **avant**, le signe contraire.
+:::
+
+@fig signe_affine:48 | $2x - 4$ est négatif avant 2 et positif après (car $a = 2 > 0$).
+
+### Le tableau de signes
+
+:::idee
+Pour connaître le signe d'un **produit**, il suffit de connaître le signe de chaque facteur, puis d'appliquer la règle des signes.
+Le tableau de signes organise ce travail en colonnes.
+:::
+
+:::methode La méthode du tableau de signes
++ Je **factorise** tout (produit ou quotient de facteurs simples) et je compare à 0.
++ Je trouve où chaque facteur s'annule et je range ces valeurs **dans l'ordre** sur la première ligne.
++ Une ligne par facteur : signe contraire de $a$ avant sa racine, signe de $a$ après, 0 sur la racine.
++ Dernière ligne : règle des signes colonne par colonne. Pour un quotient, là où le dénominateur s'annule, je mets une **double barre** ‖ (valeur interdite).
++ Je lis la réponse : là où la dernière ligne a le signe demandé.
+:::
+
+:::exemple Exemple guidé 1 : $(x - 1)(x + 3) \geq 0$
++ Racines : $x - 1 = 0$ → $x = 1$ ; $x + 3 = 0$ → $x = -3$. Dans l'ordre : $-3$, puis $1$.
++ Chaque facteur a $a = 1 > 0$ : « − » avant sa racine, « + » après.
++ Je remplis le tableau, puis la dernière ligne avec la règle des signes.
++ Je veux $\geq 0$ : là où il y a $+$ ou $0$ → $S = \of{-\infty}{-3} \cup \fo{1}{+\infty}$.
+:::
+
+:::signes
+x | -\infty | -3 | 1 | +\infty
+x+3 | - | 0 | + | | +
+x-1 | - | | - | 0 | +
+(x-1)(x+3) | + | 0 | - | 0 | +
+:::
+
+:::exemple Exemple guidé 2 (un quotient) : $\dfrac{2x - 4}{x + 1} \leq 0$
++ Condition : $x \neq -1$. Racines : $2x - 4 = 0$ → $x = 2$ ; $x + 1 = 0$ → $x = -1$ (valeur interdite).
++ Tableau ci-dessous. En $-1$ : double barre ‖. En 2 : 0.
++ Je veux $\leq 0$ : là où il y a « − » ou 0. $-1$ est exclu (interdit), 2 est inclus (le quotient y vaut 0).
++ $S = \of{-1}{2}$.
+:::
+
+:::signes
+x | -\infty | -1 | 2 | +\infty
+2x-4 | - | | - | 0 | +
+x+1 | - | 0 | + | | +
+\frac{2x-4}{x+1} | + | || | - | 0 | +
+:::
+
+:::piege
+Dans une inéquation avec $x$ au dénominateur, **ne multiplie jamais par le dénominateur** : tu ne connais pas son signe, donc tu ne sais pas s'il faut changer le sens !
+Passe tout à gauche, mets au même dénominateur, et fais un tableau de signes.
+:::
+
+### Le signe de $ax^2 + bx + c$
+
+:::coeur
+Le trinôme a **le signe de $a$, sauf ENTRE les racines** (où il a le signe contraire).
+Si $\Delta < 0$ : pas de racine, il a **toujours** le signe de $a$.
+:::
+
+@fig signe_trinome:80 | À gauche $a > 0$ (parabole « sourire ») ; à droite $a < 0$ (parabole « triste »).
+
+:::exemple Exemple guidé : $x^2 - x - 6 < 0$
++ $\Delta = 1 + 24 = 25$, racines $\frac{1 \pm 5}{2}$ → $-2$ et $3$.
++ $a = 1 > 0$ → le trinôme est positif à l'extérieur, négatif **entre** les racines.
++ Je veux $< 0$ (strict) → entre $-2$ et $3$, bornes exclues : $S = \oo{-2}{3}$. Contrôle $x = 0$ : $-6 < 0$ ✔
+:::
+
+## 2.8 LA CARTE : quelle méthode choisir ?
+
+On ne choisit pas la méthode en « regardant » l'équation. On répond à **3 questions, toujours dans le même ordre**.
+La plus haute puissance se regarde **après** le nettoyage, car un $x^2$ peut apparaître (ou disparaître) seulement après.
+
+:::methode La carte des équations
++ **Y a-t-il un $x$ au dénominateur ?** Oui → j'écris la condition, puis je multiplie par le dénominateur (ou produit en croix). Non → je passe à la question 2.
++ **Est-ce déjà « produit = 0 » ?** Oui → produit nul, j'ai fini. Non → je développe, je passe **tout à gauche** (« … = 0 ») et je réduis.
++ **Quelle est la plus haute puissance de $x$ ?**
+:::
+
+| Plus haute puissance | Cas | Méthode |
+| $x$ (1er degré) | — | la balance (2.2) |
+| $x^2$ | pas de $x$ seul ($b = 0$) | $x^2 = k$ → $x = \pm\sqrt{k}$ (si $k \geq 0$) |
+| $x^2$ | pas de nombre seul ($c = 0$) | facteur commun $x$, puis produit nul |
+| $x^2$ | complet | $\Delta$ (ou somme-produit si $a = 1$) |
+| $x^3$ ou plus | tous les termes ont un $x$ | facteur commun, puis produit nul |
+| $x^4$ et $x^2$ seulement | bicarrée | $X = x^2$, puis $\Delta$ |
+
+:::exemple Exemple guidé avec la carte : $\dfrac{2}{x - 1} = x$
++ Question 1 : un $x$ en bas ? Oui, $(x - 1)$. Condition $x \neq 1$. $\times (x - 1)$ : $2 = x(x - 1)$.
++ Question 2 : je développe et je passe tout à gauche : $2 = x^2 - x$ → $x^2 - x - 2 = 0$.
++ Question 3 : plus haute puissance ? $x^2$, avec un terme en $x$ seul → $\Delta$. $a = 1$, $b = -1$, $c = -2$. $\Delta = 1 + 8 = 9$.
++ $x = \frac{1 \pm 3}{2}$ → $x = -1$ ou $x = 2$. Les deux sont $\neq 1$ ✔. Vérif. : $\frac{2}{2 - 1} = 2$ ✔ ; $\frac{2}{-1 - 1} = -1$ ✔
+> Au départ, il n'y avait aucun $x^2$ ! Il est apparu après le nettoyage. C'est pour ça que la question 3 vient en dernier.
+:::
+
+## 2.9 Mettre un problème en équation
+
+:::methode
++ Je **choisis l'inconnue** : « soit $x$ le nombre de… » (avec l'unité).
++ Je **traduis** chaque phrase de l'énoncé en expression avec $x$ (dictionnaire du 1.7).
++ J'écris l'**équation** (ou l'inéquation) et je la résous.
++ Je **vérifie** que la solution a du sens (une longueur est positive, un nombre d'objets est entier…) et je **réponds par une phrase**.
+:::
+
+:::exemple Exemple guidé : un rectangle d'aire 40 m² dont la longueur dépasse la largeur de 3 m
++ Soit $x$ la largeur (en m). La longueur est $x + 3$.
++ Aire : $x(x + 3) = 40$ → $x^2 + 3x - 40 = 0$.
++ $\Delta = 9 + 160 = 169 = 13^2$ → $x = \frac{-3 \pm 13}{2}$ → $x = 5$ ou $x = -8$.
++ Une largeur est positive : je rejette $-8$. Le rectangle mesure **5 m sur 8 m**. Vérif. : $5 \times 8 = 40$ ✔
+:::
+
+@page
+## 2.10 Exercices
+
+@serie 2A | Équations du premier degré
+
+@exo 1
+Résous :
+a) $4x - 7 = 13$
+b) $x + 9 = 2$
+c) $3x = -12$
+d) $-x = 6$
+e) $\frac{x}{4} = 3$
+f) $5 - x = 8$
+@sol
+a) $+7$ : $4x = 20$ ; $\div 4$ : $x = 5$. Vérif. : $20 - 7 = 13$ ✔
+b) $x = 2 - 9 = -7$. c) $x = -4$. d) $x = -6$. e) $x = 12$.
+f) $-x = 3$ → $x = -3$.
+@check sols(4*x-7-13, [5]) and sols(5-x-8, [-3])
+@end
+
+@exo 1
+Résous :
+a) $2(x - 3) = 3x + 1$
+b) $5x - 2 = 3x + 8$
+@sol
+a) $x = -7$ (exemple guidé 2 du 2.2).
+b) $5x - 3x = 8 + 2$ → $2x = 10$ → $x = 5$.
+@check sols(2*(x-3)-(3*x+1), [-7]) and sols(5*x-2-(3*x+8), [5])
+@end
+
+@exo 2
+Résous :
+a) $\frac{x}{2} + \frac{x}{3} = 5$
+b) $\frac{x + 1}{3} = \frac{x - 1}{2}$
+@sol
+a) $x = 6$ (exemple guidé 3 du 2.2).
+b) Produit en croix : $2(x + 1) = 3(x - 1)$ → $2x + 2 = 3x - 3$ → $5 = x$. $x = 5$.
+@check sols((x+1)/3-(x-1)/2, [5])
+@end
+
+@exo 2
+Résous :
+a) $4 - 3x = 10$
+b) $7 - 2(x - 1) = 3$
+c) $3(x + 2) - 2(x - 1) = 0$
+@sol
+a) $x = -2$ (exemple guidé 4).
+b) $7 - 2x + 2 = 3$ → $9 - 2x = 3$ → $-2x = -6$ → $x = 3$.
+c) $3x + 6 - 2x + 2 = 0$ → $x + 8 = 0$ → $x = -8$.
+@check sols(7-2*(x-1)-3, [3]) and sols(3*(x+2)-2*(x-1), [-8])
+@end
+
+@exo 3
+Résous $(x + 3)^2 = (x - 1)^2$.
+@sol
+Je développe : $x^2 + 6x + 9 = x^2 - 2x + 1$. Les $x^2$ disparaissent : $6x + 9 = -2x + 1$ → $8x = -8$ → $x = -1$.
+Vérif. : $(2)^2 = 4$ et $(-2)^2 = 4$ ✔
+@check sols((x+3)**2-(x-1)**2, [-1])
+@end
+
+@exo 3
+Résous :
+a) $2(x + 1) = 2x + 5$
+b) $3(x - 1) + 2 = 3x - 1$
+@sol
+a) $2x + 2 = 2x + 5$ → $2 = 5$ : impossible. $S = \varnothing$.
+b) $3x - 3 + 2 = 3x - 1$ → $3x - 1 = 3x - 1$ : toujours vrai. $S = \R$.
+@check sols(2*(x+1)-(2*x+5), [])
+@end
+
+@exo 3
+Résous $\dfrac{2x - 1}{4} - \dfrac{x + 2}{6} = 1$.
+@sol
+Je multiplie **tout** par 12 : $3(2x - 1) - 2(x + 2) = 12$.
+$6x - 3 - 2x - 4 = 12$ → $4x - 7 = 12$ → $4x = 19$ → $x = \frac{19}{4}$.
+**Piège :** le « − » devant la 2e fraction porte sur tout le numérateur : $-2(x + 2) = -2x - 4$.
+@check sols((2*x-1)/4-(x+2)/6-1, [Rational(19,4)])
+@end
+
+@exo 3
+Résous $0{,}5x + 1{,}2 = 0{,}3x - 0{,}4$.
+@sol
+$0{,}5x - 0{,}3x = -0{,}4 - 1{,}2$ → $0{,}2x = -1{,}6$ → $x = \frac{-1{,}6}{0{,}2} = -8$.
+(Astuce : multiplie tout par 10 pour enlever les virgules : $5x + 12 = 3x - 4$.)
+@check sols(Rational(1,2)*x+Rational(6,5)-(Rational(3,10)*x-Rational(2,5)), [-8])
+@end
+
+@exo 4 | Isoler une lettre
+a) Dans $v = v_0 + at$, isole $t$.
+b) Dans $P = 2(L + \ell)$, isole $\ell$.
+c) Dans $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$ (résistances en parallèle), isole $R$.
+@sol
+a) $t = \dfrac{v - v_0}{a}$.
+b) $\frac{P}{2} = L + \ell$ → $\ell = \frac{P}{2} - L$.
+c) Même dénominateur : $\dfrac{1}{R} = \dfrac{R_2 + R_1}{R_1 R_2}$. On retourne les deux fractions : $R = \dfrac{R_1 R_2}{R_1 + R_2}$.
+@end
+
+@serie 2B | Produit nul
+
+@exo 1
+Résous :
+a) $(x - 2)(3x + 9) = 0$
+b) $x(x + 5) = 0$
+c) $(2x - 1)(x + 4) = 0$
+@sol
+a) $S = \{-3\,;\,2\}$ (voir 2.3).
+b) $x = 0$ ou $x = -5$ : $S = \{-5\,;\,0\}$.
+c) $2x - 1 = 0$ → $x = \frac{1}{2}$ ; $x + 4 = 0$ → $x = -4$. $S = \{-4\,;\,\frac{1}{2}\}$.
+@check sols((2*x-1)*(x+4), [-4, Rational(1,2)])
+@end
+
+@exo 2
+Résous :
+a) $x^2 + 6x = 0$
+b) $3x^2 = 12x$
+@sol
+a) $x(x + 6) = 0$ → $S = \{-6\,;\,0\}$.
+b) $3x^2 - 12x = 0$ → $3x(x - 4) = 0$ → $S = \{0\,;\,4\}$. (Ne divise pas par $x$ !)
+@check sols(3*x**2-12*x, [0, 4])
+@end
+
+@exo 2
+Résous $x^3 - 9x = 0$.
+@sol
+$x(x^2 - 9) = 0$ → $x(x - 3)(x + 3) = 0$ → $S = \{-3\,;\,0\,;\,3\}$.
+@check sols(x**3-9*x, [-3, 0, 3])
+@end
+
+@exo 3
+Résous $(x + 1)(x - 3) = (x + 1)(2x + 5)$.
+@sol
+Tout à gauche : $(x + 1)(x - 3) - (x + 1)(2x + 5) = 0$.
+Facteur commun : $(x + 1)\big[(x - 3) - (2x + 5)\big] = 0$ → $(x + 1)(-x - 8) = 0$.
+$x = -1$ ou $x = -8$. $S = \{-8\,;\,-1\}$.
+> Ne « simplifie » pas par $(x + 1)$ : tu perdrais la solution $x = -1$.
+@check sols((x+1)*(x-3)-(x+1)*(2*x+5), [-8, -1])
+@end
+
+@exo 3
+Résous $(2x + 1)^2 = 9$.
+@sol
+Méthode 1 : $2x + 1 = 3$ ou $2x + 1 = -3$ → $x = 1$ ou $x = -2$.
+Méthode 2 : $(2x + 1)^2 - 3^2 = 0$ → $(2x + 1 - 3)(2x + 1 + 3) = 0$ → $(2x - 2)(2x + 4) = 0$ → même résultat. $S = \{-2\,;\,1\}$.
+@check sols((2*x+1)**2-9, [-2, 1])
+@end
+
+@exo 4
+Résous $(x + 1)(x - 2) = 4$.
+@sol
+Ce n'est pas « $= 0$ » → je développe : $x^2 - x - 2 = 4$ → $x^2 - x - 6 = 0$ → $\Delta = 25$ → $x = 3$ ou $x = -2$.
+Vérif. : $x = 3$ : $4 \times 1 = 4$ ✔ ; $x = -2$ : $(-1)(-4) = 4$ ✔
+@check sols((x+1)*(x-2)-4, [3, -2])
+@end
+
+@serie 2C | Équations avec $x$ au dénominateur
+
+@exo 2
+Résous $\dfrac{x + 1}{x - 2} = 2$.
+@sol
+Condition $x \neq 2$. $x + 1 = 2(x - 2)$ → $x = 5$ (exemple guidé 1 du 2.4).
+@check sols((x+1)/(x-2)-2, [5])
+@end
+
+@exo 2
+Résous :
+a) $\dfrac{5}{x - 1} = 2$
+b) $\dfrac{3}{x - 4} = 1$
+@sol
+a) Condition $x \neq 1$. $5 = 2(x - 1) = 2x - 2$ → $2x = 7$ → $x = \frac{7}{2}$. Vérif. : $\frac{5}{2{,}5} = 2$ ✔
+b) Condition $x \neq 4$. $3 = x - 4$ → $x = 7$. Vérif. : $\frac{3}{3} = 1$ ✔
+@check sols(5/(x-1)-2, [Rational(7,2)]) and sols(3/(x-4)-1, [7])
+@end
+
+@exo 3
+Résous $\dfrac{x + 1}{x - 1} = \dfrac{x + 3}{x + 1}$.
+@sol
+$S = \varnothing$ (exemple guidé 2 du 2.4 : on arrive à $1 = -3$).
+@check sols((x+1)/(x-1)-(x+3)/(x+1), [])
+@end
+
+@exo 3
+Résous $\dfrac{2}{x - 1} = x$.
+@sol
+$S = \{-1\,;\,2\}$ (exemple guidé du 2.8).
+@check sols(2/(x-1)-x, [-1, 2])
+@end
+
+@exo 4
+Résous $\dfrac{1}{x} + \dfrac{1}{x + 1} = \dfrac{5}{6}$.
+@sol
+Conditions $x \neq 0$, $x \neq -1$. Je multiplie tout par $6x(x + 1)$ : $6(x + 1) + 6x = 5x(x + 1)$.
+$12x + 6 = 5x^2 + 5x$ → $5x^2 - 7x - 6 = 0$.
+$\Delta = 49 + 120 = 169$, $\sqrt{\Delta} = 13$ → $x = \frac{7 \pm 13}{10}$ → $x = 2$ ou $x = -\frac{3}{5}$.
+Les deux respectent les conditions. Vérif. $x = 2$ : $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$ ✔
+@check sols(1/x+1/(x+1)-Rational(5,6), [2, Rational(-3,5)])
+@end
+
+@exo 4
+Résous $\dfrac{x}{x - 3} = \dfrac{3}{x - 3} + 2$.
+@sol
+Condition $x \neq 3$. On trouve $x = 3$, qui est interdit : $S = \varnothing$ (exemple guidé 3 du 2.4).
+@check sols(x/(x-3)-3/(x-3)-2, [])
+@end
+
+@serie 2D | Équations du second degré
+
+@exo 1
+Résous sans $\Delta$ :
+a) $x^2 - 49 = 0$
+b) $4x^2 = 9$
+c) $x^2 + 4 = 0$
+d) $x^2 - 5x = 0$
+@sol
+a) $S = \{-7\,;\,7\}$. b) $S = \{-\frac{3}{2}\,;\,\frac{3}{2}\}$. c) $S = \varnothing$.
+d) $x(x - 5) = 0$ → $S = \{0\,;\,5\}$.
+@check sols(4*x**2-9, [Rational(-3,2), Rational(3,2)]) and sols(x**2+4, [])
+@end
+
+@exo 1
+Donne $a$, $b$ et $c$ pour chaque équation :
+a) $2x^2 + x - 1 = 0$
+b) $-x^2 + 4x = 0$
+c) $3x^2 - 7 = 0$
+d) $5 - x^2 + 2x = 0$
+@sol
+a) $a = 2$, $b = 1$, $c = -1$. b) $a = -1$, $b = 4$, $c = 0$. c) $a = 3$, $b = 0$, $c = -7$.
+d) On range : $-x^2 + 2x + 5 = 0$ → $a = -1$, $b = 2$, $c = 5$. (L'ordre d'écriture ne compte pas, seul le terme compte.)
+@end
+
+@exo 2
+Résous :
+a) $x^2 - 7x + 12 = 0$
+b) $x^2 + 2x - 15 = 0$
+@sol
+a) $\Delta = 49 - 48 = 1$ → $x = \frac{7 \pm 1}{2}$ → $S = \{3\,;\,4\}$. (Somme 7, produit 12 : 3 et 4 ✔)
+b) $\Delta = 4 + 60 = 64$ → $x = \frac{-2 \pm 8}{2}$ → $S = \{-5\,;\,3\}$.
+@check sols(x**2-7*x+12, [3,4]) and sols(x**2+2*x-15, [-5,3])
+@end
+
+@exo 2
+Résous :
+a) $3x^2 - 2x - 1 = 0$
+b) $2x^2 - 5x + 2 = 0$
+@sol
+a) $S = \{-\frac{1}{3}\,;\,1\}$ (exemple guidé 2 du 2.5).
+b) $\Delta = 25 - 16 = 9$ → $x = \frac{5 \pm 3}{4}$ → $x = \frac{1}{2}$ ou $x = 2$.
+@check sols(2*x**2-5*x+2, [Rational(1,2), 2])
+@end
+
+@exo 2
+Résous :
+a) $x^2 - 6x + 9 = 0$
+b) $x^2 + x + 1 = 0$
+c) $4x^2 + 4x + 1 = 0$
+@sol
+a) $\Delta = 0$ → $S = \{3\}$. b) $\Delta = -3 < 0$ → $S = \varnothing$.
+c) $\Delta = 16 - 16 = 0$ → $x_0 = \frac{-4}{8} = -\frac{1}{2}$. (C'est $(2x + 1)^2$.)
+@check sols(4*x**2+4*x+1, [Rational(-1,2)])
+@end
+
+@exo 3
+Résous dans $\R$ : $x^2 + 4x + 13 = 0$.
+@sol
+$\Delta = 16 - 52 = -36 < 0$ → aucune solution réelle, $S = \varnothing$. (Dans $\C$ : $x = -2 \pm 3i$, chapitre 8.)
+@check sols(x**2+4*x+13, [])
+@end
+
+@exo 3
+Résous $x^2 - 2x - 1 = 0$ (valeurs exactes).
+@sol
+$\Delta = 8$, $\sqrt{8} = 2\sqrt{2}$ → $x = \frac{2 \pm 2\sqrt{2}}{2} = 1 \pm \sqrt{2}$.
+@check sols(x**2-2*x-1, [1-sqrt(2), 1+sqrt(2)])
+@end
+
+@exo 3
+Sans calculer les racines, donne la somme et le produit des racines de $2x^2 - 6x + 1 = 0$.
+@sol
+D'abord, je vérifie qu'il y a des racines réelles : $\Delta = 36 - 8 = 28 > 0$ ✔.
+Somme $= -\frac{b}{a} = \frac{6}{2} = 3$. Produit $= \frac{c}{a} = \frac{1}{2}$.
+@end
+
+@exo 3
+Factorise :
+a) $x^2 - 5x + 6$
+b) $2x^2 - x - 1$
+c) $-x^2 + x + 6$
+@sol
+a) Racines 2 et 3 → $(x - 2)(x - 3)$.
+b) $\Delta = 1 + 8 = 9$, racines $\frac{1 \pm 3}{4}$ → $1$ et $-\frac{1}{2}$ → $2(x - 1)\left(x + \frac{1}{2}\right) = (x - 1)(2x + 1)$.
+c) $a = -1$, $\Delta = 1 + 24 = 25$, racines $\frac{-1 \pm 5}{-2}$ → $-2$ et $3$ → $-(x + 2)(x - 3)$.
+@check same(2*x**2-x-1, (x-1)*(2*x+1)) and same(-x**2+x+6, -(x+2)*(x-3))
+@end
+
+@exo 3
+On sait que $x = 2$ est une solution de $x^2 + bx - 6 = 0$. Trouve l'autre solution, puis $b$.
+@sol
+Produit des racines $= \frac{c}{a} = -6$ → $2 \times x_2 = -6$ → $x_2 = -3$.
+Somme $= 2 + (-3) = -1 = -\frac{b}{1}$ → $b = 1$. Vérif. : $x^2 + x - 6 = (x - 2)(x + 3)$ ✔
+@check sols(x**2+x-6, [2, -3])
+@end
+
+@exo 4
+Résous $x^4 - 5x^2 + 4 = 0$.
+@sol
+$X = x^2$ : $X^2 - 5X + 4 = 0$ → $X = 1$ ou $X = 4$ → $S = \{-2\,;\,-1\,;\,1\,;\,2\}$ (voir 2.5).
+@check sols(x**4-5*x**2+4, [-2,-1,1,2])
+@end
+
+@exo 4
+Pour quelles valeurs de $m$ l'équation $x^2 + mx + 9 = 0$ a-t-elle **une seule** solution ?
+@sol
+Une seule solution ⇔ $\Delta = 0$ : $m^2 - 4 \times 1 \times 9 = 0$ → $m^2 = 36$ → $m = 6$ ou $m = -6$.
+(Pour $m = 6$ : $(x + 3)^2 = 0$ ; pour $m = -6$ : $(x - 3)^2 = 0$.)
+@check sols(m**2-36, [6, -6], var=m)
+@end
+
+@exo 4
+Trouve deux nombres dont la somme vaut 10 et le produit 21.
+@sol
+Ce sont les racines de $X^2 - 10X + 21 = 0$ (somme 10, produit 21). $\Delta = 100 - 84 = 16$ → $X = \frac{10 \pm 4}{2}$ → **3 et 7**.
+@check sols(x**2-10*x+21, [3, 7])
+@end
+
+@serie 2E | Systèmes
+
+@exo 1
+Résous $\begin{cases} x + y = 7 \\ x - y = 1 \end{cases}$
+@sol
+J'additionne : $2x = 8$ → $x = 4$. Puis $4 + y = 7$ → $y = 3$. $(x\,;\,y) = (4\,;\,3)$.
+@end
+
+@exo 2
+Résous $\begin{cases} 3x + y = 10 \\ x - y = 2 \end{cases}$
+@sol
+J'additionne : $4x = 12$ → $x = 3$. Puis $3 - y = 2$ → $y = 1$. $(3\,;\,1)$. Vérif. : $9 + 1 = 10$ ✔
+@end
+
+@exo 2
+Résous $\begin{cases} 2x + 3y = 12 \\ x - y = 1 \end{cases}$
+@sol
+De la seconde : $x = 1 + y$. Dans la première : $2(1 + y) + 3y = 12$ → $2 + 5y = 12$ → $y = 2$ → $x = 3$. $(3\,;\,2)$.
+Vérif. : $6 + 6 = 12$ ✔ ; $3 - 2 = 1$ ✔
+@end
+
+@exo 3
+Résous $\begin{cases} 3x + 2y = 7 \\ 2x - 3y = -4 \end{cases}$
+@sol
+$(x\,;\,y) = (1\,;\,2)$ (exemple guidé du 2.6).
+@check solve([3*x+2*y-7, 2*x-3*y+4],[x,y])=={x:1, y:2}
+@end
+
+@exo 3 | Au café
+3 cafés et 2 croissants coûtent 13 fr ; 2 cafés et 3 croissants coûtent 12 fr. Quel est le prix d'un café et d'un croissant ?
+@sol
+Soit $c$ le prix d'un café et $k$ celui d'un croissant : $3c + 2k = 13$ et $2c + 3k = 12$.
+J'additionne : $5c + 5k = 25$ → $c + k = 5$. Je soustrais : $c - k = 1$. Donc $c = 3$ et $k = 2$.
+Un café coûte **3 fr** et un croissant **2 fr**.
+@check solve([3*x+2*y-13, 2*x+3*y-12],[x,y])=={x:3, y:2}
+@end
+
+@exo 4
+Résous $\begin{cases} \frac{x}{2} + \frac{y}{3} = 4 \\ x - y = 3 \end{cases}$
+@sol
+Je multiplie la 1re par 6 : $3x + 2y = 24$. De la 2e : $x = y + 3$.
+$3(y + 3) + 2y = 24$ → $5y + 9 = 24$ → $y = 3$, $x = 6$. $(6\,;\,3)$.
+@check solve([x/2+y/3-4, x-y-3],[x,y])=={x:6, y:3}
+@end
+
+@serie 2F | Inéquations et tableaux de signes
+
+@exo 1
+Résous $3x - 5 > 7$.
+@sol
+$+5$ : $3x > 12$ → $\div 3$ (positif, pas de changement) : $x > 4$. $S = \oo{4}{+\infty}$.
+@check ineq(3*x-5>7, Interval.open(4, oo))
+@end
+
+@exo 2
+Résous :
+a) $-2x + 3 \leq 9$
+b) $5 - x < 2$
+@sol
+a) $S = \fo{-3}{+\infty}$ (voir 2.7).
+b) $-x < -3$ → je multiplie par $-1$ et je change le sens : $x > 3$. $S = \oo{3}{+\infty}$.
+@check ineq(5-x<2, Interval.open(3, oo))
+@end
+
+@exo 2
+Résous $2(x - 1) \geq 5x + 4$.
+@sol
+$2x - 2 \geq 5x + 4$ → $-3x \geq 6$ → $\div(-3)$, je change le sens : $x \leq -2$. $S = \of{-\infty}{-2}$.
+@check ineq(2*(x-1)>=5*x+4, Interval(-oo, -2))
+@end
+
+@exo 2
+Donne le tableau de signes de :
+a) $2x - 6$
+b) $-3x + 6$
+@sol
+a) Racine $x = 3$, $a = 2 > 0$ : « − » avant 3, « + » après.
+b) Racine $x = 2$, $a = -3 < 0$ : « + » avant 2, « − » après.
+
+:::signes
+x | -\infty | 2 | 3 | +\infty
+2x-6 | - | | - | 0 | +
+-3x+6 | + | 0 | - | | -
+:::
+@end
+
+@exo 3
+Résous $(x - 1)(x + 3) \geq 0$.
+@sol
+$S = \of{-\infty}{-3} \cup \fo{1}{+\infty}$ (tableau de l'exemple guidé 1 du 2.7).
+@check ineq((x-1)*(x+3)>=0, Union(Interval(-oo,-3), Interval(1,oo)))
+@end
+
+@exo 3
+Résous $\dfrac{2x - 4}{x + 1} \leq 0$.
+@sol
+$S = \of{-1}{2}$ (tableau de l'exemple guidé 2 du 2.7).
+@check ineq((2*x-4)/(x+1)<=0, Interval.Lopen(-1, 2))
+@end
+
+@exo 3
+Résous $x^2 - x - 6 < 0$.
+@sol
+$S = \oo{-2}{3}$ (voir 2.7).
+@check ineq(x**2-x-6<0, Interval.open(-2, 3))
+@end
+
+@exo 3
+Résous $-x^2 + 4x - 3 \geq 0$.
+@sol
+$a = -1$, $b = 4$, $c = -3$. $\Delta = 16 - 12 = 4$ → racines $\frac{-4 \pm 2}{-2}$ → $1$ et $3$.
+$a < 0$ → le trinôme est négatif à l'extérieur et **positif entre** les racines. Je veux $\geq 0$ → $S = \ff{1}{3}$.
+Contrôle $x = 2$ : $-4 + 8 - 3 = 1 \geq 0$ ✔
+@check ineq(-x**2+4*x-3>=0, Interval(1, 3))
+@end
+
+@exo 3
+Résous :
+a) $x^2 \leq 9$
+b) $x^2 > 4$
+@sol
+a) $x^2 - 9 \leq 0$ : racines $\pm 3$, $a > 0$ → négatif entre : $S = \ff{-3}{3}$.
+b) $x^2 - 4 > 0$ : positif à l'extérieur de $\pm 2$ : $S = \oo{-\infty}{-2} \cup \oo{2}{+\infty}$.
+**Piège classique :** $x^2 \leq 9$ ne donne pas « $x \leq 3$ » ($x = -5$ vérifierait $x \leq 3$ mais $25 > 9$).
+@check ineq(x**2<=9, Interval(-3,3)) and ineq(x**2>4, Union(Interval.open(-oo,-2), Interval.open(2,oo)))
+@end
+
+@exo 4
+Résous $x(3 - x)(x + 2) > 0$.
+@sol
+Racines : $x = 0$ ; $3 - x = 0$ → $x = 3$ ; $x + 2 = 0$ → $x = -2$. Dans l'ordre : $-2$, $0$, $3$.
+Attention : $3 - x$ a $a = -1 < 0$ : « + » avant 3, « − » après.
+
+:::signes
+x | -\infty | -2 | 0 | 3 | +\infty
+x | - | | - | 0 | + | | +
+3-x | + | | + | | + | 0 | -
+x+2 | - | 0 | + | | + | | +
+\text{produit} | + | 0 | - | 0 | + | 0 | -
+:::
+
+Je veux $> 0$ (strict) : $S = \oo{-\infty}{-2} \cup \oo{0}{3}$.
+@check ineq(x*(3-x)*(x+2)>0, Union(Interval.open(-oo,-2), Interval.open(0,3)))
+@end
+
+@exo 4
+Résous $\dfrac{x + 2}{x - 1} \geq 1$.
+@sol
+Condition $x \neq 1$. **Ne multiplie pas par $x - 1$** (signe inconnu). Je passe tout à gauche :
+$\dfrac{x + 2}{x - 1} - 1 \geq 0$ → $\dfrac{x + 2 - (x - 1)}{x - 1} \geq 0$ → $\dfrac{3}{x - 1} \geq 0$.
+3 est positif, donc le quotient est positif quand $x - 1 > 0$ (jamais nul). $S = \oo{1}{+\infty}$.
+@check ineq((x+2)/(x-1)>=1, Interval.open(1, oo))
+@end
+
+@exo 4
+Résous $x^2 + x + 1 > 0$.
+@sol
+$\Delta = 1 - 4 = -3 < 0$ : pas de racine, le trinôme a toujours le signe de $a = 1 > 0$. C'est toujours vrai : $S = \R$.
+@check ineq(x**2+x+1>0, S.Reals)
+@end
+
+@serie 2G | Problèmes
+
+@exo 2
+Le triple d'un nombre, diminué de 4, est égal à son double augmenté de 7. Quel est ce nombre ?
+@sol
+Soit $x$ ce nombre : $3x - 4 = 2x + 7$ → $x = 11$. Vérif. : $33 - 4 = 29$ et $22 + 7 = 29$ ✔
+@end
+
+@exo 2
+Un rectangle a un périmètre de 30 cm, et sa longueur est le double de sa largeur. Quelles sont ses dimensions ?
+@sol
+Largeur $x$, longueur $2x$. Périmètre : $2(x + 2x) = 6x = 30$ → $x = 5$. Le rectangle mesure **5 cm sur 10 cm**.
+@end
+
+@exo 3
+Paul a 30 ans et sa fille 4 ans. Dans combien d'années Paul aura-t-il le triple de l'âge de sa fille ?
+@sol
+Dans $t$ années : $30 + t = 3(4 + t)$ → $30 + t = 12 + 3t$ → $18 = 2t$ → $t = 9$.
+Dans **9 ans** (Paul aura 39 ans et sa fille 13 ans : $3 \times 13 = 39$ ✔).
+@end
+
+@exo 3
+Un triangle rectangle a des côtés de l'angle droit qui mesurent $x$ et $x + 7$ (en cm), et une hypoténuse de 13 cm. Trouve $x$.
+@sol
+Pythagore : $x^2 + (x + 7)^2 = 13^2$ → $x^2 + x^2 + 14x + 49 = 169$ → $2x^2 + 14x - 120 = 0$ → $x^2 + 7x - 60 = 0$.
+$\Delta = 49 + 240 = 289 = 17^2$ → $x = \frac{-7 \pm 17}{2}$ → $x = 5$ (on rejette $-12$). Les côtés mesurent **5 cm et 12 cm**.
+@check sols(x**2+(x+7)**2-169, [5, -12])
+@end
+
+@exo 4 | Chute libre
+On lâche une pierre d'une hauteur de 20 m. Sa hauteur (en m) après $t$ secondes est $h(t) = 20 - 5t^2$. Quand touche-t-elle le sol ?
+@sol
+Au sol : $h(t) = 0$ → $5t^2 = 20$ → $t^2 = 4$ → $t = 2$ (on rejette $t = -2$, un temps est positif). Elle touche le sol après **2 secondes**.
+@end
+
+@exo 4 | Bénéfice
+Une entreprise fabrique $x$ centaines d'objets. Son bénéfice (en milliers de francs) est $B(x) = -x^2 + 12x - 20$. Pour quelles quantités le bénéfice est-il positif ou nul ?
+@sol
+$-x^2 + 12x - 20 \geq 0$. $\Delta = 144 - 80 = 64$ → racines $\frac{-12 \pm 8}{-2}$ → $2$ et $10$.
+$a < 0$ → positif entre les racines : $x \in \ff{2}{10}$, c'est-à-dire **entre 200 et 1000 objets**.
+@check ineq(-x**2+12*x-20>=0, Interval(2,10))
+@end
+
+@drill eq1 18 31 3 | Équations du 1er degré
+@drill eq1_frac 6 32 3 | Équations avec des fractions
+@drill eq_prod 12 33 3 | Produit nul
+@drill eq2_simple 12 34 3 | 2e degré : cas faciles
+@drill eq2_delta 18 35 2 | 2e degré : avec $\Delta$
+@drill somme_produit 9 36 3 | Somme et produit des racines
+@drill fact_trinome 12 37 3 | Factoriser un trinôme
+@drill eq_rat 9 38 2 | Équations avec $x$ au dénominateur
+@drill ineq1 15 39 3 | Inéquations du 1er degré
+@drill ineq2 12 40 2 | Inéquations du 2e degré
+@drill systemes 9 41 3 | Systèmes
+
+## 2.11 QCM style examen
+
+@qcm
+Les solutions de $x^2 - 4x = 0$ sont :
+A) $\{4\}$
+B) $\{0\,;\,4\}$
+C) $\{-2\,;\,2\}$
+D) $\{0\,;\,-4\}$
+@rep B | $x(x - 4) = 0$ → 0 ou 4. A oublie $x = 0$ (erreur de celui qui divise par $x$).
+@end
+
+@qcm
+Le produit des racines de $2x^2 + 3x - 5 = 0$ vaut :
+A) $\frac{5}{2}$
+B) $-\frac{5}{2}$
+C) $-\frac{3}{2}$
+D) $-5$
+@rep B | $\frac{c}{a} = -\frac{5}{2}$. C est la somme ($-\frac{b}{a}$), pas le produit.
+@end
+
+@qcm
+Les solutions de $-3x > 12$ sont :
+A) $x > -4$
+B) $x < -4$
+C) $x > 4$
+D) $x < 4$
+@rep B | Je divise par $-3$, négatif → je change le sens : $x < -4$. A oublie de changer le sens.
+@end
+
+@qcm
+Le discriminant de $x^2 + x + 1$ vaut :
+A) $-3$
+B) $5$
+C) $3$
+D) $-5$
+@rep A | $1 - 4 \times 1 \times 1 = -3$.
+@end
+
+@qcm
+L'ensemble des solutions de $x^2 \leq 9$ est :
+A) $\of{-\infty}{3}$
+B) $\ff{-3}{3}$
+C) $\fo{3}{+\infty}$
+D) $\R$
+@rep B | Racines $\pm 3$, $a > 0$ → négatif entre les racines. A oublie la solution négative.
+@end
+
+@qcm
+L'équation $\dfrac{x - 1}{x - 1} = 1$ a pour ensemble de solutions :
+A) $\R$
+B) $\R \setminus \{1\}$
+C) $\varnothing$
+D) $\{1\}$
+@rep B | Pour tout $x \neq 1$ la fraction vaut 1, mais $x = 1$ est interdit. A oublie la condition.
+@end
+
+@qcm
+On note $z_1$ et $z_2$ les racines de $5z^2 + 2z + 2$. Que vaut $z_1 + z_2$ ?
+A) $-\frac{2}{5}$
+B) $-2$
+C) $\frac{2}{5}$
+D) $2$
+@rep A | $-\frac{b}{a} = -\frac{2}{5}$. B oublie de diviser par $a$, C oublie le « − ».
+@end
+
+@qcm
+La solution du système $\begin{cases} x + y = 5 \\ x - y = 1 \end{cases}$ est :
+A) $(2\,;\,3)$
+B) $(3\,;\,2)$
+C) $(4\,;\,1)$
+D) $(3\,;\,-2)$
+@rep B | En additionnant : $2x = 6$, $x = 3$, puis $y = 2$. A inverse $x$ et $y$ (vérifie la 2e équation : $2 - 3 \neq 1$).
+@end
+
+@qcm
+L'équation $x^2 + 6x + 9 = 0$ a :
+A) deux solutions
+B) une seule solution, $-3$
+C) une seule solution, $3$
+D) aucune solution
+@rep B | $\Delta = 36 - 36 = 0$ ; $x_0 = -\frac{6}{2} = -3$ (c'est $(x + 3)^2 = 0$). C se trompe de signe.
+@end
+
+@qcm
+L'ensemble des solutions de $\dfrac{x - 2}{x + 1} > 0$ est :
+A) $\oo{-1}{2}$
+B) $\oo{2}{+\infty}$
+C) $\oo{-\infty}{-1} \cup \oo{2}{+\infty}$
+D) $\of{-\infty}{-1} \cup \fo{2}{+\infty}$
+@rep C | Tableau de signes : le quotient est positif à l'extérieur de $-1$ et $2$ (bornes exclues : $> 0$ strict, et $-1$ est interdit). B oublie la partie gauche.
+@end
+
+@qcm
+$x = -2$ est solution de :
+A) $x^2 + 2x = 0$
+B) $x^2 - 2x = 0$
+C) $x^2 + 4 = 0$
+D) $2x - 4 = 0$
+@rep A | Je remplace : $4 - 4 = 0$ ✔. B donne $4 + 4 = 8$. Réflexe QCM : **tester les réponses**.
+@end
+
+@serie 2H | Bilan du chapitre 2 (35 minutes, sans aide)
+
+:::note
+**7 ou 8 justes : passe au chapitre 3. 5 ou 6 : refais les séries des exercices ratés. Moins de 5 : reprends la carte (2.8) et les tableaux de signes (2.7).**
+:::
+
+@exo 2
+Résous $3(x - 2) - (x + 4) = 4$.
+@sol
+$3x - 6 - x - 4 = 4$ → $2x - 10 = 4$ → $x = 7$.
+@check sols(3*(x-2)-(x+4)-4, [7])
+@end
+
+@exo 2
+Résous $2x^2 - 3x - 2 = 0$.
+@sol
+$\Delta = 9 + 16 = 25$ → $x = \frac{3 \pm 5}{4}$ → $S = \{-\frac{1}{2}\,;\,2\}$.
+@check sols(2*x**2-3*x-2, [Rational(-1,2), 2])
+@end
+
+@exo 3
+Résous $(x + 2)^2 = 3(x + 2)$.
+@sol
+$(x + 2)^2 - 3(x + 2) = 0$ → $(x + 2)(x + 2 - 3) = 0$ → $(x + 2)(x - 1) = 0$ → $S = \{-2\,;\,1\}$.
+@check sols((x+2)**2-3*(x+2), [-2, 1])
+@end
+
+@exo 3
+Résous $\dfrac{3x - 1}{x + 2} = 1$.
+@sol
+Condition $x \neq -2$. $3x - 1 = x + 2$ → $2x = 3$ → $x = \frac{3}{2}$ (accepté).
+@check sols((3*x-1)/(x+2)-1, [Rational(3,2)])
+@end
+
+@exo 3
+Résous $\begin{cases} 2x + y = 1 \\ x - 2y = 8 \end{cases}$
+@sol
+De la 1re : $y = 1 - 2x$. Dans la 2e : $x - 2(1 - 2x) = 8$ → $5x - 2 = 8$ → $x = 2$, puis $y = -3$. $(2\,;\,-3)$.
+@check solve([2*x+y-1, x-2*y-8],[x,y])=={x:2, y:-3}
+@end
+
+@exo 3
+Résous $-2x^2 + 8 > 0$.
+@sol
+$-2x^2 > -8$ → $\div(-2)$ : $x^2 < 4$ → $S = \oo{-2}{2}$.
+@check ineq(-2*x**2+8>0, Interval.open(-2,2))
+@end
+
+@exo 4
+Résous $\dfrac{x - 3}{2 - x} \geq 0$.
+@sol
+Condition $x \neq 2$. $x - 3$ : − avant 3, + après. $2 - x$ ($a = -1$) : + avant 2, − après.
+
+:::signes
+x | -\infty | 2 | 3 | +\infty
+x-3 | - | | - | 0 | +
+2-x | + | 0 | - | | -
+\text{quotient} | - | || | + | 0 | -
+:::
+
+$S = \of{2}{3}$.
+@check ineq((x-3)/(2-x)>=0, Interval.Lopen(2,3))
+@end
+
+@exo 4
+Un jardin rectangulaire a une aire de 96 m² et un périmètre de 40 m. Quelles sont ses dimensions ?
+@sol
+Soit $x$ et $y$ les côtés : $x + y = 20$ et $xy = 96$. Ce sont les racines de $X^2 - 20X + 96 = 0$ (somme et produit).
+$\Delta = 400 - 384 = 16$ → $X = \frac{20 \pm 4}{2}$ → 8 et 12. Le jardin mesure **8 m sur 12 m**.
+@check sols(x**2-20*x+96, [8, 12])
+@end
+
+@corriges

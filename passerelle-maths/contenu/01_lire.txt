@@ -1,0 +1,826 @@
+%% Chapitre 0 — Lire les mathématiques et calculer sans erreur de signe
+# 0 | Lire les maths et calculer sans erreur | Symboles, intervalles, nombres négatifs, priorités, calcul mental
+
+:::objectifs
+- lire (et écrire) les symboles mathématiques sans hésiter : $\in$, $\Rightarrow$, $\Leftrightarrow$, $\R$, $\of{2}{5}$…
+- calculer avec des nombres négatifs **sans jamais te tromper de signe** ;
+- respecter les priorités de calcul ;
+- remplacer une lettre par un nombre (même négatif ou fractionnaire) ;
+- faire les calculs simples de tête (à l'examen, pas de calculatrice !).
+:::
+
+:::note Temps conseillé : 4 séances d'environ 1 h 30 (semaine 1 du planning).
+**Prérequis :** savoir additionner et multiplier des nombres entiers positifs (tables de multiplication).
+Si tu hésites sur les tables, révise-les 10 minutes par jour pendant cette semaine : tout le reste du guide en dépend.
+:::
+
+:::idee
+Les maths sont une **langue** avec son propre alphabet : des symboles comme $\in$, $\Leftrightarrow$, $\R$, $\fo{2}{5}$…
+Si un seul symbole t'est inconnu, toute la phrase devient incompréhensible, même si l'idée est simple.
+
+Exemple : « $\forall x \in \R,\ x^2 \geq 0$ » a l'air effrayant. Traduit en français : « pour tout nombre réel $x$, $x$ au carré est positif ou nul ».
+C'est une idée que tu connais déjà ! Ce chapitre est ton **dictionnaire**, et ton **entraînement de base** au calcul.
+:::
+
+## 0.1 Les symboles que tu vas rencontrer
+
+| Symbole | Se lit | Exemple et sens |
+| $=$ / $\neq$ | égal / différent de | $x \neq 2$ : « $x$ ne doit pas valoir 2 » |
+| $<$ / $\leq$ | inférieur / inférieur ou égal | $x < 3$ : 3 exclu · $x \leq 3$ : 3 inclus |
+| $>$ / $\geq$ | supérieur / supérieur ou égal | $x \geq 0$ : « $x$ positif ou nul » |
+| $\approx$ | environ égal | $\pi \approx 3{,}14$ · $e \approx 2{,}718$ |
+| $\in$ / $\notin$ | appartient à / n'appartient pas à | $3 \in \N$ : « 3 est un entier naturel » |
+| $\Rightarrow$ | implique, donc | $x = 2 \Rightarrow x^2 = 4$ (mais pas l'inverse !) |
+| $\Leftrightarrow$ | équivaut à, si et seulement si | $2x = 6 \Leftrightarrow x = 3$ (les deux phrases disent la même chose) |
+| $\forall$ / $\exists$ | pour tout / il existe | $\forall x \in \R,\ x^2 \geq 0$ |
+| $\infty$ | infini | $+\infty$ : de plus en plus grand · $-\infty$ : de plus en plus négatif |
+| $\cup$ / $\cap$ | union (« ou ») / intersection (« et ») | $\of{-\infty}{1} \cup \fo{3}{+\infty}$ : « avant 1, ou après 3 » |
+| $\setminus$ | privé de | $\R \setminus \{2\}$ : tous les réels sauf 2 |
+| $\{\ \}$ | ensemble | $S = \{-1\,;\,3\}$ : les solutions sont $-1$ et $3$ |
+| $\varnothing$ | ensemble vide | $S = \varnothing$ : aucune solution |
+| $|x|$ | valeur absolue | $|-5| = 5$ · $|5| = 5$ : le nombre « sans son signe » |
+| $\sqrt{\ }$ | racine carrée | $\sqrt{9} = 3$ car $3 \times 3 = 9$ |
+
+:::piege
+Attention au sens de $\Rightarrow$ : « $x = 2 \Rightarrow x^2 = 4$ » est vrai. Mais « $x^2 = 4 \Rightarrow x = 2$ » est **faux** : $x$ peut aussi valoir $-2$ !
+Le symbole $\Leftrightarrow$ ne s'utilise que si on peut aller **dans les deux sens**.
+:::
+
+:::lire Comment lire une ligne de calcul
+Une suite d'égalités $A = B = C$ se lit « $A$ est égal à $B$, qui est égal à $C$ ». Chaque signe $=$ relie deux écritures **du même nombre**.
+Une suite d'équivalences $2x + 1 = 7 \Leftrightarrow 2x = 6 \Leftrightarrow x = 3$ se lit « ces trois équations ont exactement les mêmes solutions ».
+Ne mélange pas les deux : on écrit $=$ entre des **nombres** (ou expressions), et $\Leftrightarrow$ entre des **phrases** (équations, inégalités).
+:::
+
+## 0.2 Les familles de nombres (les ensembles)
+
+| Nom | Ce qu'il contient | Exemples |
+| $\N$ (entiers naturels) | les nombres pour compter, à partir de 0 | $0,\ 1,\ 2,\ 3,\ 100$ |
+| $\Z$ (entiers relatifs) | $\N$ plus les entiers négatifs | $-5,\ -1,\ 0,\ 7$ |
+| $\Q$ (rationnels) | toutes les fractions d'entiers | $\frac{1}{2},\ -\frac{3}{4},\ 0{,}25 = \frac{1}{4}$ |
+| $\R$ (réels) | tous les nombres de la droite, même avec une infinité de chiffres | $\sqrt{2},\ \pi,\ -1{,}5,\ e$ |
+| $\C$ (complexes) | $\R$ plus les nombres avec $i$ (chapitre 8) | $3 + 2i,\ i,\ -4i$ |
+
+Chaque famille est contenue dans la suivante : $\N \subset \Z \subset \Q \subset \R \subset \C$, comme des **poupées russes**.
+Par exemple, 3 est à la fois dans $\N$, $\Z$, $\Q$, $\R$ et $\C$. Mais $-3$ n'est pas dans $\N$, et $\frac{1}{2}$ n'est pas dans $\Z$.
+
+:::astuce
+$\sqrt{2}$ et $\pi$ ne sont **pas** des fractions : leurs chiffres après la virgule ne s'arrêtent jamais et ne se répètent jamais. Ils sont dans $\R$ mais pas dans $\Q$.
+En revanche $0{,}333\ldots = \frac{1}{3}$ est dans $\Q$ (les chiffres se répètent).
+:::
+
+## 0.3 Les intervalles
+
+Un **intervalle** est un « morceau » de la droite des nombres. Le sens du crochet indique si la borne est incluse ou non.
+
+@fig intervalles:88 | Le crochet « tourné vers le nombre » inclut la borne ; « tourné vers l'extérieur », il l'exclut.
+
+:::coeur
+Crochet tourné **vers le nombre** $[2 \ldots 5]$ = borne **incluse** ($\leq$ ou $\geq$).
+Crochet tourné **vers l'extérieur** $]2 \ldots 5[$ = borne **exclue** ($<$ ou $>$).
+Avec $\infty$, le crochet est **toujours ouvert** (tourné vers l'extérieur), car on n'atteint jamais l'infini : $\fo{3}{+\infty}$.
+:::
+
+| En français | Inégalité | Intervalle |
+| $x$ est compris entre $-1$ (exclu) et 4 (inclus) | $-1 < x \leq 4$ | $\of{-1}{4}$ |
+| $x$ est strictement positif | $x > 0$ | $\oo{0}{+\infty}$ |
+| $x$ est positif (au sens large) | $x \geq 0$ | $\fo{0}{+\infty}$ |
+| $x$ est négatif | $x \leq 0$ | $\of{-\infty}{0}$ |
+| $x$ est inférieur ou égal à $-2$, ou strictement supérieur à 5 | $x \leq -2$ ou $x > 5$ | $\of{-\infty}{-2} \cup \oo{5}{+\infty}$ |
+| tous les nombres réels | — | $\R = \oo{-\infty}{+\infty}$ |
+
+:::piege
+En français, « **positif** » veut dire $\geq 0$ (zéro compris) et « **strictement positif** » veut dire $> 0$. Le mot « strictement » **exclut** la borne.
+Et un intervalle s'écrit toujours **du plus petit au plus grand** : $\ff{-3}{2}$, jamais $[2\,;\,-3]$.
+:::
+
+:::lire L'intersection $\cap$ et l'union $\cup$
+**Intersection** $A \cap B$ : les nombres qui sont dans $A$ **et** dans $B$ (la partie commune). $\ff{-1}{4} \cap \ff{2}{6} = \ff{2}{4}$.
+**Union** $A \cup B$ : les nombres qui sont dans $A$ **ou** dans $B$ (on met tout ensemble). $\ff{1}{3} \cup \ff{2}{5} = \ff{1}{5}$.
+Astuce : dessine les deux intervalles l'un au-dessus de l'autre sur la droite, puis lis la réponse.
+:::
+
+:::check
+1. Écris « $x$ est strictement inférieur à 7 » sous forme d'intervalle.
+2. Le nombre 5 appartient-il à $\oo{2}{5}$ ?
+3. Que vaut $\ff{0}{10} \cap \oo{5}{20}$ ?
+---
+1. $\oo{-\infty}{7}$. 2. Non (5 est exclu). 3. $\of{5}{10}$.
+:::
+
+## 0.4 Additionner et soustraire avec des nombres négatifs
+
+:::idee
+Pense à l'**argent**. $+10$ = tu as 10 €. $-10$ = tu as une **dette** de 10 €.
+- Si tu as une dette de 3 € et que tu fais une nouvelle dette de 4 €, ta dette totale est de 7 € : $-3 - 4 = -7$.
+- Si tu as une dette de 7 € et que tu gagnes 3 €, il te reste une dette de 4 € : $-7 + 3 = -4$.
+- « Enlever une dette » t'enrichit : si on efface ta dette de 2 €, tu gagnes 2 € : $5 - (-2) = 5 + 2 = 7$.
+:::
+
+@fig droite_nombres:92 | Sur la droite des nombres : ajouter = aller vers la droite, soustraire = aller vers la gauche. Ici $-3 - 4 = -7$.
+
+:::coeur
+**Même signe** → j'additionne les « tailles » et je garde le signe : $-3 - 4 = -7$ ; $5 + 2 = 7$.
+**Signes différents** → je soustrais la petite taille de la grande et je garde le signe de la plus grande : $-7 + 3 = -4$ ; $-2 + 9 = 7$.
+**Deux signes qui se suivent** : je les remplace par un seul. $+(-) \to -$ ; $-(+) \to -$ ; $-(-) \to +$ ; $+(+) \to +$.
+Donc $a - (-b) = a + b$ et $a + (-b) = a - b$.
+:::
+
+:::exemple Exemples corrigés
+$-8 + 3 = -5$ (dette de 8, gain de 3 : il reste une dette de 5).
+$-8 - 3 = -11$ (deux dettes).
+$8 - (-3) = 8 + 3 = 11$ (on efface une dette).
+$-8 - (-3) = -8 + 3 = -5$.
+$-4 + 4 = 0$ (un nombre plus son opposé donne toujours 0).
+:::
+
+:::methode Quand il y a beaucoup de termes : $-3 + 7 - 5 - (-2) + 1$
++ Je remplace les doubles signes : $-(-2) = +2$. J'obtiens $-3 + 7 - 5 + 2 + 1$.
++ Je regroupe les « + » : $7 + 2 + 1 = 10$. Je regroupe les « − » : $-3 - 5 = -8$.
++ Je termine : $10 - 8 = 2$.
+:::
+
+## 0.5 Multiplier et diviser : la règle des signes
+
+:::coeur
+$(+) \times (+) = +$ · $(-) \times (-) = +$ · $(+) \times (-) = -$ · $(-) \times (+) = -$ (même règle pour la division).
+Moyen mnémotechnique : « **signes identiques → plus ; signes différents → moins** ».
+Avec beaucoup de facteurs : je **compte les signes moins**. Nombre **pair** de « − » → résultat $+$ ; nombre **impair** → résultat $-$.
+:::
+
+:::pourquoi Pourquoi « moins par moins donne plus » ?
+Regarde la suite : $3 \times (-2) = -6$, $2 \times (-2) = -4$, $1 \times (-2) = -2$, $0 \times (-2) = 0$.
+À chaque ligne, le résultat augmente de 2. Si on continue la suite : $(-1) \times (-2) = +2$, $(-2) \times (-2) = +4$.
+Le « moins par moins donne plus » n'est pas une convention arbitraire : c'est la seule façon de continuer la suite logiquement.
+:::
+
+:::exemple Exemples corrigés
+$(-2) \times (-5) = +10$ (deux « − », pair). $(-2) \times (-5) \times (-1) = -10$ (trois « − », impair).
+$(-12) \div 4 = -3$ (signes différents). $(-12) \div (-4) = 3$ (signes identiques).
+$(-1)^{7} = -1$ (7 facteurs $-1$ : impair). $(-1)^{10} = 1$ (pair).
+:::
+
+## 0.6 Les priorités de calcul
+
+:::coeur
+1. **Parenthèses** (en commençant par les plus intérieures)
+2. **Puissances**
+3. **Multiplications et divisions**, de gauche à droite
+4. **Additions et soustractions**, de gauche à droite
+
+$2 + 3 \times 4 = 2 + 12 = 14$ (et non 20 !). $(2 + 3) \times 4 = 5 \times 4 = 20$.
+$12 \div 3 \times 2 = 4 \times 2 = 8$ (de gauche à droite, et non $12 \div 6 = 2$).
+Une **barre de fraction** agit comme des parenthèses : $\dfrac{8 + 4}{2 + 1} = \dfrac{12}{3} = 4$.
+:::
+
+:::piege Le piège le plus célèbre : $-3^2 = -9$ mais $(-3)^2 = 9$
+Dans $-3^2$, la puissance passe avant (priorité 2) et ne concerne que le 3 : $-(3 \times 3) = -9$.
+Dans $(-3)^2$, la parenthèse dit que le « − » est dedans : $(-3) \times (-3) = 9$.
+Même chose avec les lettres : si $x = -3$, alors $x^2 = (-3)^2 = 9$. **Mets toujours des parenthèses quand tu remplaces $x$ par un nombre négatif.**
+:::
+
+:::exemple Exemple guidé : calculer $10 - 2 \times (3 - 5)^2$
++ Parenthèses d'abord : $3 - 5 = -2$. Il reste $10 - 2 \times (-2)^2$.
++ Puissance : $(-2)^2 = (-2) \times (-2) = 4$. Il reste $10 - 2 \times 4$.
++ Multiplication : $2 \times 4 = 8$. Il reste $10 - 8$.
++ Soustraction : $10 - 8 = 2$.
+:::
+
+:::exemple Exemple guidé : calculer $5 - [3 - (4 - 7)]$
++ Parenthèse la plus intérieure : $4 - 7 = -3$. Il reste $5 - [3 - (-3)]$.
++ Crochet : $3 - (-3) = 3 + 3 = 6$. Il reste $5 - 6$.
++ Résultat : $-1$.
+:::
+
+## 0.7 Remplacer une lettre par un nombre
+
+:::methode
++ Je **recopie** l'expression en remplaçant chaque lettre par le nombre **entre parenthèses**.
++ Je calcule en respectant les **priorités** (puissances d'abord).
++ Je fais attention aux signes à chaque ligne.
+:::
+
+:::exemple Exemple guidé : si $x = -2$, calculer $x^2 - 3x + 1$
++ Je remplace chaque $x$ par $(-2)$ entre parenthèses : $(-2)^2 - 3 \times (-2) + 1$.
++ Puissance : $(-2)^2 = 4$.
++ Multiplication : $3 \times (-2) = -6$, donc « $- 3 \times (-2)$ » $= -(-6) = +6$.
++ Total : $4 + 6 + 1 = 11$.
+> Sans les parenthèses, on écrirait « $-2^2 - 3 \times -2 + 1$ » et on se tromperait deux fois.
+:::
+
+:::exemple Exemple guidé : si $x = \frac{1}{2}$, calculer $4x^2 - 2x + 3$
++ Je remplace : $4 \times \left(\frac{1}{2}\right)^2 - 2 \times \frac{1}{2} + 3$.
++ Puissance : $\left(\frac{1}{2}\right)^2 = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$.
++ Multiplications : $4 \times \frac{1}{4} = 1$ et $2 \times \frac{1}{2} = 1$.
++ Total : $1 - 1 + 3 = 3$.
+:::
+
+## 0.8 Le calcul mental utile (sans calculatrice)
+
+À l'examen, tu n'as pas de calculatrice. Quelques réflexes te feront gagner beaucoup de temps.
+
+:::coeur Les critères de divisibilité
+Un nombre est divisible par **2** s'il est pair (se termine par 0, 2, 4, 6, 8).
+Par **3** si la **somme de ses chiffres** est divisible par 3 : 126 → $1 + 2 + 6 = 9$ → oui.
+Par **4** si ses deux derniers chiffres forment un nombre divisible par 4 : 316 → 16 → oui.
+Par **5** s'il se termine par 0 ou 5. Par **9** si la somme de ses chiffres est divisible par 9. Par **10** s'il se termine par 0.
+:::
+
+:::coeur Les carrés à connaître par cœur
+$1^2 = 1$, $2^2 = 4$, $3^2 = 9$, $4^2 = 16$, $5^2 = 25$, $6^2 = 36$, $7^2 = 49$, $8^2 = 64$, $9^2 = 81$, $10^2 = 100$, $11^2 = 121$, $12^2 = 144$, $13^2 = 169$, $15^2 = 225$.
+Et les puissances de 2 : $2, 4, 8, 16, 32, 64, 128, 256, 512, 1024$.
+:::
+
+:::idee Décomposer en nombres premiers
+Un **nombre premier** n'a que deux diviseurs : 1 et lui-même (2, 3, 5, 7, 11, 13, 17, 19, 23…).
+Tout nombre s'écrit comme un produit de nombres premiers : $60 = 2 \times 2 \times 3 \times 5 = 2^2 \times 3 \times 5$.
+**Méthode :** je divise par 2 tant que je peux, puis par 3, puis par 5, puis par 7…
+$72 \to 36 \to 18 \to 9$ (trois fois par 2), puis $9 \to 3 \to 1$ (deux fois par 3) : $72 = 2^3 \times 3^2$.
+Cela sert à **simplifier les fractions** (chapitre 1) et les **racines** : $\sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$.
+:::
+
+:::astuce Astuces de calcul mental
+$\times 5$ = $\times 10$ puis $\div 2$ : $48 \times 5 = 480 \div 2 = 240$.
+$\times 25$ = $\times 100$ puis $\div 4$ : $36 \times 25 = 3600 \div 4 = 900$.
+$\times 11$ : $23 \times 11 = 230 + 23 = 253$. $\times 9$ : $\times 10$ puis $-$ une fois : $7 \times 9 = 70 - 7 = 63$.
+Décimaux ↔ fractions : $0{,}5 = \frac{1}{2}$, $0{,}25 = \frac{1}{4}$, $0{,}75 = \frac{3}{4}$, $0{,}2 = \frac{1}{5}$, $0{,}1 = \frac{1}{10}$, $0{,}125 = \frac{1}{8}$.
+:::
+
+## 0.9 Comprendre l'énoncé
+
+:::lire Le vocabulaire des consignes
+**calculer** : trouver une valeur numérique · **simplifier** : écrire plus court · **développer** : enlever les parenthèses · **factoriser** : mettre en produit (mettre des parenthèses) · **résoudre** : trouver **toutes** les solutions · **montrer que / démontrer** : prouver ce qui est écrit (le résultat est donné !) · **en déduire** : utiliser le résultat de la question précédente · **justifier** : expliquer pourquoi · **déterminer** : trouver · **strictement** : borne exclue · **l'ensemble des solutions** : toutes les solutions, noté $S$.
+:::
+
+@page
+## 0.10 Exercices
+
+:::note Comment travailler les exercices
+Fais-les **dans l'ordre**, sur une feuille, **sans regarder le corrigé**. Coche ceux que tu as ratés et refais-les 3 jours plus tard.
+Les étoiles indiquent la difficulté : ★☆☆☆ application directe · ★★☆☆ entraînement · ★★★☆ difficile · ★★★★ niveau examen.
+:::
+
+@serie 0A | Symboles, ensembles, intervalles
+
+@exo 1
+Traduis en français :
+a) $x \neq 2$
+b) $x \geq 0$
+c) $3 \in \N$
+d) $-2 \notin \N$
+e) $x \in \ff{1}{4}$
+f) $S = \varnothing$
+@sol
+a) « $x$ est différent de 2 » (x ne doit pas valoir 2).
+b) « $x$ est supérieur ou égal à 0 », c'est-à-dire « $x$ est positif ».
+c) « 3 appartient à l'ensemble des entiers naturels ».
+d) « $-2$ n'appartient pas aux entiers naturels » (normal : $\N$ ne contient pas de négatifs).
+e) « $x$ est compris entre 1 et 4, bornes incluses » : $1 \leq x \leq 4$.
+f) « L'ensemble des solutions est vide » : il n'y a aucune solution.
+@end
+
+@exo 1
+Vrai ou faux ?
+a) $3 \in \of{3}{5}$
+b) $-2 \in \N$
+c) $\sqrt{2} \in \R$
+d) $0{,}5 \in \Z$
+e) $7 \in \fo{7}{+\infty}$
+f) $\frac{1}{3} \in \Q$
+g) $-4 \in \Z$
+h) $\pi \in \Q$
+@sol
+a) **Faux** : le crochet $]$ devant 3 exclut 3.
+b) **Faux** : pas de négatifs dans $\N$.
+c) **Vrai** : $\sqrt{2} \approx 1{,}414$ est un nombre de la droite.
+d) **Faux** : $0{,}5$ n'est pas un entier.
+e) **Vrai** : le crochet $[$ inclut 7.
+f) **Vrai** : c'est une fraction d'entiers.
+g) **Vrai** : $\Z$ contient les entiers négatifs.
+h) **Faux** : $\pi$ n'est pas une fraction (ses décimales ne se répètent jamais).
+@end
+
+@exo 1
+Écris sous forme d'intervalle :
+a) $x \geq 4$
+b) $-1 < x \leq 3$
+c) $x < 0$
+d) $2 \leq x \leq 7$
+@sol
+a) $\fo{4}{+\infty}$ (4 inclus ; toujours ouvert en $+\infty$).
+b) $\of{-1}{3}$.
+c) $\oo{-\infty}{0}$.
+d) $\ff{2}{7}$.
+@check ineq(x >= 4, Interval(4, oo))
+@check ineq(x < 0, Interval.open(-oo, 0))
+@end
+
+@exo 2
+Écris avec une (ou deux) inégalité(s) :
+a) $\ff{-2}{5}$
+b) $\oo{0}{1}$
+c) $\of{-\infty}{3}$
+d) $\oo{-4}{+\infty}$
+@sol
+a) $-2 \leq x \leq 5$.
+b) $0 < x < 1$.
+c) $x \leq 3$.
+d) $x > -4$.
+@end
+
+@exo 2
+Traduis en intervalle :
+a) « $x$ est strictement positif »
+b) « $x$ est négatif »
+c) « $x$ est compris entre $-3$ et 3, bornes incluses »
+d) « $x$ est supérieur ou égal à 10 »
+@sol
+a) $x > 0$ → $\oo{0}{+\infty}$.
+b) $x \leq 0$ → $\of{-\infty}{0}$ (« négatif » inclut 0).
+c) $-3 \leq x \leq 3$ → $\ff{-3}{3}$.
+d) $x \geq 10$ → $\fo{10}{+\infty}$.
+@end
+
+@exo 2
+Écris avec une union d'intervalles :
+a) « $x \leq -2$ ou $x > 5$ »
+b) « $x < 1$ ou $x \geq 4$ »
+@sol
+a) $\of{-\infty}{-2} \cup \oo{5}{+\infty}$. Le mot « ou » se traduit par $\cup$.
+b) $\oo{-\infty}{1} \cup \fo{4}{+\infty}$.
+@end
+
+@exo 3
+Écris plus simplement (fais un dessin) :
+a) $\ff{-1}{4} \cap \ff{2}{6}$
+b) $\oo{-\infty}{3} \cap \fo{0}{+\infty}$
+c) $\ff{1}{3} \cup \ff{2}{5}$
+d) $\ff{0}{2} \cap \ff{5}{7}$
+@sol
+a) Partie commune : de 2 à 4 → $\ff{2}{4}$.
+b) Les nombres $< 3$ **et** $\geq 0$ : $\fo{0}{3}$.
+c) Tout ensemble : de 1 à 5 → $\ff{1}{5}$.
+d) Les deux morceaux ne se touchent pas : l'intersection est **vide**, $\varnothing$.
+@check Interval(-1,4).intersect(Interval(2,6)) == Interval(2,4)
+@check Interval.open(-oo,3).intersect(Interval(0,oo)) == Interval.Ropen(0,3)
+@check Interval(1,3).union(Interval(2,5)) == Interval(1,5)
+@end
+
+@exo 3
+Vrai ou faux ? Justifie par un contre-exemple quand c'est faux.
+a) $x = 3 \Rightarrow x^2 = 9$
+b) $x^2 = 9 \Rightarrow x = 3$
+c) $x > 2 \Rightarrow x > 1$
+d) $x > 1 \Rightarrow x > 2$
+e) $2x = 8 \Leftrightarrow x = 4$
+@sol
+a) **Vrai** : $3^2 = 9$.
+b) **Faux** : $x = -3$ donne aussi $x^2 = 9$. C'est un contre-exemple.
+c) **Vrai** : un nombre plus grand que 2 est forcément plus grand que 1.
+d) **Faux** : $x = 1{,}5$ est $> 1$ mais pas $> 2$.
+e) **Vrai** dans les deux sens : on passe de l'un à l'autre en divisant (ou multipliant) par 2.
+@end
+
+@exo 2
+Calcule :
+a) $|-7|$
+b) $|3|$
+c) $|0|$
+d) $|2 - 5|$
+e) $|5 - 2|$
+f) $-|-4|$
+@sol
+a) $7$. b) $3$. c) $0$.
+d) $|2 - 5| = |-3| = 3$ (on calcule **d'abord** l'intérieur).
+e) $|5 - 2| = |3| = 3$. (La valeur absolue d'une différence est la **distance** entre les deux nombres.)
+f) $-|-4| = -4$ (le « − » est **à l'extérieur** de la valeur absolue).
+@end
+
+@serie 0B | Les nombres négatifs
+
+@exo 1
+Calcule :
+a) $-5 + 8$
+b) $-4 - 6$
+c) $7 - (-3)$
+d) $-8 + 3$
+e) $-12 + 12$
+f) $0 - 9$
+@sol
+a) $3$ (dette de 5, gain de 8).
+b) $-10$ (deux dettes).
+c) $7 + 3 = 10$ (enlever une dette).
+d) $-5$.
+e) $0$.
+f) $-9$.
+@check same(-5+8, 3) and same(-4-6, -10) and same(7-(-3), 10) and same(-8+3, -5)
+@end
+
+@exo 1
+Calcule :
+a) $(-2) \times (-5)$
+b) $(-3) \times 4$
+c) $(-12) \div 4$
+d) $(-12) \div (-4)$
+e) $(-1) \times (-1) \times (-1)$
+f) $(-2) \times (-5) \times (-1)$
+@sol
+a) $10$ (signes identiques). b) $-12$. c) $-3$. d) $3$.
+e) Trois « − » : impair → $-1$.
+f) Trois « − » : impair → $-10$.
+@end
+
+@exo 2
+Calcule :
+a) $-3 - 4 + 10$
+b) $5 - 8 - (-6)$
+c) $-2 \times 3 - 4$
+d) $(-6) \div (-2) + (-5)$
+@sol
+a) $-3 - 4 = -7$, puis $-7 + 10 = 3$.
+b) $5 - 8 = -3$, puis $-3 - (-6) = -3 + 6 = 3$.
+c) Multiplication d'abord : $-2 \times 3 = -6$, puis $-6 - 4 = -10$.
+d) Division d'abord : $(-6) \div (-2) = 3$, puis $3 + (-5) = 3 - 5 = -2$.
+@check same(-3-4+10, 3) and same(5-8-(-6), 3) and same(-2*3-4, -10) and same(Rational(-6,-2)+(-5), -2)
+@end
+
+@exo 2
+Calcule :
+a) $(-1)^{7}$
+b) $(-1)^{10}$
+c) $(-2)^{3}$
+d) $(-2)^{4}$
+e) $-2^{4}$
+f) $(-3)^{2}$
+g) $-3^{2}$
+h) $-(-3)^{2}$
+@sol
+a) $-1$ (exposant impair). b) $1$ (exposant pair).
+c) $(-2)\times(-2)\times(-2) = -8$. d) $(-2)^4 = 16$.
+e) $-2^4 = -(2^4) = -16$ : la puissance ne porte que sur le 2.
+f) $9$. g) $-9$.
+h) $-(-3)^2 = -(9) = -9$.
+@check same((-2)**3, -8) and same(-2**4, -16) and same(-(-3)**2, -9)
+@end
+
+@exo 2 | Températures
+Le matin, il fait $-7\,$°C. L'après-midi, il fait $5\,$°C. Le soir, il fait $-3\,$°C.
+a) De combien de degrés la température a-t-elle monté entre le matin et l'après-midi ?
+b) De combien a-t-elle baissé entre l'après-midi et le soir ?
+@sol
+a) Écart = arrivée − départ $= 5 - (-7) = 5 + 7 = 12$ degrés.
+b) $-3 - 5 = -8$ : elle a baissé de 8 degrés.
+@end
+
+@exo 3
+Donne le **signe** du résultat **sans calculer**, puis calcule :
+a) $(-3) \times (-7) \times (-2) \times 5$
+b) $(-1)^{2026}$
+c) $(-2)^{5} \times (-3)^{2}$
+d) $-(-4)^{2}$
+@sol
+a) Trois facteurs négatifs → **négatif**. $3 \times 7 \times 2 \times 5 = 210$ → $-210$.
+b) Exposant pair → **positif** : $1$.
+c) $(-2)^5 = -32$ (impair, négatif) et $(-3)^2 = 9$ (positif) : produit **négatif**, $-288$.
+d) $(-4)^2 = 16$, puis le « − » devant : **négatif**, $-16$.
+@check same((-3)*(-7)*(-2)*5, -210) and same((-2)**5*(-3)**2, -288)
+@end
+
+@serie 0C | Les priorités de calcul
+
+@exo 1
+Calcule :
+a) $2 + 3 \times 4$
+b) $(2 + 3) \times 4$
+c) $20 - 12 \div 4$
+d) $(20 - 12) \div 4$
+@sol
+a) $2 + 12 = 14$. b) $5 \times 4 = 20$.
+c) Division d'abord : $12 \div 4 = 3$, puis $20 - 3 = 17$.
+d) Parenthèse d'abord : $8 \div 4 = 2$.
+@end
+
+@exo 2
+Calcule :
+a) $10 - 2 \times (3 - 5)$
+b) $3 - 4 \times (2 - 5)^2$
+c) $10 - 2 \times (3 - 5)^2$
+d) $(4 - 7) \times (2 + 1)^2$
+@sol
+a) $3 - 5 = -2$ ; $2 \times (-2) = -4$ ; $10 - (-4) = 14$.
+b) $2 - 5 = -3$ ; $(-3)^2 = 9$ ; $4 \times 9 = 36$ ; $3 - 36 = -33$.
+c) $(-2)^2 = 4$ ; $2 \times 4 = 8$ ; $10 - 8 = 2$.
+d) $(-3) \times 3^2 = (-3) \times 9 = -27$.
+@check same(10-2*(3-5), 14) and same(3-4*(2-5)**2, -33) and same((4-7)*(2+1)**2, -27)
+@end
+
+@exo 2
+Calcule :
+a) $-3^2 + (-3)^2$
+b) $2 \times 3^2$
+c) $(2 \times 3)^2$
+d) $-2^2 - (-2)^2$
+@sol
+a) $-9 + 9 = 0$.
+b) Puissance d'abord : $2 \times 9 = 18$.
+c) Parenthèse d'abord : $6^2 = 36$. (Comparer avec b : ce n'est pas pareil !)
+d) $-4 - 4 = -8$.
+@end
+
+@exo 3
+Calcule :
+a) $\dfrac{8 - 2 \times 3}{4 - 6}$
+b) $\dfrac{(-2)^3 + 2}{3}$
+c) $5 - [3 - (4 - 7)]$
+d) $12 \div 3 \times 2 - 2^3$
+@sol
+a) En haut : $8 - 6 = 2$. En bas : $-2$. Résultat : $\frac{2}{-2} = -1$.
+b) En haut : $-8 + 2 = -6$. Résultat : $\frac{-6}{3} = -2$.
+c) $4 - 7 = -3$ ; $3 - (-3) = 6$ ; $5 - 6 = -1$.
+d) $2^3 = 8$ d'abord ; puis de gauche à droite $12 \div 3 = 4$, $4 \times 2 = 8$ ; enfin $8 - 8 = 0$.
+@check same(Rational(8-2*3, 4-6), -1) and same(5-(3-(4-7)), -1) and same(Rational(12,3)*2-2**3, 0)
+@end
+
+@exo 3
+Place des parenthèses pour que chaque égalité soit vraie :
+a) $2 + 3 \times 4 - 1 = 19$
+b) $2 + 3 \times 4 - 1 = 11$
+c) $2 + 3 \times 4 - 1 = 15$
+@sol
+a) $(2 + 3) \times 4 - 1 = 20 - 1 = 19$.
+b) $2 + 3 \times (4 - 1) = 2 + 9 = 11$.
+c) $(2 + 3) \times (4 - 1) = 5 \times 3 = 15$.
+@end
+
+@serie 0D | Remplacer une lettre par un nombre
+
+@exo 1
+Pour $x = 3$, calcule :
+a) $2x + 1$
+b) $x^2$
+c) $x^2 - 2x$
+d) $5 - x$
+@sol
+a) $2 \times 3 + 1 = 7$. b) $9$. c) $9 - 6 = 3$. d) $2$.
+@end
+
+@exo 2
+Pour $x = -2$, calcule :
+a) $3x + 7$
+b) $x^2$
+c) $-x^2$
+d) $x^3$
+e) $2x^2 + x - 3$
+@sol
+a) $3 \times (-2) + 7 = -6 + 7 = 1$.
+b) $(-2)^2 = 4$.
+c) $-x^2 = -(x^2) = -4$ (la puissance d'abord, puis le « − »).
+d) $(-2)^3 = -8$.
+e) $2 \times 4 + (-2) - 3 = 8 - 2 - 3 = 3$.
+@check same((2*x**2+x-3).subs(x,-2), 3)
+@end
+
+@exo 3
+Pour $x = -\frac{1}{2}$, calcule :
+a) $4x^2 + 2x - 1$
+b) $2x^2 - 3x$
+@sol
+a) $\left(-\frac12\right)^2 = \frac14$. $4 \times \frac14 = 1$ ; $2 \times \left(-\frac12\right) = -1$. Total : $1 - 1 - 1 = -1$.
+b) $2 \times \frac14 = \frac12$ ; $-3 \times \left(-\frac12\right) = +\frac32$. Total : $\frac12 + \frac32 = \frac42 = 2$.
+@check same((4*x**2+2*x-1).subs(x,Rational(-1,2)), -1) and same((2*x**2-3*x).subs(x,Rational(-1,2)), 2)
+@end
+
+@exo 3
+Pour $a = -3$ et $b = 2$, calcule :
+a) $a + b$
+b) $ab$
+c) $a^2 - b^2$
+d) $(a - b)^2$
+e) $-a - b$
+@sol
+a) $-3 + 2 = -1$.
+b) $ab$ veut dire $a \times b$ : $(-3) \times 2 = -6$.
+c) $(-3)^2 - 2^2 = 9 - 4 = 5$.
+d) $(-3 - 2)^2 = (-5)^2 = 25$.
+e) $-(-3) - 2 = 3 - 2 = 1$.
+@check same(((a-b)**2).subs({a:-3,b:2}), 25) and same((a**2-b**2).subs({a:-3,b:2}), 5)
+@end
+
+@exo 4 | Tester une solution
+On considère l'équation $x^2 - 2x - 3 = 0$. Les nombres suivants sont-ils solutions ?
+a) $x = 3$
+b) $x = -1$
+c) $x = 2$
+@sol
+Pour savoir si un nombre est solution, **on le remplace** et on regarde si on obtient 0.
+a) $9 - 6 - 3 = 0$ : **oui**.
+b) $(-1)^2 - 2 \times (-1) - 3 = 1 + 2 - 3 = 0$ : **oui**.
+c) $4 - 4 - 3 = -3 \neq 0$ : **non**.
+> Cette technique (« je remplace et je vérifie ») est ton parachute à l'examen, surtout dans les QCM.
+@check sols(x**2-2*x-3, [3, -1])
+@end
+
+@exo 4 | Formules de physique
+a) L'énergie cinétique vaut $E = \frac{1}{2} m v^2$. Calcule $E$ pour $m = 4$ et $v = -3$.
+b) La position d'un objet est $d = v t + \frac{1}{2} a t^2$. Calcule $d$ pour $v = 2$, $a = -4$ et $t = 3$.
+@sol
+a) $E = \frac12 \times 4 \times (-3)^2 = 2 \times 9 = 18$.
+b) $d = 2 \times 3 + \frac12 \times (-4) \times 3^2 = 6 + (-2) \times 9 = 6 - 18 = -12$.
+@end
+
+@serie 0E | Calcul mental et nombres premiers
+
+@exo 1
+Le nombre 126 est-il divisible par 2 ? par 3 ? par 5 ? par 9 ? Et le nombre 315 ?
+@sol
+126 : pair → divisible par 2 ; $1 + 2 + 6 = 9$ → divisible par 3 **et** par 9 ; ne finit pas par 0 ou 5 → pas par 5.
+315 : impair → pas par 2 ; $3 + 1 + 5 = 9$ → divisible par 3 et par 9 ; finit par 5 → divisible par 5.
+@end
+
+@exo 2
+Décompose en produit de nombres premiers :
+a) $12$
+b) $60$
+c) $72$
+d) $150$
+e) $98$
+f) $180$
+@sol
+a) $12 = 2 \times 6 = 2^2 \times 3$.
+b) $60 = 2^2 \times 3 \times 5$.
+c) $72 = 2^3 \times 3^2$.
+d) $150 = 2 \times 75 = 2 \times 3 \times 25 = 2 \times 3 \times 5^2$.
+e) $98 = 2 \times 49 = 2 \times 7^2$.
+f) $180 = 2^2 \times 3^2 \times 5$.
+@check 2**2*3==12 and 2**2*3*5==60 and 2**3*3**2==72 and 2*3*5**2==150 and 2*7**2==98 and 2**2*3**2*5==180
+@end
+
+@exo 2
+Calcule de tête :
+a) $25 \times 4$
+b) $25 \times 12$
+c) $0{,}5 \times 18$
+d) $15 \times 11$
+e) $99 \times 7$
+f) $48 \times 5$
+@sol
+a) $100$. b) $25 \times 12 = 25 \times 4 \times 3 = 300$. c) La moitié de 18 : $9$.
+d) $150 + 15 = 165$. e) $700 - 7 = 693$. f) $480 \div 2 = 240$.
+@end
+
+@exo 2
+Écris sous forme de fraction simplifiée :
+a) $0{,}5$
+b) $0{,}25$
+c) $0{,}75$
+d) $0{,}2$
+e) $1{,}5$
+f) $0{,}125$
+@sol
+a) $\frac12$. b) $\frac14$. c) $\frac34$. d) $\frac{2}{10} = \frac15$. e) $\frac{15}{10} = \frac32$. f) $\frac{125}{1000} = \frac18$.
+@end
+
+@exo 3
+a) Trouve le plus petit multiple commun (PPCM) de : 4 et 6 ; 6 et 8 ; 3 et 5 ; 10 et 15.
+b) Trouve le plus grand diviseur commun (PGCD) de : 12 et 18 ; 45 et 60 ; 14 et 21.
+@sol
+a) Multiples de 4 : 4, 8, **12** ; de 6 : 6, **12** → PPCM = 12. De même : $\text{PPCM}(6, 8) = 24$ ; $\text{PPCM}(3, 5) = 15$ ; $\text{PPCM}(10, 15) = 30$.
+b) $\text{PGCD}(12, 18) = 6$ ; $\text{PGCD}(45, 60) = 15$ ; $\text{PGCD}(14, 21) = 7$.
+> Le PPCM sert à trouver le **dénominateur commun** de deux fractions ; le PGCD sert à **simplifier** une fraction d'un coup.
+@check ilcm(4,6)==12 and ilcm(6,8)==24 and ilcm(10,15)==30 and igcd(12,18)==6 and igcd(45,60)==15 and igcd(14,21)==7
+@end
+
+@drill signes_add 24 1 4 | Additions et soustractions de relatifs
+@drill signes_mul 18 2 3 | Multiplications et divisions de relatifs
+@drill priorites 18 3 3 | Priorités de calcul
+@drill substitution 12 4 2 | Remplacer $x$ par un nombre
+@drill intervalles 12 5 2 | Inégalités → intervalles
+
+## 0.11 QCM style examen
+
+:::note
+À l'examen, les questions ressemblent souvent à ça : 4 réponses, **une seule juste**. Les mauvaises réponses sont construites à partir des **erreurs classiques** : dans le corrigé, on t'explique quelle erreur mène à quelle réponse.
+:::
+
+@qcm
+$-3^2 + 5 =$
+A) $14$
+B) $-4$
+C) $4$
+D) $-14$
+@rep B | $-3^2 = -9$ (la puissance ne porte que sur 3), et $-9 + 5 = -4$. A calcule $(-3)^2 = 9$ au lieu de $-3^2$.
+@end
+
+@qcm
+$2 + 6 \div 2 \times 3 =$
+A) $3$
+B) $12$
+C) $11$
+D) $2$
+@rep C | De gauche à droite : $6 \div 2 = 3$, puis $3 \times 3 = 9$, et $2 + 9 = 11$. B fait l'addition en premier ; A calcule $2 \times 3$ avant la division.
+@end
+
+@qcm
+Pour $x = -1$, $x^2 - x$ vaut :
+A) $0$
+B) $-2$
+C) $2$
+D) $1$
+@rep C | $(-1)^2 - (-1) = 1 + 1 = 2$. A oublie que « $-(-1)$ » donne $+1$.
+@end
+
+@qcm
+« $x$ est strictement supérieur à $-1$ et inférieur ou égal à 2 » s'écrit :
+A) $\ff{-1}{2}$
+B) $\of{-1}{2}$
+C) $\fo{-1}{2}$
+D) $\oo{-1}{2}$
+@rep B | $-1$ exclu (crochet vers l'extérieur), 2 inclus (crochet vers le nombre).
+@end
+
+@qcm
+$5 - (-3) \times (-2) =$
+A) $-1$
+B) $16$
+C) $11$
+D) $-16$
+@rep A | Multiplication d'abord : $(-3) \times (-2) = 6$, puis $5 - 6 = -1$. B fait $5 - (-3) = 8$ en premier, puis $8 \times (-2) = -16$… et se trompe même de signe.
+@end
+
+@qcm
+Parmi ces nombres, lequel n'appartient **pas** à $\Q$ ?
+A) $-7$
+B) $0{,}25$
+C) $\sqrt{2}$
+D) $\frac{22}{7}$
+@rep C | $\sqrt{2}$ n'est pas une fraction. Attention : $\frac{22}{7}$ est une fraction (proche de $\pi$, mais ce n'est pas $\pi$).
+@end
+
+@qcm
+$(-1)^{15} + (-1)^{16} =$
+A) $0$
+B) $2$
+C) $-2$
+D) $1$
+@rep A | Exposant impair → $-1$ ; pair → $1$ ; somme $0$.
+@end
+
+@qcm
+$\ff{-2}{3} \cap \oo{0}{5} =$
+A) $\ff{-2}{5}$
+B) $\of{0}{3}$
+C) $\fo{0}{3}$
+D) $\oo{0}{3}$
+@rep B | Partie commune : de 0 (exclu, car exclu dans $\oo{0}{5}$) à 3 (inclus, car inclus dans les deux). A est l'union.
+@end
+
+@serie 0F | Bilan du chapitre 0 (20 minutes, sans aide)
+
+:::note
+Fais cette série **en temps limité**, sans regarder le cours. Compte 1 point par exercice entièrement juste.
+**6/6 : passe au chapitre 1. 4 ou 5 : refais les exercices ratés dans 2 jours. Moins de 4 : relis le chapitre et refais les séries 0B et 0C.**
+:::
+
+@exo 2
+Calcule $-6 - (-4) + 3 \times (-2)$.
+@sol
+Multiplication d'abord : $3 \times (-2) = -6$. Puis $-6 + 4 - 6 = -8$.
+@check same(-6-(-4)+3*(-2), -8)
+@end
+
+@exo 2
+Calcule $2 - 3 \times (1 - 4)^2$.
+@sol
+$1 - 4 = -3$ ; $(-3)^2 = 9$ ; $3 \times 9 = 27$ ; $2 - 27 = -25$.
+@check same(2-3*(1-4)**2, -25)
+@end
+
+@exo 3
+Pour $x = -3$, calcule $-x^2 + 2x - 1$.
+@sol
+$-(-3)^2 + 2 \times (-3) - 1 = -9 - 6 - 1 = -16$.
+@check same((-x**2+2*x-1).subs(x,-3), -16)
+@end
+
+@exo 2
+Écris sous forme d'intervalle ou d'union d'intervalles : a) $x < 2$ ; b) $-5 \leq x < 0$ ; c) « $x \leq 1$ ou $x \geq 3$ ».
+@sol
+a) $\oo{-\infty}{2}$. b) $\fo{-5}{0}$. c) $\of{-\infty}{1} \cup \fo{3}{+\infty}$.
+@end
+
+@exo 3
+Calcule $\dfrac{(-2)^3 - 4}{-3}$.
+@sol
+En haut : $-8 - 4 = -12$. Puis $\frac{-12}{-3} = 4$ (signes identiques).
+@check same(Rational((-2)**3-4, -3), 4)
+@end
+
+@exo 3
+Décompose 84 en produit de nombres premiers, puis calcule $\text{PGCD}(84, 60)$.
+@sol
+$84 = 2 \times 42 = 2 \times 2 \times 21 = 2^2 \times 3 \times 7$. $60 = 2^2 \times 3 \times 5$.
+Facteurs communs : $2^2 \times 3 = 12$. Donc $\text{PGCD}(84, 60) = 12$.
+@check igcd(84,60)==12 and 2**2*3*7==84
+@end
+
+@corriges

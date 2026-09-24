@@ -1,0 +1,960 @@
+%% Examens blancs
+# 9 | Examens blancs | Trois examens de 30 QCM sur tout le programme, en conditions réelles
+
+:::examen Les règles des examens blancs
+**Durée :** 90 minutes (3 minutes par question). **Pas de calculatrice, pas de notes, pas de formulaire.**
+**Méthode :** premier passage rapide, réponds à celles dont tu es sûr. Deuxième passage sur les autres. Jamais plus de 5 minutes sur une seule question.
+**Astuce QCM :** si tu ne sais pas calculer, **teste les réponses** : remplace, vérifie, élimine. Souvent, 2 réponses s'éliminent tout de suite.
+**Correction :** 1 point par bonne réponse. **Objectif : 24/30.** En dessous de 18 : revois les chapitres des questions ratées (indiqués entre crochets dans la correction), puis refais l'examen une semaine plus tard.
+**Quand ?** Examen 1 à la fin de la semaine 6, examen 2 au début de la semaine 8, examen 3 à la fin de la semaine 8 (voir le planning).
+:::
+
+:::methode Après chaque examen blanc
++ Corrige-toi avec la correction expliquée. Pour chaque erreur, note le **chapitre** indiqué entre crochets.
++ Remplis la grille de diagnostic : le chapitre avec le plus d'erreurs est celui à revoir **en premier**.
++ Pour chaque erreur, refais **l'exercice du cours** du même type (même section), puis note l'erreur dans ton carnet.
++ Refais le même examen une semaine plus tard, sans regarder la correction. Si tu passes de 18 à 24, la méthode fonctionne : continue comme ça.
+:::
+
+@page
+## 9.1 Examen blanc n° 1
+
+| Question | Ta réponse | Question | Ta réponse | Question | Ta réponse |
+| 1 | | 11 | | 21 | |
+| 2 | | 12 | | 22 | |
+| 3 | | 13 | | 23 | |
+| 4 | | 14 | | 24 | |
+| 5 | | 15 | | 25 | |
+| 6 | | 16 | | 26 | |
+| 7 | | 17 | | 27 | |
+| 8 | | 18 | | 28 | |
+| 9 | | 19 | | 29 | |
+| 10 | | 20 | | 30 | |
+
+@qnum E1.
+
+@qcm
+Pour $x \neq -1$, $\dfrac{x^2 - 1}{x + 1} =$
+A) $x + 1$
+B) $x - 1$
+C) $x^2$
+D) $1$
+@rep B | $x^2 - 1 = (x - 1)(x + 1)$, on simplifie par $(x + 1)$. [chap. 1]
+@check same((x**2-1)/(x+1), x-1)
+@end
+
+@qcm
+Les solutions de $2x^2 - 8 = 0$ sont :
+A) $\{4\}$
+B) $\{2\}$
+C) $\{-4\,;\,4\}$
+D) $\{-2\,;\,2\}$
+@rep D | $x^2 = 4$ → $\pm 2$. A et C oublient de diviser par 2 ou de prendre la racine ; B oublie la solution négative. [chap. 2]
+@check sols(2*x**2-8, [-2, 2])
+@end
+
+@qcm
+Le discriminant de $3x^2 - 2x + 1$ vaut :
+A) $16$
+B) $-8$
+C) $8$
+D) $-10$
+@rep B | $(-2)^2 - 4 \times 3 \times 1 = 4 - 12 = -8$. A calcule $4 + 12$ (erreur de signe). [chap. 2]
+@end
+
+@qcm
+Le domaine de $f(x) = \dfrac{\sqrt{x + 2}}{x - 1}$ est :
+A) $\fo{-2}{+\infty}$
+B) $\oo{1}{+\infty}$
+C) $\fo{-2}{1} \cup \oo{1}{+\infty}$
+D) $\R \setminus \{1\}$
+@rep C | Racine : $x \geq -2$ ; fraction : $x \neq 1$. Les **deux** conditions ! A oublie la fraction, D oublie la racine. [chap. 4]
+@end
+
+@qcm
+$\ln(e^2) + e^{\ln 3} =$
+A) $6$
+B) $e^2 + 3$
+C) $5$
+D) $2\ln 3$
+@rep C | $2 + 3 = 5$. [chap. 4]
+@check same(log(E**2)+exp(log(3)), 5)
+@end
+
+@qcm
+La solution de $e^{2x} = 5$ est :
+A) $x = \frac{\ln 5}{2}$
+B) $x = \ln\frac{5}{2}$
+C) $x = 2\ln 5$
+D) $x = e^{5/2}$
+@rep A | $2x = \ln 5$ → $x = \frac{\ln 5}{2}$. B se trompe : $\frac{\ln 5}{2} \neq \ln\frac{5}{2}$. [chap. 4]
+@check sols(exp(2*x)-5, [log(5)/2])
+@end
+
+@qcm
+$\lim\limits_{x \to +\infty} \dfrac{1 - 3x^2}{x^2 + 2} =$
+A) $1$
+B) $0$
+C) $-\infty$
+D) $-3$
+@rep D | $\frac{-3x^2}{x^2} = -3$. A prend les termes constants au lieu des termes dominants. [chap. 4]
+@check lim((1-3*x**2)/(x**2+2), oo, -3)
+@end
+
+@qcm
+Si $f(x) = x^3 - 3x$, alors $f'(x) =$
+A) $3x^2$
+B) $3x^2 - 3$
+C) $x^2 - 3$
+D) $3x - 3$
+@rep B | Tableau des dérivées. [chap. 5]
+@end
+
+@qcm
+La dérivée de $e^{x^2}$ est :
+A) $e^{x^2}$
+B) $2e^{x^2}$
+C) $2x\,e^{x^2}$
+D) $x^2 e^{x^2 - 1}$
+@rep C | $u'e^u$ avec $u = x^2$. A oublie de multiplier par $u'$. [chap. 5]
+@check der(exp(x**2), 2*x*exp(x**2))
+@end
+
+@qcm
+La valeur minimale de $f(x) = x^2 - 6x + 1$ est :
+A) $3$
+B) $-8$
+C) $1$
+D) $-5$
+@rep B | $f'(x) = 2x - 6 = 0$ → $x = 3$ ; $f(3) = 9 - 18 + 1 = -8$. A donne le $x$ du minimum, pas sa **valeur** ! [chap. 5]
+@end
+
+@qcm
+La tangente à $f(x) = \ln x$ au point d'abscisse $e$ est :
+A) $y = x - e$
+B) $y = ex$
+C) $y = \frac{x}{e}$
+D) $y = \frac{x}{e} + 1$
+@rep C | $f(e) = 1$, $f'(e) = \frac{1}{e}$ → $y = \frac{1}{e}(x - e) + 1 = \frac{x}{e} - 1 + 1 = \frac{x}{e}$. D oublie le « $-1$ » du développement. [chap. 5]
+@end
+
+@qcm
+Une primitive de $\dfrac{1}{2x + 1}$ sur $\oo{-\frac{1}{2}}{+\infty}$ est :
+A) $\ln(2x + 1)$
+B) $2\ln(2x + 1)$
+C) $-\frac{1}{(2x + 1)^2}$
+D) $\frac{1}{2}\ln(2x + 1)$
+@rep D | $\frac{u'}{u}$ avec $u = 2x + 1$, $u' = 2$ : il faut $\frac{1}{2}$ devant. A a pour dérivée $\frac{2}{2x+1}$. [chap. 6]
+@check prim(log(2*x+1)/2, 1/(2*x+1))
+@end
+
+@qcm
+$\displaystyle\int_0^2 (2x + 1)\dx =$
+A) $5$
+B) $4$
+C) $6$
+D) $3$
+@rep C | $\big[x^2 + x\big]_0^2 = 4 + 2 = 6$. [chap. 6]
+@check integ(2*x+1, 0, 2, 6)
+@end
+
+@qcm
+$\displaystyle\int_0^1 e^{-x}\dx =$
+A) $1 - e$
+B) $\frac{1}{e}$
+C) $e - 1$
+D) $1 - \frac{1}{e}$
+@rep D | $\big[-e^{-x}\big]_0^1 = -e^{-1} + 1 = 1 - \frac{1}{e}$. [chap. 6]
+@check integ(exp(-x), 0, 1, 1-1/E)
+@end
+
+@qcm
+La valeur moyenne de $f(x) = 2x$ sur $\ff{0}{4}$ est :
+A) $8$
+B) $4$
+C) $2$
+D) $16$
+@rep B | $\frac{1}{4} \times \big[x^2\big]_0^4 = \frac{16}{4} = 4$. D oublie de diviser par 4. [chap. 6]
+@end
+
+@qcm
+$\vec u\,(2\,;\,3) \cdot \vec v\,(-3\,;\,2) =$
+A) $12$
+B) $-12$
+C) $0$
+D) $5$
+@rep C | $-6 + 6 = 0$ (ils sont orthogonaux). [chap. 7]
+@end
+
+@qcm
+La norme de $\vec u\,(1\,;\,2\,;\,2)$ est :
+A) $5$
+B) $\sqrt{5}$
+C) $9$
+D) $3$
+@rep D | $\sqrt{1 + 4 + 4} = \sqrt{9} = 3$. C oublie la racine. [chap. 7]
+@end
+
+@qcm
+$A(1\,;\,2)$, $B(5\,;\,-1)$. Le vecteur $\V{AB}$ est :
+A) $(-4\,;\,3)$
+B) $(4\,;\,-3)$
+C) $(6\,;\,1)$
+D) $(5\,;\,-2)$
+@rep B | Arrivée moins départ : $(5 - 1\,;\,-1 - 2)$. A fait départ moins arrivée. [chap. 7]
+@end
+
+@qcm
+Le milieu de $[AB]$ avec $A(-1\,;\,3)$, $B(3\,;\,-1)$ est :
+A) $(2\,;\,2)$
+B) $(4\,;\,-4)$
+C) $(1\,;\,1)$
+D) $(2\,;\,1)$
+@rep C | $\left(\frac{-1 + 3}{2}\,;\,\frac{3 - 1}{2}\right) = (1\,;\,1)$. B calcule $\V{AB}$. [chap. 7]
+@end
+
+@qcm
+$\vec u\,(2\,;\,k)$ et $\vec v\,(4\,;\,6)$ sont colinéaires si $k =$
+A) $2$
+B) $12$
+C) $-3$
+D) $3$
+@rep D | $2 \times 6 - 4k = 0$ → $k = 3$. [chap. 7]
+@end
+
+@qcm
+$(2 + i)(1 - i) =$
+A) $3 - i$
+B) $1 - i$
+C) $3 + i$
+D) $2 - i$
+@rep A | $2 - 2i + i - i^2 = 2 - i + 1 = 3 - i$. [chap. 8]
+@check same((2+I)*(1-I), 3-I)
+@end
+
+@qcm
+$|(1 + i)^4| =$
+A) $2$
+B) $16$
+C) $4$
+D) $\sqrt{2}$
+@rep C | $|1 + i|^4 = (\sqrt{2})^4 = 4$. [chap. 8]
+@check cmod((1+I)**4, 4)
+@end
+
+@qcm
+$i^{2026} =$
+A) $1$
+B) $i$
+C) $-i$
+D) $-1$
+@rep D | $2026 = 4 \times 506 + 2$ → $i^2 = -1$. [chap. 8]
+@end
+
+@qcm
+La forme algébrique de $2e^{i\pi/3}$ est :
+A) $\sqrt{3} + i$
+B) $1 + i\sqrt{3}$
+C) $2 + 2i$
+D) $1 - i\sqrt{3}$
+@rep B | $2\left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = 1 + i\sqrt{3}$. A échange cos et sin. [chap. 8]
+@check same(2*exp(I*pi/3), 1+I*sqrt(3))
+@end
+
+@qcm
+Les racines de $z^2 - 2z + 2 = 0$ sont :
+A) $-1 \pm i$
+B) $2 \pm i$
+C) $1 \pm i$
+D) $\pm i\sqrt{2}$
+@rep C | $\Delta = 4 - 8 = -4$ → $\frac{2 \pm 2i}{2} = 1 \pm i$. [chap. 8]
+@check csols(z**2-2*z+2, [1+I, 1-I])
+@end
+
+@qcm
+Le produit des racines de $3z^2 - z + 6 = 0$ vaut :
+A) $-2$
+B) $\frac{1}{3}$
+C) $6$
+D) $2$
+@rep D | $\frac{c}{a} = \frac{6}{3} = 2$. B est la somme $-\frac{b}{a}$. [chap. 2 et 8]
+@end
+
+@qcm
+Si $f'(x) > 0$ pour tout $x \in \ff{1}{4}$, alors :
+A) $f$ est positive sur $\ff{1}{4}$
+B) $f$ est croissante sur $\ff{1}{4}$
+C) $f(1) > f(4)$
+D) $f$ est constante
+@rep B | $f' > 0$ → croissante. Cela ne dit rien sur le **signe** de $f$ (A) ! [chap. 5]
+@end
+
+@qcm
+$\cos\frac{5\pi}{6} =$
+A) $\frac{\sqrt{3}}{2}$
+B) $\frac{1}{2}$
+C) $-\frac{\sqrt{3}}{2}$
+D) $-\frac{1}{2}$
+@rep C | $\frac{5\pi}{6} = \pi - \frac{\pi}{6}$ → $\cos = -\cos\frac{\pi}{6} = -\frac{\sqrt{3}}{2}$. [chap. 3]
+@check same(cos(5*pi/6), -sqrt(3)/2)
+@end
+
+@qcm
+Un argument de $z = -1 + i$ est :
+A) $\frac{\pi}{4}$
+B) $-\frac{3\pi}{4}$
+C) $-\frac{\pi}{4}$
+D) $\frac{3\pi}{4}$
+@rep D | $r = \sqrt{2}$, $\cos = -\frac{\sqrt{2}}{2}$, $\sin = \frac{\sqrt{2}}{2}$ → 2e quart → $\frac{3\pi}{4}$. [chap. 8]
+@check carg_is(-1+I, 3*pi/4)
+@end
+
+@qcm
+L'aire entre la courbe $y = x^2$ et l'axe des abscisses sur $\ff{0}{3}$ vaut :
+A) $9$
+B) $3$
+C) $27$
+D) $6$
+@rep A | $\left[\frac{x^3}{3}\right]_0^3 = \frac{27}{3} = 9$. C oublie de diviser par 3. [chap. 6]
+@check integ(x**2, 0, 3, 9)
+@end
+
+@corriges Correction de l'examen blanc n° 1
+
+:::coeur Grille de diagnostic (examen 1)
+Compte tes erreurs par chapitre : **chap. 1** : Q1 · **chap. 2** : Q2, Q3, Q26 · **chap. 3** : Q28 · **chap. 4** : Q4 à Q7 · **chap. 5** : Q8 à Q11, Q27 · **chap. 6** : Q12 à Q15, Q30 · **chap. 7** : Q16 à Q20 · **chap. 8** : Q21 à Q25, Q29.
+**Score : 27–30** excellent · **24–26** objectif atteint · **18–23** revois les chapitres où tu as 2 erreurs ou plus · **moins de 18** reprends les bilans de chapitre avant l'examen 2.
+:::
+
+@page
+## 9.2 Examen blanc n° 2
+
+| Question | Ta réponse | Question | Ta réponse | Question | Ta réponse |
+| 1 | | 11 | | 21 | |
+| 2 | | 12 | | 22 | |
+| 3 | | 13 | | 23 | |
+| 4 | | 14 | | 24 | |
+| 5 | | 15 | | 25 | |
+| 6 | | 16 | | 26 | |
+| 7 | | 17 | | 27 | |
+| 8 | | 18 | | 28 | |
+| 9 | | 19 | | 29 | |
+| 10 | | 20 | | 30 | |
+
+@qnum E2.
+
+@qcm
+$\frac{2}{3} - \frac{1}{2} \times \frac{4}{3} =$
+A) $\frac{2}{9}$
+B) $\frac{1}{3}$
+C) $0$
+D) $-\frac{1}{3}$
+@rep C | Multiplication d'abord : $\frac{1}{2} \times \frac{4}{3} = \frac{2}{3}$ ; puis $\frac{2}{3} - \frac{2}{3} = 0$. A calcule la soustraction en premier. [chap. 1]
+@check Rational(2,3)-Rational(1,2)*Rational(4,3)==0
+@end
+
+@qcm
+$\sqrt{48} - \sqrt{12} =$
+A) $6$
+B) $2\sqrt{3}$
+C) $\sqrt{36}$
+D) $6\sqrt{3}$
+@rep B | $4\sqrt{3} - 2\sqrt{3} = 2\sqrt{3}$. A et C font $\sqrt{48 - 12}$ : interdit. [chap. 1]
+@check same(sqrt(48)-sqrt(12), 2*sqrt(3))
+@end
+
+@qcm
+Une factorisation de $4x^2 - 12x + 9$ est :
+A) $(4x - 3)^2$
+B) $(2x + 3)(2x - 3)$
+C) $4(x - 3)^2$
+D) $(2x - 3)^2$
+@rep D | $(2x)^2 - 2 \times 2x \times 3 + 3^2$. B donne $4x^2 - 9$. [chap. 1]
+@check same((2*x-3)**2, 4*x**2-12*x+9)
+@end
+
+@qcm
+Pour $x \notin \{-3\,;\,0\}$, $\dfrac{x^2 - 9}{x^2 + 3x} =$
+A) $\frac{x - 3}{x}$
+B) $x - 3$
+C) $-\frac{3}{x}$
+D) $\frac{x - 9}{3x}$
+@rep A | $\frac{(x - 3)(x + 3)}{x(x + 3)} = \frac{x - 3}{x}$. D « barre » des termes qui s'additionnent. [chap. 1]
+@check same((x**2-9)/(x**2+3*x), (x-3)/x)
+@end
+
+@qcm
+Les solutions de $x^2 - 5x + 4 = 0$ sont :
+A) $\{-1\,;\,-4\}$
+B) $\{1\,;\,4\}$
+C) $\{-4\,;\,1\}$
+D) aucune
+@rep B | Somme 5, produit 4 → 1 et 4 (ou $\Delta = 9$). A se trompe de signe. [chap. 2]
+@check sols(x**2-5*x+4, [1, 4])
+@end
+
+@qcm
+Les solutions de $-2x + 5 \geq 1$ sont :
+A) $x \geq 2$
+B) $x \leq -2$
+C) $x \leq 2$
+D) $x \geq -2$
+@rep C | $-2x \geq -4$ → je divise par $-2$ et je change le sens : $x \leq 2$. A oublie de changer le sens. [chap. 2]
+@check ineq(-2*x+5>=1, Interval(-oo, 2))
+@end
+
+@qcm
+La somme des racines de $3x^2 - 12x + 1 = 0$ vaut :
+A) $4$
+B) $-4$
+C) $\frac{1}{3}$
+D) $12$
+@rep A | $-\frac{b}{a} = \frac{12}{3} = 4$ (et $\Delta = 144 - 12 > 0$). C est le produit. [chap. 2]
+@end
+
+@qcm
+L'ensemble des solutions de $\dfrac{x + 1}{x - 2} \leq 0$ est :
+A) $\ff{-1}{2}$
+B) $\oo{-1}{2}$
+C) $\of{-\infty}{-1} \cup \oo{2}{+\infty}$
+D) $\fo{-1}{2}$
+@rep D | Tableau de signes : négatif entre $-1$ et $2$ ; $-1$ inclus (le quotient vaut 0), $2$ exclu (valeur interdite). A oublie la valeur interdite. [chap. 2]
+@check ineq((x+1)/(x-2)<=0, Interval.Ropen(-1, 2))
+@end
+
+@qcm
+$\sin\frac{3\pi}{4} =$
+A) $-\frac{\sqrt{2}}{2}$
+B) $\frac{1}{2}$
+C) $\frac{\sqrt{2}}{2}$
+D) $\frac{\sqrt{3}}{2}$
+@rep C | 2e quart, sin positif, base $\frac{\pi}{4}$. A confond avec le cosinus. [chap. 3]
+@check same(sin(3*pi/4), sqrt(2)/2)
+@end
+
+@qcm
+$\frac{7\pi}{6}$ radians en degrés :
+A) $240°$
+B) $210°$
+C) $150°$
+D) $105°$
+@rep B | $\frac{7 \times 180}{6} = 210°$. [chap. 3]
+@end
+
+@qcm
+Les solutions de $2\sin x = 1$ sur $\fo{0}{2\pi}$ sont :
+A) $\left\{\frac{\pi}{3}\,;\,\frac{2\pi}{3}\right\}$
+B) $\left\{\frac{\pi}{6}\,;\,\frac{11\pi}{6}\right\}$
+C) $\left\{\frac{\pi}{6}\right\}$
+D) $\left\{\frac{\pi}{6}\,;\,\frac{5\pi}{6}\right\}$
+@rep D | $\sin x = \frac{1}{2}$ : $\frac{\pi}{6}$ et $\pi - \frac{\pi}{6}$. B utilise la symétrie du cosinus ; C oublie la 2e solution. [chap. 3]
+@check sols(2*sin(x)-1, [pi/6, 5*pi/6], domain=Interval.Ropen(0, 2*pi))
+@end
+
+@qcm
+Le domaine de $f(x) = \ln(x^2 - 4)$ est :
+A) $\oo{2}{+\infty}$
+B) $\oo{-2}{2}$
+C) $\R \setminus \{-2\,;\,2\}$
+D) $\oo{-\infty}{-2} \cup \oo{2}{+\infty}$
+@rep D | $x^2 - 4 > 0$ : à l'extérieur des racines (strict). B est l'endroit où c'est négatif. [chap. 4]
+@check ineq(x**2-4>0, Union(Interval.open(-oo,-2), Interval.open(2,oo)))
+@end
+
+@qcm
+La solution de $\ln(x - 1) = \ln 3$ est :
+A) $4$
+B) $3$
+C) $e^3 + 1$
+D) $2$
+@rep A | $x - 1 = 3$ → $x = 4$ (et $4 > 1$ ✔). [chap. 4]
+@end
+
+@qcm
+$e^{2\ln 5} =$
+A) $10$
+B) $32$
+C) $25$
+D) $2\ln 5$
+@rep C | $2\ln 5 = \ln 25$, donc $e^{\ln 25} = 25$. A multiplie 2 par 5. [chap. 4]
+@check same(exp(2*log(5)), 25)
+@end
+
+@qcm
+$|(2 - 2i)^3| =$
+A) $8$
+B) $16\sqrt{2}$
+C) $2\sqrt{2}$
+D) $64$
+@rep B | $|2 - 2i| = \sqrt{8} = 2\sqrt{2}$, et $(2\sqrt{2})^3 = 8 \times 2\sqrt{2} = 16\sqrt{2}$. [chap. 8]
+@check cmod((2-2*I)**3, 16*sqrt(2))
+@end
+
+@qcm
+La courbe de $f(x) = \dfrac{x + 1}{2x - 4}$ admet l'asymptote verticale :
+A) $y = \frac{1}{2}$
+B) $x = -1$
+C) $x = 4$
+D) $x = 2$
+@rep D | Le dénominateur s'annule en $x = 2$. A est l'asymptote **horizontale**. [chap. 4]
+@end
+
+@qcm
+Si $f(x) = 2x^3 - x^2 + 5$, alors $f'(x) =$
+A) $6x^2 - 2x$
+B) $6x^2 - 2x + 5$
+C) $6x^3 - 2x^2$
+D) $2x^2 - x$
+@rep A | La dérivée d'une constante est 0. [chap. 5]
+@check der(2*x**3-x**2+5, 6*x**2-2*x)
+@end
+
+@qcm
+La dérivée de $x^2 e^x$ est :
+A) $2x\,e^x$
+B) $x^2 e^x$
+C) $(x^2 + 2x)e^x$
+D) $(2x + 1)e^x$
+@rep C | Produit : $2x\,e^x + x^2 e^x$. A est l'erreur « $u'v'$ ». [chap. 5]
+@check der(x**2*exp(x), (x**2+2*x)*exp(x))
+@end
+
+@qcm
+La dérivée de $\ln(2x + 3)$ est :
+A) $\frac{1}{2x + 3}$
+B) $2\ln(2x + 3)$
+C) $\frac{1}{2x}$
+D) $\frac{2}{2x + 3}$
+@rep D | $\frac{u'}{u}$ avec $u' = 2$. A oublie $u'$. [chap. 5]
+@check der(log(2*x+3), 2/(2*x+3))
+@end
+
+@qcm
+La dérivée de $\dfrac{x - 1}{x}$ est :
+A) $-\frac{1}{x^2}$
+B) $\frac{1}{x^2}$
+C) $\frac{2x - 1}{x^2}$
+D) $1$
+@rep B | $\frac{x - 1}{x} = 1 - \frac{1}{x}$, dont la dérivée est $\frac{1}{x^2}$. A se trompe de signe. [chap. 5]
+@check der((x-1)/x, 1/x**2)
+@end
+
+@qcm
+La tangente à $f(x) = e^{2x}$ au point d'abscisse 0 est :
+A) $y = x + 1$
+B) $y = 2x$
+C) $y = 2x + 1$
+D) $y = 2x - 1$
+@rep C | $f(0) = 1$, $f'(x) = 2e^{2x}$, $f'(0) = 2$ → $y = 2x + 1$. A oublie le 2 de la dérivée. [chap. 5]
+@end
+
+@qcm
+Le maximum de $f(x) = -x^2 + 4x - 1$ vaut :
+A) $2$
+B) $4$
+C) $-1$
+D) $3$
+@rep D | $f'(x) = -2x + 4 = 0$ → $x = 2$ ; $f(2) = -4 + 8 - 1 = 3$. A donne l'abscisse, pas la valeur. [chap. 5]
+@check same((-x**2+4*x-1).subs(x,2), 3)
+@end
+
+@qcm
+Une primitive de $3x^2 - 4x$ est :
+A) $6x - 4$
+B) $x^3 - 4x^2$
+C) $x^3 - 2x^2$
+D) $3x^3 - 4x^2$
+@rep C | $3 \times \frac{x^3}{3} - 4 \times \frac{x^2}{2}$. A est la dérivée. [chap. 6]
+@check prim(x**3-2*x**2, 3*x**2-4*x)
+@end
+
+@qcm
+$\displaystyle\int_0^2 (x^2 + 1)\dx =$
+A) $\frac{14}{3}$
+B) $5$
+C) $4$
+D) $\frac{8}{3}$
+@rep A | $\left[\frac{x^3}{3} + x\right]_0^2 = \frac{8}{3} + 2 = \frac{14}{3}$. D oublie le « $+ 1$ ». [chap. 6]
+@check integ(x**2+1, 0, 2, Rational(14,3))
+@end
+
+@qcm
+$\displaystyle\int_0^{\pi/2} \sin x\dx =$
+A) $0$
+B) $-1$
+C) $\frac{\pi}{2}$
+D) $1$
+@rep D | $\big[-\cos x\big]_0^{\pi/2} = 0 - (-1) = 1$. B se trompe de signe. [chap. 6]
+@check integ(sin(x), 0, pi/2, 1)
+@end
+
+@qcm
+Une primitive de $\dfrac{2x}{x^2 + 1}$ est :
+A) $2\ln(x^2 + 1)$
+B) $\ln(x^2 + 1)$
+C) $\frac{1}{x^2 + 1}$
+D) $(x^2 + 1)^2$
+@rep B | Forme $\frac{u'}{u}$ avec $u = x^2 + 1$, $u' = 2x$ déjà présent. [chap. 6]
+@check prim(log(x**2+1), 2*x/(x**2+1))
+@end
+
+@qcm
+La norme de $\vec u\,(1\,;\,2\,;\,-2)$ est :
+A) $\sqrt{5}$
+B) $1$
+C) $3$
+D) $9$
+@rep C | $\sqrt{1 + 4 + 4} = 3$. B additionne les coordonnées. [chap. 7]
+@end
+
+@qcm
+$\vec u\,(4\,;\,-2)$ et $\vec v\,(1\,;\,m)$ sont orthogonaux si $m =$
+A) $-2$
+B) $\frac{1}{2}$
+C) $8$
+D) $2$
+@rep D | $4 \times 1 + (-2) \times m = 0$ → $m = 2$. [chap. 7]
+@end
+
+@qcm
+$\dfrac{3 - i}{1 + i} =$
+A) $1 - 2i$
+B) $2 - i$
+C) $3 - i$
+D) $1 + 2i$
+@rep A | $\frac{(3 - i)(1 - i)}{2} = \frac{3 - 3i - i + i^2}{2} = \frac{2 - 4i}{2} = 1 - 2i$. [chap. 8]
+@check same((3-I)/(1+I), 1-2*I)
+@end
+
+@qcm
+Un argument de $-\sqrt{3} + i$ est :
+A) $\frac{\pi}{6}$
+B) $-\frac{\pi}{6}$
+C) $\frac{5\pi}{6}$
+D) $\frac{2\pi}{3}$
+@rep C | $r = 2$, $\cos = -\frac{\sqrt{3}}{2}$, $\sin = \frac{1}{2}$ → 2e quart, base $\frac{\pi}{6}$ → $\frac{5\pi}{6}$. [chap. 8]
+@check carg_is(-sqrt(3)+I, 5*pi/6)
+@end
+
+@corriges Correction de l'examen blanc n° 2
+
+:::coeur Grille de diagnostic (examen 2)
+**chap. 1** : Q1 à Q4 · **chap. 2** : Q5 à Q8 · **chap. 3** : Q9 à Q11 · **chap. 4** : Q12 à Q14, Q16 · **chap. 5** : Q17 à Q22 · **chap. 6** : Q23 à Q26 · **chap. 7** : Q27, Q28 · **chap. 8** : Q15, Q29, Q30.
+:::
+
+@page
+## 9.3 Examen blanc n° 3
+
+| Question | Ta réponse | Question | Ta réponse | Question | Ta réponse |
+| 1 | | 11 | | 21 | |
+| 2 | | 12 | | 22 | |
+| 3 | | 13 | | 23 | |
+| 4 | | 14 | | 24 | |
+| 5 | | 15 | | 25 | |
+| 6 | | 16 | | 26 | |
+| 7 | | 17 | | 27 | |
+| 8 | | 18 | | 28 | |
+| 9 | | 19 | | 29 | |
+| 10 | | 20 | | 30 | |
+
+@qnum E3.
+
+@qcm
+$(2x - 1)^2 - 4x^2 =$
+A) $1$
+B) $-4x + 1$
+C) $-4x - 1$
+D) $8x^2 - 4x + 1$
+@rep B | $4x^2 - 4x + 1 - 4x^2 = -4x + 1$. A oublie le double produit. [chap. 1]
+@check same((2*x-1)**2-4*x**2, -4*x+1)
+@end
+
+@qcm
+$\dfrac{3^{-2} \times 3^5}{3^2} =$
+A) $3$
+B) $\frac{1}{3}$
+C) $27$
+D) $3^{-20}$
+@rep A | $3^{-2 + 5 - 2} = 3^1 = 3$. D multiplie les exposants. [chap. 1]
+@end
+
+@qcm
+$\dfrac{1}{\sqrt{5} - 2} =$
+A) $\sqrt{5} - 2$
+B) $\frac{1}{3}$
+C) $\sqrt{5} + 2$
+D) $\frac{\sqrt{5} + 2}{3}$
+@rep C | On multiplie par la quantité conjuguée : $\frac{\sqrt{5} + 2}{5 - 4} = \sqrt{5} + 2$. [chap. 1]
+@check same(1/(sqrt(5)-2), sqrt(5)+2)
+@end
+
+@qcm
+Les solutions de $x^3 - 4x = 0$ sont :
+A) $\{2\}$
+B) $\{-2\,;\,2\}$
+C) $\{0\,;\,4\}$
+D) $\{-2\,;\,0\,;\,2\}$
+@rep D | $x(x - 2)(x + 2) = 0$. B oublie $x = 0$ (division par $x$). [chap. 2]
+@check sols(x**3-4*x, [-2, 0, 2])
+@end
+
+@qcm
+La solution du système $\begin{cases} x + 2y = 4 \\ 3x - y = 5 \end{cases}$ est :
+A) $(1\,;\,2)$
+B) $(2\,;\,1)$
+C) $(0\,;\,2)$
+D) $(3\,;\,4)$
+@rep B | $x = 4 - 2y$ ; $12 - 6y - y = 5$ → $y = 1$, $x = 2$. Vérifie : $2 + 2 = 4$ ✔, $6 - 1 = 5$ ✔. [chap. 2]
+@check solve([x+2*y-4, 3*x-y-5],[x,y])=={x:2, y:1}
+@end
+
+@qcm
+Le discriminant de $2x^2 + 3x - 2$ vaut :
+A) $-7$
+B) $7$
+C) $25$
+D) $-25$
+@rep C | $9 - 4 \times 2 \times (-2) = 9 + 16 = 25$. B oublie que $-4ac$ devient $+16$. [chap. 2]
+@end
+
+@qcm
+L'ensemble des solutions de $x^2 - 2x - 3 > 0$ est :
+A) $\oo{-1}{3}$
+B) $\ff{-1}{3}$
+C) $\oo{-\infty}{-3} \cup \oo{1}{+\infty}$
+D) $\oo{-\infty}{-1} \cup \oo{3}{+\infty}$
+@rep D | Racines $-1$ et 3, $a > 0$ → positif à l'extérieur. C se trompe de signe sur les racines. [chap. 2]
+@check ineq(x**2-2*x-3>0, Union(Interval.open(-oo,-1), Interval.open(3,oo)))
+@end
+
+@qcm
+Les solutions de $\dfrac{3}{x + 1} = x - 1$ sont :
+A) $\{-2\,;\,2\}$
+B) $\{2\}$
+C) $\{4\}$
+D) aucune
+@rep A | $x \neq -1$ ; $3 = (x - 1)(x + 1) = x^2 - 1$ → $x^2 = 4$ → $\pm 2$, tous deux autorisés. [chap. 2]
+@check sols(3/(x+1)-(x-1), [-2, 2])
+@end
+
+@qcm
+$\cos\left(-\frac{2\pi}{3}\right) =$
+A) $\frac{1}{2}$
+B) $-\frac{\sqrt{3}}{2}$
+C) $-\frac{1}{2}$
+D) $\frac{\sqrt{3}}{2}$
+@rep C | $\cos(-\theta) = \cos\theta$ et $\cos\frac{2\pi}{3} = -\frac{1}{2}$. [chap. 3]
+@check same(cos(-2*pi/3), Rational(-1,2))
+@end
+
+@qcm
+Si $\cos x = -\frac{4}{5}$ et $x \in \ff{\frac{\pi}{2}}{\pi}$, alors $\sin x =$
+A) $-\frac{3}{5}$
+B) $\frac{3}{5}$
+C) $\frac{1}{5}$
+D) $\frac{4}{5}$
+@rep B | $\sin^2 x = 1 - \frac{16}{25} = \frac{9}{25}$ ; 2e quart → sin positif. [chap. 3]
+@end
+
+@qcm
+La mesure principale de $\frac{11\pi}{4}$ est :
+A) $-\frac{\pi}{4}$
+B) $\frac{3\pi}{4}$
+C) $\frac{11\pi}{4}$
+D) $-\frac{3\pi}{4}$
+@rep B | $\frac{11\pi}{4} - 2\pi = \frac{3\pi}{4}$, qui est dans $\of{-\pi}{\pi}$. [chap. 3]
+@end
+
+@qcm
+$\ln\sqrt{e} + \ln(e^2) =$
+A) $3$
+B) $e^{5/2}$
+C) $\frac{5}{2}$
+D) $2$
+@rep C | $\frac{1}{2} + 2 = \frac{5}{2}$. [chap. 4]
+@check same(log(sqrt(E))+log(E**2), Rational(5,2))
+@end
+
+@qcm
+La solution de $e^{2x} - 4 = 0$ est :
+A) $2$
+B) $\ln 4$
+C) $\pm\ln 2$
+D) $\ln 2$
+@rep D | $e^{2x} = 4$ → $2x = \ln 4 = 2\ln 2$ → $x = \ln 2$. C : une exponentielle n'est jamais négative, pas de « ± ». [chap. 4]
+@check sols(exp(2*x)-4, [log(2)])
+@end
+
+@qcm
+$\lim\limits_{x \to -\infty} \dfrac{x^2 - 3x}{1 - 2x^2} =$
+A) $-\frac{1}{2}$
+B) $\frac{1}{2}$
+C) $-\infty$
+D) $\frac{3}{2}$
+@rep A | $\frac{x^2}{-2x^2} = -\frac{1}{2}$. [chap. 4]
+@check lim((x**2-3*x)/(1-2*x**2), -oo, Rational(-1,2))
+@end
+
+@qcm
+Le domaine de $f(x) = \sqrt{3 - x} + \dfrac{1}{x}$ est :
+A) $\of{-\infty}{3}$
+B) $\of{0}{3}$
+C) $\oo{-\infty}{0} \cup \of{0}{3}$
+D) $\fo{3}{+\infty}$
+@rep C | $3 - x \geq 0$ → $x \leq 3$, et $x \neq 0$. [chap. 4]
+@end
+
+@qcm
+La dérivée de $\sqrt{x^2 + 1}$ est :
+A) $\frac{1}{2\sqrt{x^2 + 1}}$
+B) $\frac{2x}{\sqrt{x^2 + 1}}$
+C) $\frac{x}{\sqrt{x^2 + 1}}$
+D) $\sqrt{2x}$
+@rep C | $\frac{u'}{2\sqrt{u}} = \frac{2x}{2\sqrt{x^2 + 1}}$. A oublie $u'$, B oublie le 2 du dénominateur. [chap. 5]
+@check der(sqrt(x**2+1), x/sqrt(x**2+1))
+@end
+
+@qcm
+La dérivée de $\dfrac{x}{x + 1}$ est :
+A) $-\frac{1}{(x + 1)^2}$
+B) $\frac{1}{(x + 1)^2}$
+C) $1$
+D) $\frac{2x + 1}{(x + 1)^2}$
+@rep B | $\frac{1 \times (x + 1) - x \times 1}{(x + 1)^2} = \frac{1}{(x + 1)^2}$. D met un « + » au lieu du « − ». [chap. 5]
+@check der(x/(x+1), 1/(x+1)**2)
+@end
+
+@qcm
+La dérivée de $\sin(x^2)$ est :
+A) $\cos(x^2)$
+B) $-2x\sin(x^2)$
+C) $2\cos(2x)$
+D) $2x\cos(x^2)$
+@rep D | $u'\cos u$ avec $u = x^2$. B confond avec la dérivée de $\cos$. [chap. 5]
+@check der(sin(x**2), 2*x*cos(x**2))
+@end
+
+@qcm
+$f(x) = x\,e^{-x}$ est croissante sur :
+A) $\fo{1}{+\infty}$
+B) $\R$
+C) $\of{-\infty}{1}$
+D) $\fo{0}{+\infty}$
+@rep C | $f'(x) = (1 - x)e^{-x}$, positive quand $x \leq 1$. [chap. 5]
+@check der(x*exp(-x), (1-x)*exp(-x))
+@end
+
+@qcm
+Un objet a pour position $x(t) = 2t^3 - 3t^2$ (en m). Sa vitesse à $t = 2$ s vaut :
+A) $4$ m/s
+B) $12$ m/s
+C) $18$ m/s
+D) $6$ m/s
+@rep B | $v(t) = 6t^2 - 6t$ ; $v(2) = 24 - 12 = 12$. A donne la position $x(2) = 16 - 12 = 4$. [chap. 5]
+@end
+
+@qcm
+Une primitive de $\cos(2x)$ est :
+A) $2\sin(2x)$
+B) $-\frac{1}{2}\sin(2x)$
+C) $\sin(x^2)$
+D) $\frac{1}{2}\sin(2x)$
+@rep D | Contrôle : $\left(\frac{1}{2}\sin 2x\right)' = \cos 2x$ ✔. A multiplie au lieu de diviser. [chap. 6]
+@check prim(sin(2*x)/2, cos(2*x))
+@end
+
+@qcm
+$\displaystyle\int_1^2 \frac{1}{x^2}\dx =$
+A) $\frac{1}{2}$
+B) $-\frac{1}{2}$
+C) $\frac{7}{3}$
+D) $\ln 2$
+@rep A | $\left[-\frac{1}{x}\right]_1^2 = -\frac{1}{2} + 1 = \frac{1}{2}$. D confond avec la primitive de $\frac{1}{x}$. [chap. 6]
+@check integ(1/x**2, 1, 2, Rational(1,2))
+@end
+
+@qcm
+$\displaystyle\int_0^1 x\,e^{x^2}\dx =$
+A) $e - 1$
+B) $\frac{e - 1}{2}$
+C) $\frac{e}{2}$
+D) $2(e - 1)$
+@rep B | Primitive $\frac{1}{2}e^{x^2}$ : $\frac{e}{2} - \frac{1}{2}$. A oublie le $\frac{1}{2}$ ; C oublie $e^0 = 1$. [chap. 6]
+@check integ(x*exp(x**2), 0, 1, (E-1)/2)
+@end
+
+@qcm
+L'aire du domaine compris entre la parabole $y = x^2$ et la droite $y = 4$ vaut :
+A) $\frac{16}{3}$
+B) $8$
+C) $\frac{32}{3}$
+D) $16$
+@rep C | Intersections $x = \pm 2$ ; $\int_{-2}^{2}(4 - x^2)\dx = \frac{32}{3}$. A n'intègre que sur $\ff{0}{2}$. [chap. 6]
+@check integ(4-x**2, -2, 2, Rational(32,3))
+@end
+
+@qcm
+La distance entre $A(1\,;\,-2)$ et $B(-3\,;\,4)$ est :
+A) $10$
+B) $2\sqrt{13}$
+C) $\sqrt{20}$
+D) $52$
+@rep B | $\sqrt{(-4)^2 + 6^2} = \sqrt{52} = 2\sqrt{13}$. A additionne $4 + 6$ ; D oublie la racine. [chap. 7]
+@check same(sqrt(52), 2*sqrt(13))
+@end
+
+@qcm
+Une équation de la droite passant par $A(1\,;\,3)$ et de vecteur directeur $\vec u\,(2\,;\,1)$ est :
+A) $2x + y - 5 = 0$
+B) $x + 2y - 7 = 0$
+C) $x - 2y + 5 = 0$
+D) $2x - y + 1 = 0$
+@rep C | $(x - 1) \times 1 - (y - 3) \times 2 = 0$ → $x - 2y + 5 = 0$. Vérif. avec $A$ : $1 - 6 + 5 = 0$ ✔. A utilise $\vec u$ comme vecteur normal. [chap. 7]
+@end
+
+@qcm
+$(2\,;\,0\,;\,1) \wedge (0\,;\,1\,;\,0) =$
+A) $(1\,;\,0\,;\,-2)$
+B) $(-1\,;\,0\,;\,2)$
+C) $(0\,;\,0\,;\,2)$
+D) $(-1\,;\,0\,;\,-2)$
+@rep B | $(0 \times 0 - 1 \times 1\,;\,1 \times 0 - 2 \times 0\,;\,2 \times 1 - 0 \times 0) = (-1\,;\,0\,;\,2)$. A est l'opposé (ordre inversé). [chap. 7]
+@check cross([2,0,1],[0,1,0])==[-1,0,2]
+@end
+
+@qcm
+Si $z = 2e^{i\pi/4}$, alors $z^2 =$
+A) $4$
+B) $2i$
+C) $-4$
+D) $4i$
+@rep D | $4e^{i\pi/2} = 4i$. B élève seulement l'argument. [chap. 8]
+@check same((2*exp(I*pi/4))**2, 4*I)
+@end
+
+@qcm
+Les solutions de $z^2 + 4z + 8 = 0$ sont :
+A) $2 \pm 2i$
+B) $-4 \pm 4i$
+C) $-2 \pm 2i$
+D) $-2 \pm 4i$
+@rep C | $\Delta = 16 - 32 = -16$ → $\frac{-4 \pm 4i}{2} = -2 \pm 2i$. B oublie de diviser par $2a$. [chap. 8]
+@check csols(z**2+4*z+8, [-2+2*I, -2-2*I])
+@end
+
+@qcm
+Si $z = 1 + i\sqrt{3}$, un argument de $\bar z$ est :
+A) $\frac{\pi}{3}$
+B) $-\frac{\pi}{3}$
+C) $\frac{2\pi}{3}$
+D) $-\frac{2\pi}{3}$
+@rep B | $\arg z = \frac{\pi}{3}$ et le conjugué a l'argument opposé. [chap. 8]
+@check carg_is(1-I*sqrt(3), -pi/3)
+@end
+
+@corriges Correction de l'examen blanc n° 3
+
+:::coeur Grille de diagnostic (examen 3)
+**chap. 1** : Q1 à Q3 · **chap. 2** : Q4 à Q8 · **chap. 3** : Q9 à Q11 · **chap. 4** : Q12 à Q15 · **chap. 5** : Q16 à Q20 · **chap. 6** : Q21 à Q24 · **chap. 7** : Q25 à Q27 · **chap. 8** : Q28 à Q30.
+Si tu as **24/30 ou plus aux examens 2 et 3**, tu es prêt. Les derniers jours : formulaire, carnet d'erreurs, et beaucoup de sommeil.
+:::

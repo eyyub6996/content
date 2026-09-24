@@ -1,0 +1,716 @@
+%% Chapitre 4 — Les fonctions
+# 4 | Les fonctions | Domaine, fonctions de référence, exponentielle, logarithme, limites, asymptotes
+
+:::objectifs
+- comprendre ce qu'est une fonction, calculer une image, trouver un antécédent ;
+- trouver le **domaine de définition** (les 3 interdits) ;
+- connaître l'allure des **fonctions de référence** ;
+- calculer avec $e^x$ et $\ln x$ et résoudre les équations qui les contiennent ;
+- calculer des **limites** (termes dominants, croissances comparées) ;
+- trouver les **asymptotes** d'une courbe.
+:::
+
+:::note Temps conseillé : 6 séances (semaine 4 du planning).
+**Prérequis :** chapitres 1 et 2 (factoriser, résoudre, tableaux de signes).
+:::
+
+## 4.1 Qu'est-ce qu'une fonction ?
+
+:::idee
+Une fonction est une **machine** : on met un nombre dedans ($x$), elle le transforme et en ressort un autre ($f(x)$).
+$f(x) = 2x + 3$ : la machine multiplie par 2, puis ajoute 3. Si on met 4, il sort $2 \times 4 + 3 = 11$.
+:::
+
+:::lire Comment lire la formule (mot à mot)
+$f(x) = 2x + 3$ se lit « $f$ de $x$ égale $2x$ plus 3 ». $f$ est le nom de la machine, $x$ ce qui entre, $f(x)$ ce qui sort.
+$f : x \mapsto 2x + 3$ est une autre façon d'écrire la même chose (« $f$ associe à $x$ le nombre $2x + 3$ »).
+**Image** de 4 = $f(4) = 11$ : ce qui sort quand 4 entre. On la **calcule** (on remplace).
+**Antécédent** de 11 = un nombre $x$ tel que $f(x) = 11$. On le trouve en **résolvant une équation** : $2x + 3 = 11$ → $x = 4$.
+La **courbe représentative** $\mathcal{C}_f$ est l'ensemble des points $(x\,;\,f(x))$. Le point $(4\,;\,11)$ est sur la courbe.
+:::
+
+:::exemple Exemple guidé : $f(x) = x^2 - 3x + 2$
++ Image de 0 : $f(0) = 0 - 0 + 2 = 2$. Image de $-2$ : $f(-2) = (-2)^2 - 3 \times (-2) + 2 = 4 + 6 + 2 = 12$.
++ Antécédents de 2 : je résous $x^2 - 3x + 2 = 2$ → $x^2 - 3x = 0$ → $x(x - 3) = 0$ → $x = 0$ ou $x = 3$.
++ Le point $A(1\,;\,0)$ est-il sur $\mathcal{C}_f$ ? $f(1) = 1 - 3 + 2 = 0$ ✔ oui.
+:::
+
+:::astuce Fonction composée : une machine après l'autre
+$f(g(x))$ : on applique d'abord $g$, puis $f$ au résultat. Avec $f(x) = 2x + 1$ et $g(x) = x^2$ :
+$f(g(x)) = 2x^2 + 1$ (on met $x^2$ dans $f$) mais $g(f(x)) = (2x + 1)^2$ (on met $2x + 1$ dans $g$). L'ordre compte !
+Savoir « voir » la machine intérieure sera essentiel pour dériver (chapitre 5).
+:::
+
+## 4.2 Le domaine de définition
+
+:::idee
+Certains nombres « **cassent** » la machine. Le domaine $D_f$ est l'ensemble des nombres qu'on peut mettre dedans sans la casser.
+:::
+
+:::coeur
+**Seulement 3 interdits :** 1) diviser par 0 ; 2) racine carrée d'un négatif ; 3) ln d'un nombre $\leq 0$.
+$\dfrac{A}{B}$ → $B \neq 0$ · $\sqrt{A}$ → $A \geq 0$ · $\ln(A)$ → $A > 0$ (strict !)
+**Méthode :** je repère les « points dangereux » (fractions, racines, ln) et j'écris une condition pour chacun. Puis je combine **toutes** les conditions.
+:::
+
+| Fonction | Condition | Domaine |
+| $\dfrac{x + 1}{x^2 - 9}$ | $x^2 - 9 \neq 0$ → $x \neq 3$ et $x \neq -3$ | $\R \setminus \{-3\,;\,3\}$ |
+| $\sqrt{4 - 2x}$ | $4 - 2x \geq 0$ → $-2x \geq -4$ → $x \leq 2$ (je change le sens !) | $\of{-\infty}{2}$ |
+| $\ln(x - 5)$ | $x - 5 > 0$ → $x > 5$ | $\oo{5}{+\infty}$ |
+| $\sqrt{x^2 - 4}$ | $x^2 - 4 \geq 0$ → signe de $a$ à l'extérieur des racines $\pm 2$ | $\of{-\infty}{-2} \cup \fo{2}{+\infty}$ |
+| $\ln(x^2 + 1)$ | $x^2 + 1 > 0$ toujours vrai | $\R$ |
+| $\dfrac{1}{\sqrt{x}}$ | $x \geq 0$ (racine) ET $x \neq 0$ (fraction) | $\oo{0}{+\infty}$ |
+| $\dfrac{\sqrt{x + 2}}{x - 1}$ | $x \geq -2$ (racine) ET $x \neq 1$ (fraction) | $\fo{-2}{1} \cup \oo{1}{+\infty}$ |
+
+## 4.3 Les fonctions de référence
+
+@fig ref_fonctions:92 | L'allure des 6 fonctions de référence : à savoir dessiner de mémoire.
+
+| Fonction | Domaine | À retenir |
+| $ax + b$ (affine) | $\R$ | droite ; $a$ = pente ($a > 0$ monte, $a < 0$ descend), $b$ = ordonnée à l'origine |
+| $x^2$ (carré) | $\R$ | parabole en « U » ; toujours $\geq 0$ ; décroît sur $\of{-\infty}{0}$, croît sur $\fo{0}{+\infty}$ |
+| $x^3$ (cube) | $\R$ | toujours croissante ; négative pour $x < 0$ |
+| $\frac{1}{x}$ (inverse) | $\R \setminus \{0\}$ | deux branches ; décroît sur chaque intervalle ; asymptotes = les axes |
+| $\sqrt{x}$ (racine) | $\fo{0}{+\infty}$ | croissante ; $\sqrt{0} = 0$, $\sqrt{1} = 1$, $\sqrt{4} = 2$ |
+| $e^x$ | $\R$ | toujours $> 0$, toujours croissante, $e^0 = 1$ |
+| $\ln x$ | $\oo{0}{+\infty}$ | toujours croissante, $\ln 1 = 0$, $\ln e = 1$, négative entre 0 et 1 |
+| $\cos x$, $\sin x$ | $\R$ | entre $-1$ et $1$, périodiques de période $2\pi$ |
+
+:::coeur La droite $y = ax + b$
+La **pente** (coefficient directeur) entre deux points $A(x_A\,;\,y_A)$ et $B(x_B\,;\,y_B)$ : $a = \dfrac{y_B - y_A}{x_B - x_A}$ (« de combien on monte » divisé par « de combien on avance »).
+Puis on trouve $b$ en remplaçant les coordonnées d'un des points.
+:::
+
+## 4.4 L'exponentielle
+
+:::idee
+$e$ est un nombre spécial, comme $\pi$ : $e \approx 2{,}718$. $e^x$ veut dire « $e$ puissance $x$ ».
+C'est la fonction de la **croissance** : intérêts composés, populations, charge d'un condensateur, désintégration radioactive…
+Sa propriété magique : elle est **égale à sa propre dérivée** (chapitre 5). C'est pour ça qu'on la trouve partout en physique.
+:::
+
+:::coeur
+$$e^0 = 1 \qquad e^1 = e \qquad e^a \times e^b = e^{a+b} \qquad \frac{e^a}{e^b} = e^{a-b} \qquad (e^a)^n = e^{na} \qquad e^{-a} = \frac{1}{e^a}$$
+Ce sont les règles des puissances (1.2) avec la base $e$.
+$e^x$ n'est **jamais nul ni négatif** : $e^x > 0$ pour tout $x$. Donc $e^x = -1$ n'a pas de solution.
+Limites : $\lim\limits_{x \to +\infty} e^x = +\infty$ et $\lim\limits_{x \to -\infty} e^x = 0$.
+:::
+
+:::exemple Exemples corrigés
+$e^3 \times e^{-1} = e^{3 - 1} = e^2$ · $(e^2)^3 = e^6$ · $\frac{e^5}{e^2} = e^3$ · $e^{2x} = (e^x)^2$
+$e^{3x} = e^6 \Leftrightarrow 3x = 6 \Leftrightarrow x = 2$ (même base, donc mêmes exposants).
+:::
+
+## 4.5 Le logarithme népérien ln
+
+:::idee
+$\ln$ est la fonction qui **défait** l'exponentielle, comme la soustraction défait l'addition, ou comme une **clé** qui ouvre ce qu'une autre a fermé.
+$\ln(y)$ répond à la question : « **à quelle puissance dois-je élever $e$ pour obtenir $y$ ?** »
+$\ln(e^3) = 3$ car il faut élever $e$ à la puissance 3. $\ln(1) = 0$ car $e^0 = 1$. $\ln(e) = 1$ car $e^1 = e$.
+La courbe de ln est le « **reflet** » de celle de $e^x$ dans le miroir $y = x$.
+:::
+
+@fig exp_ln:42 | $e^x$ et $\ln x$ sont symétriques par rapport à la droite $y = x$.
+
+:::coeur
+$$\ln(e^x) = x \qquad e^{\ln x} = x\ (x > 0) \qquad \ln 1 = 0 \qquad \ln e = 1$$
+$$\ln(ab) = \ln a + \ln b \qquad \ln\frac{a}{b} = \ln a - \ln b \qquad \ln(a^n) = n\ln a \qquad \ln\frac{1}{a} = -\ln a$$
+**ln transforme les multiplications en additions.** $\ln(a + b)$ ne se simplifie **PAS** !
+$\ln x$ n'existe que pour $x > 0$. $\ln x < 0$ si $0 < x < 1$ ; $\ln x > 0$ si $x > 1$.
+Limites : $\lim\limits_{x \to +\infty} \ln x = +\infty$ et $\lim\limits_{x \to 0^+} \ln x = -\infty$.
+:::
+
+:::exemple Exemples corrigés
+$\ln 12 = \ln(4 \times 3) = \ln 4 + \ln 3 = 2\ln 2 + \ln 3$ (car $4 = 2^2$ et $\ln 2^2 = 2\ln 2$).
+$\ln\frac{1}{e} = -\ln e = -1$ · $e^{\ln 7} = 7$ · $\ln 8 - \ln 2 = \ln\frac{8}{2} = \ln 4$ · $e^{2\ln 3} = e^{\ln 9} = 9$.
+:::
+
+:::astuce Le logarithme décimal (pour la physique)
+$\log$ (ou $\log_{10}$) fait la même chose avec la base 10 : $\log(1000) = 3$ car $10^3 = 1000$. Il sert pour les décibels et le pH. Mêmes règles que ln.
+:::
+
+## 4.6 Équations et inéquations avec exp et ln
+
+:::methode
++ J'écris le **domaine** (tout ce qui est dans un ln doit être $> 0$).
++ Je regroupe en un seul ln de chaque côté (avec les règles), ou j'isole $e^{\ldots}$.
++ J'enlève ln ou exp : $\ln A = \ln B \Rightarrow A = B$ ; $e^A = k \Rightarrow A = \ln k$ (si $k > 0$) ; $\ln A = k \Rightarrow A = e^k$.
++ Je résous et je **vérifie le domaine**.
+:::
+
+:::exemple Exemple guidé 1 : $e^{2x + 1} = 3$
++ $x$ est « enfermé » dans l'exponentielle. Pour le libérer, j'applique ln des deux côtés (la clé qui ouvre).
++ $\ln(e^{2x + 1}) = \ln 3$ → $2x + 1 = \ln 3$.
++ Balance : $2x = \ln 3 - 1$ → $x = \dfrac{\ln 3 - 1}{2} \approx 0{,}05$.
+:::
+
+:::exemple Exemple guidé 2 : $\ln(2x - 1) = 0$
++ Domaine : $2x - 1 > 0$ → $x > \frac{1}{2}$.
++ J'applique exp des deux côtés : $2x - 1 = e^0 = 1$.
++ $2x = 2$ → $x = 1$. $1 > \frac{1}{2}$ ✔.
+:::
+
+:::exemple Exemple guidé 3 : $\ln(x) + \ln(x - 3) = \ln 4$
++ Domaine : $x > 0$ ET $x - 3 > 0$, donc $x > 3$.
++ $\ln a + \ln b = \ln(ab)$ : $\ln\big(x(x - 3)\big) = \ln 4$.
++ Deux ln égaux → ce qui est dedans est égal : $x^2 - 3x = 4$ → $x^2 - 3x - 4 = 0$.
++ $\Delta = 9 + 16 = 25$ → $x = \frac{3 \pm 5}{2}$ → $4$ ou $-1$.
++ Domaine $x > 3$ : je **rejette** $-1$. $S = \{4\}$.
+:::
+
+:::exemple Exemple guidé 4 (classique d'examen) : $e^{2x} - 3e^x + 2 = 0$
++ Astuce : $e^{2x} = (e^x)^2$. Je pose $X = e^x$ : l'équation devient $X^2 - 3X + 2 = 0$.
++ $\Delta = 9 - 8 = 1$ → $X = \frac{3 \pm 1}{2}$ → $X = 1$ ou $X = 2$.
++ Je reviens à $x$ : $e^x = 1$ → $x = 0$ ; $e^x = 2$ → $x = \ln 2$. $S = \{0\,;\,\ln 2\}$.
++ (Si on avait trouvé $X$ négatif, par exemple $X = -3$, on l'aurait rejeté car $e^x > 0$.)
+:::
+
+:::coeur Les inéquations
+$e^x$ et $\ln x$ sont **croissantes** : elles conservent le sens des inégalités.
+$e^A < e^B \Leftrightarrow A < B$ · $\ln A < \ln B \Leftrightarrow A < B$ (avec $A, B > 0$).
+Exemples : $e^x > 1 = e^0 \Leftrightarrow x > 0$. $\ln x < 1 = \ln e \Leftrightarrow 0 < x < e$ (ne pas oublier $x > 0$ !).
+:::
+
+## 4.7 Les limites
+
+:::idee
+La limite répond à la question : « **où va $f(x)$** quand $x$ s'approche de quelque chose (un nombre, $+\infty$ ou $-\infty$) ? »
+$\lim\limits_{x \to +\infty} \frac{1}{x} = 0$ : quand $x$ devient énorme (1 000, un million…), $\frac{1}{x}$ devient minuscule (0,001 ; 0,000 001…).
+:::
+
+:::coeur Les limites de référence
+$\lim\limits_{x \to +\infty} x^2 = +\infty$ · $\lim\limits_{x \to -\infty} x^2 = +\infty$ · $\lim\limits_{x \to -\infty} x^3 = -\infty$ · $\lim\limits_{x \to \pm\infty} \frac{1}{x} = 0$ · $\lim\limits_{x \to 0^+} \frac{1}{x} = +\infty$ · $\lim\limits_{x \to 0^-} \frac{1}{x} = -\infty$
+$\lim\limits_{x \to +\infty} e^x = +\infty$ · $\lim\limits_{x \to -\infty} e^x = 0$ · $\lim\limits_{x \to +\infty} \ln x = +\infty$ · $\lim\limits_{x \to 0^+} \ln x = -\infty$ · $\lim\limits_{x \to +\infty} \sqrt{x} = +\infty$
+**Règles « intuitives » :** $(+\infty) + (+\infty) = +\infty$ · nombre $+ \infty = \infty$ · (nombre positif) $\times \infty = \infty$ · $\frac{\text{nombre}}{\infty} = 0$ · $\frac{\text{nombre non nul}}{0^+} = \pm\infty$ (signe avec la règle des signes).
+**Formes indéterminées** (le résultat n'est pas évident, il faut transformer) : $\infty - \infty$ · $\frac{\infty}{\infty}$ · $0 \times \infty$ · $\frac{0}{0}$.
+:::
+
+:::methode La méthode pour les limites
++ Je remplace « à l'œil ». Si j'obtiens un résultat clair, j'ai fini.
++ Si c'est une forme indéterminée avec des polynômes ou des fractions de polynômes : **seul le terme de plus haut degré compte** (en haut et en bas).
++ S'il y a $e^x$, $x^n$, $\ln x$ ensemble : **$e^x$ l'emporte sur $x^n$, qui l'emporte sur $\ln x$** (croissances comparées).
+:::
+
+:::pourquoi Pourquoi seul le terme de plus haut degré compte ?
+Pour $x = 1\,000$ : $3x^2 = 3\,000\,000$ alors que $-x + 1 = -999$. Le terme $3x^2$ « écrase » les autres.
+C'est pour ça qu'à l'infini, seul le terme de plus haut degré compte.
+:::
+
+:::coeur Les croissances comparées
+$$\lim_{x \to +\infty} \frac{e^x}{x} = +\infty \qquad \lim_{x \to +\infty} x e^{-x} = 0 \qquad \lim_{x \to +\infty} \frac{\ln x}{x} = 0 \qquad \lim_{x \to 0^+} x \ln x = 0$$
+En résumé : $e^x$ gagne toujours contre $x^n$, et $x^n$ gagne toujours contre $\ln x$.
+:::
+
+:::exemple Exemple guidé 1 : $\lim\limits_{x \to +\infty} \dfrac{3x^2 + 1}{x^2 - 4}$
++ Je remplace : en haut → $+\infty$, en bas → $+\infty$. Forme $\frac{\infty}{\infty}$ : indéterminée.
++ Je garde les termes dominants : $\frac{3x^2}{x^2} = 3$.
++ Limite $= 3$. Vérification avec $x = 1\,000$ : $\frac{3\,000\,001}{999\,996} \approx 3{,}000\,01$ ✔
+:::
+
+:::exemple Autres exemples
+$\lim\limits_{x \to +\infty} \frac{x + 1}{x^2 + 1}$ : dominants $\frac{x}{x^2} = \frac{1}{x} \to 0$.
+$\lim\limits_{x \to +\infty} \frac{x^2 + 1}{x + 1}$ : dominants $\frac{x^2}{x} = x \to +\infty$.
+$\lim\limits_{x \to +\infty} (-2x^3 + x)$ : dominant $-2x^3 \to -\infty$.
+$\lim\limits_{x \to +\infty} (e^x - x)$ : forme $\infty - \infty$. Je factorise par $e^x$ : $e^x\left(1 - \frac{x}{e^x}\right)$. Comme $\frac{x}{e^x} \to 0$, on a $+\infty \times 1 = +\infty$.
+:::
+
+:::piege Le degré le plus haut… à l'infini seulement !
+La règle des termes dominants ne marche **qu'en $\pm\infty$**. En un nombre (par exemple $x \to 2$), on remplace simplement ; si on obtient $\frac{\text{nombre}}{0}$, on étudie le signe du dénominateur.
+:::
+
+## 4.8 Les asymptotes
+
+:::coeur
+Si $\lim\limits_{x \to \pm\infty} f(x) = L$ (un **nombre**) → **asymptote horizontale** $y = L$ (la courbe se rapproche de cette droite horizontale).
+Si $\lim\limits_{x \to a} f(x) = \pm\infty$ → **asymptote verticale** $x = a$ (typiquement là où le dénominateur s'annule).
+:::
+
+:::exemple Exemple guidé : $f(x) = \dfrac{2x + 1}{x - 3}$
++ En $+\infty$ : dominants $\frac{2x}{x} = 2$ → asymptote horizontale $y = 2$.
++ En $x \to 3^+$ ($x$ un peu plus grand que 3, par ex. 3,001) : en haut → 7 ; en bas → 0,001 (petit positif, noté $0^+$).
++ $\frac{7}{0^+} \to +\infty$. Asymptote verticale $x = 3$.
++ En $x \to 3^-$ (par ex. 2,999) : en bas → $-0{,}001$ → $\frac{7}{0^-} \to -\infty$.
+:::
+
+@fig asymptotes:52 | La courbe se rapproche de la droite $y = 2$ à l'infini, et « s'envole » le long de la droite $x = 3$.
+
+:::lire Comprendre l'énoncé
+**tend vers** · **forme indéterminée** · **croissances comparées** · **à droite / à gauche de 3** = $x \to 3^+$ / $x \to 3^-$ · **interpréter graphiquement** une limite = dire quelle asymptote elle donne.
+:::
+
+@page
+## 4.9 Exercices
+
+@serie 4A | Images, antécédents, droites
+
+@exo 1
+$f(x) = x^2 - 3x + 2$. Calcule $f(0)$, $f(1)$, $f(-2)$ et $f\left(\frac{1}{2}\right)$.
+@sol
+$f(0) = 2$. $f(1) = 1 - 3 + 2 = 0$. $f(-2) = 4 + 6 + 2 = 12$. $f\left(\frac{1}{2}\right) = \frac{1}{4} - \frac{3}{2} + 2 = \frac{1 - 6 + 8}{4} = \frac{3}{4}$.
+@check same((x**2-3*x+2).subs(x,Rational(1,2)), Rational(3,4))
+@end
+
+@exo 1
+$f(x) = 2x - 1$. Trouve l'antécédent de 5, puis celui de $-7$.
+@sol
+$2x - 1 = 5$ → $x = 3$. $2x - 1 = -7$ → $2x = -6$ → $x = -3$.
+@end
+
+@exo 2
+$g(x) = x^2$. Trouve les antécédents de 4, puis ceux de $-1$.
+@sol
+$x^2 = 4$ → $x = 2$ ou $x = -2$ (deux antécédents). $x^2 = -1$ : impossible, $-1$ n'a **aucun** antécédent.
+@end
+
+@exo 2
+$f(x) = x^2 - 3x + 2$.
+a) Trouve les antécédents de 2.
+b) Les points $A(1\,;\,0)$ et $B(2\,;\,1)$ sont-ils sur la courbe de $f$ ?
+@sol
+a) $x^2 - 3x = 0$ → $x(x - 3) = 0$ → 0 et 3.
+b) $f(1) = 0$ : $A$ est sur la courbe. $f(2) = 4 - 6 + 2 = 0 \neq 1$ : $B$ n'est pas sur la courbe.
+@end
+
+@exo 2
+a) Donne la pente et l'ordonnée à l'origine de $f(x) = 3x - 2$. La droite monte-t-elle ou descend-elle ?
+b) Trouve la fonction affine $g$ dont la droite passe par $A(1\,;\,3)$ et $B(3\,;\,7)$.
+@sol
+a) Pente $a = 3 > 0$ (la droite monte), ordonnée à l'origine $b = -2$ (elle coupe l'axe vertical en $-2$).
+b) $a = \frac{7 - 3}{3 - 1} = 2$. Puis $g(1) = 3$ : $2 \times 1 + b = 3$ → $b = 1$. $g(x) = 2x + 1$. Vérif. : $g(3) = 7$ ✔
+@end
+
+@exo 3 | Composition
+$f(x) = 2x + 1$ et $g(x) = x^2$.
+a) Calcule $f(g(2))$ et $g(f(2))$.
+b) Écris $f(g(x))$ et $g(f(x))$ en fonction de $x$.
+@sol
+a) $g(2) = 4$, puis $f(4) = 9$. $f(2) = 5$, puis $g(5) = 25$.
+b) $f(g(x)) = 2x^2 + 1$ ; $g(f(x)) = (2x + 1)^2 = 4x^2 + 4x + 1$.
+@end
+
+@serie 4B | Domaines de définition
+
+@exo 1
+Donne le domaine de : $f(x) = \dfrac{x + 1}{x^2 - 9}$ ; $g(x) = \sqrt{4 - 2x}$ ; $h(x) = \ln(x - 5)$.
+@sol
+$f$ : $\R \setminus \{-3\,;\,3\}$. $g$ : $\of{-\infty}{2}$. $h$ : $\oo{5}{+\infty}$. (Voir le tableau du 4.2.)
+@end
+
+@exo 2
+Donne le domaine de : $k(x) = \sqrt{x^2 - 4}$ ; $m(x) = \ln(x^2 + 1)$ ; $p(x) = \dfrac{1}{\sqrt{x}}$.
+@sol
+$k$ : $x^2 - 4 \geq 0$ ; racines $\pm 2$ ; $a > 0$ → positif à l'extérieur → $\of{-\infty}{-2} \cup \fo{2}{+\infty}$.
+$m$ : $x^2 + 1 \geq 1 > 0$ toujours → $\R$.
+$p$ : $x > 0$ → $\oo{0}{+\infty}$.
+@end
+
+@exo 2
+Donne le domaine de : $f(x) = \dfrac{\sqrt{x + 2}}{x - 1}$ ; $g(x) = \ln(3 - x)$.
+@sol
+$f$ : $x \geq -2$ et $x \neq 1$ → $\fo{-2}{1} \cup \oo{1}{+\infty}$.
+$g$ : $3 - x > 0$ → $x < 3$ → $\oo{-\infty}{3}$.
+@end
+
+@exo 3
+Donne le domaine de $f(x) = \ln(x^2 - 5x + 6)$.
+@sol
+$x^2 - 5x + 6 > 0$. Racines 2 et 3, $a > 0$ → positif à l'extérieur (strict). $D_f = \oo{-\infty}{2} \cup \oo{3}{+\infty}$.
+@check ineq(x**2-5*x+6>0, Union(Interval.open(-oo,2), Interval.open(3,oo)))
+@end
+
+@exo 3
+Donne le domaine de $f(x) = \dfrac{1}{e^x - 1}$.
+@sol
+$e^x - 1 \neq 0$ → $e^x \neq 1$ → $x \neq 0$. $D_f = \R \setminus \{0\}$.
+@end
+
+@exo 4
+Donne le domaine de $f(x) = \sqrt{\dfrac{x - 1}{x + 2}}$.
+@sol
+Il faut $\frac{x - 1}{x + 2} \geq 0$ (et $x \neq -2$). Tableau de signes : le quotient est positif à l'extérieur de $-2$ et $1$.
+
+:::signes
+x | -\infty | -2 | 1 | +\infty
+x-1 | - | | - | 0 | +
+x+2 | - | 0 | + | | +
+\frac{x-1}{x+2} | + | ‖ | - | 0 | +
+:::
+
+$D_f = \oo{-\infty}{-2} \cup \fo{1}{+\infty}$ ($-2$ exclu car interdit, 1 inclus car la racine de 0 existe).
+@check ineq((x-1)/(x+2)>=0, Union(Interval.open(-oo,-2), Interval(1,oo)))
+@end
+
+@serie 4C | Calculer avec exp et ln
+
+@exo 1
+Simplifie : $e^3 \times e^{-1}$ ; $(e^2)^3$ ; $\frac{e^5}{e^2}$ ; $e^0$.
+@sol
+$e^2$ ; $e^6$ ; $e^3$ ; $1$.
+@end
+
+@exo 1
+Simplifie : $\ln(e^4)$ ; $e^{\ln 7}$ ; $\ln\frac{1}{e}$ ; $\ln 1$.
+@sol
+$4$ ; $7$ ; $-1$ ; $0$.
+@end
+
+@exo 2
+Écris en fonction de $\ln 2$ et $\ln 3$ :
+a) $\ln 12$
+b) $\ln 18$
+c) $\ln\frac{8}{9}$
+d) $\ln\sqrt{2}$
+@sol
+a) $\ln(2^2 \times 3) = 2\ln 2 + \ln 3$.
+b) $\ln(2 \times 3^2) = \ln 2 + 2\ln 3$.
+c) $\ln 8 - \ln 9 = 3\ln 2 - 2\ln 3$.
+d) $\sqrt{2} = 2^{1/2}$ → $\frac{1}{2}\ln 2$.
+@check same(log(12), 2*log(2)+log(3)) and same(log(Rational(8,9)), 3*log(2)-2*log(3))
+@end
+
+@exo 2
+Calcule :
+a) $\ln 8 - \ln 2$
+b) $2\ln 3 + \ln 5$ (un seul ln)
+c) $\ln(e^2) + e^{\ln 3}$
+d) $e^{2\ln 3}$
+@sol
+a) $\ln 4$. b) $\ln 9 + \ln 5 = \ln 45$. c) $2 + 3 = 5$. d) $e^{\ln 9} = 9$.
+@check same(exp(2*log(3)), 9)
+@end
+
+@exo 3
+Simplifie (pour $x > 0$ quand il y a un ln) :
+a) $\dfrac{e^{x} \times e^{2x}}{e^{x + 1}}$
+b) $(e^x)^2 \times e^{-2x}$
+c) $\ln(e^{3x})$
+d) $e^{-\ln x}$
+@sol
+a) $e^{x + 2x - (x + 1)} = e^{2x - 1}$. b) $e^{2x - 2x} = e^0 = 1$. c) $3x$. d) $e^{\ln(1/x)} = \frac{1}{x}$.
+@check same(exp(x)*exp(2*x)/exp(x+1), exp(2*x-1)) and same(exp(-log(x)), 1/x)
+@end
+
+@exo 3
+Vrai ou faux ($a, b > 0$) ?
+a) $\ln(a + b) = \ln a + \ln b$
+b) $\ln\frac{a}{b} = \ln a - \ln b$
+c) $e^{a + b} = e^a + e^b$
+d) $\ln(a^2) = 2\ln a$
+e) $e^x > 0$ pour tout réel $x$
+@sol
+a) **Faux** : c'est $\ln(ab)$ qui vaut $\ln a + \ln b$. b) **Vrai**. c) **Faux** : $e^{a+b} = e^a \times e^b$. d) **Vrai**. e) **Vrai**.
+@end
+
+@serie 4D | Équations et inéquations avec exp et ln
+
+@exo 2
+Résous : a) $e^{3x} = e^6$ ; b) $e^x = 1$ ; c) $e^x = -1$.
+@sol
+a) $3x = 6$ → $x = 2$. b) $x = \ln 1 = 0$. c) Impossible ($e^x > 0$) : $S = \varnothing$.
+@end
+
+@exo 3
+Résous $e^{2x + 1} = 3$.
+@sol
+$x = \dfrac{\ln 3 - 1}{2} \approx 0{,}05$ (exemple guidé 1 du 4.6).
+@check sols(exp(2*x+1)-3, [(log(3)-1)/2])
+@end
+
+@exo 3
+Résous $\ln(2x - 1) = 0$.
+@sol
+$x = 1$ (exemple guidé 2 du 4.6).
+@check sols(log(2*x-1), [1])
+@end
+
+@exo 3
+Résous $\ln(x) + \ln(x - 3) = \ln 4$.
+@sol
+$x = 4$ (exemple guidé 3 du 4.6 : on rejette $-1$).
+@end
+
+@exo 3
+Résous : a) $e^x > 1$ ; b) $\ln x < 1$.
+@sol
+a) $e^x > e^0$ ⇔ $x > 0$ → $\oo{0}{+\infty}$.
+b) $\ln x < \ln e$ ⇔ $x < e$, avec le domaine $x > 0$ → $\oo{0}{e}$.
+@end
+
+@exo 3
+Résous $\ln(x + 1) - \ln(x) = \ln 2$.
+@sol
+Domaine : $x > 0$ (et $x > -1$, donc $x > 0$). $\ln\frac{x + 1}{x} = \ln 2$ → $\frac{x + 1}{x} = 2$ → $x + 1 = 2x$ → $x = 1$.
+Vérif. : $\ln 2 - \ln 1 = \ln 2$ ✔
+@check sols(log(x+1)-log(x)-log(2), [1])
+@end
+
+@exo 4
+Résous $e^{2x} - 3e^x + 2 = 0$.
+@sol
+$S = \{0\,;\,\ln 2\}$ (exemple guidé 4 du 4.6).
+@check sols(exp(2*x)-3*exp(x)+2, [0, log(2)])
+@end
+
+@exo 4
+Résous $e^{2x} - e^x - 6 = 0$.
+@sol
+$X = e^x$ : $X^2 - X - 6 = 0$ → $\Delta = 25$ → $X = 3$ ou $X = -2$.
+$e^x = 3$ → $x = \ln 3$. $e^x = -2$ : impossible (rejeté). $S = \{\ln 3\}$.
+@check sols(exp(2*x)-exp(x)-6, [log(3)])
+@end
+
+@exo 4
+Résous $(\ln x)^2 - 3\ln x + 2 = 0$.
+@sol
+Domaine $x > 0$. $X = \ln x$ : $X^2 - 3X + 2 = 0$ → $X = 1$ ou $X = 2$.
+$\ln x = 1$ → $x = e$ ; $\ln x = 2$ → $x = e^2$. $S = \{e\,;\,e^2\}$.
+@check sols(log(x)**2-3*log(x)+2, [E, E**2])
+@end
+
+@exo 4 | Demi-vie
+Le nombre de noyaux radioactifs d'un échantillon est $N(t) = N_0\,e^{-0{,}1t}$ ($t$ en années). Au bout de combien de temps en reste-t-il la moitié ?
+@sol
+$N_0 e^{-0{,}1t} = \frac{N_0}{2}$ → $e^{-0{,}1t} = \frac{1}{2}$ → $-0{,}1t = \ln\frac{1}{2} = -\ln 2$ → $t = 10\ln 2 \approx 6{,}93$ ans.
+@check sols(exp(-x/10)-Rational(1,2), [10*log(2)])
+@end
+
+@exo 4
+Résous $e^{2x - 1} \leq e^{x + 3}$.
+@sol
+$e^x$ est croissante : $2x - 1 \leq x + 3$ → $x \leq 4$. $S = \of{-\infty}{4}$.
+@end
+
+@serie 4E | Limites et asymptotes
+
+@exo 2
+Calcule $\lim\limits_{x \to +\infty} (-2x^3 + x)$ et $\lim\limits_{x \to -\infty} (x^2 + 5)$.
+@sol
+Dominant $-2x^3 \to -\infty$. Dominant $x^2 \to +\infty$ (un carré est positif).
+@check lim(-2*x**3+x, oo, -oo) and lim(x**2+5, -oo, oo)
+@end
+
+@exo 2
+Calcule $\lim\limits_{x \to +\infty} \dfrac{3x^2 + 1}{x^2 - 4}$. Quelle asymptote en déduis-tu ?
+@sol
+Dominants $\frac{3x^2}{x^2} = 3$. Asymptote horizontale $y = 3$ en $+\infty$.
+@check lim((3*x**2+1)/(x**2-4), oo, 3)
+@end
+
+@exo 2
+Calcule $\lim\limits_{x \to +\infty} \dfrac{x + 1}{x^2 + 1}$ et $\lim\limits_{x \to +\infty} \dfrac{x^2 + 1}{x + 1}$.
+@sol
+$0$ et $+\infty$ (voir 4.7).
+@end
+
+@exo 3
+$f(x) = \dfrac{1}{x - 2}$. Calcule les limites en $2^+$ et $2^-$. Quelle asymptote ?
+@sol
+$x \to 2^+$ : $x - 2 \to 0^+$, $\frac{1}{0^+} \to +\infty$. $x \to 2^-$ : $\to -\infty$. Asymptote verticale $x = 2$.
+@check lim(1/(x-2), 2, oo, dir="+") and lim(1/(x-2), 2, -oo, dir="-")
+@end
+
+@exo 3
+Donne les asymptotes de $f(x) = \dfrac{2x + 1}{x - 3}$.
+@sol
+Horizontale $y = 2$ (en $\pm\infty$) et verticale $x = 3$ (voir 4.8 et la figure).
+@end
+
+@exo 3
+Calcule :
+a) $\lim\limits_{x \to -\infty} e^x$
+b) $\lim\limits_{x \to +\infty} e^{-x}$
+c) $\lim\limits_{x \to 0^+} \ln x$
+d) $\lim\limits_{x \to +\infty} (2 - e^{-x})$
+@sol
+a) $0$. b) $e^{-x} = \frac{1}{e^x} \to 0$. c) $-\infty$. d) $2 - 0 = 2$.
+@end
+
+@exo 4
+Calcule $\lim\limits_{x \to +\infty} x e^{-x}$ et $\lim\limits_{x \to +\infty} (e^x - x)$.
+@sol
+$x e^{-x} = \frac{x}{e^x}$ → l'exponentielle gagne → $0$. $e^x - x \to +\infty$ (voir 4.7).
+@check lim(x*exp(-x), oo, 0) and lim(exp(x)-x, oo, oo)
+@end
+
+@exo 4
+Calcule $\lim\limits_{x \to 0^+} x\ln x$ et $\lim\limits_{x \to +\infty} (\ln x - x)$.
+@sol
+$x\ln x \to 0$ (croissance comparée). $\ln x - x = x\left(\frac{\ln x}{x} - 1\right) \to +\infty \times (0 - 1) = -\infty$.
+@check lim(x*log(x), 0, 0, dir="+") and lim(log(x)-x, oo, -oo)
+@end
+
+@exo 4
+Calcule $\lim\limits_{x \to +\infty} \dfrac{e^x + 1}{e^x - 1}$ et $\lim\limits_{x \to -\infty} \dfrac{e^x + 1}{e^x - 1}$.
+@sol
+En $+\infty$ : je divise en haut et en bas par $e^x$ : $\dfrac{1 + e^{-x}}{1 - e^{-x}} \to \dfrac{1 + 0}{1 - 0} = 1$.
+En $-\infty$ : $e^x \to 0$, donc $\dfrac{0 + 1}{0 - 1} = -1$. Deux asymptotes horizontales : $y = 1$ et $y = -1$.
+@check lim((exp(x)+1)/(exp(x)-1), oo, 1) and lim((exp(x)+1)/(exp(x)-1), -oo, -1)
+@end
+
+@exo 4 | Charge d'un condensateur
+La tension aux bornes d'un condensateur qui se charge est $u(t) = 12\left(1 - e^{-t/\tau}\right)$ (en V), avec $\tau > 0$.
+Calcule $u(0)$ et $\lim\limits_{t \to +\infty} u(t)$. Interprète.
+@sol
+$u(0) = 12(1 - 1) = 0$ V : au départ, le condensateur est vide.
+Quand $t \to +\infty$, $e^{-t/\tau} \to 0$, donc $u(t) \to 12$ V : le condensateur se charge jusqu'à la tension du générateur (asymptote $u = 12$).
+@end
+
+@drill domaines 12 61 2 | Domaines de définition
+@drill explog 18 62 3 | Calculs avec exp et ln
+@drill eq_exp 12 63 2 | Équations avec exp et ln
+@drill limites 12 64 2 | Limites de fractions rationnelles
+
+## 4.10 QCM style examen
+
+@qcm
+Le domaine de $\ln(3 - x)$ est :
+A) $\oo{3}{+\infty}$
+B) $\oo{-\infty}{3}$
+C) $\of{-\infty}{3}$
+D) $\R$
+@rep B | $3 - x > 0$ ⇔ $x < 3$. Exclu (strict) : C se trompe de crochet.
+@end
+
+@qcm
+$\ln 8 - \ln 2 =$
+A) $\ln 6$
+B) $\ln 4$
+C) $4$
+D) $3$
+@rep B | $\ln\frac{8}{2} = \ln 4$. A soustrait à l'intérieur du ln : interdit.
+@end
+
+@qcm
+$\lim\limits_{x \to +\infty} \dfrac{2x^2 - 1}{5x^2 + x} =$
+A) $0$
+B) $+\infty$
+C) $\frac{2}{5}$
+D) $-1$
+@rep C | $\frac{2x^2}{5x^2} = \frac{2}{5}$.
+@end
+
+@qcm
+$e^{\ln 3 + \ln 2} =$
+A) $5$
+B) $6$
+C) $\ln 6$
+D) $e^5$
+@rep B | $e^{\ln 3 + \ln 2} = e^{\ln 6} = 6$. A additionne 3 et 2.
+@end
+
+@qcm
+L'équation $e^x = -1$ :
+A) a pour solution $x = 0$
+B) a pour solution $x = -1$
+C) a pour solution $x = \ln(-1)$
+D) n'a pas de solution
+@rep D | $e^x$ est toujours $> 0$. C n'existe pas : ln d'un négatif.
+@end
+
+@qcm
+$f(x) = 3 + \frac{1}{x}$ admet en $+\infty$ l'asymptote :
+A) $y = 0$
+B) $y = 3$
+C) $x = 3$
+D) $x = 0$
+@rep B | $\frac{1}{x} \to 0$, donc $f \to 3$ : asymptote horizontale $y = 3$. C donne une droite verticale.
+@end
+
+@qcm
+Le domaine de $f(x) = \sqrt{x - 2}$ est :
+A) $\oo{2}{+\infty}$
+B) $\fo{2}{+\infty}$
+C) $\fo{-2}{+\infty}$
+D) $\R$
+@rep B | $x - 2 \geq 0$ ⇔ $x \geq 2$ ; la racine de 0 existe, donc 2 est inclus. A confond avec la condition du ln.
+@end
+
+@qcm
+$\ln\left(e^{-2}\right) + \ln 1 =$
+A) $-2$
+B) $-1$
+C) $e^{-2}$
+D) $2$
+@rep A | $\ln(e^{-2}) = -2$ et $\ln 1 = 0$.
+@end
+
+@qcm
+La solution de $\ln x = 2$ est :
+A) $x = 2$
+B) $x = e^2$
+C) $x = \ln 2$
+D) $x = 2e$
+@rep B | On applique exp : $x = e^2 \approx 7{,}39$.
+@end
+
+@qcm
+$\lim\limits_{x \to 0^+} \left(\frac{1}{x} + \ln x\right)$ :
+A) vaut 0
+B) vaut $+\infty$
+C) vaut $-\infty$
+D) n'existe pas
+@rep B | Forme $+\infty - \infty$ : on écrit $\frac{1}{x} + \ln x = \frac{1 + x\ln x}{x}$ ; comme $x\ln x \to 0$, le haut tend vers 1 et le bas vers $0^+$ : $\frac{1}{0^+} = +\infty$.
+@check lim(1/x+log(x), 0, oo, dir="+")
+@end
+
+@serie 4F | Bilan du chapitre 4 (35 minutes, sans aide)
+
+:::note
+**7 ou 8 justes : passe au chapitre 5. 5 ou 6 : refais les séries 4D et 4E. Moins de 5 : reprends 4.5 à 4.7.**
+:::
+
+@exo 2
+Donne le domaine de $f(x) = \ln(2x - 6) + \dfrac{1}{x - 5}$.
+@sol
+$2x - 6 > 0$ → $x > 3$ ; et $x \neq 5$. $D_f = \oo{3}{5} \cup \oo{5}{+\infty}$.
+@end
+
+@exo 2
+Calcule $e^{2\ln 2} - \ln\sqrt{e}$.
+@sol
+$e^{2\ln 2} = e^{\ln 4} = 4$ ; $\ln\sqrt{e} = \ln e^{1/2} = \frac{1}{2}$. Résultat : $4 - \frac{1}{2} = \frac{7}{2}$.
+@check same(exp(2*log(2))-log(sqrt(E)), Rational(7,2))
+@end
+
+@exo 3
+Résous $e^{3x - 2} = 5$.
+@sol
+$3x - 2 = \ln 5$ → $x = \dfrac{\ln 5 + 2}{3}$.
+@check sols(exp(3*x-2)-5, [(log(5)+2)/3])
+@end
+
+@exo 3
+Résous $\ln(x + 2) + \ln x = \ln 3$.
+@sol
+Domaine : $x > 0$. $\ln\big(x(x + 2)\big) = \ln 3$ → $x^2 + 2x - 3 = 0$ → $x = 1$ ou $x = -3$. On rejette $-3$ : $S = \{1\}$.
+@check same((log(x+2)+log(x)).subs(x,1), log(3)) and sols(x**2+2*x-3, [1, -3])
+@end
+
+@exo 4
+Résous $e^{2x} - 5e^x + 6 = 0$.
+@sol
+$X = e^x$ : $X^2 - 5X + 6 = 0$ → $X = 2$ ou $X = 3$ → $S = \{\ln 2\,;\,\ln 3\}$.
+@check sols(exp(2*x)-5*exp(x)+6, [log(2), log(3)])
+@end
+
+@exo 2
+Calcule $\lim\limits_{x \to +\infty} \dfrac{1 - 4x^2}{2x^2 + x}$.
+@sol
+$\frac{-4x^2}{2x^2} = -2$.
+@check lim((1-4*x**2)/(2*x**2+x), oo, -2)
+@end
+
+@exo 3
+Calcule $\lim\limits_{x \to 1^+} \dfrac{x + 1}{x - 1}$. Quelle asymptote en déduis-tu ?
+@sol
+En haut → 2 ; en bas → $0^+$. $\frac{2}{0^+} = +\infty$. Asymptote verticale $x = 1$.
+@check lim((x+1)/(x-1), 1, oo, dir="+")
+@end
+
+@exo 3
+Résous $\ln x \geq 2$.
+@sol
+Domaine $x > 0$. $\ln x \geq \ln(e^2)$ ⇔ $x \geq e^2$. $S = \fo{e^2}{+\infty}$.
+@end
+
+@corriges

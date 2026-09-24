@@ -1,0 +1,586 @@
+%% Chapitre 3 — Trigonométrie
+# 3 | Trigonométrie | Le triangle rectangle, les radians, le cercle et les valeurs à connaître
+
+:::objectifs
+- utiliser cos, sin, tan dans un triangle rectangle ;
+- passer des degrés aux radians et inversement ;
+- lire cos et sin sur le **cercle trigonométrique** et connaître les valeurs remarquables **par cœur** ;
+- utiliser les symétries du cercle ($-\theta$, $\pi - \theta$, $\pi + \theta$) ;
+- retrouver un angle à partir de son cosinus et de son sinus (indispensable pour les complexes) ;
+- résoudre les équations simples $\cos x = a$ et $\sin x = a$.
+:::
+
+:::note Temps conseillé : 5 séances (semaine 3 du planning).
+**Prérequis :** fractions et racines (chapitre 1). Peu de choses dans ce chapitre, mais à connaître **parfaitement** : il sert pour les dérivées, les intégrales et surtout les nombres complexes.
+:::
+
+## 3.1 Le triangle rectangle
+
+:::idee
+Dans un triangle rectangle, l'angle $\alpha$ « regarde » un côté (l'**opposé**), en « touche » un autre (l'**adjacent**), et le plus grand côté, face à l'angle droit, est l'**hypoténuse**.
+cos, sin et tan sont simplement des **rapports** (des divisions) entre ces côtés.
+:::
+
+@fig triangle_rect:48 | Les trois côtés vus depuis l'angle $\alpha$.
+
+:::coeur
+$$\cos\alpha = \frac{\text{adjacent}}{\text{hypoténuse}} \qquad \sin\alpha = \frac{\text{opposé}}{\text{hypoténuse}} \qquad \tan\alpha = \frac{\text{opposé}}{\text{adjacent}}$$
+Moyen mnémotechnique : **CAH SOH TOA** → Cos = Adjacent/Hypoténuse, Sin = Opposé/Hypoténuse, Tan = Opposé/Adjacent.
+**Pythagore :** hypoténuse² = côté₁² + côté₂².
+:::
+
+:::exemple Exemple guidé : hypoténuse 10, angle 30°
++ Je cherche l'opposé : $\sin 30° = \frac{\text{opposé}}{10}$ → opposé $= 10 \times \sin 30° = 10 \times \frac{1}{2} = 5$.
++ Je cherche l'adjacent : $\cos 30° = \frac{\text{adjacent}}{10}$ → adjacent $= 10 \times \frac{\sqrt{3}}{2} = 5\sqrt{3} \approx 8{,}66$.
++ Vérification avec Pythagore : $5^2 + (5\sqrt{3})^2 = 25 + 75 = 100 = 10^2$ ✔
+:::
+
+:::astuce Trouver un côté : la formule « triangle »
+Si je connais l'hypoténuse : opposé $= \text{hyp} \times \sin\alpha$ ; adjacent $= \text{hyp} \times \cos\alpha$.
+Si je connais l'adjacent : opposé $= \text{adj} \times \tan\alpha$ ; hypoténuse $= \dfrac{\text{adj}}{\cos\alpha}$.
+:::
+
+## 3.2 Les radians
+
+:::idee
+Le **radian** est une autre unité pour mesurer les angles, plus pratique en maths.
+Un tour complet = 360° = $2\pi$ radians. Un demi-tour = 180° = $\pi$.
+Pense à $\pi$ comme « **un demi-tour** » : $\frac{\pi}{2}$ est un quart de tour (angle droit), $\frac{\pi}{4}$ un huitième de tour, $\frac{\pi}{3}$ un sixième de tour.
+:::
+
+:::coeur
+$$\text{degrés} \xrightarrow{\ \times \frac{\pi}{180}\ } \text{radians} \qquad\qquad \text{radians} \xrightarrow{\ \times \frac{180}{\pi}\ } \text{degrés}$$
+**Astuce :** pour passer en degrés, **remplace $\pi$ par 180** : $\frac{2\pi}{3} = \frac{2 \times 180}{3} = 120°$.
+:::
+
+| Degrés | 0° | 30° | 45° | 60° | 90° | 120° | 135° | 150° | 180° | 270° | 360° |
+| Radians | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\frac{2\pi}{3}$ | $\frac{3\pi}{4}$ | $\frac{5\pi}{6}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
+
+:::exemple Exemples corrigés
+$60° \to 60 \times \frac{\pi}{180} = \frac{\pi}{3}$. $\quad 150° \to \frac{150\pi}{180} = \frac{5\pi}{6}$ (je simplifie par 30).
+$\frac{3\pi}{4} \to \frac{3 \times 180}{4} = 135°$. $\quad \frac{7\pi}{6} \to \frac{7 \times 180}{6} = 210°$.
+:::
+
+## 3.3 Le cercle trigonométrique
+
+:::idee
+Dessine un cercle de **rayon 1** centré à l'origine. Pars du point $(1\,;\,0)$ et tourne dans le sens **inverse des aiguilles d'une montre** d'un angle $\theta$. Tu arrives en un point $M$.
+Alors : **$\cos\theta$ = l'abscisse de $M$** (combien il est à droite) et **$\sin\theta$ = l'ordonnée de $M$** (combien il est en haut).
+Si on tourne dans le sens des aiguilles d'une montre, l'angle est **négatif** : $-\frac{\pi}{2}$ est en bas.
+C'est la même chose que le triangle rectangle : l'hypoténuse vaut 1 (le rayon), donc cos = adjacent et sin = opposé.
+:::
+
+@fig cercle_trigo:40 quadrants:37 | À gauche : cos = abscisse, sin = ordonnée. À droite : les signes dans les 4 quarts.
+
+:::coeur Le tableau des valeurs (à connaître par cœur)
+
+| $\theta$ | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\frac{2\pi}{3}$ | $\frac{3\pi}{4}$ | $\frac{5\pi}{6}$ | $\pi$ |
+| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ | $-\frac{1}{2}$ | $-\frac{\sqrt{2}}{2}$ | $-\frac{\sqrt{3}}{2}$ | $-1$ |
+| $\sin\theta$ | $0$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ |
+
+:::
+
+:::astuce L'astuce pour retenir le tableau sans l'apprendre
+Pour sin en $0, \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{\pi}{2}$, écris $\frac{\sqrt{0}}{2}, \frac{\sqrt{1}}{2}, \frac{\sqrt{2}}{2}, \frac{\sqrt{3}}{2}, \frac{\sqrt{4}}{2}$ → soit $0, \frac{1}{2}, \frac{\sqrt{2}}{2}, \frac{\sqrt{3}}{2}, 1$. Pour cos, la **même liste à l'envers**.
+Ordre de grandeur : $\frac{\sqrt{2}}{2} \approx 0{,}71$ et $\frac{\sqrt{3}}{2} \approx 0{,}87$. Donc $\frac{1}{2} < \frac{\sqrt{2}}{2} < \frac{\sqrt{3}}{2}$.
+Sur le dessin : $\frac{\pi}{6}$ est un angle « **plat** » (point bas, loin à droite) : grand cos, petit sin. $\frac{\pi}{3}$ est « **haut** » : petit cos, grand sin.
+:::
+
+@fig cercle_valeurs:72 | Tous les angles remarquables. En rouge : les coordonnées $(\cos\,;\,\sin)$ du premier quart ; les autres s'en déduisent par symétrie.
+
+:::coeur Les 4 quarts du cercle
+1er quart (en haut à droite) : cos $+$, sin $+$ · 2e (en haut à gauche) : cos $-$, sin $+$ · 3e (en bas à gauche) : cos $-$, sin $-$ · 4e (en bas à droite) : cos $+$, sin $-$.
+Les 4 points cardinaux : $0 \to (1\,;\,0)$ · $\frac{\pi}{2} \to (0\,;\,1)$ · $\pi \to (-1\,;\,0)$ · $-\frac{\pi}{2}$ (ou $\frac{3\pi}{2}$) $\to (0\,;\,-1)$.
+:::
+
+## 3.4 Les formules à connaître et les symétries
+
+:::coeur
+$$\cos^2\theta + \sin^2\theta = 1 \qquad \tan\theta = \frac{\sin\theta}{\cos\theta} \qquad -1 \leq \cos\theta \leq 1 \qquad -1 \leq \sin\theta \leq 1$$
+$$\cos(-\theta) = \cos\theta \qquad \sin(-\theta) = -\sin\theta$$
+$$\cos(\pi - \theta) = -\cos\theta \qquad \sin(\pi - \theta) = \sin\theta$$
+$$\cos(\pi + \theta) = -\cos\theta \qquad \sin(\pi + \theta) = -\sin\theta$$
+$$\cos(\theta + 2\pi) = \cos\theta \qquad \sin(\theta + 2\pi) = \sin\theta \qquad \cos\left(\tfrac{\pi}{2} - \theta\right) = \sin\theta$$
+:::
+
+@fig symetries:40 | $\theta$ et ses trois « cousins » : même valeurs (au signe près).
+
+:::pourquoi Pourquoi ces formules ? (regarde le cercle)
+$\cos^2 + \sin^2 = 1$ : c'est **Pythagore** dans le cercle de rayon 1 (cos et sin sont les deux côtés, 1 est l'hypoténuse).
+$-\theta$ est le symétrique de $\theta$ par rapport à l'axe **horizontal** : même abscisse (cos), ordonnée opposée (sin).
+$\pi - \theta$ est le symétrique par rapport à l'axe **vertical** : même ordonnée (sin), abscisse opposée (cos).
+$\pi + \theta$ est le point **diamétralement opposé** : les deux signes changent.
+$\theta + 2\pi$ : un tour complet de plus → on revient au même point.
+:::
+
+:::exemple Exemples corrigés
+$\cos\left(\frac{2\pi}{3}\right)$ : $\frac{2\pi}{3} = \pi - \frac{\pi}{3}$ → $\cos\left(\frac{2\pi}{3}\right) = -\cos\left(\frac{\pi}{3}\right) = -\frac{1}{2}$ ; $\sin\left(\frac{2\pi}{3}\right) = \sin\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}$.
+$\sin\left(\frac{7\pi}{6}\right)$ : $\frac{7\pi}{6} = \pi + \frac{\pi}{6}$ → $-\sin\frac{\pi}{6} = -\frac{1}{2}$.
+$\sin\left(-\frac{\pi}{6}\right) = -\sin\frac{\pi}{6} = -\frac{1}{2}$. $\quad \cos\left(-\frac{\pi}{4}\right) = \cos\frac{\pi}{4} = \frac{\sqrt{2}}{2}$.
+$\cos\left(\frac{9\pi}{4}\right) = \cos\left(\frac{\pi}{4} + 2\pi\right) = \frac{\sqrt{2}}{2}$.
+:::
+
+:::methode Calculer $\cos$ ou $\sin$ d'un angle quelconque
++ Je place l'angle sur le cercle (au besoin j'enlève des tours complets $2\pi$).
++ Je repère son « **angle de base** » dans le premier quart ($\frac{\pi}{6}$, $\frac{\pi}{4}$ ou $\frac{\pi}{3}$) : c'est l'écart avec l'axe horizontal.
++ Je prends la valeur du tableau pour l'angle de base.
++ Je mets le **signe** du quart où se trouve le point.
+:::
+
+:::exemple Exemple guidé : $\cos\left(\frac{5\pi}{4}\right)$
++ $\frac{5\pi}{4} = \pi + \frac{\pi}{4}$ : un demi-tour, puis encore un huitième de tour → 3e quart (en bas à gauche).
++ Angle de base : $\frac{\pi}{4}$. Valeur : $\frac{\sqrt{2}}{2}$.
++ 3e quart : cos négatif → $\cos\frac{5\pi}{4} = -\frac{\sqrt{2}}{2}$.
+:::
+
+## 3.5 Trouver un angle à partir de cos et sin
+
+:::methode (tu t'en serviras énormément avec les complexes)
++ Je regarde les **signes** de cos et sin → je sais dans quel quart je suis.
++ Je regarde les **valeurs sans signe** → je trouve l'angle « de base » dans le tableau (entre 0 et $\frac{\pi}{2}$).
++ J'ajuste : 1er quart → $\theta = \text{base}$ ; 2e quart → $\theta = \pi - \text{base}$ ; 3e quart → $\theta = -(\pi - \text{base})$ ; 4e quart → $\theta = -\text{base}$.
+:::
+
+:::exemple Exemple guidé 1 : $\cos\theta = -\frac{1}{2}$ et $\sin\theta = \frac{\sqrt{3}}{2}$
++ Signes : cos −, sin + → 2e quart (en haut à gauche).
++ Valeurs sans signe : $\frac{1}{2}$ et $\frac{\sqrt{3}}{2}$ → dans le tableau, c'est $\frac{\pi}{3}$.
++ 2e quart : $\theta = \pi - \frac{\pi}{3} = \frac{2\pi}{3}$.
+:::
+
+:::exemple Exemple guidé 2 : $\cos\theta = \frac{1}{2}$ et $\sin\theta = -\frac{\sqrt{3}}{2}$
++ Signes : cos +, sin − → 4e quart (en bas à droite).
++ Base : $\frac{\pi}{3}$. 4e quart : $\theta = -\frac{\pi}{3}$.
+:::
+
+:::exemple Exemple guidé 3 : $\cos\theta = -\frac{\sqrt{3}}{2}$ et $\sin\theta = -\frac{1}{2}$
++ Signes : cos −, sin − → 3e quart (en bas à gauche).
++ Base : $\frac{\sqrt{3}}{2}$ et $\frac{1}{2}$ → $\frac{\pi}{6}$.
++ 3e quart : $\theta = -\left(\pi - \frac{\pi}{6}\right) = -\frac{5\pi}{6}$.
+:::
+
+:::lire Comprendre l'énoncé
+**mesure principale** : la mesure de l'angle dans $\of{-\pi}{\pi}$. C'est celle qu'on demande à l'examen ($-\frac{\pi}{2}$ plutôt que $\frac{3\pi}{2}$).
+Pour trouver la mesure principale, on ajoute ou on enlève des tours $2\pi$ : $\frac{7\pi}{4} - 2\pi = -\frac{\pi}{4}$.
+**sens direct / trigonométrique** : sens inverse des aiguilles d'une montre.
+:::
+
+:::exemple Exemple guidé : trouver $\sin x$ quand on connaît $\cos x$
+Sachant $\cos x = \frac{3}{5}$ et $x \in \ff{0}{\frac{\pi}{2}}$, trouve $\sin x$.
++ $\sin^2 x = 1 - \cos^2 x = 1 - \frac{9}{25} = \frac{16}{25}$.
++ Donc $\sin x = \frac{4}{5}$ ou $\sin x = -\frac{4}{5}$.
++ $x$ est dans le 1er quart → sin positif → $\sin x = \frac{4}{5}$.
+:::
+
+## 3.6 Équations simples
+
+:::methode Résoudre $\cos x = a$ ou $\sin x = a$
++ Je trouve **un** angle qui marche avec le tableau.
++ Sur le cercle, je cherche **tous** les points qui ont la même abscisse (pour cos) ou la même ordonnée (pour sin) : en général il y en a **deux**.
++ $\cos x = \cos\alpha$ → $x = \alpha$ ou $x = -\alpha$ (symétrie horizontale). $\sin x = \sin\alpha$ → $x = \alpha$ ou $x = \pi - \alpha$ (symétrie verticale).
++ Je garde les solutions dans l'intervalle demandé (en ajoutant ou enlevant $2\pi$). Dans $\R$, j'ajoute « $+ 2k\pi$, $k \in \Z$ ».
+:::
+
+:::exemple Exemples corrigés
+$\cos x = 0$ sur $\fo{0}{2\pi}$ : sur le cercle, l'abscisse vaut 0 en haut et en bas → $x = \frac{\pi}{2}$ ou $x = \frac{3\pi}{2}$.
+$\sin x = \frac{1}{2}$ sur $\fo{0}{2\pi}$ : l'ordonnée vaut $\frac{1}{2}$ en deux points → $\frac{\pi}{6}$ et $\pi - \frac{\pi}{6} = \frac{5\pi}{6}$.
+$\cos x = \frac{1}{2}$ sur $\fo{0}{2\pi}$ : $\frac{\pi}{3}$ et $-\frac{\pi}{3} + 2\pi = \frac{5\pi}{3}$.
+$\cos x = -1$ sur $\fo{0}{2\pi}$ : un seul point, à gauche → $x = \pi$.
+:::
+
+## 3.7 Les courbes de cos et sin (et les signaux)
+
+@fig courbes_trigo:92 | cos et sin oscillent entre $-1$ et $1$ et se répètent tous les $2\pi$ (période).
+
+:::idee
+Un signal sinusoïdal (tension alternative, son, vibration) s'écrit $u(t) = U \sin(\omega t + \varphi)$.
+$U$ = **amplitude** (valeur maximale) · $\omega$ = **pulsation** (en rad/s) · $T = \dfrac{2\pi}{\omega}$ = **période** (en s) · $f = \dfrac{1}{T}$ = **fréquence** (en Hz) · $\varphi$ = **phase**.
+Exemple : le réseau électrique suisse : $f = 50$ Hz, donc $T = 0{,}02$ s et $\omega = 2\pi f = 100\pi$ rad/s.
+:::
+
+:::astuce Pour aller plus loin : les formules d'addition (bonus)
+$\cos(a + b) = \cos a \cos b - \sin a \sin b$ · $\sin(a + b) = \sin a \cos b + \cos a \sin b$
+$\cos(2a) = \cos^2 a - \sin^2 a = 2\cos^2 a - 1$ · $\sin(2a) = 2 \sin a \cos a$
+Elles servent surtout en physique ; à l'examen, elles sont données si on en a besoin.
+:::
+
+@page
+## 3.8 Exercices
+
+@serie 3A | Le triangle rectangle
+
+@exo 1
+Le triangle $ABC$ est rectangle en $C$, avec $AC = 3$ et $BC = 4$. Calcule $AB$, puis $\cos\hat{A}$, $\sin\hat{A}$ et $\tan\hat{A}$.
+@sol
+Pythagore : $AB^2 = 9 + 16 = 25$ → $AB = 5$.
+Depuis $\hat{A}$ : adjacent $AC = 3$, opposé $BC = 4$, hypoténuse $AB = 5$.
+$\cos\hat{A} = \frac{3}{5}$, $\sin\hat{A} = \frac{4}{5}$, $\tan\hat{A} = \frac{4}{3}$.
+@end
+
+@exo 1
+Triangle rectangle d'hypoténuse 10, avec un angle de 30° : trouve les deux autres côtés.
+@sol
+Opposé $= 10 \sin 30° = 5$ ; adjacent $= 10\cos 30° = 5\sqrt{3} \approx 8{,}66$ (exemple guidé du 3.1).
+@end
+
+@exo 2
+Dans un triangle rectangle, un angle vaut 45° et le côté adjacent mesure 6. Calcule le côté opposé et l'hypoténuse.
+@sol
+Opposé $= 6 \times \tan 45° = 6 \times 1 = 6$.
+Hypoténuse $= \dfrac{6}{\cos 45°} = \dfrac{6}{\frac{\sqrt{2}}{2}} = \dfrac{12}{\sqrt{2}} = \dfrac{12\sqrt{2}}{2} = 6\sqrt{2}$.
+Vérif. Pythagore : $36 + 36 = 72 = (6\sqrt{2})^2$ ✔
+@check same(6/(sqrt(2)/2), 6*sqrt(2))
+@end
+
+@exo 2 | L'échelle
+Une échelle de 5 m est posée contre un mur ; elle fait un angle de 60° avec le sol. À quelle hauteur touche-t-elle le mur ? À quelle distance du mur est son pied ?
+@sol
+L'échelle est l'hypoténuse. Hauteur (opposé) $= 5\sin 60° = \frac{5\sqrt{3}}{2} \approx 4{,}33$ m.
+Distance au mur (adjacent) $= 5\cos 60° = 2{,}5$ m.
+@end
+
+@exo 3
+Dans un triangle rectangle, le côté opposé à $\alpha$ mesure 1 et le côté adjacent $\sqrt{3}$. Trouve $\alpha$.
+@sol
+$\tan\alpha = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$. Or $\tan 30° = \frac{\sin 30°}{\cos 30°} = \frac{1/2}{\sqrt{3}/2} = \frac{1}{\sqrt{3}}$. Donc $\alpha = 30° = \frac{\pi}{6}$.
+@end
+
+@exo 3 | Rampe d'accès
+Une rampe monte de 1 m sur une distance horizontale de 12 m. Quelle est sa pente (en %) ? Quelle est la longueur de la rampe ?
+@sol
+Pente $= \tan\alpha = \frac{1}{12} \approx 0{,}083$, soit environ **8,3 %**.
+Longueur (hypoténuse) : $\sqrt{1^2 + 12^2} = \sqrt{145} \approx 12{,}04$ m.
+@end
+
+@serie 3B | Les radians
+
+@exo 1
+Convertis en radians : 60°, 45°, 180°, 90°, 30°, 270°.
+@sol
+$\frac{\pi}{3}$, $\frac{\pi}{4}$, $\pi$, $\frac{\pi}{2}$, $\frac{\pi}{6}$, $\frac{3\pi}{2}$.
+@end
+
+@exo 1
+Convertis en degrés : $\frac{\pi}{6}$, $\frac{2\pi}{3}$, $\frac{3\pi}{4}$, $\frac{5\pi}{6}$, $\frac{3\pi}{2}$, $\frac{7\pi}{4}$.
+@sol
+$\pi \to 180$ : 30°, 120°, 135°, 150°, 270°, 315°.
+@end
+
+@exo 2
+a) Combien de degrés vaut 1 radian (environ) ?
+b) Convertis 20° en radians.
+@sol
+a) $1 \times \frac{180}{\pi} \approx 57{,}3°$.
+b) $20 \times \frac{\pi}{180} = \frac{\pi}{9}$.
+@end
+
+@exo 3
+Donne la mesure principale (dans $\of{-\pi}{\pi}$) de : $\frac{7\pi}{4}$, $\frac{5\pi}{3}$, $\frac{13\pi}{6}$, $-\frac{5\pi}{4}$, $3\pi$.
+@sol
+$\frac{7\pi}{4} - 2\pi = -\frac{\pi}{4}$ · $\frac{5\pi}{3} - 2\pi = -\frac{\pi}{3}$ · $\frac{13\pi}{6} - 2\pi = \frac{\pi}{6}$ · $-\frac{5\pi}{4} + 2\pi = \frac{3\pi}{4}$ · $3\pi - 2\pi = \pi$.
+@end
+
+@serie 3C | Le cercle et les valeurs remarquables
+
+@exo 1
+Donne : $\cos\frac{\pi}{3}$, $\sin\frac{\pi}{6}$, $\cos\frac{\pi}{4}$, $\sin\frac{\pi}{2}$, $\cos 0$, $\sin 0$.
+@sol
+$\frac{1}{2}$ ; $\frac{1}{2}$ ; $\frac{\sqrt{2}}{2}$ ; $1$ ; $1$ ; $0$.
+@end
+
+@exo 2
+Donne : $\cos\pi$, $\sin\pi$, $\cos\frac{3\pi}{2}$, $\sin\left(-\frac{\pi}{2}\right)$.
+@sol
+$\pi$ = demi-tour, point $(-1\,;\,0)$ : $\cos\pi = -1$, $\sin\pi = 0$.
+$\frac{3\pi}{2}$ : point $(0\,;\,-1)$ → $\cos = 0$. $-\frac{\pi}{2}$ : même point → $\sin = -1$.
+@end
+
+@exo 2
+Donne : $\cos\frac{2\pi}{3}$, $\sin\frac{2\pi}{3}$, $\cos\frac{5\pi}{6}$, $\sin\frac{5\pi}{6}$.
+@sol
+$-\frac{1}{2}$ ; $\frac{\sqrt{3}}{2}$ ; $\cos\left(\pi - \frac{\pi}{6}\right) = -\frac{\sqrt{3}}{2}$ ; $\sin\left(\pi - \frac{\pi}{6}\right) = \frac{1}{2}$.
+@check same(cos(5*pi/6), -sqrt(3)/2) and same(sin(5*pi/6), Rational(1,2))
+@end
+
+@exo 2
+Donne : $\cos\left(-\frac{\pi}{4}\right)$, $\sin\left(-\frac{\pi}{6}\right)$, $\cos\left(-\frac{\pi}{3}\right)$, $\sin\left(-\frac{3\pi}{4}\right)$.
+@sol
+$\frac{\sqrt{2}}{2}$ (le cosinus « ignore » le moins) ; $-\frac{1}{2}$ ; $\frac{1}{2}$ ; $-\frac{\sqrt{2}}{2}$ (3e quart, sin négatif).
+@check same(sin(-3*pi/4), -sqrt(2)/2)
+@end
+
+@exo 3
+Donne : $\cos\frac{7\pi}{6}$, $\sin\frac{4\pi}{3}$, $\cos\frac{5\pi}{3}$, $\sin\frac{11\pi}{6}$.
+@sol
+$\frac{7\pi}{6} = \pi + \frac{\pi}{6}$ (3e quart) : $\cos = -\frac{\sqrt{3}}{2}$.
+$\frac{4\pi}{3} = \pi + \frac{\pi}{3}$ (3e quart) : $\sin = -\frac{\sqrt{3}}{2}$.
+$\frac{5\pi}{3} = 2\pi - \frac{\pi}{3}$ (4e quart) : $\cos = \frac{1}{2}$.
+$\frac{11\pi}{6} = 2\pi - \frac{\pi}{6}$ (4e quart) : $\sin = -\frac{1}{2}$.
+@check same(cos(7*pi/6), -sqrt(3)/2) and same(sin(4*pi/3), -sqrt(3)/2) and same(cos(5*pi/3), Rational(1,2)) and same(sin(11*pi/6), Rational(-1,2))
+@end
+
+@exo 3
+Simplifie :
+a) $\cos(\pi - x) + \cos x$
+b) $\sin(\pi - x) - \sin x$
+c) $\cos(-x) + \cos(x + 2\pi)$
+d) $\sin(x + \pi) + \sin(-x)$
+@sol
+a) $-\cos x + \cos x = 0$. b) $\sin x - \sin x = 0$. c) $\cos x + \cos x = 2\cos x$. d) $-\sin x - \sin x = -2\sin x$.
+@check same(sin(x+pi)+sin(-x), -2*sin(x)) and same(cos(-x)+cos(x+2*pi), 2*cos(x))
+@end
+
+@exo 3
+Calcule : $\tan\frac{\pi}{4}$, $\tan\frac{\pi}{3}$, $\tan\frac{\pi}{6}$, $\tan\frac{3\pi}{4}$.
+@sol
+$\tan = \frac{\sin}{\cos}$ : $1$ ; $\frac{\sqrt{3}/2}{1/2} = \sqrt{3}$ ; $\frac{1/2}{\sqrt{3}/2} = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$ ; $\frac{\sqrt{2}/2}{-\sqrt{2}/2} = -1$.
+@check same(tan(pi/6), sqrt(3)/3) and same(tan(3*pi/4), -1)
+@end
+
+@exo 2
+Sans calculatrice, range dans l'ordre croissant : $\cos 0$, $\cos\frac{\pi}{3}$, $\cos\frac{\pi}{2}$, $\cos\pi$, $\cos\frac{\pi}{4}$.
+@sol
+$\cos\pi = -1 < \cos\frac{\pi}{2} = 0 < \cos\frac{\pi}{3} = \frac{1}{2} < \cos\frac{\pi}{4} \approx 0{,}71 < \cos 0 = 1$.
+(Sur $\ff{0}{\pi}$, cos **diminue** quand l'angle augmente.)
+@end
+
+@serie 3D | Retrouver un angle
+
+@exo 2
+Trouve $\theta \in \of{-\pi}{\pi}$ tel que $\cos\theta = -\frac{\sqrt{2}}{2}$ et $\sin\theta = \frac{\sqrt{2}}{2}$.
+@sol
+cos −, sin + → 2e quart. Base $\frac{\pi}{4}$. $\theta = \pi - \frac{\pi}{4} = \frac{3\pi}{4}$.
+@end
+
+@exo 2
+Trouve $\theta \in \of{-\pi}{\pi}$ tel que $\cos\theta = \frac{1}{2}$ et $\sin\theta = -\frac{\sqrt{3}}{2}$.
+@sol
+cos +, sin − → 4e quart. Base $\frac{\pi}{3}$. $\theta = -\frac{\pi}{3}$.
+@end
+
+@exo 3
+Trouve $\theta \in \of{-\pi}{\pi}$ tel que $\cos\theta = -\frac{\sqrt{3}}{2}$ et $\sin\theta = -\frac{1}{2}$.
+@sol
+cos −, sin − → 3e quart. Base $\frac{\pi}{6}$. $\theta = -\frac{5\pi}{6}$.
+@end
+
+@exo 3
+Trouve $\theta \in \of{-\pi}{\pi}$ :
+a) $\cos\theta = 0$ et $\sin\theta = -1$
+b) $\cos\theta = -1$ et $\sin\theta = 0$
+@sol
+a) Point $(0\,;\,-1)$, en bas : $\theta = -\frac{\pi}{2}$.
+b) Point $(-1\,;\,0)$, à gauche : $\theta = \pi$ (et non $-\pi$, qui n'est pas dans $\of{-\pi}{\pi}$).
+@end
+
+@exo 3
+Sachant $\cos x = \frac{3}{5}$ et $x \in \ff{0}{\frac{\pi}{2}}$, trouve $\sin x$ et $\tan x$.
+@sol
+$\sin^2 x = 1 - \frac{9}{25} = \frac{16}{25}$ ; 1er quart → $\sin x = \frac{4}{5}$. $\tan x = \frac{4/5}{3/5} = \frac{4}{3}$.
+@end
+
+@exo 4
+Sachant $\sin x = \frac{5}{13}$ et $x \in \ff{\frac{\pi}{2}}{\pi}$, trouve $\cos x$.
+@sol
+$\cos^2 x = 1 - \frac{25}{169} = \frac{144}{169}$ → $\cos x = \pm\frac{12}{13}$.
+$x$ est dans le 2e quart → cos négatif → $\cos x = -\frac{12}{13}$.
+@end
+
+@serie 3E | Équations et signaux
+
+@exo 2
+Résous $\cos x = 0$ sur $\fo{0}{2\pi}$.
+@sol
+$S = \left\{\frac{\pi}{2}\,;\,\frac{3\pi}{2}\right\}$.
+@check sols(cos(x), [pi/2, 3*pi/2], domain=Interval.Ropen(0, 2*pi))
+@end
+
+@exo 2
+Résous $\sin x = \frac{1}{2}$ sur $\fo{0}{2\pi}$.
+@sol
+$S = \left\{\frac{\pi}{6}\,;\,\frac{5\pi}{6}\right\}$.
+@check sols(sin(x)-Rational(1,2), [pi/6, 5*pi/6], domain=Interval.Ropen(0, 2*pi))
+@end
+
+@exo 3
+Résous $\cos x = -\frac{\sqrt{2}}{2}$ sur $\fo{0}{2\pi}$.
+@sol
+Un angle qui marche : $\frac{3\pi}{4}$ (2e quart). L'autre point de même abscisse est son symétrique par rapport à l'axe horizontal : $-\frac{3\pi}{4}$, soit $-\frac{3\pi}{4} + 2\pi = \frac{5\pi}{4}$.
+$S = \left\{\frac{3\pi}{4}\,;\,\frac{5\pi}{4}\right\}$.
+@check sols(cos(x)+sqrt(2)/2, [3*pi/4, 5*pi/4], domain=Interval.Ropen(0, 2*pi))
+@end
+
+@exo 3
+Résous $\sin x = -\frac{\sqrt{3}}{2}$ sur $\of{-\pi}{\pi}$.
+@sol
+Ordonnée $-\frac{\sqrt{3}}{2}$ : deux points en bas, base $\frac{\pi}{3}$ : $-\frac{\pi}{3}$ (4e quart) et $-\frac{2\pi}{3}$ (3e quart).
+$S = \left\{-\frac{2\pi}{3}\,;\,-\frac{\pi}{3}\right\}$.
+@check sols(sin(x)+sqrt(3)/2, [-pi/3, -2*pi/3], domain=Interval.Lopen(-pi, pi))
+@end
+
+@exo 3
+Résous $2\cos x - 1 = 0$ sur $\fo{0}{2\pi}$.
+@sol
+$\cos x = \frac{1}{2}$ → $S = \left\{\frac{\pi}{3}\,;\,\frac{5\pi}{3}\right\}$.
+@check sols(2*cos(x)-1, [pi/3, 5*pi/3], domain=Interval.Ropen(0, 2*pi))
+@end
+
+@exo 4
+Résous $2\sin^2 x - \sin x = 0$ sur $\fo{0}{2\pi}$.
+@sol
+Facteur commun : $\sin x\,(2\sin x - 1) = 0$ → produit nul.
+$\sin x = 0$ → $x = 0$ ou $x = \pi$. $\sin x = \frac{1}{2}$ → $x = \frac{\pi}{6}$ ou $x = \frac{5\pi}{6}$.
+$S = \left\{0\,;\,\frac{\pi}{6}\,;\,\frac{5\pi}{6}\,;\,\pi\right\}$.
+@check sols(2*sin(x)**2-sin(x), [0, pi/6, 5*pi/6, pi], domain=Interval.Ropen(0, 2*pi))
+@end
+
+@exo 4
+Résous $\cos^2 x = \frac{1}{4}$ sur $\fo{0}{2\pi}$.
+@sol
+$\cos x = \frac{1}{2}$ ou $\cos x = -\frac{1}{2}$ (ne pas oublier la racine négative !).
+$\cos x = \frac{1}{2}$ : $\frac{\pi}{3}$, $\frac{5\pi}{3}$. $\cos x = -\frac{1}{2}$ : $\frac{2\pi}{3}$, $\frac{4\pi}{3}$.
+$S = \left\{\frac{\pi}{3}\,;\,\frac{2\pi}{3}\,;\,\frac{4\pi}{3}\,;\,\frac{5\pi}{3}\right\}$.
+@check sols(cos(x)**2-Rational(1,4), [pi/3, 2*pi/3, 4*pi/3, 5*pi/3], domain=Interval.Ropen(0, 2*pi))
+@end
+
+@exo 4 | Bonus : formule d'addition
+Calcule la valeur exacte de $\cos\frac{\pi}{12}$ en remarquant que $\frac{\pi}{12} = \frac{\pi}{3} - \frac{\pi}{4}$.
+@sol
+$\cos(a - b) = \cos a \cos b + \sin a \sin b$ :
+$\cos\frac{\pi}{12} = \frac{1}{2} \times \frac{\sqrt{2}}{2} + \frac{\sqrt{3}}{2} \times \frac{\sqrt{2}}{2} = \frac{\sqrt{2} + \sqrt{6}}{4} \approx 0{,}966$.
+@check same(cos(pi/12), (sqrt(2)+sqrt(6))/4)
+@end
+
+@exo 4 | Tension alternative
+Une tension vaut $u(t) = 5\sin(100\pi t)$ (en volts, $t$ en secondes).
+a) Donne l'amplitude, la pulsation, la période et la fréquence.
+b) Calcule $u(0{,}005)$.
+@sol
+a) Amplitude $U = 5$ V ; pulsation $\omega = 100\pi$ rad/s ; période $T = \frac{2\pi}{100\pi} = \frac{1}{50} = 0{,}02$ s ; fréquence $f = \frac{1}{T} = 50$ Hz.
+b) $u(0{,}005) = 5\sin(100\pi \times 0{,}005) = 5\sin\left(\frac{\pi}{2}\right) = 5$ V (c'est le maximum).
+@end
+
+@drill deg_rad 15 51 3 | Degrés ↔ radians
+@drill trig_val 24 52 4 | Valeurs de cos et sin
+@drill angle_cs 12 53 2 | Retrouver l'angle
+@drill trig_eq 9 54 2 | Équations trigonométriques
+
+## 3.9 QCM style examen
+
+@qcm
+$\cos\frac{\pi}{6} =$
+A) $\frac{1}{2}$
+B) $\frac{\sqrt{3}}{2}$
+C) $\frac{\sqrt{2}}{2}$
+D) $0$
+@rep B | Tableau. A confond avec $\sin\frac{\pi}{6}$.
+@end
+
+@qcm
+150° en radians :
+A) $\frac{5\pi}{6}$
+B) $\frac{3\pi}{4}$
+C) $\frac{2\pi}{3}$
+D) $\frac{5\pi}{3}$
+@rep A | $150 \times \frac{\pi}{180} = \frac{5\pi}{6}$.
+@end
+
+@qcm
+$\sin^2(1) + \cos^2(1) =$
+A) $1$
+B) $0$
+C) $2$
+D) ça dépend
+@rep A | $\cos^2 + \sin^2 = 1$ pour n'importe quel angle (ici 1 radian).
+@end
+
+@qcm
+La mesure principale de $\theta$ telle que $\cos\theta = -\frac{1}{2}$ et $\sin\theta = -\frac{\sqrt{3}}{2}$ :
+A) $\frac{2\pi}{3}$
+B) $-\frac{2\pi}{3}$
+C) $\frac{4\pi}{3}$
+D) $-\frac{\pi}{3}$
+@rep B | cos −, sin − → 3e quart : $-\left(\pi - \frac{\pi}{3}\right) = -\frac{2\pi}{3}$. C ($\frac{4\pi}{3}$) est le même point, mais n'est pas dans $\of{-\pi}{\pi}$.
+@end
+
+@qcm
+$\sin\frac{7\pi}{6} =$
+A) $\frac{1}{2}$
+B) $-\frac{1}{2}$
+C) $-\frac{\sqrt{3}}{2}$
+D) $\frac{\sqrt{3}}{2}$
+@rep B | $\frac{7\pi}{6} = \pi + \frac{\pi}{6}$ : 3e quart, sin négatif, base $\frac{\pi}{6}$ → $-\frac{1}{2}$.
+@end
+
+@qcm
+Pour tout $x$, $\cos(\pi - x) =$
+A) $\cos x$
+B) $-\cos x$
+C) $\sin x$
+D) $-\sin x$
+@rep B | Symétrie par rapport à l'axe vertical : l'abscisse change de signe.
+@end
+
+@qcm
+Les solutions de $\sin x = 1$ sur $\fo{0}{2\pi}$ :
+A) $\left\{\frac{\pi}{2}\right\}$
+B) $\left\{0\,;\,\pi\right\}$
+C) $\left\{\frac{\pi}{2}\,;\,\frac{3\pi}{2}\right\}$
+D) $\{\pi\}$
+@rep A | Ordonnée 1 : un seul point, tout en haut. C donne $\sin x = \pm 1$.
+@end
+
+@qcm
+La période de $u(t) = 3\cos(4t)$ est :
+A) $4$
+B) $\frac{\pi}{2}$
+C) $2\pi$
+D) $8\pi$
+@rep B | $T = \frac{2\pi}{\omega} = \frac{2\pi}{4} = \frac{\pi}{2}$.
+@end
+
+@serie 3F | Bilan du chapitre 3 (25 minutes, sans aide)
+
+:::note
+**6/6 : passe au chapitre 4. 4 ou 5 : révise le tableau des valeurs chaque matin pendant une semaine. Moins de 4 : reprends 3.3 à 3.5.**
+:::
+
+@exo 1
+Convertis 225° en radians et $\frac{7\pi}{6}$ en degrés.
+@sol
+$225 \times \frac{\pi}{180} = \frac{5\pi}{4}$. $\frac{7 \times 180}{6} = 210°$.
+@end
+
+@exo 2
+Donne $\cos\frac{3\pi}{4}$ et $\sin\left(-\frac{5\pi}{6}\right)$.
+@sol
+$\frac{3\pi}{4}$ : 2e quart, base $\frac{\pi}{4}$ → $-\frac{\sqrt{2}}{2}$.
+$-\frac{5\pi}{6}$ : 3e quart, base $\frac{\pi}{6}$ → sin négatif → $-\frac{1}{2}$.
+@check same(sin(-5*pi/6), Rational(-1,2)) and same(cos(3*pi/4), -sqrt(2)/2)
+@end
+
+@exo 3
+Trouve la mesure principale $\theta$ telle que $\cos\theta = -\frac{1}{2}$ et $\sin\theta = -\frac{\sqrt{3}}{2}$.
+@sol
+3e quart, base $\frac{\pi}{3}$ : $\theta = -\frac{2\pi}{3}$.
+@end
+
+@exo 3
+Résous $\cos x = -\frac{1}{2}$ sur $\fo{0}{2\pi}$.
+@sol
+$\frac{2\pi}{3}$ et $-\frac{2\pi}{3} + 2\pi = \frac{4\pi}{3}$. $S = \left\{\frac{2\pi}{3}\,;\,\frac{4\pi}{3}\right\}$.
+@check sols(cos(x)+Rational(1,2), [2*pi/3, 4*pi/3], domain=Interval.Ropen(0, 2*pi))
+@end
+
+@exo 3
+Sachant $\sin x = \frac{3}{5}$ et $x \in \ff{0}{\frac{\pi}{2}}$, trouve $\cos x$.
+@sol
+$\cos^2 x = 1 - \frac{9}{25} = \frac{16}{25}$, 1er quart → $\cos x = \frac{4}{5}$.
+@end
+
+@exo 2
+Triangle rectangle d'hypoténuse 8, avec un angle de 60° : calcule le côté opposé et le côté adjacent à cet angle.
+@sol
+Opposé $= 8\sin 60° = 8 \times \frac{\sqrt{3}}{2} = 4\sqrt{3}$ ; adjacent $= 8\cos 60° = 4$.
+@end
+
+@corriges

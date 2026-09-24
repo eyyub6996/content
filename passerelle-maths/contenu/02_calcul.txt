@@ -1,0 +1,1094 @@
+%% Chapitre 1 — Le calcul algébrique
+# 1 | Le calcul algébrique | Fractions, puissances, racines, développer, factoriser, simplifier
+
+:::objectifs
+- calculer avec des fractions (additionner, multiplier, diviser, simplifier) sans calculatrice ;
+- utiliser les règles des puissances et des racines **en comprenant d'où elles viennent** ;
+- **développer** une expression (enlever les parenthèses) ;
+- **factoriser** une expression (mettre en produit) : c'est la compétence n° 1 pour la suite ;
+- simplifier une fraction qui contient des lettres ;
+- traduire une phrase en expression mathématique.
+:::
+
+:::note Temps conseillé : 6 séances (semaines 1 et 2 du planning).
+**Prérequis :** chapitre 0 (signes et priorités). Ce chapitre est **le plus important du guide** : 90 % des erreurs sur les dérivées et les intégrales sont en réalité des erreurs de calcul de ce chapitre.
+:::
+
+## 1.1 Les fractions
+
+:::idee
+Une fraction $\frac{a}{b}$ est une **division** : « $a$ divisé par $b$ ».
+Le nombre du bas (**dénominateur**) dit en combien de parts on coupe ; celui du haut (**numérateur**) dit combien de parts on prend.
+$\frac{3}{4}$ = 3 parts d'une pizza coupée en 4 = $0{,}75$.
+:::
+
+### Simplifier une fraction
+
+On divise le haut **et** le bas par le **même** nombre. La valeur ne change pas (c'est comme couper chaque part en deux : on a deux fois plus de parts, deux fois plus petites).
+
+:::exemple Exemples corrigés
+$\frac{12}{18}$ : 12 et 18 sont tous deux divisibles par 6. $12 \div 6 = 2$ et $18 \div 6 = 3$ → $\frac{12}{18} = \frac{2}{3}$.
+$\frac{45}{60}$ : si tu ne vois pas tout de suite qu'ils sont divisibles par 15, divise d'abord par 5 ($\frac{9}{12}$), puis par 3 ($\frac{3}{4}$). Même résultat.
+Une fraction est **irréductible** quand on ne peut plus la simplifier : $\frac{3}{4}$, $\frac{7}{10}$.
+:::
+
+:::astuce Le signe d'une fraction
+$\dfrac{-3}{4} = \dfrac{3}{-4} = -\dfrac{3}{4}$ (un seul « − » : négatif) et $\dfrac{-3}{-4} = \dfrac{3}{4}$ (deux « − » : positif). On écrit toujours le signe **devant** la fraction.
+:::
+
+### Additionner ou soustraire deux fractions
+
+:::idee
+On ne peut additionner que des **parts de même taille**. $\frac{1}{2} + \frac{1}{3}$ : des demi-pizzas et des tiers de pizza, ce n'est pas la même taille de part.
+On recoupe tout en **sixièmes** : $\frac{1}{2} = \frac{3}{6}$ et $\frac{1}{3} = \frac{2}{6}$. Maintenant on peut compter : 3 sixièmes + 2 sixièmes = $\frac{5}{6}$.
+:::
+
+@fig pizza:90 | On recoupe en parts de même taille (des sixièmes), puis on compte les parts.
+
+:::methode
++ Je cherche un **dénominateur commun** : un multiple des deux dénominateurs (le plus petit possible ; sinon le produit des deux marche toujours).
++ Je transforme chaque fraction : je multiplie le haut **et** le bas par le même nombre pour obtenir ce dénominateur.
++ J'additionne (ou je soustrais) **seulement les numérateurs**. Le dénominateur reste le même.
++ Je simplifie si possible.
+:::
+
+:::exemple Exemple guidé : $\frac{3}{4} + \frac{1}{6}$
++ Dénominateur commun : multiples de 4 → 4, 8, **12**, 16… ; multiples de 6 → 6, **12**, 18… Le plus petit commun est 12.
++ $\frac{3}{4}$ : pour passer de 4 à 12, je multiplie par 3. Donc $\frac{3}{4} = \frac{3 \times 3}{4 \times 3} = \frac{9}{12}$. Et $\frac{1}{6} = \frac{1 \times 2}{6 \times 2} = \frac{2}{12}$.
++ $\frac{9}{12} + \frac{2}{12} = \frac{11}{12}$. Impossible à simplifier.
+:::
+
+:::exemple Exemple guidé : $2 - \frac{1}{3}$
++ Un entier est une fraction de dénominateur 1 : $2 = \frac{2}{1}$.
++ Dénominateur commun : 3. $2 = \frac{6}{3}$.
++ $\frac{6}{3} - \frac{1}{3} = \frac{5}{3}$.
+:::
+
+### Multiplier et diviser
+
+:::coeur
+**Multiplier** : haut × haut, bas × bas (pas besoin de dénominateur commun !). $\dfrac{a}{b} \times \dfrac{c}{d} = \dfrac{a \times c}{b \times d}$
+**Diviser** : je multiplie par la fraction **retournée** (l'inverse). $\dfrac{a}{b} \div \dfrac{c}{d} = \dfrac{a}{b} \times \dfrac{d}{c}$
+**« Les … de »** veut dire **×** : les $\frac{2}{3}$ de 30 $= \frac{2}{3} \times 30 = 20$.
+:::
+
+:::exemple Exemples corrigés
+$\frac{5}{6} \times \frac{3}{10} = \frac{15}{60} = \frac{1}{4}$. Astuce : simplifie **avant** de multiplier : $\frac{5}{6} \times \frac{3}{10} = \frac{5 \times 3}{2 \times 3 \times 2 \times 5} = \frac{1}{4}$.
+$\frac{4}{9} \div \frac{2}{3} = \frac{4}{9} \times \frac{3}{2} = \frac{12}{18} = \frac{2}{3}$. Bon sens : combien de fois $\frac{2}{3}$ « rentre » dans $\frac{4}{9}$ ? Moins d'une fois, car $\frac{4}{9} < \frac{2}{3}$. Le résultat $\frac{2}{3} < 1$ est cohérent.
+$3 \times \frac{2}{5} = \frac{3}{1} \times \frac{2}{5} = \frac{6}{5}$. Un entier multiplie **seulement le numérateur**.
+Une « fraction de fraction » : $\dfrac{\frac{2}{3}}{\frac{4}{9}} = \frac{2}{3} \div \frac{4}{9} = \frac{2}{3} \times \frac{9}{4} = \frac{18}{12} = \frac{3}{2}$.
+:::
+
+:::pourquoi Pourquoi on retourne la fraction pour diviser ?
+Diviser par $\frac{1}{2}$, c'est se demander « combien de demis dans… ? ». Dans 3, il y a 6 demis. Donc $3 \div \frac{1}{2} = 6 = 3 \times 2$.
+Diviser par une fraction revient donc à multiplier par son inverse.
+:::
+
+:::piege
+$\dfrac{a}{b} + \dfrac{c}{d}$ n'est **pas** $\dfrac{a + c}{b + d}$ ! Test : $\frac{1}{2} + \frac{1}{2} = 1$, mais $\frac{1 + 1}{2 + 2} = \frac{2}{4} = \frac{1}{2}$. Faux.
+On ne peut simplifier une fraction que par un nombre qui **multiplie** tout le haut et tout le bas : $\dfrac{2 + 6}{2} = \dfrac{8}{2} = 4$, et **pas** « on barre les 2 » ce qui donnerait 6.
+:::
+
+:::check
+1. $\frac{2}{5} + \frac{1}{10}$ ?
+2. $\frac{3}{8} \times \frac{4}{9}$ ?
+3. $\frac{5}{6} \div \frac{5}{12}$ ?
+---
+1. $\frac{4}{10} + \frac{1}{10} = \frac{5}{10} = \frac{1}{2}$. 2. $\frac{12}{72} = \frac{1}{6}$. 3. $\frac{5}{6} \times \frac{12}{5} = 2$.
+:::
+
+## 1.2 Les puissances
+
+:::idee
+$a^n = a \times a \times \ldots \times a$ ($n$ fois). $a$ s'appelle la **base**, $n$ l'**exposant**.
+Toutes les règles viennent du fait de « **compter combien de fois on multiplie** ».
+$a^2 \times a^3 = (a \times a) \times (a \times a \times a) = a$ multiplié 5 fois $= a^5$. Voilà pourquoi on **additionne** les exposants.
+:::
+
+:::coeur
+$$a^n \times a^m = a^{n+m} \qquad \frac{a^n}{a^m} = a^{n-m} \qquad (a^n)^m = a^{n \times m}$$
+$$(ab)^n = a^n b^n \qquad \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n} \qquad a^0 = 1 \qquad a^{-n} = \frac{1}{a^n}$$
+:::
+
+:::pourquoi Pourquoi ces règles ? (aucune n'est à apprendre « bêtement »)
+$a^0 = 1$ : $\frac{a^3}{a^3} = 1$ (un nombre divisé par lui-même). Mais avec la règle, $\frac{a^3}{a^3} = a^{3-3} = a^0$. Donc $a^0 = 1$.
+$a^{-2} = \frac{1}{a^2}$ : $\frac{a}{a^3} = \frac{a}{a \times a \times a} = \frac{1}{a \times a} = \frac{1}{a^2}$. Avec la règle : $a^{1-3} = a^{-2}$. Donc $a^{-2} = \frac{1}{a^2}$.
+$(a^2)^3 = a^6$ : $(a^2)^3 = a^2 \times a^2 \times a^2 = a^{2+2+2} = a^6$. On **multiplie** les exposants.
+:::
+
+:::exemple Exemples corrigés
+$x^5 \times x^3 = x^8$ · $\frac{x^7}{x^3} = x^4$ · $(x^2)^4 = x^8$ · $(2x)^3 = 2^3 \times x^3 = 8x^3$
+$2^{-3} = \frac{1}{2^3} = \frac{1}{8}$ · $\left(\frac{1}{2}\right)^{-1} = 2$ · $\left(\frac{2}{3}\right)^{-2} = \left(\frac{3}{2}\right)^{2} = \frac{9}{4}$ · $10^{-2} = \frac{1}{100} = 0{,}01$
+$x^3 \times x^{-5} = x^{-2} = \frac{1}{x^2}$ · $\dfrac{x^2}{x^{-3}} = x^{2-(-3)} = x^5$
+:::
+
+:::piege
+Les règles des puissances marchent avec $\times$ et $\div$, **jamais avec $+$ et $-$** : $2^2 + 2^3 = 4 + 8 = 12$, ce n'est pas $2^5 = 32$.
+$a^n \times a^m = a^{n+m}$, **pas** $a^{n \times m}$ : $2^2 \times 2^3 = 4 \times 8 = 32 = 2^5$, pas $2^6 = 64$.
+$(2x)^3 = 8x^3$ mais $2x^3 = 2 \times x^3$ : la puissance ne porte que sur ce qui est **juste avant**, sauf s'il y a des parenthèses.
+:::
+
+:::astuce Les puissances de 10 (notation scientifique)
+$10^3 = 1\,000$ (3 zéros) et $10^{-3} = 0{,}001$ (le 1 est à la 3e place après la virgule).
+Notation scientifique : un nombre entre 1 et 10, fois une puissance de 10. $3\,200\,000 = 3{,}2 \times 10^6$ ; $0{,}00052 = 5{,}2 \times 10^{-4}$.
+Pour multiplier : $(2 \times 10^3) \times (4 \times 10^{-5}) = 8 \times 10^{-2}$ (on multiplie les nombres et on additionne les exposants).
+:::
+
+## 1.3 Les racines carrées
+
+:::idee
+$\sqrt{a}$ est le nombre **positif** qui, multiplié par lui-même, donne $a$. $\sqrt{25} = 5$ car $5 \times 5 = 25$.
+$\sqrt{a}$ n'existe que pour $a \geq 0$, car aucun nombre réel au carré ne donne un négatif.
+:::
+
+:::coeur
+$$\sqrt{a \times b} = \sqrt{a} \times \sqrt{b} \qquad \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} \qquad \left(\sqrt{a}\right)^2 = a \qquad \sqrt{a^2} = |a|$$
+Carrés à connaître : 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169.
+:::
+
+:::methode Simplifier une racine : $\sqrt{50}$
++ Je cherche le **plus grand carré** qui divise 50 : 4 ? $50 \div 4$ n'est pas entier. 25 ? $50 = 25 \times 2$. Oui !
++ $\sqrt{50} = \sqrt{25 \times 2} = \sqrt{25} \times \sqrt{2}$.
++ $\sqrt{25} = 5$, donc $\sqrt{50} = 5\sqrt{2}$.
+:::
+
+:::exemple Exemples corrigés
+$\sqrt{12} = \sqrt{4 \times 3} = 2\sqrt{3}$ · $\sqrt{18} = \sqrt{9 \times 2} = 3\sqrt{2}$ · $\sqrt{8} = \sqrt{4 \times 2} = 2\sqrt{2}$ · $\sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$
+$\sqrt{18} + \sqrt{8} = 3\sqrt{2} + 2\sqrt{2} = 5\sqrt{2}$ (comme 3 pommes + 2 pommes = 5 pommes : ici la « pomme » est $\sqrt{2}$).
+**Enlever la racine du dénominateur :** $\dfrac{1}{\sqrt{2}} = \dfrac{\sqrt{2}}{\sqrt{2} \times \sqrt{2}} = \dfrac{\sqrt{2}}{2}$. On multiplie en haut et en bas par $\sqrt{2}$.
+:::
+
+:::piege
+$\sqrt{a + b} \neq \sqrt{a} + \sqrt{b}$ ! $\sqrt{9 + 16} = \sqrt{25} = 5$, alors que $\sqrt{9} + \sqrt{16} = 3 + 4 = 7$.
+$\sqrt{x^2} = |x|$ et pas $x$ : $\sqrt{(-3)^2} = \sqrt{9} = 3$.
+:::
+
+## 1.4 Développer
+
+:::idee
+**Développer** = enlever les parenthèses en transformant une multiplication en somme.
+Une seule règle : **chaque terme de la première parenthèse multiplie chaque terme de la seconde**.
+Imagine deux équipes où chaque joueur serre la main de chaque joueur de l'autre équipe : 2 joueurs × 2 joueurs = 4 poignées de main = 4 produits.
+:::
+
+:::coeur
+$$k(a + b) = ka + kb \qquad (a + b)(c + d) = ac + ad + bc + bd$$
+**Les 3 identités remarquables** (résultats déjà calculés, à connaître **dans les deux sens**) :
+$$(a + b)^2 = a^2 + 2ab + b^2 \qquad (a - b)^2 = a^2 - 2ab + b^2 \qquad (a + b)(a - b) = a^2 - b^2$$
+**Termes semblables :** on n'additionne que les termes avec la même lettre à la même puissance. $3x + 5x = 8x$, mais $3x + 5x^2$ **ne se simplifie pas** (pommes et poires).
+:::
+
+@fig carre_identite:32 | Pourquoi $(a+b)^2 = a^2 + 2ab + b^2$ : l'aire du grand carré est la somme des 4 morceaux.
+
+:::exemple Exemple guidé : $(2x - 3)(x + 4)$ avec le tableau des « poignées de main »
++ Je fais un tableau : les termes de la 1re parenthèse à gauche, ceux de la 2e en haut (avec leur signe !).
+
+| $\times$ | $x$ | $+4$ |
+| $2x$ | $2x^2$ | $8x$ |
+| $-3$ | $-3x$ | $-12$ |
+
++ J'additionne les 4 cases : $2x^2 + 8x - 3x - 12$.
++ Je regroupe les termes semblables : $8x - 3x = 5x$. Résultat : $2x^2 + 5x - 12$.
++ **Vérification avec $x = 1$** : $(2 - 3)(1 + 4) = -5$ ; $2 + 5 - 12 = -5$ ✔
+:::
+
+:::exemple Exemple guidé : $(3x - 2)^2$ avec une identité remarquable
++ Je reconnais $(a - b)^2$ avec $a = 3x$ et $b = 2$.
++ $a^2 = (3x)^2 = 9x^2$ (le 3 est aussi au carré !) ; $2ab = 2 \times 3x \times 2 = 12x$ ; $b^2 = 4$.
++ Résultat : $9x^2 - 12x + 4$.
+:::
+
+:::exemple Exemples corrigés : le signe « − » devant une parenthèse
+$-2(x - 4) = -2x + 8$ : le « − » devant la parenthèse change le signe de **tous** les termes.
+$-(4 - x) = -4 + x$.
+$(x + 7)(x - 7) = x^2 - 49$ (3e identité).
+$-(x + 3)^2 = -(x^2 + 6x + 9) = -x^2 - 6x - 9$ : je développe **d'abord** le carré (entre parenthèses), **puis** je distribue le « − ».
+$2(x + 1) - 3(x - 2) = 2x + 2 - 3x + 6 = -x + 8$ (attention : $-3 \times (-2) = +6$).
+:::
+
+:::piege
+$(a + b)^2 \neq a^2 + b^2$ ! Test : $(1 + 2)^2 = 9$ mais $1^2 + 2^2 = 5$. Il manque le « double produit » $2ab$ (les deux rectangles de la figure).
+:::
+
+## 1.5 Factoriser
+
+:::idee
+**Factoriser** est l'inverse de développer : on transforme une somme en **produit** (on met des parenthèses).
+C'est essentiel car : 1) un produit nul se résout immédiatement (chapitre 2) ; 2) on peut **simplifier** les fractions ; 3) on peut étudier le **signe** d'une expression (chapitres 2 et 5).
+:::
+
+| Ce que je vois | Outil | Exemples |
+| Un facteur commun à **tous** les termes | je le mets devant : $ka + kb = k(a + b)$ | $6x + 9 = 3(2x + 3)$ · $x^2 + 7x = x(x + 7)$ · $5x^3 - 10x^2 = 5x^2(x - 2)$ |
+| Carré − carré | $a^2 - b^2 = (a - b)(a + b)$ | $x^2 - 16 = (x - 4)(x + 4)$ · $4x^2 - 25 = (2x - 5)(2x + 5)$ |
+| 3 termes : $a^2$, $2ab$, $b^2$ | $a^2 \pm 2ab + b^2 = (a \pm b)^2$ | $x^2 + 10x + 25 = (x + 5)^2$ · $9x^2 - 6x + 1 = (3x - 1)^2$ |
+| $ax^2 + bx + c$ quelconque | $\Delta$, puis $a(x - x_1)(x - x_2)$ (chapitre 2) | $x^2 - 5x + 6 = (x - 2)(x - 3)$ |
+
+:::methode
++ Je cherche un **facteur commun** (un nombre, une lettre ou même une **parenthèse** présente dans tous les termes). S'il y en a un, je le sors.
++ Je regarde ce qui reste : est-ce un « carré moins carré » ? un « carré parfait » (3 termes) ?
++ Je **vérifie toujours** en redéveloppant : je dois retrouver l'expression de départ.
+:::
+
+:::exemple Exemple guidé : factoriser $2x^2 - 8$
++ Facteur commun ? $2x^2$ et $8$ sont tous deux divisibles par 2 → $2(x^2 - 4)$.
++ Ce qui reste : $x^2 - 4 = x^2 - 2^2$. C'est « carré moins carré » → $(x - 2)(x + 2)$.
++ Résultat : $2(x - 2)(x + 2)$.
++ Vérification : $(x - 2)(x + 2) = x^2 - 4$, puis $\times 2$ → $2x^2 - 8$ ✔
+:::
+
+:::exemple Exemple guidé : reconnaître un carré parfait, $x^2 - 6x + 9$
++ Premier terme $x^2 = (x)^2$ → $a = x$. Dernier terme $9 = 3^2$ → $b = 3$.
++ Je vérifie le terme du milieu : $2ab = 2 \times x \times 3 = 6x$ ✔ (avec le signe −).
++ Donc $x^2 - 6x + 9 = (x - 3)^2$.
+> Si le terme du milieu ne correspond pas (ex. $x^2 - 5x + 9$), ce n'est pas un carré parfait : il faut passer par $\Delta$ (chapitre 2).
+:::
+
+:::exemple Exemple guidé : un facteur commun qui est une parenthèse, $(x + 1)(2x - 3) + (x + 1)(x + 5)$
++ La parenthèse $(x + 1)$ est dans les deux termes : je la mets devant.
++ Il reste, dans une grande parenthèse, ce qui la multipliait : $(x + 1)\big[(2x - 3) + (x + 5)\big]$.
++ Je simplifie le crochet : $2x - 3 + x + 5 = 3x + 2$. Résultat : $(x + 1)(3x + 2)$.
+:::
+
+:::exemple Exemple guidé : carré moins carré avec des parenthèses, $(x + 3)^2 - 16$
++ $16 = 4^2$ : c'est $A^2 - B^2$ avec $A = x + 3$ et $B = 4$.
++ $A^2 - B^2 = (A - B)(A + B) = (x + 3 - 4)(x + 3 + 4)$.
++ Résultat : $(x - 1)(x + 7)$. Vérification avec $x = 0$ : $9 - 16 = -7$ et $(-1)(7) = -7$ ✔
+:::
+
+## 1.6 Simplifier une fraction avec des lettres
+
+:::coeur
+**La règle d'or :** on ne barre qu'un **facteur** qui multiplie **tout** le numérateur et **tout** le dénominateur. Jamais un terme qui s'additionne.
+$\dfrac{(x - 3)(x + 1)}{x - 3} = x + 1$ ✔ $\qquad \dfrac{x + 3}{3} \neq x$ ✘ (avec $x = 3$ : $\frac{6}{3} = 2$, pas 3).
+**L'astuce de l'opposé :** $b - a = -(a - b)$. Exemple : $4 - x = -(x - 4)$. Vérifie avec des nombres : $4 - 1 = 3$ et $-(1 - 4) = -(-3) = 3$ ✔
+:::
+
+:::methode
++ Je **factorise** le numérateur (outils du 1.5).
++ Je **factorise** le dénominateur.
++ Je cherche la **même parenthèse** en haut et en bas (même « à l'envers ») et je la barre.
++ J'écris la **condition** : le dénominateur de départ $\neq 0$.
++ Je vérifie avec un nombre simple ($x = 0$ ou $x = 1$).
+:::
+
+:::exemple Exemple guidé : $E = \dfrac{2x^2 - 8}{x^2 + 2x}$
++ Numérateur : $2(x - 2)(x + 2)$ (voir 1.5).
++ Dénominateur : $x$ est commun → $x(x + 2)$.
++ $(x + 2)$ est en haut et en bas → je le barre : $E = \dfrac{2(x - 2)}{x}$.
++ Condition : $x(x + 2) \neq 0$ → $x \neq 0$ et $x \neq -2$.
++ Vérification avec $x = 1$ : départ $\frac{2 - 8}{1 + 2} = \frac{-6}{3} = -2$ ; arrivée $\frac{2 \times (-1)}{1} = -2$ ✔
+:::
+
+:::exemple Exemple guidé : la question type de l'examen, $E = \dfrac{a^2 - b^2}{b - a}$
++ Numérateur : $a^2 - b^2 = (a - b)(a + b)$.
++ Dénominateur : $b - a = -(a - b)$.
++ $E = \dfrac{(a - b)(a + b)}{-(a - b)}$ → je barre $(a - b)$ → $E = -(a + b)$, pour $a \neq b$.
++ Vérification avec $a = 3$, $b = 1$ : $\frac{9 - 1}{1 - 3} = \frac{8}{-2} = -4$ ; $-(3 + 1) = -4$ ✔
+:::
+
+:::exemple Exemple guidé : réduire au même dénominateur, $\dfrac{1}{x} + \dfrac{1}{x + 1}$
++ Dénominateur commun : le produit $x(x + 1)$.
++ $\dfrac{1}{x} = \dfrac{x + 1}{x(x + 1)}$ (× $(x + 1)$ en haut et en bas) ; $\dfrac{1}{x + 1} = \dfrac{x}{x(x + 1)}$ (× $x$ en haut et en bas).
++ Somme des numérateurs : $(x + 1) + x = 2x + 1$. Résultat : $\dfrac{2x + 1}{x(x + 1)}$.
+:::
+
+## 1.7 Traduire une phrase en expression
+
+:::lire Petit dictionnaire français → maths
+le **double** de $x$ : $2x$ · le **triple** : $3x$ · la **moitié** : $\frac{x}{2}$ · le **carré** de $x$ : $x^2$ · l'**inverse** de $x$ : $\frac{1}{x}$ · l'**opposé** de $x$ : $-x$
+la **somme** de $a$ et $b$ : $a + b$ · la **différence** : $a - b$ · le **produit** : $ab$ · le **quotient** : $\frac{a}{b}$
+**augmenté de** 3 : $+ 3$ · **diminué de** 3 : $- 3$ · « le carré de la somme » $(a + b)^2$ ≠ « la somme des carrés » $a^2 + b^2$
+**augmenter de 20 %** : multiplier par $1{,}2$ · **baisser de 20 %** : multiplier par $0{,}8$.
+:::
+
+@page
+## 1.8 Exercices
+
+@serie 1A | Les fractions
+
+@exo 1
+Simplifie :
+a) $\frac{12}{18}$
+b) $\frac{45}{60}$
+c) $\frac{35}{49}$
+d) $\frac{24}{36}$
+e) $\frac{150}{200}$
+f) $\frac{84}{126}$
+@sol
+a) $\div 6$ : $\frac{2}{3}$. b) $\div 15$ : $\frac{3}{4}$. c) $\div 7$ : $\frac{5}{7}$. d) $\div 12$ : $\frac{2}{3}$. e) $\div 50$ : $\frac{3}{4}$.
+f) $84 = 2^2 \times 3 \times 7$ et $126 = 2 \times 3^2 \times 7$ : facteurs communs $2 \times 3 \times 7 = 42$. $\frac{84}{126} = \frac{2}{3}$.
+@check Rational(84,126)==Rational(2,3) and Rational(35,49)==Rational(5,7)
+@end
+
+@exo 1
+Calcule et simplifie :
+a) $\frac{3}{4} + \frac{1}{6}$
+b) $\frac{2}{3} - \frac{1}{4}$
+c) $\frac{5}{6} + \frac{7}{9}$
+d) $\frac{1}{2} - \frac{5}{8}$
+@sol
+a) $\frac{9}{12} + \frac{2}{12} = \frac{11}{12}$.
+b) Dénominateur 12 : $\frac{8}{12} - \frac{3}{12} = \frac{5}{12}$.
+c) Dénominateur 18 : $\frac{15}{18} + \frac{14}{18} = \frac{29}{18}$.
+d) Dénominateur 8 : $\frac{4}{8} - \frac{5}{8} = -\frac{1}{8}$.
+@check Rational(5,6)+Rational(7,9)==Rational(29,18) and Rational(1,2)-Rational(5,8)==Rational(-1,8)
+@end
+
+@exo 1
+Calcule et simplifie :
+a) $\frac{5}{6} \times \frac{3}{10}$
+b) $\frac{4}{9} \div \frac{2}{3}$
+c) $3 \times \frac{2}{5}$
+d) $-\frac{7}{4} \times \frac{8}{21}$
+@sol
+a) $\frac{15}{60} = \frac{1}{4}$.
+b) $\frac{4}{9} \times \frac{3}{2} = \frac{12}{18} = \frac{2}{3}$.
+c) $\frac{6}{5}$.
+d) Simplifie avant : $7$ avec $21$ ($\div 7$) et $8$ avec $4$ ($\div 4$) : $-\frac{1 \times 2}{1 \times 3} = -\frac{2}{3}$.
+@check Rational(-7,4)*Rational(8,21)==Rational(-2,3)
+@end
+
+@exo 1
+Écris sous forme d'une seule fraction :
+a) $2 + \frac{1}{3}$
+b) $1 - \frac{3}{8}$
+c) $5 - \frac{2}{3}$
+d) $-2 + \frac{3}{4}$
+@sol
+a) $\frac{6}{3} + \frac{1}{3} = \frac{7}{3}$. b) $\frac{8}{8} - \frac{3}{8} = \frac{5}{8}$. c) $\frac{15}{3} - \frac{2}{3} = \frac{13}{3}$. d) $-\frac{8}{4} + \frac{3}{4} = -\frac{5}{4}$.
+@end
+
+@exo 2
+Calcule (attention aux priorités) :
+a) $\left(\frac{1}{2} + \frac{1}{3}\right) \times \frac{6}{5}$
+b) $\frac{1}{2} + \frac{1}{3} \times \frac{6}{5}$
+c) $\dfrac{\frac{2}{3}}{\frac{4}{9}}$
+d) $\dfrac{1 - \frac{1}{4}}{1 + \frac{1}{2}}$
+@sol
+a) Parenthèse : $\frac{5}{6}$. Puis $\frac{5}{6} \times \frac{6}{5} = 1$.
+b) Multiplication d'abord : $\frac{1}{3} \times \frac{6}{5} = \frac{6}{15} = \frac{2}{5}$. Puis $\frac{1}{2} + \frac{2}{5} = \frac{5}{10} + \frac{4}{10} = \frac{9}{10}$.
+c) $\frac{2}{3} \times \frac{9}{4} = \frac{18}{12} = \frac{3}{2}$.
+d) Haut : $\frac{3}{4}$. Bas : $\frac{3}{2}$. $\frac{3}{4} \times \frac{2}{3} = \frac{6}{12} = \frac{1}{2}$.
+@check Rational(1,2)+Rational(1,3)*Rational(6,5)==Rational(9,10) and (1-Rational(1,4))/(1+Rational(1,2))==Rational(1,2)
+@end
+
+@exo 2
+Calcule :
+a) les $\frac{3}{5}$ de 40
+b) les $\frac{2}{3}$ de $\frac{3}{4}$
+c) la moitié de $\frac{7}{8}$
+d) le quart de 18
+@sol
+a) $\frac{3}{5} \times 40 = \frac{120}{5} = 24$. b) $\frac{2}{3} \times \frac{3}{4} = \frac{6}{12} = \frac{1}{2}$. c) $\frac{1}{2} \times \frac{7}{8} = \frac{7}{16}$. d) $\frac{18}{4} = \frac{9}{2} = 4{,}5$.
+@end
+
+@exo 3
+Calcule :
+a) $\dfrac{1}{1 + \frac{1}{2}}$
+b) $\dfrac{2 - \frac{1}{3}}{\frac{5}{6}}$
+c) $\frac{2}{3} - \frac{1}{6} \div \frac{1}{4}$
+@sol
+a) $1 + \frac{1}{2} = \frac{3}{2}$, donc $\frac{1}{3/2} = \frac{2}{3}$.
+b) Haut : $\frac{6}{3} - \frac{1}{3} = \frac{5}{3}$. Puis $\frac{5}{3} \div \frac{5}{6} = \frac{5}{3} \times \frac{6}{5} = 2$.
+c) Division d'abord : $\frac{1}{6} \times 4 = \frac{4}{6} = \frac{2}{3}$. Puis $\frac{2}{3} - \frac{2}{3} = 0$.
+@check 1/(1+Rational(1,2))==Rational(2,3) and (2-Rational(1,3))/Rational(5,6)==2
+@end
+
+@exo 3
+a) Compare $\frac{5}{7}$ et $\frac{7}{10}$.
+b) Range dans l'ordre croissant : $\frac{2}{3}$, $\frac{3}{5}$, $\frac{5}{8}$.
+@sol
+a) Même dénominateur 70 : $\frac{50}{70}$ et $\frac{49}{70}$. Donc $\frac{5}{7} > \frac{7}{10}$.
+b) Dénominateur 120 : $\frac{80}{120}$, $\frac{72}{120}$, $\frac{75}{120}$. Donc $\frac{3}{5} < \frac{5}{8} < \frac{2}{3}$. (Ou en décimal : $0{,}6 < 0{,}625 < 0{,}667$.)
+@end
+
+@exo 4
+Calcule $\frac{3}{4} - \frac{1}{4} \times \left(2 - \frac{2}{3}\right)$.
+@sol
+Parenthèse : $2 - \frac{2}{3} = \frac{4}{3}$. Multiplication : $\frac{1}{4} \times \frac{4}{3} = \frac{1}{3}$. Soustraction : $\frac{3}{4} - \frac{1}{3} = \frac{9}{12} - \frac{4}{12} = \frac{5}{12}$.
+@check Rational(3,4)-Rational(1,4)*(2-Rational(2,3))==Rational(5,12)
+@end
+
+@exo 4 | Problème
+Un réservoir contient 60 L quand il est plein. Il est rempli aux $\frac{3}{4}$. On utilise les $\frac{2}{5}$ de ce qu'il contient.
+Combien de litres reste-t-il ? Quelle fraction du réservoir est encore remplie ?
+@sol
+Il contient $\frac{3}{4} \times 60 = 45$ L. On utilise $\frac{2}{5} \times 45 = 18$ L. Il reste $45 - 18 = 27$ L.
+Fraction du réservoir : $\frac{27}{60} = \frac{9}{20}$. (Autre méthode : il reste $\frac{3}{5}$ des $\frac{3}{4}$, soit $\frac{3}{5} \times \frac{3}{4} = \frac{9}{20}$ ✔.)
+@end
+
+@serie 1B | Les puissances
+
+@exo 1
+Simplifie :
+a) $x^5 \times x^3$
+b) $(x^2)^4$
+c) $\frac{x^7}{x^3}$
+d) $x \times x^4$
+@sol
+a) $x^8$. b) $x^8$. c) $x^4$. d) $x = x^1$, donc $x^{1+4} = x^5$.
+@end
+
+@exo 1
+Calcule :
+a) $2^{-3}$
+b) $\left(\frac{1}{2}\right)^{-1}$
+c) $5^0$
+d) $10^{-2}$
+e) $(2x)^3$
+f) $(-2)^0$
+@sol
+a) $\frac{1}{8}$. b) L'inverse de $\frac{1}{2}$ : $2$. c) $1$. d) $0{,}01$. e) $8x^3$. f) $1$ (tout nombre non nul puissance 0 vaut 1).
+@end
+
+@exo 2
+Écris sous la forme $2^n$ :
+a) $8 \times 2^5$
+b) $4^3$
+c) $\frac{2^7}{16}$
+d) $\frac{1}{32}$
+@sol
+a) $2^3 \times 2^5 = 2^8$. b) $(2^2)^3 = 2^6$. c) $\frac{2^7}{2^4} = 2^3$. d) $\frac{1}{2^5} = 2^{-5}$.
+@end
+
+@exo 2
+Simplifie :
+a) $\dfrac{x^3 \times x^{-5}}{x^2}$
+b) $(3x^2)^2 \times x$
+c) $\dfrac{(2x)^3}{4x}$
+d) $\left(\dfrac{x^2}{y}\right)^3$
+@sol
+a) $x^{3 - 5 - 2} = x^{-4} = \frac{1}{x^4}$.
+b) $9x^4 \times x = 9x^5$.
+c) $\frac{8x^3}{4x} = 2x^2$.
+d) $\frac{x^6}{y^3}$.
+@check same((x**3*x**-5)/x**2, x**-4) and same((2*x)**3/(4*x), 2*x**2)
+@end
+
+@exo 3
+Calcule (valeur exacte) :
+a) $\dfrac{2^5 \times 3^2}{2^3 \times 3^3}$
+b) $\dfrac{10^3 \times 10^{-5}}{10^{-4}}$
+c) $(-1)^{101}$
+d) $3^{-2} + 3^{-1}$
+@sol
+a) $2^{5-3} \times 3^{2-3} = 2^2 \times 3^{-1} = \frac{4}{3}$.
+b) $10^{3 - 5 - (-4)} = 10^2 = 100$.
+c) $-1$ (exposant impair).
+d) $\frac{1}{9} + \frac{1}{3} = \frac{1}{9} + \frac{3}{9} = \frac{4}{9}$.
+@check Rational(2**5*3**2, 2**3*3**3)==Rational(4,3) and Rational(1,9)+Rational(1,3)==Rational(4,9)
+@end
+
+@exo 3
+Notation scientifique :
+a) Écris $0{,}00052$ et $3\,200\,000$ en notation scientifique.
+b) Calcule $(2 \times 10^3) \times (4 \times 10^{-5})$.
+c) Calcule $\dfrac{6 \times 10^{4}}{3 \times 10^{-2}}$.
+@sol
+a) $5{,}2 \times 10^{-4}$ et $3{,}2 \times 10^{6}$.
+b) $8 \times 10^{3 - 5} = 8 \times 10^{-2}$.
+c) $2 \times 10^{4 - (-2)} = 2 \times 10^{6}$.
+@end
+
+@exo 4
+Vrai ou faux ?
+a) $2^3 + 2^3 = 2^4$
+b) $2^3 \times 2^3 = 2^9$
+c) $(ab)^2 = a^2 b^2$
+d) $3^2 + 4^2 = 7^2$
+@sol
+a) **Vrai** : $8 + 8 = 16 = 2^4$ (c'est $2 \times 2^3 = 2^4$).
+b) **Faux** : $2^{3+3} = 2^6$.
+c) **Vrai**.
+d) **Faux** : $9 + 16 = 25 \neq 49$.
+@end
+
+@exo 4
+Simplifie :
+a) $\dfrac{4^{n+1}}{2^{2n}}$
+b) $\dfrac{9^2 \times 27}{3^6}$
+@sol
+a) $4^{n+1} = (2^2)^{n+1} = 2^{2n+2}$. Donc $\frac{2^{2n+2}}{2^{2n}} = 2^2 = 4$.
+b) $9^2 = 3^4$ et $27 = 3^3$ : $\frac{3^4 \times 3^3}{3^6} = 3^{7-6} = 3$.
+@check Rational(9**2*27, 3**6)==3
+@end
+
+@serie 1C | Les racines carrées
+
+@exo 1
+Calcule :
+a) $\sqrt{36}$
+b) $\sqrt{0{,}25}$
+c) $\sqrt{\frac{9}{16}}$
+d) $\sqrt{4 \times 25}$
+e) $\left(\sqrt{7}\right)^2$
+f) $\sqrt{(-3)^2}$
+@sol
+a) $6$. b) $0{,}5$ (car $0{,}5^2 = 0{,}25$). c) $\frac{3}{4}$. d) $2 \times 5 = 10$. e) $7$. f) $\sqrt{9} = 3$ (et non $-3$ : une racine est toujours positive).
+@end
+
+@exo 2
+Simplifie :
+a) $\sqrt{50}$
+b) $\sqrt{12}$
+c) $\sqrt{18}$
+d) $\sqrt{75}$
+e) $\sqrt{200}$
+f) $\sqrt{48}$
+@sol
+a) $\sqrt{25 \times 2} = 5\sqrt{2}$. b) $2\sqrt{3}$. c) $3\sqrt{2}$. d) $\sqrt{25 \times 3} = 5\sqrt{3}$. e) $\sqrt{100 \times 2} = 10\sqrt{2}$. f) $\sqrt{16 \times 3} = 4\sqrt{3}$.
+@check same(sqrt(75), 5*sqrt(3)) and same(sqrt(200), 10*sqrt(2)) and same(sqrt(48), 4*sqrt(3))
+@end
+
+@exo 2
+Calcule :
+a) $\sqrt{18} + \sqrt{8}$
+b) $\sqrt{27} - \sqrt{12}$
+c) $2\sqrt{5} + \sqrt{45}$
+d) $\sqrt{2} \times \sqrt{8}$
+@sol
+a) $3\sqrt{2} + 2\sqrt{2} = 5\sqrt{2}$.
+b) $3\sqrt{3} - 2\sqrt{3} = \sqrt{3}$.
+c) $2\sqrt{5} + 3\sqrt{5} = 5\sqrt{5}$.
+d) $\sqrt{16} = 4$.
+@check same(sqrt(27)-sqrt(12), sqrt(3)) and same(2*sqrt(5)+sqrt(45), 5*sqrt(5))
+@end
+
+@exo 2
+Écris sans racine au dénominateur :
+a) $\frac{3}{\sqrt{3}}$
+b) $\frac{1}{\sqrt{2}}$
+c) $\frac{10}{\sqrt{5}}$
+d) $\frac{2}{3\sqrt{2}}$
+@sol
+a) $\frac{3\sqrt{3}}{3} = \sqrt{3}$.
+b) $\frac{\sqrt{2}}{2}$.
+c) $\frac{10\sqrt{5}}{5} = 2\sqrt{5}$.
+d) $\frac{2\sqrt{2}}{3 \times 2} = \frac{\sqrt{2}}{3}$.
+@check same(10/sqrt(5), 2*sqrt(5)) and same(2/(3*sqrt(2)), sqrt(2)/3)
+@end
+
+@exo 3
+Développe et simplifie :
+a) $(1 + \sqrt{2})^2$
+b) $(\sqrt{3} - 1)(\sqrt{3} + 1)$
+c) $(2 - \sqrt{5})^2$
+d) $\sqrt{2}(\sqrt{2} + \sqrt{6})$
+@sol
+a) $1 + 2\sqrt{2} + 2 = 3 + 2\sqrt{2}$.
+b) 3e identité : $3 - 1 = 2$.
+c) $4 - 4\sqrt{5} + 5 = 9 - 4\sqrt{5}$.
+d) $2 + \sqrt{12} = 2 + 2\sqrt{3}$.
+@check same((1+sqrt(2))**2, 3+2*sqrt(2)) and same((2-sqrt(5))**2, 9-4*sqrt(5)) and same(sqrt(2)*(sqrt(2)+sqrt(6)), 2+2*sqrt(3))
+@end
+
+@exo 3
+Vrai ou faux ?
+a) $\sqrt{9 + 16} = \sqrt{9} + \sqrt{16}$
+b) $\sqrt{x^2} = x$ pour tout réel $x$
+c) $\sqrt{4 \times 9} = \sqrt{4} \times \sqrt{9}$
+@sol
+a) **Faux** : $5 \neq 7$.
+b) **Faux** : pour $x = -3$, $\sqrt{9} = 3 \neq -3$. En réalité $\sqrt{x^2} = |x|$.
+c) **Vrai** : $6 = 2 \times 3$.
+@end
+
+@exo 4 | La quantité conjuguée
+Écris $\dfrac{1}{\sqrt{3} - 1}$ sans racine au dénominateur.
+@sol
+On multiplie en haut et en bas par la **quantité conjuguée** $\sqrt{3} + 1$ (même chose avec le signe opposé) :
+$\dfrac{\sqrt{3} + 1}{(\sqrt{3} - 1)(\sqrt{3} + 1)} = \dfrac{\sqrt{3} + 1}{3 - 1} = \dfrac{\sqrt{3} + 1}{2}$.
+> On utilise la 3e identité $(a - b)(a + b) = a^2 - b^2$ pour faire disparaître la racine.
+@check same(1/(sqrt(3)-1), (sqrt(3)+1)/2)
+@end
+
+@serie 1D | Développer
+
+@exo 1
+Développe :
+a) $3(2x - 5)$
+b) $-2(x - 4)$
+c) $x(x + 3)$
+d) $-(4 - x)$
+@sol
+a) $6x - 15$. b) $-2x + 8$. c) $x^2 + 3x$. d) $-4 + x$, qu'on écrit $x - 4$.
+@end
+
+@exo 1
+Développe et réduis :
+a) $(x + 2)(x + 5)$
+b) $(x - 3)(x + 4)$
+@sol
+a) $x^2 + 5x + 2x + 10 = x^2 + 7x + 10$.
+b) $x^2 + 4x - 3x - 12 = x^2 + x - 12$.
+@check same((x+2)*(x+5), x**2+7*x+10) and same((x-3)*(x+4), x**2+x-12)
+@end
+
+@exo 2
+Développe et réduis :
+a) $(2x - 3)(x + 4)$
+b) $(3x + 1)(2x - 5)$
+@sol
+a) $2x^2 + 8x - 3x - 12 = 2x^2 + 5x - 12$.
+b) $6x^2 - 15x + 2x - 5 = 6x^2 - 13x - 5$.
+@check same((3*x+1)*(2*x-5), 6*x**2-13*x-5)
+@end
+
+@exo 2
+Développe avec les identités remarquables :
+a) $(x + 3)^2$
+b) $(x - 5)^2$
+c) $(3x - 2)^2$
+d) $(x + 7)(x - 7)$
+@sol
+a) $x^2 + 6x + 9$. b) $x^2 - 10x + 25$. c) $9x^2 - 12x + 4$. d) $x^2 - 49$.
+@end
+
+@exo 2
+Développe :
+a) $(2x + 1)^2$
+b) $(1 - 4x)^2$
+c) $(5 + 2x)(5 - 2x)$
+d) $\left(\frac{x}{2} + 1\right)^2$
+@sol
+a) $4x^2 + 4x + 1$.
+b) $1 - 8x + 16x^2$, qu'on écrit $16x^2 - 8x + 1$.
+c) $25 - 4x^2$.
+d) $\frac{x^2}{4} + 2 \times \frac{x}{2} \times 1 + 1 = \frac{x^2}{4} + x + 1$.
+@check same((1-4*x)**2, 16*x**2-8*x+1) and same((x/2+1)**2, x**2/4+x+1)
+@end
+
+@exo 3
+Développe et réduis :
+a) $2(x + 1) - 3(x - 2)$
+b) $(x + 1)^2 - (x - 1)^2$
+c) $(x - 2)(x + 2) - (x - 2)^2$
+@sol
+a) $2x + 2 - 3x + 6 = -x + 8$.
+b) $(x^2 + 2x + 1) - (x^2 - 2x + 1) = x^2 + 2x + 1 - x^2 + 2x - 1 = 4x$.
+c) $(x^2 - 4) - (x^2 - 4x + 4) = x^2 - 4 - x^2 + 4x - 4 = 4x - 8$.
+> Quand on soustrait un carré, on le développe **entre parenthèses** avant d'enlever la parenthèse (le « − » change tous les signes).
+@check same((x+1)**2-(x-1)**2, 4*x) and same((x-2)*(x+2)-(x-2)**2, 4*x-8)
+@end
+
+@exo 3
+Développe :
+a) $-(x + 3)^2$
+b) $-2(x - 1)(x + 3)$
+@sol
+a) $-(x^2 + 6x + 9) = -x^2 - 6x - 9$.
+b) D'abord $(x - 1)(x + 3) = x^2 + 2x - 3$, puis $-2(x^2 + 2x - 3) = -2x^2 - 4x + 6$.
+@check same(-2*(x-1)*(x+3), -2*x**2-4*x+6)
+@end
+
+@exo 3
+Développe :
+a) $(x + 1)(x^2 - x + 1)$
+b) $(x - 2)^3$
+@sol
+a) $x^3 - x^2 + x + x^2 - x + 1 = x^3 + 1$.
+b) $(x - 2)^3 = (x - 2)^2(x - 2) = (x^2 - 4x + 4)(x - 2) = x^3 - 2x^2 - 4x^2 + 8x + 4x - 8 = x^3 - 6x^2 + 12x - 8$.
+@check same((x+1)*(x**2-x+1), x**3+1) and same((x-2)**3, x**3-6*x**2+12*x-8)
+@end
+
+@exo 4 | Calcul mental avec les identités
+Calcule sans calculatrice :
+a) $101^2$
+b) $99 \times 101$
+c) $49^2$
+@sol
+a) $(100 + 1)^2 = 10\,000 + 200 + 1 = 10\,201$.
+b) $(100 - 1)(100 + 1) = 10\,000 - 1 = 9\,999$.
+c) $(50 - 1)^2 = 2\,500 - 100 + 1 = 2\,401$.
+@end
+
+@exo 4
+a) Montre que $(a + b)^2 - (a - b)^2 = 4ab$.
+b) En déduire la valeur de $51^2 - 49^2$ sans calculer les carrés.
+@sol
+a) $(a^2 + 2ab + b^2) - (a^2 - 2ab + b^2) = a^2 + 2ab + b^2 - a^2 + 2ab - b^2 = 4ab$.
+b) Avec $a = 50$ et $b = 1$ : $51^2 - 49^2 = 4 \times 50 \times 1 = 200$.
+@check same((a+b)**2-(a-b)**2, 4*a*b) and 51**2-49**2==200
+@end
+
+@serie 1E | Factoriser
+
+@exo 1
+Factorise (facteur commun) :
+a) $6x + 9$
+b) $x^2 + 7x$
+c) $10x - 15$
+d) $4x^2 - 8x$
+@sol
+a) $3(2x + 3)$. b) $x(x + 7)$. c) $5(2x - 3)$. d) $4x(x - 2)$ (on sort **tout** ce qui est commun : 4 **et** $x$).
+@end
+
+@exo 1
+Factorise (carré moins carré) :
+a) $x^2 - 16$
+b) $4x^2 - 25$
+c) $9 - x^2$
+d) $x^2 - 1$
+@sol
+a) $(x - 4)(x + 4)$. b) $(2x - 5)(2x + 5)$. c) $(3 - x)(3 + x)$. d) $(x - 1)(x + 1)$.
+@check same((3-x)*(3+x), 9-x**2)
+@end
+
+@exo 2
+Factorise (carrés parfaits) :
+a) $x^2 + 10x + 25$
+b) $9x^2 - 6x + 1$
+c) $x^2 - 8x + 16$
+d) $4x^2 + 12x + 9$
+@sol
+a) $x^2 = (x)^2$, $25 = 5^2$, $10x = 2 \times x \times 5$ ✔ → $(x + 5)^2$.
+b) $9x^2 = (3x)^2$, $1 = 1^2$, $6x = 2 \times 3x \times 1$ ✔, avec le « − » → $(3x - 1)^2$.
+c) $(x - 4)^2$.
+d) $(2x + 3)^2$ ($2 \times 2x \times 3 = 12x$ ✔).
+@check same((2*x+3)**2, 4*x**2+12*x+9)
+@end
+
+@exo 2
+Factorise complètement :
+a) $5x^3 - 10x^2$
+b) $3x^2 - 12$
+c) $2x^2 + 4x + 2$
+d) $x^3 - x$
+@sol
+a) Facteur commun $5x^2$ → $5x^2(x - 2)$. Vérif. : $5x^2 \times x = 5x^3$ ✔ ; $5x^2 \times (-2) = -10x^2$ ✔.
+b) $3(x^2 - 4) = 3(x - 2)(x + 2)$.
+c) $2(x^2 + 2x + 1) = 2(x + 1)^2$.
+d) $x(x^2 - 1) = x(x - 1)(x + 1)$.
+@check same(2*(x+1)**2, 2*x**2+4*x+2) and same(x*(x-1)*(x+1), x**3-x)
+@end
+
+@exo 3
+Factorise (le facteur commun est une parenthèse) :
+a) $(x + 1)(2x - 3) + (x + 1)(x + 5)$
+b) $(x - 2)(x + 4) - 3(x - 2)$
+c) $(2x + 1)^2 - (2x + 1)(x - 3)$
+@sol
+a) $(x + 1)\big[(2x - 3) + (x + 5)\big] = (x + 1)(3x + 2)$.
+b) $(x - 2)\big[(x + 4) - 3\big] = (x - 2)(x + 1)$.
+c) $(2x + 1)\big[(2x + 1) - (x - 3)\big] = (2x + 1)(2x + 1 - x + 3) = (2x + 1)(x + 4)$.
+@check same((x+1)*(2*x-3)+(x+1)*(x+5), (x+1)*(3*x+2)) and same((x-2)*(x+4)-3*(x-2), (x-2)*(x+1)) and same((2*x+1)**2-(2*x+1)*(x-3), (2*x+1)*(x+4))
+@end
+
+@exo 3
+Factorise (carré moins carré avec des parenthèses) :
+a) $(x + 3)^2 - 16$
+b) $(2x - 1)^2 - (x + 2)^2$
+c) $25 - (x - 1)^2$
+@sol
+a) $(x + 3 - 4)(x + 3 + 4) = (x - 1)(x + 7)$.
+b) $A = 2x - 1$, $B = x + 2$ : $(A - B)(A + B) = (2x - 1 - x - 2)(2x - 1 + x + 2) = (x - 3)(3x + 1)$.
+c) $(5 - (x - 1))(5 + (x - 1)) = (6 - x)(4 + x)$.
+@check same((2*x-1)**2-(x+2)**2, (x-3)*(3*x+1)) and same(25-(x-1)**2, (6-x)*(4+x))
+@end
+
+@exo 3
+Factorise $x(x - 5) + 2(5 - x)$.
+@sol
+Astuce de l'opposé : $5 - x = -(x - 5)$. Donc $x(x - 5) - 2(x - 5) = (x - 5)(x - 2)$.
+@check same(x*(x-5)+2*(5-x), (x-5)*(x-2))
+@end
+
+@exo 4
+Factorise $4x^2 - 9 + (2x + 3)(x - 1)$.
+@sol
+$4x^2 - 9 = (2x - 3)(2x + 3)$. L'expression devient $(2x + 3)(2x - 3) + (2x + 3)(x - 1)$.
+Facteur commun $(2x + 3)$ : $(2x + 3)\big[(2x - 3) + (x - 1)\big] = (2x + 3)(3x - 4)$.
+@check same(4*x**2-9+(2*x+3)*(x-1), (2*x+3)*(3*x-4))
+@end
+
+@exo 4
+Factorise complètement $x^4 - 1$.
+@sol
+$x^4 - 1 = (x^2)^2 - 1^2 = (x^2 - 1)(x^2 + 1) = (x - 1)(x + 1)(x^2 + 1)$.
+($x^2 + 1$ ne se factorise pas : c'est une **somme** de carrés.)
+@check same((x-1)*(x+1)*(x**2+1), x**4-1)
+@end
+
+@serie 1F | Fractions avec des lettres
+
+@exo 2
+Simplifie $\dfrac{3x + 12}{x^2 - 16}$ (précise la condition).
+@sol
+Haut : $3(x + 4)$. Bas : $(x - 4)(x + 4)$. Je barre $(x + 4)$ : $\dfrac{3}{x - 4}$, pour $x \neq 4$ et $x \neq -4$.
+Vérif. $x = 0$ : $\frac{12}{-16} = -\frac{3}{4}$ ; $\frac{3}{-4} = -\frac{3}{4}$ ✔
+@check same((3*x+12)/(x**2-16), 3/(x-4))
+@end
+
+@exo 2
+Simplifie $\dfrac{x^2 - 25}{5 - x}$.
+@sol
+Haut : $(x - 5)(x + 5)$. Bas : $5 - x = -(x - 5)$. Résultat : $-(x + 5)$, pour $x \neq 5$.
+Vérif. $x = 0$ : $\frac{-25}{5} = -5$ ; $-(0 + 5) = -5$ ✔
+@check same((x**2-25)/(5-x), -(x+5))
+@end
+
+@exo 3
+Simplifie $\dfrac{x^2 + 4x + 4}{x^2 - 4}$.
+@sol
+Haut : $(x + 2)^2$. Bas : $(x - 2)(x + 2)$. Je barre **un** $(x + 2)$ : $\dfrac{x + 2}{x - 2}$, pour $x \neq 2$ et $x \neq -2$.
+Vérif. $x = 0$ : $\frac{4}{-4} = -1$ ; $\frac{2}{-2} = -1$ ✔
+@check same((x**2+4*x+4)/(x**2-4), (x+2)/(x-2))
+@end
+
+@exo 3
+Simplifie $\dfrac{2x^2 - 8}{x^2 + 2x}$.
+@sol
+$\dfrac{2(x - 2)(x + 2)}{x(x + 2)} = \dfrac{2(x - 2)}{x}$, pour $x \neq 0$ et $x \neq -2$ (voir l'exemple guidé du 1.6).
+@check same((2*x**2-8)/(x**2+2*x), 2*(x-2)/x)
+@end
+
+@exo 3
+Écris sous forme d'une seule fraction : $\dfrac{1}{x} + \dfrac{1}{x + 1}$.
+@sol
+$\dfrac{x + 1}{x(x + 1)} + \dfrac{x}{x(x + 1)} = \dfrac{2x + 1}{x(x + 1)}$.
+@check same(1/x+1/(x+1), (2*x+1)/(x*(x+1)))
+@end
+
+@exo 4
+Écris sous forme d'une seule fraction : $\dfrac{2}{x - 1} - \dfrac{1}{x + 1}$.
+@sol
+Dénominateur commun $(x - 1)(x + 1)$.
+$\dfrac{2(x + 1)}{(x - 1)(x + 1)} - \dfrac{x - 1}{(x - 1)(x + 1)} = \dfrac{2x + 2 - x + 1}{(x - 1)(x + 1)} = \dfrac{x + 3}{x^2 - 1}$.
+**Piège :** le « − » devant $(x - 1)$ change les deux signes : $-x + 1$.
+@check same(2/(x-1)-1/(x+1), (x+3)/(x**2-1))
+@end
+
+@exo 4
+Simplifie $\dfrac{a^2 - b^2}{b - a}$.
+@sol
+$\dfrac{(a - b)(a + b)}{-(a - b)} = -(a + b)$, pour $a \neq b$ (voir l'exemple guidé du 1.6).
+@check same((a**2-b**2)/(b-a), -(a+b))
+@end
+
+@exo 4
+Écris sous forme d'une seule fraction : $x + 1 - \dfrac{1}{x - 1}$.
+@sol
+$x + 1 = \dfrac{(x + 1)(x - 1)}{x - 1}$. Donc $\dfrac{(x + 1)(x - 1) - 1}{x - 1} = \dfrac{x^2 - 1 - 1}{x - 1} = \dfrac{x^2 - 2}{x - 1}$.
+@check same(x+1-1/(x-1), (x**2-2)/(x-1))
+@end
+
+@exo 4
+Simplifie $\dfrac{x}{x - 2} - \dfrac{4}{x^2 - 2x}$.
+@sol
+$x^2 - 2x = x(x - 2)$ : c'est le dénominateur commun.
+$\dfrac{x \times x}{x(x - 2)} - \dfrac{4}{x(x - 2)} = \dfrac{x^2 - 4}{x(x - 2)} = \dfrac{(x - 2)(x + 2)}{x(x - 2)} = \dfrac{x + 2}{x}$, pour $x \neq 0$ et $x \neq 2$.
+@check same(x/(x-2)-4/(x**2-2*x), (x+2)/x)
+@end
+
+@serie 1G | Traduire et modéliser
+
+@exo 2
+Écris l'expression correspondante :
+a) le double de $x$ augmenté de 3
+b) le carré de la somme de $x$ et 1
+c) la somme du carré de $x$ et de 1
+d) la moitié de $x$ diminuée de 5
+e) l'inverse de $x$
+f) le triple du carré de $x$
+@sol
+a) $2x + 3$. b) $(x + 1)^2$. c) $x^2 + 1$. d) $\frac{x}{2} - 5$. e) $\frac{1}{x}$. f) $3x^2$.
+@end
+
+@exo 3
+Un rectangle a une largeur $x$ (en m) et une longueur qui dépasse la largeur de 3 m.
+Exprime son périmètre $P$ et son aire $A$ en fonction de $x$, puis calcule-les pour $x = 4$.
+@sol
+Longueur : $x + 3$. $P = 2(x + x + 3) = 2(2x + 3) = 4x + 6$ ; $A = x(x + 3) = x^2 + 3x$.
+Pour $x = 4$ : $P = 22$ m et $A = 16 + 12 = 28$ m².
+@end
+
+@exo 4
+Un article coûte $p$ francs. Son prix augmente de 20 %, puis le nouveau prix baisse de 20 %. Le prix final est-il égal à $p$ ?
+@sol
+Augmenter de 20 % : $\times 1{,}2$. Baisser de 20 % : $\times 0{,}8$. Prix final : $p \times 1{,}2 \times 0{,}8 = 0{,}96\,p$.
+Non : le prix a baissé de 4 %. (Les 20 % de la baisse portent sur un prix plus grand.)
+@end
+
+@drill frac_simpl 12 11 4 | Simplifier des fractions
+@drill frac_add 18 12 3 | Additionner des fractions
+@drill frac_mul 18 13 3 | Multiplier et diviser des fractions
+@drill frac_mixte 12 14 3 | Fractions et priorités
+@drill puiss_num 15 15 3 | Puissances : valeurs exactes
+@drill puiss_lit 15 16 3 | Puissances avec des lettres
+@drill racines 15 17 3 | Racines carrées
+@drill rac_denom 9 18 3 | Racine au dénominateur
+@drill dev_simple 12 19 3 | Développer (simple distributivité)
+@drill dev_double 15 20 3 | Développer (double distributivité)
+@drill dev_id 15 21 3 | Identités remarquables
+@drill dev_mix 9 22 2 | Développer et réduire
+@drill fact_commun 12 23 3 | Factoriser : facteur commun
+@drill fact_id 15 24 3 | Factoriser : identités remarquables
+@drill frac_rat 12 25 2 | Simplifier des fractions rationnelles
+
+## 1.9 QCM style examen
+
+@qcm
+$(x - 3)^2$ est égal à :
+A) $x^2 - 9$
+B) $x^2 + 9$
+C) $x^2 - 6x + 9$
+D) $x^2 - 3x + 9$
+@rep C | 2e identité : $x^2 - 2 \cdot x \cdot 3 + 9$. A est l'erreur « $(a - b)^2 = a^2 - b^2$ ». D oublie le 2 de « $2ab$ ».
+@end
+
+@qcm
+$\sqrt{9 + 16} =$
+A) $7$
+B) $5$
+C) $25$
+D) $\sqrt{9} + \sqrt{16}$
+@rep B | D'abord la somme sous la racine : $\sqrt{25} = 5$. A (7) est l'erreur « $\sqrt{a + b} = \sqrt{a} + \sqrt{b}$ ».
+@end
+
+@qcm
+$2^3 \times 2^{-5} =$
+A) $2^{-15}$
+B) $\frac{1}{4}$
+C) $-4$
+D) $4$
+@rep B | $2^{3 + (-5)} = 2^{-2} = \frac{1}{4}$. A multiplie les exposants au lieu de les additionner.
+@end
+
+@qcm
+Pour $x \neq 2$, $\dfrac{2x^2 - 8}{x - 2} =$
+A) $2x + 4$
+B) $2x - 4$
+C) $x + 2$
+D) $2x^2 - 4$
+@rep A | $2x^2 - 8 = 2(x - 2)(x + 2)$ → on barre $(x - 2)$ → $2(x + 2) = 2x + 4$. C oublie le facteur 2.
+@end
+
+@qcm
+$-2^2 + (-2)^2 =$
+A) $0$
+B) $8$
+C) $-8$
+D) $4$
+@rep A | $-2^2 = -4$ (la puissance ne porte que sur 2) et $(-2)^2 = 4$. Somme : 0.
+@end
+
+@qcm
+$\frac{1}{2} + \frac{1}{3} =$
+A) $\frac{2}{5}$
+B) $\frac{1}{5}$
+C) $\frac{5}{6}$
+D) $\frac{1}{6}$
+@rep C | $\frac{3}{6} + \frac{2}{6} = \frac{5}{6}$. A additionne haut avec haut et bas avec bas : interdit !
+@end
+
+@qcm
+$\frac{2}{3} \div \frac{4}{9} =$
+A) $\frac{8}{27}$
+B) $\frac{3}{2}$
+C) $\frac{2}{3}$
+D) $\frac{6}{27}$
+@rep B | $\frac{2}{3} \times \frac{9}{4} = \frac{18}{12} = \frac{3}{2}$. A multiplie au lieu de diviser.
+@end
+
+@qcm
+$\sqrt{12} + \sqrt{27} =$
+A) $\sqrt{39}$
+B) $5\sqrt{3}$
+C) $6\sqrt{3}$
+D) $13\sqrt{3}$
+@rep B | $2\sqrt{3} + 3\sqrt{3} = 5\sqrt{3}$. A additionne sous la racine (interdit).
+@end
+
+@qcm
+Une factorisation de $x^2 - 9$ est :
+A) $(x - 3)^2$
+B) $(x - 9)(x + 1)$
+C) $(x - 3)(x + 3)$
+D) $x(x - 9)$
+@rep C | Carré moins carré : $x^2 - 3^2 = (x - 3)(x + 3)$. A redonne $x^2 - 6x + 9$.
+@end
+
+@qcm
+Pour tout réel $x$, $\dfrac{x + 3}{3}$ est égal à :
+A) $x$
+B) $x + 1$
+C) $\frac{x}{3} + 1$
+D) $\frac{x}{3} + 3$
+@rep C | On divise **chaque** terme du haut par 3 : $\frac{x}{3} + \frac{3}{3} = \frac{x}{3} + 1$. A « barre » les 3 : c'est interdit, car 3 n'est pas un facteur du numérateur.
+@end
+
+@qcm
+$(3x^2)^3 =$
+A) $3x^6$
+B) $9x^5$
+C) $27x^6$
+D) $27x^5$
+@rep C | $3^3 \times (x^2)^3 = 27x^6$. A oublie de mettre le 3 au cube ; D additionne les exposants au lieu de les multiplier.
+@end
+
+@serie 1H | Bilan du chapitre 1 (30 minutes, sans aide)
+
+:::note
+**7 ou 8 justes : passe au chapitre 2. 5 ou 6 : refais les séries des exercices ratés. Moins de 5 : reprends les sections 1.4 à 1.6, puis refais le bilan dans 3 jours.**
+:::
+
+@exo 2
+Calcule $\frac{5}{6} - \frac{3}{4} \times \frac{2}{9}$.
+@sol
+Multiplication d'abord : $\frac{3}{4} \times \frac{2}{9} = \frac{6}{36} = \frac{1}{6}$. Puis $\frac{5}{6} - \frac{1}{6} = \frac{4}{6} = \frac{2}{3}$.
+@check Rational(5,6)-Rational(3,4)*Rational(2,9)==Rational(2,3)
+@end
+
+@exo 2
+Simplifie $\dfrac{(x^3)^2 \times x^{-4}}{x}$.
+@sol
+$x^{6} \times x^{-4} = x^2$, puis $\frac{x^2}{x} = x$.
+@check same((x**3)**2*x**-4/x, x)
+@end
+
+@exo 2
+Simplifie $\sqrt{98} - \sqrt{32}$.
+@sol
+$\sqrt{49 \times 2} - \sqrt{16 \times 2} = 7\sqrt{2} - 4\sqrt{2} = 3\sqrt{2}$.
+@check same(sqrt(98)-sqrt(32), 3*sqrt(2))
+@end
+
+@exo 3
+Développe et réduis $(2x - 3)^2 - (x + 1)(x - 1)$.
+@sol
+$(4x^2 - 12x + 9) - (x^2 - 1) = 4x^2 - 12x + 9 - x^2 + 1 = 3x^2 - 12x + 10$.
+@check same((2*x-3)**2-(x+1)*(x-1), 3*x**2-12*x+10)
+@end
+
+@exo 3
+Factorise :
+a) $9x^2 - 4$
+b) $2x^2 - 12x + 18$
+@sol
+a) $(3x - 2)(3x + 2)$.
+b) $2(x^2 - 6x + 9) = 2(x - 3)^2$.
+@check same(2*(x-3)**2, 2*x**2-12*x+18)
+@end
+
+@exo 3
+Factorise $(x + 2)(3x - 1) - (x + 2)^2$.
+@sol
+$(x + 2)\big[(3x - 1) - (x + 2)\big] = (x + 2)(3x - 1 - x - 2) = (x + 2)(2x - 3)$.
+@check same((x+2)*(3*x-1)-(x+2)**2, (x+2)*(2*x-3))
+@end
+
+@exo 4
+Simplifie $\dfrac{x^2 - 9}{x^2 + 6x + 9}$.
+@sol
+$\dfrac{(x - 3)(x + 3)}{(x + 3)^2} = \dfrac{x - 3}{x + 3}$, pour $x \neq -3$.
+@check same((x**2-9)/(x**2+6*x+9), (x-3)/(x+3))
+@end
+
+@exo 4
+Écris sous forme d'une seule fraction : $\dfrac{3}{x} - \dfrac{2}{x + 2}$.
+@sol
+$\dfrac{3(x + 2) - 2x}{x(x + 2)} = \dfrac{3x + 6 - 2x}{x(x + 2)} = \dfrac{x + 6}{x(x + 2)}$.
+@check same(3/x-2/(x+2), (x+6)/(x*(x+2)))
+@end
+
+@corriges

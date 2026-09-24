@@ -1,0 +1,700 @@
+%% Chapitre 6 — Les intégrales
+# 6 | Les intégrales | La dérivée à l'envers — et un outil pour calculer des aires, des distances, des moyennes
+
+:::objectifs
+- trouver une **primitive** (la « dérivée à l'envers »), y compris des formes composées ;
+- calculer une **intégrale** et l'interpréter comme une **aire** ;
+- calculer l'aire entre deux courbes et une **valeur moyenne** ;
+- utiliser l'**intégration par parties** ;
+- appliquer les intégrales en physique (distance, charge, travail).
+:::
+
+:::note Temps conseillé : 6 séances (semaine 6 du planning).
+**Prérequis :** le tableau des dérivées du chapitre 5, **parfaitement** su. Chaque primitive se vérifie en dérivant.
+:::
+
+## 6.1 Les primitives
+
+:::idee
+Dériver, c'est « démonter » ; trouver une **primitive**, c'est « remonter » : on te donne $f$ et tu cherches $F$ telle que $F' = f$.
+Une primitive de $2x$ est $x^2$, car $(x^2)' = 2x$. Mais $x^2 + 5$, $x^2 - 3$… marchent aussi (la dérivée d'une constante vaut 0). On écrit $F(x) = x^2 + C$.
+**Contrôle gratuit :** je dérive mon résultat et je dois retrouver $f$. Fais-le **toujours**.
+:::
+
+| $f(x)$ | Une primitive $F(x)$ | Commentaire |
+| $k$ (constante) | $kx$ | |
+| $x^n$ ($n \neq -1$) | $\dfrac{x^{n+1}}{n + 1}$ | l'exposant monte de 1, je divise par le nouvel exposant |
+| $\dfrac{1}{x^2}$ | $-\dfrac{1}{x}$ | attention au moins |
+| $\dfrac{1}{\sqrt{x}}$ | $2\sqrt{x}$ | |
+| $\dfrac{1}{x}$ | $\ln x$ | pour $x > 0$ |
+| $e^x$ | $e^x$ | |
+| $e^{ax}$ | $\dfrac{1}{a}e^{ax}$ | je divise par $a$ |
+| $\cos x$ | $\sin x$ | |
+| $\sin x$ | $-\cos x$ | attention au moins |
+| $\cos(ax)$ | $\dfrac{1}{a}\sin(ax)$ | je divise par $a$ |
+| $\sin(ax)$ | $-\dfrac{1}{a}\cos(ax)$ | |
+
+:::exemple Exemple guidé : une primitive de $6x^2 - 4x + 3$
++ Je traite **morceau par morceau**. $6x^2$ : $x^2 \to \frac{x^3}{3}$, donc $6x^2 \to 6 \times \frac{x^3}{3} = 2x^3$.
++ $-4x$ : $x \to \frac{x^2}{2}$, donc $-4x \to -4 \times \frac{x^2}{2} = -2x^2$.
++ $3 \to 3x$.
++ $F(x) = 2x^3 - 2x^2 + 3x$. Contrôle : $F'(x) = 6x^2 - 4x + 3$ ✔
+:::
+
+:::exemple Exemples corrigés
+$x^3 \to \frac{x^4}{4}$ · $\frac{1}{x^2} = x^{-2} \to \frac{x^{-1}}{-1} = -\frac{1}{x}$ · $e^{3x} \to \frac{e^{3x}}{3}$ · $\sin(2x) \to -\frac{\cos(2x)}{2}$
+Contrôle de la dernière : $\left(-\frac{\cos(2x)}{2}\right)' = -\frac{-2\sin(2x)}{2} = \sin(2x)$ ✔
+$\sqrt{x} = x^{1/2} \to \frac{x^{3/2}}{3/2} = \frac{2}{3}x\sqrt{x}$.
+:::
+
+:::coeur Les formes composées (les plus demandées)
+$$u'e^u \to e^u \qquad \frac{u'}{u} \to \ln|u| \qquad u'u^n \to \frac{u^{n+1}}{n + 1} \qquad \frac{u'}{\sqrt{u}} \to 2\sqrt{u} \qquad u'\cos u \to \sin u$$
+**Comment les reconnaître :** je cherche un morceau « à l'intérieur » ($u$) et je vérifie si sa dérivée $u'$ est **à côté** (à un nombre près).
+:::
+
+:::exemple Exemple guidé : ajuster le nombre, $x\,e^{x^2}$
++ Le morceau intérieur est $u = x^2$, sa dérivée est $u' = 2x$.
++ Je vois $x$ à côté, mais pas $2x$. Il manque un 2. J'écris $x = \frac{1}{2} \times 2x$.
++ Donc $x\,e^{x^2} = \frac{1}{2} \times 2x\,e^{x^2} = \frac{1}{2} \times u'e^u$ → primitive $\frac{1}{2}e^{x^2}$.
++ Contrôle : $\left(\frac{1}{2}e^{x^2}\right)' = \frac{1}{2} \times 2x\,e^{x^2} = x\,e^{x^2}$ ✔
+:::
+
+:::exemple Exemples corrigés
+$2x\,e^{x^2}$ : $u' = 2x$ est bien là → $e^{x^2}$.
+$\frac{3x^2}{x^3 + 1}$ sur $x > -1$ : $u = x^3 + 1$, $u' = 3x^2$ ✔ → $\ln(x^3 + 1)$.
+$x(x^2 + 1)^4$ : $u = x^2 + 1$, $u' = 2x$. $x = \frac{1}{2} \times 2x$ → $\frac{1}{2} \times \frac{(x^2 + 1)^5}{5} = \frac{(x^2 + 1)^5}{10}$.
+$\frac{1}{2x + 1}$ : $u = 2x + 1$, $u' = 2$ → $\frac{1}{2} \times \frac{2}{2x + 1}$ → $\frac{1}{2}\ln(2x + 1)$.
+$(2x + 1)^3$ : $u' = 2$ → $\frac{1}{2} \times \frac{(2x + 1)^4}{4} = \frac{(2x + 1)^4}{8}$.
+:::
+
+:::exemple Exemple guidé : primitive avec une condition, $F(1) = 5$ pour $f(x) = 2x + 1$
++ Toutes les primitives : $F(x) = x^2 + x + C$.
++ J'utilise la condition : $F(1) = 1 + 1 + C = 5$ → $C = 3$.
++ $F(x) = x^2 + x + 3$.
+:::
+
+:::piege
+Il n'y a **pas** de formule du produit pour les primitives : une primitive de $x\,e^x$ n'est **pas** $\frac{x^2}{2}e^x$ (dérive pour vérifier : ça ne marche pas). Pour les produits, on utilise la forme $u'e^u$… ou l'intégration par parties (6.5).
+:::
+
+## 6.2 L'intégrale = une aire
+
+:::coeur
+$$\int_a^b f(x)\dx = \big[F(x)\big]_a^b = F(b) - F(a)$$
+Se lit « intégrale de $a$ à $b$ de $f(x)\,\mathrm{d}x$ ». Si $f \geq 0$ sur $\ff{a}{b}$, c'est l'**aire sous la courbe** (en « unités d'aire »).
+**Haut moins bas** : $F(b) - F(a)$. La constante $C$ disparaît, inutile de l'écrire.
+:::
+
+@fig aire_sous_courbe:46 | L'intégrale est l'aire (en bleu) entre la courbe, l'axe horizontal et les droites $x = a$ et $x = b$.
+
+:::lire Comment lire la formule (mot à mot)
+$\mathrm{d}x$ indique la variable d'intégration. $\int$ est un « S » allongé : une **somme** d'une infinité de petits rectangles de largeur $\mathrm{d}x$ et de hauteur $f(x)$.
+:::
+
+@fig aire_rect:80 | Plus les rectangles sont fins, plus leur aire totale se rapproche de l'intégrale.
+
+:::exemple Exemple guidé 1 : $\displaystyle\int_0^2 x\dx$
++ Primitive de $x$ : $F(x) = \frac{x^2}{2}$.
++ $F(2) = \frac{4}{2} = 2$. $F(0) = 0$.
++ Résultat : $2 - 0 = 2$.
++ Contrôle avec le dessin : sous la droite $y = x$, entre 0 et 2, il y a un triangle de base 2 et de hauteur 2. Aire $= \frac{2 \times 2}{2} = 2$ ✔
+:::
+
+:::exemple Exemple guidé 2 : $\displaystyle\int_0^{\pi} \sin x\dx$
++ Primitive de $\sin x$ : $-\cos x$.
++ $F(\pi) = -\cos\pi = -(-1) = 1$. $F(0) = -\cos 0 = -1$.
++ Résultat : $1 - (-1) = 2$. (Attention aux doubles « moins » !)
+:::
+
+:::exemple Exemples corrigés
+$\displaystyle\int_1^2 (3x^2 - 2x)\dx = \big[x^3 - x^2\big]_1^2 = (8 - 4) - (1 - 1) = 4$.
+$\displaystyle\int_0^1 e^x\dx = e^1 - e^0 = e - 1 \approx 1{,}72$ (rappel : $e^0 = 1$, pas 0 !).
+$\displaystyle\int_1^e \frac{1}{x}\dx = \ln e - \ln 1 = 1 - 0 = 1$.
+:::
+
+## 6.3 Les propriétés
+
+:::coeur
+**Linéarité :** $\int_a^b (f + g) = \int_a^b f + \int_a^b g$ et $\int_a^b kf = k\int_a^b f$.
+**Relation de Chasles :** $\int_a^b f + \int_b^c f = \int_a^c f$ (comme pour les distances : de $a$ à $b$ puis de $b$ à $c$).
+**Bornes :** $\int_a^a f = 0$ et $\int_b^a f = -\int_a^b f$.
+**Signe :** si $f$ est négative sur $\ff{a}{b}$, l'intégrale est négative : l'aire « sous l'axe » compte **en moins**. Pour une **aire**, on prend la valeur positive.
+:::
+
+@fig aire_signe:50 | $\int_0^{2\pi}\sin x\,\mathrm{d}x = 2 - 2 = 0$, mais l'**aire** totale colorée vaut $2 + 2 = 4$.
+
+## 6.4 Aire entre deux courbes et valeur moyenne
+
+:::coeur
+**Aire entre deux courbes** sur $\ff{a}{b}$ : $\displaystyle\int_a^b \big(\text{celle du dessus} - \text{celle du dessous}\big)\dx$.
+**Valeur moyenne** de $f$ sur $\ff{a}{b}$ : $\mu = \dfrac{1}{b - a}\displaystyle\int_a^b f(x)\dx$. C'est la hauteur du rectangle qui aurait la même aire.
+:::
+
+:::exemple Exemple guidé : aire entre $y = x$ et $y = x^2$ sur $\ff{0}{1}$
++ Qui est au-dessus ? Avec $x = 0{,}5$ : $x = 0{,}5$ et $x^2 = 0{,}25$. Donc $y = x$ est au-dessus.
++ Aire $= \displaystyle\int_0^1 (x - x^2)\dx = \left[\frac{x^2}{2} - \frac{x^3}{3}\right]_0^1$.
++ $= \left(\frac{1}{2} - \frac{1}{3}\right) - 0 = \frac{3}{6} - \frac{2}{6} = \frac{1}{6}$.
+:::
+
+@fig aire_entre:40 | L'aire violette vaut $\frac{1}{6}$.
+
+:::methode Aire entre deux courbes quand les bornes ne sont pas données
++ Je trouve les **points d'intersection** : je résous $f(x) = g(x)$. Ce sont les bornes.
++ Je teste une valeur entre les bornes pour savoir qui est au-dessus.
++ J'intègre « dessus − dessous » entre les bornes.
+:::
+
+:::exemple Exemple corrigé : valeur moyenne
+Valeur moyenne de $f(x) = x^2$ sur $\ff{0}{3}$ : $\mu = \frac{1}{3} \times \int_0^3 x^2\dx = \frac{1}{3} \times \left[\frac{x^3}{3}\right]_0^3 = \frac{1}{3} \times 9 = 3$.
+:::
+
+## 6.5 Intégration par parties (IPP)
+
+:::coeur
+$$\int_a^b u(x)\,v'(x)\dx = \big[u(x)\,v(x)\big]_a^b - \int_a^b u'(x)\,v(x)\dx$$
+Sert pour les **produits de fonctions de types différents** : $x\,e^x$, $x\cos x$, $x\ln x$, ou $\ln x$ tout seul ($= \ln x \times 1$).
+**Qui choisir comme $u$ ?** Ordre de priorité **L-P-E-T** : **L**ogarithme, puis **P**olynôme, puis **E**xponentielle, puis **T**rigonométrie. $u$ = le premier de la liste que tu trouves ; $v'$ = l'autre.
+:::
+
+:::pourquoi Pourquoi ça marche ?
+C'est la formule du produit $(uv)' = u'v + uv'$, « à l'envers ». On intègre les deux côtés : $[uv] = \int u'v + \int uv'$, donc $\int uv' = [uv] - \int u'v$.
+On échange une intégrale difficile contre une plus facile.
+:::
+
+:::methode La méthode IPP
++ Je choisis $u$ et $v'$ (L-P-E-T).
++ J'écris les **4 cases** : $u = \ldots$, $u' = \ldots$ ; $v' = \ldots$, $v = \ldots$ ($v$ est une primitive de $v'$).
++ J'applique la formule : $[uv] - \int u'v$.
++ Je calcule la nouvelle intégrale (elle doit être **plus simple** que celle de départ ; sinon, j'ai mal choisi).
+:::
+
+:::exemple Exemple guidé 1 : $I = \displaystyle\int_0^1 x\,e^x\dx$
++ P avant E → $u = x$, $v' = e^x$.
++ $u = x$, $u' = 1$ ; $v' = e^x$, $v = e^x$.
++ $I = \big[x\,e^x\big]_0^1 - \displaystyle\int_0^1 1 \times e^x\dx$.
++ $\big[x\,e^x\big]_0^1 = 1 \times e - 0 = e$. $\displaystyle\int_0^1 e^x\dx = e - 1$.
++ $I = e - (e - 1) = 1$.
+:::
+
+:::exemple Exemple guidé 2 : $J = \displaystyle\int_1^e \ln x\dx$
++ Astuce : $\ln x = \ln x \times 1$. L d'abord → $u = \ln x$, $v' = 1$.
++ $u = \ln x$, $u' = \frac{1}{x}$ ; $v' = 1$, $v = x$.
++ $J = \big[x\ln x\big]_1^e - \displaystyle\int_1^e \frac{1}{x} \times x\dx = (e \times 1 - 1 \times 0) - \displaystyle\int_1^e 1\dx$.
++ $= e - \big[x\big]_1^e = e - (e - 1) = 1$.
+:::
+
+:::exemple Exemple guidé 3 : $K = \displaystyle\int_0^{\pi} x\cos x\dx$
++ P avant T → $u = x$ ($u' = 1$), $v' = \cos x$ ($v = \sin x$).
++ $K = \big[x\sin x\big]_0^{\pi} - \displaystyle\int_0^{\pi} \sin x\dx$.
++ $\big[x\sin x\big]_0^{\pi} = \pi \times 0 - 0 = 0$. $\displaystyle\int_0^{\pi} \sin x\dx = 2$ (exemple 2 du 6.2).
++ $K = 0 - 2 = -2$.
+:::
+
+## 6.6 Applications en physique
+
+:::coeur
+Si $v(t)$ est la **vitesse**, la **distance** parcourue entre $t_1$ et $t_2$ est $\displaystyle\int_{t_1}^{t_2} v(t)\dt$.
+Si $i(t)$ est le **courant**, la **charge** qui passe est $\displaystyle\int i(t)\dt$.
+Le **travail** d'une force variable $F(x)$ le long d'un déplacement est $\displaystyle\int F(x)\dx$.
+La **valeur moyenne** d'une tension périodique est $\dfrac{1}{T}\displaystyle\int_0^T u(t)\dt$.
+:::
+
+:::lire Comprendre l'énoncé
+**unité d'aire (u.a.)** · **intégration par parties (IPP)** · **valeur moyenne** · **relation de Chasles** · **linéarité** · « **déterminer une primitive** » = en donner une seule (inutile d'écrire $+ C$, sauf si on demande **toutes** les primitives).
+:::
+
+@page
+## 6.7 Exercices
+
+@serie 6A | Primitives de base
+
+@exo 1
+Donne une primitive de : a) $5$ ; b) $x^3$ ; c) $\frac{1}{x^2}$ ; d) $x$.
+@sol
+a) $5x$. b) $\frac{x^4}{4}$. c) $-\frac{1}{x}$. d) $\frac{x^2}{2}$.
+@check prim(-1/x, 1/x**2)
+@end
+
+@exo 1
+Donne une primitive de $6x^2 - 4x + 3$.
+@sol
+$2x^3 - 2x^2 + 3x$ (exemple guidé du 6.1).
+@check prim(2*x**3-2*x**2+3*x, 6*x**2-4*x+3)
+@end
+
+@exo 1
+Donne une primitive de : a) $e^x + \cos x$ ; b) $3\sin x$.
+@sol
+a) $e^x + \sin x$. b) $-3\cos x$.
+@check prim(-3*cos(x), 3*sin(x))
+@end
+
+@exo 2
+Donne une primitive de : a) $e^{3x}$ ; b) $\sin(2x)$ ; c) $e^{-x}$ ; d) $\cos\left(\frac{x}{2}\right)$.
+@sol
+a) $\frac{e^{3x}}{3}$. b) $-\frac{\cos(2x)}{2}$. c) $-e^{-x}$ (contrôle : $(-e^{-x})' = e^{-x}$ ✔).
+d) $a = \frac{1}{2}$ : $\frac{1}{1/2}\sin\frac{x}{2} = 2\sin\frac{x}{2}$.
+@check prim(-exp(-x), exp(-x)) and prim(2*sin(x/2), cos(x/2))
+@end
+
+@exo 2
+Donne une primitive de $\frac{1}{x} + \frac{1}{\sqrt{x}}$ sur $\oo{0}{+\infty}$.
+@sol
+$\ln x + 2\sqrt{x}$.
+@check prim(log(x)+2*sqrt(x), 1/x+1/sqrt(x))
+@end
+
+@exo 2
+Donne une primitive de $(2x + 1)^3$.
+@sol
+$u = 2x + 1$, $u' = 2$ : $\frac{1}{2} \times \frac{(2x + 1)^4}{4} = \frac{(2x + 1)^4}{8}$.
+Contrôle : dérivée $= \frac{4 \times 2 \times (2x + 1)^3}{8} = (2x + 1)^3$ ✔
+@check prim((2*x+1)**4/8, (2*x+1)**3)
+@end
+
+@exo 2
+Donne une primitive de : a) $\frac{4}{x^3}$ ; b) $\sqrt{x}$.
+@sol
+a) $4x^{-3} \to 4 \times \frac{x^{-2}}{-2} = -\frac{2}{x^2}$.
+b) $x^{1/2} \to \frac{x^{3/2}}{3/2} = \frac{2}{3}x\sqrt{x}$.
+@check prim(-2/x**2, 4/x**3) and prim(Rational(2,3)*x*sqrt(x), sqrt(x))
+@end
+
+@exo 3
+Trouve la primitive $F$ de $f(x) = 2x + 1$ telle que $F(1) = 5$.
+@sol
+$F(x) = x^2 + x + 3$ (exemple guidé du 6.1).
+@end
+
+@exo 3
+Trouve la primitive $F$ de $f(x) = e^{2x}$ telle que $F(0) = 2$.
+@sol
+$F(x) = \frac{e^{2x}}{2} + C$. $F(0) = \frac{1}{2} + C = 2$ → $C = \frac{3}{2}$. $F(x) = \frac{e^{2x} + 3}{2}$.
+@check prim((exp(2*x)+3)/2, exp(2*x)) and same(((exp(2*x)+3)/2).subs(x,0), 2)
+@end
+
+@serie 6B | Primitives de formes composées
+
+@exo 3
+Donne une primitive de : a) $2x\,e^{x^2}$ ; b) $x\,e^{x^2}$.
+@sol
+a) $e^{x^2}$. b) $\frac{1}{2}e^{x^2}$.
+@check prim(exp(x**2)/2, x*exp(x**2))
+@end
+
+@exo 3
+Donne une primitive de $\frac{3x^2}{x^3 + 1}$ sur $\oo{-1}{+\infty}$.
+@sol
+$\frac{u'}{u}$ avec $u = x^3 + 1 > 0$ : $\ln(x^3 + 1)$.
+@check prim(log(x**3+1), 3*x**2/(x**3+1))
+@end
+
+@exo 3
+Donne une primitive de $x(x^2 + 1)^4$.
+@sol
+$\frac{(x^2 + 1)^5}{10}$ (voir les exemples du 6.1).
+@check prim((x**2+1)**5/10, x*(x**2+1)**4)
+@end
+
+@exo 3
+Donne une primitive de $\frac{1}{2x + 1}$ sur $\oo{-\frac{1}{2}}{+\infty}$.
+@sol
+$\frac{1}{2}\ln(2x + 1)$.
+@check prim(log(2*x+1)/2, 1/(2*x+1))
+@end
+
+@exo 3
+Donne une primitive de $\cos x\sin x$.
+@sol
+Forme $u'u$ avec $u = \sin x$, $u' = \cos x$ : $\frac{\sin^2 x}{2}$.
+@check prim(sin(x)**2/2, cos(x)*sin(x))
+@end
+
+@exo 4
+Donne une primitive de $\frac{\ln x}{x}$ sur $\oo{0}{+\infty}$.
+@sol
+$\frac{\ln x}{x} = \frac{1}{x} \times \ln x$ : forme $u'u$ avec $u = \ln x$, $u' = \frac{1}{x}$. Primitive : $\frac{(\ln x)^2}{2}$.
+@check prim(log(x)**2/2, log(x)/x)
+@end
+
+@exo 4
+Donne une primitive de $\frac{e^x}{e^x + 1}$.
+@sol
+$\frac{u'}{u}$ avec $u = e^x + 1 > 0$ : $\ln(e^x + 1)$.
+@check prim(log(exp(x)+1), exp(x)/(exp(x)+1))
+@end
+
+@exo 4
+Donne une primitive de $\frac{x}{\sqrt{x^2 + 1}}$.
+@sol
+$(\sqrt{u})' = \frac{u'}{2\sqrt{u}}$ avec $u = x^2 + 1$, $u' = 2x$ : $\left(\sqrt{x^2 + 1}\right)' = \frac{2x}{2\sqrt{x^2 + 1}} = \frac{x}{\sqrt{x^2 + 1}}$.
+Primitive : $\sqrt{x^2 + 1}$.
+@check prim(sqrt(x**2+1), x/sqrt(x**2+1))
+@end
+
+@serie 6C | Calculer des intégrales
+
+@exo 1
+Calcule $\displaystyle\int_0^3 x^2\dx$.
+@sol
+$\left[\frac{x^3}{3}\right]_0^3 = \frac{27}{3} - 0 = 9$.
+@check integ(x**2, 0, 3, 9)
+@end
+
+@exo 2
+Calcule $\displaystyle\int_1^2 (3x^2 - 2x)\dx$.
+@sol
+$4$ (voir 6.2).
+@check integ(3*x**2-2*x, 1, 2, 4)
+@end
+
+@exo 2
+Calcule $\displaystyle\int_0^{\ln 2} e^x\dx$.
+@sol
+$e^{\ln 2} - e^0 = 2 - 1 = 1$.
+@check integ(exp(x), 0, log(2), 1)
+@end
+
+@exo 2
+Calcule $\displaystyle\int_0^{\pi/2} \cos x\dx$.
+@sol
+$\big[\sin x\big]_0^{\pi/2} = 1 - 0 = 1$.
+@check integ(cos(x), 0, pi/2, 1)
+@end
+
+@exo 3
+Calcule $\displaystyle\int_1^e \frac{2}{x}\dx$.
+@sol
+$\big[2\ln x\big]_1^e = 2 \times 1 - 2 \times 0 = 2$.
+@check integ(2/x, 1, E, 2)
+@end
+
+@exo 3
+Calcule $\displaystyle\int_0^1 e^{2x}\dx$.
+@sol
+$\left[\frac{e^{2x}}{2}\right]_0^1 = \frac{e^2}{2} - \frac{1}{2} = \frac{e^2 - 1}{2} \approx 3{,}19$.
+@check integ(exp(2*x), 0, 1, (E**2-1)/2)
+@end
+
+@exo 3
+Calcule $\displaystyle\int_0^1 \frac{2x}{x^2 + 1}\dx$.
+@sol
+$\big[\ln(x^2 + 1)\big]_0^1 = \ln 2 - \ln 1 = \ln 2 \approx 0{,}69$.
+@check integ(2*x/(x**2+1), 0, 1, log(2))
+@end
+
+@exo 3
+Calcule $\displaystyle\int_{-1}^{1} x^3\dx$ et $\displaystyle\int_1^4 \frac{1}{\sqrt{x}}\dx$.
+@sol
+$\left[\frac{x^4}{4}\right]_{-1}^{1} = \frac{1}{4} - \frac{1}{4} = 0$ (les aires au-dessus et au-dessous de l'axe se compensent).
+$\big[2\sqrt{x}\big]_1^4 = 4 - 2 = 2$.
+@check integ(x**3, -1, 1, 0) and integ(1/sqrt(x), 1, 4, 2)
+@end
+
+@exo 4
+Calcule $\displaystyle\int_0^{\pi/2} \sin(2x)\dx$.
+@sol
+$\left[-\frac{\cos(2x)}{2}\right]_0^{\pi/2} = -\frac{\cos\pi}{2} - \left(-\frac{\cos 0}{2}\right) = \frac{1}{2} + \frac{1}{2} = 1$.
+@check integ(sin(2*x), 0, pi/2, 1)
+@end
+
+@exo 4 | Chasles et linéarité
+On sait que $\displaystyle\int_0^2 f(x)\dx = 5$ et $\displaystyle\int_0^5 f(x)\dx = 12$. Calcule :
+a) $\displaystyle\int_2^5 f(x)\dx$
+b) $\displaystyle\int_5^0 f(x)\dx$
+c) $\displaystyle\int_0^2 \big(3f(x) + 1\big)\dx$
+@sol
+a) Chasles : $\int_0^2 + \int_2^5 = \int_0^5$ → $\int_2^5 f = 12 - 5 = 7$.
+b) On inverse les bornes : $-12$.
+c) $3 \times 5 + \int_0^2 1\dx = 15 + 2 = 17$.
+@end
+
+@serie 6D | Aires et valeurs moyennes
+
+@exo 3
+Calcule l'aire sous $y = x^2$ entre $x = -1$ et $x = 2$.
+@sol
+$x^2 \geq 0$ → aire $= \left[\frac{x^3}{3}\right]_{-1}^{2} = \frac{8}{3} - \left(-\frac{1}{3}\right) = \frac{9}{3} = 3$ u.a.
+@check integ(x**2, -1, 2, 3)
+@end
+
+@exo 4
+Calcule l'aire de la région comprise entre la parabole $y = 4 - x^2$ et l'axe des abscisses.
+@sol
+La parabole coupe l'axe quand $4 - x^2 = 0$ → $x = \pm 2$ ; elle est au-dessus de l'axe entre $-2$ et 2.
+$\displaystyle\int_{-2}^{2} (4 - x^2)\dx = \left[4x - \frac{x^3}{3}\right]_{-2}^{2} = \left(8 - \frac{8}{3}\right) - \left(-8 + \frac{8}{3}\right) = 16 - \frac{16}{3} = \frac{32}{3} \approx 10{,}67$ u.a.
+@check integ(4-x**2, -2, 2, Rational(32,3))
+@end
+
+@exo 3
+Calcule l'aire entre $y = x$ et $y = x^2$ sur $\ff{0}{1}$.
+@sol
+$\frac{1}{6}$ (exemple guidé du 6.4).
+@check integ(x-x**2, 0, 1, Rational(1,6))
+@end
+
+@exo 4
+Calcule l'aire du domaine compris entre les courbes $y = x^2$ et $y = 2x$.
+@sol
+Intersections : $x^2 = 2x$ → $x(x - 2) = 0$ → $x = 0$ ou $x = 2$. Test en $x = 1$ : $2x = 2 > x^2 = 1$ → $y = 2x$ est au-dessus.
+Aire $= \displaystyle\int_0^2 (2x - x^2)\dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}$ u.a.
+@check integ(2*x-x**2, 0, 2, Rational(4,3))
+@end
+
+@exo 3
+Calcule la valeur moyenne de : a) $f(x) = x^2$ sur $\ff{0}{3}$ ; b) $g(x) = 2x$ sur $\ff{0}{4}$.
+@sol
+a) $3$ (voir 6.4). b) $\frac{1}{4}\big[x^2\big]_0^4 = \frac{16}{4} = 4$.
+@end
+
+@exo 4
+Calcule la valeur moyenne de $\sin x$ sur $\ff{0}{\pi}$.
+@sol
+$\mu = \frac{1}{\pi}\int_0^{\pi}\sin x\dx = \frac{1}{\pi} \times 2 = \frac{2}{\pi} \approx 0{,}64$.
+@end
+
+@exo 4
+Calcule $\displaystyle\int_0^{2\pi} \sin x\dx$, puis l'**aire** comprise entre la courbe de $\sin$ et l'axe des abscisses sur $\ff{0}{2\pi}$.
+@sol
+$\big[-\cos x\big]_0^{2\pi} = -1 - (-1) = 0$ (compensation).
+Aire : sur $\ff{0}{\pi}$, $\sin \geq 0$ → aire 2 ; sur $\ff{\pi}{2\pi}$, $\sin \leq 0$ → $\int_{\pi}^{2\pi}\sin x\dx = -2$, aire 2. Aire totale : **4** u.a. (voir la figure du 6.3).
+@check integ(sin(x), pi, 2*pi, -2)
+@end
+
+@serie 6E | Intégration par parties
+
+@exo 3
+Calcule $\displaystyle\int_0^1 x\,e^x\dx$.
+@sol
+$1$ (exemple guidé 1 du 6.5).
+@check integ(x*exp(x), 0, 1, 1)
+@end
+
+@exo 3
+Calcule $\displaystyle\int_1^e \ln x\dx$.
+@sol
+$1$ (exemple guidé 2 du 6.5).
+@check integ(log(x), 1, E, 1)
+@end
+
+@exo 4
+Calcule $\displaystyle\int_0^{\pi} x\cos x\dx$.
+@sol
+$-2$ (exemple guidé 3 du 6.5).
+@check integ(x*cos(x), 0, pi, -2)
+@end
+
+@exo 4
+Calcule $\displaystyle\int_0^1 x\,e^{2x}\dx$.
+@sol
+$u = x$ ($u' = 1$), $v' = e^{2x}$ ($v = \frac{e^{2x}}{2}$).
+$\left[\frac{x\,e^{2x}}{2}\right]_0^1 - \displaystyle\int_0^1 \frac{e^{2x}}{2}\dx = \frac{e^2}{2} - \left[\frac{e^{2x}}{4}\right]_0^1 = \frac{e^2}{2} - \frac{e^2 - 1}{4} = \frac{2e^2 - e^2 + 1}{4} = \frac{e^2 + 1}{4} \approx 2{,}10$.
+@check integ(x*exp(2*x), 0, 1, (E**2+1)/4)
+@end
+
+@exo 4
+Calcule $\displaystyle\int_1^e x\ln x\dx$.
+@sol
+L avant P → $u = \ln x$ ($u' = \frac{1}{x}$), $v' = x$ ($v = \frac{x^2}{2}$).
+$\left[\frac{x^2}{2}\ln x\right]_1^e - \displaystyle\int_1^e \frac{x}{2}\dx = \frac{e^2}{2} - \left[\frac{x^2}{4}\right]_1^e = \frac{e^2}{2} - \frac{e^2 - 1}{4} = \frac{e^2 + 1}{4}$.
+@check integ(x*log(x), 1, E, (E**2+1)/4)
+@end
+
+@exo 4
+Trouve une primitive de $x\,e^{-x}$ par parties.
+@sol
+$u = x$ ($u' = 1$), $v' = e^{-x}$ ($v = -e^{-x}$). $\int x\,e^{-x} = -x\,e^{-x} - \int(-e^{-x}) = -x\,e^{-x} - e^{-x}$.
+Une primitive : $F(x) = -(x + 1)e^{-x}$. Contrôle : $F'(x) = -e^{-x} + (x + 1)e^{-x} = x\,e^{-x}$ ✔
+@check prim(-(x+1)*exp(-x), x*exp(-x))
+@end
+
+@serie 6F | Applications en physique
+
+@exo 3
+Une voiture a une vitesse $v(t) = 3t^2$ (m/s). Quelle distance parcourt-elle entre $t = 0$ et $t = 2$ s ?
+@sol
+$\displaystyle\int_0^2 3t^2\dt = \big[t^3\big]_0^2 = 8$ m.
+@end
+
+@exo 3
+Le courant dans un circuit vaut $i(t) = 2e^{-t}$ (A). Quelle charge traverse le circuit entre $t = 0$ et $t = 1$ s ?
+@sol
+$Q = \displaystyle\int_0^1 2e^{-t}\dt = \big[-2e^{-t}\big]_0^1 = -2e^{-1} + 2 = 2(1 - e^{-1}) \approx 1{,}26$ C.
+@check integ(2*exp(-x), 0, 1, 2*(1-exp(-1)))
+@end
+
+@exo 4
+Une tension redressée vaut $u(t) = 10\sin t$ sur $\ff{0}{\pi}$. Calcule sa valeur moyenne.
+@sol
+$\frac{1}{\pi}\displaystyle\int_0^{\pi} 10\sin t\dt = \frac{10}{\pi} \times 2 = \frac{20}{\pi} \approx 6{,}37$ V.
+@end
+
+@exo 4 | Travail d'un ressort
+Pour allonger un ressort de $x$ mètres, il faut une force $F(x) = 200x$ (en N). Calcule le travail nécessaire pour l'allonger de 10 cm : $W = \displaystyle\int_0^{0{,}1} F(x)\dx$.
+@sol
+$W = \big[100x^2\big]_0^{0{,}1} = 100 \times 0{,}01 = 1$ J.
+@check integ(200*x, 0, Rational(1,10), 1)
+@end
+
+@drill prim_poly 12 81 2 | Primitives de polynômes
+@drill prim_ref 15 82 2 | Primitives de référence
+@drill prim_comp 12 83 2 | Primitives de formes composées
+@drill integ_poly 12 84 2 | Intégrales de polynômes
+@drill integ_ref 12 85 2 | Intégrales avec exp, ln, cos, sin
+
+## 6.8 QCM style examen
+
+@qcm
+Une primitive de $e^{-x}$ est :
+A) $e^{-x}$
+B) $-e^{-x}$
+C) $-x\,e^{-x}$
+D) $e^x$
+@rep B | $(-e^{-x})' = e^{-x}$ ✔. A oublie le moins (sa dérivée est $-e^{-x}$).
+@end
+
+@qcm
+$\displaystyle\int_0^1 x\dx =$
+A) $1$
+B) $\frac{1}{2}$
+C) $0$
+D) $2$
+@rep B | $\left[\frac{x^2}{2}\right]_0^1 = \frac{1}{2}$.
+@end
+
+@qcm
+$\displaystyle\int_0^{\pi} \sin x\dx =$
+A) $0$
+B) $1$
+C) $2$
+D) $-2$
+@rep C | Voir 6.2. D se trompe de signe : $-\cos\pi = +1$.
+@end
+
+@qcm
+Une primitive de $\dfrac{1}{x + 1}$ sur $\oo{-1}{+\infty}$ est :
+A) $\ln(x + 1)$
+B) $-\frac{1}{(x + 1)^2}$
+C) $\frac{1}{(x + 1)^2}$
+D) $e^{x + 1}$
+@rep A | $\frac{u'}{u}$ avec $u = x + 1$. B est la **dérivée** de $\frac{1}{x+1}$, pas une primitive.
+@end
+
+@qcm
+$\displaystyle\int_2^2 f(x)\dx =$
+A) $f(2)$
+B) $0$
+C) $2$
+D) impossible à savoir
+@rep B | De 2 à 2, il n'y a pas de « largeur » : aire 0.
+@end
+
+@qcm
+$\displaystyle\int_0^1 3x^2\dx =$
+A) $3$
+B) $1$
+C) $\frac{1}{3}$
+D) $6$
+@rep B | $\big[x^3\big]_0^1 = 1$. D dérive au lieu d'intégrer.
+@end
+
+@qcm
+Une primitive de $\cos(3x)$ est :
+A) $\sin(3x)$
+B) $3\sin(3x)$
+C) $\frac{1}{3}\sin(3x)$
+D) $-\frac{1}{3}\sin(3x)$
+@rep C | Contrôle : $\left(\frac{1}{3}\sin 3x\right)' = \cos 3x$ ✔. B multiplie au lieu de diviser.
+@end
+
+@qcm
+$\displaystyle\int_1^e \frac{1}{x}\dx =$
+A) $e$
+B) $1$
+C) $e - 1$
+D) $0$
+@rep B | $\ln e - \ln 1 = 1$.
+@end
+
+@qcm
+La valeur moyenne de $f(x) = 2x$ sur $\ff{0}{4}$ est :
+A) $8$
+B) $4$
+C) $2$
+D) $16$
+@rep B | $\frac{1}{4} \times \big[x^2\big]_0^4 = \frac{16}{4} = 4$. D oublie de diviser par la longueur de l'intervalle.
+@end
+
+@qcm
+Si $\displaystyle\int_0^1 f(x)\dx = 2$, alors $\displaystyle\int_0^1 \big(f(x) + 1\big)\dx =$
+A) $2$
+B) $3$
+C) $4$
+D) on ne peut pas savoir
+@rep B | Linéarité : $2 + \int_0^1 1\dx = 2 + 1 = 3$.
+@end
+
+@serie 6G | Bilan du chapitre 6 (35 minutes, sans aide)
+
+:::note
+**7 ou 8 justes : passe au chapitre 7. 5 ou 6 : refais les séries 6B et 6C. Moins de 5 : révise le tableau des dérivées, puis 6.1 et 6.2.**
+:::
+
+@exo 1
+Donne une primitive de $4x^3 - 6x + 2$.
+@sol
+$x^4 - 3x^2 + 2x$.
+@check prim(x**4-3*x**2+2*x, 4*x**3-6*x+2)
+@end
+
+@exo 2
+Donne une primitive de $e^{-3x} + \frac{1}{x}$ sur $\oo{0}{+\infty}$.
+@sol
+$-\frac{1}{3}e^{-3x} + \ln x$.
+@check prim(-exp(-3*x)/3+log(x), exp(-3*x)+1/x)
+@end
+
+@exo 3
+Trouve la primitive $F$ de $f(x) = 3x^2 + e^x$ telle que $F(0) = 1$.
+@sol
+$F(x) = x^3 + e^x + C$ ; $F(0) = 0 + 1 + C = 1$ → $C = 0$. $F(x) = x^3 + e^x$.
+@end
+
+@exo 2
+Calcule $\displaystyle\int_1^3 (2x - 1)\dx$.
+@sol
+$\big[x^2 - x\big]_1^3 = (9 - 3) - (1 - 1) = 6$.
+@check integ(2*x-1, 1, 3, 6)
+@end
+
+@exo 3
+Calcule $\displaystyle\int_0^1 3e^{3x}\dx$.
+@sol
+$\big[e^{3x}\big]_0^1 = e^3 - 1$.
+@check integ(3*exp(3*x), 0, 1, E**3-1)
+@end
+
+@exo 3
+Calcule $\displaystyle\int_0^{\pi/3} \sin x\dx$.
+@sol
+$\big[-\cos x\big]_0^{\pi/3} = -\frac{1}{2} + 1 = \frac{1}{2}$.
+@check integ(sin(x), 0, pi/3, Rational(1,2))
+@end
+
+@exo 4
+Calcule l'aire du domaine compris entre la droite $y = x + 2$ et la parabole $y = x^2$.
+@sol
+Intersections : $x^2 = x + 2$ → $x^2 - x - 2 = 0$ → $x = -1$ ou $x = 2$. En $x = 0$ : $0 + 2 > 0$ → la droite est au-dessus.
+$\displaystyle\int_{-1}^{2} (x + 2 - x^2)\dx = \left[\frac{x^2}{2} + 2x - \frac{x^3}{3}\right]_{-1}^{2} = \left(2 + 4 - \frac{8}{3}\right) - \left(\frac{1}{2} - 2 + \frac{1}{3}\right) = \frac{10}{3} + \frac{7}{6} = \frac{9}{2}$ u.a.
+@check integ(x+2-x**2, -1, 2, Rational(9,2))
+@end
+
+@exo 4
+Calcule $\displaystyle\int_0^1 (x + 1)e^x\dx$ par parties.
+@sol
+$u = x + 1$ ($u' = 1$), $v' = e^x$ ($v = e^x$).
+$\big[(x + 1)e^x\big]_0^1 - \displaystyle\int_0^1 e^x\dx = (2e - 1) - (e - 1) = e$.
+@check integ((x+1)*exp(x), 0, 1, E)
+@end
+
+@corriges

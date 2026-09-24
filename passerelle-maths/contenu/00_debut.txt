@@ -1,0 +1,332 @@
+%% Début du guide : couverture, sommaire, mode d'emploi, planning, test de diagnostic
+:::cover
+# Mathématiques pour la passerelle
+
+:::center
+**La méthode complète en 8 semaines, en partant vraiment de zéro**
+Calcul · Équations · Trigonométrie · Fonctions · Dérivées · Intégrales · Vecteurs · Nombres complexes
+:::
+
+:::badges
+8 semaines · jour par jour
+480 exercices corrigés
+1 037 calculs d'entraînement
+176 QCM
+3 examens blancs
+:::
+
+:::objectifs Ce que contient ce guide
+- un **cours expliqué pas à pas**, avec le « pourquoi » et pas seulement le « comment », des figures et des exemples guidés ligne par ligne ;
+- **près de 500 exercices** classés du plus facile au niveau examen, **tous corrigés en détail** ;
+- **plus de 1 000 calculs d'automatisme** (séries rapides) avec leurs réponses, pour acquérir les réflexes ;
+- **176 QCM** style examen, dont **3 examens blancs complets** de 30 questions avec correction expliquée ;
+- un **planning jour par jour sur 8 semaines**, un test de diagnostic, 8 séries de révision cumulative ;
+- un formulaire, les 25 erreurs à éviter, 100 cartes mémoire et un lexique français–italien.
+:::
+
+:::lire Pour qui ?
+Pour quelqu'un qui sait faire les choses simples (additions, multiplications…) et qui doit atteindre le niveau de la passerelle **en un ou deux mois**.
+Rien n'est considéré comme évident. Chaque symbole est expliqué. Chaque calcul est écrit ligne par ligne. Les réponses ont été **contrôlées par calcul formel** (plus de 360 vérifications automatiques, et toutes les séries d'automatismes).
+:::
+:::
+
+@toc
+
+# | Mode d'emploi | Comment utiliser ce guide pour être prêt en 8 semaines
+
+## Les 6 règles pour réussir (à appliquer, pas seulement à lire)
+
+:::coeur
+1. **Papier et crayon, toujours.** Les maths ne s'apprennent pas en lisant, mais en écrivant. Refais chaque exemple corrigé **seul**, sans regarder.
+2. **Essaie avant de regarder le corrigé.** Même si tu te trompes. Un exercice raté puis compris vaut dix exercices lus.
+3. **Un peu chaque jour.** 1 h 30 par jour, 6 jours sur 7, valent mieux que 10 heures le dimanche. Le cerveau consolide pendant le sommeil.
+4. **Ne saute pas les chapitres 0, 1 et 2.** 90 % des erreurs sur les dérivées et les intégrales sont en réalité des erreurs de calcul de base.
+5. **Tiens un carnet d'erreurs.** Chaque erreur notée (avec la règle correcte) est une erreur que tu ne referas pas à l'examen.
+6. **Quand tu bloques, reviens aux encadrés verts « À savoir par cœur ».** Il manque presque toujours une règle, jamais l'intelligence.
+:::
+
+## La séance type (1 h 30)
+
+| Durée | Activité | Pourquoi |
+| 10 min | **Cartes mémoire** (chapitre 11) des chapitres déjà vus | pour ne rien oublier (répétition espacée) |
+| 30 min | **Cours** : lire la section du jour, refaire les exemples guidés sans regarder | comprendre la méthode |
+| 35 min | **Exercices** de la série du jour, dans l'ordre, puis correction | appliquer la méthode |
+| 10 min | **Automatismes** : une série rapide de calculs | acquérir les réflexes |
+| 5 min | **Carnet d'erreurs** : noter chaque erreur et la règle correcte | ne pas refaire la même erreur |
+
+:::astuce Le carnet d'erreurs
+Un simple cahier. Pour chaque erreur : 1) l'exercice (numéro) ; 2) ce que tu as écrit ; 3) la règle ou la méthode correcte ; 4) un petit exemple juste.
+Relis-le **chaque dimanche** et la veille de l'examen. C'est le document le plus précieux de ta préparation.
+:::
+
+## La légende des encadrés
+
+| Encadré | Signification |
+| **► Bleu** | l'idée expliquée simplement |
+| **? Bleu clair** | pourquoi ça marche |
+| **✔ Vert** | à savoir par cœur |
+| **★ Vert clair** | astuce |
+| **✎ Orange** | exemple corrigé ou guidé (étape par étape) |
+| **⚠ Rouge** | piège, erreur fréquente |
+| **◆ Violet** | comment lire une formule / comprendre l'énoncé |
+| **► Gris** | méthode étape par étape |
+| **? Jaune** | « Vérifie-toi » : petit test de 2 minutes, avec les réponses en bas |
+
+Exercices : ★☆☆☆ facile · ★★☆☆ moyen · ★★★☆ difficile · ★★★★ niveau examen. Les **automatismes** sont des séries de calculs courts ; leurs réponses sont dans les corrigés du chapitre.
+Chaque chapitre se termine par une **série « Bilan »** à faire en temps limité : elle te dit si tu peux passer au chapitre suivant.
+
+## Et si j'ai moins de temps ?
+
+:::methode
++ **8 semaines (recommandé)** : suis le planning tel quel, 1 h 30 par jour, 6 jours par semaine.
++ **6 semaines** : 2 h par jour ; fais les journées J1 à J56 en regroupant les « jours de consolidation » (J20, J34) avec la révision du dimanche.
++ **4 semaines (intensif)** : 3 h par jour, **deux journées du planning par jour**. Garde absolument les bilans de chapitre et les 3 examens blancs.
++ Dans tous les cas : **ne change pas l'ordre des chapitres**. Chaque chapitre utilise le précédent.
+:::
+
+## Le planning jour par jour
+
+:::note
+Coche ☐ chaque journée terminée. « Ex. » = exercices des séries indiquées (par exemple « 1A » = série 1A du chapitre 1) ; « Auto. » = automatismes (par exemple « 1.A » = automatismes 1.A). Le 7e jour de chaque semaine est plus léger : révision cumulative et cartes mémoire.
+:::
+
+### Semaine 1 — Les bases : lire les maths, les signes, les fractions
+
+| Jour | Cours | Exercices et automatismes | Fait |
+| J1 | Mode d'emploi · **Test de diagnostic** · 0.1 à 0.3 | Ex. 0A | ☐ |
+| J2 | 0.4 et 0.5 (nombres négatifs) | Ex. 0B · Auto. 0.A, 0.B | ☐ |
+| J3 | 0.6 et 0.7 (priorités, remplacer une lettre) | Ex. 0C, 0D · Auto. 0.C, 0.D | ☐ |
+| J4 | 0.8 et 0.9 (calcul mental, consignes) | Ex. 0E · Auto. 0.E · QCM 0.11 · **Bilan 0F** | ☐ |
+| J5 | 1.1 (fractions) | Ex. 1A · Auto. 1.A à 1.D | ☐ |
+| J6 | 1.2 et 1.3 (puissances, racines) | Ex. 1B, 1C · Auto. 1.E à 1.H | ☐ |
+| J7 | Cartes mémoire 1 à 10 | **Révision R1** | ☐ |
+
+### Semaine 2 — Développer, factoriser, premières équations
+
+| Jour | Cours | Exercices et automatismes | Fait |
+| J8 | 1.4 (développer) | Ex. 1D · Auto. 1.I à 1.L | ☐ |
+| J9 | 1.5 (factoriser) | Ex. 1E · Auto. 1.M, 1.N | ☐ |
+| J10 | 1.6 et 1.7 (fractions avec des lettres) | Ex. 1F, 1G · Auto. 1.O · QCM 1.9 · **Bilan 1H** | ☐ |
+| J11 | 2.1 à 2.3 (1er degré, produit nul) | Ex. 2A, 2B · Auto. 2.A à 2.C | ☐ |
+| J12 | 2.4 et 2.5 jusqu'au $\Delta$ | Ex. 2C · Ex. 2D (les 6 premiers) · Auto. 2.D, 2.E | ☐ |
+| J13 | 2.5 (fin) et 2.6 (systèmes) | Ex. 2D (fin), 2E · Auto. 2.F, 2.G, 2.H, 2.K | ☐ |
+| J14 | Cartes mémoire 1 à 25 | **Révision R2** | ☐ |
+
+### Semaine 3 — Inéquations, la carte des méthodes, trigonométrie
+
+| Jour | Cours | Exercices et automatismes | Fait |
+| J15 | 2.7 (inéquations, tableaux de signes) | Ex. 2F · Auto. 2.I, 2.J | ☐ |
+| J16 | 2.8 et 2.9 (la carte, problèmes) | Ex. 2G · QCM 2.11 · **Bilan 2H** | ☐ |
+| J17 | 3.1 et 3.2 (triangle rectangle, radians) | Ex. 3A, 3B · Auto. 3.A | ☐ |
+| J18 | 3.3 et 3.4 (cercle, valeurs, symétries) | Ex. 3C · Auto. 3.B | ☐ |
+| J19 | 3.5 à 3.7 (angle, équations, signaux) | Ex. 3D, 3E · Auto. 3.C, 3.D · QCM 3.9 · **Bilan 3F** | ☐ |
+| J20 | Consolidation : carnet d'erreurs des chapitres 0 à 3 | refaire les exercices ratés | ☐ |
+| J21 | Cartes mémoire 26 à 39 | **Révision R3** | ☐ |
+
+### Semaine 4 — Fonctions, exponentielle, logarithme, limites
+
+| Jour | Cours | Exercices et automatismes | Fait |
+| J22 | 4.1 à 4.3 (fonctions, domaine, références) | Ex. 4A, 4B · Auto. 4.A | ☐ |
+| J23 | 4.4 et 4.5 (exp et ln) | Ex. 4C · Auto. 4.B | ☐ |
+| J24 | 4.6 (équations avec exp et ln) | Ex. 4D · Auto. 4.C | ☐ |
+| J25 | 4.7 et 4.8 (limites, asymptotes) | Ex. 4E · Auto. 4.D · QCM 4.10 · **Bilan 4F** | ☐ |
+| J26 | 5.1 et 5.2 (l'idée, le tableau des dérivées) | Ex. 5A · Auto. 5.A, 5.B | ☐ |
+| J27 | 5.3 (les règles) | Ex. 5B · Auto. 5.C, 5.D | ☐ |
+| J28 | Cartes mémoire 40 à 50 | **Révision R4** | ☐ |
+
+### Semaine 5 — Les dérivées
+
+| Jour | Cours | Exercices et automatismes | Fait |
+| J29 | 5.3 (fonctions composées) | Ex. 5C · Auto. 5.E | ☐ |
+| J30 | 5.4 (tangente) | Ex. 5D · Auto. 5.F · refaire Auto. 5.E | ☐ |
+| J31 | 5.5 (variations) : études complètes 1 et 2 | Ex. 5E (les 4 premiers) | ☐ |
+| J32 | 5.5 : étude complète 3 | Ex. 5E (fin) | ☐ |
+| J33 | 5.6 (optimisation) | Ex. 5F · QCM 5.8 · **Bilan 5G** | ☐ |
+| J34 | Consolidation : carnet d'erreurs des chapitres 4 et 5 | refaire Auto. 5.C à 5.E | ☐ |
+| J35 | Cartes mémoire 51 à 66 | **Révision R5** | ☐ |
+
+### Semaine 6 — Les intégrales, puis le premier examen blanc
+
+| Jour | Cours | Exercices et automatismes | Fait |
+| J36 | 6.1 (primitives de base) | Ex. 6A · Auto. 6.A, 6.B | ☐ |
+| J37 | 6.1 (formes composées) | Ex. 6B · Auto. 6.C | ☐ |
+| J38 | 6.2 et 6.3 (intégrale, propriétés) | Ex. 6C · Auto. 6.D, 6.E | ☐ |
+| J39 | 6.4 (aires, valeur moyenne) | Ex. 6D | ☐ |
+| J40 | 6.5 et 6.6 (IPP, physique) | Ex. 6E, 6F · QCM 6.8 · **Bilan 6G** | ☐ |
+| J41 | — | **Examen blanc n° 1** (90 min) puis correction | ☐ |
+| J42 | Carnet d'erreurs de l'examen 1 · cartes 67 à 78 | **Révision R6** | ☐ |
+
+### Semaine 7 — Vecteurs et nombres complexes
+
+| Jour | Cours | Exercices et automatismes | Fait |
+| J43 | 7.1 à 7.3 (coordonnées, opérations, colinéarité) | Ex. 7A, 7B, 7C · Auto. 7.A, 7.B, 7.C | ☐ |
+| J44 | 7.4 et 7.5 (produit scalaire, droites) | Ex. 7D, 7E · Auto. 7.D, 7.E, 7.G | ☐ |
+| J45 | 7.6 et 7.7 (espace, physique) | Ex. 7F, 7G · Auto. 7.F · QCM 7.9 · **Bilan 7H** | ☐ |
+| J46 | 8.1 et 8.2 (forme algébrique) | Ex. 8A · Auto. 8.A, 8.B, 8.C | ☐ |
+| J47 | 8.3 et 8.4 (module, argument, exponentielle) | Ex. 8B, 8C · Auto. 8.D, 8.E, 8.F | ☐ |
+| J48 | 8.5 à 8.7 (équations, géométrie, impédances) | Ex. 8D, 8E · Auto. 8.G, 8.H · QCM 8.9 · **Bilan 8F** | ☐ |
+| J49 | Cartes mémoire 79 à 100 | **Révision R7** | ☐ |
+
+### Semaine 8 — Examens blancs et révision finale
+
+| Jour | Cours | Exercices et automatismes | Fait |
+| J50 | — | **Examen blanc n° 2** (90 min) puis correction et grille de diagnostic | ☐ |
+| J51 | Chapitres les plus faibles (selon la grille) | refaire les **bilans** de ces chapitres | ☐ |
+| J52 | Formulaire (10.2) et erreurs à éviter (10.1) | **Révision R8** | ☐ |
+| J53 | — | **Examen blanc n° 3** (90 min) puis correction | ☐ |
+| J54 | Carnet d'erreurs complet | refaire les QCM ratés des 3 examens | ☐ |
+| J55 | — | refaire l'**examen blanc n° 1** sans regarder (objectif 27/30) · refaire le test de diagnostic | ☐ |
+| J56 | Veille de l'épreuve : formulaire + carnet d'erreurs, puis repos | cartes mémoire (seulement les numéros entourés) | ☐ |
+
+:::check Où en es-tu ? (à chaque fin de semaine)
+1. Ai-je réussi le bilan du (des) chapitre(s) de la semaine avec le score demandé ?
+2. Ai-je fait la révision cumulative sans regarder le cours ?
+3. Mon carnet d'erreurs est-il à jour ?
+---
+Si tu réponds « non » à une question, prends un jour de plus avant de continuer : il vaut mieux finir le planning avec une semaine de retard que d'avancer sur des bases fragiles.
+:::
+
+# D | Test de diagnostic | 30 minutes pour savoir d'où tu pars (à refaire à la fin, jour J55)
+
+:::examen Consignes
+Fais ce test **le premier jour**, sans aide, en 30 minutes maximum. Réponds à ce que tu sais ; laisse vide ce que tu ne connais pas.
+**Ne t'inquiète pas si tu ne sais pas faire les questions 15 à 20** : c'est normal, c'est justement ce que ce guide va t'apprendre.
+Refais ce même test le jour J55 : tu verras le chemin parcouru.
+:::
+
+@serie D1 | Les bases (questions 1 à 8)
+
+@exo 1
+Calcule $-7 + 3$.
+@sol
+$-4$ (chapitre 0.4).
+@end
+
+@exo 1
+Calcule $(-4) \times (-5)$.
+@sol
+$20$ (moins par moins donne plus, chapitre 0.5).
+@end
+
+@exo 1
+Calcule $2 + 3 \times 5$.
+@sol
+$17$ : la multiplication d'abord (chapitre 0.6).
+@end
+
+@exo 1
+Calcule $-2^2$.
+@sol
+$-4$ : la puissance ne porte que sur le 2 (chapitre 0.6).
+@end
+
+@exo 1
+Calcule $\frac{3}{4} + \frac{1}{2}$.
+@sol
+$\frac{3}{4} + \frac{2}{4} = \frac{5}{4}$ (chapitre 1.1).
+@end
+
+@exo 1
+Calcule $\frac{2}{3} \times \frac{9}{4}$.
+@sol
+$\frac{18}{12} = \frac{3}{2}$ (chapitre 1.1).
+@end
+
+@exo 1
+Écris $2^3 \times 2^2$ sous la forme $2^n$.
+@sol
+$2^5$ (chapitre 1.2).
+@end
+
+@exo 1
+Calcule $\sqrt{49}$ et simplifie $\sqrt{50}$.
+@sol
+$7$ ; $\sqrt{25 \times 2} = 5\sqrt{2}$ (chapitre 1.3).
+@end
+
+@serie D2 | L'algèbre (questions 9 à 14)
+
+@exo 2
+Développe $3(x - 4)$.
+@sol
+$3x - 12$ (chapitre 1.4).
+@end
+
+@exo 2
+Développe $(x + 2)(x - 5)$.
+@sol
+$x^2 - 5x + 2x - 10 = x^2 - 3x - 10$ (chapitre 1.4).
+@check same((x+2)*(x-5), x**2-3*x-10)
+@end
+
+@exo 2
+Factorise $x^2 - 9$.
+@sol
+$(x - 3)(x + 3)$ (chapitre 1.5).
+@end
+
+@exo 2
+Résous $2x + 5 = 11$.
+@sol
+$2x = 6$ → $x = 3$ (chapitre 2.2).
+@end
+
+@exo 2
+Résous $x^2 = 16$.
+@sol
+$x = 4$ ou $x = -4$ (chapitre 2.5).
+@end
+
+@exo 3
+Résous $x^2 - 5x + 6 = 0$.
+@sol
+$x = 2$ ou $x = 3$ (chapitre 2.5).
+@check sols(x**2-5*x+6, [2, 3])
+@end
+
+@serie D3 | La suite du programme (questions 15 à 20)
+
+@exo 2
+Que vaut $\cos 60°$ ?
+@sol
+$\frac{1}{2}$ (chapitre 3).
+@end
+
+@exo 2
+Que vaut $\ln(e^3)$ ?
+@sol
+$3$ (chapitre 4).
+@end
+
+@exo 2
+Quelle est la dérivée de $x^3$ ?
+@sol
+$3x^2$ (chapitre 5).
+@end
+
+@exo 2
+Donne une primitive de $2x$.
+@sol
+$x^2$ (chapitre 6).
+@end
+
+@exo 2
+Quelle est la norme du vecteur $\vec u\,(3\,;\,4)$ ?
+@sol
+$\sqrt{9 + 16} = 5$ (chapitre 7).
+@end
+
+@exo 2
+Que vaut $i^2$ ?
+@sol
+$-1$ (chapitre 8).
+@end
+
+@corriges Corrigé du test de diagnostic
+
+:::coeur Comment lire ton résultat
+**Questions 1 à 8 (les bases) :** si tu as moins de 6 bonnes réponses, suis le planning **exactement**, sans rien sauter : les semaines 1 et 2 sont faites pour toi.
+Si tu as tout juste, tu peux aller plus vite dans le chapitre 0 (fais seulement les exercices ★★★ et ★★★★ et le bilan), mais **ne le saute pas**.
+**Questions 9 à 14 (l'algèbre) :** c'est le cœur du programme. Chaque erreur ici se paiera plus tard : prends le temps nécessaire aux chapitres 1 et 2.
+**Questions 15 à 20 :** c'est ce que tu vas découvrir. Au jour J55, tu devras avoir 20/20 à ce test.
+:::
