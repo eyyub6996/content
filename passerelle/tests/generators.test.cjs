@@ -20,13 +20,15 @@ let bad = 0; const ids = new Set();
 for (const S of SKILLS) { const t0 = Date.now(); if (process.env.V) console.log("…", S.id);
   if (ids.has(S.id)) { console.log("DOUBLON", S.id); bad++; } ids.add(S.id);
   let errs = [];
+  const tagLt = s => [...String(s).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m => m[1] || m[2]).find(t => /<[A-Za-z\/!?]/.test(t));
+  if (tagLt(S.learn)) errs.push("lezione: « < » letto come tag HTML: " + tagLt(S.learn).slice(0, 80));
   for (let i = 1; i <= N; i++) {
     let Q;
     try { Q = EASYMODE ? (seededEasy(i * 7919 + 13, () => S.gen()) || seeded(i * 7919 + 13, () => S.gen())) : seeded(i * 7919 + 13, () => S.gen()); } catch (e) { errs.push("seed " + i + " EXC " + e.message + " " + (e.stack || "").split("\n")[1]); continue; }
     if (!Q || !Q.q || !Q.type) { errs.push("seed " + i + " objet incomplet"); continue; }
     if (!Q.sol || !Q.sol.length) errs.push("seed " + i + " pas de solution");
     if (Q.atex === undefined) errs.push("seed " + i + " pas d'atex");
-    for (const s of [Q.q, Q.atex, ...(Q.sol || []), ...(Q.opts || [])]) { if (!balanced(s)) errs.push("seed " + i + " accolades: " + String(s).slice(0, 160)); if (!delims(s)) errs.push("seed " + i + " délimiteurs: " + String(s).slice(0, 160)); if (/undefined|NaN|\[object/.test(String(s))) errs.push("seed " + i + " texte suspect: " + String(s).slice(0, 200)); const fr = S.ch === 10 ? null : String(s).replace(/\\\(.*?\\\)/g, "").match(/\b(Calcule|Donne|Résous|Écris|Développe|Factorise|Simplifie|donc|avec|alors|racine|solution\b|On |Il faut|équation|dérivée|réponse|Vrai|Faux|Que |est la|sont|Réponse)\b/); if (fr) errs.push("seed " + i + " FRANÇAIS « " + fr[0] + " » : " + String(s).replace(/<[^>]+>/g, "").slice(0, 140)); }
+    for (const s of [Q.q, Q.atex, ...(Q.sol || []), ...(Q.opts || [])]) { if (!balanced(s)) errs.push("seed " + i + " accolades: " + String(s).slice(0, 160)); if (!delims(s)) errs.push("seed " + i + " délimiteurs: " + String(s).slice(0, 160)); if (tagLt(s)) errs.push("seed " + i + " « < » letto come tag HTML: " + tagLt(s).slice(0, 80)); if (/undefined|NaN|\[object/.test(String(s))) errs.push("seed " + i + " texte suspect: " + String(s).slice(0, 200)); const fr = S.ch === 10 ? null : String(s).replace(/\\\(.*?\\\)/g, "").match(/\b(Calcule|Donne|Résous|Écris|Développe|Factorise|Simplifie|donc|avec|alors|racine|solution\b|On |Il faut|équation|dérivée|réponse|Vrai|Faux|Que |est la|sont|Réponse)\b/); if (fr) errs.push("seed " + i + " FRANÇAIS « " + fr[0] + " » : " + String(s).replace(/<[^>]+>/g, "").slice(0, 140)); }
     if (Q.type === "choice") { if (!(Q.a >= 0 && Q.a < Q.opts.length)) errs.push("seed " + i + " choix hors limites"); if (new Set(Q.opts).size !== Q.opts.length) errs.push("seed " + i + " options en double: " + Q.opts.join(" | ")); continue; }
     const inp = userInput(Q);
     const r = checkAnswer(Q, inp);

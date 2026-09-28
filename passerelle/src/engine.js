@@ -102,8 +102,9 @@ function linT(a, b, v = "x") { return polyT([a, b], v); }
 function linIn(a, b, v = "x") { return polyIn([a, b], v); }
 function pr(t) { return "\\left(" + t + "\\right)"; }
 function frac(a, b) { return "\\frac{" + a + "}{" + b + "}"; }
-function M(t) { return "\\(" + t + "\\)"; }            // maths en ligne
-function D(t) { return '<div class="m">\\[' + t + "\\]</div>"; } // maths centrées
+const safeLt = t => String(t).replace(/<(?=[A-Za-z\/!?])/g, "< "); // « <x » dentro l'HTML sarebbe letto come un tag
+function M(t) { return "\\(" + safeLt(t) + "\\)"; }            // maths en ligne
+function D(t) { return '<div class="m">\\[' + safeLt(t) + "\\]</div>"; } // maths centrées
 function sqrtT(k, m) { // k√m simplifié en TeX
   if (m === 1) return tx(k);
   const kk = Qv(k); if (kk.eq(1)) return "\\sqrt{" + m + "}"; if (kk.eq(-1)) return "-\\sqrt{" + m + "}";

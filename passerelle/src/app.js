@@ -292,7 +292,7 @@ function renderPreview(Qn, raw, pv) {
   mjx(t).then(node => { if (tok !== pvToken) return; pv.innerHTML = ""; pv.appendChild(node); }).catch(() => { pv.textContent = raw; });
 }
 function solHTML(Qn) { return '<ol class="sol">' + Qn.sol.map(s => "<li>" + s + "</li>").join("") + "</ol>"; }
-function answerLine(Qn) { return Qn.type === "choice" ? "<p><b>Risposta giusta:</b> " + "ABCD"[Qn.a] + ". " + Qn.opts[Qn.a] + "</p>" : "<p><b>Risposta giusta:</b> \\(" + Qn.atex + "\\)</p>"; }
+function answerLine(Qn) { return Qn.type === "choice" ? "<p><b>Risposta giusta:</b> " + "ABCD"[Qn.a] + ". " + Qn.opts[Qn.a] + "</p>" : "<p><b>Risposta giusta:</b> \\(" + safeLt(Qn.atex) + "\\)</p>"; }
 function feedbackHTML(Qn, res, o) {
   if (res.s === "ok") return '<div class="fbx good"><b class="fbt">' + IC.check + " Giusto!</b>" + answerLine(Qn) + "<details><summary>Vedi la correzione</summary>" + solHTML(Qn) + "</details></div>";
   const t = res.giveup ? "Ecco la soluzione" : res.form ? "Quasi: il valore è giusto, ma va scritto in un'altra forma" : "Non è giusto";
