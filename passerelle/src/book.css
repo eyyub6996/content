@@ -91,3 +91,4 @@ ol.exlist > li > .exn { position: absolute; left: 0; top: 0; }
 .exam .exlist > li { margin-bottom: 9px; }
 .exlist.fr > li { margin-bottom: 6px; }
 .lhead, .tbig, .exh, .solh, .tl.big, .c-logo, .c-title { font-variant-numeric: lining-nums; }
+.lesson .lhead h3 { font: inherit; margin: 0; line-height: 1.25; }

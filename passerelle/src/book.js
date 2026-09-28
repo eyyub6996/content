@@ -45,7 +45,7 @@
   let H = `<section class="cover">
     <div class="c-logo">Π</div>
     <div class="c-kicker">Passerelle · Matematica</div>
-    <h1 class="c-title">Il percorso completo,<br>da zero</h1>
+    <h1 class="c-title">Il percorso completo, <br>da zero</h1>
     <p class="c-sub">Tutto in italiano · 11 tappe · ${SKILLS.length} lezioni<br>Esempi svolti passo passo · ${SKILLS.length * 4} esercizi con soluzioni<br>Piano di studio di 8 settimane · 2 esami di prova · esame in francese</p>
     <div class="c-fill"><div>Nome: <span class="line"></span></div><div>Data dell'esame: <span class="line"></span></div><div>Inizio del percorso: <span class="line"></span></div></div>
   </section>`;
@@ -124,7 +124,7 @@
       <div class="box method"><div class="bt">Come lavorare</div><ol><li>Leggi la lezione con calma.</li><li>Copri l'esempio svolto e prova a farlo da solo; poi controlla passo per passo.</li><li>Fai i 4 esercizi sul quaderno. Le soluzioni sono a pagina ${pg("S" + c.n)}.</li><li>4 giusti → lezione imparata, fai una croce nell'indice. Se ne sbagli uno, rileggi la correzione e rifallo il giorno dopo.</li></ol></div></section>`;
     c.skills.forEach((k, i) => {
       const e = EX[k.id], cd = code(k);
-      H += `<article class="lesson" id="L${cd}"><div class="lhead"><span>Lezione ${cd} · ${k.title}</span><span class="lcheck">☐ imparata</span></div>
+      H += `<article class="lesson" id="L${cd}"><div class="lhead"><h3>Lezione ${cd} · ${k.title}</h3><span class="lcheck">☐ imparata</span></div>
         ${cleanLearn(k.learn)}
         <div class="box example"><div class="bt">Esempio svolto</div><div class="exq">${qHTML(e.ex)}</div>${steps(e.ex)}<p class="exans">${ansHTML(e.ex)}</p></div>
         <div class="exs"><div class="exh">Esercizi <span>soluzioni a pagina ${pg("S" + c.n)}</span></div>
@@ -153,7 +153,7 @@
   const g9 = GUIDE.chapters.find(c => c.blocks.some(b => b.t === "qcm"));
   if (g9) {
     const qs = g9.blocks.find(b => b.t === "qcm").items, ss = g9.blocks.find(b => b.t === "qcmsol").items;
-    const tapp = s => s.replace(/\[chap\. (\d+)\]/g, (m, n) => "[Tappa " + (+n + 1) + "]");
+    const tapp = s => s.replace(/\[chap\. ([^\]]*)\]/g, (m, inner) => "[Tappa " + inner.replace(/\d+/g, d => +d + 1).replace(/ et /g, " e ") + "]");
     H += `<section class="page exam" id="FR"><h2>Esame in francese dal corso originale</h2>
       <div class="box example"><div class="bt">Regole</div><p><b>30 domande a scelta multipla · 90 minuti</b> (circa 3 minuti per domanda). È scritto in francese, come l'esame vero: usa quello che hai imparato nella Tappa 10. Per ogni domanda c'è una sola risposta giusta. <b>26 su 30 o più</b> = pronto.</p></div>
       <ol class="exlist fr" lang="fr">${qs.map((q0, j) => `<li><span class="exn">${j + 1}.</span><div class="exq">${q0.q}<ol class="choices" type="A">${q0.o.map(o => "<li>" + o + "</li>").join("")}</ol></div></li>`).join("")}</ol></section>`;
