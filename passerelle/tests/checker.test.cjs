@@ -3,7 +3,7 @@ const ctx={};vm.createContext(ctx);vm.runInContext(fs.readFileSync(require("path
 const {checkAnswer,previewTex}=ctx.__T;
 const cases=[
  // [question, input, expected status]
- [{type:"num",ans:"3/2",form:["rat"]},"6/4","ko"],[{type:"num",ans:"3/2",form:["rat"]},"1,5","ok"],[{type:"num",ans:"3/2",form:["rat"]},"3/2","ok"],[{type:"num",ans:"3/2",form:["irr"]},"1.5","ko"],
+ [{type:"num",ans:"3/2",form:["rat"]},"6/4","ko"],[{type:"set",ans:[]},"vuoto","ok"],[{type:"set",ans:[]},"nessuna soluzione","ok"],[{type:"set",ans:["2"]},"vuoto","ko"],[{type:"num",ans:"3/4",form:["dec"]},"0,75","ok"],[{type:"num",ans:"3/4",form:["dec"]},"3/4","ko"],[{type:"num",ans:"3/2",form:["rat"]},"1,5","ok"],[{type:"num",ans:"3/2",form:["rat"]},"3/2","ok"],[{type:"num",ans:"3/2",form:["irr"]},"1.5","ko"],
  [{type:"num",ans:"-3/4",form:["irr"]},"-3/4","ok"],[{type:"num",ans:"-3/4",form:["irr"]},"3/-4","ko"],[{type:"num",ans:"7",form:["rat"]},"x = 7","ok"],
  [{type:"expr",ans:"x^2+2x+1",form:["expanded"]},"(x+1)^2","ko"],[{type:"expr",ans:"x^2+2x+1",form:["expanded"]},"x²+2x+1","ok"],[{type:"expr",ans:"x^2+2x+1",form:["expanded"]},"2x+1+x^2","ok"],[{type:"expr",ans:"x^2+2x+1",form:["expanded"]},"x^2+x+x+1","ko"],
  [{type:"expr",ans:"(x-3)(x+3)",form:["factored"]},"(x+3)(x-3)","ok"],[{type:"expr",ans:"(x-3)(x+3)",form:["factored"]},"x^2-9","ko"],[{type:"expr",ans:"(x-3)(x+3)",form:["factored"]},"-(3-x)(x+3)","ok"],

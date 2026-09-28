@@ -14,13 +14,13 @@ const dStart = src.indexOf("const GUIDE = "), iStart = src.indexOf("const IMGS =
 if (dStart < 0 || iStart < 0) throw new Error("données du cours introuvables");
 const data = src.slice(dStart, src.indexOf("\n", iStart));
 const css = fs.readFileSync(here("src/style.css"), "utf8");
-const js = ["engine.js", "skills_a.js", "skills_b.js", "skills_c.js", "skills_d.js", "app.js"].map(f => fs.readFileSync(here("src/" + f), "utf8")).join("\n");
-const title = "<title>Passerelle Maths</title>";
+const js = ["engine.js", "skills_0.js", "skills_a.js", "skills_b.js", "skills_c.js", "skills_d.js", "skills_e.js", "skills_v.js", "app.js"].map(f => fs.readFileSync(here("src/" + f), "utf8")).join("\n");
+const title = "<title>Passerelle Matematica</title>";
 const fonts = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">';
 const mjConf = '<script>window.MathJax={tex:{inlineMath:[["\\\\(","\\\\)"]],displayMath:[["\\\\[","\\\\]"]]},svg:{fontCache:"global"},options:{enableMenu:false},startup:{typeset:false}};</script>';
-const shell = '<div class="wrap"><div class="bar" id="bar"></div><main id="app"><p style="padding:40px 0;text-align:center;color:#56627A">Chargement du parcours…</p></main></div>';
+const shell = '<div class="wrap"><div class="bar" id="bar"></div><main id="app"><p style="padding:40px 0;text-align:center;color:#56627A">Caricamento del percorso…</p></main></div>';
 const appScript = "<script>\n" + data + "\n</script>\n<script>\n" + js + "\n</script>";
-const full = "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n" + title + "\n" + fonts + "\n<style>\n" + css + "\n</style>\n" + mjConf + "\n" + mathjax + "\n</head>\n<body>\n" + shell + "\n" + appScript + "\n</body>\n</html>\n";
+const full = "<!DOCTYPE html>\n<html lang=\"it\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n" + title + "\n" + fonts + "\n<style>\n" + css + "\n</style>\n" + mjConf + "\n" + mathjax + "\n</head>\n<body>\n" + shell + "\n" + appScript + "\n</body>\n</html>\n";
 const art = title + "\n" + fonts + "\n<style>\n" + css + "\n</style>\n" + mjConf + "\n" + mathjax + "\n" + shell + "\n" + appScript + "\n";
 fs.writeFileSync(here("passerelle_maths.html"), full);
 fs.mkdirSync(here("dist"), { recursive: true });

@@ -15,7 +15,13 @@ function mulberry32(a) {
 let rnd = Math.random;
 function seeded(seed, fn) { const old = rnd; rnd = mulberry32(seed); try { return fn(); } finally { rnd = old; } }
 function newSeed() { return Math.floor(Math.random() * 2147483647) + 1; }
-const ri = (a, b) => a + Math.floor(rnd() * (b - a + 1));
+/* modalità « facile » : numeri più piccoli per i primi esercizi di una lezione */
+let EASY = false, RCOUNT = 0;
+const ri = (a, b) => {
+  if (EASY) { if (++RCOUNT > 4000) throw new Error("EASY_LOOP"); const lo = Math.max(a, -5), hi = Math.min(b, 6); if (hi > lo) { a = lo; b = hi; } }
+  return a + Math.floor(rnd() * (b - a + 1));
+};
+function seededEasy(seed, fn) { EASY = true; RCOUNT = 0; try { return seeded(seed, fn); } catch (e) { return null; } finally { EASY = false; } }
 const rnz = (a, b) => { let v; do v = ri(a, b); while (v === 0); return v; };
 const pick = a => a[Math.floor(rnd() * a.length)];
 const shuf = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -149,17 +155,17 @@ function tokenize(s) {
     }
     if (c === "√") { toks.push({ k: "fn", v: "sqrt", sq: 1 }); i++; continue; }
     if ("+-*/^()".includes(c)) { toks.push({ k: c }); i++; continue; }
-    if (c === ",") throw new PErr("Virgule inattendue : sépare les valeurs par un point-virgule « ; ».");
-    throw new PErr("Caractère non reconnu : « " + c + " »");
+    if (c === ",") throw new PErr("Virgola inattesa: separa i valori con il punto e virgola « ; ».");
+    throw new PErr("Simbolo non riconosciuto: « " + c + " »");
   }
   return toks;
 }
 function parse(str) {
   const t = tokenize(str); let p = 0;
-  if (!t.length) throw new PErr("Réponse vide");
+  if (!t.length) throw new PErr("Risposta vuota");
   const peek = () => t[p], next = () => t[p++];
   const startsAtom = k => k && (k.k === "num" || k.k === "id" || k.k === "fn" || k.k === "(");
-  function closeP() { if (!peek() || peek().k !== ")") throw new PErr("Il manque une parenthèse fermante « ) »."); next(); }
+  function closeP() { if (!peek() || peek().k !== ")") throw new PErr("Manca una parentesi chiusa « ) »."); next(); }
   function expr() { let a = term(); while (peek() && (peek().k === "+" || peek().k === "-")) { const o = next().k; const b = term(); a = { t: o === "+" ? "add" : "sub", a, b }; } return a; }
   function term() {
     let a = unary();
@@ -180,7 +186,7 @@ function parse(str) {
   function exponent(base) {
     let neg = false;
     while (peek() && (peek().k === "-" || peek().k === "+")) { if (next().k === "-") neg = !neg; }
-    if (!peek()) throw new PErr("Exposant manquant après « ^ ».");
+    if (!peek()) throw new PErr("Manca l'esponente dopo « ^ ».");
     const paren = peek().k === "(";
     let e = power();
     if (base.t === "const" && base.n === "e" && !paren) {
@@ -190,7 +196,7 @@ function parse(str) {
   }
   function atom() {
     const k = next();
-    if (!k) throw new PErr("Expression incomplète.");
+    if (!k) throw new PErr("Scrittura incompleta.");
     if (k.k === "num") return { t: "num", v: k.v, s: k.s };
     if (k.k === "id") {
       if (k.v === "pi") return { t: "const", n: "pi" };
@@ -203,9 +209,9 @@ function parse(str) {
     if (k.k === "fn") {
       let arg;
       if (peek() && peek().k === "(") { next(); arg = expr(); closeP(); }
-      else if (k.v === "sqrt") { if (!peek()) throw new PErr("Que faut-il mettre sous la racine ?"); arg = power(); }
+      else if (k.v === "sqrt") { if (!peek()) throw new PErr("Cosa va sotto la radice?"); arg = power(); }
       else {
-        if (!peek()) throw new PErr("Il manque ce qui suit « " + k.v + " ».");
+        if (!peek()) throw new PErr("Manca quello che viene dopo « " + k.v + " ».");
         let neg = false; if (peek().k === "-") { next(); neg = true; }
         arg = power();
         while (peek() && (peek().k === "num" || peek().k === "id")) arg = { t: "mul", a: arg, b: power(), imp: 1 };
@@ -213,11 +219,11 @@ function parse(str) {
       }
       return { t: "fn", n: k.v, a: arg };
     }
-    if (k.k === ")") throw new PErr("Parenthèse fermante « ) » en trop.");
-    throw new PErr("Symbole « " + k.k + " » mal placé.");
+    if (k.k === ")") throw new PErr("C'è una parentesi chiusa « ) » di troppo.");
+    throw new PErr("Il simbolo « " + k.k + " » è nel posto sbagliato.");
   }
   const r = expr();
-  if (p < t.length) { const k = t[p]; throw new PErr(k.k === ")" ? "Parenthèse fermante « ) » en trop." : "Je ne comprends pas la fin de ta réponse (après « " + (t[p - 1] ? (t[p - 1].s || t[p - 1].v || t[p - 1].k) : "") + " »)."); }
+  if (p < t.length) { const k = t[p]; throw new PErr(k.k === ")" ? "C'è una parentesi chiusa « ) » di troppo." : "Non capisco la fine della tua risposta (dopo « " + (t[p - 1] ? (t[p - 1].s || t[p - 1].v || t[p - 1].k) : "") + " »)."); }
   return r;
 }
 
@@ -248,7 +254,7 @@ function ev(n, env) {
   switch (n.t) {
     case "num": return [n.v, 0];
     case "const": return n.n === "pi" ? [Math.PI, 0] : n.n === "e" ? [Math.E, 0] : n.n === "i" ? [0, 1] : [Infinity, 0];
-    case "var": if (!env || !(n.n in env)) throw new PErr("La lettre « " + n.n + " » n'est pas attendue ici."); return env[n.n];
+    case "var": if (!env || !(n.n in env)) throw new PErr("Qui non serve la lettera « " + n.n + " »."); return env[n.n];
     case "par": return ev(n.a, env);
     case "neg": { const a = ev(n.a, env); return [-a[0], -a[1]]; }
     case "add": return C.add(ev(n.a, env), ev(n.b, env));
@@ -270,7 +276,7 @@ function ev(n, env) {
       }
     }
   }
-  throw new PErr("Expression non reconnue.");
+  throw new PErr("Scrittura non riconosciuta.");
 }
 const finite = z => isFinite(z[0]) && isFinite(z[1]);
 function close(a, b, tol = 1e-8) { const d = Math.hypot(a[0] - b[0], a[1] - b[1]); const s = Math.max(1, Math.hypot(a[0], a[1]), Math.hypot(b[0], b[1])); return d <= tol * s; }
@@ -450,17 +456,17 @@ function allowedNodes(n, allow) {
   let bad = null;
   hasNode(n, x => {
     if (x.t === "fn") {
-      if (x.n === "sqrt" && !A.has("sqrt")) bad = "Donne un nombre sans racine carrée : calcule-la.";
-      else if (["sin", "cos", "tan"].includes(x.n) && !A.has("trig")) bad = "Calcule la valeur exacte : pas de cos, sin ou tan dans la réponse.";
-      else if ((x.n === "ln" || x.n === "log") && !A.has("ln")) bad = "La réponse ne doit pas contenir ln : calcule la valeur.";
-      else if (x.n === "exp" && !A.has("e")) bad = "La réponse ne doit pas contenir d'exponentielle.";
-      else if (x.n === "abs") bad = "Pas de valeur absolue dans la réponse.";
+      if (x.n === "sqrt" && !A.has("sqrt")) bad = "Scrivi un numero senza radice quadrata: calcolala.";
+      else if (["sin", "cos", "tan"].includes(x.n) && !A.has("trig")) bad = "Calcola il valore esatto: niente cos, sin o tan nella risposta.";
+      else if ((x.n === "ln" || x.n === "log") && !A.has("ln")) bad = "La risposta non deve contenere ln: calcola il valore.";
+      else if (x.n === "exp" && !A.has("e")) bad = "La risposta non deve contenere esponenziali.";
+      else if (x.n === "abs") bad = "Niente valore assoluto nella risposta.";
     }
     if (x.t === "const") {
-      if (x.n === "pi" && !A.has("pi")) bad = "La réponse ne devrait pas contenir π.";
-      if (x.n === "e" && !A.has("e")) bad = "La réponse ne devrait pas contenir e.";
-      if (x.n === "i" && !A.has("i")) bad = "La réponse est un nombre réel : pas de i.";
-      if (x.n === "inf") bad = "∞ n'est pas un nombre ici.";
+      if (x.n === "pi" && !A.has("pi")) bad = "La risposta non dovrebbe contenere π.";
+      if (x.n === "e" && !A.has("e")) bad = "La risposta non dovrebbe contenere e.";
+      if (x.n === "i" && !A.has("i")) bad = "La risposta è un numero reale: niente i.";
+      if (x.n === "inf") bad = "Qui ∞ non è un numero.";
     }
     return false;
   });
@@ -469,21 +475,21 @@ function allowedNodes(n, allow) {
 
 /* ---------- vérification ---------- */
 const FORM_MSG = {
-  rat: "Simplifie : donne un entier, une fraction irréductible (ou un décimal exact).",
-  irr: "Donne une fraction irréductible (ou un entier).",
-  expanded: "Ce n'est pas « développé et réduit » : il reste des parenthèses ou des termes à regrouper.",
-  factored: "Ce n'est pas factorisé : écris un produit de facteurs du premier degré.",
-  factored2: "Ce n'est pas factorisé : écris un produit de facteurs.",
-  oneFrac: "Écris le résultat sous la forme d'une seule fraction.",
-  sqrt: "Simplifie la racine : il reste un carré parfait sous le radical (√72 = 6√2).",
-  noSqrtDen: "Il reste une racine au dénominateur : multiplie par la quantité conjuguée.",
-  algebraic: "Donne la forme algébrique a + bi (i ne doit plus être au dénominateur, et tout doit être développé).",
-  expform: "Donne la forme exponentielle r·e^(iθ) avec r > 0.",
-  singleExp: "Écris le résultat sous la forme d'une seule exponentielle e^(…).",
-  pi: "Simplifie la fraction de π (par exemple 5π/6, pas 150π/180).",
-  mono: "Écris le résultat comme un seul terme : un nombre fois une puissance de x.",
-  sci: "Écris en notation scientifique : a × 10^n avec 1 ≤ a < 10.",
-  trigx: "Réponds avec cos(x) ou sin(x), éventuellement précédé d'un signe −.",
+  rat: "Semplifica: scrivi un numero intero, una frazione ridotta ai minimi termini (o un decimale esatto).",
+  irr: "Riduci la frazione ai minimi termini (dividi sopra e sotto finché puoi).",
+  expanded: "Non è ancora sviluppato: restano parentesi, oppure termini simili da sommare.",
+  factored: "Non è scomposto: scrivi un prodotto di parentesi, per esempio (x−3)(x+3).",
+  factored2: "Non è scomposto: scrivi un prodotto di fattori.",
+  oneFrac: "Scrivi il risultato come una sola frazione.",
+  sqrt: "Semplifica la radice: sotto c'è ancora un quadrato perfetto (√72 = 6√2).",
+  noSqrtDen: "C'è ancora una radice al denominatore: moltiplica sopra e sotto per il coniugato.",
+  algebraic: "Scrivi nella forma a + bi (niente i al denominatore, tutto sviluppato).",
+  expform: "Scrivi nella forma esponenziale r·e^(iθ) con r > 0.",
+  singleExp: "Scrivi il risultato come un solo esponenziale e^(…).",
+  pi: "Semplifica la frazione di π (per esempio 5π/6, non 150π/180).",
+  mono: "Scrivi il risultato come un solo termine: un numero per una potenza di x.",
+  sci: "Scrivi in notazione scientifica: a × 10^n con 1 ≤ a < 10.",
+  trigx: "Rispondi con cos(x) o sin(x), eventualmente con un segno − davanti.",
 };
 function checkForm(ast, forms, val, v) {
   for (const f of forms || []) {
@@ -510,13 +516,15 @@ function checkForm(ast, forms, val, v) {
       ok = !!p && Math.abs(mant[0]) >= 1 - 1e-12 && Math.abs(mant[0]) < 10;
       if (n.t === "num") ok = ok && Math.abs(n.v) < 10 && Math.abs(n.v) >= 1;
     }
+    else if (f === "dec") { let n = strip(ast); if (n.t === "neg") n = strip(n.a); ok = n.t === "num"; }
     else if (f === "trigx") { let n = strip(ast); if (n.t === "neg") n = strip(n.a); ok = n.t === "fn" && (n.n === "cos" || n.n === "sin") && strip(n.a).t === "var"; }
     else if (f.startsWith("lnarg:")) { const a = +f.slice(6); ok = !hasNode(ast, x => x.t === "fn" && (x.n !== "ln" || numLit(x.a) !== a)); }
-    if (!ok) return FORM_MSG[f.startsWith("lnarg:") ? "lnarg" : f] || "Présente ta réponse sous la forme demandée (simplifiée).";
+    if (!ok) return FORM_MSG[f.startsWith("lnarg:") ? "lnarg" : f] || "Scrivi la risposta nella forma richiesta (semplificata).";
   }
   return null;
 }
-FORM_MSG.lnarg = "Exprime le résultat avec un seul logarithme, celui demandé (par exemple 3 ln 2).";
+FORM_MSG.dec = "Scrivi il risultato come numero decimale (con la virgola), per esempio 0,75.";
+FORM_MSG.lnarg = "Scrivi il risultato con un solo logaritmo, quello richiesto (per esempio 3 ln 2).";
 
 function sampleEnv(vars, dom) {
   const env = {};
@@ -551,13 +559,14 @@ function unwrap(s) { // enlève une paire de { } ( ) [ ] qui entoure TOUTE la li
   return s.slice(1, -1).trim();
 }
 /* découpe d'une liste de valeurs : 2 ; -3   ou   x = 2 ou x = -3 */
-const EMPTY_RE = /^\s*(s\s*=\s*)?(∅|ø|\{\s*\}|vide|aucune?( solution)?|pas de solution|rien|impossible|0 solution)\s*$/i;
+const EMPTY_RE = /^\s*(s\s*=\s*)?(∅|ø|\{\s*\}|vuoto|insieme vuoto|nessuna( soluzione)?|nessuno|impossibile|niente|0 soluzioni|vide|aucune?( solution)?|pas de solution|rien|impossible)\s*$/i;
 function splitList(s) {
   s = String(s).trim().replace(/^[sS]\s*=\s*/, "").trim();
   if (EMPTY_RE.test(s)) return [];
   s = unwrap(s);
   let parts;
-  if (/;|\bou\b|\bet\b/i.test(s)) parts = s.split(/;|\bou\b|\bet\b/i);
+  const SEP = /;|\bou\b|\bet\b|\s+oppure\s+|\s+o\s+|\s+e\s+(?=[a-z]\w*\s*=)/i;
+  if (SEP.test(s)) parts = s.split(new RegExp(SEP.source, "gi"));
   else {
     parts = []; let cur = "";
     for (let i = 0; i < s.length; i++) {
@@ -573,36 +582,36 @@ function splitList(s) {
 const INF_RE = /^\s*(\+|-|−)?\s*(inf|infini|∞)\s*$/i;
 function parseBound(s) {
   const m = INF_RE.exec(s); if (m) return (m[1] === "-" || m[1] === "−") ? -Infinity : Infinity;
-  const v = constVal(parse(s)); if (!finite(v) || Math.abs(v[1]) > 1e-12) throw new PErr("Borne non reconnue : « " + s.trim() + " »");
+  const v = constVal(parse(s)); if (!finite(v) || Math.abs(v[1]) > 1e-12) throw new PErr("Estremo non riconosciuto: « " + s.trim() + " »");
   return v[0];
 }
 function parseIntervals(s) {
   s = String(s).trim().replace(/−/g, "-").replace(/\s+/g, " ");
   if (EMPTY_RE.test(s)) return [];
-  const pieces = s.split(/∪| U | u |\bU\b|\bou\b/).map(x => x.trim()).filter(Boolean);
+  const pieces = s.split(/∪| U | u |\bU\b|\bou\b| o | oppure /).map(x => x.trim()).filter(Boolean);
   let out = [];
   for (let pc of pieces) {
     pc = pc.replace(/^x\s*∈\s*/i, "").trim();
     let m;
     if (/^(ℝ|R|IR)$/i.test(pc)) { out.push({ lo: -Infinity, hi: Infinity, lc: false, rc: false }); continue; }
-    if ((m = /^(?:ℝ|R|IR)\s*(?:\\|-|−|privé de)\s*\{(.+)\}$/i.exec(pc))) {
+    if ((m = /^(?:ℝ|R|IR)\s*(?:\\|-|−|privé de|meno)\s*\{(.+)\}$/i.exec(pc))) {
       const pts = splitList(m[1]).map(parseBound).sort((a, b) => a - b); let lo = -Infinity;
       pts.forEach(p => { out.push({ lo, hi: p, lc: false, rc: false }); lo = p; }); out.push({ lo, hi: Infinity, lc: false, rc: false }); continue;
     }
     if ((m = /^\{(.+)\}$/.exec(pc))) { splitList(m[1]).map(parseBound).forEach(p => out.push({ lo: p, hi: p, lc: true, rc: true })); continue; }
     const L = pc[0], R = pc[pc.length - 1];
-    if (!"[]".includes(L) || !"[]".includes(R)) throw new PErr("Écris un intervalle avec des crochets, par exemple ]-2 ; 5].");
+    if (!"[]".includes(L) || !"[]".includes(R)) throw new PErr("Scrivi un intervallo con le parentesi quadre, per esempio ]-2 ; 5].");
     const mid = pc.slice(1, -1);
     let bits = mid.split(";");
     if (bits.length !== 2) {
       const cm = []; for (let i = 0; i < mid.length; i++) if (mid[i] === "," && !(/\d/.test(mid[i - 1] || "") && /\d/.test(mid[i + 1] || ""))) cm.push(i);
       if (cm.length === 1) bits = [mid.slice(0, cm[0]), mid.slice(cm[0] + 1)];
-      else throw new PErr("Sépare les deux bornes par « ; », par exemple [1 ; 4[.");
+      else throw new PErr("Separa i due estremi con « ; », per esempio [1 ; 4[.");
     }
     const lo = parseBound(bits[0]), hi = parseBound(bits[1]);
     const lc = L === "[", rc = R === "]";
-    if ((lo === -Infinity && lc) || (hi === Infinity && rc)) throw new PErr("Du côté de l'infini, le crochet est toujours ouvert : ]-∞ … ou … +∞[.");
-    if (lo > hi) throw new PErr("La petite borne s'écrit à gauche.");
+    if ((lo === -Infinity && lc) || (hi === Infinity && rc)) throw new PErr("Dalla parte dell'infinito la parentesi è sempre aperta: ]-∞ … oppure … +∞[.");
+    if (lo > hi) throw new PErr("Il numero più piccolo va a sinistra.");
     out.push({ lo, hi, lc, rc });
   }
   out.sort((a, b) => a.lo - b.lo || (b.lc - a.lc));
@@ -635,8 +644,8 @@ function fmtNum(x) { const r = Math.round(x * 1e6) / 1e6; return String(r).repla
 /* limites */
 function parseLim(s) {
   s = String(s).trim();
-  if (/^(\+\s*)?(inf|infini|∞|\+∞)$/i.test(s)) return Infinity;
-  if (/^(-|−)\s*(inf|infini|∞)$/i.test(s)) return -Infinity;
+  if (/^(\+\s*)?(inf|infini|infinito|∞|\+∞)$/i.test(s)) return Infinity;
+  if (/^(-|−)\s*(inf|infini|infinito|∞)$/i.test(s)) return -Infinity;
   return null;
 }
 
@@ -645,7 +654,7 @@ function checkAnswer(Qn, input) {
   try {
     if (Qn.type === "choice") return input === Qn.a ? { s: "ok" } : { s: "ko", m: (Qn.why && Qn.why[input]) || "" };
     let raw = String(input || "").trim();
-    if (!raw) return { s: "bad", m: "Écris ta réponse d'abord." };
+    if (!raw) return { s: "bad", m: "Prima scrivi la tua risposta." };
     if ((Qn.type === "num" || Qn.type === "lim") && /^[a-zA-Z'()θ\s]{1,8}=/.test(raw)) raw = raw.slice(raw.indexOf("=") + 1).trim();
     const allow = Qn.allow || ["sqrt", "pi"];
     const vars = Qn.vars || ["x"];
@@ -657,25 +666,25 @@ function checkAnswer(Qn, input) {
       if (Qn.type === "lim") {
         const E = parseLim(Qn.ans); const U = parseLim(raw);
         if (E !== null || U !== null) {
-          if (E !== null && U !== null) return E === U ? { s: "ok" } : { s: "ko", m: "Attention au signe de l'infini." };
-          if (U !== null) return { s: "ko", m: trapMsg(t => parseLim(t) === U) || "La limite est un nombre fini ici." };
-          if (/^\s*(inf|∞)/i.test(raw)) return { s: "bad", m: "Précise +∞ ou -∞." };
-          const ua = parse(raw); const uv = constVal(ua); if (!finite(uv)) return { s: "bad", m: "Je ne sais pas lire ce nombre." };
-          return { s: "ko", m: trapMsg(t => parseLim(t) === null && close(uv, constVal(parse(t)))) || "La limite est infinie ici." };
+          if (E !== null && U !== null) return E === U ? { s: "ok" } : { s: "ko", m: "Attenzione al segno dell'infinito." };
+          if (U !== null) return { s: "ko", m: trapMsg(t => parseLim(t) === U) || "Qui il limite è un numero, non infinito." };
+          if (/^\s*(inf|∞)/i.test(raw)) return { s: "bad", m: "Scrivi +inf oppure -inf." };
+          const ua = parse(raw); const uv = constVal(ua); if (!finite(uv)) return { s: "bad", m: "Non riesco a leggere questo numero." };
+          return { s: "ko", m: trapMsg(t => parseLim(t) === null && close(uv, constVal(parse(t)))) || "Qui il limite è infinito." };
         }
       }
       const ua = parse(raw);
-      if (varsOf(ua).size) return { s: "bad", m: "La réponse est un nombre : pas de lettre « " + [...varsOf(ua)][0] + " »." };
+      if (varsOf(ua).size) return { s: "bad", m: "La risposta è un numero: niente lettera « " + [...varsOf(ua)][0] + " »." };
       u = constVal(ua);
-      if (!finite(u)) return { s: "bad", m: "Ce calcul n'a pas de sens (division par zéro ?)." };
+      if (!finite(u)) return { s: "bad", m: "Questo calcolo non ha senso (divisione per zero?)." };
       target = constVal(parse(Qn.ans));
       if (close(u, target, 1e-9)) {
         const bad = allowedNodes(ua, allow) || checkForm(ua, Qn.form, u, vars[0]);
         return bad ? { s: "ko", m: bad, form: 1 } : { s: "ok" };
       }
       const tm = trapMsg(t => close(u, constVal(parse(t)), 1e-9)); if (tm) return { s: "ko", m: tm };
-      if (/\d[.,]\d/.test(raw) && close(u, target, 2e-3)) return { s: "ko", m: "C'est une valeur approchée : il faut la valeur exacte (fraction, racine, π…)." };
-      if (close(u, [-target[0], -target[1]], 1e-9)) return { s: "ko", m: "Presque : c'est une erreur de signe." };
+      if (/\d[.,]\d/.test(raw) && close(u, target, 2e-3)) return { s: "ko", m: "È un valore approssimato: serve il valore esatto (frazione, radice, π…)." };
+      if (close(u, [-target[0], -target[1]], 1e-9)) return { s: "ko", m: "Quasi: hai sbagliato solo il segno." };
       return { s: "ko" };
     }
 
@@ -683,17 +692,17 @@ function checkAnswer(Qn, input) {
       let s = raw.replace(/\+\s*(c|k|cte)\s*$/i, "");
       if (Qn.lhs) { const i = s.indexOf("="); if (i >= 0) s = s.slice(i + 1); }
       const ua = parse(s);
-      for (const v of varsOf(ua)) if (!vars.includes(v)) return { s: "bad", m: "La lettre « " + v + " » n'est pas attendue ici (variable : " + vars.join(", ") + ")." };
+      for (const v of varsOf(ua)) if (!vars.includes(v)) return { s: "bad", m: "Qui non serve la lettera « " + v + " » (la variabile è " + vars.join(", ") + ")." };
       const ea = parse(Qn.ans);
       const mode = Qn.prim ? "prim" : null;
       if (sameExpr(ua, ea, vars, Qn.dom, mode)) {
-        if (Qn.defined) for (const x of Qn.defined) { try { const r = ev(ua, { [vars[0]]: [x, 0] }); if (!finite(r)) return { s: "ko", m: "Tu n'as pas simplifié par le facteur commun : ton expression n'est pas définie en " + fmtNum(x).replace("{,}", ",") + ".", form: 1 }; } catch (e) {} }
+        if (Qn.defined) for (const x of Qn.defined) { try { const r = ev(ua, { [vars[0]]: [x, 0] }); if (!finite(r)) return { s: "ko", m: "Non hai semplificato il fattore comune: la tua espressione non esiste per x = " + fmtNum(x).replace("{,}", ",") + ".", form: 1 }; } catch (e) {} }
         const bad = allowedNodes(ua, allow.concat(["trig", "ln", "e"]).filter(a => !(Qn.deny || []).includes(a))) || checkForm(ua, Qn.form, null, vars[0]);
         return bad ? { s: "ko", m: bad, form: 1 } : { s: "ok" };
       }
       const tm = trapMsg(t => sameExpr(ua, parse(t), vars, Qn.dom, mode)); if (tm) return { s: "ko", m: tm };
-      if (Qn.prim && Qn.deriv && sameExpr(ua, parse(Qn.deriv), vars, Qn.dom)) return { s: "ko", m: "Tu as dérivé au lieu de chercher une primitive." };
-      if (!Qn.prim && sameExpr(ua, parse(Qn.ans), vars, Qn.dom, "prop")) return { s: "ko", m: "Tu y es presque : il y a une erreur de facteur (coefficient ou signe)." };
+      if (Qn.prim && Qn.deriv && sameExpr(ua, parse(Qn.deriv), vars, Qn.dom)) return { s: "ko", m: "Hai fatto la derivata invece della primitiva (è il contrario)." };
+      if (!Qn.prim && sameExpr(ua, parse(Qn.ans), vars, Qn.dom, "prop")) return { s: "ko", m: "Ci sei quasi: c'è un errore in un numero davanti (coefficiente o segno)." };
       return { s: "ko" };
     }
 
@@ -703,18 +712,18 @@ function checkAnswer(Qn, input) {
       let vals = [];
       for (const p of parts) {
         const a = parse(p);
-        if (varsOf(a).size) return { s: "bad", m: "Écris seulement les valeurs, séparées par « ; » (par exemple : 2 ; -3)." };
-        const v = constVal(a); if (!finite(v)) return { s: "bad", m: "Une des valeurs n'a pas de sens : « " + p + " »." };
+        if (varsOf(a).size) return { s: "bad", m: "Scrivi solo i valori, separati da « ; » (per esempio: 2 ; -3)." };
+        const v = constVal(a); if (!finite(v)) return { s: "bad", m: "Uno dei valori non ha senso: « " + p + " »." };
         const bad = allowedNodes(a, allow) || checkForm(a, Qn.form, v, vars[0]);
         vals.push({ v, bad });
       }
       if (Qn.type === "tuple") {
-        if (vals.length !== exp.length) return { s: "bad", m: "Il faut " + exp.length + " coordonnées, séparées par « ; »." };
+        if (vals.length !== exp.length) return { s: "bad", m: "Servono " + exp.length + " coordinate, separate da « ; »." };
         const ok = vals.every((x, i) => close(x.v, exp[i], 1e-9));
         if (ok) { const b = vals.find(x => x.bad); return b ? { s: "ko", m: b.bad, form: 1 } : { s: "ok" }; }
         const tm = trapMsg(t => t.length === vals.length && t.every((a, i) => close(vals[i].v, constVal(parse(a)), 1e-9))); if (tm) return { s: "ko", m: tm };
         const wrong = vals.map((x, i) => close(x.v, exp[i], 1e-9) ? null : i + 1).filter(Boolean);
-        return { s: "ko", m: wrong.length < vals.length ? "Coordonnée" + (wrong.length > 1 ? "s" : "") + " fausse" + (wrong.length > 1 ? "s" : "") + " : n° " + wrong.join(", ") + "." : "" };
+        return { s: "ko", m: wrong.length < vals.length ? (wrong.length > 1 ? "Coordinate sbagliate" : "Coordinata sbagliata") + ": n° " + wrong.join(", ") + "." : "" };
       }
       const uniq = []; vals.forEach(x => { if (!uniq.some(y => close(y.v, x.v, 1e-9))) uniq.push(x); });
       const expU = []; exp.forEach(x => { if (!expU.some(y => close(y, x, 1e-9))) expU.push(x); });
@@ -723,32 +732,32 @@ function checkAnswer(Qn, input) {
         const b = uniq.find(x => x.bad); return b ? { s: "ko", m: b.bad, form: 1 } : { s: "ok" };
       }
       const tm = trapMsg(t => { const tv = t.map(a => constVal(parse(a))); return tv.length === uniq.length && tv.every(x => uniq.some(y => close(y.v, x, 1e-9))); }); if (tm) return { s: "ko", m: tm };
-      if (!expU.length) return { s: "ko", m: "Cette équation n'a aucune solution." };
-      if (!uniq.length) return { s: "ko", m: "Il y a des solutions." };
-      if (inExp.length === uniq.length) return { s: "ko", m: "Il manque " + (expU.length - uniq.length > 1 ? "des solutions" : "une solution") + "." };
-      if (inExp.length === expU.length) return { s: "ko", m: "Une de tes valeurs n'est pas solution." };
-      return { s: "ko", m: inExp.length ? "Une partie seulement est juste." : "" };
+      if (!expU.length) return { s: "ko", m: "Questa equazione non ha soluzioni: scrivi « vuoto »." };
+      if (!uniq.length) return { s: "ko", m: "Ci sono delle soluzioni." };
+      if (inExp.length === uniq.length) return { s: "ko", m: (expU.length - uniq.length > 1 ? "Mancano delle soluzioni" : "Manca una soluzione") + "." };
+      if (inExp.length === expU.length) return { s: "ko", m: "Uno dei tuoi valori non è una soluzione." };
+      return { s: "ko", m: inExp.length ? "Solo una parte è giusta." : "" };
     }
 
     if (Qn.type === "interval") {
       const U = parseIntervals(raw), E = parseIntervals(Qn.ans);
       if (sameIntervals(U, E, Qn.loose)) return { s: "ok" };
       const tm = trapMsg(t => sameIntervals(U, parseIntervals(t), Qn.loose)); if (tm) return { s: "ko", m: tm };
-      if (sameIntervals(U, E, true)) return { s: "ko", m: "Les bornes sont justes, mais pas les crochets : [ = inclus, ] tourné vers l'extérieur = exclu." };
+      if (sameIntervals(U, E, true)) return { s: "ko", m: "I numeri sono giusti, le parentesi no: [ verso il numero = compreso, parentesi girata verso l'esterno = escluso." };
       return { s: "ko" };
     }
 
     if (Qn.type === "eqn") {
       const i = raw.indexOf("=");
-      if (i < 0) return { s: "bad", m: "Écris une équation, avec le signe « = »." };
+      if (i < 0) return { s: "bad", m: "Scrivi un'equazione, con il segno « = »." };
       const L = parse(raw.slice(0, i)), R = parse(raw.slice(i + 1));
       const ua = { t: "sub", a: L, b: R };
-      for (const v of varsOf(ua)) if (!vars.includes(v)) return { s: "bad", m: "La lettre « " + v + " » n'est pas attendue ici." };
+      for (const v of varsOf(ua)) if (!vars.includes(v)) return { s: "bad", m: "Qui non serve la lettera « " + v + " »." };
       return sameExpr(ua, parse(Qn.ans), vars, Qn.dom || [-5, 5], "prop") ? { s: "ok" } : { s: "ko", m: trapMsg(t => sameExpr(ua, parse(t), vars, [-5, 5], "prop")) || "" };
     }
   } catch (e) {
     if (e instanceof PErr) return { s: "bad", m: e.message };
-    return { s: "bad", m: "Je n'arrive pas à lire ta réponse. Vérifie les parenthèses." };
+    return { s: "bad", m: "Non riesco a leggere la tua risposta. Controlla le parentesi." };
   }
   return { s: "bad", m: "?" };
 }
